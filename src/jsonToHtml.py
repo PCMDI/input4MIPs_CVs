@@ -6,7 +6,8 @@ To run conversion:
 
 """
 """2023
-PJD 29 Nov 2023    - copied from https://github.com/WCRP-CMIP/CMIP6_CVs/blob/138a089499cd2a9418186fb27cd184063f2d34da/src/jsonToHtml.py
+PJD 29 Nov 2023 - copied from https://github.com/WCRP-CMIP/CMIP6_CVs/blob/138a089499cd2a9418186fb27cd184063f2d34da/src/jsonToHtml.py
+PJD 29 Nov 2023 - first prototype completes
 """
 
 # This script takes the json file and turns it into a nice jquery/data-tabled html doc
@@ -91,6 +92,7 @@ fo.write(
 )
 
 """
+../input4MIPs_source_id.json
 "ACCESS1-3-rcp85-1-0":{
     "_timestamp":"2021-04-22T19:05:37.327Z",
     "contact":"ISMIP6 Steering Team (ismip6@gmail.com)",
