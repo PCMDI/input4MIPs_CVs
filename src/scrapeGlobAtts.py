@@ -37,13 +37,13 @@ ds = xc.open_mfdataset(inFile)
 globAttList = ds.attrs.keys()
 for count, key in enumerate(globAttList):
     val = ds.attrs[key]
-    output = "".join([":!: ".join([key, val]), "\n"])
+    output = "".join(["% ".join([key, val]), "\n"])
     print(output)
     oH.write(output)
 
 # add inFile
-output = "".join(["\ninFile:!: ", inFile, "\n"])
+output = "".join(["\ninFile% ", inFile, "\n"])
 oH.write(output)
-output = "".join(["time:!: ", fmtTime])
+output = "".join(["time% ", fmtTime])
 oH.write(output)
 oH.close()
