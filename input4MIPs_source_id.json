@@ -2869,6 +2869,22 @@
             "version":"20181127",
             "xlink":"http://cera-www.dkrz.de/WDCC/meta/CMIP6/input4MIPs.CMIP6.AerChemMIP.UoM.UoM-AIM-ssp370-lowNTCF-1-2-1.atmos.yr.mole_fraction_of_sf6_in_air.gr1-GMNHSH.20181127.json|Citation|citation"
         },
+        "CR-DECK-0-1-0":{
+            "contact":"zebedee.nicholls@climate-resource.com",
+            "dataset_category":"GHGConcentrations",
+            "datetime_start":"0001-01-16T12:00:00Z",
+            "datetime_stop":"2023-12-16T12:00:00Z",
+            "frequency":"mon",
+            "institution_id":"CR",
+            "latest":true,
+            "mip_era":"CMIP6Plus",
+            "realm":"atmos",
+            "replica":false,
+            "source_id":"CR-DECK-0-1-0",
+            "source_version":"0.1.0",
+            "target_mip":"CMIP",
+            "version":"Hard to know in advance given this is a date...",
+        },
         "UoM-CMIP-1-2-0":{
             "_timestamp":"2019-02-14T01:33:21.423Z",
             "contact":"malte.meinshausen@unimelb.edu.au",
