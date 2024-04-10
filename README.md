@@ -10,6 +10,16 @@ To see information regarding forcing dataset development for the Coupled Model I
 
 To register your institution or source/dataset, please submit an issue/ticket following the instructions on the [input4MIPs_CVs issue page](https://github.com/PCMDI/input4MIPs_CVs/issues/new). Follow the same procedure to request a change in any other CV.
 
+### Registering a new input4MIPs forcing dataset
+
+[ZN to write, rough steps, current guess below]
+
+1. Register a new source ID
+     - basically means making a pull request that edits `input4MIPs_source_id.json`. Further instructions on what to edit, how, what fields are needed, what are optional are to come
+1. Use your new source ID when you create your data
+1. Validate the dataset using validation tools (e.g. the work in progress https://github.com/climate-resource/input4mips_validation)
+1. Upload your data to somewhere, instructions to be written
+
 ## Contributors
 
 [![Contributors](https://contrib.rocks/image?repo=PCMDI/input4MIPs_CVs)](https://github.com/PCMDI/input4MIPs_CVs/graphs/contributors)
