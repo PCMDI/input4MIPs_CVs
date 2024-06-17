@@ -1,13 +1,15 @@
 {
-    "license":"<your_data_identifier> data produced by <Your Institution; see MIP_institution_id.json> is licensed under a <Creative Commons; select and insert a license_id; see below> License (<insert the matching license_url; see below>). Consult https://pcmdi.llnl.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus and input4MIPs output, including citation requirements and proper acknowledgment. Further information about this data, can be found at <URL_maintained_data_provider>. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
-    "license_options":{
-        "CC BY 4.0":{
-            "license_id":"Creative Commons Attribution 4.0 International",
-            "license_url":"https://creativecommons.org/licenses/by/4.0/"
-        },
-        "CC0 1.0":{
-            "license_id":"Creative Commons CC0 1.0 Universal Public Domain Dedication",
-            "license_url":"https://creativecommons.org/publicdomain/zero/1.0/"
+    "license":{
+        "license":"<your_data_identifier> data produced by <Your Institution; see MIP_institution_id.json> is licensed under a <Creative Commons; select and insert a license_id; see below> License (<insert the matching license_url; see below>). Consult https://pcmdi.llnl.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus and input4MIPs output, including citation requirements and proper acknowledgment. Further information about this data, can be found at <URL_maintained_data_provider>. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+        "license_options":{
+            "CC BY 4.0":{
+                "license_id":"Creative Commons Attribution 4.0 International",
+                "license_url":"https://creativecommons.org/licenses/by/4.0/"
+            },
+            "CC0 1.0":{
+                "license_id":"Creative Commons CC0 1.0 Universal Public Domain Dedication",
+                "license_url":"https://creativecommons.org/publicdomain/zero/1.0/"
+            }
         }
     }
 }
