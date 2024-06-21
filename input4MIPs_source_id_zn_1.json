@@ -1,0 +1,15 @@
+{
+    "source_id":{
+        "CR-CMIP-0-2-0":{
+            "activity_id":"input4MIPs",
+            "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
+            "further_info_url":"TBD",
+            "institution":"Climate Resource",
+            "institution_id":"CR",
+            "license":"CMIP greenhouse gas concentration data produced by Climate Resource (CR) is licensed under a Creative Commons Attribution 4.0 International License (https://creativecommons.org/licenses/by/4.0/). Consult https://pcmdi.llnl.gov/CMIP6Plus/TermsOfUse for terms of use governing CMIP6Plus and input4MIPs output, including citation requirements and proper acknowledgment. Further information about this data, can be found at TBC. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "mip_era":"CMIP6Plus",
+            "source_version":"0.2.0",
+            "version":"0.2.0"
+        }
+    }
+}
