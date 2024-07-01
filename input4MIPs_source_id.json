@@ -16,20 +16,19 @@
             "region":"",
             "source":"ACCESS1-3-rcp85-1-0 derived dataset computed from CMIP5 ACCESS1-3 historical and rcp85 simulations for ISMIP6",
             "source_id":"ACCESS1-3-rcp85-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - ACCESS1-3-rcp85-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -61,12 +60,11 @@
             "region":"",
             "source":"The original WACCM and CMAM ozone fields used to produce the CCMI V1.0 ozone dataset",
             "source_id":"CCMI-hist-nat-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -98,12 +96,11 @@
             "region":"",
             "source":"The original WACCM and CMAM ozone fields used to produce the CCMI V1.0 ozone dataset",
             "source_id":"CCMI-hist-nat-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -135,12 +132,11 @@
             "region":"",
             "source":"The original WACCM and CMAM ozone fields used to produce the CCMI V1.0 ozone dataset",
             "source_id":"CCMI-hist-sol-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -172,12 +168,11 @@
             "region":"",
             "source":"The original WACCM and CMAM ozone fields used to produce the CCMI V1.0 ozone dataset",
             "source_id":"CCMI-hist-sol-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -209,12 +204,11 @@
             "region":"",
             "source":"CCMI v1.0: merged ozone using WACCM and CMAM ozone simulations",
             "source_id":"CCMI-hist-stratO3-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -246,12 +240,11 @@
             "region":"",
             "source":"The original WACCM and CMAM ozone fields used to produce the CCMI V1.0 ozone dataset",
             "source_id":"CCMI-hist-volc-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -283,12 +276,11 @@
             "region":"",
             "source":"The original WACCM and CMAM ozone fields used to produce the CCMI V1.0 ozone dataset",
             "source_id":"CCMI-hist-volc-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -320,12 +312,11 @@
             "region":"",
             "source":"The original WACCM and CMAM ozone fields used to produce the CCMI V1.0 ozone dataset",
             "source_id":"CCMI-ssp245-nat-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -357,12 +348,11 @@
             "region":"",
             "source":"The original WACCM and CMAM ozone fields used to produce the CCMI V1.0 ozone dataset",
             "source_id":"CCMI-ssp245-sol-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -394,12 +384,11 @@
             "region":"",
             "source":"CCMI v1.0: merged ozone using WACCM and CMAM ozone simulations",
             "source_id":"CCMI-ssp245-stratO3-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -431,12 +420,11 @@
             "region":"",
             "source":"The original WACCM and CMAM ozone fields used to produce the CCMI V1.0 ozone dataset",
             "source_id":"CCMI-ssp245-volc-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -468,20 +456,19 @@
             "region":"",
             "source":"CCSM4-rcp26-1-0 derived dataset computed from CMIP5 CCSM4 historical and rcp26 simulations for ISMIP6",
             "source_id":"CCSM4-rcp26-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - CCSM4-rcp26-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -513,20 +500,19 @@
             "region":"",
             "source":"CCSM4-rcp85-1-0 derived dataset computed from CMIP5 CCSM4 historical and rcp85 simulations for ISMIP6",
             "source_id":"CCSM4-rcp85-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - CCSM4-rcp85-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -558,12 +544,11 @@
             "region":"",
             "source":"CEDS 06-18-2016: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2016-06-18",
-            "source_variables":"",
             "source_version":"2016-06-18",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -595,12 +580,11 @@
             "region":"",
             "source":"CEDS 06-18-2016: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2016-06-18-sectorDimV2",
-            "source_variables":"",
             "source_version":"2016-06-18-sectorDimV2",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -632,12 +616,11 @@
             "region":"",
             "source":"CEDS 06-22-2016: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2016-06-18-supplemental-data",
-            "source_variables":"",
             "source_version":"2016-06-18",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -669,12 +652,11 @@
             "region":"",
             "source":"CEDS 07-26-2016: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2016-07-26",
-            "source_variables":"",
             "source_version":"2016-07-26",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -706,12 +688,11 @@
             "region":"",
             "source":"CEDS 07-26-2016: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2016-07-26-sectorDim",
-            "source_variables":"",
             "source_version":"2016-07-26-sectorDim",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -743,12 +724,11 @@
             "region":"",
             "source":"CEDS 07-26-2016: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2016-07-26-sectorDim-supplemental-data",
-            "source_variables":"",
             "source_version":"2016-07-26-sectorDim",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -780,12 +760,11 @@
             "region":"",
             "source":"CEDS-2017-05-18: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2017-05-18",
-            "source_variables":"",
             "source_version":"2017-05-18",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -817,12 +796,11 @@
             "region":"",
             "source":"CEDS-2017-05-18: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2017-05-18-supplemental-data",
-            "source_variables":"",
             "source_version":"2017-05-18",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -854,12 +832,11 @@
             "region":"",
             "source":"CEDS-2017-08-30: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2017-08-30",
-            "source_variables":"",
             "source_version":"2017-08-30",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -891,12 +868,11 @@
             "region":"",
             "source":"CEDS-2017-08-30: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2017-08-30-supplemental-data",
-            "source_variables":"",
             "source_version":"2017-08-30",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -928,12 +904,11 @@
             "region":"",
             "source":"CEDS-2017-10-05: Community Emissions Data System (CEDS) for Historical Emissions",
             "source_id":"CEDS-2017-10-05",
-            "source_variables":"",
             "source_version":"2017-10-05",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -965,20 +940,19 @@
             "region":"",
             "source":"CESM2-ssp585-1-0 derived dataset computed from CMIP6 CESM2 historical and ssp585 simulations for ISMIP6",
             "source_id":"CESM2-ssp585-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - CESM2-ssp585-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7",
@@ -1010,20 +984,19 @@
             "region":"",
             "source":"CNRM-CM6-1-ssp126-1-0 derived dataset computed from CMIP6 CNRM-CM6-1 historical and ssp126 simulations for ISMIP6",
             "source_id":"CNRM-CM6-1-ssp126-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - CNRM-CM6-1-ssp126-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7",
@@ -1055,20 +1028,19 @@
             "region":"",
             "source":"CNRM-CM6-1-ssp585-1-0 derived dataset computed from CMIP6 CNRM-CM6-1 historical and ssp585 simulations for ISMIP6",
             "source_id":"CNRM-CM6-1-ssp585-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - CNRM-CM6-1-ssp585-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7",
@@ -1100,20 +1072,19 @@
             "region":"",
             "source":"CNRM-ESM2-1-ssp585-1-0 derived dataset computed from CMIP6 CNRM-ESM2-1 historical and ssp585 simulations for ISMIP6",
             "source_id":"CNRM-ESM2-1-ssp585-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - CNRM-ESM2-1-ssp585-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1145,20 +1116,19 @@
             "region":"",
             "source":"CSIRO-MK3-6-0-rcp85-1-0 derived dataset computed from CMIP5 CSIRO-MK3-6-0 historical and rcp85 simulations for ISMIP6",
             "source_id":"CSIRO-MK3-6-0-rcp85-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - CSIRO-MK3-6-0-rcp85-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1190,12 +1160,11 @@
             "region":"",
             "source":"dcppC-amv-1 experiments",
             "source_id":"DCPP-C-amv-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"DCPP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.0",
@@ -1227,12 +1196,11 @@
             "region":"",
             "source":"dcppC-ipv-1 experiments",
             "source_id":"DCPP-C-ipv-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"DCPP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.0",
@@ -1264,20 +1232,19 @@
             "region":"",
             "source":"HadGEM2-ES-rcp85-1-0 derived dataset computed from CMIP5 HadGEM2-ES historical and rcp85 simulations for ISMIP6",
             "source_id":"HadGEM2-ES-rcp85-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - HadGEM2-ES-rcp85-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1309,12 +1276,11 @@
             "region":"",
             "source":"IACETH SAGE3lambda v2.1: Stratospheric aerosol - SAGE, SAM, CALIPSO, OSIRIS, 2D-model-simulation and Photometer",
             "source_id":"IACETH-SAGE3lambda-2-1-0",
-            "source_variables":"",
             "source_version":"2.1.0",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1346,12 +1312,11 @@
             "region":"",
             "source":"SAGE, SAM, CALIPSO, OSIRIS, 2D-model-simulation and Photometer",
             "source_id":"IACETH-SAGE3lambda-3-0-0",
-            "source_variables":"",
             "source_version":"3.0.0",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1383,12 +1348,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-AIM-ssp370-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1420,12 +1384,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-AIM-ssp370-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1457,12 +1420,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-AIM-ssp370-1-1-supplemental-data",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1494,12 +1456,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-AIM-ssp370-lowNTCF-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"AerChemMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1531,12 +1492,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-AIM-ssp370-lowNTCF-1-1-supplemental-data",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"AerChemMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1568,12 +1528,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-GCAM4-ssp434-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1605,12 +1564,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-GCAM4-ssp434-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1642,12 +1600,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-GCAM4-ssp434-1-1-supplemental-data",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1679,12 +1636,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-GCAM4-ssp460-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1716,12 +1672,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-GCAM4-ssp460-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1753,12 +1708,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-GCAM4-ssp460-1-1-supplemental-data",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1790,12 +1744,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-IMAGE-ssp119-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1827,12 +1780,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-IMAGE-ssp119-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1864,12 +1816,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-IMAGE-ssp119-1-1-supplemental-data",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1901,12 +1852,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-IMAGE-ssp126-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1938,12 +1888,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-IMAGE-ssp126-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -1975,12 +1924,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-IMAGE-ssp126-1-1-supplemental-data",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2012,12 +1960,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-MESSAGE-GLOBIOM-ssp245-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2049,12 +1996,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-MESSAGE-GLOBIOM-ssp245-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2086,12 +2032,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-MESSAGE-GLOBIOM-ssp245-1-1-supplemental-data",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2123,12 +2068,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-REMIND-MAGPIE-ssp534-over-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2160,12 +2104,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-REMIND-MAGPIE-ssp534-over-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2197,12 +2140,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-REMIND-MAGPIE-ssp534-over-1-1-supplemental-data",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2234,12 +2176,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-REMIND-MAGPIE-ssp585-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2271,12 +2212,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-REMIND-MAGPIE-ssp585-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2308,12 +2248,11 @@
             "region":"",
             "source":"IAMC Scenario Database hosted at IIASA",
             "source_id":"IAMC-REMIND-MAGPIE-ssp585-1-1-supplemental-data",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2345,20 +2284,19 @@
             "region":"",
             "source":"IPSL-CM5A-MR-rcp26-1-0 derived dataset computed from CMIP5 IPSL-CM5A-MR historical and rcp26 simulations for ISMIP6",
             "source_id":"IPSL-CM5A-MR-rcp26-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - IPSL-CM5A-MR-rcp26-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2390,20 +2328,19 @@
             "region":"",
             "source":"IPSL-CM5A-MR-rcp85-1-0 derived dataset computed from CMIP5 IPSL-CM5A-MR historical and rcp85 simulations for ISMIP6",
             "source_id":"IPSL-CM5A-MR-rcp85-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - IPSL-CM5A-MR-rcp85-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2435,12 +2372,11 @@
             "region":"",
             "source":"Imperial College 1.0: delta13co2 in air",
             "source_id":"ImperialCollege-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.0",
@@ -2472,12 +2408,11 @@
             "region":"",
             "source":"Imperial College 1.1: delta13co2 in air",
             "source_id":"ImperialCollege-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2509,12 +2444,11 @@
             "region":"",
             "source":"Imperial College 2.0: Delta14co2 in air",
             "source_id":"ImperialCollege-2-0",
-            "source_variables":"",
             "source_version":"2.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2546,12 +2480,11 @@
             "region":"",
             "source":"Imperial College 1.0: Delta14co2 in air",
             "source_id":"ImperialCollege-AIM-ssp370-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2583,12 +2516,11 @@
             "region":"",
             "source":"Imperial College 1.0: Delta14co2 in air",
             "source_id":"ImperialCollege-GLOBIOM-ssp245-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2620,12 +2552,11 @@
             "region":"",
             "source":"Imperial College 1.0: delta13co2 in air",
             "source_id":"ImperialCollege-IMAGE-ssp119-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2657,12 +2588,11 @@
             "region":"",
             "source":"Imperial College 1.0: Delta14co2 in air",
             "source_id":"ImperialCollege-IMAGE-ssp126-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2694,12 +2624,11 @@
             "region":"",
             "source":"Imperial College 1.0: Delta14co2 in air",
             "source_id":"ImperialCollege-REMIND-MAGPIE-ssp534os-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2731,12 +2660,11 @@
             "region":"",
             "source":"Imperial College 1.0: delta13co2 in air",
             "source_id":"ImperialCollege-REMIND-MAGPIE-ssp585-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2768,12 +2696,11 @@
             "region":"",
             "source":null,
             "source_id":"ImperialCollege-ssp245-covid-4-8-1",
-            "source_variables":"",
             "source_version":"4.8.1",
             "target_mip":"DAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2805,20 +2732,19 @@
             "region":"",
             "source":"MIROC-ESM-CHEM-rcp26-1-0 derived dataset computed from CMIP5 MIROC-ESM-CHEM historical and rcp26 simulations for ISMIP6",
             "source_id":"MIROC-ESM-CHEM-rcp26-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - MIROC-ESM-CHEM-rcp26-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2850,20 +2776,19 @@
             "region":"",
             "source":"MIROC-ESM-CHEM-rcp85-1-0 derived dataset computed from CMIP5 MIROC-ESM-CHEM historical and rcp85 simulations for ISMIP6",
             "source_id":"MIROC-ESM-CHEM-rcp85-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - MIROC-ESM-CHEM-rcp85-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2895,20 +2820,19 @@
             "region":"",
             "source":"MIROC5-rcp26-1-0 derived dataset computed from CMIP5 MIROC5 historical and rcp26 simulations for ISMIP6",
             "source_id":"MIROC5-rcp26-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - MIROC5-rcp26-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2940,20 +2864,19 @@
             "region":"",
             "source":"MIROC5-rcp85-1-0 derived dataset computed from CMIP5 MIROC5 historical and rcp85 simulations for ISMIP6",
             "source_id":"MIROC5-rcp85-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - MIROC5-rcp85-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2985,12 +2908,11 @@
             "region":"",
             "source":"HadISST2.2.0.0 realisation 0 derived from pentad data",
             "source_id":"MOHC-HadISST-2-2-0-0-0",
-            "source_variables":"",
             "source_version":"2.2.0.0-r0",
             "target_mip":"HighResMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3022,12 +2944,11 @@
             "region":"",
             "source":"Processed from combining past HadISST2.2 observations with future SST from CMIP5 coupled historic and rcp85 simulations",
             "source_id":"MOHC-highresSST-future-1-0-0",
-            "source_variables":"",
             "source_version":"1.0.0",
             "target_mip":"HighResMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7",
@@ -3059,12 +2980,11 @@
             "region":"",
             "source":"Processed from combining past HadISST2.2 observations with future SST from CMIP5 coupled historic and rcp85 simulations",
             "source_id":"MOHC-highresSST-future-1-0-1",
-            "source_variables":"",
             "source_version":"1.0.1",
             "target_mip":"HighResMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7",
@@ -3096,12 +3016,11 @@
             "region":"",
             "source":"MPI-B v1. Generated from CCMI nitrogen deposition fields of the NCAR-CCMI-2-0 and NCAR-CCMI-ssp585-1-0 data sets",
             "source_id":"MPI-B-1pctNdep-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3133,12 +3052,11 @@
             "region":"",
             "source":"MACv2-SP-1.0 parameterization developed at MPI-M",
             "source_id":"MPI-M-MACv2-SP-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":null,
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3170,12 +3088,11 @@
             "region":"",
             "source":"MRI JRA55-do 1.3: Atmospheric state generated for OMIP based on the JRA-55 reanalysis",
             "source_id":"MRI-JRA55-do-1-3",
-            "source_variables":"",
             "source_version":"1.3.1",
             "target_mip":"OMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -3209,32 +3126,31 @@
             ],
             "source":"MRI JRA55-do 1.3.2: Atmospheric state generated for OMIP based on the JRA-55 reanalysis",
             "source_id":"MRI-JRA55-do-1-3-2",
-            "source_variables":[
-                "areacello",
-                "friver",
-                "huss",
-                "licalvf",
-                "prra",
-                "prsn",
-                "psl",
-                "rlds",
-                "sftof",
-                "siconc",
-                "siconca",
-                "sos",
-                "tas",
-                "tos",
-                "ts",
-                "uas",
-                "uos",
-                "vas",
-                "vos"
-            ],
             "source_version":"1.3.2",
             "target_mip":"OMIP",
             "title":"MRI JRA55-do 1.3.2 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "areacello",
+                    "friver",
+                    "huss",
+                    "licalvf",
+                    "prra",
+                    "prsn",
+                    "psl",
+                    "rlds",
+                    "sftof",
+                    "siconc",
+                    "siconca",
+                    "sos",
+                    "tas",
+                    "tos",
+                    "ts",
+                    "uas",
+                    "uos",
+                    "vas",
+                    "vos"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -3268,32 +3184,31 @@
             ],
             "source":"MRI JRA55-do 1.4.0: Atmospheric state generated for OMIP based on the JRA-55 reanalysis",
             "source_id":"MRI-JRA55-do-1-4-0",
-            "source_variables":[
-                "areacello",
-                "friver",
-                "huss",
-                "licalvf",
-                "prra",
-                "prsn",
-                "psl",
-                "rlds",
-                "sftof",
-                "siconc",
-                "siconca",
-                "sos",
-                "tas",
-                "tos",
-                "ts",
-                "uas",
-                "uos",
-                "vas",
-                "vos"
-            ],
             "source_version":"1.4.0",
             "target_mip":"OMIP",
             "title":"MRI JRA55-do 1.4.0 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "areacello",
+                    "friver",
+                    "huss",
+                    "licalvf",
+                    "prra",
+                    "prsn",
+                    "psl",
+                    "rlds",
+                    "sftof",
+                    "siconc",
+                    "siconca",
+                    "sos",
+                    "tas",
+                    "tos",
+                    "ts",
+                    "uas",
+                    "uos",
+                    "vas",
+                    "vos"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -3327,32 +3242,31 @@
             ],
             "source":"MRI JRA55-do 1.5.0: Atmospheric state generated for OMIP based on the JRA-55 reanalysis",
             "source_id":"MRI-JRA55-do-1-5-0",
-            "source_variables":[
-                "areacello",
-                "friver",
-                "huss",
-                "licalvf",
-                "prra",
-                "prsn",
-                "psl",
-                "rlds",
-                "sftof",
-                "siconc",
-                "siconca",
-                "sos",
-                "tas",
-                "tos",
-                "ts",
-                "uas",
-                "uos",
-                "vas",
-                "vos"
-            ],
             "source_version":"1.5.0",
             "target_mip":"OMIP",
             "title":"MRI JRA55-do 1.5.0 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "areacello",
+                    "friver",
+                    "huss",
+                    "licalvf",
+                    "prra",
+                    "prsn",
+                    "psl",
+                    "rlds",
+                    "sftof",
+                    "siconc",
+                    "siconca",
+                    "sos",
+                    "tas",
+                    "tos",
+                    "ts",
+                    "uas",
+                    "uos",
+                    "vas",
+                    "vos"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -3386,34 +3300,33 @@
             ],
             "source":"MRI JRA55-do 1.6.0: Atmospheric state generated for OMIP based on the JRA-55 reanalysis",
             "source_id":"MRI-JRA55-do-1-6-0",
-            "source_variables":[
-                [
-                    "areacello",
-                    "friver",
-                    "huss",
-                    "licalvf",
-                    "prra",
-                    "prsn",
-                    "psl",
-                    "rlds",
-                    "sftof",
-                    "siconc",
-                    "siconca",
-                    "sos",
-                    "tas",
-                    "tos",
-                    "ts",
-                    "uas",
-                    "uos",
-                    "vas",
-                    "vos"
-                ]
-            ],
             "source_version":"1.6.0",
             "target_mip":"OMIP",
             "title":"MRI JRA55-do 1.6.0 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    [
+                        "areacello",
+                        "friver",
+                        "huss",
+                        "licalvf",
+                        "prra",
+                        "prsn",
+                        "psl",
+                        "rlds",
+                        "sftof",
+                        "siconc",
+                        "siconca",
+                        "sos",
+                        "tas",
+                        "tos",
+                        "ts",
+                        "uas",
+                        "uos",
+                        "vas",
+                        "vos"
+                    ]
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -3445,12 +3358,11 @@
             "region":"",
             "source":"CCMI v1.0: nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3482,12 +3394,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-2-0",
-            "source_variables":"",
             "source_version":"2.0",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3519,12 +3430,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp119-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3556,12 +3466,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp126-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3593,12 +3502,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp126-2-0",
-            "source_variables":"",
             "source_version":"2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3630,12 +3538,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp245-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3667,12 +3574,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp245-2-0",
-            "source_variables":"",
             "source_version":"2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3704,12 +3610,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp370-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3741,12 +3646,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp370-2-0",
-            "source_variables":"",
             "source_version":"2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3778,12 +3682,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp434-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3815,12 +3718,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp460-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3852,12 +3754,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp534os-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3889,12 +3790,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp585-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3926,12 +3826,11 @@
             "region":"",
             "source":"CCMI nitrogen deposition dataset from CAM-Chem simulations",
             "source_id":"NCAR-CCMI-ssp585-2-0",
-            "source_variables":"",
             "source_version":"2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3963,12 +3862,11 @@
             "region":"",
             "source":"NCAS 2.1.0 derived from CMIP5",
             "source_id":"NCAS-2-1-0",
-            "source_variables":"",
             "source_version":"2.1.0",
             "target_mip":"FAFMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"1.7",
@@ -4000,20 +3898,19 @@
             "region":"",
             "source":"NorESM1-M-rcp26-1-0 derived dataset computed from CMIP5 NorESM1-M historical and rcp26 simulations for ISMIP6",
             "source_id":"NorESM1-M-rcp26-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - NorESM1-M-rcp26-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -4045,20 +3942,19 @@
             "region":"",
             "source":"NorESM1-M-rcp85-1-0 derived dataset computed from CMIP5 NorESM1-M historical and rcp85 simulations for ISMIP6",
             "source_id":"NorESM1-M-rcp85-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - NorESM1-M-rcp85-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -4090,12 +3986,11 @@
             "region":"",
             "source":"PCMDI-AMIP 1.1.0: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-0",
-            "source_variables":"",
             "source_version":"1.1.0",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.0",
@@ -4127,12 +4022,11 @@
             "region":"",
             "source":"PCMDI-AMIP 1.1.1: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-1",
-            "source_variables":"",
             "source_version":"1.1.1",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.0",
@@ -4164,12 +4058,11 @@
             "region":"",
             "source":"PCMDI-AMIP 1.1.2: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-2",
-            "source_variables":"",
             "source_version":"1.1.2",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.0",
@@ -4201,12 +4094,11 @@
             "region":"",
             "source":"PCMDI-AMIP 1.1.3: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-3",
-            "source_variables":"",
             "source_version":"1.1.3",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4240,19 +4132,18 @@
             ],
             "source":"PCMDI-AMIP 1.1.4: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-4",
-            "source_variables":[
-                "areacello",
-                "sftof",
-                "siconc",
-                "siconcbcs",
-                "tos",
-                "tosbcs"
-            ],
             "source_version":"1.1.4",
             "target_mip":"CMIP",
             "title":"PCMDI-AMIP 1.1.4 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "areacello",
+                    "sftof",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4286,19 +4177,18 @@
             ],
             "source":"PCMDI-AMIP 1.1.5: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-5",
-            "source_variables":[
-                "areacello",
-                "sftof",
-                "siconc",
-                "siconcbcs",
-                "tos",
-                "tosbcs"
-            ],
             "source_version":"1.1.5",
             "target_mip":"CMIP",
             "title":"PCMDI-AMIP 1.1.5 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "areacello",
+                    "sftof",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4332,19 +4222,18 @@
             ],
             "source":"PCMDI-AMIP 1.1.6: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-6",
-            "source_variables":[
-                "areacello",
-                "sftof",
-                "siconc",
-                "siconcbcs",
-                "tos",
-                "tosbcs"
-            ],
             "source_version":"1.1.6",
             "target_mip":"CMIP",
             "title":"PCMDI-AMIP 1.1.6 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "areacello",
+                    "sftof",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4378,19 +4267,18 @@
             ],
             "source":"PCMDI-AMIP 1.1.7: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-7",
-            "source_variables":[
-                "areacello",
-                "sftof",
-                "siconc",
-                "siconcbcs",
-                "tos",
-                "tosbcs"
-            ],
             "source_version":"1.1.7",
             "target_mip":"CMIP",
             "title":"PCMDI-AMIP 1.1.7 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "areacello",
+                    "sftof",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4424,19 +4312,18 @@
             ],
             "source":"PCMDI-AMIP 1.1.8: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-8",
-            "source_variables":[
-                "areacello",
-                "sftof",
-                "siconc",
-                "siconcbcs",
-                "tos",
-                "tosbcs"
-            ],
             "source_version":"1.1.8",
             "target_mip":"CMIP",
             "title":"PCMDI-AMIP 1.1.8 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "areacello",
+                    "sftof",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4470,19 +4357,18 @@
             ],
             "source":"PCMDI-AMIP 1.1.9: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-9",
-            "source_variables":[
-                "areacello",
-                "sftof",
-                "siconc",
-                "siconcbcs",
-                "tos",
-                "tosbcs"
-            ],
             "source_version":"1.1.9",
             "target_mip":"CMIP",
             "title":"PCMDI-AMIP 1.1.9 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "areacello",
+                    "sftof",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4514,12 +4400,11 @@
             "region":"",
             "source":"SSI/TSI from SATIRE_sf_ref_daily_v3.txt.gz (N.Krivova, pers. comm.); NRLSSI2_1882_2014d_00_GW67_15Sep15.txt,NRLSSI2_1610_2014a_00_GW67_7Oct15.txt, NRLSSI2_2015_2300a_GW67_RzREF_19Oct15.txt (J. Lean, pers. comm.); Ap, Kp, F10.7 from ftp.ngdc.noaa.gov, P-IPR from http://solarisheppa.geomar.de/solarisheppa/solarprotonfluxes, MEE-IPR from APEEP, GCR-IPR from CRII_CMIP6_Scenario1",
             "source_id":"SOLARIS-HEPPA-3-2",
-            "source_variables":"",
             "source_version":"3.2",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -4551,12 +4436,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-fu-prArctic-prAntarctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4588,12 +4472,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-fut2CAntarctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4625,12 +4508,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-fut2CArctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4662,12 +4544,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-fut2CArctic-2mAntarctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4699,12 +4580,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-fut2CBKSeas-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4736,12 +4616,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-fut2COkhotsk-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4773,12 +4652,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-pi-prArctic-prAntarctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4810,12 +4688,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.1 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-pi-prArctic-prAntarctic-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4847,12 +4724,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-piAntarctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4884,12 +4760,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-piArctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4921,12 +4796,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-preindustrial-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4958,12 +4832,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-present-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4995,12 +4868,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-present-197901-201412-Arctic-Antarctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -5032,12 +4904,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-present-197901-201412-clim-Arctic-Antarctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -5069,12 +4940,11 @@
             "region":"",
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-present-2mAntarctic-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -5106,12 +4976,11 @@
             "region":"",
             "source":"UColorado-RFMIP-0.4: Atmospheric conditions for off-line radiative transfer calculations sampled from ERA-Interim reanalysis",
             "source_id":"UColorado-RFMIP-0-4",
-            "source_variables":"",
             "source_version":"0.4",
             "target_mip":"RFMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5143,12 +5012,11 @@
             "region":"",
             "source":"UColorado-RFMIP-1.0: Atmospheric conditions for off-line radiative transfer calculations sampled from ERA-Interim reanalysis",
             "source_id":"UColorado-RFMIP-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"RFMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5180,12 +5048,11 @@
             "region":"",
             "source":"UColorado-RFMIP-1.1: Atmospheric conditions for off-line radiative transfer calculations sampled from ERA-Interim reanalysis",
             "source_id":"UColorado-RFMIP-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"RFMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5217,12 +5084,11 @@
             "region":"",
             "source":"UColorado-RFMIP-1.2: Atmospheric conditions for off-line radiative transfer calculations sampled from ERA-Interim reanalysis",
             "source_id":"UColorado-RFMIP-1-2",
-            "source_variables":"",
             "source_version":"1.2",
             "target_mip":"RFMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5254,20 +5120,19 @@
             "region":"",
             "source":"UKESM1-0-LL-ssp585-1-0 derived dataset computed from CMIP6 UKESM1-0-LL historical and ssp585 simulations for ISMIP6",
             "source_id":"UKESM1-0-LL-ssp585-1-0",
-            "source_variables":[
-                "acabf",
-                "evspsbl",
-                "mrros",
-                "pr",
-                "sftflf",
-                "so",
-                "ts"
-            ],
             "source_version":"1.0",
             "target_mip":"ISMIP6",
             "title":"ISMIP6 (CMIP6) - UKESM1-0-LL-ssp585-1-0 derived data prepared for input4MIPs",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7",
@@ -5299,12 +5164,11 @@
             "region":"",
             "source":"CCMI v1.0: merged ozone using WACCM and CMAM ozone simulations",
             "source_id":"UReading-CCMI-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5336,12 +5200,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp119 simulations (v1.0)",
             "source_id":"UReading-CCMI-ssp119-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5373,12 +5236,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp119 simulations (v1.1)",
             "source_id":"UReading-CCMI-ssp119-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5410,12 +5272,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp126 simulations (v1.0)",
             "source_id":"UReading-CCMI-ssp126-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5447,12 +5308,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp245 simulations (v1.0)",
             "source_id":"UReading-CCMI-ssp245-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5484,12 +5344,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp370 simulations (v1.0)",
             "source_id":"UReading-CCMI-ssp370-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5521,12 +5380,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp434 simulations (v1.0)",
             "source_id":"UReading-CCMI-ssp434-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5558,12 +5416,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp434 simulations (v1.1)",
             "source_id":"UReading-CCMI-ssp434-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5595,12 +5452,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp460 simulations (v1.0)",
             "source_id":"UReading-CCMI-ssp460-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5632,12 +5488,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp460 simulations (v1.1)",
             "source_id":"UReading-CCMI-ssp460-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5669,12 +5524,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp534os simulations (v1.0)",
             "source_id":"UReading-CCMI-ssp534os-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5706,12 +5560,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp534os simulations (v1.1)",
             "source_id":"UReading-CCMI-ssp534os-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5743,12 +5596,11 @@
             "region":"",
             "source":"CCMI merged ozone using WACCM and CMAM ozone ssp585 simulations (v1.0)",
             "source_id":"UReading-CCMI-ssp585-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5780,12 +5632,11 @@
             "region":"",
             "source":"UoM-AIM-ssp370-1-2-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-AIM-ssp370-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5817,12 +5668,11 @@
             "region":"",
             "source":"UoM-AIM-ssp370-1-2-1: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-AIM-ssp370-1-2-1",
-            "source_variables":"",
             "source_version":"1.2.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5854,12 +5704,11 @@
             "region":"",
             "source":"UoM-AIM-ssp370-lowNTCF-1-2-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-AIM-ssp370-lowNTCF-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"AerChemMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5891,12 +5740,11 @@
             "region":"",
             "source":"UoM-AIM-ssp370-lowNTCF-1-2-1: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-AIM-ssp370-lowNTCF-1-2-1",
-            "source_variables":"",
             "source_version":"1.2.1",
             "target_mip":"AerChemMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5928,12 +5776,11 @@
             "region":"",
             "source":"UoM-CMIP-1-2-0: Historical GHG mole fractions from NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.)",
             "source_id":"UoM-CMIP-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5965,12 +5812,11 @@
             "region":"",
             "source":"UoM-GCAM4-ssp434-1-2-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-GCAM4-ssp434-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6002,12 +5848,11 @@
             "region":"",
             "source":"UoM-GCAM4-ssp434-1-2-1: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-GCAM4-ssp434-1-2-1",
-            "source_variables":"",
             "source_version":"1.2.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6039,12 +5884,11 @@
             "region":"",
             "source":"UoM-GCAM4-ssp460-1-2-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-GCAM4-ssp460-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6076,12 +5920,11 @@
             "region":"",
             "source":"UoM-GCAM4-ssp460-1-2-1: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-GCAM4-ssp460-1-2-1",
-            "source_variables":"",
             "source_version":"1.2.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6113,12 +5956,11 @@
             "region":"",
             "source":"UoM-IMAGE-ssp119-1-2-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-IMAGE-ssp119-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6150,12 +5992,11 @@
             "region":"",
             "source":"UoM-IMAGE-ssp119-1-2-1: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-IMAGE-ssp119-1-2-1",
-            "source_variables":"",
             "source_version":"1.2.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6187,12 +6028,11 @@
             "region":"",
             "source":"UoM-IMAGE-ssp126-1-2-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-IMAGE-ssp126-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6224,12 +6064,11 @@
             "region":"",
             "source":"UoM-IMAGE-ssp126-1-2-1: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-IMAGE-ssp126-1-2-1",
-            "source_variables":"",
             "source_version":"1.2.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6261,12 +6100,11 @@
             "region":"",
             "source":"UoM-MESSAGE-GLOBIOM-ssp245-1-2-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-MESSAGE-GLOBIOM-ssp245-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6298,12 +6136,11 @@
             "region":"",
             "source":"UoM-MESSAGE-GLOBIOM-ssp245-1-2-1: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-MESSAGE-GLOBIOM-ssp245-1-2-1",
-            "source_variables":"",
             "source_version":"1.2.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6335,12 +6172,11 @@
             "region":"",
             "source":"UoM-REMIND-MAGPIE-ssp534-over-1-2-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-REMIND-MAGPIE-ssp534-over-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6372,12 +6208,11 @@
             "region":"",
             "source":"UoM-REMIND-MAGPIE-ssp534-over-1-2-1: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-REMIND-MAGPIE-ssp534-over-1-2-1",
-            "source_variables":"",
             "source_version":"1.2.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6409,12 +6244,11 @@
             "region":"",
             "source":"UoM-REMIND-MAGPIE-ssp585-1-2-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-REMIND-MAGPIE-ssp585-1-2-0",
-            "source_variables":"",
             "source_version":"1.2.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6446,12 +6280,11 @@
             "region":"",
             "source":"UoM-REMIND-MAGPIE-ssp585-1-2-1: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-REMIND-MAGPIE-ssp585-1-2-1",
-            "source_variables":"",
             "source_version":"1.2.1",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6483,12 +6316,11 @@
             "region":"",
             "source":"UoM-ssp126-1-1-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-ssp126-1-1-0",
-            "source_variables":"",
             "source_version":null,
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6520,12 +6352,11 @@
             "region":"",
             "source":"LUH2 v2.1h: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-2-1-h",
-            "source_variables":"",
             "source_version":"2.1h",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6557,12 +6388,11 @@
             "region":"",
             "source":"LUH2 v2.1f: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-AIM-ssp370-2-1-f",
-            "source_variables":"",
             "source_version":"2.1f",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6594,12 +6424,11 @@
             "region":"",
             "source":"LUH2 v2.1f: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-GCAM-ssp434-2-1-f",
-            "source_variables":"",
             "source_version":"2.1f",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6631,12 +6460,11 @@
             "region":"",
             "source":"LUH2 v2.1f: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-GCAM-ssp460-2-1-f",
-            "source_variables":"",
             "source_version":"2.1f",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6668,12 +6496,11 @@
             "region":"",
             "source":"LUH2 v2.1f: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-IMAGE-ssp119-2-1-f",
-            "source_variables":"",
             "source_version":"2.1f",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6705,12 +6532,11 @@
             "region":"",
             "source":"LUH2 v2.1e: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-IMAGE-ssp126-2-1-e",
-            "source_variables":"",
             "source_version":"2.1e",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6742,12 +6568,11 @@
             "region":"",
             "source":"LUH2 v2.1f: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-IMAGE-ssp126-2-1-f",
-            "source_variables":"",
             "source_version":"2.1f",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6779,12 +6604,11 @@
             "region":"",
             "source":"LUH2 v2.1e: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-MAGPIE-ssp534-2-1-e",
-            "source_variables":"",
             "source_version":"2.1e",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6816,12 +6640,11 @@
             "region":"",
             "source":"LUH2 v2.1f: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-MAGPIE-ssp534-2-1-f",
-            "source_variables":"",
             "source_version":"2.1f",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6853,12 +6676,11 @@
             "region":"",
             "source":"LUH2 v2.1e: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-MAGPIE-ssp585-2-1-e",
-            "source_variables":"",
             "source_version":"2.1e",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6890,12 +6712,11 @@
             "region":"",
             "source":"LUH2 v2.1f: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-MAGPIE-ssp585-2-1-f",
-            "source_variables":"",
             "source_version":"2.1f",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6927,12 +6748,11 @@
             "region":"",
             "source":"LUH2 v2.1f: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-MESSAGE-ssp245-2-1-f",
-            "source_variables":"",
             "source_version":"2.1f",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -6964,12 +6784,11 @@
             "region":"",
             "source":"LUH2 v2.1h-high: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-high-2-1-h",
-            "source_variables":"",
             "source_version":"high-2-1-h",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -7001,12 +6820,11 @@
             "region":"",
             "source":"LUH2 v2.1h-low: Land-Use Harmonization Data Set",
             "source_id":"UofMD-landState-low-2-1-h",
-            "source_variables":"",
             "source_version":"low-2-1-h",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -7038,12 +6856,11 @@
             "region":"",
             "source":"Global fire emissions from 1750-2014 based on GFED4s, FIRE-MIP, visibility-observations and GCD data. Datasource differs per region and year.",
             "source_id":"VUA-CMIP-BB4CMIP6-1-0",
-            "source_variables":"",
             "source_version":"1.0",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -7075,12 +6892,11 @@
             "region":"",
             "source":"Global fire emissions from 1750 through 2015 based on GFED4s, FIRE-MIP, visibility-observations and GCD data. Datasource differs per region and year.",
             "source_id":"VUA-CMIP-BB4CMIP6-1-1",
-            "source_variables":"",
             "source_version":"1.1",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -7112,12 +6928,11 @@
             "region":"",
             "source":"Global fire emissions from 1750 through 2015 based on GFED4s, FIRE-MIP, visibility-observations and GCD data. Datasource differs per region and year.",
             "source_id":"VUA-CMIP-BB4CMIP6-1-2",
-            "source_variables":"",
             "source_version":"1.2",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "dataProviderFreeEntry":null
+                "source_variables":null
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
