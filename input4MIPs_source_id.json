@@ -1282,6 +1282,43 @@
                 "xlink":"http://cera-www.dkrz.de/WDCC/meta/CMIP6/input4MIPs.CMIP6.DCPP.CNRM-Cerfacs.DCPP-C-ipv-1-1.ocean.fx.mask4resto-ipv.gn.20170123.json|Citation|citation"
             }
         },
+        "DRES-CMIP-BB4CMIP7-1-0":{
+            "_status":"Registered",
+            "contact":"Margreet.vanMarle@deltares.nl; guido.vanderwerf@wur.nl",
+            "dataset_category":"emissions",
+            "datetime_start":"1990-01-16",
+            "datetime_stop":"2022-12-16",
+            "frequency":"mon",
+            "further_info_url":"http://www.globalfiredata.org",
+            "grid_label":"gn",
+            "institution_id":"DRES",
+            "mip_era":"CMIP6Plus",
+            "nominal_resolution":"25 km",
+            "realm":"atmos",
+            "source":"Global fire emissions 1750 through 2022 based on GFED4s, FireMIP, visibility-observations, and GCD data. Data sources differ per region and year",
+            "source_id":"DRES-CMIP-BB4CMIP7-1-0",
+            "source_version":"1.0",
+            "target_mip":"CMIP",
+            "|dataProviderExtra":{
+                "comment":"Datasource for global fire emissions from 1750 through 2022 based on GFED4s, FireMIP, visibility-observations and GCD data",
+                "data_usage_tips":"Please check with the first year 1900 and last year 2022 annual global total emissions. Be careful to not double count deforestation carbon emissions. They are included in the estimates but several models also have deforestation carbon emissions based for example on historical deforestation rates",
+                "grid":"0.25x0.25 degree latitude x longitude",
+                "source_variables":""
+            },
+            "|dataProviderFile":{
+                "Conventions":"CF-1.7",
+                "creation_date":"",
+                "tracking_id":""
+            },
+            "|esgfIndex":{
+                "_timestamp":"",
+                "data_node":"",
+                "latest":"",
+                "replica":"",
+                "version":"",
+                "xlink":""
+            }
+        },
         "HadGEM2-ES-rcp85-1-0":{
             "_status":"Published",
             "contact":"ISMIP6 Steering Team (ismip6@gmail.com)",
