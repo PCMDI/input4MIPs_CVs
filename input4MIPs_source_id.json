@@ -5554,10 +5554,10 @@
         },
         "UReading-CCMI-1-0":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
             "datetime_start":"1850-01-01",
-            "datetime_stop":"1850-12-01",
+            "datetime_stop":"2014-12-01",
             "frequency":"monC",
             "further_info_url":"http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/",
             "grid_label":"gn",
@@ -5566,14 +5566,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI v1.0: merged ozone using WACCM and CMAM ozone simulations",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.0 merged ozone using WACCM and CMAM ozone simulations",
             "source_id":"UReading-CCMI-1-0",
             "source_version":"1.0",
             "target_mip":"CMIP",
-            "title":"",
+            "title":"UReading CCMI 1.0 CMIP6 merged ozone forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5591,7 +5596,7 @@
         },
         "UReading-CCMI-ssp119-1-0":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
             "datetime_start":"2015-01-16",
             "datetime_stop":"2100-12-16",
@@ -5603,14 +5608,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp119 simulations (v1.0)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.0 merged ozone using WACCM and CMAM ozone ssp119 simulations",
             "source_id":"UReading-CCMI-ssp119-1-0",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.0 CMIP6 merged ozone ssp119 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5628,9 +5638,9 @@
         },
         "UReading-CCMI-ssp119-1-1":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
-            "datetime_start":"2050-01-16",
+            "datetime_start":"2015-01-16",
             "datetime_stop":"2100-12-16",
             "frequency":"mon",
             "further_info_url":"http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/",
@@ -5640,14 +5650,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp119 simulations (v1.1)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.1 merged ozone using WACCM and CMAM ozone ssp119 simulations",
             "source_id":"UReading-CCMI-ssp119-1-1",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.1 CMIP6 merged ozone ssp119 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5665,10 +5680,10 @@
         },
         "UReading-CCMI-ssp126-1-0":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
             "datetime_start":"2015-01-16",
-            "datetime_stop":"2099-12-16",
+            "datetime_stop":"2100-12-16",
             "frequency":"mon",
             "further_info_url":"http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/",
             "grid_label":"gn",
@@ -5677,14 +5692,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp126 simulations (v1.0)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.0 merged ozone using WACCM and CMAM ozone ssp126 simulations",
             "source_id":"UReading-CCMI-ssp126-1-0",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.0 CMIP6 merged ozone ssp126 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5702,10 +5722,10 @@
         },
         "UReading-CCMI-ssp245-1-0":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
             "datetime_start":"2015-01-16",
-            "datetime_stop":"2099-12-16",
+            "datetime_stop":"2100-12-16",
             "frequency":"mon",
             "further_info_url":"http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/",
             "grid_label":"gn",
@@ -5714,14 +5734,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp245 simulations (v1.0)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.0 merged ozone using WACCM and CMAM ozone ssp245 simulations",
             "source_id":"UReading-CCMI-ssp245-1-0",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.0 CMIP6 merged ozone ssp245 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5739,10 +5764,10 @@
         },
         "UReading-CCMI-ssp370-1-0":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
             "datetime_start":"2015-01-16",
-            "datetime_stop":"2099-12-16",
+            "datetime_stop":"2100-12-16",
             "frequency":"mon",
             "further_info_url":"http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/",
             "grid_label":"gn",
@@ -5751,14 +5776,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp370 simulations (v1.0)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.0 merged ozone using WACCM and CMAM ozone ssp370 simulations",
             "source_id":"UReading-CCMI-ssp370-1-0",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.0 CMIP6 merged ozone ssp370 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5776,7 +5806,7 @@
         },
         "UReading-CCMI-ssp434-1-0":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
             "datetime_start":"2015-01-16",
             "datetime_stop":"2100-12-16",
@@ -5788,14 +5818,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp434 simulations (v1.0)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.0 merged ozone using WACCM and CMAM ozone ssp434 simulations",
             "source_id":"UReading-CCMI-ssp434-1-0",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.0 CMIP6 merged ozone ssp434 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5813,9 +5848,9 @@
         },
         "UReading-CCMI-ssp434-1-1":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
-            "datetime_start":"2050-01-16",
+            "datetime_start":"2015-01-16",
             "datetime_stop":"2100-12-16",
             "frequency":"mon",
             "further_info_url":"http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/",
@@ -5825,14 +5860,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp434 simulations (v1.1)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.1 merged ozone using WACCM and CMAM ozone ssp434 simulations",
             "source_id":"UReading-CCMI-ssp434-1-1",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.1 CMIP6 merged ozone ssp434 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5850,7 +5890,7 @@
         },
         "UReading-CCMI-ssp460-1-0":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
             "datetime_start":"2015-01-16",
             "datetime_stop":"2100-12-16",
@@ -5862,14 +5902,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp460 simulations (v1.0)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.0 merged ozone using WACCM and CMAM ozone ssp460 simulations",
             "source_id":"UReading-CCMI-ssp460-1-0",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.0 CMIP6 merged ozone ssp460 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5887,9 +5932,9 @@
         },
         "UReading-CCMI-ssp460-1-1":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
-            "datetime_start":"2050-01-16",
+            "datetime_start":"2015-01-16",
             "datetime_stop":"2100-12-16",
             "frequency":"mon",
             "further_info_url":"http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/",
@@ -5899,14 +5944,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp460 simulations (v1.1)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.1 merged ozone using WACCM and CMAM ozone ssp460 simulations",
             "source_id":"UReading-CCMI-ssp460-1-1",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.1 CMIP6 merged ozone ssp460 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5924,7 +5974,7 @@
         },
         "UReading-CCMI-ssp534os-1-0":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
             "datetime_start":"2015-01-16",
             "datetime_stop":"2100-12-16",
@@ -5936,14 +5986,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp534os simulations (v1.0)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.0 merged ozone using WACCM and CMAM ozone ssp534os simulations",
             "source_id":"UReading-CCMI-ssp534os-1-0",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.0 CMIP6 merged ozone ssp534os forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5961,9 +6016,9 @@
         },
         "UReading-CCMI-ssp534os-1-1":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
-            "datetime_start":"2050-01-16",
+            "datetime_start":"2015-01-16",
             "datetime_stop":"2100-12-16",
             "frequency":"mon",
             "further_info_url":"http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/",
@@ -5973,14 +6028,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp534os simulations (v1.1)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.1 merged ozone using WACCM and CMAM ozone ssp534os simulations",
             "source_id":"UReading-CCMI-ssp534os-1-1",
             "source_version":"1.1",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.1 CMIP6 merged ozone ssp534os forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5998,10 +6058,10 @@
         },
         "UReading-CCMI-ssp585-1-0":{
             "_status":"Published",
-            "contact":"Michaela Hegglin (m.i.hegglin@reading.ac.uk)",
+            "contact":"m.i.hegglin@fz-juelich.de",
             "dataset_category":"ozone",
             "datetime_start":"2015-01-16",
-            "datetime_stop":"2099-12-16",
+            "datetime_stop":"2100-12-16",
             "frequency":"mon",
             "further_info_url":"http://blogs.reading.ac.uk/ccmi/forcing-databases-in-support-of-cmip6/",
             "grid_label":"gn",
@@ -6010,14 +6070,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"CCMI merged ozone using WACCM and CMAM ozone ssp585 simulations (v1.0)",
+            "region":[
+                "global"
+            ],
+            "source":"UReading CCMI 1.0 merged ozone using WACCM and CMAM ozone ssp585 simulations",
             "source_id":"UReading-CCMI-ssp585-1-0",
             "source_version":"1.0",
             "target_mip":"ScenarioMIP",
-            "title":"",
+            "title":"UReading CCMI 1.0 CMIP6 merged ozone ssp585 forcing",
             "|dataProviderExtra":{
-                "source_variables":null
+                "reference":"Checa-Garcia, R., 2018: CMIP6 Ozone forcing dataset: supporting information (Initial), Zenodo, 54 pp. doi: https://doi.org/10.5281/zenodo.1135127",
+                "source_variables":[
+                    "vmro3"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
