@@ -1150,6 +1150,7 @@
             "source_id":"CR-CMIP-0-2-0",
             "source_version":"0.2.0",
             "target_mip":"CMIP",
+            "title":"Climate Resource CMIP 0.2.0 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
                 "source_variables":""
             },
@@ -1308,6 +1309,7 @@
             "source_id":"DRES-CMIP-BB4CMIP7-1-0",
             "source_version":"1.0",
             "target_mip":"CMIP",
+            "title":"Deltares CMIP BB4CMIP7 1.0 global fire emissions",
             "|dataProviderExtra":{
                 "comment":"Datasource for global fire emissions from 1750 through 2022 based on GFED4s, FireMIP, visibility-observations and GCD data",
                 "data_usage_tips":"Please check with the first year 1900 and last year 2022 annual global total emissions. Be careful to not double count deforestation carbon emissions. They are included in the estimates but several models also have deforestation carbon emissions based for example on historical deforestation rates",
@@ -4663,6 +4665,7 @@
             "source_id":"PCMDI-AMIP-ERSST5-1-0",
             "source_version":"1.0",
             "target_mip":"Prototype",
+            "title":"PCMDI-AMIP ERSST5 1.0 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
                 "comment":"Prototype dataset for the evaluation of SST forcing uncertainty over the satellite era - not for production use",
                 "data_usage_tips":"This dataset has been generated for evaluation purposes only - not for production use in CMIP7 simulations",
@@ -4707,6 +4710,7 @@
             "source_id":"PCMDI-AMIP-Had1p1-1-0",
             "source_version":"1.0",
             "target_mip":"Prototype",
+            "title":"PCMDI-AMIP Had-1.1 1.0 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
                 "comment":"Prototype dataset for the evaluation of SST forcing uncertainty over the satellite era - not for production use",
                 "data_usage_tips":"This dataset has been generated for evaluation purposes only - not for production use in CMIP7 simulations",
@@ -4751,6 +4755,7 @@
             "source_id":"PCMDI-AMIP-OI2p1-1-0",
             "source_version":"1.0",
             "target_mip":"Prototype",
+            "title":"PCMDI-AMIP OI-2.1 1.0 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
                 "comment":"Prototype dataset for the evaluation of SST forcing uncertainty over the satellite era - not for production use",
                 "data_usage_tips":"This dataset has been generated for evaluation purposes only - not for production use in CMIP7 simulations",
@@ -4846,6 +4851,7 @@
             "source_id":"SOLARIS-HEPPA-CMIP-4-1",
             "source_version":"4.1",
             "target_mip":"CMIP",
+            "title":"SOLARIS HEPPA CMIP 4.1 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
                 "contributor_names":"Bernd Funke, Timo Asikainen, Stefan Bender, Odele Coddington, Thierry Dudok de Wit, Illaria Ermolli, Margit Haberreiter, Doug Kinnison, Judith Lean, Sergey Koldoboskiy, Daniel R. Marsh, Hilde Nesse, Annika Seppaelae, Miriam Sinnhuber, Ilya Usoskin, Max van de Kamp, Pekka T. Verronen",
                 "metadata_url":"see http://solarisheppa.geomar.de/solarisheppa/sites/default/files/data/cmip7/CMIP7_metadata_description_4.1.pdf",
