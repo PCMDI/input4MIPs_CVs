@@ -4156,26 +4156,37 @@
         },
         "PCMDI-AMIP-1-1-0":{
             "_status":"Published",
-            "contact":"PCMDI (pcmdi-cmip@lists.llnl.gov)",
+            "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
             "dataset_category":"SSTsAndSeaIce",
             "datetime_start":"1870-01-16",
             "datetime_stop":"2015-12-16",
             "frequency":"mon",
-            "further_info_url":"http://www-pcmdi.llnl.gov/projects/amip/AMIP2EXPDSN/BCS/amip2bcs.php",
+            "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
             "grid_label":"gn",
             "institution_id":"PCMDI",
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
-            "realm":"ocean",
-            "region":"",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
+            "region":[
+                "global_ocean"
+            ],
             "source":"PCMDI-AMIP 1.1.0: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-0",
             "source_version":"1.1.0",
             "target_mip":"CMIP",
-            "title":"",
+            "title":"PCMDI-AMIP 1.1.0 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "areacello",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.0",
@@ -4193,26 +4204,37 @@
         },
         "PCMDI-AMIP-1-1-1":{
             "_status":"Published",
-            "contact":"PCMDI (pcmdi-cmip@lists.llnl.gov)",
+            "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
             "dataset_category":"SSTsAndSeaIce",
             "datetime_start":"1870-01-16",
             "datetime_stop":"2016-06-16",
             "frequency":"mon",
-            "further_info_url":"http://www-pcmdi.llnl.gov/projects/amip/AMIP2EXPDSN/BCS/amip2bcs.php",
+            "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
             "grid_label":"gn",
             "institution_id":"PCMDI",
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
-            "realm":"ocean",
-            "region":"",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
+            "region":[
+                "global_ocean"
+            ],
             "source":"PCMDI-AMIP 1.1.1: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-1",
             "source_version":"1.1.1",
             "target_mip":"CMIP",
-            "title":"",
+            "title":"PCMDI-AMIP 1.1.1 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "areacello",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.0",
@@ -4232,8 +4254,8 @@
             "_status":"Published",
             "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
             "dataset_category":"SSTsAndSeaIce",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"1870-01-16",
+            "datetime_stop":"2016-12-16",
             "frequency":"fx",
             "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
             "grid_label":"gn",
@@ -4241,15 +4263,27 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
-            "realm":"ocean",
-            "region":"",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
+            "region":[
+                "global_ocean"
+            ],
             "source":"PCMDI-AMIP 1.1.2: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-2",
             "source_version":"1.1.2",
             "target_mip":"CMIP",
-            "title":"",
+            "title":"PCMDI-AMIP 1.1.2 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "areacello",
+                    "sftof",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.0",
@@ -4269,8 +4303,8 @@
             "_status":"Published",
             "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
             "dataset_category":"SSTsAndSeaIce",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"1870-01-16",
+            "datetime_stop":"2017-06-16",
             "frequency":"fx",
             "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
             "grid_label":"gn",
@@ -4278,15 +4312,27 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
-            "realm":"ocean",
-            "region":"",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
+            "region":[
+                "global_ocean"
+            ],
             "source":"PCMDI-AMIP 1.1.3: Merged SST based on UK MetOffice HadISST and NCEP OI2",
             "source_id":"PCMDI-AMIP-1-1-3",
             "source_version":"1.1.3",
             "target_mip":"CMIP",
-            "title":"",
+            "title":"PCMDI-AMIP 1.1.3 dataset prepared for input4MIPs",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "areacello",
+                    "sftof",
+                    "siconc",
+                    "siconcbcs",
+                    "tos",
+                    "tosbcs"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -4306,8 +4352,8 @@
             "_status":"Published",
             "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
             "dataset_category":"SSTsAndSeaIce",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"1870-01-16",
+            "datetime_stop":"2017-12-16",
             "frequency":"fx",
             "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
             "grid_label":"gn",
@@ -4315,7 +4361,10 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
-            "realm":"ocean",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
             "region":[
                 "global_ocean"
             ],
@@ -4361,7 +4410,10 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
-            "realm":"seaIce",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
             "region":[
                 "global_ocean"
             ],
@@ -4407,7 +4459,10 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
-            "realm":"seaIce",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
             "region":[
                 "global_ocean"
             ],
@@ -4445,7 +4500,7 @@
             "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
             "dataset_category":"SSTsAndSeaIce",
             "datetime_start":"1870-01-16",
-            "datetime_stop":null,
+            "datetime_stop":"2021-06-16",
             "frequency":"mon",
             "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
             "grid_label":"gn",
@@ -4453,7 +4508,10 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
-            "realm":"seaIce",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
             "region":[
                 "global_ocean"
             ],
@@ -4491,7 +4549,7 @@
             "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
             "dataset_category":"SSTsAndSeaIce",
             "datetime_start":"1870-01-16",
-            "datetime_stop":null,
+            "datetime_stop":"2021-12-16",
             "frequency":"mon",
             "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
             "grid_label":"gn",
@@ -4499,7 +4557,10 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
-            "realm":"seaIce",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
             "region":[
                 "global_ocean"
             ],
@@ -4537,7 +4598,7 @@
             "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
             "dataset_category":"SSTsAndSeaIce",
             "datetime_start":"1870-01-16",
-            "datetime_stop":null,
+            "datetime_stop":"2022-12-16",
             "frequency":"mon",
             "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
             "grid_label":"gn",
@@ -4545,7 +4606,10 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6Plus",
             "nominal_resolution":"1x1 degree",
-            "realm":"seaIce",
+            "realm":[
+                "ocean",
+                "seaIce"
+            ],
             "region":[
                 "global_ocean"
             ],
