@@ -1129,6 +1129,40 @@
                 "xlink":"http://cera-www.dkrz.de/WDCC/meta/CMIP6/input4MIPs.CMIP6.ISMIP6.NASA-GSFC.CNRM-ESM2-1-ssp585-1-0.landIce.yrC.mrro.gra.v20210422.json|Citation|citation"
             }
         },
+        "CR-CMIP-0-2-0":{
+            "_status":"Registered",
+            "contact":"zebedee.nicholls@climate-resource.com; malte.meinshausen@climate-resource.com",
+            "dataset_category":"GHGConcentrations",
+            "datetime_start":"0001-01-15",
+            "datetime_stop":"2022-12-15",
+            "frequency":"mon",
+            "further_info_url":"https://www.climate-resource.com/",
+            "grid_label":"gm",
+            "institution_id":"CR",
+            "mip_era":"CMIP6Plus",
+            "nominal_resolution":"10000 km",
+            "realm":"atmos",
+            "source":"Global greenhouse gas concentrations 0001 through 2022 based on NOAA/AGAGE/GAGE data",
+            "source_id":"CR-CMIP-0-2-0",
+            "source_version":"0.2.0",
+            "target_mip":"CMIP",
+            "|dataProviderExtra":{
+                "source_variables":""
+            },
+            "|dataProviderFile":{
+                "Conventions":"",
+                "creation_date":"",
+                "tracking_id":""
+            },
+            "|esgfIndex":{
+                "_timestamp":"",
+                "data_node":"",
+                "latest":"",
+                "replica":"",
+                "version":"",
+                "xlink":""
+            }
+        },
         "CSIRO-MK3-6-0-rcp85-1-0":{
             "_status":"Published",
             "contact":"ISMIP6 Steering Team (ismip6@gmail.com)",
