@@ -3253,8 +3253,8 @@
             "_status":"Published",
             "contact":"Stephanie Fiedler (stephanie.fiedler@mpimet.mpg.de)",
             "dataset_category":"aerosolProperties",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"1850-01-01",
+            "datetime_stop":"2100-12-31",
             "frequency":"yr",
             "further_info_url":"https://doi.org/10.5194/gmd-2016-189",
             "grid_label":"none",
@@ -3263,14 +3263,18 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"10000 km",
             "realm":"atmos",
-            "region":"",
+            "region":[
+                "global"
+            ],
             "source":"MACv2-SP-1.0 parameterization developed at MPI-M",
             "source_id":"MPI-M-MACv2-SP-1-0",
             "source_version":"1.0",
-            "target_mip":null,
+            "target_mip":"RFMIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "multiple"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -5362,8 +5366,8 @@
             "_status":"Published",
             "contact":"Yannick Peings (ypeings@uci.edu)",
             "dataset_category":"SSTsAndSeaIce",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"1979-01-16",
+            "datetime_stop":"2014-12-16",
             "frequency":"mon",
             "further_info_url":"https://www.wcrp-climate.org/modelling-wgcm-mip-catalogue/cmip6-endorsed-mips-article/1303-modelling-cmip6-pamip",
             "grid_label":"gn",
@@ -5372,14 +5376,18 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"1x1 degree",
             "realm":"ocean",
-            "region":"",
+            "region":[
+                "global"
+            ],
             "source":"UCI-PAMIP v1.0 SST, sea-ice concentration and sea-ice thickness climatologies",
             "source_id":"UCI-present-1-0",
             "source_version":"1.0",
             "target_mip":"PAMIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "siconc"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.7 CMIP-6.2",
@@ -5510,8 +5518,8 @@
             "_status":"Published",
             "contact":"Robert.Pincus@colorado.edu",
             "dataset_category":"radiation",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2014-01-01",
+            "datetime_stop":"2014-12-31",
             "frequency":"fx",
             "further_info_url":"https://www.earthsystemcog.org/projects/rfmip/",
             "grid_label":"none",
@@ -5547,8 +5555,8 @@
             "_status":"Published",
             "contact":"Robert.Pincus@colorado.edu",
             "dataset_category":"radiation",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2014-01-01",
+            "datetime_stop":"2014-12-31",
             "frequency":"fx",
             "further_info_url":"https://www.earthsystemcog.org/projects/rfmip/",
             "grid_label":"none",
@@ -5584,8 +5592,8 @@
             "_status":"Published",
             "contact":"Robert.Pincus@colorado.edu",
             "dataset_category":"radiation",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2014-01-01",
+            "datetime_stop":"2014-12-31",
             "frequency":"fx",
             "further_info_url":"https://www.earthsystemcog.org/projects/rfmip/",
             "grid_label":"none",
@@ -5621,8 +5629,8 @@
             "_status":"Published",
             "contact":"Robert.Pincus@colorado.edu",
             "dataset_category":"radiation",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2014-01-01",
+            "datetime_stop":"2014-12-31",
             "frequency":"fx",
             "further_info_url":"https://www.earthsystemcog.org/projects/rfmip/",
             "grid_label":"none",
@@ -6950,26 +6958,33 @@
         },
         "UoM-ssp126-1-1-0":{
             "_status":"Published",
-            "contact":null,
-            "dataset_category":null,
+            "contact":"malte.meinshausen@unimelb.edu.au",
+            "dataset_category":"GHGConcentrations",
             "datetime_start":"2015-01-16",
             "datetime_stop":"2500-12-16",
-            "frequency":"mon",
-            "further_info_url":null,
+            "frequency":[
+                "mon",
+                "yr"
+            ],
+            "further_info_url":"http://climatecollege.unimelb.edu.au/cmip6",
             "grid_label":"gn",
             "institution_id":"UoM",
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
-            "nominal_resolution":null,
+            "nominal_resolution":"10000 km",
             "realm":"atmos",
-            "region":"",
+            "region":[
+                "global"
+            ],
             "source":"UoM-ssp126-1-1-0: GHG mole fractions from (historical) NOAA & AGAGE networks and many others contributors (see references in Meinshausen et al.). Future GHG concentrations modelled with MAGICC7.0.",
             "source_id":"UoM-ssp126-1-1-0",
-            "source_version":null,
+            "source_version":"1.1.0",
             "target_mip":"ScenarioMIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "multiple"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
