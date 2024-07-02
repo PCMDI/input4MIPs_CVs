@@ -2559,7 +2559,9 @@
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "delta13co2_in_air"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2596,7 +2598,9 @@
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "Delta14co2_in_air"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2616,8 +2620,8 @@
             "_status":"Published",
             "contact":"h.graven@imperial.ac.uk",
             "dataset_category":"atmosphericState",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2015-01-01",
+            "datetime_stop":"2100-01-01",
             "frequency":"yr",
             "further_info_url":"http://c4mip.net",
             "grid_label":"gm",
@@ -2626,14 +2630,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"10000 km",
             "realm":"atmos",
-            "region":"",
+            "region":[
+                "global"
+            ],
             "source":"Imperial College 1.0: Delta14co2 in air",
             "source_id":"ImperialCollege-AIM-ssp370-1-0",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "delta13co2_in_air",
+                    "Delta14co2_in_air"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2653,8 +2662,8 @@
             "_status":"Published",
             "contact":"h.graven@imperial.ac.uk",
             "dataset_category":"atmosphericState",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2015-01-01",
+            "datetime_stop":"2100-01-01",
             "frequency":"yr",
             "further_info_url":"http://c4mip.net",
             "grid_label":"gm",
@@ -2663,14 +2672,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"10000 km",
             "realm":"atmos",
-            "region":"",
+            "region":[
+                "global"
+            ],
             "source":"Imperial College 1.0: Delta14co2 in air",
             "source_id":"ImperialCollege-GLOBIOM-ssp245-1-0",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "delta13co2_in_air",
+                    "Delta14co2_in_air"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2690,8 +2704,8 @@
             "_status":"Published",
             "contact":"h.graven@imperial.ac.uk",
             "dataset_category":"atmosphericState",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2015-01-01",
+            "datetime_stop":"2100-01-01",
             "frequency":"yr",
             "further_info_url":"http://c4mip.net",
             "grid_label":"gm",
@@ -2700,14 +2714,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"10000 km",
             "realm":"atmos",
-            "region":"",
+            "region":[
+                "global"
+            ],
             "source":"Imperial College 1.0: delta13co2 in air",
             "source_id":"ImperialCollege-IMAGE-ssp119-1-0",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "delta13co2_in_air",
+                    "Delta14co2_in_air"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2727,8 +2746,8 @@
             "_status":"Published",
             "contact":"h.graven@imperial.ac.uk",
             "dataset_category":"atmosphericState",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2015-01-01",
+            "datetime_stop":"2100-01-01",
             "frequency":"yr",
             "further_info_url":"http://c4mip.net",
             "grid_label":"gm",
@@ -2737,14 +2756,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"10000 km",
             "realm":"atmos",
-            "region":"",
+            "region":[
+                "global"
+            ],
             "source":"Imperial College 1.0: Delta14co2 in air",
             "source_id":"ImperialCollege-IMAGE-ssp126-1-0",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "delta13co2_in_air",
+                    "Delta14co2_in_air"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2764,8 +2788,8 @@
             "_status":"Published",
             "contact":"h.graven@imperial.ac.uk",
             "dataset_category":"atmosphericState",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2015-01-01",
+            "datetime_stop":"2100-01-01",
             "frequency":"yr",
             "further_info_url":"http://c4mip.net",
             "grid_label":"gm",
@@ -2774,14 +2798,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"10000 km",
             "realm":"atmos",
-            "region":"",
+            "region":[
+                "global"
+            ],
             "source":"Imperial College 1.0: Delta14co2 in air",
             "source_id":"ImperialCollege-REMIND-MAGPIE-ssp534os-1-0",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "delta13co2_in_air",
+                    "Delta14co2_in_air"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -2801,8 +2830,8 @@
             "_status":"Published",
             "contact":"h.graven@imperial.ac.uk",
             "dataset_category":"atmosphericState",
-            "datetime_start":null,
-            "datetime_stop":null,
+            "datetime_start":"2015-01-01",
+            "datetime_stop":"2100-01-01",
             "frequency":"yr",
             "further_info_url":"http://c4mip.net",
             "grid_label":"gm",
@@ -2811,14 +2840,19 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"10000 km",
             "realm":"atmos",
-            "region":"",
+            "region":[
+                "global"
+            ],
             "source":"Imperial College 1.0: delta13co2 in air",
             "source_id":"ImperialCollege-REMIND-MAGPIE-ssp585-1-0",
             "source_version":"1.0",
             "target_mip":"C4MIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "delta13co2_in_air",
+                    "Delta14co2_in_air"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -3240,8 +3274,8 @@
             "_status":"Published",
             "contact":"Hiroyuki Tsujino (htsujino@mri-jma.go.jp)",
             "dataset_category":"atmosphericState",
-            "datetime_start":"1958-01-01",
-            "datetime_stop":"2018-02-02",
+            "datetime_start":null,
+            "datetime_stop":null,
             "frequency":"fx",
             "further_info_url":"http://jra.kishou.go.jp/JRA-55/index_en.html",
             "grid_label":"gn",
@@ -3249,12 +3283,7 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"50 km",
-            "realm":[
-                "atmos",
-                "landIce",
-                "ocean",
-                "seaIce"
-            ],
+            "realm":"ocean",
             "region":"",
             "source":"MRI JRA55-do 1.3: Atmospheric state generated for OMIP based on the JRA-55 reanalysis",
             "source_id":"MRI-JRA55-do-1-3",
@@ -3282,8 +3311,8 @@
             "_status":"Published",
             "contact":"Hiroyuki Tsujino (htsujino@mri-jma.go.jp)",
             "dataset_category":"atmosphericState",
-            "datetime_start":"1958-01-01",
-            "datetime_stop":"2019-01-05",
+            "datetime_start":null,
+            "datetime_stop":null,
             "frequency":"fx",
             "further_info_url":"http://climate.mri-jma.go.jp/~htsujino/jra55do.html",
             "grid_label":"gr",
@@ -3291,11 +3320,7 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"25 km",
-            "realm":[
-                "land",
-                "landIce",
-                "ocean"
-            ],
+            "realm":"ocean",
             "region":[
                 "global_ocean"
             ],
@@ -3345,8 +3370,8 @@
             "_status":"Published",
             "contact":"Hiroyuki Tsujino (htsujino@mri-jma.go.jp)",
             "dataset_category":"atmosphericState",
-            "datetime_start":"1958-01-01",
-            "datetime_stop":"2019-01-05",
+            "datetime_start":null,
+            "datetime_stop":null,
             "frequency":"fx",
             "further_info_url":"http://climate.mri-jma.go.jp/~htsujino/jra55do.html",
             "grid_label":"gr",
@@ -3354,13 +3379,7 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"50 km",
-            "realm":[
-                "atmos",
-                "land",
-                "landIce",
-                "ocean",
-                "seaIce"
-            ],
+            "realm":"atmos",
             "region":[
                 "global_ocean"
             ],
@@ -3411,7 +3430,7 @@
             "contact":"Hiroyuki Tsujino (htsujino@mri-jma.go.jp)",
             "dataset_category":"atmosphericState",
             "datetime_start":"1958-01-01",
-            "datetime_stop":"2020-07-15",
+            "datetime_stop":null,
             "frequency":"day",
             "further_info_url":"http://climate.mri-jma.go.jp/~htsujino/jra55do.html",
             "grid_label":"gn",
@@ -3419,13 +3438,7 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
             "nominal_resolution":"25 km",
-            "realm":[
-                "atmos",
-                "land",
-                "landIce",
-                "ocean",
-                "seaIce"
-            ],
+            "realm":"ocean",
             "region":[
                 "global_ocean"
             ],
@@ -3476,7 +3489,7 @@
             "contact":"Hiroyuki Tsujino (htsujino@mri-jma.go.jp)",
             "dataset_category":"atmosphericState",
             "datetime_start":"1958-01-01",
-            "datetime_stop":"2024-02-01",
+            "datetime_stop":null,
             "frequency":"3hr",
             "further_info_url":"https://climate.mri-jma.go.jp/pub/ocean/JRA55-do/index.html",
             "grid_label":"gr",
@@ -3484,13 +3497,7 @@
             "license":"CC BY 4.0",
             "mip_era":"CMIP6Plus",
             "nominal_resolution":"50 km",
-            "realm":[
-                "atmos",
-                "land",
-                "landIce",
-                "ocean",
-                "seaIce"
-            ],
+            "realm":"atmos",
             "region":[
                 "global_ocean"
             ],
