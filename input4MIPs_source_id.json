@@ -7293,7 +7293,7 @@
         },
         "VUA-CMIP-BB4CMIP6-1-0":{
             "_status":"Published",
-            "contact":"guido.vander.werf@vu.nl, m.j.e.van.marle@vu.nl",
+            "contact":"guido.vander.werf@vu.nl; m.j.e.van.marle@vu.nl",
             "dataset_category":"emissions",
             "datetime_start":"1750-01-16",
             "datetime_stop":"2015-12-16",
@@ -7305,14 +7305,18 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"25 km",
             "realm":"atmos",
-            "region":"",
-            "source":"Global fire emissions from 1750-2014 based on GFED4s, FIRE-MIP, visibility-observations and GCD data. Datasource differs per region and year.",
+            "region":[
+                "global"
+            ],
+            "source":"Global fire emissions from 1750 through 2015 based on GFED4s, FireMIP, visibility-observations and GCD data. Data sources differ per region and year",
             "source_id":"VUA-CMIP-BB4CMIP6-1-0",
             "source_version":"1.0",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "multiple"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -7330,7 +7334,7 @@
         },
         "VUA-CMIP-BB4CMIP6-1-1":{
             "_status":"Published",
-            "contact":"guido.vander.werf@vu.nl, m.j.e.van.marle@vu.nl",
+            "contact":"guido.vander.werf@vu.nl; m.j.e.van.marle@vu.nl",
             "dataset_category":"emissions",
             "datetime_start":"1750-01-16",
             "datetime_stop":"2015-12-16",
@@ -7342,14 +7346,18 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"25 km",
             "realm":"atmos",
-            "region":"",
-            "source":"Global fire emissions from 1750 through 2015 based on GFED4s, FIRE-MIP, visibility-observations and GCD data. Datasource differs per region and year.",
+            "region":[
+                "global"
+            ],
+            "source":"Global fire emissions from 1750 through 2015 based on GFED4s, FireMIP, visibility-observations and GCD data. Data sources differ per region and year",
             "source_id":"VUA-CMIP-BB4CMIP6-1-1",
             "source_version":"1.1",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "multiple"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -7367,7 +7375,7 @@
         },
         "VUA-CMIP-BB4CMIP6-1-2":{
             "_status":"Published",
-            "contact":"guido.vander.werf@vu.nl, m.j.e.van.marle@vu.nl",
+            "contact":"guido.vander.werf@vu.nl; m.j.e.van.marle@vu.nl",
             "dataset_category":"emissions",
             "datetime_start":"1750-01-16",
             "datetime_stop":"2015-12-16",
@@ -7379,14 +7387,18 @@
             "mip_era":"CMIP6",
             "nominal_resolution":"25 km",
             "realm":"atmos",
-            "region":"",
-            "source":"Global fire emissions from 1750 through 2015 based on GFED4s, FIRE-MIP, visibility-observations and GCD data. Datasource differs per region and year.",
+            "region":[
+                "global"
+            ],
+            "source":"Global fire emissions from 1750 through 2015 based on GFED4s, FireMIP, visibility-observations and GCD data. Data sources differ per region and year",
             "source_id":"VUA-CMIP-BB4CMIP6-1-2",
             "source_version":"1.2",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "source_variables":[
+                    "multiple"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
