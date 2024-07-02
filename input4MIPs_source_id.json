@@ -1139,6 +1139,7 @@
             "further_info_url":"https://www.climate-resource.com/",
             "grid_label":"gm",
             "institution_id":"CR",
+            "license":"CC BY 4.0",
             "mip_era":"CMIP6Plus",
             "nominal_resolution":"10000 km",
             "realm":"atmos",
@@ -1151,6 +1152,7 @@
             },
             "|dataProviderFile":{
                 "Conventions":"",
+                "comment":"[TBC which grant] Data produced by Climate Resource supported by funding from the CMIP IPO (Coupled Model Intercomparison Project International Project Office). This is an interim dataset, not for production use",
                 "creation_date":"",
                 "tracking_id":""
             },
@@ -1292,6 +1294,7 @@
             "further_info_url":"http://www.globalfiredata.org",
             "grid_label":"gn",
             "institution_id":"DRES",
+            "license":"CC BY 4.0",
             "mip_era":"CMIP6Plus",
             "nominal_resolution":"25 km",
             "realm":"atmos",
@@ -4567,6 +4570,47 @@
                 "replica":false,
                 "version":"20230512",
                 "xlink":"http://cera-www.dkrz.de/WDCC/meta/CMIP6/input4MIPs.CMIP6Plus.CMIP.PCMDI.PCMDI-AMIP-1-1-9.seaIce.mon.siconc.gn.v20230512.json|Citation|citation"
+            }
+        },
+        "PCMDI-AMIP-OI2p1-1-0":{
+            "_status":"Registered",
+            "contact":"zelinka1@llnl.gov; durack1@llnl.gov",
+            "dataset_category":"SSTsAndSeaIce",
+            "datetime_start":"1982-01-16",
+            "datetime_stop":"2024-06-16",
+            "frequency":"mon",
+            "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
+            "grid_label":"gn",
+            "institution_id":"PCMDI",
+            "license":"CC BY 4.0",
+            "mip_era":"CMIP6Plus",
+            "nominal_resolution":"1x1 degree",
+            "realm":"ocean",
+            "source":"PCMDI-AMIP OI-2.1 1.0: Merged SST based on UK MetOffice HadISST and NCEP OI2.1",
+            "source_id":"PCMDI-AMIP-OI2p1-1-0",
+            "source_version":"1.0",
+            "target_mip":"Prototype",
+            "|dataProviderExtra":{
+                "comment":"Prototype dataset for the evaluation of SST forcing uncertainty over the satellite era - not for production use",
+                "data_usage_tips":"This dataset has been generated for evaluation purposes only - not for production use in CMIP7 simulations",
+                "grid":"0.25x0.25 degree latitude x longitude",
+                "source_variables":[
+                    "tos",
+                    "tosbcs"
+                ]
+            },
+            "|dataProviderFile":{
+                "Conventions":"CF-1.7",
+                "creation_date":"",
+                "tracking_id":""
+            },
+            "|esgfIndex":{
+                "_timestamp":"",
+                "data_node":"",
+                "latest":"",
+                "replica":"",
+                "version":"",
+                "xlink":""
             }
         },
         "SOLARIS-HEPPA-3-2":{

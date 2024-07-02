@@ -34,6 +34,9 @@
             "LESFMIP":{
                 "URL":"https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
                 "long_name":"The Large Ensemble Single Forcing Model Intercomparison Project"
+            },
+            "Prototype":{
+                "long_name":"MIP identity to capture all prototype datasets collected for uncertainty exploration - not for CMIP production use"
             }
         }
     }
