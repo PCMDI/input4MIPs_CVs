@@ -2,12 +2,14 @@
 
 """
 To run conversion:
-(base) ml-9953350:src durack1$ python jsonToHtml.py 6.5.0.0
+(base) ml-9953350:src durack1$ python jsonToHtml.py 6.5.0
 
 """
 """2023
 PJD 29 Nov 2023 - copied from https://github.com/WCRP-CMIP/CMIP6_CVs/blob/138a089499cd2a9418186fb27cd184063f2d34da/src/jsonToHtml.py
 PJD 29 Nov 2023 - first prototype completes
+PJD  2 Jul 2024 - update with x.y.z versioning
+PJD  2 Jul 2024 - update to deal with new source_id formats and information
 """
 
 # This script takes the json file and turns it into a nice jquery/data-tabled html doc
@@ -42,15 +44,15 @@ $(document).ready( function () {
 </script>\n"""
 
 # %% Argparse extract
-# Matching version format 6.2.11.2
+# Matching version format 6.5.1
 # verTest = re.compile(r'[6][.][2][.][0-9]+[.][0-9]+')
-verTest = re.compile(r"[6][.][5][.][0-9]+[.][0-9]")
+verTest = re.compile(r"[6][.][5][.][0-9]")
 parser = argparse.ArgumentParser()
 parser.add_argument(
     "ver",
     metavar="str",
     type=str,
-    help="For e.g. '6.2.11.2' as a command line argument will ensure version information is written to the html output",
+    help="For e.g. '6.5.1' as a command line argument will ensure version information is written to the html output",
 )
 argDict = parser.parse_args()
 if re.search(verTest, argDict.ver):
@@ -94,28 +96,57 @@ fo.write(
 """
 ../input4MIPs_source_id.json
 "ACCESS1-3-rcp85-1-0":{
-    "_timestamp":"2021-04-22T19:05:37.327Z",
-    "contact":"ISMIP6 Steering Team (ismip6@gmail.com)",
-    "data_node":"esgf-data2.llnl.gov",
-    "dataset_category":"surfaceFluxes",
-    "datetime_start":"1950-07-01T00:00:00Z",
-    "datetime_stop":null,
-    "frequency":"yrC",
-    "institution_id":"NASA-GSFC",
-    "latest":true,
-    "mip_era":"CMIP6",
-    "realm":"landIce",
-    "replica":false,
-    "source_id":"ACCESS1-3-rcp85-1-0",
-    "source_version":"1.0",
-    "target_mip":"ISMIP6",
-    "version":"20210422",
-    "xlink":"http://cera-www.dkrz.de/WDCC/meta/CMIP6/input4MIPs.CMIP6.ISMIP6.NASA-GSFC.ACCESS1-3-rcp85-1-0.ocean.yrC.thetao.grg.v20210422.json|Citation|citation"
+            "_status":"Published",
+            "contact":"ISMIP6 Steering Team (ismip6@gmail.com)",
+            "dataset_category":"surfaceFluxes",
+            "datetime_start":"1950-07-01",
+            "datetime_stop":null,
+            "frequency":"yrC",
+            "further_info_url":"http://www.climate-cryosphere.org/wiki/index.php?title=ISMIP6_wiki_page",
+            "grid_label":"grg",
+            "institution_id":"NASA-GSFC",
+            "license":"CC BY 4.0",
+            "mip_era":"CMIP6",
+            "nominal_resolution":"10 km",
+            "realm":"landIce",
+            "region":"",
+            "source":"ACCESS1-3-rcp85-1-0 derived dataset computed from CMIP5 ACCESS1-3 historical and rcp85 simulations for ISMIP6",
+            "source_id":"ACCESS1-3-rcp85-1-0",
+            "source_version":"1.0",
+            "target_mip":"ISMIP6",
+            "title":"ISMIP6 (CMIP6) - ACCESS1-3-rcp85-1-0 derived data prepared for input4MIPs",
+            "|dataProviderExtra":{
+                "source_variables":[
+                    "acabf",
+                    "evspsbl",
+                    "mrros",
+                    "pr",
+                    "sftflf",
+                    "so",
+                    "ts"
+                ]
+            },
+            "|dataProviderFile":{
+                "Conventions":"CF-1.6",
+                "creation_date":"2020-09-04T15:13:47Z",
+                "tracking_id":null
+            },
+            "|esgfIndex":{
+                "_timestamp":"2021-04-22T19:05:37.327Z",
+                "data_node":"esgf-data2.llnl.gov",
+                "latest":true,
+                "replica":false,
+                "version":"20210422",
+                "xlink":"http://cera-www.dkrz.de/WDCC/meta/CMIP6/input4MIPs.CMIP6.ISMIP6.NASA-GSFC.ACCESS1-3-rcp85-1-0.ocean.yrC.thetao.grg.v20210422.json|Citation|citation"
+            }
+        },
+
 """
 dictOrderK = [  # html target
     "institution_id",
     "mip_era",
     "target_mip",
+    "_status",
     "datetime_start",
     "datetime_stop",
     "dataset_category",
@@ -128,7 +159,9 @@ dictOrderK = [  # html target
 ]
 
 first_row = False
+print("start loop")
 for exp in exp_dict1.keys():
+    print("enter exp")
     exp_dict = exp_dict1[exp]
     # Create table columns
     if not first_row:
@@ -143,8 +176,16 @@ for exp in exp_dict1.keys():
     fo.write("<tr>\n<td>%s</td>\n" % exp)
     # Fill columns with values
     for k in ids:
+        print("k:", k)
+        # deal with |esgfIndex entries
+        if k in ["_timestamp", "latest", "version"]:
+            print("enter if k")
+            st = str(exp_dict["|esgfIndex"][k])
+            print("st:", st)
+        else:
+            st = exp_dict[k]
+        print("st:", st)
         # Deal with embeds
-        st = exp_dict[k]
         if isinstance(st, (list, tuple)):
             st = " ".join(st)
         if (st is None) or (type(st) is bool):
@@ -156,3 +197,4 @@ for exp in exp_dict1.keys():
     fo.write("</tr>\n")
 fo.write("</table>")
 fo.write("""\n</body>\n</html>\n""")
+fo.close()
