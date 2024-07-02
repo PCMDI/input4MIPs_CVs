@@ -1143,6 +1143,9 @@
             "mip_era":"CMIP6Plus",
             "nominal_resolution":"10000 km",
             "realm":"atmos",
+            "region":[
+                "global"
+            ],
             "source":"Global greenhouse gas concentrations 0001 through 2022 based on NOAA/AGAGE/GAGE data",
             "source_id":"CR-CMIP-0-2-0",
             "source_version":"0.2.0",
@@ -1298,6 +1301,9 @@
             "mip_era":"CMIP6Plus",
             "nominal_resolution":"25 km",
             "realm":"atmos",
+            "region":[
+                "global"
+            ],
             "source":"Global fire emissions 1750 through 2022 based on GFED4s, FireMIP, visibility-observations, and GCD data. Data sources differ per region and year",
             "source_id":"DRES-CMIP-BB4CMIP7-1-0",
             "source_version":"1.0",
@@ -4586,6 +4592,9 @@
             "mip_era":"CMIP6Plus",
             "nominal_resolution":"1x1 degree",
             "realm":"ocean",
+            "region":[
+                "global_ocean"
+            ],
             "source":"PCMDI-AMIP ERSST5 1.0: SST based on NOAA ERSST 5.0",
             "source_id":"PCMDI-AMIP-ERSST5-1-0",
             "source_version":"1.0",
@@ -4627,6 +4636,9 @@
             "mip_era":"CMIP6Plus",
             "nominal_resolution":"1x1 degree",
             "realm":"ocean",
+            "region":[
+                "global_ocean"
+            ],
             "source":"PCMDI-AMIP Had-1.1 1.0: SST based on UK MetOffice HadISST 1.1",
             "source_id":"PCMDI-AMIP-Had1p1-1-0",
             "source_version":"1.0",
@@ -4668,6 +4680,9 @@
             "mip_era":"CMIP6Plus",
             "nominal_resolution":"1x1 degree",
             "realm":"ocean",
+            "region":[
+                "global_ocean"
+            ],
             "source":"PCMDI-AMIP OI-2.1 1.0: SST based on NOAA NCEP OI2.1",
             "source_id":"PCMDI-AMIP-OI2p1-1-0",
             "source_version":"1.0",
@@ -4699,24 +4714,34 @@
             "_status":"Published",
             "contact":"kmatthes@geomar.de; bernd@iaa.es",
             "dataset_category":"solar",
-            "datetime_start":"1850-01-15",
-            "datetime_stop":"2299-12-15",
-            "frequency":"mon",
-            "further_info_url":"Matthes et al., (2017) Solar forcing for CMIP6 (v3.2). doi: https://doi.org/10.5194/gmd-10-2247-2017",
-            "grid_label":"gm",
+            "datetime_start":"1850-01-01",
+            "datetime_stop":"2299-12-31",
+            "frequency":[
+                "day",
+                "mon",
+                "yr"
+            ],
+            "further_info_url":"https://solarisheppa.geomar.de/cmip6",
+            "grid_label":"gn",
             "institution_id":"SOLARIS-HEPPA",
             "license":"CC BY 4.0",
             "mip_era":"CMIP6",
-            "nominal_resolution":"10000 km",
+            "nominal_resolution":"250 km",
             "realm":"atmos",
-            "region":"",
-            "source":"SSI/TSI from SATIRE_sf_ref_daily_v3.txt.gz (N.Krivova, pers. comm.); NRLSSI2_1882_2014d_00_GW67_15Sep15.txt,NRLSSI2_1610_2014a_00_GW67_7Oct15.txt, NRLSSI2_2015_2300a_GW67_RzREF_19Oct15.txt (J. Lean, pers. comm.); Ap, Kp, F10.7 from ftp.ngdc.noaa.gov, P-IPR from http://solarisheppa.geomar.de/solarisheppa/solarprotonfluxes, MEE-IPR from APEEP, GCR-IPR from CRII_CMIP6_Scenario1",
+            "region":[
+                "global"
+            ],
+            "source":"SOLARIS-HEPPA CMIP 3.2 solar forcing based on SSI/TSI from SATIRE_sf_ref_daily_v3.txt.gz (N.Krivova, pers. comm.); NRLSSI2_1882_2014d_00_GW67_15Sep15.txt, NRLSSI2_1610_2014a_00_GW67_7Oct15.txt, NRLSSI2_2015_2300a_GW67_RzREF_19Oct15.txt (J. Lean, pers. comm.); Ap, Kp, F10.7 from ftp.ngdc.noaa.gov, P-IPR from http://solarisheppa.geomar.de/solarisheppa/solarprotonfluxes, MEE-IPR from APEEP, GCR-IPR from CRII_CMIP6_Scenario1",
             "source_id":"SOLARIS-HEPPA-3-2",
             "source_version":"3.2",
             "target_mip":"CMIP",
             "title":"",
             "|dataProviderExtra":{
-                "source_variables":null
+                "metadata_url":"http://solarisheppa.geomar.de/solarisheppa/sites/default/files/data/cmip6/CMIP6_metadata_description_3.2.pdf",
+                "reference":"Matthes et al., 2017: Solar forcing for CMIP6 (v3.2), Geosci. Model Dev., 10 (6), pp 2247--2302. doi: https://doi.org/10.5194/gmd-10-2247-2017",
+                "source_variables":[
+                    "multiple"
+                ]
             },
             "|dataProviderFile":{
                 "Conventions":"CF-1.6",
@@ -4730,6 +4755,53 @@
                 "replica":false,
                 "version":"20170103",
                 "xlink":"http://cera-www.dkrz.de/WDCC/meta/CMIP6/input4MIPs.CMIP6.CMIP.SOLARIS-HEPPA.SOLARIS-HEPPA-3-2.atmos.mon.multiple.gm.20170103.json|Citation|citation"
+            }
+        },
+        "SOLARIS-HEPPA-CMIP-4-1":{
+            "_status":"Registered",
+            "contact":"bernd@iaa.es",
+            "dataset_category":"solar",
+            "datetime_start":"1850-01-01",
+            "datetime_stop":"2023-12-31",
+            "frequency":[
+                "day",
+                "mon",
+                "yr"
+            ],
+            "further_info_url":"http://solarisheppa.geomar.de/cmip7",
+            "grid_label":"gn",
+            "institution_id":"SOLARIS-HEPPA",
+            "license":"CC BY 4.0",
+            "mip_era":"CMIP6Plus",
+            "nominal_resolution":"250 km",
+            "realm":"atmos",
+            "region":[
+                "global"
+            ],
+            "source":"SOLARIS-HEPPA CMIP 4.1 solar forcing based on SSI, TSI, and F10.7 from ssi_v03r00_preliminary (Odele Coddington et al., pers. comm.); Ap and Kp from ftp.ngdc.noaa.gov until 2014, afterwards from GFZ Potsdam (https://kp.gfz-potsdam.de), P-IPR from SEP-II (Ilya Usoskin et al., pers. comm.), MEE-IPR from FMI APEEP v2024b_cmip7 (Max van de Kamp et al., pers. comm.), GCR-IPR from CRII v2024-02 (Ilya Usoskin et al., pers. comm.)",
+            "source_id":"SOLARIS-HEPPA-CMIP-4-1",
+            "source_version":"4.1",
+            "target_mip":"CMIP",
+            "|dataProviderExtra":{
+                "contributor_names":"Bernd Funke, Timo Asikainen, Stefan Bender, Odele Coddington, Thierry Dudok de Wit, Illaria Ermolli, Margit Haberreiter, Doug Kinnison, Judith Lean, Sergey Koldoboskiy, Daniel R. Marsh, Hilde Nesse, Annika Seppaelae, Miriam Sinnhuber, Ilya Usoskin, Max van de Kamp, Pekka T. Verronen",
+                "metadata_url":"see http://solarisheppa.geomar.de/solarisheppa/sites/default/files/data/cmip7/CMIP7_metadata_description_4.1.pdf",
+                "reference":"Funke et al., 2024: Towards the definition of a solar forcing dataset for CMIP7, Geosci. Model Dev., 17 (3), pp 1217--1227. doi: https://doi.org/10.5194/gmd-17-1217-2024",
+                "source_variables":[
+                    "multiple"
+                ]
+            },
+            "|dataProviderFile":{
+                "Conventions":"CF-1.6",
+                "creation_date":"",
+                "tracking_id":""
+            },
+            "|esgfIndex":{
+                "_timestamp":"",
+                "data_node":"",
+                "latest":"",
+                "replica":"",
+                "version":"",
+                "xlink":""
             }
         },
         "UCI-fu-prArctic-prAntarctic-1-0":{
