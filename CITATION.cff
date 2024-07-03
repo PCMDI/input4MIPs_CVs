@@ -10,7 +10,7 @@ authors:
   given-names: "Zebedee R. J."
   orcid: "https://orcid.org/0000-0002-4767-2723"
 title: "input4MIPs Controlled Vocabularies (CVs)"
-version: 6.5.1
+version: 6.5.2
 doi: 10.5281/zenodo.12629797
 date-released: 2024-07-02
 url: "https://github.com/PCMDI/input4MIPs_CVs"
