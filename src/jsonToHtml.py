@@ -10,6 +10,7 @@ PJD 29 Nov 2023 - copied from https://github.com/WCRP-CMIP/CMIP6_CVs/blob/138a08
 PJD 29 Nov 2023 - first prototype completes
 PJD  2 Jul 2024 - update with x.y.z versioning
 PJD  2 Jul 2024 - update to deal with new source_id formats and information
+PJD  3 Jul 2024 - augment _status with active download link
 """
 
 # This script takes the json file and turns it into a nice jquery/data-tabled html doc
@@ -68,11 +69,16 @@ destDir = "../docs/"
 # %% Process source_id
 infile = "../input4MIPs_source_id.json"
 f = open(infile)
-exp_dict = json.load(f)
-exp_dict1 = exp_dict.get("source_id")  # Fudge to extract duplicate level
+dic = json.load(f)
+dic1 = dic.get("source_id")  # Fudge to extract duplicate level
+dic = dic1
+del dic1
+print(dic.keys())
 # exp_dict2 = exp_dict.get("version")
 # print(exp_dict2)
 # print(dict.keys())
+
+# deal with existing file
 fout = "".join([destDir, infile[:-4].replace("../", ""), "html"])
 if os.path.exists(fout):
     os.remove(fout)
@@ -157,12 +163,13 @@ dictOrderK = [  # html target
     "version",
     "_timestamp",
 ]
+url = "<a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22!SRC!%22%7D' target='_blank'>Published</a>"
 
 first_row = False
 print("start loop")
-for exp in exp_dict1.keys():
-    print("enter exp")
-    exp_dict = exp_dict1[exp]
+for src in dic.keys():
+    print("enter src:", src)
+    src_dic = dic[src]
     # Create table columns
     if not first_row:
         ids = dictOrderK  # Overwrite ordering
@@ -173,17 +180,21 @@ for exp in exp_dict1.keys():
                 fo.write("<th>%s</th>\n" % i)
             fo.write("</tr>\n</%s>\n" % hf)
     first_row = True
-    fo.write("<tr>\n<td>%s</td>\n" % exp)
+    fo.write("<tr>\n<td>%s</td>\n" % src)
     # Fill columns with values
     for k in ids:
         print("k:", k)
+        # catch _status
+        if k == "_status":
+            if src_dic["_status"] == "Published":
+                st = url.replace("!SRC!", src)
         # deal with |esgfIndex entries
-        if k in ["_timestamp", "latest", "version"]:
+        elif k in ["_timestamp", "latest", "version"]:
             print("enter if k")
-            st = str(exp_dict["|esgfIndex"][k])
+            st = str(src_dic["|esgfIndex"][k])
             print("st:", st)
         else:
-            st = exp_dict[k]
+            st = src_dic[k]
         print("st:", st)
         # Deal with embeds
         if isinstance(st, (list, tuple)):
