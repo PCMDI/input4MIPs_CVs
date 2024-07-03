@@ -1,0 +1,47 @@
+# This CITATION.cff file was generated with cffinit.
+# https://citation-file-format.github.io/cff-initializer-javascript
+
+cff-version: 1.2.0
+title: input4MIPs Controlled Vocabularies (CVs)
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - orcid: 'https://orcid.org/0000-0003-2835-1438'
+    affiliation: >-
+      Program for Climate Model Diagnosis and
+      Intercomparison (PCMDI), Lawrence Livermore National
+      Laboratory (LLNL)
+    email: durack1@llnl.gov
+    given-names: Paul J.
+    family-names: Durack
+  - given-names: Zebedee R. J.
+    family-names: Nicholls
+    email: zebedee.nicholls@climate-resource.com
+    affiliation: Climate Resource
+    orcid: 'https://orcid.org/0000-0002-4767-2723'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.12629797
+    description: Zenodo
+repository-code: 'https://github.com/PCMDI/input4MIPs_CVs'
+url: 'https://pcmdi.github.io/input4MIPs_CVs/'
+abstract: >-
+  Collection of Controlled Vocabularies (CVs) describing the
+  data specifications and contents of the input4MIPs project
+  - see https://aims2.llnl.gov/search?project=input4MIPs
+keywords:
+  - climate
+  - model
+  - climate change
+  - climate variability
+  - CMIP
+  - Earth system model
+  - ocean
+  - atmosphere
+  - land
+  - cryosphere
+license: CC-BY-4.0
+version: 6.5.1
+date-released: '2024-07-02'
