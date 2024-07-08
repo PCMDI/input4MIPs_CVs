@@ -11,16 +11,19 @@ PJD 29 Nov 2023 - first prototype completes
 PJD  2 Jul 2024 - update with x.y.z versioning
 PJD  2 Jul 2024 - update to deal with new source_id formats and information
 PJD  3 Jul 2024 - augment _status with active download link
+PJD  6 Jul 2024 - add README.md/CITATION.cff version tagging
 """
 
 # This script takes the json file and turns it into a nice jquery/data-tabled html doc
 import argparse
-
-# from collections import defaultdict
+import datetime
 import json
 import os
 import re
 import sys
+from urllib.request import urlopen
+
+# from collections import defaultdict
 
 # %% Create generic header
 header = """<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -209,3 +212,35 @@ for src in dic.keys():
 fo.write("</table>")
 fo.write("""\n</body>\n</html>\n""")
 fo.close()
+
+# %% update version info
+
+# update Readme.md
+target_url = "https://raw.githubusercontent.com/PCMDI/input4MIPs_CVs/main/README.md"
+txt = urlopen(target_url).read().decode("utf-8")
+txt = re.sub("[0-9].[0-9].[0-9]", version, txt)
+# delete existing file and write back to repo
+readmeH = "../README.md"
+os.remove(readmeH)
+fH = open(readmeH, "w")
+fH.write(txt)
+fH.close()
+print("README.md updated")
+del (target_url, txt, readmeH, fH)
+
+# update CITATION.cff
+target_url = "https://raw.githubusercontent.com/PCMDI/input4MIPs_CVs/main/CITATION.cff"
+txt = urlopen(target_url).read().decode("utf-8")
+# replace versionId
+txt = re.sub("[0-9].[0-9].[0-9]", version, txt)
+# replace date-released
+timeNow = datetime.datetime.now().strftime("%Y-%m-%d")
+txt = re.sub("[0-9]{4}-[0-9]{2}-[0-9]{2}", timeNow, txt)
+# delete existing file and write back to repo
+citationH = "../CITATION.cff"
+os.remove(citationH)
+fH = open(citationH, "w")
+fH.write(txt)
+fH.close()
+print("CITATION.cff updated")
+del (target_url, txt, citationH, fH)
