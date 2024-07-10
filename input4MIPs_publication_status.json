@@ -1,0 +1,11 @@
+{
+    "in_publishing_queue":{
+        "description":"Dataset is known and in the publication queue"
+    },
+    "published":{
+        "description":"Dataset is published"
+    },
+    "retracted":{
+        "description":"Dataset has been retracted. It should no longer be used, except for reproduction of earlier results/experiments"
+    }
+}
