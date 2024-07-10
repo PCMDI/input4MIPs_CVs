@@ -1,43 +1,114 @@
 {
-    "target_mip":{
-        "CMIP6":{
-            "AerChemMIP":"Aerosols and Chemistry Model Intercomparison Project",
-            "C4MIP":"Coupled Climate Carbon Cycle Model Intercomparison Project",
-            "CDRMIP":"Carbon Dioxide Removal Model Intercomparison Project",
-            "CFMIP":"Cloud Feedback Model Intercomparison Project",
-            "CMIP":"CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments",
-            "CORDEX":"Coordinated Regional Climate Downscaling Experiment",
-            "DAMIP":"Detection and Attribution Model Intercomparison Project",
-            "DCPP":"Decadal Climate Prediction Project",
-            "DynVarMIP":"Dynamics and Variability Model Intercomparison Project",
-            "FAFMIP":"Flux-Anomaly-Forced Model Intercomparison Project",
-            "GMMIP":"Global Monsoons Model Intercomparison Project",
-            "GeoMIP":"Geoengineering Model Intercomparison Project",
-            "HighResMIP":"High-Resolution Model Intercomparison Project",
-            "ISMIP6":"Ice Sheet Model Intercomparison Project for CMIP6",
-            "LS3MIP":"Land Surface, Snow and Soil Moisture",
-            "LUMIP":"Land-Use Model Intercomparison Project",
-            "OMIP":"Ocean Model Intercomparison Project",
-            "PAMIP":"Polar Amplification Model Intercomparison Project",
-            "PMIP":"Palaeoclimate Modelling Intercomparison Project",
-            "RFMIP":"Radiative Forcing Model Intercomparison Project",
-            "SIMIP":"Sea Ice Model Intercomparison Project",
-            "ScenarioMIP":"Scenario Model Intercomparison Project",
-            "VIACSAB":"Vulnerability, Impacts, Adaptation and Climate Services Advisory Board",
-            "VolMIP":"Volcanic Forcings Model Intercomparison Project"
+    "CMIP6":{
+        "AerChemMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Aerosols and Chemistry Model Intercomparison Project"
         },
-        "CMIP6Plus":{
-            "CMIP":{
-                "URL":"https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
-                "long_name":"CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
-            },
-            "LESFMIP":{
-                "URL":"https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
-                "long_name":"The Large Ensemble Single Forcing Model Intercomparison Project"
-            },
-            "Prototype":{
-                "long_name":"MIP identity to capture all prototype datasets collected for uncertainty exploration - not for CMIP production use"
-            }
+        "C4MIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Coupled Climate Carbon Cycle Model Intercomparison Project"
+        },
+        "CDRMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Carbon Dioxide Removal Model Intercomparison Project"
+        },
+        "CFMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Cloud Feedback Model Intercomparison Project"
+        },
+        "CMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
+        },
+        "CORDEX":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Coordinated Regional Climate Downscaling Experiment"
+        },
+        "DAMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Detection and Attribution Model Intercomparison Project"
+        },
+        "DCPP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Decadal Climate Prediction Project"
+        },
+        "DynVarMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Dynamics and Variability Model Intercomparison Project"
+        },
+        "FAFMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Flux-Anomaly-Forced Model Intercomparison Project"
+        },
+        "GMMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Global Monsoons Model Intercomparison Project"
+        },
+        "GeoMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Geoengineering Model Intercomparison Project"
+        },
+        "HighResMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"High-Resolution Model Intercomparison Project"
+        },
+        "ISMIP6":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Ice Sheet Model Intercomparison Project for CMIP6"
+        },
+        "LS3MIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Land Surface, Snow and Soil Moisture"
+        },
+        "LUMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Land-Use Model Intercomparison Project"
+        },
+        "OMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Ocean Model Intercomparison Project"
+        },
+        "PAMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Polar Amplification Model Intercomparison Project"
+        },
+        "PMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Palaeoclimate Modelling Intercomparison Project"
+        },
+        "RFMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Radiative Forcing Model Intercomparison Project"
+        },
+        "SIMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Sea Ice Model Intercomparison Project"
+        },
+        "ScenarioMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Scenario Model Intercomparison Project"
+        },
+        "VIACSAB":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Vulnerability, Impacts, Adaptation and Climate Services Advisory Board"
+        },
+        "VolMIP":{
+            "URL":"www.tbd.invalid",
+            "long_name":"Volcanic Forcings Model Intercomparison Project
+        }
+    },
+    "CMIP6Plus":{
+        "CMIP":{
+            "URL":"https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
+            "long_name":"CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
+        },
+        "LESFMIP":{
+            "URL":"https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
+            "long_name":"The Large Ensemble Single Forcing Model Intercomparison Project"
+        },
+        "Prototype":{
+            "URL":"www.tbd.invalid",
+            "long_name":"MIP identity to capture all prototype datasets collected for uncertainty exploration - not for CMIP production use"
         }
     }
 }

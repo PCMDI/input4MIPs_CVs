@@ -1,8 +1,6 @@
 {
-    "activity_id":{
-        "input4MIPs":{
-            "URL":"https://pcmdi.llnl.gov/mips/input4MIPs/",
-            "long_name":"input forcing datasets for Model Intercomparison Projects"
-        }
+    "input4MIPs":{
+        "URL":"https://pcmdi.llnl.gov/mips/input4MIPs/",
+        "long_name":"input forcing datasets for Model Intercomparison Projects"
     }
 }

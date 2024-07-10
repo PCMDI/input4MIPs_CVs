@@ -1,7 +1,5 @@
-{
-    "mip_era":[
-        "CMIP5",
-        "CMIP6",
-        "CMIP6Plus"
-    ]
-}
+[
+    "CMIP5",
+    "CMIP6",
+    "CMIP6Plus"
+]
