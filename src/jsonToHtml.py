@@ -98,6 +98,9 @@ fo.write(
 )
 
 dictOrderK = [  # html target
+    "variable_id",
+    "frequency",
+    "grid_label",
     "institution_id",
     "mip_era",
     "target_mip",
