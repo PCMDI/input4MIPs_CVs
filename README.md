@@ -6,9 +6,77 @@ Controlled Vocabularies (CVs) for use in input4MIPs
 
 To see information regarding forcing dataset development for the Coupled Model Intercomparison Project (CMIP) activities, please see the [CMIP Forcing Task Team homepage](https://wcrp-cmip.org/cmip7-task-teams/forcings/).
 
-## Registering Institutions, sources, or requesting changes to CVs:
+## Repository overview
 
-To register your institution or source/dataset, please submit an issue/ticket following the instructions on the [input4MIPs_CVs issue page](https://github.com/PCMDI/input4MIPs_CVs/issues/new). Follow the same procedure to request a change in any other CV.
+The repository captures two key pieces of information.
+
+### Controlled vocabularies
+
+The first is the controlled vocabularies (CVs) used within the input4MIPs project.
+The CVs define the allowed terms which can be used for various pieces of metadata.
+The precise rules are still somewhat fuzzy 
+and these CVs should be considered a work in progress,
+however they do provide much more structure than nothing.
+These live in the `CVs` directory.
+
+These CVs are specific to the input4MIPs project.
+They supplement the 'global' CVs, which can be found in 
+[the MIP CMOR tables repository](https://github.com/PCMDI/mip-cmor-tables).
+As much as possible, we rely on the 'global' CVs
+and attempt to avoid duplicating information.
+However, the 'global' CVs are currently under heavy development,
+so there is some duplication at the moment.
+We hope to reduce this over time.
+
+Finally, the CVs also have some reliance on other conventions.
+The most notable is the [CF metadata conventions](https://cfconventions.org/).
+Where the CVs make use of other conventions, we make this as clear as possible.
+However, this is also a work in progress.
+
+(overview-datasets-database)=
+### Datasets database
+
+The second key piece of information is a database of datasets.
+This database provides a record of the datasets being managed in the input4MIPs project,
+given that the ESGF index is not publicly queriable 
+(nor perfectly suited to input4MIPs data, 
+which does not always conform to the ESGF's data model, 
+e.g. sometimes there is more than one variable in a file).
+
+The database is stored as a JSON file within this repository.
+However, we also provide an HTML table in `docs/input4mips_datasets.html` 
+which may provide an easier to work with format.
+
+## Usage
+
+### As a data user
+
+As a data user, the key source of information will be the datasets database.
+As discussed in [](#overview-datasets-database), 
+this provides a record of all the datasets being managed in the input4MIPs project.
+You will likely wish to search these records to find the datasets of interest to you,
+then use their ESGF links to download them.
+[TODO: instructions on how to go from a search here to downloading via ESGF easily]
+
+### As a data producer
+
+As a data producer, there are a few key steps.
+
+#### Register your institution ID
+
+The first step is to register your institution ID.
+This requires you to make a pull request 
+that adds your institutions ID to `CVs/input4MIPs_institution_id.json`.
+
+[Up to here: second step, add institution ID to CMIP tables using https://github.com/PCMDI/mip-cmor-tables/issues/new?assignees=&labels=add_institution&projects=&template=add-Institution.md&title=New+Institution]
+
+#### Register your source ID
+
+The first step is to register your source ID.
+This requires you to make a pull request 
+that adds your information to `CVs/input4MIPs_source_id.json`.
+The fields are generally self-explanatory.
+If you have any questions, please tag @durack1 or @znichollscr in your pull request.
 
 ## Contributors
 
