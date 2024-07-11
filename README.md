@@ -27,6 +27,7 @@ and attempt to avoid duplicating information.
 However, the 'global' CVs are currently under heavy development,
 so there is some duplication at the moment.
 We hope to reduce this over time.
+When in doubt, the CVs in this repository will be the source of truth for the input4MIPs project.
 
 Finally, the CVs also have some reliance on other conventions.
 The most notable is the [CF metadata conventions](https://cfconventions.org/).
@@ -45,7 +46,7 @@ e.g. sometimes there is more than one variable in a file).
 
 The database is stored as a JSON file within this repository.
 However, we also provide an HTML table in `docs/input4mips_datasets.html` 
-which may provide an easier to work with format.
+which may be an easier format to work with.
 
 ## Usage
 
@@ -56,7 +57,13 @@ As discussed in [](#overview-datasets-database),
 this provides a record of all the datasets being managed in the input4MIPs project.
 You will likely wish to search these records to find the datasets of interest to you,
 then use their ESGF links to download them.
-[TODO: instructions on how to go from a search here to downloading via ESGF easily]
+[TODO: instructions on how to go from a search here to downloading via ESGF easily once we know how that will work]
+
+It is unlikely that you will need to use the CVs directly,
+although they may be helpful for understanding what the different terms mean
+(and this metadata capturing and clarity will improve over time 
+as we make greater and greater use of 
+[json-ld](https://json-ld.org/)).
 
 ### As a data producer
 
@@ -65,18 +72,107 @@ As a data producer, there are a few key steps.
 #### Register your institution ID
 
 The first step is to register your institution ID.
-This requires you to make a pull request 
-that adds your institutions ID to `CVs/input4MIPs_institution_id.json`.
+This means the following steps:
 
-[Up to here: second step, add institution ID to CMIP tables using https://github.com/PCMDI/mip-cmor-tables/issues/new?assignees=&labels=add_institution&projects=&template=add-Institution.md&title=New+Institution]
+1. make a pull request that adds your institution's ID to `CVs/input4MIPs_institution_id.json`.
+   The basic rules for IDs generally, which includes institution IDs,
+   is that they must only contain alphanumeric characters and hyphens 
+   (i.e. the characters a-z, A-Z, 0-9 and -).
+   In your pull request, please tag @durack1 and @znichollscr.
+   If you have any issues with this, feel free to [make a general issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
+   and tag @znichollscr.
+
+1. (optional, but recommend) check if your institution has a research organisation registry (ROR) ID
+   ([ROR search can be done here](https://ror.org/)).
+
+  - if your organisation does not have an ROR, 
+    please make an issue in the [MIP CMOR tables repository to note this](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=No+ROR+for+institute+X)
+    and tag @znichollscr.
+
+  - if your organisation does have an ROR,
+    please make an issue in the [MIP CMOR tables repository to register your institute](https://github.com/PCMDI/mip-cmor-tables/issues/new?assignees=&labels=add_institution&projects=&template=add-Institution.md&title=New+Institution).
+    The template should be straightforward.
+    If there are any issues, just make the issue and tag @znichollscr.
+    If you have any issues with this, feel free to [make a general issue](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=Help+needed+to+register+ROR+for+institute+X)
+    and tag @znichollscr.
+
+1. (optional, but recommend) if you supply your data as part of a consortium, then there is an extra step
+
+  - firstly, make sure that all institutes in your consortium have registered their RORs in the MIP CMOR tables
+    in the same way that you did for your institute in the previous step.
+
+  - then, please make an issue in the [MIP CMOR tables repository to register your consortium](https://github.com/PCMDI/mip-cmor-tables/issues/new?assignees=&labels=add_consortium&projects=&template=add-consortium.md&title=New+Consortium). 
+    The template should be straightforward.
+    If there are any issues, just make the issue and tag @znichollscr.
+    If you have any issues with this, feel free to [make a general issue](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=Help+needed+to+register+ROR+for+institute+X)
+    and tag @znichollscr.
 
 #### Register your source ID
 
-The first step is to register your source ID.
+The next step is to register your source ID.
 This requires you to make a pull request 
 that adds your information to `CVs/input4MIPs_source_id.json`.
 The fields are generally self-explanatory.
 If you have any questions, please tag @durack1 or @znichollscr in your pull request.
+
+#### Get your data to PCMDI
+
+The first step here is to [create a new issue in this repository](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
+and tag @durack1 and @znichollscr so that they know that the data is being uploaded.
+
+In terms of actually uploading the data, there isn't a strict process for this right now.
+There are a few different options, which we list below in order of preference:
+
+##### Upload to PCMDI's FTP server
+
+The preferred option is to upload the data to PCMDI's FTP server.
+The server's details are below:
+
+- address: "ftp.llnl.gov"
+- username: "anonymous"
+- password: please use your email as the password, i.e. something like "me@institute.com"
+- root directory for uploads: "incoming"
+
+If it is helpful, @znichollscr has a script which they use for uploads 
+[here](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/scripts/upload-to-ftp-server.py).
+Feel free to copy that (or use it as is) to upload your own files.
+
+##### Upload to somewhere else
+
+Alternately, you can upload your files to a cloud service (e.g. Google Drive, Amazon S3, a file transfer service).
+Once you have done this, please paste the link 
+from which to download your files in the issue related to uploading the data that you made previously.
+Your files will be downloaded to the relevant place by someone else (likely @durack1).
+
+#### Data validation
+
+This is not strictly a step that you, as a data producer, have to perform.
+However, it will be performed, so you will have to pass validation eventually
+(the iteration time is just slower if you don't run the validation yourself).
+
+For validating the data, we use [input4mips-validation](https://github.com/climate-resource/input4mips_validation).
+This checks the data's metadata against the CVs, 
+makes sure that the data can be loaded with the common python tools 
+[xarray](https://docs.xarray.dev/en/stable/index.html) 
+and [iris](https://scitools-iris.readthedocs.io/en/stable/index.html)
+and also runs the data through the [cfchecker](https://github.com/cedadev/cf-checker).
+Any issues that are found will be reported in the data upload issue that you made previously.
+
+[TODO: update all of the below once input4mips-validation is set up properly]
+If you wish to run this yourself, please follow [the installation instructions](https://input4mips-validation.readthedocs.io/en/latest/#installation).
+An example of the data validation process can be found in [the data validation demo notebook](www.tbd.invalid).
+If you have any issues, 
+please [raise them in the input4mips-validation repository](https://github.com/climate-resource/input4mips_validation/issues/new/choose).
+
+#### Publishing
+
+This is not a step that you, as a data producer, will perform.
+However, for completeness, once the data has been received and passed validation,
+it will be published on the ESGF.
+Once this is done, we will add it to our database in `DatasetsDatabase`.
+Feel free to check the records that have been made
+and [make an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
+if you see any issues.
 
 ## Contributors
 
