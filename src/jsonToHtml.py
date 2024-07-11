@@ -70,14 +70,19 @@ else:
 # %% Set global arguments
 destDir = "../docs/"
 
-# %% Process source_id
-infile = "../input4mips_datasets.json"
+# %% Process dataset records
+infile = "../DatasetsDatabase/input4mips_datasets.json"
 f = open(infile)
 datasets = json.load(f)
 print([v["file"]["source_id"] for v in datasets])
 
+# Much easier with pathlib but not sure what version of Python others use
+fout_stem = os.path.splitext(os.path.split(infile)[1])[0]
+# Better with string formatting but not sure what version of Python others use
+# fout_name = f"{fout_stem}.html"
+fout_name = fout_stem + ".html"
+fout = os.path.join(destDir, fout_name)
 # deal with existing file
-fout = "".join([destDir, infile[:-4].replace("../", ""), "html"])
 if os.path.exists(fout):
     os.remove(fout)
 print("processing", fout)
