@@ -5,7 +5,7 @@
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "version":"0.2.0"
+        "source_version":"0.2.0"
     },
     "PCMDI-AMIP-1-1-9":{
         "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
@@ -13,7 +13,7 @@
         "institution_id":"PCMDI",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "version":"1.1.9"
+        "source_version":"1.1.9"
     },
     "SOLARIS-HEPPA-CMIP-4-1":{
         "contact":"bernd@iaa.es",
@@ -22,6 +22,6 @@
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "target_mip":"CMIP",
-        "version":"4.1"
+        "source_version":"4.1"
     }
 }
