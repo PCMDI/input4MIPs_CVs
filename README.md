@@ -169,10 +169,11 @@ please [raise them in the input4mips-validation repository](https://github.com/c
 This is not a step that you, as a data producer, will perform.
 However, for completeness, once the data has been received and passed validation,
 it will be published on the ESGF.
-Once this is done, we will add it to our database in `DatasetsDatabase`.
-Feel free to check the records that have been made
+Once this is done, this repository's maintainers will add it to our database in `DatasetsDatabase`.
+This is not something that you, as a data producer, need to do.
+However, feel free to check the records that have been made
 and [make an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
-if you see any issues.
+if you see any problems.
 
 ## Contributors
 
