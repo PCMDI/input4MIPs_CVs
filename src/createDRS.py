@@ -70,6 +70,10 @@ attList = [
     "version",  # ESGF identifier
 ]
 
+drsList = [
+    ""
+]
+
 # match with file contents
 for cnt1, fPath in enumerate(fileList):
     print("processing:", fPath)
