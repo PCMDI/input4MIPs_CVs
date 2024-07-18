@@ -1,0 +1,36 @@
+{
+    "CR-CMIP-0-2-0":{
+        "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.2.0"
+    },
+    "PCMDI-AMIP-1-1-9":{
+        "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
+        "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
+        "institution_id":"PCMDI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.1.9"
+    },
+    "SOLARIS-HEPPA-CMIP-4-1":{
+        "contact":"bernd@iaa.es",
+        "further_info_url":"http://solarisheppa.geomar.de/cmip7",
+        "institution_id":"SOLARIS-HEPPA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "target_mip":"CMIP",
+        "source_version":"4.1"
+    },
+    "SOLARIS-HEPPA-CMIP-4-2":{
+        "contact":"bernd@iaa.es",
+        "further_info_url":"http://solarisheppa.geomar.de/cmip7",
+        "institution_id":"SOLARIS-HEPPA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "target_mip":"CMIP",
+        "source_version":"4.2"
+    }
+}

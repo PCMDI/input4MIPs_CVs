@@ -1,0 +1,11 @@
+{
+    "derived":{
+        "description":"Data is derived from observations, but is not directly observations"
+    },
+    "observations":{
+        "description":"Data is directly from observations"
+    },
+    "reanalysis":{
+        "description":"Data is from reanalysis i.e. a combination of observations and modelling"
+    }
+}

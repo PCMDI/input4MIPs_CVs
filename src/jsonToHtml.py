@@ -5,6 +5,7 @@ To run conversion:
 (base) ml-9953350:src durack1$ python jsonToHtml.py 6.5.0
 
 """
+
 """2023
 PJD 29 Nov 2023 - copied from https://github.com/WCRP-CMIP/CMIP6_CVs/blob/138a089499cd2a9418186fb27cd184063f2d34da/src/jsonToHtml.py
 PJD 29 Nov 2023 - first prototype completes
@@ -69,20 +70,19 @@ else:
 # %% Set global arguments
 destDir = "../docs/"
 
-# %% Process source_id
-infile = "../input4MIPs_source_id.json"
+# %% Process dataset records
+infile = "../DatasetsDatabase/input4MIPs_datasets.json"
 f = open(infile)
-dic = json.load(f)
-dic1 = dic.get("source_id")  # Fudge to extract duplicate level
-dic = dic1
-del dic1
-print(dic.keys())
-# exp_dict2 = exp_dict.get("version")
-# print(exp_dict2)
-# print(dict.keys())
+datasets = json.load(f)
+print([v["file"]["source_id"] for v in datasets])
 
+# Much easier with pathlib but not sure what version of Python others use
+fout_stem = os.path.splitext(os.path.split(infile)[1])[0]
+# Better with string formatting but not sure what version of Python others use
+# fout_name = f"{fout_stem}.html"
+fout_name = fout_stem + ".html"
+fout = os.path.join(destDir, fout_name)
 # deal with existing file
-fout = "".join([destDir, infile[:-4].replace("../", ""), "html"])
 if os.path.exists(fout):
     os.remove(fout)
 print("processing", fout)
@@ -102,77 +102,29 @@ fo.write(
     )
 )
 
-"""
-../input4MIPs_source_id.json
-"ACCESS1-3-rcp85-1-0":{
-            "_status":"Published",
-            "contact":"ISMIP6 Steering Team (ismip6@gmail.com)",
-            "dataset_category":"surfaceFluxes",
-            "datetime_start":"1950-07-01",
-            "datetime_stop":null,
-            "frequency":"yrC",
-            "further_info_url":"http://www.climate-cryosphere.org/wiki/index.php?title=ISMIP6_wiki_page",
-            "grid_label":"grg",
-            "institution_id":"NASA-GSFC",
-            "license":"CC BY 4.0",
-            "mip_era":"CMIP6",
-            "nominal_resolution":"10 km",
-            "realm":"landIce",
-            "region":"",
-            "source":"ACCESS1-3-rcp85-1-0 derived dataset computed from CMIP5 ACCESS1-3 historical and rcp85 simulations for ISMIP6",
-            "source_id":"ACCESS1-3-rcp85-1-0",
-            "source_version":"1.0",
-            "target_mip":"ISMIP6",
-            "title":"ISMIP6 (CMIP6) - ACCESS1-3-rcp85-1-0 derived data prepared for input4MIPs",
-            "|dataProviderExtra":{
-                "source_variables":[
-                    "acabf",
-                    "evspsbl",
-                    "mrros",
-                    "pr",
-                    "sftflf",
-                    "so",
-                    "ts"
-                ]
-            },
-            "|dataProviderFile":{
-                "Conventions":"CF-1.6",
-                "creation_date":"2020-09-04T15:13:47Z",
-                "tracking_id":null
-            },
-            "|esgfIndex":{
-                "_timestamp":"2021-04-22T19:05:37.327Z",
-                "data_node":"esgf-data2.llnl.gov",
-                "latest":true,
-                "replica":false,
-                "version":"20210422",
-                "xlink":"http://cera-www.dkrz.de/WDCC/meta/CMIP6/input4MIPs.CMIP6.ISMIP6.NASA-GSFC.ACCESS1-3-rcp85-1-0.ocean.yrC.thetao.grg.v20210422.json|Citation|citation"
-            }
-        },
-
-"""
 dictOrderK = [  # html target
+    "variable_id",
+    "frequency",
+    "grid_label",
     "institution_id",
     "mip_era",
     "target_mip",
-    "_status",
+    "publication_status",
     "datetime_start",
-    "datetime_stop",
+    "datetime_end",
     "dataset_category",
     "realm",
     "contact",
     "latest",
-    "source_version",
+    # "source_version",
     "version",
-    "_timestamp",
+    "timestamp",
 ]
 url = "<a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22!SRC!%22%7D' target='_blank'>Published</a>"
 
 first_row = False
 print("start loop")
-for src in dic.keys():
-    print("enter src:", src)
-    src_dic = dic[src]
+for src_dic in datasets:
     # Create table columns
     if not first_row:
         ids = dictOrderK  # Overwrite ordering
@@ -183,26 +135,27 @@ for src in dic.keys():
                 fo.write("<th>%s</th>\n" % i)
             fo.write("</tr>\n</%s>\n" % hf)
     first_row = True
-    fo.write("<tr>\n<td>%s</td>\n" % src)
+    fo.write("<tr>\n<td>%s</td>\n" % src_dic["file"]["source_id"])
     # Fill columns with values
     for k in ids:
         print("k:", k)
         # catch _status
-        if k == "_status":
-            if src_dic["_status"] == "Published":
-                st = url.replace("!SRC!", src)
+        if k == "publication_status":
+            if src_dic["esgf"]["publication_status"] == "Published":
+                st = url.replace("!SRC!", src_dic["source_id"])
         # deal with |esgfIndex entries
-        elif k in ["_timestamp", "latest", "version"]:
+        elif k in src_dic["esgf"]:
             print("enter if k")
-            st = str(src_dic["|esgfIndex"][k])
+            st = str(src_dic["esgf"][k])
             print("st:", st)
         else:
-            st = src_dic[k]
+            st = src_dic["file"][k]
+
         print("st:", st)
         # Deal with embeds
         if isinstance(st, (list, tuple)):
             st = " ".join(st)
-        if (st is None) or (type(st) is bool):
+        if (st is None) or isinstance(st, bool):
             pass
             # print(st, type(st))
         elif "@" in st:
