@@ -31,6 +31,8 @@ When in doubt, the CVs in this repository will be the source of truth for the in
 
 Finally, the CVs also have some reliance on other conventions.
 The most notable is the [CF metadata conventions](https://cfconventions.org/).
+We also use [cfchecker](https://github.com/cedadev/cf-checker)
+for validating files (see also [](#data-validation)).
 Where the CVs make use of other conventions, we make this as clear as possible.
 However, this is also a work in progress.
 
@@ -115,6 +117,27 @@ that adds your information to `CVs/input4MIPs_source_id.json`.
 The fields are generally self-explanatory.
 If you have any questions, please tag @durack1 or @znichollscr in your pull request.
 
+(data-validation)=
+#### Data validation
+
+This is not strictly a step that you, as a data producer, have to perform.
+However, it will be performed, so you will have to pass validation eventually
+(the iteration time is just slower if you don't run the validation yourself).
+
+For validating the data, we use [input4mips-validation](https://github.com/climate-resource/input4mips_validation).
+This checks the data's metadata against the CVs, 
+makes sure that the data can be loaded with the common python tools 
+[xarray](https://docs.xarray.dev/en/stable/index.html) 
+and [iris](https://scitools-iris.readthedocs.io/en/stable/index.html)
+and also runs the data through the [cfchecker](https://github.com/cedadev/cf-checker).
+Any issues that are found will be reported in the data upload issue that you made previously.
+
+[TODO: update all of the below once input4mips-validation is set up properly]
+If you wish to run this yourself, please follow [the installation instructions](https://input4mips-validation.readthedocs.io/en/latest/#installation).
+An example of the data validation process can be found in [the data validation demo notebook](www.tbd.invalid).
+If you have any issues, 
+please [raise them in the input4mips-validation repository](https://github.com/climate-resource/input4mips_validation/issues/new/choose).
+
 #### Get your data to PCMDI
 
 The first step here is to [create a new issue in this repository](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
@@ -143,26 +166,6 @@ Alternately, you can upload your files to a cloud service (e.g. Google Drive, Am
 Once you have done this, please paste the link 
 from which to download your files in the issue related to uploading the data that you made previously.
 Your files will be downloaded to the relevant place by someone else (likely @durack1).
-
-#### Data validation
-
-This is not strictly a step that you, as a data producer, have to perform.
-However, it will be performed, so you will have to pass validation eventually
-(the iteration time is just slower if you don't run the validation yourself).
-
-For validating the data, we use [input4mips-validation](https://github.com/climate-resource/input4mips_validation).
-This checks the data's metadata against the CVs, 
-makes sure that the data can be loaded with the common python tools 
-[xarray](https://docs.xarray.dev/en/stable/index.html) 
-and [iris](https://scitools-iris.readthedocs.io/en/stable/index.html)
-and also runs the data through the [cfchecker](https://github.com/cedadev/cf-checker).
-Any issues that are found will be reported in the data upload issue that you made previously.
-
-[TODO: update all of the below once input4mips-validation is set up properly]
-If you wish to run this yourself, please follow [the installation instructions](https://input4mips-validation.readthedocs.io/en/latest/#installation).
-An example of the data validation process can be found in [the data validation demo notebook](www.tbd.invalid).
-If you have any issues, 
-please [raise them in the input4mips-validation repository](https://github.com/climate-resource/input4mips_validation/issues/new/choose).
 
 #### Publishing
 
