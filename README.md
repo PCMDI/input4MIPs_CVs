@@ -47,7 +47,7 @@ which does not always conform to the ESGF's data model,
 e.g. sometimes there is more than one variable in a file).
 
 The database is stored as a JSON file within this repository.
-However, we also provide an HTML table in `docs/input4mips_datasets.html` 
+However, we also provide an HTML table in `docs/input4MIPs_datasets.html` 
 which may be an easier format to work with.
 
 ## Usage

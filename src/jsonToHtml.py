@@ -71,7 +71,7 @@ else:
 destDir = "../docs/"
 
 # %% Process dataset records
-infile = "../DatasetsDatabase/input4mips_datasets.json"
+infile = "../DatasetsDatabase/input4MIPs_datasets.json"
 f = open(infile)
 datasets = json.load(f)
 print([v["file"]["source_id"] for v in datasets])
