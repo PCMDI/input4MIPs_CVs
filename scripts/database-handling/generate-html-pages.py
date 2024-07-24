@@ -139,28 +139,52 @@ def main() -> None:
         ]
     )
 
+    dataset_view_cols = [
+        "mip_era",
+        "source_id",
+        "source_version",
+        "institution_id",
+        "license_id",
+        "dataset_category",
+        "realm",
+        "variable_id",
+        "frequency",
+        "time_range",
+        "grid_label",
+        "target_mip",
+        "latest",
+        "publication_status",
+        "contact",
+        "further_info_url",
+    ]
+
+    dataset_view = db[dataset_view_cols].drop_duplicates()
+    dataset_view_shrunk_l = []
+    group_cols = [v for v in dataset_view_cols if v not in ["time_range"]]
+    for _, dsvdf in dataset_view.groupby(group_cols, dropna=False):
+        if all(v is None for v in dsvdf["time_range"]):
+            dataset_view_shrunk_l.append(dsvdf)
+            continue
+
+        # Incredibly slow way of doing this, but fine for now
+        all_times = []
+        for v in dsvdf["time_range"].tolist():
+            s, e = v.split("-")
+            all_times.append(s)
+            all_times.append(e)
+
+        time_range_summary = f"{min(all_times)}-{max(all_times)}"
+        keep = dsvdf[group_cols].drop_duplicates()
+        keep["time_range"] = time_range_summary
+
+        dataset_view_shrunk_l.append(keep)
+
+    dataset_view_shrunk = pd.concat(dataset_view_shrunk_l)
+
     for selection, columns, page_title, table_title, out_file_name in (
         (
-            db[db["mip_era"] == "CMIP6Plus"],
-            (
-                "mip_era",
-                "source_id",
-                "source_version",
-                "institution_id",
-                "license_id",
-                "dataset_category",
-                "realm",
-                "variable_id",
-                "frequency",
-                "time_range",
-                "grid_label",
-                "target_mip",
-                "creation_date",
-                "latest",
-                "publication_status",
-                "contact",
-                "further_info_url",
-            ),
+            dataset_view_shrunk[dataset_view_shrunk["mip_era"] == "CMIP6Plus"],
+            dataset_view_cols,
             "Input4MIPs CMIP6Plus datasets: version info to be added",
             "Input4MIPs CMIP6Plus datasets",
             "input4MIPs_datasets_CMIP6Plus.html",
