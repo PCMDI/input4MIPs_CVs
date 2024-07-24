@@ -19,6 +19,10 @@ export PRINT_HELP_PYSCRIPT
 help:  ## print short description of each target
 	@python3 -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
 
+.PHONY: generate-web-pages
+generate-web-pages:  ## generate our web pages
+	venv/bin/python generate-html-pages.py
+
 .PHONY: run-update-publication-status
 run-update-publication-status:  ## run the update publication status script
 	venv/bin/python update-publication-status.py
