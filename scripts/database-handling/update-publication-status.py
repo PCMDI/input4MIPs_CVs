@@ -34,6 +34,9 @@ def main() -> None:
 
     # Here is where custom modifications go
     db.loc[(db["source_id"] == "PCMDI-AMIP-1-1-9"), "publication_status"] = "published"
+    db.loc[(db["source_id"] == "MRI-JRA55-do-1-6-0"), "publication_status"] = (
+        "published"
+    )
 
     with open(DB_FILE, "w") as fh:
         json.dump(
