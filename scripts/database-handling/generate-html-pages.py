@@ -3,13 +3,9 @@ Generate html pages from our database
 """
 
 from __future__ import annotations
-
 from pathlib import Path
-
 import json
-
 import pandas as pd
-
 import typer
 
 HTML_DIR = Path(__file__).parents[2] / "docs"
@@ -66,7 +62,7 @@ def write_json_as_html(
     header_lines = [
         "<head>",
         '<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>',
-        '<meta name="author" content="Paul J. Durack" />',
+        '<meta name="author" content="Paul J. Durack, Zebedee Nicholls" />',
         '<meta name="description" content="Controlled vocabulary for input4MIPs" />',
         '<meta name="keywords" content="HTML, CSS, JavaScript" />',
         '<meta name="viewport" content="width=device-width, initial-scale=1.0" />',
