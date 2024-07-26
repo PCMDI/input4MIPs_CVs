@@ -7,6 +7,7 @@ input4MIPs/project entries
 """2024
 PJD 25 Jul 2024 - started
 PJD 25 Jul 2024 - 1216 372 Datasets returned, 350 Files
+PJD 26 Jul 2024 - update to write to ../DatasetsDatabase/input-data/ (was ./)
 """
 
 # %% imports
@@ -129,7 +130,7 @@ print("All done")
 # cleanup
 os.remove(oF)  # cleanup
 # Write all out
-oF = "esgf.json"
+oF = "../DatasetsDatabase/input-data/esgf.json"
 if os.path.exists(oF):
     os.remove(oF)
 fH = open(oF, "w", encoding="utf-8")
