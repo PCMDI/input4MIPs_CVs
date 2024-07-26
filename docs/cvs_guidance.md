@@ -1,3 +1,6 @@
+**Note** This document is out of date.
+We're just keeping it as a skeleton/reminder for when we write this properly.
+
 # Controlled vocabularies guidance
 
 This doc is a placeholder for capturing notes about the rules
