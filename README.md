@@ -95,11 +95,11 @@ This means the following steps:
 1. (optional, but recommend) check if your institution has a research organisation registry (ROR) ID
    ([ROR search can be done here](https://ror.org/)).
 
-  a. if your organisation does not have an ROR, please make an issue in the
+    a. if your organisation does not have an ROR, please make an issue in the
      [MIP CMOR tables repository to note this](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=No+ROR+for+institute+X)
      and tag @znichollscr.
 
-  b. if your organisation does have an ROR, please make an issue in the
+    b. if your organisation does have an ROR, please make an issue in the
      [MIP CMOR tables repository to register your institute](https://github.com/PCMDI/mip-cmor-tables/issues/new?assignees=&labels=add_institution&projects=&template=add-Institution.md&title=New+Institution).
      The template should be straightforward.
      If there are any issues, just make the issue and tag @znichollscr.
