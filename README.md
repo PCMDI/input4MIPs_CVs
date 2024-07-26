@@ -40,15 +40,21 @@ However, this is also a work in progress.
 ### Datasets database
 
 The second key piece of information is a database of datasets.
+At the moment, this database is stored as a JSON file within this repository,
+`DatasetsDatabase/input4MIPs_datasets.json`
+(although this may change in future, if this solution doesn't scale well).
 This database provides a record of the datasets being managed in the input4MIPs project,
 given that the ESGF index is not publicly queriable 
 (nor perfectly suited to input4MIPs data, 
 which does not always conform to the ESGF's data model, 
 e.g. sometimes there is more than one variable in a file).
 
-The database is stored as a JSON file within this repository.
-However, we also provide an HTML table in `docs/input4MIPs_datasets.html` 
-which may be an easier format to work with.
+To ease exploration of the database, we provide a few HTML tables in `docs/`.
+These give an overview at the level of each individual file,
+as well as at the level of datasets (i.e. collections of files).
+If there is another view that you would find helpful,
+please feel free to [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
+to discuss.
 
 ## Usage
 
@@ -177,6 +183,48 @@ This is not something that you, as a data producer, need to do.
 However, feel free to check the records that have been made
 and [make an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
 if you see any problems.
+
+## Contributing
+
+Contributing to the repository beyond the instructions above
+is currently a little bit of a dark art.
+A start is the description below.
+We hope to improve these docs over time.
+
+### Generating the database
+
+In `DatasetsDatabase/input-data` there are two files:
+
+1. `esgf.json`
+1. `pmount.json`
+
+`esgf.json` is a scrape of information from the ESGF index.
+This captures the latest set of information we have scraped from the ESGF.
+We hope to automate the generation of this file in future.
+[TODO: make an issue (?)]
+It is generated with `scripts/pollESGF.py`.
+However, the API it hits only allows certain IP addresses,
+so you will only be able to run this if you have been given access.
+
+`pmount.json` is a scrape of information from the files that we know about.
+This captures the latest set of information we have 
+from the actual files in the input4MIPs project.
+These files are stored elsewhere 
+and this file is generated with [input4mips-validation](https://input4mips-validation.readthedocs.io/en/latest/).
+
+At present, we are tracking both of these files as part of this repository.
+This is ok for now, as the files are relatively small.
+This will not scale, so if we get to a certain size, we may have to pick a different approach.
+
+The data from these two files gets combined to create `DatasetsDatabase/input4MIPs_datasets.json`.
+This combination is done using `scripts/database-interactions/merge-esgf-and-p-mount-info.py`.
+See the README in `scripts/database-interactions` for details of how to run this script.
+
+### Generating the HTML pages
+
+Having generated the database, we can then generate the HTML views of it.
+Currently, the HTML views are created using `scripts/database-interactions/generate-html-pages.py`.
+As above, see the README in `scripts/database-interactions` for details of how to run this script.
 
 ## Contributors
 
