@@ -226,7 +226,10 @@ See the README in `scripts/database-interactions` for details of how to run this
 
 Having generated the database, we can then generate the HTML views of it.
 Currently, the HTML views are created using `scripts/database-interactions/generate-html-pages.py`.
-As above, see the README in `scripts/database-interactions` for details of how to run this script.
+When creating the HTML pages, we must include some version information for the generated pages.
+This is done using the `--version` argument.
+For example `python scripts/database-interactions/generate-html-pages.py --version "2.3.1"`.
+As above, see the README in `scripts/database-interactions` for further details of how to run this script.
 
 ## Contributors
 

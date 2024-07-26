@@ -4,6 +4,7 @@ Generate html pages from our database
 
 from __future__ import annotations
 from pathlib import Path
+from typing import Annotated
 import json
 import pandas as pd
 import typer
@@ -106,7 +107,12 @@ def write_json_as_html(
     print(f"Wrote {out_file}")
 
 
-def main() -> None:
+def main(
+    version: Annotated[
+        str,
+        typer.Option(help="Version ID for this compilation of the HTML documents"),
+    ],
+) -> None:
     """
     Generate html pages from our database
     """
@@ -210,14 +216,14 @@ def main() -> None:
         (
             dataset_view_shrunk[dataset_view_shrunk["mip_era"] == "CMIP6Plus"],
             dataset_view_cols,
-            "Input4MIPs CMIP6Plus datasets: version info to be added",
+            f"Input4MIPs CMIP6Plus datasets: v{version}",
             "Input4MIPs CMIP6Plus datasets",
             "input4MIPs_datasets_CMIP6Plus.html",
         ),  # CMIP6Plus datasets
         (
             db[db["mip_era"] == "CMIP6Plus"],
             files_view_col_order,
-            "Input4MIPs CMIP6Plus files: version info to be added",
+            f"Input4MIPs CMIP6Plus files: v{version}",
             "Input4MIPs CMIP6Plus all files",
             "input4MIPs_files_CMIP6Plus.html",
         ),  # CMIP6Plus all files
