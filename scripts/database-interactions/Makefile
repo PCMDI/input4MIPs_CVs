@@ -23,12 +23,12 @@ help:  ## print short description of each target
 generate-web-pages:  ## generate our web pages
 	venv/bin/python generate-html-pages.py
 
-.PHONY: run-update-publication-status
-run-update-publication-status:  ## run the update publication status script
-	venv/bin/python update-publication-status.py
+.PHONY: merge-esgf-and-p-mount-info
+merge-esgf-and-p-mount-info:  ## run the update publication status script
+	venv/bin/python merge-esgf-and-p-mount-info.py
 
 .PHONY: virtual-environment
 virtual-environment:  ## update virtual environment, create a new one if it doesn't already exist
 	python3 -m venv venv
 	venv/bin/pip install --upgrade pip
-	venv/bin/pip install pandas typer
+	venv/bin/pip install 'pandas==2.2.2' 'pandas_diff==1.4.7' 'tqdm==4.66.4' 'typer==0.12.3'
