@@ -177,6 +177,35 @@ def main() -> None:
 
     dataset_view_shrunk = pd.concat(dataset_view_shrunk_l)
 
+    # Add a url element to dataset_view_shrunk too
+    def get_url(row: pd.Series) -> str:
+        source_id: str = row.source_id
+        publication_status: str = row.publication_status
+        if publication_status == "published":
+            publication_text = "Published"
+
+        elif publication_status == "in_publishing_queue":
+            publication_text = "In publishing queue"
+
+        elif publication_status == "retracted":
+            publication_text = "Retracted"
+
+        else:
+            raise NotImplementedError(publication_status)
+
+        res = f"<a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22{source_id}%22%7D' target='_blank'>{publication_text}</a>"
+
+        return res
+
+    dataset_view_cols.insert(0, "url")
+    dataset_view_shrunk["url"] = dataset_view_shrunk[
+        ["source_id", "publication_status"]
+    ].apply(get_url, axis="columns")
+    # Turn the further info URLs into actual URLs too
+    dataset_view_shrunk["further_info_url"] = dataset_view_shrunk[
+        "further_info_url"
+    ].apply(lambda x: f"<a href='{x}' target='_blank'>{x}</a>")
+
     for selection, columns, page_title, table_title, out_file_name in (
         (
             dataset_view_shrunk[dataset_view_shrunk["mip_era"] == "CMIP6Plus"],
