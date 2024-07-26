@@ -49,7 +49,9 @@ given that the ESGF index is not publicly queriable
 which does not always conform to the ESGF's data model, 
 e.g. sometimes there is more than one variable in a file).
 
-To ease exploration of the database, we provide a few HTML tables in `docs/`.
+To ease exploration of the database, we provide a few HTML tables in `docs/`
+(e.g., see [input4MIPs_datasets_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs//input4MIPs_datasets_CMIP6Plus.html)
+and [input4MIPs_files_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs//input4MIPs_files_CMIP6Plus.html).
 These give an overview at the level of each individual file,
 as well as at the level of datasets (i.e. collections of files).
 If there is another view that you would find helpful,
@@ -84,7 +86,7 @@ This means the following steps:
 
 1. make a pull request that adds your institution's ID to `CVs/input4MIPs_institution_id.json`.
    The basic rules for IDs generally, which includes institution IDs,
-   is that they must only contain alphanumeric characters and hyphens 
+   is that they must only contain alphanumeric characters and hyphens only 
    (i.e. the characters a-z, A-Z, 0-9 and -).
    In your pull request, please tag @durack1 and @znichollscr.
    If you have any issues with this, feel free to [make a general issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
@@ -93,16 +95,16 @@ This means the following steps:
 1. (optional, but recommend) check if your institution has a research organisation registry (ROR) ID
    ([ROR search can be done here](https://ror.org/)).
 
-  - if your organisation does not have an ROR, 
-    please make an issue in the [MIP CMOR tables repository to note this](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=No+ROR+for+institute+X)
-    and tag @znichollscr.
+  a. if your organisation does not have an ROR, please make an issue in the
+     [MIP CMOR tables repository to note this](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=No+ROR+for+institute+X)
+     and tag @znichollscr.
 
-  - if your organisation does have an ROR,
-    please make an issue in the [MIP CMOR tables repository to register your institute](https://github.com/PCMDI/mip-cmor-tables/issues/new?assignees=&labels=add_institution&projects=&template=add-Institution.md&title=New+Institution).
-    The template should be straightforward.
-    If there are any issues, just make the issue and tag @znichollscr.
-    If you have any issues with this, feel free to [make a general issue](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=Help+needed+to+register+ROR+for+institute+X)
-    and tag @znichollscr.
+  b. if your organisation does have an ROR, please make an issue in the
+     [MIP CMOR tables repository to register your institute](https://github.com/PCMDI/mip-cmor-tables/issues/new?assignees=&labels=add_institution&projects=&template=add-Institution.md&title=New+Institution).
+     The template should be straightforward.
+     If there are any issues, just make the issue and tag @znichollscr.
+     If you have any issues with this, feel free to [make a general issue](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=Help+needed+to+register+ROR+for+institute+X)
+     and tag @znichollscr.
 
 1. (optional, but recommend) if you supply your data as part of a consortium, then there is an extra step
 
@@ -152,7 +154,7 @@ and tag @durack1 and @znichollscr so that they know that the data is being uploa
 In terms of actually uploading the data, there isn't a strict process for this right now.
 There are a few different options, which we list below in order of preference:
 
-##### Upload to PCMDI's FTP server
+##### Upload to PCMDI's FTP server (preferred)
 
 The preferred option is to upload the data to PCMDI's FTP server.
 The server's details are below:
@@ -162,32 +164,32 @@ The server's details are below:
 - password: please use your email as the password, i.e. something like "me@institute.com"
 - root directory for uploads: "incoming"
 
-If it is helpful, @znichollscr has a script which they use for uploads 
+If it is helpful, @znichollscr has a script used for uploads 
 [here](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/scripts/upload-to-ftp-server.py).
 Feel free to copy that (or use it as is) to upload your own files.
 
-##### Upload to somewhere else
+##### Upload to somewhere else (not preferred)
 
-Alternately, you can upload your files to a cloud service (e.g. Google Drive, Amazon S3, a file transfer service).
+Alternatively, you can upload your files to a cloud service (e.g. Google Drive, Amazon S3, a file transfer service).
 Once you have done this, please paste the link 
 from which to download your files in the issue related to uploading the data that you made previously.
-Your files will be downloaded to the relevant place by someone else (likely @durack1).
+Your files will be downloaded to PCMDI by someone else (likely @durack1).
 
 #### Publishing
 
 This is not a step that you, as a data producer, will perform.
 However, for completeness, once the data has been received and passed validation,
-it will be published on the ESGF.
-Once this is done, this repository's maintainers will add it to our database in `DatasetsDatabase`.
+it will be published on the ESGF and into the [input4MIPs project](https://aims2.llnl.gov/search?project=input4MIPs).
+Once this is done, the repository maintainers will add it to our database in `DatasetsDatabase`.
 This is not something that you, as a data producer, need to do.
-However, feel free to check the records that have been made
+However, feel free to check the records that have been made (see HTML links above)
 and [make an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
 if you see any problems.
 
 ## Contributing
 
 Contributing to the repository beyond the instructions above
-is currently a little bit of a dark art.
+is currently a dark art.
 A start is the description below.
 We hope to improve these docs over time.
 
@@ -199,11 +201,11 @@ In `DatasetsDatabase/input-data` there are two files:
 1. `pmount.json`
 
 `DatasetsDatabase/input-data/esgf.json` is a scrape of information from the ESGF index.
-This captures the latest set of information we have scraped from the ESGF.
+This captures the latest set of information we have queried from the ESGF index database.
 We hope to automate the generation of this file in future.
 [TODO: make an issue (?)]
 It is generated with `scripts/pollESGF.py`.
-However, the API it hits only allows certain IP addresses,
+However, the API it queries only allows certain IP addresses,
 so you will only be able to run this if you have been given access.
 
 `DatasetsDatabase/input-data/pmount.json` is a scrape of information from the files that we know about.
@@ -234,7 +236,7 @@ Thanks to our contributors!
 
 ## Acknowledgement
 
-The repository content has been collected from many contributors representing the input datasets for Model Intercomparison Projects (input4MIPs), including those from climate modeling groups and model intercomparison projects (MIPs) worldwide. The structure of content and tools required to maintain it was developed by climate and computer scientists from the Program for Climate Model Diagnosis and Intercomparison ([PCMDI](https://pcmdi.llnl.gov/)) at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/)), and the Coupled Model Intercomparison Project International Project Office ([CMIP-IPO](https://wcrp-cmip.org/cmip-governance/project-office/)), with assistance from a large and expanding international community.
+The repository content has been collected from many contributors representing the input datasets for Model Intercomparison Projects (input4MIPs), including those from climate modeling groups and model intercomparison projects (MIPs) worldwide. The structure of content and tools required to maintain it was developed by climate and computer scientists from the Program for Climate Model Diagnosis and Intercomparison ([PCMDI](https://pcmdi.llnl.gov/)) at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/)), [Climate Resource](https://www.climate-resource.com/), and the Coupled Model Intercomparison Project International Project Office ([CMIP-IPO](https://wcrp-cmip.org/cmip-governance/project-office/)), with assistance from a large and expanding international community.
 
 This work is sponsored by the Regional and Global Model Analysis ([RGMA](https://climatemodeling.science.energy.gov/program/regional-global-model-analysis)) program of the Earth and Environmental Systems Sciences Division ([EESSD](https://science.osti.gov/ber/Research/eessd)) in the Office of Biological and Environmental Research ([BER](https://science.osti.gov/ber)) within the Department of Energy's ([DOE](https://www.energy.gov/)) Office of Science ([OS](https://science.osti.gov/)). The work at PCMDI is performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
 
