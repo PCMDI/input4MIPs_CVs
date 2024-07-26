@@ -198,7 +198,7 @@ In `DatasetsDatabase/input-data` there are two files:
 1. `esgf.json`
 1. `pmount.json`
 
-`esgf.json` is a scrape of information from the ESGF index.
+`DatasetsDatabase/input-data/esgf.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have scraped from the ESGF.
 We hope to automate the generation of this file in future.
 [TODO: make an issue (?)]
@@ -206,7 +206,7 @@ It is generated with `scripts/pollESGF.py`.
 However, the API it hits only allows certain IP addresses,
 so you will only be able to run this if you have been given access.
 
-`pmount.json` is a scrape of information from the files that we know about.
+`DatasetsDatabase/input-data/pmount.json` is a scrape of information from the files that we know about.
 This captures the latest set of information we have 
 from the actual files in the input4MIPs project.
 These files are stored elsewhere 
