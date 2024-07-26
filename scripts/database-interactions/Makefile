@@ -21,7 +21,7 @@ help:  ## print short description of each target
 
 .PHONY: generate-web-pages
 generate-web-pages:  ## generate our web pages
-	venv/bin/python generate-html-pages.py
+	venv/bin/python generate-html-pages.py --version "0.1.0"
 
 .PHONY: merge-esgf-and-p-mount-info
 merge-esgf-and-p-mount-info:  ## run the update publication status script
