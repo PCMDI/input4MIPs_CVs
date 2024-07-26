@@ -50,8 +50,8 @@ which does not always conform to the ESGF's data model,
 e.g. sometimes there is more than one variable in a file).
 
 To ease exploration of the database, we provide a few HTML tables in `docs/`
-(e.g., see [input4MIPs_datasets_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs//input4MIPs_datasets_CMIP6Plus.html)
-and [input4MIPs_files_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs//input4MIPs_files_CMIP6Plus.html).
+(e.g., see [input4MIPs_datasets_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs/input4MIPs_datasets_CMIP6Plus.html)
+and [input4MIPs_files_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs/input4MIPs_files_CMIP6Plus.html).
 These give an overview at the level of each individual file,
 as well as at the level of datasets (i.e. collections of files).
 If there is another view that you would find helpful,
