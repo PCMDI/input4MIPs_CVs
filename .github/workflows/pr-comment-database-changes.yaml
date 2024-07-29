@@ -9,17 +9,23 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
+    env:
+      BODY_FILE: "database-changes-comment.md"
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Create comment
+        run: |
+          which pip
+          pip install python-packages/input4MIPs-CVs
+          python scripts/create-database-diff-comment.py --out-file $BODY_FILE
+          # Helpful for debugging
+          cat $BODY_FILE
 
       - name: Add comment
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: |
-          which pip
-          pip install python-packages/input4MIPs-CVs
-          BODY=`python -c 'print("Hello world\n\nGoodbye world")'`
-          gh pr comment "$PR_NUMBER" --body "$BODY"
+        run: gh pr comment "$PR_NUMBER" --body-file "$BODY_FILE"
