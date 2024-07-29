@@ -7,6 +7,7 @@ from __future__ import annotations
 import json
 import urllib.request
 from pathlib import Path
+from typing import Union
 
 import pandas as pd
 import pandas_diff as pd_diff
@@ -40,7 +41,9 @@ def format_db_entry_for_comment(entry: dict[str, str]) -> str:
     return "\n".join(components)
 
 
-def diff_db_to_changes_comment(db_main: pd.DataFrame, db_source: pd.DataFrame) -> str:
+def diff_db_to_changes_comment(
+    db_main: pd.DataFrame, db_source: pd.DataFrame, commit_id: Union[str, None] = None
+) -> str:
     """
     Get the difference between the database states, returning a GitHub compatible comment
 
@@ -51,6 +54,12 @@ def diff_db_to_changes_comment(db_main: pd.DataFrame, db_source: pd.DataFrame) -
 
     db_source
         State of the database in the repository as it is currently checked out
+
+    commit_id
+        The commit ID from which `db_source` was generated.
+
+        If supplied, we use this to create a more informative message.
+        Otherwise, we just use a generic message.
 
     Returns
     -------
@@ -72,9 +81,13 @@ def diff_db_to_changes_comment(db_main: pd.DataFrame, db_source: pd.DataFrame) -
     comment_l = []
 
     # Overview table
-    comment_l.append(
-        "Changes to the database introduced by this PR (as it currently stands)"
-    )
+    if commit_id:
+        comment_l.append(
+            f"Changes to the database between commit {commit_id} and the 'main' branch"
+        )
+
+    else:
+        comment_l.append("Changes to the database")
     comment_l.append("")
     comment_l.append("<details>")
     comment_l.append("<summary>Overview</summary>")
@@ -156,7 +169,9 @@ def diff_db_to_changes_comment(db_main: pd.DataFrame, db_source: pd.DataFrame) -
     return comment
 
 
-def get_pr_db_changes_comment(current_db_path: Path) -> str:
+def get_pr_db_changes_comment(
+    current_db_path: Path, commit_id: Union[str, None]
+) -> str:
     """
     Get the changes comment to post to a pull request
     """
@@ -166,4 +181,6 @@ def get_pr_db_changes_comment(current_db_path: Path) -> str:
     with open(current_db_path) as fh:
         db_source = pd.DataFrame(json.load(fh))
 
-    return diff_db_to_changes_comment(db_main=db_main, db_source=db_source)
+    return diff_db_to_changes_comment(
+        db_main=db_main, db_source=db_source, commit_id=commit_id
+    )

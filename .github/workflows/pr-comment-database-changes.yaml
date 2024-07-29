@@ -20,10 +20,12 @@ jobs:
           python-version: "3.11"
 
       - name: Create comment
+        env:
+          COMMIT_ID: ${{ github.event.pull_request.head.sha }}
         run: |
           which pip
           pip install python-packages/input4MIPs-CVs
-          python scripts/create-database-diff-comment.py --current-db DatasetsDatabase/input4MIPs_datasets.json --out-file $BODY_FILE
+          python scripts/create-database-diff-comment.py --current-db DatasetsDatabase/input4MIPs_datasets.json --out-file $BODY_FILE --commit-id $COMMIT_ID
           # Helpful for debugging
           cat $BODY_FILE
 
