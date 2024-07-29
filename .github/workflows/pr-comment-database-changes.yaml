@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  add-comment:
+  add-database-changes-comment-to-pr:
     if: ${{ !github.event.pull_request.draft }}
     runs-on: ubuntu-latest
     permissions:
@@ -26,8 +26,8 @@ jobs:
           which pip
           pip install python-packages/input4MIPs-CVs
           python scripts/create-database-diff-comment.py --current-db DatasetsDatabase/input4MIPs_datasets.json --out-file $BODY_FILE --commit-id $COMMIT_ID
-          # Helpful for debugging
-          cat $BODY_FILE
+          # # Turn on for debugging
+          # cat $BODY_FILE
 
       - name: Add comment
         env:
