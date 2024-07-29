@@ -242,8 +242,6 @@ def print_diffs(start: pd.DataFrame, end: pd.DataFrame) -> None:
         else:
             raise NotImplementedError()
 
-    # Could save diffs here too I guess, for later parsing...
-
 
 def main(create_diffs: bool = True) -> None:
     """
