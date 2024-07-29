@@ -129,6 +129,7 @@ def hack_in_prototype_amip_info(db_df: pd.DataFrame) -> pd.DataFrame:
 
         flat = {k: None for k in db_df.columns}
         flat["source_id"] = source_id
+        flat["publication_status"] = "registered"
         flat = flat | values
         row = pd.Series(flat)
 

@@ -187,6 +187,12 @@ def main(
     def get_url(row: pd.Series) -> str:
         source_id: str = row.source_id
         publication_status: str = row.publication_status
+
+        if publication_status == "registered":
+            publication_text = "Registered"
+            res = "<a href='https://github.com/PCMDI/input4MIPs_CVs/blob/main/CVs/input4MIPs_source_id.json' target='_blank'>Registered in CVs</a>"
+            return res
+
         if publication_status == "published":
             publication_text = "Published"
 
