@@ -25,7 +25,7 @@ jobs:
         run: |
           which pip
           pip install python-packages/input4MIPs-CVs
-          python scripts/create-database-diff-comment.py --current-db DatasetsDatabase/input4MIPs_datasets.json --out-file $BODY_FILE --commit-id $COMMIT_ID
+          python scripts/create-database-diff-comment.py --current-db Database/input4MIPs_db_file_entries.json --out-file $BODY_FILE --commit-id $COMMIT_ID
           # # Turn on for debugging
           # cat $BODY_FILE
 
