@@ -218,8 +218,9 @@ At present, we are tracking both of these files as part of this repository.
 This is ok for now, as the files are relatively small.
 This will not scale, so if we get to a certain size, we may have to pick a different approach.
 
-The data from these two files gets combined to create `Database/input4MIPs_db_file_entries.json`.
-This combination is done using `scripts/database-interactions/merge-esgf-and-p-mount-info.py`.
+The data from these two files, plus information from the CVS,
+gets combined to create `Database/input4MIPs_db_file_entries.json`.
+This combination is done using `scripts/database-interactions/update-database.py`.
 See the README in `scripts/database-interactions` for details of how to run this script.
 
 ### Generating the HTML pages
