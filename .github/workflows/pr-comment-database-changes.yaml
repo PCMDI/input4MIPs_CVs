@@ -15,16 +15,20 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          BODY: >
-            Test body here
 
-            A second line here
 
-            <details>
-              <summary>Foldable section</summary>
+            # >
+            # Test body here
+            #
+            # A second line here
+            #
+            # <details>
+            #   <summary>Foldable section</summary>
+            #
+            #   Details
+            #
+            # </details>
 
-              Details
-
-            </details>
-
-        run: gh pr comment "$PR_NUMBER" --body "$BODY"
+        run: |
+          BODY=`python -c 'print("Hello world\n\nGoodbye world")'`
+          gh pr comment "$PR_NUMBER" --body "$BODY"
