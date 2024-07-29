@@ -10,25 +10,16 @@ jobs:
     permissions:
       pull-requests: write
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
       - name: Add comment
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-
-
-            # >
-            # Test body here
-            #
-            # A second line here
-            #
-            # <details>
-            #   <summary>Foldable section</summary>
-            #
-            #   Details
-            #
-            # </details>
-
         run: |
+          which pip
+          pip install python-packages/input4MIPs-CVs
           BODY=`python -c 'print("Hello world\n\nGoodbye world")'`
           gh pr comment "$PR_NUMBER" --body "$BODY"
