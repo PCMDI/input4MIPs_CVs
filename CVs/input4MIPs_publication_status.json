@@ -1,4 +1,7 @@
 {
+    "registered":{
+        "description":"Dataset is known, but no data has been received for publication yet"
+    },
     "in_publishing_queue":{
         "description":"Dataset is known and in the publication queue"
     },

@@ -15,6 +15,16 @@
         "mip_era":"CMIP6Plus",
         "source_version":"1.0"
     },
+    "MRI-JRA55-do-1-6-0":{
+        "MRI-JRA55-do-1-6-0":{
+            "contact":"Hiroyuki Tsujino (htsujino@mri-jma.go.jp)",
+            "further_info_url":"https://climate.mri-jma.go.jp/pub/ocean/JRA55-do/index.html",
+            "institution_id":"MRI",
+            "license_id":null,
+            "mip_era":"CMIP6Plus",
+            "source_version":"1.6.0"
+        }
+    },
     "PCMDI-AMIP-1-1-9":{
         "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
         "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
@@ -22,6 +32,30 @@
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "source_version":"1.1.9"
+    },
+    "PCMDI-AMIP-ERSST5-1-0":{
+        "contact":"zelinka1@llnl.gov; durack1@llnl.gov",
+        "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
+        "institution_id":"PCMDI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0"
+    },
+    "PCMDI-AMIP-Had1p1-1-0":{
+        "contact":"zelinka1@llnl.gov; durack1@llnl.gov",
+        "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
+        "institution_id":"PCMDI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0"
+    },
+    "PCMDI-AMIP-OI2p1-1-0":{
+        "contact":"zelinka1@llnl.gov; durack1@llnl.gov",
+        "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
+        "institution_id":"PCMDI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0"
     },
     "SOLARIS-HEPPA-CMIP-4-1":{
         "contact":"bernd@iaa.es",

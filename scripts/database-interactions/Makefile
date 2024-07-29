@@ -23,9 +23,9 @@ help:  ## print short description of each target
 generate-web-pages:  ## generate our web pages
 	venv/bin/python generate-html-pages.py --version "0.1.0"
 
-.PHONY: merge-esgf-and-p-mount-info
-merge-esgf-and-p-mount-info:  ## run the update publication status script
-	venv/bin/python merge-esgf-and-p-mount-info.py
+.PHONY: update-database
+update-database:  ## run our database update script
+	venv/bin/python update-database.py
 
 .PHONY: virtual-environment
 virtual-environment:  ## update virtual environment, create a new one if it doesn't already exist
