@@ -4,6 +4,7 @@
 This script queries the ESGF SOLR index and pulls out all
 input4MIPs/project entries
 """
+
 """2024
 PJD 25 Jul 2024 - started
 PJD 25 Jul 2024 - 1216 372 Datasets returned, 350 Files
@@ -130,7 +131,7 @@ print("All done")
 # cleanup
 os.remove(oF)  # cleanup
 # Write all out
-oF = "../DatasetsDatabase/input-data/esgf.json"
+oF = "../Database/input-data/esgf.json"
 if os.path.exists(oF):
     os.remove(oF)
 fH = open(oF, "w", encoding="utf-8")
