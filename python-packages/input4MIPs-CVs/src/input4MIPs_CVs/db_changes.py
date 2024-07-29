@@ -11,8 +11,6 @@ from pathlib import Path
 import pandas as pd
 import pandas_diff as pd_diff
 
-ROOT_DIR = Path(__file__).parents[4]
-
 URL_DB_JSON_MAIN = "https://raw.githubusercontent.com/PCMDI/input4MIPs_CVs/main/DatasetsDatabase/input4MIPs_datasets.json"
 """URL which points to the database's state in main"""
 
@@ -158,14 +156,14 @@ def diff_db_to_changes_comment(db_main: pd.DataFrame, db_source: pd.DataFrame) -
     return comment
 
 
-def get_pr_db_changes_comment() -> str:
+def get_pr_db_changes_comment(current_db_path: Path) -> str:
     """
     Get the changes comment to post to a pull request
     """
     with urllib.request.urlopen(URL_DB_JSON_MAIN) as url:
         db_main = pd.DataFrame(json.load(url))
 
-    with open(ROOT_DIR / "DatasetsDatabase" / "input4MIPs_datasets.json") as fh:
+    with open(current_db_path) as fh:
         db_source = pd.DataFrame(json.load(fh))
 
     return diff_db_to_changes_comment(db_main=db_main, db_source=db_source)
