@@ -1,0 +1,30 @@
+name: Add comment to PRs displaying changes to the database
+
+on: 
+  pull_request:
+
+jobs:
+  add-comment:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Add comment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+          BODY: >
+            Test body here
+
+            A second line here
+
+            <details>
+              <summary>Foldable section</summary>
+
+              Details
+
+            </details>
+
+        run: gh pr comment "$PR_NUMBER" --body "$BODY"
