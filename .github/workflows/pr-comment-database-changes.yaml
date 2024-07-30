@@ -1,0 +1,37 @@
+name: Add comment to PRs displaying changes to the database
+
+on: 
+  pull_request:
+
+jobs:
+  add-database-changes-comment-to-pr:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    env:
+      BODY_FILE: "database-changes-comment.md"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Create comment
+        env:
+          COMMIT_ID: ${{ github.event.pull_request.head.sha }}
+        run: |
+          which pip
+          pip install python-packages/input4MIPs-CVs
+          python scripts/create-database-diff-comment.py --current-db DatasetsDatabase/input4MIPs_datasets.json --out-file $BODY_FILE --commit-id $COMMIT_ID
+          # # Turn on for debugging
+          # cat $BODY_FILE
+
+      - name: Add comment
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        run: gh pr comment "$PR_NUMBER" --body-file "$BODY_FILE"
