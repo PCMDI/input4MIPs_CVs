@@ -72,5 +72,14 @@
         "mip_era":"CMIP6Plus",
         "target_mip":"CMIP",
         "source_version":"4.2"
+    },
+    "SOLARIS-HEPPA-CMIP-4-3":{
+        "contact":"bernd@iaa.es",
+        "further_info_url":"http://solarisheppa.geomar.de/cmip7",
+        "institution_id":"SOLARIS-HEPPA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "target_mip":"CMIP",
+        "source_version":"4.3"
     }
 }
