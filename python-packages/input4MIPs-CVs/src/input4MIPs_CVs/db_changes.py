@@ -103,25 +103,35 @@ def diff_db_to_changes_comment(
     comment_l.append("")
 
     # Overview by source ID
+    overview_view_incl_source_id = overview_view.copy()
+    overview_view_incl_source_id["source_id"] = overview_view_incl_source_id[
+        keys_col
+    ].apply(lambda x: x.split(",")[0])
+
     comment_l.append("<details>")
     comment_l.append("<summary>Overview, split by source ID</summary>")
-    for object_values, ovdf in overview_view.groupby(keys_col):
-        source_id, _ = ovdf[keys_col].iloc[0].split(",")
+    for source_id, sidf in overview_view_incl_source_id.groupby("source_id"):
+        source_id, _ = sidf[keys_col].iloc[0].split(",")
         comment_l.append("<details>")
         comment_l.append(f"<summary>Source ID: {source_id}</summary>")
-        comment_l.append(ovdf.to_html())
+        comment_l.append(sidf.to_html())
         comment_l.append("</details>")
 
     comment_l.append("</details>")
 
     # Details of individual operations by source ID
+    diffs_incl_source_id = diffs.copy()
+    diffs_incl_source_id["source_id"] = diffs_incl_source_id[keys_col].apply(
+        lambda x: x.split(",")[0]
+    )
+
     comment_l.append("<details>")
     comment_l.append("<summary>Detailed changes, split by source ID</summary>")
-    for object_values, ovdf in diffs.groupby(keys_col):
-        source_id, _ = ovdf[keys_col].iloc[0].split(",")
+    for source_id, sidf in diffs_incl_source_id.groupby("source_id"):
         comment_l.append("<details>")
         comment_l.append(f"<summary>Source ID: {source_id}</summary>")
 
+        ovdf = sidf.drop("source_id", axis="columns")
         for (diff_keys_str, operation), operation_df in ovdf.groupby(
             [keys_col, "operation"]
         ):
