@@ -70,6 +70,13 @@ def diff_db_to_changes_comment(
     # I can't think through that right now, so here we are.
     diff_keys = ["source_id", "tracking_id"]
     diffs_raw = pd_diff.get_diffs(before=db_main, after=db_source, keys=diff_keys)
+
+    if diffs_raw.empty:
+        if commit_id:
+            return f"No changes to the database between 'main' branch and {commit_id}"
+
+        return "No changes to the database"
+
     keys_col = ",".join(diff_keys)
     diffs = diffs_raw.drop("object_keys", axis="columns").rename(
         {"object_values": keys_col}, axis="columns"
