@@ -12,7 +12,7 @@ from typing import Union
 import pandas as pd
 import pandas_diff as pd_diff
 
-URL_DB_JSON_MAIN = "https://raw.githubusercontent.com/PCMDI/input4MIPs_CVs/main/DatasetsDatabase/input4MIPs_datasets.json"
+URL_DB_JSON_MAIN = "https://raw.githubusercontent.com/PCMDI/input4MIPs_CVs/main/Database/input4MIPs_db_file_entries.json"
 """URL which points to the database's state in main"""
 
 

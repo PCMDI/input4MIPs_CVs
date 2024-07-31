@@ -248,9 +248,9 @@ def main(create_diffs: bool = True) -> None:
     Merge the information scraped from ESGF and the files
     """
     ROOT_DIR = Path(__file__).parents[2]
-    DB_DIR = ROOT_DIR / "DatasetsDatabase"
+    DB_DIR = ROOT_DIR / "Database"
 
-    DB_FILE = DB_DIR / "input4MIPs_datasets.json"
+    DB_FILE = DB_DIR / "input4MIPs_db_file_entries.json"
     """Output database file"""
 
     with open(DB_DIR / DB_FILE, "r") as fh:

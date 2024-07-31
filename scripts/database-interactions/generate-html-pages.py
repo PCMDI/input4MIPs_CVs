@@ -116,9 +116,7 @@ def main(
     """
     Generate html pages from our database
     """
-    DB_FILE = (
-        Path(__file__).parents[2] / "DatasetsDatabase" / "input4MIPs_datasets.json"
-    )
+    DB_FILE = Path(__file__).parents[2] / "Database" / "input4MIPs_db_file_entries.json"
 
     with open(DB_FILE) as fh:
         db_raw = json.load(fh)
