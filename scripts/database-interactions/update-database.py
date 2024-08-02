@@ -220,6 +220,18 @@ def add_missing_source_ids(
     return db_df
 
 
+def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Other manual fixes to the database
+    """
+    out = db_df.copy()
+
+    # Abandoned source IDs
+    out.loc[out["source_id"] == "CR-CMIP-0-2-0", "publication_status"] = "abandoned"
+
+    return out
+
+
 def print_diffs(start: pd.DataFrame, end: pd.DataFrame) -> None:
     """
     Print the difference in our database start before and after the merge
@@ -274,6 +286,8 @@ def main(create_diffs: bool = True) -> None:
     db_df = hack_in_prototype_amip_info(db_df)
 
     db_df = add_missing_source_ids(db_df=db_df, cvs_source_ids_raw=source_ids_raw)
+
+    db_df = other_manual_fixes(db_df=db_df)
 
     if create_diffs:
         print_diffs(start=db_start_df, end=db_df)

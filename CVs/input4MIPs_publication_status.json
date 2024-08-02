@@ -10,5 +10,8 @@
     },
     "retracted":{
         "description":"Dataset has been retracted. It should no longer be used, except for reproduction of earlier results/experiments"
+    },
+    "abandoned":{
+        "description":"The dataset was registered, but then never produced (for whatever reason)."
     }
 }

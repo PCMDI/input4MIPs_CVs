@@ -191,6 +191,9 @@ def main(
             res = "<a href='https://github.com/PCMDI/input4MIPs_CVs/blob/main/CVs/input4MIPs_source_id.json' target='_blank'>Registered in CVs</a>"
             return res
 
+        if publication_status == "abandoned":
+            return "Abandoned: the dataset was registered but never produced"
+
         if publication_status == "published":
             publication_text = "Published"
 

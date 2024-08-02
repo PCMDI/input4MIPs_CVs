@@ -7,6 +7,14 @@
         "mip_era":"CMIP6Plus",
         "source_version":"0.2.0"
     },
+    "CR-CMIP-0-3-0":{
+        "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.3.0"
+    },
     "DRES-CMIP-BB4CMIP7-1-0":{
         "contact":"Margreet.vanMarle@Deltares.nl;Guido.vanderWerf@wur.nl",
         "further_info_url":"http://www.globalfiredata.org",
