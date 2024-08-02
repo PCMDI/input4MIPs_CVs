@@ -252,7 +252,7 @@ def print_diffs(start: pd.DataFrame, end: pd.DataFrame) -> None:
             )
 
         else:
-            raise NotImplementedError()
+            raise NotImplementedError(row["operation"])
 
 
 def main(create_diffs: bool = True) -> None:
@@ -270,8 +270,11 @@ def main(create_diffs: bool = True) -> None:
 
     db_start_df = pd.DataFrame(db_start_raw)
 
-    with open(DB_DIR / "input-data" / "pmount.json") as fh:
-        pmount_raw = json.load(fh)
+    pmount_raw = []
+    db_files = list((DB_DIR / "input-data" / "pmount").glob("*.json"))
+    for file in tqdm.tqdm(db_files):
+        with open(file) as fh:
+            pmount_raw.append(json.load(fh))
 
     with open(DB_DIR / "input-data" / "esgf.json") as fh:
         esgf_raw = json.load(fh)
