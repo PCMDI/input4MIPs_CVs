@@ -1,11 +1,11 @@
 {
-    "CR-CMIP-0-2-1a1-dev":{
+    "CR-CMIP-0-2-0":{
         "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "source_version":"0.2.0a1-dev"
+        "source_version":"0.2.0"
     },
     "CR-CMIP-0-3-0":{
         "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
