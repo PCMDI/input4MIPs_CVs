@@ -27,26 +27,6 @@ import tqdm
 import typer
 
 
-def apply_fixes_to_pmount_data(inp: pd.DataFrame) -> pd.DataFrame:
-    """
-    Apply manual fixes to our pmount extracted data
-
-    Hopefully we can turn this into a no-op once that process is working smoothly.
-    """
-    res = inp.copy()
-
-    # The validation column is not handled properly yet by input4mips-validation,
-    # so set it manually here
-    res.loc[
-        res["source_id"].isin(["PCMDI-AMIP-1-1-9", "MRI-JRA55-do-1-6-0"]),
-        "validated_input4mips",
-    ] = True
-
-    # Note, updates to all other fields happen as part of the merge process
-
-    return res
-
-
 def merge_pmount_and_esgf_data(
     pmount_df: pd.DataFrame, esgf_raw: dict[str, Any]
 ) -> pd.DataFrame:
@@ -282,7 +262,7 @@ def main(create_diffs: bool = True) -> None:
     with open(ROOT_DIR / "CVs" / "input4MIPs_source_id.json") as fh:
         source_ids_raw = json.load(fh)
 
-    pmount_df = apply_fixes_to_pmount_data(pd.DataFrame(pmount_raw))
+    pmount_df = pd.DataFrame(pmount_raw)
 
     db_df = merge_pmount_and_esgf_data(pmount_df=pmount_df, esgf_raw=esgf_raw)
 
