@@ -297,7 +297,7 @@ def main(create_diffs: bool = True) -> None:
 
     with open(DB_FILE, "w") as fh:
         json.dump(
-            db_df.to_dict(orient="records"),
+            db_df.sort_values("sha256").to_dict(orient="records"),
             fh,
             ensure_ascii=True,
             sort_keys=True,
