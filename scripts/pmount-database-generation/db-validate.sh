@@ -1,9 +1,9 @@
 #!/bin/bash
 # Validate a database
 
-# To run this script, you need an environment with input4mips-validation==0.11.0 installed
+# To run this script, you need an environment with input4mips-validation==0.11.1 installed
 # On nimbus, you can get into that with:
-# - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.11.0/`
+# - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.11.1/`
 
 DATABASE_DIR=input4mips-file-db
 CV_SOURCE="gh:main"
@@ -15,7 +15,8 @@ LOG_LEVEL="INFO"
 # LOG_LEVEL="DEBUG"
 
 input4mips-validation --logging-level $LOG_LEVEL \
-    db validate \
-    --db-dir ${DATABASE_DIR} \
-    --cv-source ${CV_SOURCE} \
-    --n-processes 6
+	db validate \
+	--db-dir ${DATABASE_DIR} \
+	--cv-source ${CV_SOURCE} \
+	--n-processes 6
+
