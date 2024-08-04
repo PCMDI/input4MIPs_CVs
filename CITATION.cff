@@ -1,7 +1,7 @@
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files
 
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata from this file"
+message: "If you use this software, please cite it using the metadata from this file. Please note that the DOI cites all versions of the software. To get the DOI for a specific version, please select the appropriate version on Zenodo (you can start from the page for all versions here: https://zenodo.org/doi/10.5281/zenodo.12629796)"
 authors:
 - family-names: "Durack"
   given-names: "Paul J."
@@ -10,7 +10,5 @@ authors:
   given-names: "Zebedee R. J."
   orcid: "https://orcid.org/0000-0002-4767-2723"
 title: "input4MIPs Controlled Vocabularies (CVs)"
-version: 6.5.2
 doi: 10.5281/zenodo.12629797
-date-released: 2024-07-02
 url: "https://github.com/PCMDI/input4MIPs_CVs"
