@@ -16,7 +16,7 @@ from __future__ import annotations
 
 import copy
 from pathlib import Path
-from typing import Any
+from typing import Any, Annotated, Union
 
 import json
 
@@ -32,7 +32,9 @@ def merge_pmount_and_esgf_data(
 ) -> pd.DataFrame:
     res = pmount_df.copy()
 
-    for idx, row in tqdm.tqdm(res.iterrows()):
+    for idx, row in tqdm.tqdm(
+        res.iterrows(), desc="Adding ESGF data to pmount records"
+    ):
         if row.esgf_dataset_master_id not in esgf_raw:
             # Data not in ESGF yet
             # Print info and move in
@@ -235,31 +237,38 @@ def print_diffs(start: pd.DataFrame, end: pd.DataFrame) -> None:
             raise NotImplementedError(row["operation"])
 
 
-def main(create_diffs: bool = True) -> None:
+def main(
+    root_dir: Annotated[Path, typer.Option(help="Root directory of the repository")],
+    create_diffs: Annotated[
+        bool, typer.Option(help="Show the changes made to the database")
+    ] = True,
+) -> None:
     """
     Merge the information scraped from ESGF and the files
+
+    Exits with zero if there are no changes to the database.
+    Exits with one if there would be changes to the database.
     """
-    ROOT_DIR = Path(__file__).parents[2]
-    DB_DIR = ROOT_DIR / "Database"
+    DB_DIR = root_dir / "Database"
 
     DB_FILE = DB_DIR / "input4MIPs_db_file_entries.json"
     """Output database file"""
 
-    with open(DB_DIR / DB_FILE, "r") as fh:
+    with open(DB_FILE, "r") as fh:
         db_start_raw = json.load(fh)
 
     db_start_df = pd.DataFrame(db_start_raw)
 
     pmount_raw = []
     db_files = list((DB_DIR / "input-data" / "pmount").glob("*.json"))
-    for file in tqdm.tqdm(db_files):
+    for file in tqdm.tqdm(db_files, desc="Loading pmount entries"):
         with open(file) as fh:
             pmount_raw.append(json.load(fh))
 
     with open(DB_DIR / "input-data" / "esgf.json") as fh:
         esgf_raw = json.load(fh)
 
-    with open(ROOT_DIR / "CVs" / "input4MIPs_source_id.json") as fh:
+    with open(root_dir / "CVs" / "input4MIPs_source_id.json") as fh:
         source_ids_raw = json.load(fh)
 
     pmount_df = pd.DataFrame(pmount_raw)
@@ -272,20 +281,44 @@ def main(create_diffs: bool = True) -> None:
 
     db_df = other_manual_fixes(db_df=db_df)
 
+    idx_compare_cols = ["sha256", "source_id"]
+    db_unchanged = (
+        db_df.set_index(idx_compare_cols)
+        .sort_index()
+        .equals(db_start_df.set_index(idx_compare_cols).sort_index())
+    )
+
+    if db_unchanged:
+        print(f"No changes to {DB_FILE}")
+        raise typer.Exit(0)
+
     if create_diffs:
         print_diffs(start=db_start_df, end=db_df)
 
+    def get_sort_key(record: dict[str, Union[str, None]]) -> str:
+        """
+        Get the key for sorting our entries
+        """
+        if record["sha256"] is not None:
+            return record["sha256"]
+
+        # Not a file, just a registered dataset
+        return record["source_id"]
+
+    to_dump = sorted(
+        db_df.sort_values("sha256").to_dict(orient="records"), key=get_sort_key
+    )
     with open(DB_FILE, "w") as fh:
         json.dump(
-            db_df.sort_values("sha256").to_dict(orient="records"),
+            to_dump,
             fh,
             ensure_ascii=True,
             sort_keys=True,
             indent=4,
             separators=(",", ":"),
         )
-
-    print(f"Update {DB_FILE}")
+    print(f"Updated {DB_FILE}")
+    raise typer.Exit(1)
 
 
 if __name__ == "__main__":
