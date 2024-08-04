@@ -37,6 +37,7 @@ jobs:
         run: gh pr comment "$PR_NUMBER" --body-file "$BODY_FILE"
 
   check-database-up-to-date:
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -46,8 +47,6 @@ jobs:
           python-version: "3.11"
 
       - name: Check database up to date
-        env:
-          COMMIT_ID: ${{ github.event.pull_request.head.sha }}
         run: |
           which pip
           pip install python-packages/input4MIPs-CVs
