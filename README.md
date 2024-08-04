@@ -195,30 +195,33 @@ We hope to improve these docs over time.
 
 ### Generating the database
 
-In `Database/input-data` there are two files:
+In `Database/input-data` there are two components:
 
-1. `esgf.json`
-1. `pmount.json`
+1. The file `esgf.json`
+1. The directory `Database/input-data/pmount`
 
 `Database/input-data/esgf.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have queried from the ESGF index database.
-We hope to automate the generation of this file in future.
-[TODO: make an issue (?)]
 It is generated with `scripts/pollESGF.py`.
 However, the API it queries only allows certain IP addresses,
 so you will only be able to run this if you have been given access.
+We hope to switch to automated generation of this file in future
+(see [#69](https://github.com/PCMDI/input4MIPs_CVs/issues/69)).
 
-`Database/input-data/pmount.json` is a scrape of information from the files that we know about.
-This captures the latest set of information we have 
+`Database/input-data/pmount` contains a number of JSON files.
+Each file contains information about one file
 from the actual files in the input4MIPs project.
-These files are stored elsewhere 
-and this file is generated with [input4mips-validation](https://input4mips-validation.readthedocs.io/en/latest/).
+The actual files are stored elsewhere.
+The database entries are managed using the scripts in
+`scripts/pmount-database-generation`.
+See `scripts/pmount-database-generation/README.md`
+for futher details.
 
-At present, we are tracking both of these files as part of this repository.
-This is ok for now, as the files are relatively small.
-This will not scale, so if we get to a certain size, we may have to pick a different approach.
+At present, we are tracking both of these inputs as part of this repository.
+This is ok for now, as the data is relatively small.
+This may not scale, so if we get to a certain size, we may have to pick a different approach.
 
-The data from these two files, plus information from the CVS,
+The data from these two inputs, plus information from the CVS,
 gets combined to create `Database/input4MIPs_db_file_entries.json`.
 This combination is done using `scripts/database-interactions/update-database.py`.
 See the README in `scripts/database-interactions` for details of how to run this script.
