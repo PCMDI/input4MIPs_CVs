@@ -164,9 +164,8 @@ The server's details are below:
 - password: please use your email as the password, i.e. something like "me@institute.com"
 - root directory for uploads: "incoming"
 
-If it is helpful, @znichollscr has a script used for uploads 
-[here](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/scripts/upload-to-ftp-server.py).
-Feel free to copy that (or use it as is) to upload your own files.
+If it is helpful, input4MIPs validation provides a tool for this.
+See [How to upload to an FTP server](https://input4mips-validation.readthedocs.io/en/latest/how-to-guides/how-to-upload-to-ftp/).
 
 ##### Upload to somewhere else (not preferred)
 
@@ -223,8 +222,12 @@ This may not scale, so if we get to a certain size, we may have to pick a differ
 
 The data from these two inputs, plus information from the CVS,
 gets combined to create `Database/input4MIPs_db_file_entries.json`.
-This combination is done using `scripts/database-interactions/update-database.py`.
-See the README in `scripts/database-interactions` for details of how to run this script.
+This combination is done using `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py`.
+In order to run this script, you should:
+
+1. Make a virtual environment (e.g. `python3 -m venv venv`)
+2. Install the local `input4MIPs-CVs` package into the environment
+   (e.g. `pip install -e python-packages/input4MIPs-CVs`)
 
 ### Generating the HTML pages
 
