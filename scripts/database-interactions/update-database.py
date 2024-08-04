@@ -27,26 +27,6 @@ import tqdm
 import typer
 
 
-def apply_fixes_to_pmount_data(inp: pd.DataFrame) -> pd.DataFrame:
-    """
-    Apply manual fixes to our pmount extracted data
-
-    Hopefully we can turn this into a no-op once that process is working smoothly.
-    """
-    res = inp.copy()
-
-    # The validation column is not handled properly yet by input4mips-validation,
-    # so set it manually here
-    res.loc[
-        res["source_id"].isin(["PCMDI-AMIP-1-1-9", "MRI-JRA55-do-1-6-0"]),
-        "validated_input4mips",
-    ] = True
-
-    # Note, updates to all other fields happen as part of the merge process
-
-    return res
-
-
 def merge_pmount_and_esgf_data(
     pmount_df: pd.DataFrame, esgf_raw: dict[str, Any]
 ) -> pd.DataFrame:
@@ -252,7 +232,7 @@ def print_diffs(start: pd.DataFrame, end: pd.DataFrame) -> None:
             )
 
         else:
-            raise NotImplementedError()
+            raise NotImplementedError(row["operation"])
 
 
 def main(create_diffs: bool = True) -> None:
@@ -270,8 +250,11 @@ def main(create_diffs: bool = True) -> None:
 
     db_start_df = pd.DataFrame(db_start_raw)
 
-    with open(DB_DIR / "input-data" / "pmount.json") as fh:
-        pmount_raw = json.load(fh)
+    pmount_raw = []
+    db_files = list((DB_DIR / "input-data" / "pmount").glob("*.json"))
+    for file in tqdm.tqdm(db_files):
+        with open(file) as fh:
+            pmount_raw.append(json.load(fh))
 
     with open(DB_DIR / "input-data" / "esgf.json") as fh:
         esgf_raw = json.load(fh)
@@ -279,7 +262,7 @@ def main(create_diffs: bool = True) -> None:
     with open(ROOT_DIR / "CVs" / "input4MIPs_source_id.json") as fh:
         source_ids_raw = json.load(fh)
 
-    pmount_df = apply_fixes_to_pmount_data(pd.DataFrame(pmount_raw))
+    pmount_df = pd.DataFrame(pmount_raw)
 
     db_df = merge_pmount_and_esgf_data(pmount_df=pmount_df, esgf_raw=esgf_raw)
 
@@ -294,7 +277,7 @@ def main(create_diffs: bool = True) -> None:
 
     with open(DB_FILE, "w") as fh:
         json.dump(
-            db_df.to_dict(orient="records"),
+            db_df.sort_values("sha256").to_dict(orient="records"),
             fh,
             ensure_ascii=True,
             sort_keys=True,
