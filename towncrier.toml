@@ -1,0 +1,22 @@
+[tool.towncrier]
+name = "Input4MIPs CVs"
+version = "6.5.11a1"
+filename = "docs/changelog.md"
+directory = "changelog/"
+title_format = "## Input4MIPs CVs {version} ({project_date})"
+underlines = [
+    "",
+    "",
+    "",
+]
+issue_format = "[#{issue}](https://github.com/PCMDI/Input4MIPs_CVs/pull/{issue})"
+type = [
+    { directory = "breaking", name = "⚠️ Breaking Changes", showcontent = true },
+    { directory = "deprecation", name = "🗑️ Deprecations", showcontent = true },
+    { directory = "feature", name = "🆕 Features", showcontent = true },
+    { directory = "improvement", name = "🎉 Improvements", showcontent = true },
+    { directory = "fix", name = "🐛 Bug Fixes", showcontent = true },
+    { directory = "docs", name = "📚 Improved Documentation", showcontent = true },
+    { directory = "trivial", name = "🔧 Trivial/Internal Changes", showcontent = false },
+]
+
