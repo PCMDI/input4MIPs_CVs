@@ -34,15 +34,23 @@ def get_url_esgf_for_html_table(row: pd.Series, search_facets: Iterable[str]) ->
     publication_status: str = row["publication_status"]
 
     if publication_status == "registered":
-        publication_text = "Registered"
-        res = "<a href='https://github.com/PCMDI/input4MIPs_CVs/blob/main/CVs/input4MIPs_source_id.json' target='_blank'>Registered in CVs</a>"
+        res = (
+            "<a href='https://github.com/PCMDI/input4MIPs_CVs/blob/main/CVs/input4MIPs_source_id.json' target='_blank'>"
+            "Registered in CVs"
+            "</a>"
+        )
+        return res
+
+    if publication_status == "in_publishing_queue":
+        res = (
+            "<a href='https://github.com/PCMDI/input4MIPs_CVs/blob/main/CVs/input4MIPs_source_id.json' target='_blank'>"
+            "In publishing queue"
+            "</a>"
+        )
         return res
 
     if publication_status == "abandoned":
-        return "Abandoned: the dataset was registered but never produced"
-
-    if publication_status == "in_publishing_queue":
-        return "In publishing queue"
+        return "Abandoned: registered but never produced"
 
     if publication_status == "published":
         publication_text = "Published"
@@ -217,8 +225,31 @@ def get_datasets_view(
     )
 
     res = db[list(col_order)].drop_duplicates()
+
+    res_aggregated_l = []
+    group_cols = [v for v in col_order if v not in ["time_range"]]
+    for _, dsvdf in res.groupby(group_cols, dropna=False):
+        if all(v is None for v in dsvdf["time_range"]):
+            res_aggregated_l.append(dsvdf)
+            continue
+
+        # Incredibly slow way of doing this, but fine for now
+        all_times = []
+        for v in dsvdf["time_range"].tolist():
+            s, e = v.split("-")
+            all_times.append(s)
+            all_times.append(e)
+
+        time_range_summary = f"{min(all_times)}-{max(all_times)}"
+        keep = dsvdf[group_cols].drop_duplicates()
+        keep["time_range"] = time_range_summary
+
+        res_aggregated_l.append(keep)
+
+    res = pd.concat(res_aggregated_l)
+
     urls = get_esgf_urls_for_html(
-        db,
+        res,
         search_facets=[
             "variable_id",
             "frequency",

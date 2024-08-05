@@ -16,13 +16,10 @@ from typing import Annotated
 import packaging.version
 import typer
 
+from input4MIPs_CVs.cli.options import REPO_ROOT_DIR_OPTION
 from input4MIPs_CVs.html_generation import generate_html_pages
 
 app = typer.Typer()
-
-REPO_ROOT_DIR_OPTION = Annotated[
-    Path, typer.Option(help="Root directory of the repository")
-]
 
 
 def parse_version(version_str: str) -> packaging.version.Version:
