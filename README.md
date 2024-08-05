@@ -1,4 +1,7 @@
-# input4MIPs_CVs [![Current version](https://img.shields.io/badge/Current%20version-6.5.2-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/6.5.2) [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://doi.org/10.5281/zenodo.12629796)
+# input4MIPs_CVs 
+
+[![Latest release](https://img.shields.io/badge/Latest%20release-v6.5.10-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/v6.5.10))
+[![DOI (all versions)](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://zenodo.org/doi/10.5281/zenodo.12629796)
 
 Controlled Vocabularies (CVs) for use in input4MIPs
 
@@ -57,6 +60,28 @@ as well as at the level of datasets (i.e. collections of files).
 If there is another view that you would find helpful,
 please feel free to [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
 to discuss.
+
+## Versioning
+
+The single source of truth for the repository's version is currently `VERSION`.
+The version string from this file is then propagated to the rest of the repository
+using `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/apply-version.py`.
+If you see a place where this is not applied consistently,
+please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
+to let us know.
+
+The version number takes the form X.Y.Z, but does not completely follow semantic versioning.
+The major number, X, is the CMIP generation we are targeting.
+At the moment, this is 6, soon (hopefully Jan 2025) it will be 7.
+The minor number, Y, is incremented for breaking changes to the CVs.
+The patch number, Z, is incremented for all other changes.
+All releases will have a unique version number and be tagged in the repository.
+For all commits except tagged commits,
+we append the version with "a1" to indicate 
+that this state of the repository is not an official release,
+instead, it is a work in progress pre-release.
+Please treat these pre-release versions with more care,
+because their version number does not correspond to a unique commit.
 
 ## Usage
 
