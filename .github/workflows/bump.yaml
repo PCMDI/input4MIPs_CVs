@@ -38,6 +38,9 @@ jobs:
         run: |
           which pip
           pip install python-packages/input4MIPs-CVs
+          # Pin towncrier
+          # Particularly because of https://github.com/twisted/towncrier/issues/648
+          pip install 'towncrier==23.11.0'
 
       - name: Bump
         run: |
@@ -60,6 +63,9 @@ jobs:
 
           NEW_VERSION=`cat VERSION`
           echo "Bumping to version $NEW_VERSION"
+
+          # Build CHANGELOG
+          towncrier build --yes --version v$NEW_VERSION
 
           # Commit, tag and push
           git commit -a -m "bump: version $BASE_VERSION -> $NEW_VERSION"

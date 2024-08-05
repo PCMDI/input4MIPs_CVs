@@ -168,6 +168,42 @@ def write_version_into_pyproject_toml(
         fh.write(new_pyproject_toml)
 
 
+def write_version_into_towncrier_toml(
+    version: packaging.version.Version,
+    repo_root_dir: Path,
+    file_to_write: Path = "towncrier.toml",
+) -> None:
+    """
+    Write the version information into towncrier's `towncrier.toml` file
+
+    Parameters
+    ----------
+    version
+        Version to write
+
+    repo_root_dir
+        Root directory of the repository
+
+    file_to_write
+        `towncrier.toml` file in which to write the version
+    """
+    towncrier_toml_file = repo_root_dir / file_to_write
+    with open(towncrier_toml_file) as fh:
+        raw = fh.read()
+
+    old_version_line_regexp = r'version = "\d+\.\d+\.\d+(a1)?"'
+    new_version_line = f'version = "{version}"'
+
+    new_towncrier_toml = re.sub(
+        pattern=old_version_line_regexp,
+        repl=new_version_line,
+        string=raw,
+    )
+
+    with open(towncrier_toml_file, "w") as fh:
+        fh.write(new_towncrier_toml)
+
+
 def set_repository_version(
     version_str: str,
     repo_root_dir: str,
