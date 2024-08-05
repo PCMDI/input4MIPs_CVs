@@ -46,7 +46,7 @@ jobs:
           git config --global user.email "$CI_COMMIT_EMAIL"
 
           echo "bump_rule"
-          echo ${{ github.event.inputs.bump_rule }}
+          echo ${{ inputs.bump_rule }}
 
           BASE_VERSION=`cat VERSION`
           echo "Bumping from version $BASE_VERSION"
@@ -55,8 +55,8 @@ jobs:
           python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "no-pre-release" --no-pre-release --repo-root-dir .
 
           # Bump to new release
-          if [ "${{ github.event.inputs.bump_rule }}" != "no-pre-release" ]; then 
-              python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "${{ github.event.inputs.bump_rule }}" --no-pre-release --repo-root-dir .
+          if [ "${{ inputs.bump_rule }}" != "no-pre-release" ]; then 
+              python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "${{ inputs.bump_rule }}" --no-pre-release --repo-root-dir .
           fi
 
           NEW_VERSION=`cat VERSION`
