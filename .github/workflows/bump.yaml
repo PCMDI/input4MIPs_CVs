@@ -70,7 +70,8 @@ jobs:
           # Commit, tag and push
           echo $NEW_VERSION
           git commit -a -m "bump: version $BASE_VERSION -> $NEW_VERSION"
-          git tag "v${NEW_VERSION}"
+          # git tag "v${NEW_VERSION}"
+          git tag "v6.5.16"
           git push && git push --tags
 
           # Bump to alpha (so that future commits do not have the same
