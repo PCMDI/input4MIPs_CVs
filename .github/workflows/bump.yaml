@@ -47,7 +47,7 @@ jobs:
           git config --global user.email "$CI_COMMIT_EMAIL"
 
           USER_INPUT=${{ github.event.inputs.bump_rule }}
-          BUMP_RULE=${USER_INPUT:-"minor"}
+          BUMP_RULE=${USER_INPUT:-"major"}
 
           BASE_VERSION=`cat VERSION`
           echo "Bumping from version $BASE_VERSION"
