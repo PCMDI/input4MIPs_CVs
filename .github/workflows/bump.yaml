@@ -47,7 +47,7 @@ jobs:
           echo "Bumping from version $BASE_VERSION"
 
           # Bump out of pre-release
-          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "no-pre-release" --repo-root-dir .
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "no-pre-release" --no-pre-release --repo-root-dir .
 
           # Bump to new release
           if [ ${{ github.event.inputs.bump_rule }} != "no-pre-release" ]; then 
