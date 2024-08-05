@@ -68,6 +68,7 @@ jobs:
           towncrier build --yes --version v$NEW_VERSION
 
           # Commit, tag and push
+          echo $NEW_VERSION
           git commit -a -m "bump: version $BASE_VERSION -> $NEW_VERSION"
           git tag v$NEW_VERSION
           git push && git push --tags
