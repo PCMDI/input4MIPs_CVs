@@ -1,0 +1,75 @@
+name: Bump version
+
+on:
+  workflow_dispatch:
+    inputs:
+      bump_rule:
+        type: choice
+        description: How to bump the project's version (see `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump --help`)
+        options:
+          - no-pre-release
+          - major
+          - minor
+          - micro
+        default: "no-pre-release"
+
+jobs:
+  bump_version:
+    name: "Bump version"
+    if: "!startsWith(github.event.head_commit.message, 'bump:')"
+    runs-on: ubuntu-latest
+    env:
+      CI_COMMIT_EMAIL: "ci-runner@input4MIPs_CVs.invalid"
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: "${{ secrets.PERSONAL_ACCESS_TOKEN }}"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install the environment
+        run: |
+          which pip
+          pip install python-packages/input4MIPs-CVs
+
+      - name: Bump
+        run: |
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$CI_COMMIT_EMAIL"
+
+          BASE_VERSION=`cat VERSION`
+          echo "Bumping from version $BASE_VERSION"
+
+          # Bump out of pre-release
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "no-pre-release"
+
+          # Bump to new release
+          if [ ${{ github.event.inputs.bump_rule }} != "no-pre-release" ]; then 
+              python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "${{ github.event.inputs.bump_rule }}" --no-pre-release
+          fi
+
+          NEW_VERSION=`cat VERSION`
+          echo "Bumping to version $NEW_VERSION"
+
+          # Commit, tag and push
+          # git commit -a -m "bump: version $BASE_VERSION -> $NEW_VERSION"
+          # git tag v$NEW_VERSION
+          # git push && git push --tags
+
+          # Bump to alpha (so that future commits do not have the same
+          # version as the tagged commit)
+          BASE_VERSION=NEW_VERSION
+
+          # Bump to next pre-release
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "micro" --pre-release
+
+          NEW_VERSION=`cat VERSION`
+          echo "Bumping version $BASE_VERSION > $NEW_VERSION"
+
+          # Commit and push
+          # git commit -a -m "bump(pre-release): version $BASE_VERSION > $NEW_VERSION"
+          # git push
