@@ -1,6 +1,7 @@
 name: Bump version
 
 on:
+  pull_request:
   workflow_dispatch:
     inputs:
       bump_rule:
