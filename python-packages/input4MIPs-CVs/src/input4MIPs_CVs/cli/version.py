@@ -26,6 +26,28 @@ REPO_ROOT_DIR_OPTION = Annotated[
 
 
 def parse_version(version_str: str) -> packaging.version.Version:
+    """
+    Parse the version string
+
+    Parameters
+    ----------
+    version_str
+        Version string to parse
+
+    Returns
+    -------
+    :
+        Parsed version
+
+    Raises
+    ------
+    ValueError
+        The version string is not of the form X.Y.Z,
+        where X, Y and Z are numbers.
+
+        Note: The version string may optionally end with the pre-release
+        marker "a1", e.g. "7.0.1a1" is a valid version string.
+    """
     if not re.match(r"^\d+\.\d+\.\d+(a1)?$", version_str):
         msg = (
             "Version string must be of the form X.Y.Z, where X, Y and Z are numbers. "
@@ -42,6 +64,20 @@ def write_version_file(
     repo_root_dir: Path,
     file_to_write: Path = Path("VERSION"),
 ) -> None:
+    """
+    Write the repository's version file
+
+    Parameters
+    ----------
+    version
+        Version to write
+
+    repo_root_dir
+        Root directory of the repository
+
+    file_to_write
+        File in which to write the version
+    """
     with open(repo_root_dir / file_to_write, "w") as fh:
         fh.write(str(version))
 
@@ -51,6 +87,20 @@ def update_readme(
     repo_root_dir: Path,
     file_to_update: Path = Path("README.md"),
 ) -> None:
+    """
+    Update the README's version information
+
+    Parameters
+    ----------
+    version
+        Version for which to write the version information
+
+    repo_root_dir
+        Root directory of the repository
+
+    file_to_update
+        README file to update
+    """
     readme_file = repo_root_dir / file_to_update
     with open(readme_file) as fh:
         raw = fh.read()
@@ -89,6 +139,20 @@ def write_version_into_pyproject_toml(
     repo_root_dir: Path,
     file_to_write: Path = Path("python-packages") / "input4MIPs-CVs" / "pyproject.toml",
 ) -> None:
+    """
+    Write the version information into a Python package's `pyproject.toml` file
+
+    Parameters
+    ----------
+    version
+        Version to write
+
+    repo_root_dir
+        Root directory of the repository
+
+    file_to_write
+        `pyproject.toml` file in which to write the version
+    """
     pyproject_toml_file = repo_root_dir / file_to_write
     with open(pyproject_toml_file) as fh:
         raw = fh.read()
@@ -110,6 +174,17 @@ def set_repository_version(
     version_str: str,
     repo_root_dir: str,
 ) -> None:
+    """
+    Set the version consistently throughout the repository
+
+    Parameters
+    ----------
+    version_str
+        Version to apply
+
+    repo_root_dir
+        Root directory of the repository
+    """
     version = parse_version(version_str)
     print(f"Applying {version=!r}. {version.is_prerelease=}")
     if not version.is_prerelease:

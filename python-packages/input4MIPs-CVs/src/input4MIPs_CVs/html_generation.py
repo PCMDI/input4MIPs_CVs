@@ -14,7 +14,23 @@ import packaging.version
 import pandas as pd
 
 
-def get_url_esgf(row: pd.Series, search_facets: Iterable[str]) -> str:
+def get_url_esgf_for_html_table(row: pd.Series, search_facets: Iterable[str]) -> str:
+    """
+    Get the relevant ESGF search URL for a given row in a database view
+
+    Parameters
+    ----------
+    row
+        Row for which to generate the relevant ESGF search URL information
+
+    search_facets
+        Search facets to include in the ESGF search URL
+
+    Returns
+    -------
+    :
+        ESGF search URL, formatted for use in an HTML context
+    """
     publication_status: str = row["publication_status"]
 
     if publication_status == "registered":
@@ -63,9 +79,25 @@ def get_url_esgf(row: pd.Series, search_facets: Iterable[str]) -> str:
     return res
 
 
-def get_esgf_urls(df: pd.DataFrame, search_facets: Iterable[str]) -> pd.Series:
+def get_esgf_urls_for_html(df: pd.DataFrame, search_facets: Iterable[str]) -> pd.Series:
+    """
+    Get ESGF URLs for all rows in `df`
+
+    Parameters
+    ----------
+    df
+        Dataframe for which to generate the ESGF URLs
+
+    search_facets
+        Search facets to included in the generated URLs
+
+    Returns
+    -------
+    :
+        Generated URLs, ready for use in an HTML table
+    """
     urls = df.apply(
-        get_url_esgf,
+        get_url_esgf_for_html_table,
         search_facets=search_facets,
         axis="columns",
     )
@@ -86,6 +118,27 @@ def get_files_view(
         "sha256",
     ),
 ) -> pd.DataFrame:
+    """
+    Get the files view of the database
+
+    This view shows each file as a separate row.
+
+    Parameters
+    ----------
+    db
+        Database for which to generate the view
+
+    view_front_cols
+        The columns which should appear first in the generated view.
+
+        All other columns in `db` appear after these columns,
+        in alphabetical order.
+
+    Returns
+    -------
+    :
+        Files view of `db`
+    """
     col_order = tuple(
         [
             *view_front_cols,
@@ -94,7 +147,7 @@ def get_files_view(
     )
 
     res = db[list(col_order)].drop_duplicates()
-    urls = get_esgf_urls(
+    urls = get_esgf_urls_for_html(
         db,
         search_facets=[
             "variable_id",
@@ -132,6 +185,30 @@ def get_datasets_view(
         "further_info_url",
     ),
 ) -> pd.DataFrame:
+    """
+    Get the datasets view of the database
+
+    This view shows each dataset as a separate row,
+    aggregating information from the files in the process.
+
+    Parameters
+    ----------
+    db
+        Database for which to generate the view
+
+    view_front_cols
+        The columns which should appear first in the generated view.
+
+    view_other_cols
+        Other columns from `db` to include in the view.
+
+        These columns are included in alphabetical order.
+
+    Returns
+    -------
+    :
+        Datasets view of `db`
+    """
     col_order = tuple(
         [
             *view_front_cols,
@@ -140,7 +217,7 @@ def get_datasets_view(
     )
 
     res = db[list(col_order)].drop_duplicates()
-    urls = get_esgf_urls(
+    urls = get_esgf_urls_for_html(
         db,
         search_facets=[
             "variable_id",
@@ -161,6 +238,31 @@ def get_db_views_to_write(
     / "input4MIPs_db_file_entries.json",
     html_dir_rel_to_root: Path = Path("docs"),
 ) -> tuple[tuple[pd.DataFrame, Path, str], ...]:
+    """
+    Get the views of the database to write as HTML files
+
+    Parameters
+    ----------
+    repo_root_dir
+        Root directory of the repository
+
+    db_file_path_rel_to_root
+        Path to the raw datbase file, relative to `repo_root_dir`
+
+    html_dir_rel_to_root
+        Path in which to write the generated HTML files, relative to `repo_root_dir`
+
+    Returns
+    -------
+    :
+        Configuration to use for writing the views of the database as HTML files.
+
+        In each returned tuple, the elements are:
+
+        1. View of the database to write
+        2. The path in which to write this view
+        3. The string to use as the title of this view's generated page
+    """
     db_file = repo_root_dir / db_file_path_rel_to_root
 
     with open(db_file) as fh:
@@ -188,7 +290,23 @@ def get_db_views_to_write(
     return res
 
 
-def head_foot_row(columns: tuple[str, ...], kind: str = "thead") -> str:
+def get_head_foot_row(columns: tuple[str, ...], kind: str = "thead") -> str:
+    """
+    Get a header/footer row of our HTML table
+
+    Parameters
+    ----------
+    columns
+        Columns included in the table for which we are generating the header/footer
+
+    kind
+        Kind of row to generate (either "thead", or "tfoot")
+
+    Returns
+    -------
+    :
+        Header/footer row of an HTML table
+    """
     row_l = [f"<{kind}>", "  <tr>"]
     for col in columns:
         # row_l.append(f'    <th scope="col">{col}</th>')
@@ -208,6 +326,22 @@ def generate_table_rows(
     db_view: pd.DataFrame,
     columns: tuple[str, ...],
 ) -> tuple[str, ...]:
+    """
+    Generate the table rows for a given database view
+
+    Parameters
+    ----------
+    db_view
+        View of the database to convert to HTML table rows
+
+    columns
+        Columns of the generated table
+
+    Returns
+    -------
+    :
+        Generated table rows for `db_view`
+    """
     rows_l = []
     for entry in db_view.to_dict(orient="records"):
         row_l = ["<tr>"]
@@ -234,6 +368,27 @@ def write_db_view_as_html(
         "abandoned",
     ),
 ) -> None:
+    """
+    Write a view of the database as HTML
+
+    Parameters
+    ----------
+    db_view
+        Database view to write as HTML
+
+    file_to_write
+        File in which to write the generated HTML
+
+    page_title
+        Title of the page we are writing
+
+    version
+        Version of the database for which we are writing the view
+
+    publication_status_display_order
+        Order in which the publication status of the rows in the view
+        should appear when the page is first loaded.
+    """
     # Little bit of special sorting,
     # so that the initial view of the table makes a bit more sense
     db_view_tmp = db_view.sort_values(by=db_view.columns.tolist()).copy()
@@ -249,8 +404,8 @@ def write_db_view_as_html(
     db_view_sorted = db_view_sorted.reset_index()
 
     columns = list(db_view_sorted.columns)
-    table_header_row = head_foot_row(columns, kind="thead")
-    table_footer_row = head_foot_row(columns, kind="tfoot")
+    table_header_row = get_head_foot_row(columns, kind="thead")
+    table_footer_row = get_head_foot_row(columns, kind="tfoot")
     table_rows = generate_table_rows(db_view_sorted, columns)
 
     header_lines = [
@@ -299,6 +454,17 @@ def write_db_view_as_html(
 def generate_html_pages(
     version: packaging.version.Version, repo_root_dir: Path
 ) -> None:
+    """
+    Generate the HTML pages we capture in the repository
+
+    Parameters
+    ----------
+    version
+        Version of the database for which we are generating HTML pages
+
+    repo_root_dir
+        Root directory of the repository
+    """
     # Get db views to write
     db_views = get_db_views_to_write(repo_root_dir=repo_root_dir)
 
