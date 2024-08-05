@@ -11,7 +11,9 @@ on:
           - no-pre-release
           - major
           - minor
-          - micro
+          # Disabled because we always sit on pre-releases,
+          # hence same as no-pre-release.
+          # - micro
         default: "no-pre-release"
 
 jobs:
@@ -50,7 +52,7 @@ jobs:
           python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "no-pre-release" --no-pre-release --repo-root-dir .
 
           # Bump to new release
-          if [ ${{ github.event.inputs.bump_rule }} != "no-pre-release" ]; then 
+          if [ "${{ github.event.inputs.bump_rule }}" != "no-pre-release" ]; then 
               python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "${{ github.event.inputs.bump_rule }}" --no-pre-release --repo-root-dir .
           fi
 
