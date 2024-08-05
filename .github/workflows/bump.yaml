@@ -47,11 +47,11 @@ jobs:
           echo "Bumping from version $BASE_VERSION"
 
           # Bump out of pre-release
-          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "no-pre-release"
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "no-pre-release" --repo-root-dir .
 
           # Bump to new release
           if [ ${{ github.event.inputs.bump_rule }} != "no-pre-release" ]; then 
-              python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "${{ github.event.inputs.bump_rule }}" --no-pre-release
+              python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "${{ github.event.inputs.bump_rule }}" --no-pre-release --repo-root-dir .
           fi
 
           NEW_VERSION=`cat VERSION`
@@ -67,7 +67,7 @@ jobs:
           BASE_VERSION=NEW_VERSION
 
           # Bump to next pre-release
-          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "micro" --pre-release
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "micro" --pre-release --repo-root-dir .
 
           NEW_VERSION=`cat VERSION`
           echo "Bumping version $BASE_VERSION > $NEW_VERSION"
