@@ -40,13 +40,14 @@ jobs:
           which pip
           pip install python-packages/input4MIPs-CVs
 
+          # BUMP_RULE=${USER_INPUT:-"no-pre-release"}
       - name: Bump
         run: |
           git config --global user.name "$GITHUB_ACTOR"
           git config --global user.email "$CI_COMMIT_EMAIL"
 
           USER_INPUT=${{ github.event.inputs.bump_rule }}
-          BUMP_RULE=${USER_INPUT:-"no-pre-release"}
+          BUMP_RULE=${USER_INPUT:-"minor"}
 
           BASE_VERSION=`cat VERSION`
           echo "Bumping from version $BASE_VERSION"
