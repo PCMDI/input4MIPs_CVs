@@ -70,12 +70,12 @@ jobs:
           # Commit, tag and push
           echo $NEW_VERSION
           git commit -a -m "bump: version $BASE_VERSION -> $NEW_VERSION"
-          git tag v$NEW_VERSION
+          git tag "v${NEW_VERSION}"
           git push && git push --tags
 
           # Bump to alpha (so that future commits do not have the same
           # version as the tagged commit)
-          BASE_VERSION=NEW_VERSION
+          BASE_VERSION="${NEW_VERSION}"
 
           # Bump to next pre-release
           python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py bump "micro" --pre-release --repo-root-dir .
