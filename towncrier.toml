@@ -1,6 +1,5 @@
 [tool.towncrier]
 name = "Input4MIPs CVs"
-version = "6.5.11a1"
 filename = "docs/changelog.md"
 directory = "changelog/"
 title_format = "## Input4MIPs CVs {version} ({project_date})"
