@@ -164,11 +164,10 @@ and [iris](https://scitools-iris.readthedocs.io/en/stable/index.html)
 and also runs the data through the [cfchecker](https://github.com/cedadev/cf-checker).
 Any issues that are found will be reported in the data upload issue that you made previously.
 
-[TODO: update all of the below once input4mips-validation is set up properly]
-If you wish to run this yourself, please follow [the installation instructions](https://input4mips-validation.readthedocs.io/en/latest/#installation).
-An example of the data validation process can be found in [the data validation demo notebook](www.tbd.invalid).
+If you wish to run this yourself, please follow 
+[the how-to guide for preparing files for publication on ESGF](https://input4mips-validation.readthedocs.io/en/latest/how-to-guides/#how-can-i-prepare-my-input4mips-files-for-publication-on-esgf).
 If you have any issues, 
-please [raise them in the input4mips-validation repository](https://github.com/climate-resource/input4mips_validation/issues/new/choose).
+please [raise them in the input4MIPs validation repository](https://github.com/climate-resource/input4mips_validation/issues/new/choose).
 
 #### Get your data to PCMDI
 
