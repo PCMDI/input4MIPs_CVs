@@ -22,3 +22,9 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## Input4MIPs CVs v6.5.11 (2024-08-05)
+
+
+### 🔧 Trivial/Internal Changes
+
+- [#72](https://github.com/PCMDI/Input4MIPs_CVs/pull/72)
