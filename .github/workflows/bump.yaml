@@ -19,6 +19,9 @@ jobs:
     name: "Bump version"
     if: "!startsWith(github.event.head_commit.message, 'bump:')"
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      contents: write
     env:
       CI_COMMIT_EMAIL: "ci-runner@input4MIPs_CVs.invalid"
     steps:
@@ -26,7 +29,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: "${{ secrets.PERSONAL_ACCESS_TOKEN }}"
 
       - uses: actions/setup-python@v5
         with:
