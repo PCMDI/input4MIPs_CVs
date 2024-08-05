@@ -155,6 +155,9 @@ def get_files_view(
     )
 
     res = db[list(col_order)].drop_duplicates()
+    # Only keep entries which actually have a file
+    res = res[~res["sha256"].isnull()]
+
     urls = get_esgf_urls_for_html(
         db,
         search_facets=[
