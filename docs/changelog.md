@@ -22,6 +22,12 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## Input4MIPs CVs v6.5.16 (2024-08-05)
+
+
+No significant changes.
+
+
 ## Input4MIPs CVs v6.5.15 (2024-08-05)
 
 
