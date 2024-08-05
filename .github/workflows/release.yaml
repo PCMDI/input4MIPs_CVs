@@ -3,6 +3,7 @@ name: Release
 on:
   push:
     tags: 
+      - '*'
 
 defaults:
   run:
