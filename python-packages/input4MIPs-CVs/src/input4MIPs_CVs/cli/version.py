@@ -76,7 +76,7 @@ def write_version_file(
         File in which to write the version
     """
     with open(repo_root_dir / file_to_write, "w") as fh:
-        fh.write(str(version))
+        fh.write(f"{version}\n")
 
 
 def update_readme(
