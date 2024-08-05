@@ -154,7 +154,7 @@ def write_version_into_pyproject_toml(
     with open(pyproject_toml_file) as fh:
         raw = fh.read()
 
-    old_version_line_regexp = 'version = "\d+\.\d+\.\d+(a1)?"'
+    old_version_line_regexp = r'version = "\d+\.\d+\.\d+(a1)?"'
     new_version_line = f'version = "{version}"'
 
     new_pyproject_toml = re.sub(
@@ -196,6 +196,70 @@ def set_repository_version(
     generate_html_pages(version=version, repo_root_dir=repo_root_dir)
 
 
+def get_new_version(
+    bump_rule: str,
+    bump_to_pre_release: bool,
+    repo_root_dir: Path,
+    existing_version_file_rel_to_repo_root_dir: Path = Path("VERSION"),
+) -> packaging.version.Version:
+    with open(repo_root_dir / existing_version_file_rel_to_repo_root_dir) as fh:
+        current_version_str = fh.read().strip()
+
+    current_version = parse_version(current_version_str)
+
+    if bump_rule == "no-pre-release":
+        if bump_to_pre_release:
+            msg = f"{bump_rule=} and {bump_to_pre_release=} is contradictory"
+            raise ValueError(msg)
+
+        if not current_version.is_prerelease:
+            msg = f"Current version is not a pre-release ({current_version=})."
+            raise ValueError(msg)
+
+        new_version = packaging.version.Version(
+            f"{current_version.major}.{current_version.minor}.{current_version.micro}"
+        )
+
+    else:
+        if current_version.is_prerelease:
+            msg = (
+                f"Current version is a pre-release ({current_version=}). "
+                "Run `bump no-pre-release` first before bumping the version to avoid ambiguity."
+            )
+            raise ValueError(msg)
+
+        if bump_rule == "major":
+            new_version = packaging.version.Version(f"{current_version.major + 1}.0.0")
+
+        elif bump_rule == "minor":
+            if current_version.is_prerelease:
+                raise NotImplementedError
+
+            new_version = packaging.version.Version(
+                f"{current_version.major}.{current_version.minor + 1}.0"
+            )
+
+        elif bump_rule == "micro":
+            if current_version.is_prerelease:
+                raise NotImplementedError
+
+            new_version = packaging.version.Version(
+                f"{current_version.major}.{current_version.minor}.{current_version.micro + 1}"
+            )
+
+        else:
+            raise NotImplementedError(bump_rule)
+
+        if bump_to_pre_release:
+            new_version = packaging.version.Version(
+                f"{new_version.major}.{new_version.minor}.{new_version.micro}a1"
+            )
+
+    print(f"Will bump {current_version} to {new_version}")
+
+    return new_version
+
+
 @app.callback()
 def cli():
     """
@@ -214,6 +278,46 @@ def set_command(
     This applies the given version in all the relevant places in the repository.
     """
     set_repository_version(version, repo_root_dir=repo_root_dir.absolute())
+
+
+@app.command(name="bump")
+def bump_command(
+    bump_rule: Annotated[
+        str,
+        typer.Argument(
+            help="""Bump rule to use
+
+Options: 'no-pre-release' - bump to the next release i.e. remove any pre-release marker from the version.
+'major' - bump the major version i.e. the X in X.Y.Z.
+'minor' - bump the minor version i.e. the Y in X.Y.Z.
+'micro' - bump the micro version i.e. the Z in X.Y.Z."""
+        ),
+    ],
+    repo_root_dir: REPO_ROOT_DIR_OPTION,
+    pre_release: Annotated[
+        bool,
+        typer.Option(
+            help="""Should we bump to a pre-release version?
+
+For example,
+if we are currently at 3.4.5 and do a micro release with this flag,
+we will go to 3.4.6a1.
+If we don't have this flag, we go straight to 3.4.6.""",
+        ),
+    ] = True,
+):
+    """
+    Set the repository's version
+
+    This applies the given version in all the relevant places in the repository.
+    """
+    new_version = get_new_version(
+        bump_rule, bump_to_pre_release=pre_release, repo_root_dir=repo_root_dir
+    )
+    set_repository_version(
+        str(new_version),
+        repo_root_dir=repo_root_dir.absolute(),
+    )
 
 
 if __name__ == "__main__":
