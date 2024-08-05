@@ -26,6 +26,8 @@ import tqdm
 
 import typer
 
+from input4MIPs_CVs.cli.options import REPO_ROOT_DIR_OPTION
+
 
 def merge_pmount_and_esgf_data(
     pmount_df: pd.DataFrame, esgf_raw: dict[str, Any]
@@ -210,6 +212,9 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
 
     # Abandoned source IDs
     out.loc[out["source_id"] == "CR-CMIP-0-2-0", "publication_status"] = "abandoned"
+    out.loc[out["source_id"] == "SOLARIS-HEPPA-CMIP-4-1", "publication_status"] = (
+        "abandoned"
+    )
 
     return out
 
@@ -238,7 +243,7 @@ def print_diffs(start: pd.DataFrame, end: pd.DataFrame) -> None:
 
 
 def main(
-    root_dir: Annotated[Path, typer.Option(help="Root directory of the repository")],
+    repo_root_dir: REPO_ROOT_DIR_OPTION,
     create_diffs: Annotated[
         bool, typer.Option(help="Show the changes made to the database")
     ] = True,
@@ -249,7 +254,7 @@ def main(
     Exits with zero if there are no changes to the database.
     Exits with one if there would be changes to the database.
     """
-    DB_DIR = root_dir / "Database"
+    DB_DIR = repo_root_dir / "Database"
 
     DB_FILE = DB_DIR / "input4MIPs_db_file_entries.json"
     """Output database file"""
@@ -268,7 +273,7 @@ def main(
     with open(DB_DIR / "input-data" / "esgf.json") as fh:
         esgf_raw = json.load(fh)
 
-    with open(root_dir / "CVs" / "input4MIPs_source_id.json") as fh:
+    with open(repo_root_dir / "CVs" / "input4MIPs_source_id.json") as fh:
         source_ids_raw = json.load(fh)
 
     pmount_df = pd.DataFrame(pmount_raw)

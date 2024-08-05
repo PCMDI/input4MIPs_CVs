@@ -1,4 +1,7 @@
-# input4MIPs_CVs [![Current version](https://img.shields.io/badge/Current%20version-6.5.2-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/6.5.2) [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://doi.org/10.5281/zenodo.12629796)
+# input4MIPs_CVs 
+
+[![Latest release](https://img.shields.io/badge/Latest%20release-v6.5.2-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/v6.5.2)
+[![DOI (all versions)](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://zenodo.org/doi/10.5281/zenodo.12629796)
 
 Controlled Vocabularies (CVs) for use in input4MIPs
 
@@ -57,6 +60,27 @@ as well as at the level of datasets (i.e. collections of files).
 If there is another view that you would find helpful,
 please feel free to [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
 to discuss.
+
+## Versioning
+
+The easiest place to find the repository's version is currently `VERSION`.
+The version string from this file should be consistent with the rest of the repository.
+If you see a place where this is not applied consistently,
+please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
+to let us know.
+
+The version number takes the form X.Y.Z, but does not completely follow semantic versioning.
+The major number, X, is the CMIP generation we are targeting.
+At the moment, this is 6, soon (hopefully Jan 2025) it will be 7.
+The minor number, Y, is incremented for breaking changes to the CVs.
+The patch number, Z, is incremented for all other changes.
+All releases will have a unique version number and be tagged in the repository.
+For all commits except tagged commits,
+we append the version with "a1" to indicate 
+that this state of the repository is not an official release,
+instead, it is a work in progress pre-release.
+Please treat these pre-release versions with more care,
+because their version number does not correspond to a unique commit.
 
 ## Usage
 
@@ -164,9 +188,8 @@ The server's details are below:
 - password: please use your email as the password, i.e. something like "me@institute.com"
 - root directory for uploads: "incoming"
 
-If it is helpful, @znichollscr has a script used for uploads 
-[here](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/scripts/upload-to-ftp-server.py).
-Feel free to copy that (or use it as is) to upload your own files.
+If it is helpful, input4MIPs validation provides a tool for this.
+See [How to upload to an FTP server](https://input4mips-validation.readthedocs.io/en/latest/how-to-guides/how-to-upload-to-ftp/).
 
 ##### Upload to somewhere else (not preferred)
 
@@ -192,6 +215,15 @@ Contributing to the repository beyond the instructions above
 is currently a dark art.
 A start is the description below.
 We hope to improve these docs over time.
+
+### Updating the version
+
+We use the `bump` GitHub action to control the updating of our repository's version.
+As a result, you shouldn't need to update the repository's version information by hand.
+Under the hood, this action uses the command-line tool in
+`python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py`.
+This command-line tool ensures that the version is applied to all relevant places in the repository
+and also provides an interface to bump the version.
 
 ### Generating the database
 
@@ -223,17 +255,25 @@ This may not scale, so if we get to a certain size, we may have to pick a differ
 
 The data from these two inputs, plus information from the CVS,
 gets combined to create `Database/input4MIPs_db_file_entries.json`.
-This combination is done using `scripts/database-interactions/update-database.py`.
-See the README in `scripts/database-interactions` for details of how to run this script.
+This combination is done using `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py`.
+In order to run this script, you should:
+
+1. Make a virtual environment (e.g. `python3 -m venv venv`)
+2. Install the local `input4MIPs-CVs` package into the environment
+   (e.g. `pip install -e python-packages/input4MIPs-CVs`)
 
 ### Generating the HTML pages
 
 Having generated the database, we can then generate the HTML views of it.
-Currently, the HTML views are created using `scripts/database-interactions/generate-html-pages.py`.
-When creating the HTML pages, we must include some version information for the generated pages.
-This is done using the `--version` argument.
-For example `python scripts/database-interactions/generate-html-pages.py --version "2.3.1"`.
-As above, see the README in `scripts/database-interactions` for further details of how to run this script.
+Currently, the HTML pages are generated using 
+`python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py`.
+In order to run this script, you should:
+
+1. Make a virtual environment (e.g. `python3 -m venv venv`)
+2. Install the local `input4MIPs-CVs` package into the environment
+   (e.g. `pip install -e python-packages/input4MIPs-CVs`)
+
+The version is automatically read out of the `VERSION` file if it is not directly specified.
 
 ## Contributors
 
