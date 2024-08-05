@@ -45,6 +45,9 @@ jobs:
           git config --global user.name "$GITHUB_ACTOR"
           git config --global user.email "$CI_COMMIT_EMAIL"
 
+          echo "bump_rule"
+          echo ${{ github.event.inputs.bump_rule }}
+
           BASE_VERSION=`cat VERSION`
           echo "Bumping from version $BASE_VERSION"
 
