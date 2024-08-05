@@ -112,6 +112,7 @@ def update_readme(
             re.escape("]"),
             re.escape("(https://github.com/PCMDI/input4MIPs_CVs/releases/tag/"),
             r"v\d+\.\d+\.\d+",
+            re.escape(")"),
         ]
     )
     new_latest_version_line = (

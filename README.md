@@ -1,6 +1,6 @@
 # input4MIPs_CVs 
 
-[![Latest release](https://img.shields.io/badge/Latest%20release-v6.5.10-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/v6.5.10))))
+[![Latest release](https://img.shields.io/badge/Latest%20release-v6.5.10-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/v6.5.10)
 [![DOI (all versions)](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://zenodo.org/doi/10.5281/zenodo.12629796)
 
 Controlled Vocabularies (CVs) for use in input4MIPs
@@ -63,9 +63,8 @@ to discuss.
 
 ## Versioning
 
-The single source of truth for the repository's version is currently `VERSION`.
-The version string from this file is then propagated to the rest of the repository
-using `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/apply-version.py`.
+The easiest place to find the repository's version is currently `VERSION`.
+The version string from this file should be consistent with the rest of the repository.
 If you see a place where this is not applied consistently,
 please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
 to let us know.
@@ -217,6 +216,15 @@ is currently a dark art.
 A start is the description below.
 We hope to improve these docs over time.
 
+### Updating the version
+
+We use the `bump` GitHub action to control the updating of our repository's version.
+As a result, you shouldn't need to update the repository's version information by hand.
+Under the hood, this action uses the command-line tool in
+`python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/version.py`.
+This command-line tool ensures that the version is applied to all relevant places in the repository
+and also provides an interface to bump the version.
+
 ### Generating the database
 
 In `Database/input-data` there are two components:
@@ -257,11 +265,15 @@ In order to run this script, you should:
 ### Generating the HTML pages
 
 Having generated the database, we can then generate the HTML views of it.
-Currently, the HTML views are created using `scripts/database-interactions/generate-html-pages.py`.
-When creating the HTML pages, we must include some version information for the generated pages.
-This is done using the `--version` argument.
-For example `python scripts/database-interactions/generate-html-pages.py --version "2.3.1"`.
-As above, see the README in `scripts/database-interactions` for further details of how to run this script.
+Currently, the HTML pages are generated using 
+`python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py`.
+In order to run this script, you should:
+
+1. Make a virtual environment (e.g. `python3 -m venv venv`)
+2. Install the local `input4MIPs-CVs` package into the environment
+   (e.g. `pip install -e python-packages/input4MIPs-CVs`)
+
+The version is automatically read out of the `VERSION` file if it is not directly specified.
 
 ## Contributors
 

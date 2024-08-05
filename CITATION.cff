@@ -1,7 +1,7 @@
 # https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files
 
 cff-version: 1.2.0
-message: "If you use this software, please cite it using the metadata from this file. Please note that the DOI cites all versions of the software. To get the DOI for a specific version, please select the appropriate version on Zenodo (you can start from the page for all versions here: https://zenodo.org/doi/10.5281/zenodo.12629796)"
+message: "If you use this software, please cite it using the metadata from this file. Please note that the DOI cites all versions of the software. To get the DOI for a specific version, please select the appropriate version on Zenodo (you can start from the page from the DOI for all versions here: https://zenodo.org/doi/10.5281/zenodo.12629796)"
 authors:
 - family-names: "Durack"
   given-names: "Paul J."
