@@ -255,6 +255,12 @@ def main(
     create_diffs: Annotated[
         bool, typer.Option(help="Show the changes made to the database")
     ] = True,
+    check_unchanged: Annotated[
+        bool,
+        typer.Option(
+            help="Should an error be raised if the database will change as a result of running this command?"
+        ),
+    ] = False,
 ) -> None:
     """
     Merge the information scraped from ESGF and the files
@@ -305,6 +311,14 @@ def main(
         print(f"No changes to {DB_FILE}")
         raise typer.Exit(0)
 
+    if check_unchanged:
+        print(
+            "`--check-unchanged` flag used and database would be changed if we continued"
+        )
+        raise typer.Exit(1)
+
+    # Otherwise, carry on and update the database
+
     if create_diffs:
         print_diffs(start=db_start_df, end=db_df)
 
@@ -330,8 +344,8 @@ def main(
             indent=4,
             separators=(",", ":"),
         )
+
     print(f"Updated {DB_FILE}")
-    raise typer.Exit(1)
 
 
 if __name__ == "__main__":

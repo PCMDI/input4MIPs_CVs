@@ -22,6 +22,12 @@ def main(
 If not supplied, we retrieve the version from `VERSION`"""
         ),
     ] = None,
+    check_unchanged: Annotated[
+        bool,
+        typer.Option(
+            help="Should an error be raised if the database will change as a result of running this command?"
+        ),
+    ] = False,
 ) -> None:
     """
     Create the changes introduced by the PR
@@ -35,7 +41,9 @@ If not supplied, we retrieve the version from `VERSION`"""
         with open(repo_root_dir / "VERSION") as fh:
             version = fh.read().strip()
 
-    generate_html_pages(version=version, repo_root_dir=repo_root_dir)
+    generate_html_pages(
+        version=version, repo_root_dir=repo_root_dir, check_unchanged=check_unchanged
+    )
 
 
 if __name__ == "__main__":
