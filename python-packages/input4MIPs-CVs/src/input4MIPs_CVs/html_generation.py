@@ -401,6 +401,7 @@ def write_db_view_as_html(
         "retracted",
         "abandoned",
     ),
+    check_unchanged: bool = False,
 ) -> None:
     """
     Write a view of the database as HTML
@@ -422,6 +423,9 @@ def write_db_view_as_html(
     publication_status_display_order
         Order in which the publication status of the rows in the view
         should appear when the page is first loaded.
+
+    check_unchanged
+        Should we raise an error if `file_to_write`'s content would change?
     """
     # Little bit of special sorting,
     # so that the initial view of the table makes a bit more sense
@@ -481,12 +485,24 @@ def write_db_view_as_html(
         "</html>",
     ]
 
-    with open(file_to_write, "w") as fh:
-        fh.write("\n".join(res_l))
+    to_write = "\n".join(res_l)
+    if check_unchanged:
+        with open(file_to_write) as fh:
+            current_status = fh.read()
+
+        if to_write != current_status:
+            msg = "Web page would be updated by the write operation"
+            raise AssertionError(msg)
+
+    else:
+        with open(file_to_write, "w") as fh:
+            fh.write(to_write)
 
 
 def generate_html_pages(
-    version: packaging.version.Version, repo_root_dir: Path
+    version: packaging.version.Version,
+    repo_root_dir: Path,
+    check_unchanged: bool = False,
 ) -> None:
     """
     Generate the HTML pages we capture in the repository
@@ -498,6 +514,9 @@ def generate_html_pages(
 
     repo_root_dir
         Root directory of the repository
+
+    check_unchanged
+        Should we raise an error if the web pages would be updated?
     """
     # Get db views to write
     db_views = get_db_views_to_write(repo_root_dir=repo_root_dir)
@@ -508,4 +527,5 @@ def generate_html_pages(
             file_to_write=write_file,
             page_title=page_title,
             version=version,
+            check_unchanged=check_unchanged,
         )
