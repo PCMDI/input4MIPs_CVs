@@ -15,7 +15,6 @@ or automate the processes and document where that automation happens.
 from __future__ import annotations
 
 import copy
-from pathlib import Path
 from typing import Any, Annotated, Union
 
 import json
@@ -214,6 +213,12 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
     out.loc[out["source_id"] == "CR-CMIP-0-2-0", "publication_status"] = "abandoned"
     out.loc[out["source_id"] == "SOLARIS-HEPPA-CMIP-4-1", "publication_status"] = (
         "abandoned"
+    )
+    out.loc[out["source_id"] == "CR-CMIP-0-3-0", "publication_status"] = (
+        "in_publishing_queue"
+    )
+    out.loc[out["source_id"] == "SOLARIS-HEPPA-CMIP-4-3", "publication_status"] = (
+        "in_publishing_queue"
     )
 
     return out
