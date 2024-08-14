@@ -217,9 +217,6 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
     out.loc[out["source_id"] == "CR-CMIP-0-3-0", "publication_status"] = (
         "in_publishing_queue"
     )
-    out.loc[out["source_id"] == "SOLARIS-HEPPA-CMIP-4-3", "publication_status"] = (
-        "in_publishing_queue"
-    )
     out.loc[out["source_id"] == "UOEXETER-CMIP-0-1-0", "publication_status"] = (
         "in_publishing_queue"
     )
