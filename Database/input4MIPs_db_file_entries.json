@@ -15259,7 +15259,7 @@
         "time_range":"185001-202312",
         "timestamp":"2024-08-14T00:20:27.156Z",
         "tracking_id":"hdl:21.14100/c8b4e18b-4090-4031-98ae-3d3383d2c720",
-        "validated_input4mips":null,
+        "validated_input4mips":false,
         "variable_id":"multiple",
         "version":"20240730",
         "xlink":null
@@ -29535,7 +29535,7 @@
         "time_range":null,
         "timestamp":"2024-08-14T00:20:24.575Z",
         "tracking_id":"hdl:21.14100/c1b903fc-e009-4516-91f9-a63d65362066",
-        "validated_input4mips":null,
+        "validated_input4mips":false,
         "variable_id":"multiple",
         "version":"20240730",
         "xlink":null
@@ -34824,7 +34824,7 @@
         "time_range":"18500101-20231231",
         "timestamp":"2024-08-14T00:20:21.997Z",
         "tracking_id":"hdl:21.14100/8524170a-d496-40f5-8374-6d2b38428b29",
-        "validated_input4mips":null,
+        "validated_input4mips":false,
         "variable_id":"multiple",
         "version":"20240730",
         "xlink":null
