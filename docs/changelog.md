@@ -22,6 +22,35 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## Input4MIPs CVs v6.5.19 (2024-08-14)
+
+
+### ⚠️ Breaking Changes
+
+- Re-named "long_name" to "full_name" in `CVs/input4MIPs_target_mip.json` ([#78](https://github.com/PCMDI/Input4MIPs_CVs/pull/78))
+
+### 🆕 Features
+
+- Registered the "UOEXETER-CMIP-0-1-0" source ID.
+  University of Exeter is providing volcanic eruption relevant variables (emissions and aerosol optical properties). ([#83](https://github.com/PCMDI/Input4MIPs_CVs/pull/83))
+- - Added published SOLARIS-HEPPA-4-3 files.
+
+  - Added support for the removal of dataset placeholders to our database updating tool.
+
+  ([#84](https://github.com/PCMDI/Input4MIPs_CVs/pull/84))
+- Added CR-CMIP-0-3-0 files to our database. ([#85](https://github.com/PCMDI/Input4MIPs_CVs/pull/85))
+
+### 📚 Improved Documentation
+
+- Fixed reference to how validation is performed using input4MIPs in the README ([#74](https://github.com/PCMDI/Input4MIPs_CVs/pull/74))
+- Remove placeholder dataset entries from the files view (`docs/input4MIPs_files_CMIP6Plus.html`) ([#79](https://github.com/PCMDI/Input4MIPs_CVs/pull/79))
+- Updated docs about updating the database and generating the HTML files. ([#84](https://github.com/PCMDI/Input4MIPs_CVs/pull/84))
+
+### 🔧 Trivial/Internal Changes
+
+- [#81](https://github.com/PCMDI/Input4MIPs_CVs/pull/81), [#83](https://github.com/PCMDI/Input4MIPs_CVs/pull/83), [#84](https://github.com/PCMDI/Input4MIPs_CVs/pull/84)
+
+
 ## Input4MIPs CVs v6.5.18 (2024-08-05)
 
 
