@@ -260,6 +260,7 @@ In order to run this script, you should:
 1. Make a virtual environment (e.g. `python3 -m venv venv`)
 2. Install the local `input4MIPs-CVs` package into the environment
    (e.g. `pip install -e python-packages/input4MIPs-CVs`)
+3. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
 
 ### Generating the HTML pages
 
