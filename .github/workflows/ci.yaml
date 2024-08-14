@@ -18,4 +18,20 @@ jobs:
         run: |
           which pip
           pip install python-packages/input4MIPs-CVs
-          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir . || (echo 'Database entries not up to date with inputs. Please run `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .` or the equivalent for your machine.' && exit 1)
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir . --check-unchanged || (echo 'Database entries not up to date with inputs. Please run `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .` or the equivalent for your machine.' && exit 1)
+
+  check-web-pages-up-to-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check HTML pages are up to date
+        run: |
+          which pip
+          pip install python-packages/input4MIPs-CVs
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --version `cat VERSION` --repo-root-dir . --check-unchanged || (echo 'Web pages not up to date with inputs. Please run `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py` or the equivalent for your machine.' && exit 1)
