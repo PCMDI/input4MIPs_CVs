@@ -217,9 +217,6 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
     out.loc[out["source_id"] == "CR-CMIP-0-3-0", "publication_status"] = (
         "in_publishing_queue"
     )
-    out.loc[out["source_id"] == "SOLARIS-HEPPA-CMIP-4-3", "publication_status"] = (
-        "in_publishing_queue"
-    )
     out.loc[out["source_id"] == "UOEXETER-CMIP-0-1-0", "publication_status"] = (
         "in_publishing_queue"
     )
@@ -244,6 +241,17 @@ def print_diffs(start: pd.DataFrame, end: pd.DataFrame) -> None:
                 f"For entry {diff_keys}: {row['object_values']}, "
                 f"modified {row['attribute_changed']} "
                 f"from {row['old_value']} to {row['new_value']}"
+            )
+
+        elif row["operation"] == "delete":
+            if row.object_json["tracking_id"] is not None:
+                raise NotImplementedError(row["operation"])
+
+            print(
+                f"Removed entry {diff_keys}: {row['object_values']}, "
+                "This had no files associated with it, "
+                f"it was just a placeholder for a dataset that had "
+                f"publication status: {row.object_json['publication_status']}"
             )
 
         else:
