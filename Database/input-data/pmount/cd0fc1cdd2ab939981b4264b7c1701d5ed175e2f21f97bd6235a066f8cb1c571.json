@@ -36,7 +36,7 @@
     "time_range":"18500101-20231231",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/8524170a-d496-40f5-8374-6d2b38428b29",
-    "validated_input4mips":null,
+    "validated_input4mips":false,
     "variable_id":"multiple",
     "version":"20240730",
     "xlink":null
