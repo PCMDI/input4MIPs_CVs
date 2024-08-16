@@ -52,6 +52,13 @@ def get_url_esgf_for_html_table(row: pd.Series, search_facets: Iterable[str]) ->
     if publication_status == "abandoned":
         return "Abandoned: registered but never produced"
 
+    if publication_status == "never_published":
+        return (
+            "Never published: registered but never published on ESGF. "
+            "Note: this does not mean "
+            "that the dataset wasn't published on a platform other than  the ESGF."
+        )
+
     if publication_status == "published":
         publication_text = "Published"
 
@@ -119,6 +126,7 @@ def get_files_view(
     view_front_cols: tuple[str, ...] = (
         "mip_era",
         "variable_id",
+        "latest",
         "publication_status",
         "comment_post_publication",
         "source_id",
@@ -178,6 +186,7 @@ def get_datasets_view(
     view_front_cols: tuple[str, ...] = (
         "mip_era",
         "variable_id",
+        "latest",
         "publication_status",
         "comment_post_publication",
         "source_id",
@@ -193,7 +202,6 @@ def get_datasets_view(
         "time_range",
         "grid_label",
         "target_mip",
-        "latest",
         "further_info_url",
     ),
 ) -> pd.DataFrame:
@@ -272,6 +280,8 @@ def get_source_id_view(
     view_front_cols: tuple[str, ...] = (
         "mip_era",
         "source_id",
+        "latest",
+        "publication_status",
         "comment_post_publication",
         "contact",
     ),
@@ -281,7 +291,6 @@ def get_source_id_view(
         "institution_id",
         "license_id",
         "further_info_url",
-        "publication_status",
     ),
 ) -> pd.DataFrame:
     """
