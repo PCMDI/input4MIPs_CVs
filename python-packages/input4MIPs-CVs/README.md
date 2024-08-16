@@ -1,4 +1,4 @@
-# Input4MIPs-CVs
+# input4MIPs-CVs
 
 Python tooling to help with the input4MIPs-CVs repository
 

@@ -418,19 +418,19 @@ def get_db_views_to_write(
         (
             files_view[files_view["mip_era"] == "CMIP6Plus"],
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_files_CMIP6Plus.html",
-            "Input4MIPs CMIP6Plus files",
+            "input4MIPs CMIP6Plus files",
         ),
         (
             datasets_view[datasets_view["mip_era"] == "CMIP6Plus"],
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_datasets_CMIP6Plus.html",
-            "Input4MIPs CMIP6Plus datasets",
+            "input4MIPs CMIP6Plus datasets",
         ),
         (
             source_id_view[source_id_view["mip_era"] == "CMIP6Plus"],
             repo_root_dir
             / html_dir_rel_to_root
             / "input4MIPs_source-id_CMIP6Plus.html",
-            "Input4MIPs CMIP6Plus source IDs",
+            "input4MIPs CMIP6Plus source IDs",
         ),
     )
 
