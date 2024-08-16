@@ -7,7 +7,30 @@ Controlled Vocabularies (CVs) for use in input4MIPs
 
 ### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
 
-To see information regarding forcing dataset development for the Coupled Model Intercomparison Project (CMIP) activities, please see the [CMIP Forcing Task Team homepage](https://wcrp-cmip.org/cmip7-task-teams/forcings/).
+To see further information regarding forcing dataset development
+for the Coupled Model Intercomparison Project (CMIP) activities,
+please see the
+[CMIP Forcing Task Team homepage](https://wcrp-cmip.org/cmip7-task-teams/forcings/).
+
+Quick links to different views of our database:
+
+- [Source ID-level view](https://pcmdi.github.io/input4MIPs_CVs/docs/input4MIPs_source-id_CMIP6Plus).
+  - Provides information about the status of different source IDs.
+    In essence, this is the status at the dataset provider level.
+    There are (or will be) of order twenty entries in this view.
+- [Dataset-level view](https://pcmdi.github.io/input4MIPs_CVs/docs/input4MIPs_datasets_CMIP6Plus)
+  - Provides information at the level of a dataset,
+    i.e. the information is disaggregated
+    with one row for each variable
+    (essentially) in the database.
+    There are (or will be) of order one thousand entries in this view.
+- [File-level view](https://pcmdi.github.io/input4MIPs_CVs/docs/input4MIPs_files_CMIP6Plus)
+  - Provides information at the level of individual files.
+    There is one row per file.
+    This view also includes every column in our database.
+    Hence, it contains all information in the database.
+    It is much more difficult to navigate than the other views
+    because it contains too much information for most use cases.
 
 ## Repository overview
 
