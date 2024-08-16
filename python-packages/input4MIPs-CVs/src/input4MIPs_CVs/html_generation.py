@@ -267,6 +267,101 @@ def get_datasets_view(
     return res
 
 
+def get_source_id_view(
+    db: pd.DataFrame,
+    view_front_cols: tuple[str, ...] = (
+        "mip_era",
+        "source_id",
+        "comment_post_publication",
+        "contact",
+    ),
+    view_cols_to_aggregate: tuple[str, ...] = ("dataset_category",),
+    view_other_cols: tuple[str, ...] = (
+        "source_version",
+        "institution_id",
+        "license_id",
+        "further_info_url",
+        "publication_status",
+    ),
+) -> pd.DataFrame:
+    """
+    Get the source ID view of the database
+
+    This view shows each source ID as a separate row,
+    mostly dropping information that isn't displayed,
+    although there is some aggregation.
+
+    Parameters
+    ----------
+    db
+        Database for which to generate the view
+
+    view_front_cols
+        The columns which should appear first in the generated view.
+
+    view_cols_to_aggregate
+        The columns which should appear,
+        with their values from the underlying data aggregated.
+
+    view_other_cols
+        Other columns from `db` to include in the view.
+
+        These columns are included in alphabetical order.
+
+    Returns
+    -------
+    :
+        Source ID view of `db`
+
+    Raises
+    ------
+    ValueError
+        The rows are not unique for each source ID,
+        given the choice of columns to display
+        and columns to aggregate.
+    """
+    col_order = tuple(
+        [
+            *view_front_cols,
+            *view_cols_to_aggregate,
+            *sorted(view_other_cols),
+        ]
+    )
+
+    res = db[list(col_order)].drop_duplicates()
+
+    res_aggregated_l = []
+    group_cols = [v for v in col_order if v not in view_cols_to_aggregate]
+    for _, dsvdf in res.groupby(group_cols, dropna=False):
+        tmp = dsvdf.copy()
+        for vc in view_cols_to_aggregate:
+            # Inredibly slow, but precise so ok for now
+            if tmp[vc].apply(lambda x: x is None).all():
+                # No need to update
+                continue
+
+        tmp_dd = tmp.drop_duplicates()
+        if tmp_dd.shape[0] != 1:
+            source_id = tmp_dd["source_id"].unique()
+            msg = f"Information for {source_id=} isn't as expected. {tmp_dd=}"
+            raise ValueError(msg)
+
+        res_aggregated_l.append(tmp_dd)
+
+    res = pd.concat(res_aggregated_l)
+
+    urls = get_esgf_urls_for_html(
+        res,
+        search_facets=[
+            "source_id",
+            "mip_era",
+        ],
+    )
+    res = pd.concat([urls, res], axis="columns")
+
+    return res
+
+
 def get_db_views_to_write(
     repo_root_dir: Path,
     db_file_path_rel_to_root: Path = Path("Database")
@@ -307,6 +402,7 @@ def get_db_views_to_write(
 
     files_view = get_files_view(db)
     datasets_view = get_datasets_view(db)
+    source_id_view = get_source_id_view(db)
 
     # Hard-code filenames for now
     res = (
@@ -319,6 +415,13 @@ def get_db_views_to_write(
             datasets_view[datasets_view["mip_era"] == "CMIP6Plus"],
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_datasets_CMIP6Plus.html",
             "Input4MIPs CMIP6Plus datasets",
+        ),
+        (
+            source_id_view[source_id_view["mip_era"] == "CMIP6Plus"],
+            repo_root_dir
+            / html_dir_rel_to_root
+            / "input4MIPs_source-id_CMIP6Plus.html",
+            "Input4MIPs CMIP6Plus source IDs",
         ),
     )
 
