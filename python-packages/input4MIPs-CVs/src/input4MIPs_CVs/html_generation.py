@@ -179,6 +179,7 @@ def get_datasets_view(
         "mip_era",
         "variable_id",
         "publication_status",
+        "comment_post_publication",
         "source_id",
         "contact",
     ),
