@@ -218,6 +218,16 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
         "in_publishing_queue"
     )
 
+    # Post-publication comments
+    out.loc[
+        out["source_id"] == "SOLARIS-HEPPA-CMIP-4-2", "comment_post_publication"
+    ] = (
+        "An issue was encountered with the proton ionization data in v4.2. "
+        "It was hence retracted. "
+        "The original comment from the data provider is "
+        '<a href="https://github.com/PCMDI/input4MIPs_CVs/issues/17#issuecomment-2255378927">here</a>.'
+    )
+
     return out
 
 
