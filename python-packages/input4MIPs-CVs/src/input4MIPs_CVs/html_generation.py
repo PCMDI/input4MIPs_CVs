@@ -56,7 +56,7 @@ def get_url_esgf_for_html_table(row: pd.Series, search_facets: Iterable[str]) ->
         return (
             "Never published: registered but never published on ESGF. "
             "Note: this does not mean "
-            "that the dataset wasn't published on a platform other than  the ESGF."
+            "that the dataset wasn't published on a platform other than the ESGF."
         )
 
     if publication_status == "published":
