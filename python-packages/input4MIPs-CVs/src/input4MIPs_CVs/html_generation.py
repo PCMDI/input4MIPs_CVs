@@ -513,6 +513,7 @@ def write_db_view_as_html(
         "published",
         "retracted",
         "abandoned",
+        "never_published",
     ),
     check_unchanged: bool = False,
 ) -> None:
@@ -544,6 +545,14 @@ def write_db_view_as_html(
     # so that the initial view of the table makes a bit more sense
     db_view_tmp = db_view.sort_values(by=db_view.columns.tolist()).copy()
     db_view_sorted_l = []
+
+    db_view_publication_statuses = set(db_view["publication_status"])
+    missing_publication_statues = db_view_publication_statuses.difference(
+        set(publication_status_display_order)
+    )
+    if missing_publication_statues:
+        raise AssertionError(missing_publication_statues)
+
     for publication_status in publication_status_display_order:
         db_view_sorted_l.append(
             db_view_tmp[db_view_tmp["publication_status"] == publication_status]
@@ -603,6 +612,7 @@ def write_db_view_as_html(
     ]
 
     to_write = "\n".join(res_l)
+
     if check_unchanged:
         with open(file_to_write) as fh:
             current_status = fh.read()
