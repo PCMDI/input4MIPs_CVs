@@ -9,6 +9,7 @@ input4MIPs/project entries
 PJD 25 Jul 2024 - started
 PJD 25 Jul 2024 - 1216 372 Datasets returned, 350 Files
 PJD 26 Jul 2024 - update to write to ../DatasetsDatabase/input-data/ (was ./)
+PJD 16 Aug 2024 - added argparse to collect destPath from user
 """
 
 # %% imports
