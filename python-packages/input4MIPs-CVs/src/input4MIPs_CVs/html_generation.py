@@ -52,6 +52,13 @@ def get_url_esgf_for_html_table(row: pd.Series, search_facets: Iterable[str]) ->
     if publication_status == "abandoned":
         return "Abandoned: registered but never produced"
 
+    if publication_status == "never_published":
+        return (
+            "Never published: registered but never published on ESGF. "
+            "Note: this does not mean "
+            "that the dataset wasn't published on a platform other than the ESGF."
+        )
+
     if publication_status == "published":
         publication_text = "Published"
 
@@ -119,6 +126,7 @@ def get_files_view(
     view_front_cols: tuple[str, ...] = (
         "mip_era",
         "variable_id",
+        "latest",
         "publication_status",
         "comment_post_publication",
         "source_id",
@@ -178,6 +186,7 @@ def get_datasets_view(
     view_front_cols: tuple[str, ...] = (
         "mip_era",
         "variable_id",
+        "latest",
         "publication_status",
         "comment_post_publication",
         "source_id",
@@ -193,7 +202,6 @@ def get_datasets_view(
         "time_range",
         "grid_label",
         "target_mip",
-        "latest",
         "further_info_url",
     ),
 ) -> pd.DataFrame:
@@ -272,6 +280,8 @@ def get_source_id_view(
     view_front_cols: tuple[str, ...] = (
         "mip_era",
         "source_id",
+        "latest",
+        "publication_status",
         "comment_post_publication",
         "contact",
     ),
@@ -281,7 +291,6 @@ def get_source_id_view(
         "institution_id",
         "license_id",
         "further_info_url",
-        "publication_status",
     ),
 ) -> pd.DataFrame:
     """
@@ -409,19 +418,19 @@ def get_db_views_to_write(
         (
             files_view[files_view["mip_era"] == "CMIP6Plus"],
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_files_CMIP6Plus.html",
-            "Input4MIPs CMIP6Plus files",
+            "input4MIPs CMIP6Plus files",
         ),
         (
             datasets_view[datasets_view["mip_era"] == "CMIP6Plus"],
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_datasets_CMIP6Plus.html",
-            "Input4MIPs CMIP6Plus datasets",
+            "input4MIPs CMIP6Plus datasets",
         ),
         (
             source_id_view[source_id_view["mip_era"] == "CMIP6Plus"],
             repo_root_dir
             / html_dir_rel_to_root
             / "input4MIPs_source-id_CMIP6Plus.html",
-            "Input4MIPs CMIP6Plus source IDs",
+            "input4MIPs CMIP6Plus source IDs",
         ),
     )
 
@@ -504,6 +513,7 @@ def write_db_view_as_html(
         "published",
         "retracted",
         "abandoned",
+        "never_published",
     ),
     check_unchanged: bool = False,
 ) -> None:
@@ -535,6 +545,14 @@ def write_db_view_as_html(
     # so that the initial view of the table makes a bit more sense
     db_view_tmp = db_view.sort_values(by=db_view.columns.tolist()).copy()
     db_view_sorted_l = []
+
+    db_view_publication_statuses = set(db_view["publication_status"])
+    missing_publication_statues = db_view_publication_statuses.difference(
+        set(publication_status_display_order)
+    )
+    if missing_publication_statues:
+        raise AssertionError(missing_publication_statues)
+
     for publication_status in publication_status_display_order:
         db_view_sorted_l.append(
             db_view_tmp[db_view_tmp["publication_status"] == publication_status]
@@ -579,7 +597,11 @@ def write_db_view_as_html(
         *header_lines,
         "<body>",
         f"<p><h1>{page_title}: v{version}</h1><p>",
-        # '<table id="table_id" class="display compact" style="width:100%">',
+        "<h4>",
+        "<a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view</a>",
+        "| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view</a>",
+        "| <a href='input4MIPs_files_CMIP6Plus.html'>File-level view</a>",
+        "</h4>",
         '<table id="table_id" class="display compact">',
         *[f"  {v}" for v in table_header_row.splitlines()],
         *[f"  {v}" for v in table_footer_row.splitlines()],
@@ -590,6 +612,7 @@ def write_db_view_as_html(
     ]
 
     to_write = "\n".join(res_l)
+
     if check_unchanged:
         with open(file_to_write) as fh:
             current_status = fh.read()
