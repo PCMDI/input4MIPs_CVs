@@ -51,6 +51,10 @@ def diff_db_to_changes_comment(
     """
     Get the difference between the database states, returning a GitHub compatible comment
 
+    By default, the comment includes multiple layers of detail.
+    However, if these layers create a comment which is too long for GitHub,
+    then we drop out some of the layers of detail until the comment is short enough.
+
     Parameters
     ----------
     db_main
