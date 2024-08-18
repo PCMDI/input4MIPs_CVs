@@ -281,9 +281,10 @@ This combination is done using `python-packages/input4MIPs-CVs/src/input4MIPs_CV
 In order to run this script, you should:
 
 1. Make a virtual environment (e.g. `python3 -m venv venv`)
-2. Install the local `input4MIPs-CVs` package into the environment
+2. Activate the virtual environment (e.g. `source venv/bin/activate`)
+3. Install the local `input4MIPs-CVs` package into the environment
    (e.g. `pip install -e python-packages/input4MIPs-CVs`)
-3. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
+4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
 
 ### Generating the HTML pages
 
@@ -293,9 +294,10 @@ Currently, the HTML pages are generated using
 In order to run this script, you should:
 
 1. Make a virtual environment (e.g. `python3 -m venv venv`)
-2. Install the local `input4MIPs-CVs` package into the environment
+2. Activate the virtual environment (e.g. `source venv/bin/activate`)
+3. Install the local `input4MIPs-CVs` package into the environment
    (e.g. `pip install -e python-packages/input4MIPs-CVs`)
-3. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
+4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
 
 The version is automatically read out of the `VERSION` file if it is not directly specified.
 

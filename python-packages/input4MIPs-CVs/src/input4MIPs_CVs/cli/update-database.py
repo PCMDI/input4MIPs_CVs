@@ -218,6 +218,15 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
         "in_publishing_queue"
     )
 
+    # missing license ID for early CMIP6Plus data
+    for srcId in [
+        "MRI-JRA55-do-1-6-0",
+        "PCMDI-AMIP-1-1-9",
+        "SOLARIS-HEPPA-CMIP-4-2",
+        "SOLARIS-HEPPA-CMIP-4-3",
+    ]:
+        out.loc[out["source_id"] == srcId, "license_id"] = "CC BY 4.0"
+
     # Post-publication comments
     out.loc[
         out["source_id"] == "SOLARIS-HEPPA-CMIP-4-2", "comment_post_publication"
