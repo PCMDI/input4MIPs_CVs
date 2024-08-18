@@ -5,7 +5,8 @@
 [![DOI (all versions)](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://zenodo.org/doi/10.5281/zenodo.12629796)
 [![Docs](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/?badge=latest)](https://input4mips-controlled-vocabularies-cvs.readthedocs.io)
 
-Controlled Vocabularies (CVs) for use in input4MIPs
+Controlled Vocabularies (CVs) for use in input4MIPs.
+Full documentation can be found at: [input4mips-controlled-vocabularies-cvs.readthedocs.io](https://input4mips-controlled-vocabularies-cvs.readthedocs.io).
 
 ### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
 
