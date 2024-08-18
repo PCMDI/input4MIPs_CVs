@@ -3,7 +3,7 @@
 This directory contains "news fragments", i.e. short files that contain a small markdown-formatted bit of text that will be
 added to the CHANGELOG when it is next compiled.
 
-The CHANGELOG will be read by users, so this description should be aimed to Input4MIPs_CVs users instead of
+The CHANGELOG will be read by users, so this description should be aimed to input4MIPs_CVs users instead of
 describing internal changes which are only relevant to developers. Merge requests in combination with our git history provides additional
 developer-centric information.
 

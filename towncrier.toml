@@ -1,14 +1,14 @@
 [tool.towncrier]
-name = "Input4MIPs CVs"
+name = "input4MIPs CVs"
 filename = "docs/changelog.md"
 directory = "changelog/"
-title_format = "## Input4MIPs CVs {version} ({project_date})"
+title_format = "## input4MIPs CVs {version} ({project_date})"
 underlines = [
     "",
     "",
     "",
 ]
-issue_format = "[#{issue}](https://github.com/PCMDI/Input4MIPs_CVs/pull/{issue})"
+issue_format = "[#{issue}](https://github.com/PCMDI/input4MIPs_CVs/pull/{issue})"
 type = [
     { directory = "breaking", name = "⚠️ Breaking Changes", showcontent = true },
     { directory = "deprecation", name = "🗑️ Deprecations", showcontent = true },

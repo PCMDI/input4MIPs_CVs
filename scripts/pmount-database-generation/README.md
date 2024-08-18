@@ -1,4 +1,4 @@
-# Input4MIPs database
+# input4MIPs database
 
 This folder holds the scripts for our database management.
 Given that the database exists, we should only need:

@@ -8,7 +8,7 @@ This script merges information from:
 - the registered source IDs
 - a few other custom overrides contained within the script
 
-TODO: move scripts for both all automatable processes into here,
+TODO: move scripts for all automatable processes into here,
 or automate the processes and document where that automation happens.
 """
 
@@ -212,7 +212,7 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
     # Abandoned source IDs
     out.loc[out["source_id"] == "CR-CMIP-0-2-0", "publication_status"] = "abandoned"
     out.loc[out["source_id"] == "SOLARIS-HEPPA-CMIP-4-1", "publication_status"] = (
-        "abandoned"
+        "never_published"
     )
     out.loc[out["source_id"] == "UOEXETER-CMIP-0-1-0", "publication_status"] = (
         "in_publishing_queue"

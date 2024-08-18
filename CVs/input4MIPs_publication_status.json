@@ -13,5 +13,8 @@
     },
     "abandoned":{
         "description":"The dataset was registered, but then never produced (for whatever reason)."
+    },
+    "never_published":{
+        "description":"The dataset was registered, but never published on ESGF. Note: the dataset may have been published via other channels, that is out of our control."
     }
 }
