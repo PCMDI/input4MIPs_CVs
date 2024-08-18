@@ -11,7 +11,7 @@ version: 2
 build:
   os: ubuntu-22.04
   tools:
-    python: "python-3.11"
+    python: "3.11"
   jobs:
     post_install:
       - pip install mkdocs mkdocs-material mkdocs-autorefs
