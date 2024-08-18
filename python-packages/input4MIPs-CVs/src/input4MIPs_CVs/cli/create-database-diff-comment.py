@@ -39,7 +39,8 @@ If supplied, we use this to provide a clearer message about which diff we're loo
     )
 
     with open(out_file, "w") as fh:
-        fh.write(changes_comment)
+        # Ensure newline at end of file
+        fh.write(f"{changes_comment}\n")
 
 
 if __name__ == "__main__":
