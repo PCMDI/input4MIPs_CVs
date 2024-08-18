@@ -101,8 +101,15 @@ def diff_db_to_changes_comment(
         lambda x: x.split(",")[0]
     )
 
-    summary_table = (
-        diffs_incl_source_id[
+    if all(
+        c in diffs_incl_source_id
+        for c in [
+            "attribute_changed",
+            "old_value",
+            "new_value",
+        ]
+    ):
+        summary_table = diffs_incl_source_id[
             [
                 "source_id",
                 "operation",
@@ -111,7 +118,17 @@ def diff_db_to_changes_comment(
                 "new_value",
             ]
         ]
-        .fillna("None")
+
+    else:
+        summary_table = diffs_incl_source_id[
+            [
+                "source_id",
+                "operation",
+            ]
+        ]
+
+    summary_table = (
+        summary_table.fillna("None")
         .value_counts(dropna=False)
         .sort_values(ascending=False)
         .to_frame()
