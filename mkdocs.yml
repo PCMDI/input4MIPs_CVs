@@ -9,10 +9,16 @@ repo_url: https://github.com/PCMDI/input4MIPs_CVs
 nav:
   - input4MIPs CVs: index.md
   - Database views:
-    - database-views/index.md
+    - Overview: database-views/index.md
     - Source ID-level: database-views/input4MIPs_source-id_CMIP6Plus.html
     - Dataset-level: database-views/input4MIPs_datasets_CMIP6Plus.html
     - File-level: database-views/input4MIPs_files_CMIP6Plus.html
+  - Usage:
+    - As a data user: usage-data-user.md
+    - As a data producer: usage-data-producer.md
+  - Repository overview: repository-overview.md
+  - Contributing: contributing.md
+  - Versioning: versioning.md
   - Changelog: changelog.md
 
 theme:
