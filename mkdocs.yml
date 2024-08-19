@@ -1,0 +1,61 @@
+site_name: input4MIPs Controlled Vocabularies (CVs)
+site_description: Controlled Vocabularies (CVs) for use in input4MIPs
+site_url: https://input4mips-controlled-vocabularies-cvs.readthedocs.io/
+edit_uri: blob/main/docs/
+
+repo_name: PCMDI/input4MIPs_CVs
+repo_url: https://github.com/PCMDI/input4MIPs_CVs
+
+nav:
+  - input4MIPs CVs: index.md
+  - Database views:
+    - database-views/index.md
+    - Source ID-level: database-views/input4MIPs_source-id_CMIP6Plus.html
+    - Dataset-level: database-views/input4MIPs_datasets_CMIP6Plus.html
+    - File-level: database-views/input4MIPs_files_CMIP6Plus.html
+  - Changelog: changelog.md
+
+theme:
+  name: "material"
+  features:
+    - content.code.copy
+  palette:
+    # Light mode (toggle to dark mode)
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark mode (toggle back to light mode)
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+
+plugins:
+  - search
+  - autorefs
+
+markdown_extensions:
+  - attr_list
+  # Code highlighting handiness
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  # Ensure that there are links to table of contents items
+  - toc:
+      permalink: "#"
+
+watch:
+  - README.md

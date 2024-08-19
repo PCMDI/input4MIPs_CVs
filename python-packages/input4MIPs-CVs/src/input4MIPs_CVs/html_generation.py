@@ -375,7 +375,7 @@ def get_db_views_to_write(
     repo_root_dir: Path,
     db_file_path_rel_to_root: Path = Path("Database")
     / "input4MIPs_db_file_entries.json",
-    html_dir_rel_to_root: Path = Path("docs"),
+    html_dir_rel_to_root: Path = Path("docs") / "database-views",
 ) -> tuple[tuple[pd.DataFrame, Path, str], ...]:
     """
     Get the views of the database to write as HTML files
@@ -598,7 +598,8 @@ def write_db_view_as_html(
         "<body>",
         f"<p><h1>{page_title}: v{version}</h1><p>",
         "<h4>",
-        "<a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view</a>",
+        "<a href='/database-views/#database-views'>Database views homepage</a>",
+        "| <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view</a>",
         "| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view</a>",
         "| <a href='input4MIPs_files_CMIP6Plus.html'>File-level view</a>",
         "</h4>",
@@ -612,6 +613,9 @@ def write_db_view_as_html(
     ]
 
     to_write = "\n".join(res_l)
+    if not to_write.endswith("\n"):
+        # Ensure content ends with new line
+        to_write = f"{to_write}\n"
 
     if check_unchanged:
         with open(file_to_write) as fh:

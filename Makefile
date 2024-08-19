@@ -32,8 +32,20 @@ set-version:  ## set the repository's version to the value of the environment va
 update-html-pages:  ## update our html pages
 	venv/bin/python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .
 
+.PHONY: docs
+docs:  ## build the docs
+	venv/bin/mkdocs build
+
+.PHONY: docs
+docs-strict:  ## build the docs strictly (e.g. raise an error on warnings, this most closely mirrors what we do in the CI)
+	venv/bin/mkdocs build --strict
+
+.PHONY: docs-serve
+docs-serve:  ## serve the docs locally
+	venv/bin/mkdocs serve
+
 .PHONY: virtual-environment
 virtual-environment:  ## update virtual environment, create a new one if it doesn't already exist
 	python3 -m venv venv
-	venv/bin/pip install --upgrade pip
+	venv/bin/pip install --upgrade pip mkdocs mkdocs-material mkdocs-autorefs
 	venv/bin/pip install -e python-packages/input4MIPs-CVs
