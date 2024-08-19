@@ -22,6 +22,34 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.5.20 (2024-08-19)
+
+
+### 🆕 Features
+
+- Added post-publication note that explains why SOLARIS-HEPPA-CMIP-4-2 was deprecated. ([#91](https://github.com/PCMDI/input4MIPs_CVs/pull/91))
+- Added the "never_published" publication status. Applied this to the SOLARIS-HEPPA-4-1 dataset. ([#95](https://github.com/PCMDI/input4MIPs_CVs/pull/95))
+
+### 🐛 Bug Fixes
+
+- Manually added a fix to the licence ID for `MRI-JRA55-do-1-6-0`, `PCMDI-AMIP-1-1-9`, `SOLARIS-HEPPA-CMIP-4-2` and `SOLARIS-HEPPA-CMIP-4-3`.
+  Note that this fix appears in the database only.
+  The underlying file entries in `Database/input-data/pmount` still reflect the files as they appear on disk. ([#94](https://github.com/PCMDI/input4MIPs_CVs/pull/94))
+
+### 📚 Improved Documentation
+
+- Added the post-publication comment to the datasets view. ([#91](https://github.com/PCMDI/input4MIPs_CVs/pull/91))
+- Added a source ID level HTML table view. See `docs/input4MIPs_source-id_CMIP6Plus.html`. ([#92](https://github.com/PCMDI/input4MIPs_CVs/pull/92))
+- Added links to our different database views to our README and as the header of our HTML pages.
+  Also made the "latest" column more obvious in our database views.
+  Also tried to use "input4MIPs" rather than "Input4MIPs" throughout. ([#95](https://github.com/PCMDI/input4MIPs_CVs/pull/95))
+- Add Read the Docs build of the docs. ([#105](https://github.com/PCMDI/input4MIPs_CVs/pull/105))
+
+### 🔧 Trivial/Internal Changes
+
+- [#69](https://github.com/PCMDI/input4MIPs_CVs/pull/69), [#103](https://github.com/PCMDI/input4MIPs_CVs/pull/103), [#104](https://github.com/PCMDI/input4MIPs_CVs/pull/104), [#106](https://github.com/PCMDI/input4MIPs_CVs/pull/106)
+
+
 ## input4MIPs CVs v6.5.19 (2024-08-14)
 
 
