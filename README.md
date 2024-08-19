@@ -49,7 +49,6 @@ for validating files (see also [](#data-validation)).
 Where the CVs make use of other conventions, we make this as clear as possible.
 However, this is also a work in progress.
 
-(overview-datasets-database)=
 ### Files database
 
 The second key piece of information is a database of the files we know about within the input4MIPs project.
@@ -154,7 +153,6 @@ that adds your information to `CVs/input4MIPs_source_id.json`.
 The fields are generally self-explanatory.
 If you have any questions, please tag @durack1 or @znichollscr in your pull request.
 
-(data-validation)=
 #### Data validation
 
 This is not strictly a step that you, as a data producer, have to perform.
