@@ -16,7 +16,8 @@ please see the
 [CMIP Forcing Task Team homepage](https://wcrp-cmip.org/cmip7-task-teams/forcings/).
 
 For different, pre-prepared views of the database,
-see [database views](database-views).
+see 
+[database views](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/database-views/).
 
 ## Repository overview
 
@@ -61,14 +62,9 @@ given that the ESGF index is not publicly queriable
 which does not always conform to the ESGF's data model, 
 e.g. sometimes there is more than one variable in a file).
 
-To ease exploration of the database, we provide a few HTML tables in `docs/`
-(e.g., see [input4MIPs_datasets_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs/input4MIPs_datasets_CMIP6Plus.html)
-and [input4MIPs_files_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs/input4MIPs_files_CMIP6Plus.html).
-These give an overview at the level of each individual file,
-as well as at the level of datasets (i.e. collections of files).
-If there is another view that you would find helpful,
-please feel free to [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
-to discuss.
+To ease exploration of the database, 
+we provide a few pre-prepared views of the database,
+see [database views](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/database-views/).
 
 ## Versioning
 
@@ -324,7 +320,7 @@ This work is sponsored by the Regional and Global Model Analysis ([RGMA](https:/
          title="Couple Model Intercomparison Project International Project Office"
          alt="Couple Model Intercomparison Project International Project Office"
     >&nbsp;
-    <img src="assets/CR_Logo _Square_400x400.png"
+    <img src="https://raw.githubusercontent.com/PCMDI/input4MIPs_CVs/main/docs/assets/CR_Logo%20_Square_400x400.png"
          width="65"
          style="margin-right: 30px"
          title="Climate Resource"

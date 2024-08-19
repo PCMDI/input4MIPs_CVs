@@ -24,3 +24,7 @@ by simply reading the database file in
   Hence, it contains all information in the database.
   It is much more difficult to navigate than the other views
   because it contains too much information for most use cases.
+
+If there is another view that you would find helpful,
+please feel free to [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
+to discuss.
