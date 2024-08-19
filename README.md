@@ -48,7 +48,6 @@ for validating files (see also [](#data-validation)).
 Where the CVs make use of other conventions, we make this as clear as possible.
 However, this is also a work in progress.
 
-(overview-datasets-database)=
 ### Files database
 
 The second key piece of information is a database of the files we know about within the input4MIPs project.
@@ -62,8 +61,9 @@ which does not always conform to the ESGF's data model,
 e.g. sometimes there is more than one variable in a file).
 
 To ease exploration of the database, we provide a few HTML tables in `docs/`
-(e.g., see [input4MIPs_datasets_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs/input4MIPs_datasets_CMIP6Plus.html)
-and [input4MIPs_files_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs/input4MIPs_files_CMIP6Plus.html).
+(e.g., see the high-level [input4MIPs_source-id_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs/database-views/input4MIPs_source-id_CMIP6Plus.html),
+lower level [input4MIPs_datasets_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs/database-views/input4MIPs_datasets_CMIP6Plus.html),
+and file-level (all entries) [input4MIPs_files_CMIP6Plus.html](https://pcmdi.github.io/input4MIPs_CVs/docs/database-views/input4MIPs_files_CMIP6Plus.html).
 These give an overview at the level of each individual file,
 as well as at the level of datasets (i.e. collections of files).
 If there is another view that you would find helpful,
@@ -158,7 +158,6 @@ that adds your information to `CVs/input4MIPs_source_id.json`.
 The fields are generally self-explanatory.
 If you have any questions, please tag @durack1 or @znichollscr in your pull request.
 
-(data-validation)=
 #### Data validation
 
 This is not strictly a step that you, as a data producer, have to perform.
