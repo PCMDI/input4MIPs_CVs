@@ -34,7 +34,7 @@ see
 
 For information about how to use this repository,
 see 
-[usage as a data user](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-user).
+[usage as a data user](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-user)
 and [usage as a data producer](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-producer).
 
 <!--- --8<-- [start:repository-overview] -->
