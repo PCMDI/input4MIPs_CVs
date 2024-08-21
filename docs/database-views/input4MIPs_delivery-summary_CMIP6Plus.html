@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="author" content="Paul J. Durack, Zebedee Nicholls" />
+<meta name="description" content="Controlled vocabulary for input4MIPs" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" charset="utf-8" href="https://pcmdi.github.io/assets/dataTables/jquery.dataTables.min.css" />
+<script type="text/javascript" charset="utf-8" src="https://pcmdi.github.io/assets/jquery/jquery.slim.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://pcmdi.github.io/assets/dataTables/jquery.dataTables.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" src="https://pcmdi.github.io/assets/google/googleAnalyticsTag.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready( function () {
+    $('#table_id').DataTable();
+    } );
+//]]>
+</script>
+<title>input4MIPs CMIP6Plus delivery summary</title>
+</head>
+<body>
+<p><h1>input4MIPs CMIP6Plus delivery summary: v6.5.21a1</h1><p>
+<h4>
+<a href='/database-views/#database-views'>Database views homepage</a>
+| <a href='input4MIPs_delivery-summary_CMIP6Plus.html'>Delivery summary view</a>
+| <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view</a>
+| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view</a>
+| <a href='input4MIPs_files_CMIP6Plus.html'>File-level view</a>
+</h4>
+<table id="table_id" class="display compact">
+  <thead>
+    <tr>
+      <th>Dataset #</th>
+      <th>Forcing dataset</th>
+      <th>Source ID</th>
+      <th>Status</th>
+      <th>Expected ESGF publication</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>Dataset #</th>
+      <th>Forcing dataset</th>
+      <th>Source ID</th>
+      <th>Status</th>
+      <th>Expected ESGF publication</th>
+    </tr>
+  </tfoot>
+    <tr>
+      <td>1</td>
+      <td><a href='https://www.pnnl.gov/projects/ceds' target='_blank'>Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions</a></td>
+      <td>TBD</td>
+      <td>Data in preparation and final metadata checks</td>
+      <td>Early September 2024</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Open biomass burning emissions</td>
+      <td>TBD</td>
+      <td>Data in preparation and final metadata checks</td>
+      <td>Early September 2024</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Land use</td>
+      <td>TBD</td>
+      <td>Data in preparation</td>
+      <td>September 2024</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Greenhouse gas concentrations</td>
+      <td>CR-CMIP-0-3-0</td>
+      <td>Preliminary dataset available</td>
+      <td><a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-3-0%22%7D' target='_blank'>v0.3.0 available (0001-01 to 2022-12)</a></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Stratospheric volcanic SO2 emissions and aerosol optical properties</td>
+      <td>TBD</td>
+      <td>Data in preparation and final metadata checks</td>
+      <td>Early September 2024</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Ozone concentrations</td>
+      <td>TBD</td>
+      <td>Depends on 1, 2, 4, 5 and 8</td>
+      <td>~January 2025; 3 months after dependent datasets</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Nitrogen deposition</td>
+      <td>TBD</td>
+      <td>Depends on 1, 2, 4, 5 and 8</td>
+      <td>~January 2025; 3 months after dependent datasets</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td><a href='http://solarisheppa.geomar.de/cmip7' target='_blank'>Solar</a></td>
+      <td>SOLARIS-HEPPA-CMIP-4-3</td>
+      <td>Preliminary dataset available</td>
+      <td><a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-3%22%7D' target='_blank'>v4.3 available (1850-01 to 2023-12)</a></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><a href='https://pcmdi.llnl.gov/mips/amip' target='_blank'>AMIP sea-surface temperature and sea-ice boundary forcing</a></td>
+      <td>PCMDI-AMIP-1-1-9</td>
+      <td>Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release </td>
+      <td><a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-9%22%7D' target='_blank'>v1.1.9 available (1870-01 to 2022-12)</a></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Aerosol optical properties/MACv2-SP</td>
+      <td>TBD</td>
+      <td>Depends on 1, test dataset being produced in the meantime</td>
+      <td>~November 2024; Expected a month after dependent datasets</td>
+    </tr>
+</table>
+</body>
+</html>

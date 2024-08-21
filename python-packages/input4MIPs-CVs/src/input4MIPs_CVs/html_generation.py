@@ -6,6 +6,8 @@ This may be a temporary home, but is fine for now
 
 from __future__ import annotations
 
+import datetime as dt
+import difflib
 import json
 from collections.abc import Iterable
 from pathlib import Path
@@ -371,6 +373,182 @@ def get_source_id_view(
     return res
 
 
+def get_delivery_summary_view(
+    db: pd.DataFrame,
+    view_cols_from_db: tuple[str, ...] = (
+        "source_id",
+        "publication_status",
+    ),
+) -> pd.DataFrame:
+    """
+    Get the delivery summary view of the database
+
+    This view shows when each dataset is going to be delivered.
+    It has more hand-woven components than the other views,
+    which are purely views of the database.
+
+    Parameters
+    ----------
+    db
+        Database for which to generate the view
+
+    view_cols_from_db
+        The columns from the database which should appear in the generated view.
+
+    Returns
+    -------
+    :
+        Delivery summary view of `db`
+    """
+    hard_coded_info = [
+        {
+            "source_id": None,  # TBD
+            "description": "Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions",
+            "expected_publication": "Early September 2024",
+            "url": "https://www.pnnl.gov/projects/ceds",
+            "status": "Data in preparation and final metadata checks",
+        },
+        {
+            "source_id": None,  # TBD
+            "description": "Open biomass burning emissions",
+            "expected_publication": "Early September 2024",
+            "url": None,
+            "status": "Data in preparation and final metadata checks",
+        },
+        {
+            "source_id": None,  # TBD
+            "description": "Land use",
+            "expected_publication": "September 2024",
+            "url": None,
+            "status": "Data in preparation",
+        },
+        {
+            "source_id": "CR-CMIP-0-3-0",
+            "description": "Greenhouse gas concentrations",
+            "status": "Preliminary dataset available",
+        },
+        {
+            "source_id": None,  # TBD
+            "description": "Stratospheric volcanic SO2 emissions and aerosol optical properties",
+            "expected_publication": "Early September 2024",
+            "url": None,
+            "status": "Data in preparation and final metadata checks",
+        },
+        {
+            "source_id": None,  # TBD
+            "description": "Ozone concentrations",
+            "expected_publication": "~January 2025; 3 months after dependent datasets",
+            "url": None,
+            "status": "Depends on 1, 2, 4, 5 and 8",
+        },
+        {
+            "source_id": None,  # TBD
+            "description": "Nitrogen deposition",
+            "expected_publication": "~January 2025; 3 months after dependent datasets",
+            "url": None,
+            "status": "Depends on 1, 2, 4, 5 and 8",
+        },
+        {
+            "source_id": "SOLARIS-HEPPA-CMIP-4-3",
+            "description": "Solar",
+            "status": "Preliminary dataset available",
+        },
+        {
+            "source_id": "PCMDI-AMIP-1-1-9",
+            "description": "AMIP sea-surface temperature and sea-ice boundary forcing",
+            "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release ",
+        },
+        {
+            "source_id": None,  # TBD
+            "description": "Aerosol optical properties/MACv2-SP",
+            "expected_publication": "~November 2024; Expected a month after dependent datasets",
+            "url": None,
+            "status": "Depends on 1, test dataset being produced in the meantime",
+        },
+    ]
+
+    res_l = []
+    for i, info_d in enumerate(hard_coded_info):
+        tmp = {}
+        tmp["Dataset #"] = i + 1
+
+        if info_d["source_id"] is None:
+            if info_d["url"] is not None:
+                tmp["Forcing dataset"] = (
+                    f"<a href='{info_d['url']}' target='_blank'>{info_d['description']}</a>"
+                )
+            else:
+                tmp["Forcing dataset"] = info_d["description"]
+
+            tmp["Source ID"] = "TBD"
+            tmp["Status"] = info_d["status"]
+            tmp["Expected ESGF publication"] = info_d["expected_publication"]
+
+        else:
+            db_source_id = db[db["source_id"] == info_d["source_id"]]
+
+            further_info_url = db_source_id["further_info_url"].unique()
+            if len(further_info_url) == 1:
+                further_info_url = further_info_url[0]
+                if further_info_url.endswith(".invalid"):
+                    further_info_url = None
+
+            else:
+                raise NotImplementedError(further_info_url)
+
+            if further_info_url is not None:
+                tmp["Forcing dataset"] = (
+                    f"<a href='{further_info_url}' target='_blank'>{info_d['description']}</a>"
+                )
+
+            else:
+                tmp["Forcing dataset"] = info_d["description"]
+
+            tmp["Source ID"] = info_d["source_id"]
+            tmp["Status"] = info_d["status"]
+
+            publication_status = db_source_id["publication_status"].unique()
+            if len(publication_status) == 1:
+                publication_status = publication_status[0]
+
+            else:
+                raise NotImplementedError(publication_status)
+
+            if publication_status == "published":
+                source_version = db_source_id["source_version"].unique()
+                if len(source_version) == 1:
+                    source_version = source_version[0]
+
+                else:
+                    raise NotImplementedError(source_version)
+
+                # All rows have same source ID, hence can use any here
+                esgf_url = get_url_esgf_for_html_table(
+                    db_source_id.iloc[0, :], ["source_id"]
+                )
+
+                ts_min_str = db_source_id["datetime_start"].dropna().min()
+                ts_min_dt = dt.datetime.strptime(ts_min_str, "%Y-%m-%dT%H:%M:%SZ")
+                ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}"
+
+                ts_max_str = db_source_id["datetime_end"].dropna().max()
+                ts_max_dt = dt.datetime.strptime(ts_max_str, "%Y-%m-%dT%H:%M:%SZ")
+                ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}"
+
+                tmp["Expected ESGF publication"] = esgf_url.replace(
+                    "Published", f"v{source_version} available ({ts_min} to {ts_max})"
+                )
+
+            else:
+                raise NotImplementedError(publication_status)
+
+        res_l.append(tmp)
+
+    res = pd.DataFrame(res_l)
+
+    return res
+
+
 def get_db_views_to_write(
     repo_root_dir: Path,
     db_file_path_rel_to_root: Path = Path("Database")
@@ -412,18 +590,27 @@ def get_db_views_to_write(
     files_view = get_files_view(db)
     datasets_view = get_datasets_view(db)
     source_id_view = get_source_id_view(db)
+    delivery_summary_view = get_delivery_summary_view(db)
 
     # Hard-code filenames for now
     res = (
+        # (
+        #     view,
+        #     path_to_write_in,
+        #     header,
+        #     special_sort,
+        # )
         (
             files_view[files_view["mip_era"] == "CMIP6Plus"],
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_files_CMIP6Plus.html",
             "input4MIPs CMIP6Plus files",
+            True,
         ),
         (
             datasets_view[datasets_view["mip_era"] == "CMIP6Plus"],
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_datasets_CMIP6Plus.html",
             "input4MIPs CMIP6Plus datasets",
+            True,
         ),
         (
             source_id_view[source_id_view["mip_era"] == "CMIP6Plus"],
@@ -431,6 +618,15 @@ def get_db_views_to_write(
             / html_dir_rel_to_root
             / "input4MIPs_source-id_CMIP6Plus.html",
             "input4MIPs CMIP6Plus source IDs",
+            True,
+        ),
+        (
+            delivery_summary_view,
+            repo_root_dir
+            / html_dir_rel_to_root
+            / "input4MIPs_delivery-summary_CMIP6Plus.html",
+            "input4MIPs CMIP6Plus delivery summary",
+            False,
         ),
     )
 
@@ -516,6 +712,7 @@ def write_db_view_as_html(
         "never_published",
     ),
     check_unchanged: bool = False,
+    special_sort: bool = True,
 ) -> None:
     """
     Write a view of the database as HTML
@@ -540,28 +737,35 @@ def write_db_view_as_html(
 
     check_unchanged
         Should we raise an error if `file_to_write`'s content would change?
+
+    special_sort
+        Should we apply our special sorting to this view before writing?
     """
-    # Little bit of special sorting,
-    # so that the initial view of the table makes a bit more sense
-    db_view_tmp = db_view.sort_values(by=db_view.columns.tolist()).copy()
-    db_view_sorted_l = []
+    if special_sort:
+        # Little bit of special sorting,
+        # so that the initial view of the table makes a bit more sense
+        db_view_tmp = db_view.sort_values(by=db_view.columns.tolist()).copy()
+        db_view_sorted_l = []
 
-    db_view_publication_statuses = set(db_view["publication_status"])
-    missing_publication_statues = db_view_publication_statuses.difference(
-        set(publication_status_display_order)
-    )
-    if missing_publication_statues:
-        raise AssertionError(missing_publication_statues)
-
-    for publication_status in publication_status_display_order:
-        db_view_sorted_l.append(
-            db_view_tmp[db_view_tmp["publication_status"] == publication_status]
+        db_view_publication_statuses = set(db_view["publication_status"])
+        missing_publication_statues = db_view_publication_statuses.difference(
+            set(publication_status_display_order)
         )
+        if missing_publication_statues:
+            raise AssertionError(missing_publication_statues)
 
-    db_view_sorted = pd.concat(db_view_sorted_l)
-    db_view_sorted = db_view_sorted.reset_index(drop=True)
-    db_view_sorted.index.name = "default_sort_index"
-    db_view_sorted = db_view_sorted.reset_index()
+        for publication_status in publication_status_display_order:
+            db_view_sorted_l.append(
+                db_view_tmp[db_view_tmp["publication_status"] == publication_status]
+            )
+
+        db_view_sorted = pd.concat(db_view_sorted_l)
+        db_view_sorted = db_view_sorted.reset_index(drop=True)
+        db_view_sorted.index.name = "default_sort_index"
+        db_view_sorted = db_view_sorted.reset_index()
+
+    else:
+        db_view_sorted = db_view.copy()
 
     columns = list(db_view_sorted.columns)
     table_header_row = get_head_foot_row(columns, kind="thead")
@@ -599,6 +803,7 @@ def write_db_view_as_html(
         f"<p><h1>{page_title}: v{version}</h1><p>",
         "<h4>",
         "<a href='/database-views/#database-views'>Database views homepage</a>",
+        "| <a href='input4MIPs_delivery-summary_CMIP6Plus.html'>Delivery summary view</a>",
         "| <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view</a>",
         "| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view</a>",
         "| <a href='input4MIPs_files_CMIP6Plus.html'>File-level view</a>",
@@ -622,7 +827,15 @@ def write_db_view_as_html(
             current_status = fh.read()
 
         if to_write != current_status:
-            msg = "Web page would be updated by the write operation"
+            diff_view = "".join(
+                difflib.unified_diff(
+                    current_status.splitlines(keepends=True),
+                    to_write.splitlines(keepends=True),
+                    fromfile="current_status",
+                    tofile="to_write",
+                )
+            )
+            msg = f"Web page would be updated by the write operation\n{diff_view}"
             raise AssertionError(msg)
 
     else:
@@ -652,11 +865,12 @@ def generate_html_pages(
     # Get db views to write
     db_views = get_db_views_to_write(repo_root_dir=repo_root_dir)
 
-    for df, write_file, page_title in db_views:
+    for df, write_file, page_title, special_sort in db_views:
         write_db_view_as_html(
             db_view=df,
             file_to_write=write_file,
             page_title=page_title,
             version=version,
             check_unchanged=check_unchanged,
+            special_sort=special_sort,
         )
