@@ -529,11 +529,11 @@ def get_delivery_summary_view(
 
                 ts_min_str = db_source_id["datetime_start"].dropna().min()
                 ts_min_dt = dt.datetime.strptime(ts_min_str, "%Y-%m-%dT%H:%M:%SZ")
-                ts_min = dt.datetime.strftime(ts_min_dt, "%Y-%m")
+                ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}"
 
                 ts_max_str = db_source_id["datetime_end"].dropna().max()
                 ts_max_dt = dt.datetime.strptime(ts_max_str, "%Y-%m-%dT%H:%M:%SZ")
-                ts_max = dt.datetime.strftime(ts_max_dt, "%Y-%m")
+                ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}"
 
                 tmp["Expected ESGF publication"] = esgf_url.replace(
                     "Published", f"v{source_version} available ({ts_min} to {ts_max})"
@@ -828,9 +828,11 @@ def write_db_view_as_html(
 
         if to_write != current_status:
             diff_view = "".join(
-                difflib.ndiff(
+                difflib.unified_diff(
                     current_status.splitlines(keepends=True),
                     to_write.splitlines(keepends=True),
+                    fromfile="current_status",
+                    tofile="to_write",
                 )
             )
             msg = f"Web page would be updated by the write operation\n{diff_view}"
