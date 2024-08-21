@@ -30,4 +30,4 @@ BRANCH_NAME="${TIMESTAMP}_esgf-input4mips-json-update"
 git checkout -b "${BRANCH_NAME}"
 git commit -m "Update ESGF input4MIPs JSON file"
 git push --set-upstream origin "${BRANCH_NAME}"
-gh pr create --title "Bot: ${TIMESTAMP} update ESGF JSON" --body "Created from nimbus bot" --label "esgf-json-update" --reviewer znichollscr #--reviewer durack1
+gh pr create --title "Bot: ${TIMESTAMP} update ESGF JSON" --body "Created from nimbus bot" --label "esgf-json-update" --reviewer znichollscr --reviewer durack1
