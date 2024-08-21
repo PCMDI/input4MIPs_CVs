@@ -7,6 +7,7 @@ This may be a temporary home, but is fine for now
 from __future__ import annotations
 
 import datetime as dt
+import difflib
 import json
 from collections.abc import Iterable
 from pathlib import Path
@@ -826,7 +827,13 @@ def write_db_view_as_html(
             current_status = fh.read()
 
         if to_write != current_status:
-            msg = "Web page would be updated by the write operation"
+            diff_view = "".join(
+                difflib.ndiff(
+                    current_status.splitlines(keepends=True),
+                    to_write.splitlines(keepends=True),
+                )
+            )
+            msg = f"Web page would be updated by the write operation\n{diff_view}"
             raise AssertionError(msg)
 
     else:
