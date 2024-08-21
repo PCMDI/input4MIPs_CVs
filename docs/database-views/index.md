@@ -7,6 +7,14 @@ You can also, of course, make your own view
 by simply reading the database file in 
 `Database/input4MIPs_db_file_entries.json` yourself.
 
+- [Delivery summary view](input4MIPs_delivery-summary_CMIP6Plus.html):
+  Provides information about the expected delivery time of the different datasets.
+  This provides very little information about the data,
+  but does provide the key information about when data will be made available.
+  If you are a data user, this is probably the view to bookmark.
+  As data becomes available, you can then dive into the other views
+  to get more detail about what the data actually contains.
+  There are (or will be) of order twenty entries in this view.
 - [Source ID-level view](input4MIPs_source-id_CMIP6Plus.html):
   Provides information about the status of different source IDs.
   In essence, this is the status at the dataset provider level.

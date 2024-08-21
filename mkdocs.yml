@@ -10,6 +10,7 @@ nav:
   - input4MIPs CVs: index.md
   - Database views:
     - Overview: database-views/index.md
+    - Delivery summary: database-views/input4MIPs_delivery-summary_CMIP6Plus.html
     - Source ID-level: database-views/input4MIPs_source-id_CMIP6Plus.html
     - Dataset-level: database-views/input4MIPs_datasets_CMIP6Plus.html
     - File-level: database-views/input4MIPs_files_CMIP6Plus.html
