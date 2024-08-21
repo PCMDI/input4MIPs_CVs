@@ -23,11 +23,13 @@ In `Database/input-data` there are two components:
 
 `Database/input-data/esgf-input4IMPs.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have queried from the ESGF index database.
-It is generated with `scripts/pollESGF.py`.
-However, the API it queries only allows certain IP addresses,
-so you will only be able to run this if you have been given access.
-We hope to switch to automated generation of this file in future
-(see [#69](https://github.com/PCMDI/input4MIPs_CVs/issues/69)).
+It is automatically updated on nimbus using `scripts/pollESGF.py`.
+The latest scrape from nimbus can be turned into a merge request using
+`scripts/check-esgf-scrape.sh`
+(for the script to run to completion,
+you need to have logged in with GitHub,
+if you don't do that,
+you can just make the merge request by hand).
 
 `Database/input-data/pmount` contains a number of JSON files.
 Each file contains information about one file
