@@ -215,6 +215,9 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
         "never_published"
     )
     out.loc[out["source_id"] == "UOEXETER-CMIP-0-1-0", "publication_status"] = (
+        "never_published"
+    )
+    out.loc[out["source_id"] == "UOEXETER-CMIP-1-1-2", "publication_status"] = (
         "in_publishing_queue"
     )
 
