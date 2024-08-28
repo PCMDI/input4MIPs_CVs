@@ -12,6 +12,8 @@ $ durack1$ python createDRS.py $filePath $destPath
 """2024
 PJD  9 Jul 2024 - started
 PJD 18 Jul 2024 - working for SOLARIS-HEPPA-CMIP-4-2 data
+PJD 28 Aug 2024 - switched out logic, so DRS generation depends on drsList, rather
+                  than broader list
 """
 
 # %% imports
@@ -21,7 +23,6 @@ import datetime
 import glob
 import json
 import os
-import pdb
 import shutil
 import sys
 import xcdat as xc
@@ -140,9 +141,9 @@ for cnt1, fPath in enumerate(fileList):
     version = datetime.datetime.now().strftime("%Y%m%d")
     print()
     print("drs:", drs)
-    attList2 = copy.deepcopy(attList)
-    attList2.append("version")
-    for att in attList2:
+    drsList2 = copy.deepcopy(drsList)
+    drsList2.append("version")
+    for att in drsList2:
         attSwitch = "".join(["<", att, ">"])
         print("switching:", attSwitch, eval(att))
         drs = drs.replace(attSwitch, eval(att))
