@@ -308,7 +308,7 @@ def main(
         with open(file) as fh:
             pmount_raw.append(json.load(fh))
 
-    with open(DB_DIR / "input-data" / "esgf.json") as fh:
+    with open(DB_DIR / "input-data" / "esgf-input4MIPs.json") as fh:
         esgf_raw = json.load(fh)
 
     with open(repo_root_dir / "CVs" / "input4MIPs_source_id.json") as fh:

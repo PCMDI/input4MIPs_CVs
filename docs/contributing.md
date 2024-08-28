@@ -18,10 +18,10 @@ and also provides an interface to bump the version.
 
 In `Database/input-data` there are two components:
 
-1. The file `esgf.json`
+1. The file `esgf-input4IMPs.json`
 1. The directory `Database/input-data/pmount`
 
-`Database/input-data/esgf.json` is a scrape of information from the ESGF index.
+`Database/input-data/esgf-input4IMPs.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have queried from the ESGF index database.
 It is generated with `scripts/pollESGF.py`.
 However, the API it queries only allows certain IP addresses,
