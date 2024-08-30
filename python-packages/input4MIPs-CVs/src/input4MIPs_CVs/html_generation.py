@@ -402,11 +402,11 @@ def get_delivery_summary_view(
     """
     hard_coded_info = [
         {
-            "source_id": None,  # TBD
+            "source_id": "CEDS-CMIP-2024-07-08, CEDS-CMIP-2024-07-08-supplemental",
             "description": "Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions",
             "expected_publication": "Early September 2024",
             "url": "https://www.pnnl.gov/projects/ceds",
-            "status": "Data in preparation and final metadata checks",
+            "status": "In publication queue",
         },
         {
             "source_id": None,  # TBD
@@ -428,11 +428,11 @@ def get_delivery_summary_view(
             "status": "Preliminary dataset available",
         },
         {
-            "source_id": None,  # TBD
+            "source_id": "UOEXETER-CMIP-1-1-2",
             "description": "Stratospheric volcanic SO2 emissions and aerosol optical properties",
             "expected_publication": "Early September 2024",
             "url": None,
-            "status": "Data in preparation and final metadata checks",
+            "status": "In publication queue",
         },
         {
             "source_id": None,  # TBD
@@ -485,7 +485,11 @@ def get_delivery_summary_view(
             tmp["Expected ESGF publication"] = info_d["expected_publication"]
 
         else:
-            db_source_id = db[db["source_id"] == info_d["source_id"]]
+            db_source_id = db[
+                db["source_id"].isin(
+                    [v.strip() for v in info_d["source_id"].split(",")]
+                )
+            ]
 
             further_info_url = db_source_id["further_info_url"].unique()
             if len(further_info_url) == 1:
@@ -514,13 +518,16 @@ def get_delivery_summary_view(
             else:
                 raise NotImplementedError(publication_status)
 
-            if publication_status == "published":
+            if publication_status in "published":
                 source_version = db_source_id["source_version"].unique()
                 if len(source_version) == 1:
                     source_version = source_version[0]
 
                 else:
                     raise NotImplementedError(source_version)
+
+                if len(db_source_id["source_id"].unique()) != 1:
+                    raise AssertionError()
 
                 # All rows have same source ID, hence can use any here
                 esgf_url = get_url_esgf_for_html_table(
@@ -538,6 +545,10 @@ def get_delivery_summary_view(
                 tmp["Expected ESGF publication"] = esgf_url.replace(
                     "Published", f"v{source_version} available ({ts_min} to {ts_max})"
                 )
+
+            elif publication_status == "in_publishing_queue":
+                # Do nothing, no information to update
+                pass
 
             else:
                 raise NotImplementedError(publication_status)
