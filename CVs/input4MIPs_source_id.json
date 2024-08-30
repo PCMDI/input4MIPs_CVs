@@ -1,4 +1,20 @@
 {
+    "CEDS-CMIP-2024-07-08":{
+        "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
+        "further_info_url":"https://www.pnnl.gov/projects/ceds",
+        "institution_id":"PNNL-JGCRI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"2024-07-08"
+    },
+    "CEDS-CMIP-2024-07-08-supplemental":{
+        "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
+        "further_info_url":"https://www.pnnl.gov/projects/ceds",
+        "institution_id":"PNNL-JGCRI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"2024-07-08"
+    },
     "CR-CMIP-0-2-0":{
         "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
         "further_info_url":"http://www.tbd.invalid",
