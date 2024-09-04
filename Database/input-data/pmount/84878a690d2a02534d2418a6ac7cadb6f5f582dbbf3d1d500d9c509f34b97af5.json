@@ -36,7 +36,7 @@
     "time_range":"0001-2022",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/f9fb7f9e-a30c-4241-9bcf-0f14bd549aad",
-    "validated_input4mips":null,
+    "validated_input4mips":true,
     "variable_id":"halon2402",
     "version":"20240806",
     "xlink":null

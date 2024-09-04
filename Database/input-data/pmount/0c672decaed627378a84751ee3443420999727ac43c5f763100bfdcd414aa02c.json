@@ -36,7 +36,7 @@
     "time_range":"0001-2022",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/124a09ac-eb5c-43de-ad76-133c90dcc8cf",
-    "validated_input4mips":null,
+    "validated_input4mips":true,
     "variable_id":"hfc4310mee",
     "version":"20240806",
     "xlink":null

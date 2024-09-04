@@ -36,7 +36,7 @@
     "time_range":"0001-2022",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/9ae028ea-91c5-4913-b4d7-24cfaa43d252",
-    "validated_input4mips":null,
+    "validated_input4mips":true,
     "variable_id":"hfc32",
     "version":"20240806",
     "xlink":null

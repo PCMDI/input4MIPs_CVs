@@ -36,7 +36,7 @@
     "time_range":"000101-202212",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/5c0269a1-6785-435e-8340-5aceccb7fbb2",
-    "validated_input4mips":null,
+    "validated_input4mips":true,
     "variable_id":"hfc365mfc",
     "version":"20240806",
     "xlink":null
