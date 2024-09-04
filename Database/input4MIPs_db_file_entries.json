@@ -37,7 +37,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:16.820Z",
         "tracking_id":"hdl:21.14100/22d99d55-8882-4e95-bb65-aae515f36e59",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc5114",
         "version":"20240806",
         "xlink":null
@@ -80,7 +80,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:16.884Z",
         "tracking_id":"hdl:21.14100/e0c14ca6-005c-4a0c-ad0a-90b9f3d512cc",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc318",
         "version":"20240806",
         "xlink":null
@@ -553,7 +553,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:06.080Z",
         "tracking_id":"hdl:21.14100/2bda3ac2-ecfd-4ba9-a151-4ba4f21b4948",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc318",
         "version":"20240806",
         "xlink":null
@@ -682,7 +682,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:41.481Z",
         "tracking_id":"hdl:21.14100/9dcfc2ab-043f-4973-9880-52249d8741f0",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc22",
         "version":"20240806",
         "xlink":null
@@ -768,7 +768,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:36.146Z",
         "tracking_id":"hdl:21.14100/416f21ee-cfb4-4395-80b5-543bc70fe31e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"chcl3",
         "version":"20240806",
         "xlink":null
@@ -897,7 +897,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:20.698Z",
         "tracking_id":"hdl:21.14100/868e5b21-f5c6-4257-981e-b0bcda196e01",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3cl",
         "version":"20240806",
         "xlink":null
@@ -1155,7 +1155,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:52.303Z",
         "tracking_id":"hdl:21.14100/e921acef-66ab-4f62-ada9-f822c560f0b5",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc245fa",
         "version":"20240806",
         "xlink":null
@@ -1370,7 +1370,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:23.259Z",
         "tracking_id":"hdl:21.14100/87a0be4c-3da0-462a-893c-a62d93424250",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc141b",
         "version":"20240806",
         "xlink":null
@@ -2015,7 +2015,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:41.982Z",
         "tracking_id":"hdl:21.14100/c310a592-e7dd-41c9-a072-fb6da9a6eca7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc7118",
         "version":"20240806",
         "xlink":null
@@ -2316,7 +2316,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:02.807Z",
         "tracking_id":"hdl:21.14100/b8553de2-b8b3-4d28-9de0-7ca5b0dfc22e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"chcl3",
         "version":"20240806",
         "xlink":null
@@ -2359,7 +2359,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:04.161Z",
         "tracking_id":"hdl:21.14100/f8fac935-378f-463c-808d-16a8859cf3f8",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc218",
         "version":"20240806",
         "xlink":null
@@ -2402,7 +2402,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:43.783Z",
         "tracking_id":"hdl:21.14100/124a09ac-eb5c-43de-ad76-133c90dcc8cf",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc4310mee",
         "version":"20240806",
         "xlink":null
@@ -2746,7 +2746,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:28.039Z",
         "tracking_id":"hdl:21.14100/e854d5df-9626-4ef8-a8b7-f747ba0b349e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc115",
         "version":"20240806",
         "xlink":null
@@ -3004,7 +3004,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:32.023Z",
         "tracking_id":"hdl:21.14100/1a388984-c544-4f5c-aedb-3a1ba6fd23dd",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"nf3",
         "version":"20240806",
         "xlink":null
@@ -3348,7 +3348,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:07.607Z",
         "tracking_id":"hdl:21.14100/4e54e9b3-d4ef-422a-9d9d-489cf49bb81e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134aeq",
         "version":"20240806",
         "xlink":null
@@ -3821,7 +3821,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:02.320Z",
         "tracking_id":"hdl:21.14100/4496aba4-951d-43e1-a07c-2896f7a784ba",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134aeq",
         "version":"20240806",
         "xlink":null
@@ -4337,7 +4337,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:03.577Z",
         "tracking_id":"hdl:21.14100/ab56d1c0-9849-436d-82cf-a6d7b1183304",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc143a",
         "version":"20240806",
         "xlink":null
@@ -4638,7 +4638,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:48.763Z",
         "tracking_id":"hdl:21.14100/6fac78b1-5ff8-40e6-988e-503acd9f57b6",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"so2f2",
         "version":"20240806",
         "xlink":null
@@ -4681,7 +4681,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:43.747Z",
         "tracking_id":"hdl:21.14100/838152c0-7651-4f39-bc8e-eb67e430b12a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12",
         "version":"20240806",
         "xlink":null
@@ -4724,7 +4724,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:35.939Z",
         "tracking_id":"hdl:21.14100/1c974ff1-337a-4f57-9e1d-a1feb57df7d3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc141b",
         "version":"20240806",
         "xlink":null
@@ -4896,7 +4896,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:36.295Z",
         "tracking_id":"hdl:21.14100/ddd07372-fdf8-410b-ac55-68ae231f9706",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc142b",
         "version":"20240806",
         "xlink":null
@@ -5068,7 +5068,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:16.080Z",
         "tracking_id":"hdl:21.14100/9ad6b034-92c0-448d-bb77-d8881e5f2b2f",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc227ea",
         "version":"20240806",
         "xlink":null
@@ -5197,7 +5197,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:48.870Z",
         "tracking_id":"hdl:21.14100/1071a4b6-2583-4956-b8d6-e545e8d90d30",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"n2o",
         "version":"20240806",
         "xlink":null
@@ -5670,7 +5670,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:02.221Z",
         "tracking_id":"hdl:21.14100/63ab61f2-663c-4a00-9205-5b494a0d33de",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch2cl2",
         "version":"20240806",
         "xlink":null
@@ -5756,7 +5756,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:24.188Z",
         "tracking_id":"hdl:21.14100/4bbb8f8e-d56c-49eb-94d3-dd6bb03470bf",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"n2o",
         "version":"20240806",
         "xlink":null
@@ -5799,7 +5799,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:10:48.568Z",
         "tracking_id":"hdl:21.14100/6877a239-a7c3-4eef-81a3-3aee84f17764",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ccl4",
         "version":"20240806",
         "xlink":null
@@ -6229,7 +6229,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:57.778Z",
         "tracking_id":"hdl:21.14100/0489389e-a65a-4423-a6d1-382b6355b33a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch4",
         "version":"20240806",
         "xlink":null
@@ -6917,7 +6917,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:10.085Z",
         "tracking_id":"hdl:21.14100/d3b01da6-d207-475d-b114-63f37b64fb2c",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon2402",
         "version":"20240806",
         "xlink":null
@@ -7132,7 +7132,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:31.361Z",
         "tracking_id":"hdl:21.14100/29042b2e-4590-4851-b6a1-d4619141b64f",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc227ea",
         "version":"20240806",
         "xlink":null
@@ -7175,7 +7175,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:43.546Z",
         "tracking_id":"hdl:21.14100/beb8f977-5f84-4aa7-812d-ba60edd0ecdf",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"sf6",
         "version":"20240806",
         "xlink":null
@@ -7218,7 +7218,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:22.237Z",
         "tracking_id":"hdl:21.14100/d3a29449-abac-4c3c-9503-d88d1d29dd7c",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc5114",
         "version":"20240806",
         "xlink":null
@@ -7519,7 +7519,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:07.893Z",
         "tracking_id":"hdl:21.14100/a0ec46f1-7f7b-4255-b790-4b4154d7ca4e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"co2",
         "version":"20240806",
         "xlink":null
@@ -7691,7 +7691,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:38.606Z",
         "tracking_id":"hdl:21.14100/c1302f40-a867-465f-bdd1-75a576a68a48",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11eq",
         "version":"20240806",
         "xlink":null
@@ -7820,7 +7820,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:03.513Z",
         "tracking_id":"hdl:21.14100/5d7a27fb-8f4b-481b-9593-1872d197f29c",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc318",
         "version":"20240806",
         "xlink":null
@@ -7906,7 +7906,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:53.994Z",
         "tracking_id":"hdl:21.14100/e737cb16-62cc-4799-a29f-33c40cbf41de",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"so2f2",
         "version":"20240806",
         "xlink":null
@@ -7949,7 +7949,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:54.276Z",
         "tracking_id":"hdl:21.14100/29b4b074-8604-4ab0-b56c-734c7a99d5e5",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12eq",
         "version":"20240806",
         "xlink":null
@@ -8035,7 +8035,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:25.860Z",
         "tracking_id":"hdl:21.14100/e482ec91-f50b-426f-a565-b972ae05931a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc141b",
         "version":"20240806",
         "xlink":null
@@ -8293,7 +8293,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:18.982Z",
         "tracking_id":"hdl:21.14100/c1566f74-ba90-477e-a420-3024d17e12b2",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc4310mee",
         "version":"20240806",
         "xlink":null
@@ -8723,7 +8723,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:39.975Z",
         "tracking_id":"hdl:21.14100/d8d450d7-554d-42e9-9a40-8ef6ef86c6cb",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12eq",
         "version":"20240806",
         "xlink":null
@@ -8981,7 +8981,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:20.701Z",
         "tracking_id":"hdl:21.14100/394aad70-a77e-47e3-87cc-e8c7adf2cf83",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcc140a",
         "version":"20240806",
         "xlink":null
@@ -9239,7 +9239,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:31.880Z",
         "tracking_id":"hdl:21.14100/7035f359-4716-434a-8971-ff354ec0cef9",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc5114",
         "version":"20240806",
         "xlink":null
@@ -9325,7 +9325,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:47.163Z",
         "tracking_id":"hdl:21.14100/a3a99bd9-3a83-4da7-93d1-0a4d355267a1",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc236fa",
         "version":"20240806",
         "xlink":null
@@ -9411,7 +9411,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:33.677Z",
         "tracking_id":"hdl:21.14100/ca5aeeae-25a1-4652-bd87-05469a787d70",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc142b",
         "version":"20240806",
         "xlink":null
@@ -9454,7 +9454,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:36.886Z",
         "tracking_id":"hdl:21.14100/be2af21f-3917-4615-b052-42a15d9b7d28",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc6116",
         "version":"20240806",
         "xlink":null
@@ -9712,7 +9712,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:25.725Z",
         "tracking_id":"hdl:21.14100/c25cd1d4-9fde-47cc-a7d4-a57bbc62da7a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon2402",
         "version":"20240806",
         "xlink":null
@@ -9798,7 +9798,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:51.442Z",
         "tracking_id":"hdl:21.14100/91d9f0c5-5569-421a-a669-6def54046610",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"n2o",
         "version":"20240806",
         "xlink":null
@@ -9884,7 +9884,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:55.788Z",
         "tracking_id":"hdl:21.14100/f3566b42-00e0-4cdb-9fe9-570c9b323ac4",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc3110",
         "version":"20240806",
         "xlink":null
@@ -9927,7 +9927,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:47.089Z",
         "tracking_id":"hdl:21.14100/172ab78e-7ee6-46a3-a3a8-94a5f51ce8d2",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"sf6",
         "version":"20240806",
         "xlink":null
@@ -10357,7 +10357,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:28.703Z",
         "tracking_id":"hdl:21.14100/294c3407-a277-44c8-a4ca-88635aa949e1",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc227ea",
         "version":"20240806",
         "xlink":null
@@ -10658,7 +10658,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:51.657Z",
         "tracking_id":"hdl:21.14100/58b55c2d-3ffb-438e-9ecf-acb109fa5bbd",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12eq",
         "version":"20240806",
         "xlink":null
@@ -11217,7 +11217,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:10.189Z",
         "tracking_id":"hdl:21.14100/6d313ff4-c7ee-4e7d-bd33-8e5659c8b524",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3br",
         "version":"20240806",
         "xlink":null
@@ -11733,7 +11733,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:43.575Z",
         "tracking_id":"hdl:21.14100/203c301f-fbe3-493d-8a29-010d5b94e8f5",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc22",
         "version":"20240806",
         "xlink":null
@@ -11819,7 +11819,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:14.910Z",
         "tracking_id":"hdl:21.14100/6155a30e-1eab-41ca-addb-76ea12cfac0b",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc113",
         "version":"20240806",
         "xlink":null
@@ -12550,7 +12550,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:16:58.967Z",
         "tracking_id":"hdl:21.14100/ba094ea1-a0a1-4d93-bb73-c774ea702249",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ccl4",
         "version":"20240806",
         "xlink":null
@@ -12636,7 +12636,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:53.160Z",
         "tracking_id":"hdl:21.14100/679ea8bc-7222-40ef-9074-b6ecf0022ba7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc3110",
         "version":"20240806",
         "xlink":null
@@ -12722,7 +12722,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:23.410Z",
         "tracking_id":"hdl:21.14100/c8e4490f-805f-4bd2-91b8-eb47833720d9",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc152a",
         "version":"20240806",
         "xlink":null
@@ -13797,7 +13797,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:00.912Z",
         "tracking_id":"hdl:21.14100/fbb21b5e-7664-49bf-ab3f-9884ab519ab5",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc318",
         "version":"20240806",
         "xlink":null
@@ -14270,7 +14270,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:50.091Z",
         "tracking_id":"hdl:21.14100/b393fd02-f860-4e01-82de-44031dc0164d",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3br",
         "version":"20240806",
         "xlink":null
@@ -14743,7 +14743,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:36.769Z",
         "tracking_id":"hdl:21.14100/3e1acef5-5c4d-4cdd-8228-6554f082dccf",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc23",
         "version":"20240806",
         "xlink":null
@@ -14829,7 +14829,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:26.900Z",
         "tracking_id":"hdl:21.14100/95d7cfab-b422-40eb-bf3f-ee1c30f142db",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11eq",
         "version":"20240806",
         "xlink":null
@@ -15345,7 +15345,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:15.364Z",
         "tracking_id":"hdl:21.14100/321a3749-c8c0-4faa-808f-514fcc9e055e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3cl",
         "version":"20240806",
         "xlink":null
@@ -15560,7 +15560,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:33.970Z",
         "tracking_id":"hdl:21.14100/763ff451-42a0-4721-9d0b-41e714b6961b",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc23",
         "version":"20240806",
         "xlink":null
@@ -15775,7 +15775,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:19.164Z",
         "tracking_id":"hdl:21.14100/dec4f208-2eb5-43d9-b957-6bc741b51b24",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc114",
         "version":"20240806",
         "xlink":null
@@ -16162,7 +16162,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:12.782Z",
         "tracking_id":"hdl:21.14100/884e6b88-f935-4374-960f-7d3d99cfd719",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon2402",
         "version":"20240806",
         "xlink":null
@@ -16334,7 +16334,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:33.709Z",
         "tracking_id":"hdl:21.14100/9ae028ea-91c5-4913-b4d7-24cfaa43d252",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc32",
         "version":"20240806",
         "xlink":null
@@ -16641,6 +16641,49 @@
         "xlink":null
     },
     {
+        "Conventions":"CF-1.7",
+        "activity_id":"input4MIPs",
+        "comment":null,
+        "comment_post_publication":null,
+        "contact":"t.aubry@exeter.ac.uk",
+        "creation_date":"2024-08-30T15:56:29Z",
+        "data_node":"esgf-data2.llnl.gov",
+        "dataset_category":"aerosolProperties",
+        "datetime_end":"2023-12-01T00:00:00Z",
+        "datetime_start":"1750-01-01T00:00:00Z",
+        "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.uoexeter.UOEXETER-CMIP-1-1-3.atmos.mon.ext.gnz.v20240903",
+        "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/uoexeter/UOEXETER-CMIP-1-1-3/atmos/mon/ext/gnz/v20240903/ext_input4MIPs_aerosolProperties_CMIP_UOEXETER-CMIP-1-1-3_gnz_175001-202312.nc",
+        "frequency":"mon",
+        "further_info_url":"http://www.tbd.invalid",
+        "grid":null,
+        "grid_label":"gnz",
+        "institution":null,
+        "institution_id":"uoexeter",
+        "latest":true,
+        "license":"The input4MIPs data linked to this entry is licensed under a Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "nominal_resolution":"500 km",
+        "product":null,
+        "publication_status":"published",
+        "realm":"atmos",
+        "references":null,
+        "region":null,
+        "replica":false,
+        "sha256":"4e09f1d14852eb790cb64e0ca1aee9635f00626516c7d86fc6c1353e47ad60a5",
+        "source":null,
+        "source_id":"UOEXETER-CMIP-1-1-3",
+        "source_version":"1.1.3",
+        "target_mip":"CMIP",
+        "time_range":"175001-202312",
+        "timestamp":"2024-09-04T17:16:36.449Z",
+        "tracking_id":"hdl:21.14100/ff280507-8b88-4269-8e3a-6c81532fedc2",
+        "validated_input4mips":true,
+        "variable_id":"ext",
+        "version":"20240903",
+        "xlink":null
+    },
+    {
         "Conventions":"CF-1.7 CMIP-6.2",
         "activity_id":"input4MIPs",
         "comment":"Based on JRA-55 reanalysis (1958-01 to 2024-01)",
@@ -16721,7 +16764,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:21.872Z",
         "tracking_id":"hdl:21.14100/74fd58bc-5f47-4863-837b-c19f32f20ff3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc4112",
         "version":"20240806",
         "xlink":null
@@ -16936,7 +16979,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:18.501Z",
         "tracking_id":"hdl:21.14100/c5def46d-7809-4e32-b8bc-bda787e98130",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc23",
         "version":"20240806",
         "xlink":null
@@ -17065,7 +17108,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:56.930Z",
         "tracking_id":"hdl:21.14100/81f16ed2-1908-4794-b655-12a3b5213ba7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12eq",
         "version":"20240806",
         "xlink":null
@@ -17710,7 +17753,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:46.183Z",
         "tracking_id":"hdl:21.14100/e721657b-c3ba-4adc-b7d9-fa01793265e3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"sf6",
         "version":"20240806",
         "xlink":null
@@ -17968,7 +18011,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:32.867Z",
         "tracking_id":"hdl:21.14100/5366ad9b-1b45-4cea-a396-496517773988",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc7118",
         "version":"20240806",
         "xlink":null
@@ -18054,7 +18097,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:38.490Z",
         "tracking_id":"hdl:21.14100/048fe01c-6a02-4068-8d50-c45b7a87ccc9",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc142b",
         "version":"20240806",
         "xlink":null
@@ -18183,7 +18226,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:08.741Z",
         "tracking_id":"hdl:21.14100/5db6c647-e8b4-432c-b405-69c9c7cfb652",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc4112",
         "version":"20240806",
         "xlink":null
@@ -18742,7 +18785,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:26.808Z",
         "tracking_id":"hdl:21.14100/d7a6296d-2df9-4f78-ad85-c66a2ceca38b",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"n2o",
         "version":"20240806",
         "xlink":null
@@ -18914,7 +18957,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:57.128Z",
         "tracking_id":"hdl:21.14100/96f1b50b-f9ef-4f53-affc-995d6df62bb4",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134a",
         "version":"20240806",
         "xlink":null
@@ -18957,7 +19000,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:06.700Z",
         "tracking_id":"hdl:21.14100/70354132-b4f1-4f2c-9dcd-f3315b4017a1",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc218",
         "version":"20240806",
         "xlink":null
@@ -19387,7 +19430,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:41.138Z",
         "tracking_id":"hdl:21.14100/cf87fdc0-28c7-4144-b889-6c1aec0c584f",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11eq",
         "version":"20240806",
         "xlink":null
@@ -19473,7 +19516,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:31.058Z",
         "tracking_id":"hdl:21.14100/ddbcf5d0-8106-482a-abd5-7d2c94e4ce0c",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc142b",
         "version":"20240806",
         "xlink":null
@@ -19516,7 +19559,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:25.479Z",
         "tracking_id":"hdl:21.14100/97bfee29-1918-470c-82ab-6ead2b059313",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc114",
         "version":"20240806",
         "xlink":null
@@ -19688,7 +19731,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:15.417Z",
         "tracking_id":"hdl:21.14100/bc9a8358-9045-4717-8932-73153ca3b3ef",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc143a",
         "version":"20240806",
         "xlink":null
@@ -19860,7 +19903,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:20.725Z",
         "tracking_id":"hdl:21.14100/4b4f814f-7cd2-494d-a430-14bf799a88fb",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc152a",
         "version":"20240806",
         "xlink":null
@@ -20161,7 +20204,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:18.012Z",
         "tracking_id":"hdl:21.14100/d04539eb-1a62-4b91-8ba8-3312a10beb6d",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcc140a",
         "version":"20240806",
         "xlink":null
@@ -20333,7 +20376,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:32.075Z",
         "tracking_id":"hdl:21.14100/22f09e78-6737-4312-81a9-502ce92fb635",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12",
         "version":"20240806",
         "xlink":null
@@ -20462,7 +20505,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:10:53.840Z",
         "tracking_id":"hdl:21.14100/e3385e8c-08d9-4524-8377-49feb3eaa05e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ccl4",
         "version":"20240806",
         "xlink":null
@@ -20548,7 +20591,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:53.589Z",
         "tracking_id":"hdl:21.14100/cbaf1d3e-b406-492f-8898-307d244f7289",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134a",
         "version":"20240806",
         "xlink":null
@@ -20720,7 +20763,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:41.251Z",
         "tracking_id":"hdl:21.14100/54669db8-4bc0-4ddc-902c-29ef0e2761a4",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc365mfc",
         "version":"20240806",
         "xlink":null
@@ -21107,7 +21150,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:49.315Z",
         "tracking_id":"hdl:21.14100/2ad6e4a8-874d-49aa-9db1-4249230215b7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc125",
         "version":"20240806",
         "xlink":null
@@ -21150,7 +21193,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:57.043Z",
         "tracking_id":"hdl:21.14100/ad8ade8e-5558-484e-89f3-f66587cdbfc3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1211",
         "version":"20240806",
         "xlink":null
@@ -21279,7 +21322,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:11.832Z",
         "tracking_id":"hdl:21.14100/89fc1ac2-e6f8-4461-8309-e04b739dc04b",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc3110",
         "version":"20240806",
         "xlink":null
@@ -21451,7 +21494,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:07.571Z",
         "tracking_id":"hdl:21.14100/f85583c4-ef13-4254-8724-3f11b89c910e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3br",
         "version":"20240806",
         "xlink":null
@@ -21494,7 +21537,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:00.366Z",
         "tracking_id":"hdl:21.14100/584aefde-29bb-4062-8c61-72b522ed0bf0",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch4",
         "version":"20240806",
         "xlink":null
@@ -21623,7 +21666,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:20.286Z",
         "tracking_id":"hdl:21.14100/2a330fc1-cfd6-4802-8a30-8e7ab6656fdd",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc114",
         "version":"20240806",
         "xlink":null
@@ -21709,7 +21752,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:04.820Z",
         "tracking_id":"hdl:21.14100/0dcd041e-57fa-4c27-999f-505035a88c42",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1301",
         "version":"20240806",
         "xlink":null
@@ -22013,6 +22056,49 @@
         "validated_input4mips":true,
         "variable_id":"ts",
         "version":"20240531",
+        "xlink":null
+    },
+    {
+        "Conventions":"CF-1.7",
+        "activity_id":"input4MIPs",
+        "comment":null,
+        "comment_post_publication":null,
+        "contact":"t.aubry@exeter.ac.uk",
+        "creation_date":"2024-08-30T15:56:53Z",
+        "data_node":"esgf-data2.llnl.gov",
+        "dataset_category":"aerosolProperties",
+        "datetime_end":"2023-12-01T00:00:00Z",
+        "datetime_start":"1750-01-01T00:00:00Z",
+        "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.uoexeter.UOEXETER-CMIP-1-1-3.atmos.mon.asy.gnz.v20240903",
+        "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/uoexeter/UOEXETER-CMIP-1-1-3/atmos/mon/asy/gnz/v20240903/asy_input4MIPs_aerosolProperties_CMIP_UOEXETER-CMIP-1-1-3_gnz_175001-202312.nc",
+        "frequency":"mon",
+        "further_info_url":"http://www.tbd.invalid",
+        "grid":null,
+        "grid_label":"gnz",
+        "institution":null,
+        "institution_id":"uoexeter",
+        "latest":true,
+        "license":"The input4MIPs data linked to this entry is licensed under a Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "nominal_resolution":"500 km",
+        "product":null,
+        "publication_status":"published",
+        "realm":"atmos",
+        "references":null,
+        "region":null,
+        "replica":false,
+        "sha256":"6a667ea131d4df8018ff3174a491c7e5cb05a12ff0037b4090b448981439c091",
+        "source":null,
+        "source_id":"UOEXETER-CMIP-1-1-3",
+        "source_version":"1.1.3",
+        "target_mip":"CMIP",
+        "time_range":"175001-202312",
+        "timestamp":"2024-09-04T17:16:31.813Z",
+        "tracking_id":"hdl:21.14100/6f83629f-380a-4a5d-99df-7d5ad5cc8ac1",
+        "validated_input4mips":true,
+        "variable_id":"asy",
+        "version":"20240903",
         "xlink":null
     },
     {
@@ -22397,7 +22483,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:46.671Z",
         "tracking_id":"hdl:21.14100/936d9f12-cd56-40ec-9652-ca6854f219be",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc125",
         "version":"20240806",
         "xlink":null
@@ -22526,7 +22612,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:26.039Z",
         "tracking_id":"hdl:21.14100/26d11ef6-b644-4056-b5f9-50aab59ab5dc",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc227ea",
         "version":"20240806",
         "xlink":null
@@ -22655,7 +22741,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:52.665Z",
         "tracking_id":"hdl:21.14100/780fb4aa-ea1e-44cc-ba66-a5e05ebf6bf0",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3cl",
         "version":"20240806",
         "xlink":null
@@ -22698,7 +22784,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:56.562Z",
         "tracking_id":"hdl:21.14100/11e0a7a2-df93-4206-923b-39156041db22",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"nf3",
         "version":"20240806",
         "xlink":null
@@ -22784,7 +22870,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:12.775Z",
         "tracking_id":"hdl:21.14100/4655daa5-1481-4e0d-b2a9-e5847b19f110",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3br",
         "version":"20240806",
         "xlink":null
@@ -23085,7 +23171,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:13.783Z",
         "tracking_id":"hdl:21.14100/50579a72-6a9e-4b87-affa-cf4049875e33",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc4310mee",
         "version":"20240806",
         "xlink":null
@@ -23171,7 +23257,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:35.543Z",
         "tracking_id":"hdl:21.14100/d52ff72c-b180-45db-b8fa-571ef56ade58",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc7118",
         "version":"20240806",
         "xlink":null
@@ -23386,7 +23472,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:15.368Z",
         "tracking_id":"hdl:21.14100/d12937d7-ba76-4dfb-aa70-bd51e8364347",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcc140a",
         "version":"20240806",
         "xlink":null
@@ -23429,7 +23515,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:36.317Z",
         "tracking_id":"hdl:21.14100/8b534b40-270e-4113-a65a-63b5aebfcacd",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc32",
         "version":"20240806",
         "xlink":null
@@ -23644,7 +23730,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:18.027Z",
         "tracking_id":"hdl:21.14100/8800dd77-4b05-4ca3-9d90-37a0f606dc90",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3cl",
         "version":"20240806",
         "xlink":null
@@ -24031,7 +24117,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:00.429Z",
         "tracking_id":"hdl:21.14100/a8d587ce-178d-47c7-9a88-3592e6ff1c0a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc32",
         "version":"20240806",
         "xlink":null
@@ -24203,7 +24289,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:18.189Z",
         "tracking_id":"hdl:21.14100/8a6c7a38-3a1f-4e9b-8e44-7dc7e02cd8ad",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1301",
         "version":"20240806",
         "xlink":null
@@ -25708,7 +25794,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:34.392Z",
         "tracking_id":"hdl:21.14100/d21b4092-66fe-4c52-88c7-ff3eb075cd21",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc6116",
         "version":"20240806",
         "xlink":null
@@ -25837,7 +25923,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:40.864Z",
         "tracking_id":"hdl:21.14100/7797e85c-e58e-43c6-8555-6e8af9fb5da3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"sf6",
         "version":"20240806",
         "xlink":null
@@ -26009,7 +26095,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:12.797Z",
         "tracking_id":"hdl:21.14100/3207f4fd-4317-4b9e-8cae-e56e5b8080d1",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc143a",
         "version":"20240806",
         "xlink":null
@@ -26052,7 +26138,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:31.161Z",
         "tracking_id":"hdl:21.14100/ff9c164b-75cd-433a-b717-dd620bf3d324",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc245fa",
         "version":"20240806",
         "xlink":null
@@ -26353,7 +26439,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:20.951Z",
         "tracking_id":"hdl:21.14100/0e709dbb-3f1a-460a-8394-bd175686ff58",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc23",
         "version":"20240806",
         "xlink":null
@@ -26654,7 +26740,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:30.302Z",
         "tracking_id":"hdl:21.14100/ff3dd827-14d7-4b16-97bd-fad8db2ce506",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc6116",
         "version":"20240806",
         "xlink":null
@@ -26826,7 +26912,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:11.125Z",
         "tracking_id":"hdl:21.14100/6a5cf8c1-0c3e-49c6-bb95-1f99fb15ec18",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc365mfc",
         "version":"20240806",
         "xlink":null
@@ -27084,7 +27170,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:59.554Z",
         "tracking_id":"hdl:21.14100/2753b418-cd48-4622-a8fd-24a4309a1485",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch2cl2",
         "version":"20240806",
         "xlink":null
@@ -27170,7 +27256,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:37.408Z",
         "tracking_id":"hdl:21.14100/75c9b33c-ad46-43f6-bd53-ea8fa23bf78f",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12eq",
         "version":"20240806",
         "xlink":null
@@ -27213,7 +27299,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:23.183Z",
         "tracking_id":"hdl:21.14100/f9fb7f9e-a30c-4241-9bcf-0f14bd549aad",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon2402",
         "version":"20240806",
         "xlink":null
@@ -27256,7 +27342,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:38.211Z",
         "tracking_id":"hdl:21.14100/6f8d69f1-a7d9-4330-b8f6-10a5d0d0837e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc7118",
         "version":"20240806",
         "xlink":null
@@ -27514,7 +27600,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:08.562Z",
         "tracking_id":"hdl:21.14100/0b627f73-03e5-4e87-8cde-f0e1238462d4",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc152a",
         "version":"20240806",
         "xlink":null
@@ -27729,7 +27815,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:09.278Z",
         "tracking_id":"hdl:21.14100/1c1794e0-d405-4582-b626-cef0a12094cf",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc3110",
         "version":"20240806",
         "xlink":null
@@ -27901,7 +27987,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:44.485Z",
         "tracking_id":"hdl:21.14100/b4867d33-c818-4625-80a6-6cd5803f1024",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc236fa",
         "version":"20240806",
         "xlink":null
@@ -28116,7 +28202,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:17.616Z",
         "tracking_id":"hdl:21.14100/14998eba-19f3-47d4-9cf9-61f29fb8b440",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc113",
         "version":"20240806",
         "xlink":null
@@ -28159,7 +28245,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:41.058Z",
         "tracking_id":"hdl:21.14100/06e58d89-0485-4e42-8be4-114196c679e5",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc142b",
         "version":"20240806",
         "xlink":null
@@ -28632,7 +28718,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:30.688Z",
         "tracking_id":"hdl:21.14100/179bccad-66c5-445a-8474-ba9004cbb283",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc115",
         "version":"20240806",
         "xlink":null
@@ -28761,7 +28847,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:30.906Z",
         "tracking_id":"hdl:21.14100/8e6ff5e8-03ee-4bef-8534-6de27794129f",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch4",
         "version":"20240806",
         "xlink":null
@@ -28890,7 +28976,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:16.590Z",
         "tracking_id":"hdl:21.14100/e60c72a1-9c9f-4118-99ca-b59b751cd31f",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc114",
         "version":"20240806",
         "xlink":null
@@ -29019,7 +29105,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:35.880Z",
         "tracking_id":"hdl:21.14100/cefe444e-4f49-4ea5-89db-f9677db17fdd",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11eq",
         "version":"20240806",
         "xlink":null
@@ -29492,7 +29578,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:37.376Z",
         "tracking_id":"hdl:21.14100/687975ec-d515-481e-91d4-6625f560de66",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc116",
         "version":"20240806",
         "xlink":null
@@ -29707,7 +29793,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:40.078Z",
         "tracking_id":"hdl:21.14100/7c16ef26-0f3a-4575-995e-431b6a05e4a7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc116",
         "version":"20240806",
         "xlink":null
@@ -30352,7 +30438,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:10:59.092Z",
         "tracking_id":"hdl:21.14100/229092bd-607b-4f8c-8ab1-b539ac16e453",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cf4",
         "version":"20240806",
         "xlink":null
@@ -30395,7 +30481,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:06.702Z",
         "tracking_id":"hdl:21.14100/627cb082-3a14-4491-8087-19bd8b819a51",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11",
         "version":"20240806",
         "xlink":null
@@ -30653,7 +30739,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:30.779Z",
         "tracking_id":"hdl:21.14100/d620537d-dd70-4c38-be4a-6c4f1a2155dc",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcc140a",
         "version":"20240806",
         "xlink":null
@@ -30825,7 +30911,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:24.280Z",
         "tracking_id":"hdl:21.14100/d2d71864-8af7-4db3-82da-7b5ca5969c33",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc115",
         "version":"20240806",
         "xlink":null
@@ -31083,7 +31169,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:50.595Z",
         "tracking_id":"hdl:21.14100/ce921ab5-9f76-4949-b55d-72efeb6e679b",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc218",
         "version":"20240806",
         "xlink":null
@@ -31433,6 +31519,49 @@
         "xlink":null
     },
     {
+        "Conventions":"CF-1.7",
+        "activity_id":"input4MIPs",
+        "comment":null,
+        "comment_post_publication":null,
+        "contact":"t.aubry@exeter.ac.uk",
+        "creation_date":"2024-08-30T15:57:13Z",
+        "data_node":"esgf-data2.llnl.gov",
+        "dataset_category":"aerosolProperties",
+        "datetime_end":"2023-12-01T00:00:00Z",
+        "datetime_start":"1750-01-01T00:00:00Z",
+        "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.uoexeter.UOEXETER-CMIP-1-1-3.atmos.mon.ssa.gnz.v20240903",
+        "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/uoexeter/UOEXETER-CMIP-1-1-3/atmos/mon/ssa/gnz/v20240903/ssa_input4MIPs_aerosolProperties_CMIP_UOEXETER-CMIP-1-1-3_gnz_175001-202312.nc",
+        "frequency":"mon",
+        "further_info_url":"http://www.tbd.invalid",
+        "grid":null,
+        "grid_label":"gnz",
+        "institution":null,
+        "institution_id":"uoexeter",
+        "latest":true,
+        "license":"The input4MIPs data linked to this entry is licensed under a Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "nominal_resolution":"500 km",
+        "product":null,
+        "publication_status":"published",
+        "realm":"atmos",
+        "references":null,
+        "region":null,
+        "replica":false,
+        "sha256":"9714ea6ad50ddfda0a27ce756d9df040b5b95ab6591d975dea7455a50a8f48f2",
+        "source":null,
+        "source_id":"UOEXETER-CMIP-1-1-3",
+        "source_version":"1.1.3",
+        "target_mip":"CMIP",
+        "time_range":"175001-202312",
+        "timestamp":"2024-09-04T17:16:49.344Z",
+        "tracking_id":"hdl:21.14100/98c18df7-c4ab-4843-971b-da562923cd0c",
+        "validated_input4mips":true,
+        "variable_id":"ssa",
+        "version":"20240903",
+        "xlink":null
+    },
+    {
         "Conventions":"CF-1.7 CMIP-6.2",
         "activity_id":"input4MIPs",
         "comment":"Based on JRA-55 reanalysis (1958-01 to 2024-01)",
@@ -31556,7 +31685,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:14.398Z",
         "tracking_id":"hdl:21.14100/60dd8973-5c0b-4a0a-9be2-6f39dff73ba5",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc318",
         "version":"20240806",
         "xlink":null
@@ -31599,7 +31728,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:48.546Z",
         "tracking_id":"hdl:21.14100/0add9173-b43c-4c3d-b9b6-65f2d9ebd5d3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc125",
         "version":"20240806",
         "xlink":null
@@ -31943,7 +32072,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:59.080Z",
         "tracking_id":"hdl:21.14100/7cfc4272-085b-4c40-99c4-b432f1b30523",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc116",
         "version":"20240806",
         "xlink":null
@@ -32545,7 +32674,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:42.454Z",
         "tracking_id":"hdl:21.14100/2aaffd80-9f54-47e0-8f77-a14bfe46cecc",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch2cl2",
         "version":"20240806",
         "xlink":null
@@ -32631,7 +32760,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:46.573Z",
         "tracking_id":"hdl:21.14100/c0666cf6-f6d0-4150-b61f-befd40aaa91d",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"co2",
         "version":"20240806",
         "xlink":null
@@ -33435,7 +33564,7 @@
         "mip_era":"CMIP6Plus",
         "nominal_resolution":null,
         "product":null,
-        "publication_status":"in_publishing_queue",
+        "publication_status":"never_published",
         "realm":null,
         "references":null,
         "region":null,
@@ -33620,7 +33749,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:54.402Z",
         "tracking_id":"hdl:21.14100/1662137b-97ba-47e9-933e-4ba5772e3cd2",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1211",
         "version":"20240806",
         "xlink":null
@@ -33749,7 +33878,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:09.295Z",
         "tracking_id":"hdl:21.14100/36879dcd-9c2f-4f53-90d2-6fbcf378ed53",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11",
         "version":"20240806",
         "xlink":null
@@ -33835,7 +33964,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:39.395Z",
         "tracking_id":"hdl:21.14100/9a33f446-376a-4cbe-997f-29dbc69c0a54",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc7118",
         "version":"20240806",
         "xlink":null
@@ -33964,7 +34093,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:19.478Z",
         "tracking_id":"hdl:21.14100/58f63095-d262-49f0-a42d-71d6519d5cc6",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc5114",
         "version":"20240806",
         "xlink":null
@@ -34179,7 +34308,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:52.290Z",
         "tracking_id":"hdl:21.14100/27b77cbe-18cf-495b-a92c-ce7c428bf2bc",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"so2f2",
         "version":"20240806",
         "xlink":null
@@ -34222,7 +34351,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:21.558Z",
         "tracking_id":"hdl:21.14100/b3d12572-ef73-42a1-971e-958ded3ba66c",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"n2o",
         "version":"20240806",
         "xlink":null
@@ -34615,6 +34744,49 @@
         "xlink":null
     },
     {
+        "Conventions":"CF-1.7",
+        "activity_id":"input4MIPs",
+        "comment":null,
+        "comment_post_publication":null,
+        "contact":"t.aubry@exeter.ac.uk",
+        "creation_date":"2024-08-30T15:57:41Z",
+        "data_node":"esgf-data2.llnl.gov",
+        "dataset_category":"aerosolProperties",
+        "datetime_end":"2023-12-01T00:00:00Z",
+        "datetime_start":"1750-01-01T00:00:00Z",
+        "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.uoexeter.UOEXETER-CMIP-1-1-3.atmos.mon.vd.gnz.v20240903",
+        "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/uoexeter/UOEXETER-CMIP-1-1-3/atmos/mon/vd/gnz/v20240903/vd_input4MIPs_aerosolProperties_CMIP_UOEXETER-CMIP-1-1-3_gnz_175001-202312.nc",
+        "frequency":"mon",
+        "further_info_url":"http://www.tbd.invalid",
+        "grid":null,
+        "grid_label":"gnz",
+        "institution":null,
+        "institution_id":"uoexeter",
+        "latest":true,
+        "license":"The input4MIPs data linked to this entry is licensed under a Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "nominal_resolution":"500 km",
+        "product":null,
+        "publication_status":"published",
+        "realm":"atmos",
+        "references":null,
+        "region":null,
+        "replica":false,
+        "sha256":"a6f9a7c0f292e2ebb44977556d520141a730000e465fd3f7d14ed502f4dd411e",
+        "source":null,
+        "source_id":"UOEXETER-CMIP-1-1-3",
+        "source_version":"1.1.3",
+        "target_mip":"CMIP",
+        "time_range":"175001-202312",
+        "timestamp":"2024-09-04T17:16:52.569Z",
+        "tracking_id":"hdl:21.14100/9595e929-47e5-4ca7-a49c-3dfc336e849d",
+        "validated_input4mips":true,
+        "variable_id":"vd",
+        "version":"20240903",
+        "xlink":null
+    },
+    {
         "Conventions":"CF-1.7 CMIP-6.2",
         "activity_id":"input4MIPs",
         "comment":"Based on JRA-55 reanalysis (1958-01 to 2024-01)",
@@ -34695,7 +34867,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:07.375Z",
         "tracking_id":"hdl:21.14100/2d60a96b-9aef-4901-85ae-22e1567bbb06",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon2402",
         "version":"20240806",
         "xlink":null
@@ -35383,7 +35555,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:12.254Z",
         "tracking_id":"hdl:21.14100/0fd383cb-dc9f-45b2-ae41-189844470f73",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc113",
         "version":"20240806",
         "xlink":null
@@ -35469,7 +35641,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:01.699Z",
         "tracking_id":"hdl:21.14100/33e6fa7b-3349-4fa3-b234-8538a8adaac0",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cf4",
         "version":"20240806",
         "xlink":null
@@ -35555,7 +35727,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:46.074Z",
         "tracking_id":"hdl:21.14100/6fa5c9a4-4060-4b30-b0b3-f8d057d6cf64",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc22",
         "version":"20240806",
         "xlink":null
@@ -35641,7 +35813,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:27.631Z",
         "tracking_id":"hdl:21.14100/6cd00f40-0dbd-4bf6-8159-531cc006e24a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc6116",
         "version":"20240806",
         "xlink":null
@@ -35684,7 +35856,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:24.341Z",
         "tracking_id":"hdl:21.14100/036cf13e-06da-4366-913a-a0adee9ca331",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc5114",
         "version":"20240806",
         "xlink":null
@@ -35730,6 +35902,49 @@
         "validated_input4mips":true,
         "variable_id":"rlds",
         "version":"20240531",
+        "xlink":null
+    },
+    {
+        "Conventions":"CF-1.7",
+        "activity_id":"input4MIPs",
+        "comment":null,
+        "comment_post_publication":null,
+        "contact":"t.aubry@exeter.ac.uk",
+        "creation_date":"2024-08-30T15:57:30Z",
+        "data_node":"esgf-data2.llnl.gov",
+        "dataset_category":"aerosolProperties",
+        "datetime_end":"2023-12-01T00:00:00Z",
+        "datetime_start":"1750-01-01T00:00:00Z",
+        "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.uoexeter.UOEXETER-CMIP-1-1-3.atmos.mon.reff.gnz.v20240903",
+        "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/uoexeter/UOEXETER-CMIP-1-1-3/atmos/mon/reff/gnz/v20240903/reff_input4MIPs_aerosolProperties_CMIP_UOEXETER-CMIP-1-1-3_gnz_175001-202312.nc",
+        "frequency":"mon",
+        "further_info_url":"http://www.tbd.invalid",
+        "grid":null,
+        "grid_label":"gnz",
+        "institution":null,
+        "institution_id":"uoexeter",
+        "latest":true,
+        "license":"The input4MIPs data linked to this entry is licensed under a Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "nominal_resolution":"500 km",
+        "product":null,
+        "publication_status":"published",
+        "realm":"atmos",
+        "references":null,
+        "region":null,
+        "replica":false,
+        "sha256":"aa4d8aefc3f85b9ca32bc348d9efcfc1e1ec222e2f38a35475913a59f351d70a",
+        "source":null,
+        "source_id":"UOEXETER-CMIP-1-1-3",
+        "source_version":"1.1.3",
+        "target_mip":"CMIP",
+        "time_range":"175001-202312",
+        "timestamp":"2024-09-04T17:16:41.134Z",
+        "tracking_id":"hdl:21.14100/62dce27e-6d85-43fa-858d-83a215656b2d",
+        "validated_input4mips":true,
+        "variable_id":"reff",
+        "version":"20240903",
         "xlink":null
     },
     {
@@ -35856,7 +36071,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:56.032Z",
         "tracking_id":"hdl:21.14100/209541c3-d77c-41b6-8eb6-b9b542026445",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134a",
         "version":"20240806",
         "xlink":null
@@ -35985,7 +36200,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:49.680Z",
         "tracking_id":"hdl:21.14100/bc31e0ec-cfa7-4ffe-aec8-42970244efe7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"so2f2",
         "version":"20240806",
         "xlink":null
@@ -36329,7 +36544,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:01.666Z",
         "tracking_id":"hdl:21.14100/122a3805-44fa-4ce2-a4db-47646c6e8071",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc116",
         "version":"20240806",
         "xlink":null
@@ -36415,7 +36630,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:33.415Z",
         "tracking_id":"hdl:21.14100/50891dab-7252-4520-9868-528801b27ccd",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc141b",
         "version":"20240806",
         "xlink":null
@@ -36845,7 +37060,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:06.057Z",
         "tracking_id":"hdl:21.14100/1e003f51-a0df-4792-9d92-b4631a1271b0",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc143a",
         "version":"20240806",
         "xlink":null
@@ -37017,7 +37232,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:55.175Z",
         "tracking_id":"hdl:21.14100/48e3079f-7a1b-4396-9138-ca4d7e8c3b74",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3cl",
         "version":"20240806",
         "xlink":null
@@ -37060,7 +37275,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:09.581Z",
         "tracking_id":"hdl:21.14100/02ee5cfe-20a9-4c5d-b6fd-8f13d9d5423d",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11",
         "version":"20240806",
         "xlink":null
@@ -37275,7 +37490,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:44.981Z",
         "tracking_id":"hdl:21.14100/571a75b2-b9c8-4577-a7fa-478615a9e118",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch2cl2",
         "version":"20240806",
         "xlink":null
@@ -37361,7 +37576,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:33.528Z",
         "tracking_id":"hdl:21.14100/53babd41-9c10-4272-970d-238cd03861a5",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch4",
         "version":"20240806",
         "xlink":null
@@ -37533,7 +37748,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:03.134Z",
         "tracking_id":"hdl:21.14100/b8dae348-f36d-4c5d-b245-3d5334b28524",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc32",
         "version":"20240806",
         "xlink":null
@@ -37834,7 +38049,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:45.398Z",
         "tracking_id":"hdl:21.14100/fb00fc70-3ba1-4a63-89f1-c9a02c3d0fc3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc218",
         "version":"20240806",
         "xlink":null
@@ -38006,7 +38221,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:14.130Z",
         "tracking_id":"hdl:21.14100/f8ecc7f6-e7bf-4387-87a5-fd95054ad084",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc4112",
         "version":"20240806",
         "xlink":null
@@ -38479,7 +38694,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:18.051Z",
         "tracking_id":"hdl:21.14100/31d9ac12-1a77-41e3-86f1-054e2443236b",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc152a",
         "version":"20240806",
         "xlink":null
@@ -38909,7 +39124,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:13.077Z",
         "tracking_id":"hdl:21.14100/eeaf34db-2831-4c91-a778-f6733f871465",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1211",
         "version":"20240806",
         "xlink":null
@@ -38955,6 +39170,49 @@
         "validated_input4mips":true,
         "variable_id":"tos",
         "version":"20240531",
+        "xlink":null
+    },
+    {
+        "Conventions":"CF-1.7",
+        "activity_id":"input4MIPs",
+        "comment":null,
+        "comment_post_publication":null,
+        "contact":"t.aubry@exeter.ac.uk",
+        "creation_date":"2024-08-30T15:57:35Z",
+        "data_node":"esgf-data2.llnl.gov",
+        "dataset_category":"aerosolProperties",
+        "datetime_end":"2023-12-01T00:00:00Z",
+        "datetime_start":"1750-01-01T00:00:00Z",
+        "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.uoexeter.UOEXETER-CMIP-1-1-3.atmos.mon.sad.gnz.v20240903",
+        "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/uoexeter/UOEXETER-CMIP-1-1-3/atmos/mon/sad/gnz/v20240903/sad_input4MIPs_aerosolProperties_CMIP_UOEXETER-CMIP-1-1-3_gnz_175001-202312.nc",
+        "frequency":"mon",
+        "further_info_url":"http://www.tbd.invalid",
+        "grid":null,
+        "grid_label":"gnz",
+        "institution":null,
+        "institution_id":"uoexeter",
+        "latest":true,
+        "license":"The input4MIPs data linked to this entry is licensed under a Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "nominal_resolution":"500 km",
+        "product":null,
+        "publication_status":"published",
+        "realm":"atmos",
+        "references":null,
+        "region":null,
+        "replica":false,
+        "sha256":"bb3c409aa45f96431f52c5a948f371720190968ca8f1376e925f321528dea327",
+        "source":null,
+        "source_id":"UOEXETER-CMIP-1-1-3",
+        "source_version":"1.1.3",
+        "target_mip":"CMIP",
+        "time_range":"175001-202312",
+        "timestamp":"2024-09-04T17:16:45.433Z",
+        "tracking_id":"hdl:21.14100/c3746d61-68c3-49bf-81db-18de4983d479",
+        "validated_input4mips":true,
+        "variable_id":"sad",
+        "version":"20240903",
         "xlink":null
     },
     {
@@ -39339,7 +39597,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:51.069Z",
         "tracking_id":"hdl:21.14100/5c2d8fe5-5751-4614-a76a-7f9f9c1fefdd",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc125",
         "version":"20240806",
         "xlink":null
@@ -39726,7 +39984,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:33.281Z",
         "tracking_id":"hdl:21.14100/de61f605-542b-42cd-bbcd-facd27526239",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc115",
         "version":"20240806",
         "xlink":null
@@ -39769,7 +40027,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:28.259Z",
         "tracking_id":"hdl:21.14100/3e8582de-298b-4dae-8e23-40973b503c9d",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcc140a",
         "version":"20240806",
         "xlink":null
@@ -39984,7 +40242,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:38.774Z",
         "tracking_id":"hdl:21.14100/9e971d5c-c9a5-448e-a45b-e6cee2e7a5ba",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc365mfc",
         "version":"20240806",
         "xlink":null
@@ -40156,7 +40414,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:51.768Z",
         "tracking_id":"hdl:21.14100/881d532e-ec21-4059-a2a3-9c49058caea3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1211",
         "version":"20240806",
         "xlink":null
@@ -40285,7 +40543,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:47.575Z",
         "tracking_id":"hdl:21.14100/1039f309-c25b-4f78-9769-a8ef59b290b3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch3br",
         "version":"20240806",
         "xlink":null
@@ -40895,6 +41153,49 @@
     {
         "Conventions":"CF-1.7",
         "activity_id":"input4MIPs",
+        "comment":null,
+        "comment_post_publication":null,
+        "contact":"t.aubry@exeter.ac.uk",
+        "creation_date":"2024-08-30T17:51:10Z",
+        "data_node":"esgf-data2.llnl.gov",
+        "dataset_category":"emissions",
+        "datetime_end":"2023-11-20T00:00:00Z",
+        "datetime_start":"1755-10-20T00:00:00Z",
+        "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.uoexeter.UOEXETER-CMIP-1-1-3.atmos.day.utsvolcemis.gn.v20240903",
+        "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/uoexeter/UOEXETER-CMIP-1-1-3/atmos/day/utsvolcemis/gn/v20240903/utsvolcemis_input4MIPs_emissions_CMIP_UOEXETER-CMIP-1-1-3_gn_175001-202312.nc",
+        "frequency":"day",
+        "further_info_url":"http://www.tbd.invalid",
+        "grid":null,
+        "grid_label":"gn",
+        "institution":null,
+        "institution_id":"uoexeter",
+        "latest":true,
+        "license":"The input4MIPs data linked to this entry is licensed under a Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing CMIP6Plus output, including citation requirements and proper acknowledgment. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "nominal_resolution":"0.5 km",
+        "product":null,
+        "publication_status":"published",
+        "realm":"atmos",
+        "references":null,
+        "region":null,
+        "replica":false,
+        "sha256":"c55a9c4d8c36eea6e3aa3eb011eca97c257256076f0cecf9cee6c85013e0ce8a",
+        "source":null,
+        "source_id":"UOEXETER-CMIP-1-1-3",
+        "source_version":"1.1.3",
+        "target_mip":"CMIP",
+        "time_range":"17551020-20231120",
+        "timestamp":"2024-09-04T17:16:27.210Z",
+        "tracking_id":"hdl:21.14100/4628be12-bf3e-4c39-93a4-99f96480668a",
+        "validated_input4mips":false,
+        "variable_id":"utsvolcemis",
+        "version":"20240903",
+        "xlink":null
+    },
+    {
+        "Conventions":"CF-1.7",
+        "activity_id":"input4MIPs",
         "comment":"[TBC which grant] Data produced by Climate Resource supported by funding from the CMIP IPO (Coupled Model Intercomparison Project International Project Office). This is an interim dataset, do not use in production.",
         "comment_post_publication":null,
         "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
@@ -40930,7 +41231,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:02.197Z",
         "tracking_id":"hdl:21.14100/a17a305e-9c87-4604-bff6-c33ecb52e379",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1301",
         "version":"20240806",
         "xlink":null
@@ -40973,7 +41274,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:14.127Z",
         "tracking_id":"hdl:21.14100/2b183923-1dbf-47da-ab2c-67820f62626f",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc113",
         "version":"20240806",
         "xlink":null
@@ -41016,7 +41317,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:21.690Z",
         "tracking_id":"hdl:21.14100/22c5b79a-1287-4698-a3cf-bba1b8157f93",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc115",
         "version":"20240806",
         "xlink":null
@@ -41274,7 +41575,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:58.347Z",
         "tracking_id":"hdl:21.14100/aeab0bd0-5806-4714-9362-48168d329466",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc3110",
         "version":"20240806",
         "xlink":null
@@ -41489,7 +41790,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:11.470Z",
         "tracking_id":"hdl:21.14100/994e0829-ceb4-4d65-8fad-ac1e6ad2bb5a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc4112",
         "version":"20240806",
         "xlink":null
@@ -41790,7 +42091,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:11.722Z",
         "tracking_id":"hdl:21.14100/35713f50-7af6-48c6-a879-2bf02d0c3374",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc113",
         "version":"20240806",
         "xlink":null
@@ -41919,7 +42220,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:25.983Z",
         "tracking_id":"hdl:21.14100/7bf9c119-621a-4202-a4af-ce914a2d734a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc236fa",
         "version":"20240806",
         "xlink":null
@@ -42177,7 +42478,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:34.767Z",
         "tracking_id":"hdl:21.14100/ae94e6a8-c4fe-4045-b295-13118d16c6e7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"nf3",
         "version":"20240806",
         "xlink":null
@@ -42478,7 +42779,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:05.735Z",
         "tracking_id":"hdl:21.14100/6a43f176-79bd-4f88-a75e-f53016f7ba8a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc365mfc",
         "version":"20240806",
         "xlink":null
@@ -42521,7 +42822,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:49.690Z",
         "tracking_id":"hdl:21.14100/42a8860a-a0cd-4ee2-82b5-3e87a6ec88c7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc245fa",
         "version":"20240806",
         "xlink":null
@@ -42779,7 +43080,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:59.778Z",
         "tracking_id":"hdl:21.14100/90dc1ddc-d41f-41b0-b043-82502ac842d9",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134a",
         "version":"20240806",
         "xlink":null
@@ -42908,7 +43209,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:29.356Z",
         "tracking_id":"hdl:21.14100/a0d88c88-e0ff-450a-80a3-7067aa3583f2",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"nf3",
         "version":"20240806",
         "xlink":null
@@ -42951,7 +43252,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:41.904Z",
         "tracking_id":"hdl:21.14100/93fba6f3-4247-4632-84ee-103d9b2b4ba8",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc236fa",
         "version":"20240806",
         "xlink":null
@@ -43209,7 +43510,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:04.929Z",
         "tracking_id":"hdl:21.14100/eba83542-5c70-4b4a-aacb-e2a39430487a",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134aeq",
         "version":"20240806",
         "xlink":null
@@ -43252,7 +43553,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:11.086Z",
         "tracking_id":"hdl:21.14100/c3c24c4e-272a-4805-891d-5c735a755cf7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc152a",
         "version":"20240806",
         "xlink":null
@@ -43295,7 +43596,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:05.295Z",
         "tracking_id":"hdl:21.14100/0e32b44c-5289-4433-9696-35738e01653f",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"chcl3",
         "version":"20240806",
         "xlink":null
@@ -43510,7 +43811,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:01.538Z",
         "tracking_id":"hdl:21.14100/1dd6c46c-d54f-406a-9788-31da88525fba",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cf4",
         "version":"20240806",
         "xlink":null
@@ -43596,7 +43897,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:48.985Z",
         "tracking_id":"hdl:21.14100/d10339a9-4bbf-43fd-82aa-d4b891011f70",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12",
         "version":"20240806",
         "xlink":null
@@ -44026,7 +44327,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:19.351Z",
         "tracking_id":"hdl:21.14100/29560b8d-ce9c-4b53-a81f-491e09041823",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc4112",
         "version":"20240806",
         "xlink":null
@@ -44241,7 +44542,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:54.423Z",
         "tracking_id":"hdl:21.14100/006785fd-e594-4631-ad15-2cafadc82d7b",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134a",
         "version":"20240806",
         "xlink":null
@@ -44327,7 +44628,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:16:56.474Z",
         "tracking_id":"hdl:21.14100/b7a99618-2953-482f-af0b-c8aee6662a72",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ccl4",
         "version":"20240806",
         "xlink":null
@@ -44370,7 +44671,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:42.786Z",
         "tracking_id":"hdl:21.14100/f2ab76aa-18c1-4e31-a987-15bf63758208",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc116",
         "version":"20240806",
         "xlink":null
@@ -44499,7 +44800,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:15.646Z",
         "tracking_id":"hdl:21.14100/783fe025-45af-419c-b1a6-fcfe4a1c8ab2",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1211",
         "version":"20240806",
         "xlink":null
@@ -45058,7 +45359,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:28.598Z",
         "tracking_id":"hdl:21.14100/abe50efc-6adb-45d0-8ccc-9d91c1f43df3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc245fa",
         "version":"20240806",
         "xlink":null
@@ -45187,7 +45488,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:29.507Z",
         "tracking_id":"hdl:21.14100/69a4dde7-e410-423a-856a-8e7190e25660",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11eq",
         "version":"20240806",
         "xlink":null
@@ -45746,7 +46047,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:23.278Z",
         "tracking_id":"hdl:21.14100/69133244-7d57-4981-a5de-0adf169a9652",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch4",
         "version":"20240806",
         "xlink":null
@@ -45789,7 +46090,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:55.029Z",
         "tracking_id":"hdl:21.14100/36e69999-7f13-4479-8100-e862e4120830",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc245fa",
         "version":"20240806",
         "xlink":null
@@ -45918,7 +46219,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:53.972Z",
         "tracking_id":"hdl:21.14100/48273300-a32f-45c6-b22d-cb2dc18b3334",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"nf3",
         "version":"20240806",
         "xlink":null
@@ -46047,7 +46348,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:38.739Z",
         "tracking_id":"hdl:21.14100/13dadefd-bcae-42f8-9bc8-4868ac04a14c",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"chcl3",
         "version":"20240806",
         "xlink":null
@@ -46090,7 +46391,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:43.920Z",
         "tracking_id":"hdl:21.14100/aec98663-ff6f-4b71-a0df-bd70b4818723",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"co2",
         "version":"20240806",
         "xlink":null
@@ -46133,7 +46434,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:06.889Z",
         "tracking_id":"hdl:21.14100/89f0d5a2-f6cf-41eb-a72f-ca27135e96a1",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11",
         "version":"20240806",
         "xlink":null
@@ -46305,7 +46606,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:04.923Z",
         "tracking_id":"hdl:21.14100/b67f15d0-c6b9-4408-97be-eaa28217e5cc",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ch2cl2",
         "version":"20240806",
         "xlink":null
@@ -46434,7 +46735,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:49.209Z",
         "tracking_id":"hdl:21.14100/e0f9bb95-3364-4d01-9d66-b447ca8c3112",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"co2",
         "version":"20240806",
         "xlink":null
@@ -46520,7 +46821,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:01.073Z",
         "tracking_id":"hdl:21.14100/5b491b02-1b22-473f-8251-87c5b00c29de",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134aeq",
         "version":"20240806",
         "xlink":null
@@ -46649,7 +46950,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:23.444Z",
         "tracking_id":"hdl:21.14100/0c15de5e-0901-4b83-8464-05cd06b32e98",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc236fa",
         "version":"20240806",
         "xlink":null
@@ -46735,7 +47036,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:58.558Z",
         "tracking_id":"hdl:21.14100/9cbc4250-565e-4d59-bf1d-5bd2954ea681",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc134aeq",
         "version":"20240806",
         "xlink":null
@@ -47036,7 +47337,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:10.500Z",
         "tracking_id":"hdl:21.14100/21eba5fe-7c86-4fc0-ba70-129a49f12479",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"co2",
         "version":"20240806",
         "xlink":null
@@ -47079,7 +47380,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:04.250Z",
         "tracking_id":"hdl:21.14100/71b7033d-c023-4aaf-b1a8-699fd8f70ea2",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc11",
         "version":"20240806",
         "xlink":null
@@ -47380,7 +47681,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:39.410Z",
         "tracking_id":"hdl:21.14100/2e6e5fbb-3fd4-4c52-9aea-a9fd5e894852",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc23",
         "version":"20240806",
         "xlink":null
@@ -47423,7 +47724,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:57.722Z",
         "tracking_id":"hdl:21.14100/a402235e-4486-4f00-93fc-a950e1563546",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc32",
         "version":"20240806",
         "xlink":null
@@ -47595,7 +47896,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:04.106Z",
         "tracking_id":"hdl:21.14100/2f37e79a-b673-43f2-9826-74b0653bf998",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cf4",
         "version":"20240806",
         "xlink":null
@@ -47982,7 +48283,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:22.852Z",
         "tracking_id":"hdl:21.14100/c7982d8b-5e69-4e87-9d0d-003150ecc03d",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc114",
         "version":"20240806",
         "xlink":null
@@ -48584,7 +48885,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:51.384Z",
         "tracking_id":"hdl:21.14100/fde7a2c1-74cf-4495-bb2d-b294ad7520b8",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"so2f2",
         "version":"20240806",
         "xlink":null
@@ -49444,7 +49745,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:16:24.879Z",
         "tracking_id":"hdl:21.14100/b3002553-ac80-49df-99bb-f410f90a89a9",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc6116",
         "version":"20240806",
         "xlink":null
@@ -50218,7 +50519,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:46.364Z",
         "tracking_id":"hdl:21.14100/8224e65c-564c-46f3-9561-2d876ccfd9c2",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc4310mee",
         "version":"20240806",
         "xlink":null
@@ -50519,7 +50820,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:11:46.423Z",
         "tracking_id":"hdl:21.14100/070e41c2-0d3c-4e5a-b225-970d10653594",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12",
         "version":"20240806",
         "xlink":null
@@ -50648,7 +50949,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:08.401Z",
         "tracking_id":"hdl:21.14100/5c0269a1-6785-435e-8340-5aceccb7fbb2",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc365mfc",
         "version":"20240806",
         "xlink":null
@@ -50906,7 +51207,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:14:10.190Z",
         "tracking_id":"hdl:21.14100/b2a611a1-9743-44fb-bb94-097230e06092",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc143a",
         "version":"20240806",
         "xlink":null
@@ -51293,7 +51594,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:17:34.784Z",
         "tracking_id":"hdl:21.14100/ba8b41cc-81be-4372-bc0e-48e057d895c7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cfc12",
         "version":"20240806",
         "xlink":null
@@ -51938,7 +52239,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:10:51.204Z",
         "tracking_id":"hdl:21.14100/68969cfb-f6ac-42f2-ac53-308e6b0456f0",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"ccl4",
         "version":"20240806",
         "xlink":null
@@ -51981,7 +52282,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:18:20.678Z",
         "tracking_id":"hdl:21.14100/574379e8-d5a3-47dc-8741-a365b805272e",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1301",
         "version":"20240806",
         "xlink":null
@@ -52024,7 +52325,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:41.362Z",
         "tracking_id":"hdl:21.14100/ac49a45b-30c1-4dd7-bce6-ece0b008c2d3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"chcl3",
         "version":"20240806",
         "xlink":null
@@ -52196,7 +52497,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:44.080Z",
         "tracking_id":"hdl:21.14100/99af99ec-daa8-45bb-885d-23790ddfd947",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc22",
         "version":"20240806",
         "xlink":null
@@ -52282,7 +52583,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:38.827Z",
         "tracking_id":"hdl:21.14100/285893be-f978-4b4d-8406-790a041258fa",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc22",
         "version":"20240806",
         "xlink":null
@@ -52798,7 +53099,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:51.874Z",
         "tracking_id":"hdl:21.14100/f2abb962-c5da-4d24-8eee-c9085e3d0e84",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc125",
         "version":"20240806",
         "xlink":null
@@ -52884,7 +53185,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:47.985Z",
         "tracking_id":"hdl:21.14100/f24ed984-f02a-4db7-83bf-8e3511ea82b6",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"pfc218",
         "version":"20240806",
         "xlink":null
@@ -53228,7 +53529,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:20:44.552Z",
         "tracking_id":"hdl:21.14100/ec5f5b40-863b-443f-827c-5097ef1b3b13",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"sf6",
         "version":"20240806",
         "xlink":null
@@ -53271,7 +53572,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:12:59.608Z",
         "tracking_id":"hdl:21.14100/31adacaf-1c7b-4cfb-9434-85b2ac0ab588",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"halon1301",
         "version":"20240806",
         "xlink":null
@@ -53314,7 +53615,7 @@
         "time_range":"0001-2022",
         "timestamp":"2024-08-13T23:19:13.592Z",
         "tracking_id":"hdl:21.14100/cc764947-7d56-4420-8328-ef408b543277",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc227ea",
         "version":"20240806",
         "xlink":null
@@ -53400,7 +53701,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:15:16.379Z",
         "tracking_id":"hdl:21.14100/15d50e31-9aa8-444b-92ad-1c607adc3eb3",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hfc4310mee",
         "version":"20240806",
         "xlink":null
@@ -53572,7 +53873,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:10:56.459Z",
         "tracking_id":"hdl:21.14100/9f495953-8359-43f3-b6dd-661dfb060cd2",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"cf4",
         "version":"20240806",
         "xlink":null
@@ -54131,7 +54432,7 @@
         "time_range":"000101-202212",
         "timestamp":"2024-08-13T23:13:28.494Z",
         "tracking_id":"hdl:21.14100/d81eb3fb-f6d6-4af0-b107-60e88fda16c7",
-        "validated_input4mips":null,
+        "validated_input4mips":true,
         "variable_id":"hcfc141b",
         "version":"20240806",
         "xlink":null
