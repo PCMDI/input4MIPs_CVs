@@ -36,7 +36,7 @@
     "time_range":"0001-2022",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/9a33f446-376a-4cbe-997f-29dbc69c0a54",
-    "validated_input4mips":null,
+    "validated_input4mips":true,
     "variable_id":"pfc7118",
     "version":"20240806",
     "xlink":null

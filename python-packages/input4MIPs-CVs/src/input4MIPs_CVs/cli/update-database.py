@@ -217,11 +217,11 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
     out.loc[out["source_id"] == "UOEXETER-CMIP-0-1-0", "publication_status"] = (
         "never_published"
     )
+    out.loc[out["source_id"] == "UOEXETER-CMIP-1-1-2", "publication_status"] = (
+        "never_published"
+    )
 
     # Source IDs in publishing queue
-    out.loc[out["source_id"] == "UOEXETER-CMIP-1-1-2", "publication_status"] = (
-        "in_publishing_queue"
-    )
     out.loc[out["source_id"] == "CEDS-CMIP-2024-07-08", "publication_status"] = (
         "in_publishing_queue"
     )

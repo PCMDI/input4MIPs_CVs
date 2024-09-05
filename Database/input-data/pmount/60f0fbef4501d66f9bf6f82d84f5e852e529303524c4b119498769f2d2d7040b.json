@@ -36,7 +36,7 @@
     "time_range":"000101-202212",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/d04539eb-1a62-4b91-8ba8-3312a10beb6d",
-    "validated_input4mips":null,
+    "validated_input4mips":true,
     "variable_id":"hcc140a",
     "version":"20240806",
     "xlink":null

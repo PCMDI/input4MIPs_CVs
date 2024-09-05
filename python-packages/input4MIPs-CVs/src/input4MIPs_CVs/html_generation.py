@@ -351,6 +351,8 @@ def get_source_id_view(
                 # No need to update
                 continue
 
+            tmp[vc] = ", ".join(tmp[vc].tolist())
+
         tmp_dd = tmp.drop_duplicates()
         if tmp_dd.shape[0] != 1:
             source_id = tmp_dd["source_id"].unique()
@@ -428,11 +430,10 @@ def get_delivery_summary_view(
             "status": "Preliminary dataset available",
         },
         {
-            "source_id": "UOEXETER-CMIP-1-1-2",
+            "source_id": "UOEXETER-CMIP-1-1-3",
             "description": "Stratospheric volcanic SO2 emissions and aerosol optical properties",
-            "expected_publication": "Early September 2024",
-            "url": None,
-            "status": "In publication queue",
+            # "url": None,
+            "status": "Preliminary dataset available",
         },
         {
             "source_id": None,  # TBD
