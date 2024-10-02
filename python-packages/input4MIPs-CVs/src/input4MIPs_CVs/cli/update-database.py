@@ -222,12 +222,15 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
     )
 
     # Source IDs in publishing queue
-    out.loc[out["source_id"] == "CEDS-CMIP-2024-07-08", "publication_status"] = (
+    out.loc[out["source_id"] == "UofMD-landState-3-0", "publication_status"] = (
         "in_publishing_queue"
     )
-    out.loc[
-        out["source_id"] == "CEDS-CMIP-2024-07-08-supplemental", "publication_status"
-    ] = "in_publishing_queue"
+    # out.loc[out["source_id"] == "CEDS-CMIP-2024-07-08", "publication_status"] = (
+    #     "in_publishing_queue"
+    # )
+    # out.loc[
+    #     out["source_id"] == "CEDS-CMIP-2024-07-08-supplemental", "publication_status"
+    # ] = "in_publishing_queue"
 
     # missing license ID for early CMIP6Plus data
     for srcId in [
