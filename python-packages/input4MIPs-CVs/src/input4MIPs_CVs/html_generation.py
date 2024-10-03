@@ -406,23 +406,23 @@ def get_delivery_summary_view(
         {
             "source_id": "CEDS-CMIP-2024-07-08, CEDS-CMIP-2024-07-08-supplemental",
             "description": "Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions",
-            "expected_publication": "Early September 2024",
+            "expected_publication": "October 2024",
             "url": "https://www.pnnl.gov/projects/ceds",
-            "status": "In publication queue",
+            "status": "Bugs being fixed, data in preparation",
         },
         {
-            "source_id": None,  # TBD
+            "source_id": "DRES-CMIP-BB4CMIP7-1-0",
             "description": "Open biomass burning emissions",
-            "expected_publication": "Early September 2024",
-            "url": None,
+            "expected_publication": "October 2024",
+            "url": "http://www.globalfiredata.org",
             "status": "Data in preparation and final metadata checks",
         },
         {
-            "source_id": None,  # TBD
+            "source_id": "UofMD-landState-3-0",
             "description": "Land use",
-            "expected_publication": "September 2024",
-            "url": None,
-            "status": "Data in preparation",
+            "expected_publication": "October 2024",
+            "url": "http://luh.umd.edu/",
+            "status": "Data in publication queue",
         },
         {
             "source_id": "CR-CMIP-0-3-0",
@@ -547,9 +547,9 @@ def get_delivery_summary_view(
                     "Published", f"v{source_version} available ({ts_min} to {ts_max})"
                 )
 
-            elif publication_status == "in_publishing_queue":
-                # Do nothing, no information to update
-                pass
+            elif publication_status in ["in_publishing_queue", "registered"]:
+                if "expected_publication" in info_d:
+                    tmp["Expected ESGF publication"] = info_d["expected_publication"]
 
             else:
                 raise NotImplementedError(publication_status)
