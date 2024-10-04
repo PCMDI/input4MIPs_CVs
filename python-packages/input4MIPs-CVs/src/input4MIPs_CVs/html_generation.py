@@ -420,9 +420,8 @@ def get_delivery_summary_view(
         {
             "source_id": "UofMD-landState-3-0",
             "description": "Land use",
-            "expected_publication": "October 2024",
-            "url": "http://luh.umd.edu/",
-            "status": "Data in publication queue",
+            "url": "http://luh.umd.edu",
+            "status": "Preliminary dataset available",
         },
         {
             "source_id": "CR-CMIP-0-3-0",
