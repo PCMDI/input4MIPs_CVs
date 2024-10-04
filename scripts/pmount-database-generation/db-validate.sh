@@ -5,7 +5,7 @@
 # On nimbus, you can get into that with:
 # - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.11.3/`
 
-DATABASE_DIR=/shared/input4mips-db/input4mips-file-db
+DATABASE_DIR=Database/input-data/pmount
 CV_SOURCE="gh:main"
 
 # Use DEBUG for full info. I would use INFO to start,

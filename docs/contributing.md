@@ -18,10 +18,10 @@ and also provides an interface to bump the version.
 
 In `Database/input-data` there are two components:
 
-1. The file `esgf-input4IMPs.json`
+1. The file `esgf-input4MIPs.json`
 1. The directory `Database/input-data/pmount`
 
-`Database/input-data/esgf-input4IMPs.json` is a scrape of information from the ESGF index.
+`Database/input-data/esgf-input4MIPs.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have queried from the ESGF index database.
 It is generated with `scripts/pollESGF.py`.
 However, the API it queries only allows certain IP addresses,
@@ -31,8 +31,8 @@ We hope to switch to automated generation of this file in future
 
 `Database/input-data/pmount` contains a number of JSON files.
 Each file contains information about one file
-from the actual files in the input4MIPs project.
-The actual files are stored elsewhere.
+from the raw netCDF files in the input4MIPs project.
+The raw netCDF files are stored elsewhere.
 The database entries are managed using the scripts in
 `scripts/pmount-database-generation`.
 See `scripts/pmount-database-generation/README.md`
