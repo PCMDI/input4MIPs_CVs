@@ -482,7 +482,9 @@ def get_delivery_summary_view(
 
             tmp["Source ID"] = "TBD"
             tmp["Status"] = info_d["status"]
-            tmp["Expected ESGF publication"] = info_d["expected_publication"]
+            tmp["ESGF publication status"] = (
+                f"Expected: {info_d['expected_publication']}"
+            )
 
         else:
             db_source_id = db[
@@ -542,13 +544,15 @@ def get_delivery_summary_view(
                 ts_max_dt = dt.datetime.strptime(ts_max_str, "%Y-%m-%dT%H:%M:%SZ")
                 ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}"
 
-                tmp["Expected ESGF publication"] = esgf_url.replace(
-                    "Published", f"v{source_version} available ({ts_min} to {ts_max})"
+                tmp["ESGF publication status"] = esgf_url.replace(
+                    "Published", f"Available: v{source_version} ({ts_min} to {ts_max})"
                 )
 
             elif publication_status in ["in_publishing_queue", "registered"]:
                 if "expected_publication" in info_d:
-                    tmp["Expected ESGF publication"] = info_d["expected_publication"]
+                    tmp["ESGF publication status"] = (
+                        f"Expected: {info_d['expected_publication']}"
+                    )
 
             else:
                 raise NotImplementedError(publication_status)
