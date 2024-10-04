@@ -31,8 +31,8 @@ We hope to switch to automated generation of this file in future
 
 `Database/input-data/pmount` contains a number of JSON files.
 Each file contains information about one file
-from the actual files in the input4MIPs project.
-The actual files are stored elsewhere.
+from the raw netCDF files in the input4MIPs project.
+The raw netCDF files are stored elsewhere.
 The database entries are managed using the scripts in
 `scripts/pmount-database-generation`.
 See `scripts/pmount-database-generation/README.md`

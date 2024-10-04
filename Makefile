@@ -19,10 +19,13 @@ export PRINT_HELP_PYSCRIPT
 help:  ## print short description of each target
 	@python3 -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
 
+.PHONY: update-database-pmount-input-files
+update-database-pmount-input-files:  ## update our database input files based on pmount (requires input4mips-validation to be available)
+	bash scripts/pmount-database-generation/db-add-tree.sh
+
 .PHONY: update-database
 update-database:  ## run our database update script
 	venv/bin/python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .
-
 
 .PHONY: set-version
 set-version:  ## set the repository's version to the value of the environment variable VERSION
