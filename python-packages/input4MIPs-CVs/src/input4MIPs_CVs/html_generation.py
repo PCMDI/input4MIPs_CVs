@@ -538,11 +538,29 @@ def get_delivery_summary_view(
 
                 ts_min_str = db_source_id["datetime_start"].dropna().min()
                 ts_min_dt = dt.datetime.strptime(ts_min_str, "%Y-%m-%dT%H:%M:%SZ")
-                ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}"
 
                 ts_max_str = db_source_id["datetime_end"].dropna().max()
                 ts_max_dt = dt.datetime.strptime(ts_max_str, "%Y-%m-%dT%H:%M:%SZ")
-                ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}"
+
+                frequencies = set(db_source_id["frequency"].tolist())
+                if "day" in frequencies:
+                    ts_min = (
+                        f"{ts_min_dt.year:04}-{ts_min_dt.month:02}-{ts_min_dt.day:02}"
+                    )
+                    ts_max = (
+                        f"{ts_max_dt.year:04}-{ts_max_dt.month:02}-{ts_max_dt.day:02}"
+                    )
+
+                elif "mon" in frequencies:
+                    ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}"
+                    ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}"
+
+                elif "yr" in frequencies:
+                    ts_min = f"{ts_min_dt.year:04}"
+                    ts_max = f"{ts_max_dt.year:04}"
+
+                else:
+                    raise NotImplementedError(frequencies)
 
                 tmp["ESGF publication status"] = esgf_url.replace(
                     "Published", f"Available: v{source_version} ({ts_min} to {ts_max})"
