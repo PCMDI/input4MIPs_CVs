@@ -22,6 +22,39 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.5.21 (2024-10-04)
+
+
+### ⚠️ Breaking Changes
+
+- Re-named the ESGF scrape from `Database/input-data/esgf.json` to `Database/input-data/esgf-input4MIPs.json`. ([#113](https://github.com/PCMDI/input4MIPs_CVs/pull/113))
+
+### 🆕 Features
+
+- Added the UOEXETER-CMIP-1-1-2 source ID. ([#117](https://github.com/PCMDI/input4MIPs_CVs/pull/117))
+- Added source IDs for the anthropogenic emissions data. ([#119](https://github.com/PCMDI/input4MIPs_CVs/pull/119))
+- Added the published volcanic University of Exeter (UOEXETER-CMIP-1-1-3) entries ([#120](https://github.com/PCMDI/input4MIPs_CVs/pull/120))
+- Registered the "UofMD-landState-3-0" source ID. University of Maryland is providing land-use change relevant variables. ([#121](https://github.com/PCMDI/input4MIPs_CVs/pull/121))
+
+### 📚 Improved Documentation
+
+- Moved most of the `README`'s content into the docs.
+  This helps avoid broken links in future,
+  because links don't always play nice with GitHub's homepage rendering. ([#109](https://github.com/PCMDI/input4MIPs_CVs/pull/109))
+- Added a delivery summary view to our docs.
+  This provides information about when different datasets are expected to be delivered. ([#111](https://github.com/PCMDI/input4MIPs_CVs/pull/111))
+- Update the delivery status view of the datasets. ([#119](https://github.com/PCMDI/input4MIPs_CVs/pull/119))
+- Updated the status of dataset publication. ([#126](https://github.com/PCMDI/input4MIPs_CVs/pull/126))
+- - Added land-use change information now that it's published on ESGF.
+  - Clarified the ESGF publication status in the delivery summary view.
+
+  ([#127](https://github.com/PCMDI/input4MIPs_CVs/pull/127))
+
+### 🔧 Trivial/Internal Changes
+
+- [#108](https://github.com/PCMDI/input4MIPs_CVs/pull/108), [#116](https://github.com/PCMDI/input4MIPs_CVs/pull/116), [#119](https://github.com/PCMDI/input4MIPs_CVs/pull/119), [#122](https://github.com/PCMDI/input4MIPs_CVs/pull/122), [#127](https://github.com/PCMDI/input4MIPs_CVs/pull/127)
+
+
 ## input4MIPs CVs v6.5.20 (2024-08-19)
 
 
