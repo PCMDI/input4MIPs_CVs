@@ -12,9 +12,10 @@ $ durack1$ python createDRS.py $filePath $destPath
 """2024
 PJD  9 Jul 2024 - started
 PJD 18 Jul 2024 - working for SOLARIS-HEPPA-CMIP-4-2 data
-PJD 28 Aug 2024 - switched out logic, so DRS generation depends on drsList, rather
-                  than broader list
+PJD 28 Aug 2024 - switched out logic, so DRS generation depends on drsList,
+                  rather than broader list
 PJD  8 Oct 2024 - add back in check for tracking_id and creation_date format
+PJD  8 Oct 2024 - added license to absEssAttList
 """
 
 # %% imports
@@ -119,6 +120,7 @@ absEssAttList = [
     "grid_label",
     "institution",
     "institution_id",
+    "license",
     "mip_era",
     "nominal_resolution",
     "realm",
@@ -179,10 +181,10 @@ for cnt1, fPath in enumerate(fileList):
         # capture tracking_id
         if att == "tracking_id":
             trackingIdList.append(attDic[att])
-        # test trackingIdList for duplicates
-        if len(trackingIdList) != set(trackingIdList):
-            print("** att:", att, "duplicate found, exiting **")
-            sys.exit()
+            # test trackingIdList for duplicates
+            if len(trackingIdList) != len(set(trackingIdList)):
+                print("** att:", att, "duplicate found, exiting **")
+                sys.exit()
         vars()[att] = attDic[att]
         print(att, ":", eval(att))
 
