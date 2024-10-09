@@ -10,20 +10,19 @@
 # <glob-to-apply> is optional, if not supplied, we use "*.nc"
 
 dir_to_check=$1
+rglob_input=${2:-'*.nc'}
 
-# Add handling of globbing here
+timestamp=$(date +%s)
 
 # Alter as you wish
 # LOG_LEVEL="DEBUG"
 LOG_LEVEL="INFO_FILE_ERROR"
 
-# input4mips-validation --logging-level $LOG_LEVEL validate-tree $TREE_TO_VALIDATE --cv-source "gh:main"
 input4mips-validation --logging-level $LOG_LEVEL \
 	validate-tree \
 	--cv-source "gh:main" \
 	"${dir_to_check}" \
-	--rglob-input "BC_*.nc"
-# TODO: get above from command line
-# TODO: auto-generate output HTML filename
-# --output-html
+	--rglob-input "${rglob_input}" \
+	--output-html "${timestamp}_validate-tree-output.html"
 
+echo "Wrote HTML summary to ${timestamp}_validate-tree-output.html"
