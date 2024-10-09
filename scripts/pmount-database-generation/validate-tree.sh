@@ -19,10 +19,11 @@ LOG_LEVEL="INFO_FILE_ERROR"
 
 # input4mips-validation --logging-level $LOG_LEVEL validate-tree $TREE_TO_VALIDATE --cv-source "gh:main"
 input4mips-validation --logging-level $LOG_LEVEL \
-    validate-tree \
-    --cv-source "gh:main" \
-    "${dir_to_check}" \
-    # TODO: get from command line
-    --rglob-input "BC_*.nc"
-    # TODO: auto-generate output HTML filename
-    # --output-html
+	validate-tree \
+	--cv-source "gh:main" \
+	"${dir_to_check}" \
+	--rglob-input "BC_*.nc"
+# TODO: get above from command line
+# TODO: auto-generate output HTML filename
+# --output-html
+
