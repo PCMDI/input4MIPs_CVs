@@ -1,3 +1,6 @@
+# Validation check files
+*validate-tree-output.html
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
