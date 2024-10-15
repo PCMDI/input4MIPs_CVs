@@ -465,6 +465,13 @@ def get_delivery_summary_view(
             "url": None,
             "status": "Depends on 1, test dataset being produced in the meantime",
         },
+        {
+            "source_id": None,  # TBD
+            "description": "Population",
+            "expected_publication": "Unknown: data provider TBD",
+            "url": None,
+            "status": "Unknown: data provider TBD",
+        },
     ]
 
     res_l = []
@@ -820,7 +827,8 @@ def write_db_view_as_html(
         '<script type="text/javascript">',
         "//<![CDATA[",
         "$(document).ready( function () {",
-        "    $('#table_id').DataTable();",
+        # "    $('#table_id').DataTable();",
+        "    $('#table_id').DataTable({pageLength: 25});",
         "    } );",
         "//]]>",
         "</script>",
