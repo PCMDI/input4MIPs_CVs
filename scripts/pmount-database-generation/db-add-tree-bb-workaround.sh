@@ -10,7 +10,7 @@ LOG_LEVEL="INFO"
 # LOG_LEVEL="INFO_INDIVIDUAL_CHECK"
 # LOG_LEVEL="DEBUG"
 
-TREE_TO_ADD_FROM=/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/DRES/DRES-CMIP-BB4CMIP7-1-0/atmos/mon/fx
+TREE_TO_ADD_FROM=/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/DRES/DRES-CMIP-BB4CMIP7-1-0/atmos/fx
 input4mips-validation --logging-level $LOG_LEVEL \
 	db add-tree $TREE_TO_ADD_FROM \
 	--db-dir ${DATABASE_DIR} \
