@@ -413,9 +413,8 @@ def get_delivery_summary_view(
         {
             "source_id": "DRES-CMIP-BB4CMIP7-1-0",
             "description": "Open biomass burning emissions",
-            "expected_publication": "October 2024",
             "url": "http://www.globalfiredata.org",
-            "status": "Data in preparation and final metadata checks",
+            "status": "Preliminary dataset available",
         },
         {
             "source_id": "UofMD-landState-3-0",
@@ -426,12 +425,13 @@ def get_delivery_summary_view(
         {
             "source_id": "CR-CMIP-0-3-0",
             "description": "Greenhouse gas concentrations",
+            "url": None,
             "status": "Preliminary dataset available",
         },
         {
             "source_id": "UOEXETER-CMIP-1-1-3",
             "description": "Stratospheric volcanic SO2 emissions and aerosol optical properties",
-            # "url": None,
+            "url": None,
             "status": "Preliminary dataset available",
         },
         {
@@ -451,11 +451,13 @@ def get_delivery_summary_view(
         {
             "source_id": "SOLARIS-HEPPA-CMIP-4-3",
             "description": "Solar",
+            "url": "https://solarisheppa.geomar.de/cmip7",
             "status": "Preliminary dataset available",
         },
         {
             "source_id": "PCMDI-AMIP-1-1-9",
             "description": "AMIP sea-surface temperature and sea-ice boundary forcing",
+            "url": "https://pcmdi.llnl.gov/mips/amip/",
             "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release ",
         },
         {
