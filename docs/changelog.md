@@ -22,6 +22,25 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.5.22 (2024-10-18)
+
+
+### 📚 Improved Documentation
+
+- - Added a placeholder for population inputs.
+  - Increased the default number of entries shown on the table views to 25 to accomodate the new dataset.
+
+  ([#132](https://github.com/PCMDI/input4MIPs_CVs/pull/132))
+- - Updated DRES-CMIP-BB4CMIP7-1-0 dataset status.
+  - Added scripts/pmount-database-generation/db-add-tree-bb-workaround.sh to deal with <variable_id> format inconsistency for 4 DRES datasets.
+
+  ([#134](https://github.com/PCMDI/input4MIPs_CVs/pull/134))
+
+### 🔧 Trivial/Internal Changes
+
+- [#129](https://github.com/PCMDI/input4MIPs_CVs/pull/129), [#130](https://github.com/PCMDI/input4MIPs_CVs/pull/130), [#131](https://github.com/PCMDI/input4MIPs_CVs/pull/131)
+
+
 ## input4MIPs CVs v6.5.21 (2024-10-04)
 
 
