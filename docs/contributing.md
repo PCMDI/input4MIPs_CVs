@@ -14,7 +14,7 @@ Under the hood, this action uses the command-line tool in
 This command-line tool ensures that the version is applied to all relevant places in the repository
 and also provides an interface to bump the version.
 
-## Generating the database
+## The database
 
 In `Database/input-data` there are two components:
 
@@ -28,6 +28,13 @@ However, the API it queries only allows certain IP addresses,
 so you will only be able to run this if you have been given access.
 We hope to switch to automated generation of this file in future
 (see [#69](https://github.com/PCMDI/input4MIPs_CVs/issues/69)).
+
+To update this file, simply copy the latest output from the poll script into this repository.
+On nimbus, the command is:
+
+```sh
+cp /p/user_pub/work/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json
+```
 
 `Database/input-data/pmount` contains a number of JSON files.
 Each file contains information about one file
@@ -67,3 +74,27 @@ In order to run this script, you should:
 4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
 
 The version is automatically read out of the `VERSION` file if it is not directly specified.
+
+## Summary of steps required to update this repository when a new data source is published on ESGF
+
+This is based on the sections above.
+The paths assume you are working on nimbus.
+If you are working elsewhere, you may need to modify the paths slightly.
+
+1. Checkout a new branch from main
+1. Update the ESGF scrape: `cp /p/user_pub/work/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json`
+1. Activate an environment in which `input4mips-validation` is installed
+1. Update the database by adding the tree you're interested in. Do this by running the following command from the root of this repository: `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/UofMD/`
+1. (Not compulsory, but recommended because it makes it easier to see changes later) Commit the changes to the database
+1. Activate an environment which has the local `input4IMPs-CVs` package installed (see intructions on how to create such an environment in the sections above)
+1. Update the database: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
+1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
+1. Check that the HTML has updated as expected (e.g. the summary view has updated as expected, new datasets are in the datasets view, new files are in the files view)
+1. Commit everything
+1. Push
+1. Make a pull request
+1. Request a review from @znichollscr and/or @durack1
+1. Update based on review
+1. Merge
+1. Tag @eleanororourke and @vnaik60 so they know a new update is live (e.g. "Hi @eleanororourke @vnaik60 just making sure you've seen this, thanks!")
+1. Celebrate

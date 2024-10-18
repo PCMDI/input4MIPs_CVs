@@ -8,11 +8,13 @@
 # On nimbus, you can get into that with:
 # - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.11.3/`
 
+TREE_TO_ADD_FROM=$1
+echo "Adding data from the tree with root: ${TREE_TO_ADD_FROM}"
+# print the input4mips-validation version too, can't hurt
+# and makes sure that input4mips-validation is available
+input4mips-validation --version
+
 DATABASE_DIR=Database/input-data/pmount
-# Should probably make this an input argument
-TREE_TO_ADD_FROM=/p/user_pub/work/input4MIPs/CMIP6Plus
-# # example if you just want to add a sub-set
-TREE_TO_ADD_FROM=/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/UofMD/
 CV_SOURCE="gh:main"
 
 # Use DEBUG for full info. I would use INFO to start,
