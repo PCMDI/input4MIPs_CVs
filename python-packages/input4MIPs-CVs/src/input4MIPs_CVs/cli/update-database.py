@@ -247,6 +247,20 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
         "The original comment from the data provider is "
         '<a href="https://github.com/PCMDI/input4MIPs_CVs/issues/17#issuecomment-2255378927">here</a>.'
     )
+    out.loc[
+        out["source_id"] == "SOLARIS-HEPPA-CMIP-4-3", "comment_post_publication"
+    ] = (
+        "v4.4 uses the final, absolute TSI scale (in consonance with NNL1) which should be used in CMIP7. "
+        "Hence v4.3 is retracted. "
+        "The change between v4.3 and v4.4 results in a 179 ppm increase of TSI and SSI compared to version 4.3. "
+        "The preliminary TSI/SSI version in 4.3 had adapted the TSI scale from the CTIM instrument alone, "
+        "the newer TSI scale is based on a TSIS-1 and CTIM composite (Coddington and Lean, 2024). "
+        "This composite is also consistent with the TSI 'community consensus' composite "
+        "(spot.colorado.edu/~koppg/TSI/TSI_Composite-SIST.txt). "
+        "The original comment from the data provider is "
+        '<a href="https://github.com/PCMDI/input4MIPs_CVs/issues/66#issuecomment-2422882167">here</a>.'
+        'For further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release notes</a>.'
+    )
 
     return out
 
