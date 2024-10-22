@@ -449,7 +449,7 @@ def get_delivery_summary_view(
             "status": "Depends on 1, 2, 4, 5 and 8",
         },
         {
-            "source_id": "SOLARIS-HEPPA-CMIP-4-3",
+            "source_id": "SOLARIS-HEPPA-CMIP-4-4",
             "description": "Solar",
             "url": "https://solarisheppa.geomar.de/cmip7",
             "status": "Preliminary dataset available",

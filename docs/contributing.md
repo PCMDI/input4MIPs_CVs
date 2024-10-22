@@ -86,6 +86,7 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. Activate an environment in which `input4mips-validation` is installed
 1. Update the database by adding the tree you're interested in. Do this by running the following command from the root of this repository: `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/UofMD/`
 1. (Not compulsory, but recommended because it makes it easier to see changes later) Commit the changes to the database
+1. If needed, add the source ID entry for the new files to `CVs/input4MIPs_source_id.json`
 1. Activate an environment which has the local `input4IMPs-CVs` package installed (see intructions on how to create such an environment in the sections above)
 1. Update the database: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
 1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
