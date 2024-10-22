@@ -22,6 +22,22 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.5.23 (2024-10-22)
+
+
+### 🆕 Features
+
+- Added SOLARIS-HEPPA-CMIP-4-4 dataset ([#137](https://github.com/PCMDI/input4MIPs_CVs/pull/137))
+
+### 📚 Improved Documentation
+
+- - Updated SOLARIS-HEPPA-CMIP-4-3 status (this dataset has been retracted)
+  - Fixed missing license_id for UofMD-landState-3-0
+  - Fixed missing license_id for DRES-CMIP-BB4CMIP1-1-0
+
+  ([#137](https://github.com/PCMDI/input4MIPs_CVs/pull/137))
+
+
 ## input4MIPs CVs v6.5.22 (2024-10-18)
 
 
