@@ -103,8 +103,8 @@ If you are working elsewhere, you may need to modify the paths slightly.
 ## Relationship to input4MIPs validation
 
 This repository contains the database and controlled vocabularies.
-[Input4MIPs validation](https://github.com/climate-resource/input4mips_validation)
-implements the logic for validating data, based on the CVs.
+The [input4MIPs validation](https://github.com/climate-resource/input4mips_validation)
+package implements the logic for validating data, based on the CVs.
 The two are deliberately decoupled, to allow the logic captured within
 input4IMPs validation to potentially be reused in other parts of the CMIP universe in future.
 We have a CI job which checks that the CVs in this repository can be loaded using input4MIPs validation.
