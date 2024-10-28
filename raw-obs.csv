@@ -30,4 +30,7 @@ Solar,"Solar Irradiance CDR",NCEI,NCEI,"Good links to PI of dataset. Also with o
 Solar,"Solar Irradiance CDR",LASP,LASP,"Good links to PI of dataset. Also with other funders (ZN might have misunderstood)."
 Solar,"SILSO Sunspot index and Longterm Solar Observations","SIDC, Royal Observatory of Belgium","SIDC, Royal Observatory of Belgium",""
 Solar,"GFZ Potsdam Geomagnetic indices",GFZ,GFZ,""
+"AMIP sea-surface temperature and sea-ice boundary forcing",HadISST,UK Met Office,UK Met Office,"Transitioning from HadISST v1.1, work in progress"
+"AMIP sea-surface temperature and sea-ice boundary forcing","NOAA-OISST v2.0",NOAA,NOAA,"NOAA-OISST v2.0 – originally obtained in 198111 and temporally extended over time, with the latest version obtained in May 2023 providing a temporal extension to 202212"
+"AMIP sea-surface temperature and sea-ice boundary forcing","EUMETSAT OSI-SAF-430",EUMETSAT,EUMETSAT,"https://osi-saf.eumetsat.int/products/sea-ice-products. These are repackaged by numerous groups, including HadISST and OISST v2.1, plus others."
 "Aerosol optical properties/MACv2-SP",MPI-MAC climatology,MPI-MAC,MPI-MAC,"No external funder. Developer Stefan Kinne has retired. Independently dependent on emissions raw observations."
