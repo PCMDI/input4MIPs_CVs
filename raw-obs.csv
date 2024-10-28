@@ -1,8 +1,10 @@
 forcing,obs_id,funder,funder_id,comments
-"Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions",EDGAR,European Commission,European Commission,
-"Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions","NASA SO2 point source catalogue",NASA,NASA,"https://esdpubs.nasa.gov/content/A_global_catalogue_of_large_SO2_sources_and_emissions_derived_from_the_Ozone_Monitoring"
-"Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions","Energy institute activity data","Energy Institue","Energy Institue",""
 "Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions","IEA activity data",IEA,IEA,""
+"Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions",EDGAR,European Commission,European Commission,
+"Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions",Metal production volumes,"Governments (?)","Governments (?)",
+"Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions","Energy institute activity data","Energy Institue","Energy Institue",""
+"Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions","NASA SO2 point source catalogue",NASA,NASA,"https://esdpubs.nasa.gov/content/A_global_catalogue_of_large_SO2_sources_and_emissions_derived_from_the_Ozone_Monitoring"
+"Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions","Country-level emission inventories","Governments","Governments",""
 "Open biomass burning emissions",tbd,tbd,tbd,
 "Land use",HYDE,Copernicus Land Change lab (Utrecht University),Copernicus,"We have a long history of working closely with the HYDE data providers. https://landuse.sites.uu.nl/hyde-project/"
 "Land use",FAO Wood Harvest and Agricultural Data,United Nations Food and Agriculture Organization,UNFAO,"This data is updated and provided online annually. We have also directly collaborated with researchers at FAO. https://www.fao.org/faostat/en/#home"
