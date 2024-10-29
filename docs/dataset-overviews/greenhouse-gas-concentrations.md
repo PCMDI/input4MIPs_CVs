@@ -12,6 +12,12 @@ If you find any other issues, please add them to
 
 ## Navigating the data
 
+### Recommendation for pre-industrial control
+
+Use the 1850 value, apply this as a constant
+(which will be a single value if you use annual-mean data
+and will include a seasonal cycle if you use monthly-mean data).
+
 ### Grids and frequencies provided
 
 We provided five combinations of grids and frequencies.
