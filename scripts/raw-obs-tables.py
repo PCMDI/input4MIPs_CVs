@@ -14,7 +14,10 @@ raw = pd.read_csv("raw-obs.csv")
 
 print(raw)
 
-print(raw[["funder_id", "forcing"]].drop_duplicates()["funder_id"].value_counts())
+funder_n = raw[["funder_id", "forcing"]].drop_duplicates()["funder_id"].value_counts()
+print(funder_n)
+single_source_funders = funder_n[funder_n < 2].index.values
+print(", ".join(sorted(single_source_funders)))
 print(
     raw[["funder_id", "forcing", "obs_id"]]
     .set_index(["funder_id", "forcing"])
