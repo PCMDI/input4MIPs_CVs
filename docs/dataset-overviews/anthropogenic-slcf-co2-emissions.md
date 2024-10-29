@@ -23,7 +23,7 @@ All data is provided on a monthly timestep (i.e. includes seasonality).
 
 ### Variables provided
 
-Grids provides estimates of emissions for 
+Data is provided for 
 BC, CO, CO<sub>2</sub>, NH<sub>3</sub>, NMVOC, NO<sub>x</sub>, OC and SO<sub>2</sub>.
 [Add info about the supplementary data.]
 
@@ -41,7 +41,7 @@ and would propagate into notable uncertainties in radiative forcing.
 ### Examples of working with the data
 
 See the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
-The [harmonisation team's notebooks](https://github.com/iiasa/emissions_harmonization_historical/)
+The [emission harmonisation team's notebooks](https://github.com/iiasa/emissions_harmonization_historical/)
 may also be of interest.
 
 ## Differences from CMIP6
