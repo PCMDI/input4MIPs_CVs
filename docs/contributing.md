@@ -99,3 +99,15 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. Merge
 1. Tag @eleanororourke and @vnaik60 so they know a new update is live (e.g. "Hi @eleanororourke @vnaik60 just making sure you've seen this, thanks!")
 1. Celebrate
+
+## Relationship to input4MIPs validation
+
+This repository contains the database and controlled vocabularies.
+The [input4MIPs validation](https://github.com/climate-resource/input4mips_validation)
+package implements the logic for validating data, based on the CVs.
+The two are deliberately decoupled, to allow the logic captured within
+input4IMPs validation to potentially be reused in other parts of the CMIP universe in future.
+We have a CI job which checks that the CVs in this repository can be loaded using input4MIPs validation.
+If this job fails, it is ok to still merge the merge requests.
+It is just a reminder to us that we have to update input4MIPs validation
+to support whatever changes to the CVs have been made.
