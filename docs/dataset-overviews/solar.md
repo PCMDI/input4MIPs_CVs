@@ -34,7 +34,7 @@ which provides the total solar irradiance at 1 AU.
 At present, we provide no analysis of the uncertainty associated with these datasets.
 This is a work in progress, we hope to provide that data when it is available.
 [TBD size of uncertainty in radiative forcing terms, seems relatively large?]
-[TBD whether uncertainty gets bigger as you go back/forward in time.]
+\[TBD whether uncertainty gets bigger as you go back/forward in time.\]
 
 ### Examples of working with the data
 
