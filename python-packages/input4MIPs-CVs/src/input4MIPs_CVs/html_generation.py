@@ -406,7 +406,7 @@ def get_delivery_summary_view(
         {
             "source_id": "CEDS-CMIP-2024-07-08, CEDS-CMIP-2024-07-08-supplemental",
             "description": "Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions",
-            "expected_publication": "October 2024",
+            "expected_publication": "Week of November 11th, 2024",
             "url": "https://www.pnnl.gov/projects/ceds",
             "status": "Bugs being fixed, data in preparation",
         },
