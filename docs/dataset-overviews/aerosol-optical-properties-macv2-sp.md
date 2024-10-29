@@ -23,8 +23,8 @@ Use the same approach as is used for anthropogenic emissions.
 The aerosol optical properties provides scaling factors/parameters 
 to calculate aerosol plumes associated with aerosol emissions
 for models that do not calculate this themselves.
-The provided data just provides parameters.
-As a data user, you have to calculate gridded data yourself.
+The provided data is only parameters.
+As a data user, you have to calculate gridded data/input yourself using [TBD].
 
 ### Variables provided
 
