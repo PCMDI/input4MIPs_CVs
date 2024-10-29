@@ -58,4 +58,4 @@ There are some changes from CMIP6.
 [Funke et al., GMD 2024](https://doi.org/10.5194/gmd-17-1217-2024)
 provides a detailed analysis.
 [TODO: get the link to slides from Bernd which dive into this]
-[TODO: consider whether there's a short summary we can give]
+\[TODO: consider whether there's a short summary we can give\]

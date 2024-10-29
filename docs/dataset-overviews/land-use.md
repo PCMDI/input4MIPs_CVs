@@ -31,7 +31,7 @@ In all calendars, the transitions should be applied between 1 Jan of year X and 
 
 Variables are provided for land use state, land use management and land use transitions 
 as well as a few static fields (such as cell areas).
-[TBD whether it is worth listing variables or just pointing people to relevant docs]
+\[TBD whether it is worth listing variables or just pointing people to relevant docs\]
 
 ### Uncertainty
 
