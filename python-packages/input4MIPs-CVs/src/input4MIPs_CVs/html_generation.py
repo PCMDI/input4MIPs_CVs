@@ -405,7 +405,7 @@ def get_delivery_summary_view(
     hard_coded_info = [
         {
             "source_id": "CEDS-CMIP-2024-07-08, CEDS-CMIP-2024-07-08-supplemental",
-            "description": "Anthropogenic short-lived climate forcer (SLCF) and CO2 emissions",
+            "description": "Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions",
             "expected_publication": "October 2024",
             "url": "https://www.pnnl.gov/projects/ceds",
             "status": "Bugs being fixed, data in preparation",
@@ -429,8 +429,15 @@ def get_delivery_summary_view(
             "status": "Preliminary dataset available",
         },
         {
+            "source_id": None,  # TBD
+            "description": "CO<sub>2</sub> isotopes",
+            "expected_publication": "January 2025",
+            "url": None,  # TBD
+            "status": "Data in preparation",
+        },
+        {
             "source_id": "UOEXETER-CMIP-1-1-3",
-            "description": "Stratospheric volcanic SO2 emissions and aerosol optical properties",
+            "description": "Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties",
             "url": None,
             "status": "Preliminary dataset available",
         },
