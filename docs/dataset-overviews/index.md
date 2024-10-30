@@ -18,4 +18,4 @@ in particular models participating in [CMIP](https://www.wcrp-climate.org/wgcm-c
 1. [Solar](solar.md)
 1. [AMIP sea-surface temperature and sea-ice boundary forcing](amip-sst-sea-ice-boundary-forcing.md)
 1. [Aerosol optical properties/MACv2-SP](aerosol-optical-properties-macv2-sp.md)
-1. [Population](population.md)
+1. [Population density](population.md)

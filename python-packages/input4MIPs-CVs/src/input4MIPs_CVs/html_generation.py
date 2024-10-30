@@ -476,7 +476,7 @@ def get_delivery_summary_view(
         },
         {
             "source_id": None,  # TBD
-            "description": "Population",
+            "description": "Population density",
             "expected_publication": "Unknown: data provider TBD",
             "url": None,
             "status": "Unknown: data provider TBD",
