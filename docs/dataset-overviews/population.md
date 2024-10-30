@@ -1,9 +1,14 @@
 # Population density
 
-## Summary
-
 **All of the text below is a draft written by a non-expert to get things moving.**
 **Please do not put any faith in its accuracy.**
+
+## Key contacts
+
+- Names: TBD
+- Emails: TBD
+
+## Summary
 
 The provider for this data has not yet been identified,
 see [#135](https://github.com/PCMDI/input4MIPs_CVs/issues/135).

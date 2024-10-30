@@ -1,9 +1,14 @@
 # Aerosol optical properties/MACv2-SP
 
-## Summary
-
 **All of the text below is a draft written by a non-expert to get things moving.**
 **Please do not put any faith in its accuracy.**
+
+## Key contacts
+
+- Names: \[TBD (provider moving institutes)\]
+- Emails: \[TBD (provider moving institutes)\]
+
+## Summary
 
 A first version of the aerosol optical properties will be released in the coming months.
 The methods used for producing this data are stable 

@@ -1,9 +1,14 @@
 # Open biomass burning emissions
 
-## Summary
-
 **All of the text below is a draft written by a non-expert to get things moving.**
 **Please do not put any faith in its accuracy.**
+
+## Key contacts
+
+- Names: Margreet van Marle, Guido van der Werf
+- Emails: Margreet.vanMarle@Deltares.nl; Guido.vanderWerf@wur.nl
+
+## Summary
 
 A first version of the open biomass burning emissions is
 [available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-1-0%22%7D).

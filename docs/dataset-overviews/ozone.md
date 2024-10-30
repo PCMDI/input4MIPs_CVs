@@ -1,9 +1,14 @@
 # Ozone
 
-## Summary
-
 **All of the text below is a draft written by a non-expert to get things moving.**
 **Please do not put any faith in its accuracy.**
+
+## Key contacts
+
+- Names: Michaela Hegglin
+- Emails: m.i.hegglin@fz-juelich.de
+
+## Summary
 
 This data is still in preparation.
 We expect the methods to be similar to those used to CMIP6,

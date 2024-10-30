@@ -1,9 +1,14 @@
 # AMIP sea-surface temperature and sea-ice boundary forcing
 
-## Summary
-
 **All of the text below is a draft written by a non-expert to get things moving.**
 **Please do not put any faith in its accuracy.**
+
+## Key contacts
+
+- Names: Paul Durack
+- Emails: durack1@llnl.gov
+
+## Summary
 
 Multiple versions of the AMIP boundary conditions are
 [available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-9%22%7D).

@@ -1,9 +1,14 @@
 # Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions
 
-## Summary
-
 **All of the text below is a draft written by a non-expert to get things moving.**
 **Please do not put any faith in its accuracy.**
+
+## Key contacts
+
+- Names: Rachel Hoesly, Steve Smith
+- Emails: rachel.hoesly@pnnl.gov; ssmith@pnnl.gov
+
+## Summary
 
 A first version of the datasets will be released on the ESGF by November 8 2024.
 Full details on the dataset and all relevant links can be found

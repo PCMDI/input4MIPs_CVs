@@ -1,9 +1,14 @@
 # Land use
 
-## Summary
-
 **All of the text below is a draft written by a non-expert to get things moving.**
 **Please do not put any faith in its accuracy.**
+
+## Key contacts
+
+- Names: Louise Chini, George Hurtt
+- Emails: lchini@umd.edu; gchurtt@umd.edu
+
+## Summary
 
 A first version of the land use data is
 [available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6Plus%22%2C%22institution_id%22%3A%22UofMD%22%2C%22source_id%22%3A%22UofMD-landState-3-0%22%7D).

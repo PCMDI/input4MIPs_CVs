@@ -1,9 +1,14 @@
 # Solar
 
-## Summary
-
 **All of the text below is a draft written by a non-expert to get things moving.**
 **Please do not put any faith in its accuracy.**
+
+## Key contacts
+
+- Names: Bernd Funke
+- Emails: bernd@iaa.es
+
+## Summary
 
 The solar dataset is rapidly approaching a final version and is
 [available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-4%22%7D).

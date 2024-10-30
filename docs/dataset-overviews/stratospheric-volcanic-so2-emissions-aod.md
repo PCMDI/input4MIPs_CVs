@@ -1,9 +1,14 @@
 # Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties
 
-## Summary
-
 **All of the text below is a draft written by a non-expert to get things moving.**
 **Please do not put any faith in its accuracy.**
+
+## Key contacts
+
+- Names: Thomas Aubry
+- Emails: t.aubry@exeter.ac.uk
+
+## Summary
 
 A first version of the stratospheric volcanic SO<sub>2</sub> emissions
 and aerosol optical properties is

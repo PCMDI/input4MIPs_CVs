@@ -1,5 +1,10 @@
 # Greenhouse gas concentrations
 
+## Key contacts
+
+- Names: Zebedee Nicholls, Malte Meinshausen
+- Emails: zebedee.nicholls@climate-resource.com; malte.meinshausen@climate-resource.com
+
 ## Summary
 
 A first version of the greenhouse gas concentrations is 
