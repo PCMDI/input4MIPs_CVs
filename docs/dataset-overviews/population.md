@@ -37,7 +37,7 @@ see [#135](https://github.com/PCMDI/input4MIPs_CVs/issues/135).
 
 [TBD]
 
-## Differences from CMIP6
+## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 

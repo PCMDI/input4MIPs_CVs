@@ -39,7 +39,7 @@ but this depends on the inputs too so this statement comes with low confidence.
 
 [TBD]
 
-## Differences from CMIP6
+## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 

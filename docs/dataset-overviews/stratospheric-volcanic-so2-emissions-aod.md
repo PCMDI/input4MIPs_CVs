@@ -51,7 +51,7 @@ where it could be up to 20% of the anthropogenic warming (so roughly around 0.2K
 
 [TBD]
 
-## Differences from CMIP6
+## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 
@@ -63,4 +63,6 @@ and in line with other input4MIPs data and conventions.
 
 ### Data
 
-[TBD: find the links that analyse the differences]
+[TBD: find the links that analyse the differences, 
+ideally including the volcanic SO2 emissions used by some groups 
+(even though there was no CMIP6 recommendation)]

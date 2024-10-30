@@ -75,7 +75,7 @@ particularly as we shift from using surface flasks to relying on ice cores inste
 If helpful, we show how the data can be downloaded from ESGF
 and compared to CMIP6 here: https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations.
 
-## Differences from CMIP6
+## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 

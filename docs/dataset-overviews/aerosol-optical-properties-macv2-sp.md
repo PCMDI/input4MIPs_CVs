@@ -42,7 +42,7 @@ Two variables can be calculated from the data:
 
 [TBD, recommendations on parameter ranges?]
 
-## Differences from CMIP6
+## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 

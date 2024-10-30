@@ -34,7 +34,7 @@ Two isotopes of CO<sub>2</sub> are provided:
 
 [TBD]
 
-## Differences from CMIP6
+## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 

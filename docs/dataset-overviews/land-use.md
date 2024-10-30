@@ -45,7 +45,7 @@ These estimates can be used to quantify the spread in the value of each variable
 At present, only the best-estimate is published on input4MIPs
 but we hope to change this in future.
 
-## Differences from CMIP6
+## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 

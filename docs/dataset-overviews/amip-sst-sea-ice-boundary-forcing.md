@@ -23,7 +23,7 @@ so future versions will likely be significantly different from the versions publ
 
 [TBD, use outputs based on different inputs?]
 
-## Differences from CMIP6
+## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 

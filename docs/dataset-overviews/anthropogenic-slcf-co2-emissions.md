@@ -49,7 +49,7 @@ See the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
 The [emission harmonisation team's notebooks](https://github.com/iiasa/emissions_harmonization_historical/)
 may also be of interest.
 
-## Differences from CMIP6
+## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 
