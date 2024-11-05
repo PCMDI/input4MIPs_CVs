@@ -51,7 +51,7 @@ jobs:
           which pip
           pip install -r requirements-docs.txt
           mkdocs build --strict
-          git status --porcelain --untracked-files=no | grep '^.M' 
+          git status --porcelain --untracked-files=no | grep '^.M' > /dev/null
           if [ $? -eq 0 ]; then echo 'Docs are not up to date. Please run `make docs` locally then commit and upload the results.' && exit 1; fi
 
   cvs-load-with-input4mips-validation:
