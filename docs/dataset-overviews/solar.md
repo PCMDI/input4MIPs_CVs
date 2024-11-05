@@ -14,7 +14,7 @@ The solar dataset is rapidly approaching a final version and is
 [available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-4%22%7D).
 This version is for testing only, do not use it for any simluations you're not willing to throw away.
 We are collecting bugs in [this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19)
-and aim to release a new version which addresses these bugs in December 2025.
+and aim to release a new version [TBD, before the end of 2025?].
 If you find any other issues, please add them to
 [the discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
 
@@ -23,6 +23,10 @@ If you find any other issues, please add them to
 ### Recommendation for pre-industrial control
 
 There is a dedicated pre-industrial control file.
+See the files with `fx` in their name
+(`fx` stands for fixed, which fits 
+because the pre-industrial control file is a fixed field,
+custom for the pre-industrial control experiment).
 
 ### Grids and frequencies provided
 
@@ -31,7 +35,8 @@ The data is provided with two frequencies: monthly and daily.
 
 ### Species provided
 
-Multiple variables are provided, including total solar irradiance (`tsi`),
+Multiple variables are provided, please see the files for the full list and information.
+Of particular interest for many is total solar irradiance (`tsi`),
 which provides the total solar irradiance at 1 AU.
 
 ### Uncertainty
@@ -55,7 +60,7 @@ The files are now named according to the DRS,
 but this does make it harder to tell which file is which at first glance.
 The pre-industrial control file is a fixed field, hence has `fn` in the filename
 The two different frequencies are also distinguished in the filename,
-`mon` for monthly data and `day` daily data.
+`mon` for monthly data and `day` for daily data.
 
 ### Data
 
