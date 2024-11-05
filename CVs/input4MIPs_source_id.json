@@ -39,6 +39,14 @@
         "mip_era":"CMIP6Plus",
         "source_version":"1.0"
     },
+    "G-UHD-SPv2-1-0":{
+        "contact":"sfiedler@geomar.de",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"G-UHD",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0"
+    },
     "MRI-JRA55-do-1-6-0":{
         "contact":"Hiroyuki Tsujino (htsujino@mri-jma.go.jp)",
         "further_info_url":"https://climate.mri-jma.go.jp/pub/ocean/JRA55-do/index.html",
