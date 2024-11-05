@@ -97,3 +97,4 @@ for file in HERE.glob("*.md"):
 
     with open(file, "w") as fh:
         fh.write("\n".join(out))
+        fh.write("\n")
