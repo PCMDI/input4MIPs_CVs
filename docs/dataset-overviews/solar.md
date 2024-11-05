@@ -73,6 +73,7 @@ provides a detailed analysis of the changes from earlier versions.
 
 ### SOLARIS-HEPPA-CMIP-4-3
 
+v4.4 uses the final, absolute TSI scale (in consonance with NNL1) which should be used in CMIP7.
 Hence v4.3 is retracted. The change between v4.3 and v4.4 results in a 179 ppm increase of TSI and
 SSI compared to version 4.3. The preliminary TSI/SSI version in 4.3 had adapted the TSI scale from
 the CTIM instrument alone, the newer TSI scale is based on a TSIS-1 and CTIM composite (Coddington
