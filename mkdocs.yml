@@ -8,15 +8,29 @@ repo_url: https://github.com/PCMDI/input4MIPs_CVs
 
 nav:
   - input4MIPs CVs: index.md
+  - Usage:
+    - As a data user: usage-data-user.md
+    - As a data producer: usage-data-producer.md
+  - Dataset overviews:
+    - Summary: dataset-overviews/index.md
+    - Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions: dataset-overviews/anthropogenic-slcf-co2-emissions.md
+    - Open biomass burning emissions: dataset-overviews/open-biomass-burning-emissions.md
+    - Land use: dataset-overviews/land-use.md
+    - Greenhouse gas concentrations: dataset-overviews/greenhouse-gas-concentrations.md
+    - CO<sub>2</sub> isotopes: dataset-overviews/co2-isotopes.md
+    - Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties: dataset-overviews/stratospheric-volcanic-so2-emissions-aod.md
+    - Ozone concentrations: dataset-overviews/ozone.md
+    - Nitrogen deposition: dataset-overviews/nitrogen-deposition.md
+    - Solar: dataset-overviews/solar.md
+    - AMIP sea-surface temperature and sea-ice boundary forcing: dataset-overviews/amip-sst-sea-ice-boundary-forcing.md
+    - Aerosol optical properties/MACv2-SP: dataset-overviews/aerosol-optical-properties-macv2-sp.md
+    - Population density: dataset-overviews/population.md
   - Database views:
     - Overview: database-views/index.md
     - Delivery summary: database-views/input4MIPs_delivery-summary_CMIP6Plus.html
     - Source ID-level: database-views/input4MIPs_source-id_CMIP6Plus.html
     - Dataset-level: database-views/input4MIPs_datasets_CMIP6Plus.html
     - File-level: database-views/input4MIPs_files_CMIP6Plus.html
-  - Usage:
-    - As a data user: usage-data-user.md
-    - As a data producer: usage-data-producer.md
   - Repository overview: repository-overview.md
   - Contributing: contributing.md
   - Versioning: versioning.md
@@ -49,6 +63,7 @@ plugins:
 
 markdown_extensions:
   - attr_list
+  - footnotes
   # Code highlighting handiness
   - pymdownx.highlight:
       anchor_linenums: true
