@@ -1,8 +1,5 @@
 # Solar
 
-**All of the text below is a draft written by a non-expert to get things moving.**
-**Please do not put any faith in its accuracy.**
-
 ## Key contacts
 
 - Names: Bernd Funke
@@ -14,7 +11,7 @@ The solar dataset is rapidly approaching a final version and is
 [available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-4%22%7D).
 This version is for testing only, do not use it for any simluations you're not willing to throw away.
 We are collecting bugs in [this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19)
-and aim to release a new version [TBD, before the end of 2025?].
+and aim to release a new version before the end of 2025.
 If you find any other issues, please add them to
 [the discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
 
@@ -65,8 +62,8 @@ The two different frequencies are also distinguished in the filename,
 ### Data
 
 There are some changes from CMIP6.
-The CMIP6 data can be found on the ESGF under the "CMIP6" project and source ID "SOLARIS-HEPPA-3-2": 
-[pre-filled search here](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6%22%2C%22source_id%22%3A%22SOLARIS-HEPPA-3-2%22%7D).
+The CMIP6 data can be found 
+[on the ESGF under the "CMIP6" project and source ID "SOLARIS-HEPPA-3-2"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6%22%2C%22source_id%22%3A%22SOLARIS-HEPPA-3-2%22%7D).
 [Funke et al., GMD 2024](https://doi.org/10.5194/gmd-17-1217-2024)
 provides a detailed analysis of the changes from earlier versions.
 \[TODO: consider whether there's a short summary we can give\]

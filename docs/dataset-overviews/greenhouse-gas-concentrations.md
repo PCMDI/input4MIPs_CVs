@@ -107,8 +107,8 @@ so if you don't care about data pre-1750, you don't need to load it from disk
 ### Data
 
 At present, there are a number of changes from CMIP6.
-The CMIP6 data can be found on the ESGF under the "CMIP6" project and source ID "UoM-CMIP-1-2-0": 
-[pre-filled search here](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22source_id%22%3A%22UoM-CMIP-1-2-0%22%2C%22mip_era%22%3A%22CMIP6%22%7D).
+The CMIP6 data can be found 
+[on the ESGF under the "CMIP6" project and source ID "UoM-CMIP-1-2-0"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22source_id%22%3A%22UoM-CMIP-1-2-0%22%2C%22mip_era%22%3A%22CMIP6%22%7D).
 As we fix the various issues, we expect these changes to reduce.
 From [the analysis done to date](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations),
 there are small changes in CO<sub>2</sub>, CH<sub>4</sub> and N<sub>2</sub>O
