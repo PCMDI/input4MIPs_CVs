@@ -260,7 +260,7 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
         "This composite is also consistent with the TSI 'community consensus' composite "
         "(spot.colorado.edu/~koppg/TSI/TSI_Composite-SIST.txt). "
         "The original comment from the data provider is "
-        '<a href="https://github.com/PCMDI/input4MIPs_CVs/issues/66#issuecomment-2422882167">here</a>.'
+        '<a href="https://github.com/PCMDI/input4MIPs_CVs/issues/66#issuecomment-2422882167">here</a>. '
         'For further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release notes</a>.'
     )
 

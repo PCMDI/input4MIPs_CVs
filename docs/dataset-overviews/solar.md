@@ -69,6 +69,24 @@ provides a detailed analysis of the changes from earlier versions.
 
 <!--- begin-revision-history:SOLARIS-HEPPA-CMIP -->
 <!--- Do not edit this section, it is automatically updated when the docs are filled out -->
-<!--- No revisions, hence section is blank -->
 ## Revision history
+
+### SOLARIS-HEPPA-CMIP-4-3
+
+v4.4 uses the final, absolute TSI scale (in consonance with NNL1) which should be used in CMIP7.
+Hence v4.3 is retracted. The change between v4.3 and v4.4 results in a 179 ppm increase of TSI and
+SSI compared to version 4.3. The preliminary TSI/SSI version in 4.3 had adapted the TSI scale from
+the CTIM instrument alone, the newer TSI scale is based on a TSIS-1 and CTIM composite (Coddington
+and Lean, 2024). This composite is also consistent with the TSI 'community consensus' composite
+(spot.colorado.edu/~koppg/TSI/TSI_Composite-SIST.txt). The original comment from the data provider
+is <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/66#issuecomment-2422882167">here</a>. For
+further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release
+notes</a>.
+
+### SOLARIS-HEPPA-CMIP-4-2
+
+An issue was encountered with the proton ionization data in v4.2. It was hence retracted. The
+original comment from the data provider is <a
+href="https://github.com/PCMDI/input4MIPs_CVs/issues/17#issuecomment-2255378927">here</a>.
+
 <!--- end-revision-history -->

@@ -120,5 +120,4 @@ and create new versions of the dataset between now and the end of 2024.
 <!--- begin-revision-history:CR-CMIP -->
 <!--- Do not edit this section, it is automatically updated when the docs are filled out -->
 <!--- No revisions, hence section is blank -->
-## Revision history
 <!--- end-revision-history -->

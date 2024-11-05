@@ -60,6 +60,12 @@ theme:
 plugins:
   - search
   - autorefs
+  # Required for auto-filling the revision history
+  # https://oprypin.github.io/mkdocs-gen-files/
+  - gen-files:
+      scripts:
+        - docs/dataset-overviews/write-revision-history.py
+
 
 markdown_extensions:
   - attr_list
