@@ -27,11 +27,25 @@ in particular models participating in [CMIP](https://www.wcrp-climate.org/wgcm-c
 For testing, 
 [use data sets marked with a MIP era of "CMIP6Plus"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6Plus%22%7D).
 
+#### Source IDs for use in this phase
+
 A summary of the source ID 
 that identifies the data set to use for CMIP7 testing is given below.
 
 <!--- begin-source-id-summary:testing -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
+1. Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions: No data available for this phase yet
+1. Open biomass burning emissions: [DRES-CMIP-BB4CMIP7-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-1-0%22%7D)
+1. Land use: [UofMD-landState-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-0%22%7D)
+1. Greenhouse gas concentrations: [CR-CMIP-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-3-0%22%7D)
+1. CO<sub>2</sub> isotopes: No data available for this phase yet
+1. Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties: [UOEXETER-CMIP-1-1-3](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-1-3%22%7D)
+1. Ozone: No data available for this phase yet
+1. Nitrogen deposition: No data available for this phase yet
+1. Solar: [SOLARIS-HEPPA-CMIP-4-4](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-4%22%7D)
+1. AMIP sea-surface temperature and sea-ice boundary forcing: No data available for this phase yet
+1. Aerosol optical properties/MACv2-SP: No data available for this phase yet
+1. Population density: No data available for this phase yet
 <!--- end-source-id-summary -->
 
 ### CMIP7 Fast Track
@@ -39,11 +53,14 @@ that identifies the data set to use for CMIP7 testing is given below.
 For the CMIP7 fast track, 
 [only use data sets marked with a MIP era of "CMIP7"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP7%22%7D).
 
+#### Source IDs for use in this phase
+
 A summary of the source ID 
 that identifies the data set to use for the CMIP7 fast track is given below.
 
 <!--- begin-source-id-summary:cmip7_fast_track -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
+No source IDs are available for use in this phase of CMIP7 yet
 <!--- end-source-id-summary -->
 
 ### CMIP7
@@ -51,9 +68,12 @@ that identifies the data set to use for the CMIP7 fast track is given below.
 For CMIP7 production simulations, 
 [only use data sets marked with a MIP era of "CMIP7"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP7%22%7D).
 
+#### Source IDs for use in this phase
+
 A summary of the source ID 
 that identifies the data set to use for CMIP7 is given below.
 
 <!--- begin-source-id-summary:cmip7 -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
+No source IDs are available for use in this phase of CMIP7 yet
 <!--- end-source-id-summary -->
