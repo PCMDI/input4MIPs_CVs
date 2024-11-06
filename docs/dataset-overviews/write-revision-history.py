@@ -150,6 +150,139 @@ def add_cmip7_phase_source_id_summaries(raw_split: tuple[str, ...]) -> tuple[str
     return tuple(out)
 
 
+def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, ...]:
+    """
+    Get the summary of the source IDs to use for each phase of CMIP7 for a given forcing
+
+    Parameters
+    ----------
+    forcing
+        Forcing for which to get the source IDs to use for each CMIP7 phase
+
+    Returns
+    -------
+    :
+        Summary of source IDs to use for the CMIP7 phases for the given forcing
+    """
+    forcing_source_ids = cmip7_phases_source_ids[
+        cmip7_phases_source_ids["forcing"] == forcing
+    ]
+    if forcing_source_ids.empty:
+        raise AssertionError
+
+    out = [
+        "### Source IDs for CMIP7 phases",
+        "",
+        "The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.",
+        "",
+    ]
+    for _, row in forcing_source_ids.iterrows():
+        # TODO: enforce order
+        if row.cmip7_phase == "testing":
+            cmip7_phase_pretty = "Testing"
+
+        elif row.cmip7_phase == "cmip7_fast_track":
+            cmip7_phase_pretty = "CMIP7 fast track"
+
+        elif row.cmip7_phase == "cmip7":
+            cmip7_phase_pretty = "CMIP7"
+
+        else:
+            raise NotImplementedError(row.cmip7_phase)
+
+        if pd.isnull(row.source_id):
+            out.append(f"{cmip7_phase_pretty}: No data available for this phase yet")
+            out.append("")
+            continue
+
+        # Skipping check of status in the database here because that is done at the summary level.
+        # If we remove it there, we should add that check back in here.
+        # db_source_id_stub_rows = db_source[
+        #     db_source["source_id"].str.contains(row.source_id_stub)
+        # ]
+        #
+        # # May need a more sophisticated sorting algorithm at some point
+        # source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
+        # source_id_latest = source_ids_sorted[-1]
+        # if (not row.ok_if_not_latest) and row.source_id != source_id_latest:
+        #     msg = (
+        #         f"For {row.forcing=} and {row.cmip7_phase=}, {row.source_id=}."
+        #         f"This is not the latest available source ID ({source_ids_sorted=}). "
+        #         f"Given that {row.ok_if_not_latest=},"
+        #         f"either update the source ID to the latest ({source_id_latest}) "
+        #         f"or set `ok_if_not_latest` for {row.forcing=} to `True` "
+        #         f"in {CMIP7_PHASES_SOURCE_IDS_CSV}. "
+        #     )
+        #     raise ValueError(msg)
+
+        out.append(
+            f"{cmip7_phase_pretty}: [{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
+        )
+        out.append("")
+
+    return tuple(out)
+
+
+def add_cmip7_phase_source_ids(raw_split: tuple[str, ...]) -> tuple[str, ...]:
+    """
+    Add the source IDs to use for each phase of CMIP7
+
+    Parameters
+    ----------
+    raw_split
+        Raw file contents, split into lines
+
+    Returns
+    -------
+    :
+        The updated lines, after the source IDs to use for each phase of CMIP7 have been inserted
+    """
+    # Use tuples as input and output to avoid accidentally
+    # modifying content between different function calls.
+    out = []
+    in_source_id_summmary = False
+    forcing = None
+    for line in raw_split:
+        if line.startswith("<!--- begin-cmip7-phases-source-ids:"):
+            in_source_id_summmary = True
+            out.append(line)
+            # Assumes forcing name surrounded by quotes
+            forcing = line.split("begin-cmip7-phases-source-ids:")[-1].split('"')[1]
+            continue
+
+        if line.startswith("<!--- end-cmip7-phases-source-ids"):
+            in_source_id_summmary = False
+            out.append(line)
+            continue
+
+        if in_source_id_summmary:
+            if line.startswith("<!--- Do not edit this section"):
+                out.append(line)
+
+                source_id_summary = get_cmip7_phases_source_id_summary_for_forcing(
+                    forcing=forcing
+                )
+
+                if source_id_summary:
+                    out.extend(source_id_summary)
+
+                else:
+                    out.append(
+                        "No source IDs are available for use in this phase of CMIP7 yet"
+                    )
+
+                continue
+
+            else:
+                # Ignore existing content
+                continue
+
+        else:
+            out.append(line)
+
+    return tuple(out)
+
+
 def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, ...]:
     """
     Get revision history for a given source ID stub
@@ -266,6 +399,7 @@ for file in HERE.glob("*.md"):
         out = add_cmip7_phase_source_id_summaries(out)
 
     else:
+        out = add_cmip7_phase_source_ids(out)
         out = add_revision_history(out)
 
     with open(file, "w") as fh:

@@ -28,7 +28,7 @@ forcing_int_id,forcing,cmip7_phase,source_id_stub,source_id,ok_if_not_latest
 9,Solar,cmip7,SOLARIS-HEPPA-CMIP,,False
 10,AMIP sea-surface temperature and sea-ice boundary forcing,testing,,,False
 10,AMIP sea-surface temperature and sea-ice boundary forcing,cmip7_fast_track,,,False
-10,Solar,cmip7,,,False
+10,AMIP sea-surface temperature and sea-ice boundary forcing,cmip7,,,False
 11,Aerosol optical properties/MACv2-SP,testing,,,False
 11,Aerosol optical properties/MACv2-SP,cmip7_fast_track,,,False
 11,Aerosol optical properties/MACv2-SP,cmip7,,,False

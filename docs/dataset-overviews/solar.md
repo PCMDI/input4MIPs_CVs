@@ -15,6 +15,20 @@ and aim to release a new version before the end of 2025.
 If you find any other issues, please add them to
 [the discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
 
+<!--- begin-cmip7-phases-source-ids:"Solar" -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
+### Source IDs for CMIP7 phases
+
+The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.
+
+Testing: [SOLARIS-HEPPA-CMIP-4-4](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-4%22%7D)
+
+CMIP7 fast track: No data available for this phase yet
+
+CMIP7: No data available for this phase yet
+
+<!--- end-cmip7-phases-source-ids -->
+
 ## Navigating the data
 
 ### Recommendation for pre-industrial control
