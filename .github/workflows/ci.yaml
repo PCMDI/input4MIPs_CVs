@@ -36,6 +36,23 @@ jobs:
           pip install python-packages/input4MIPs-CVs
           python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --version `cat VERSION` --repo-root-dir . --check-unchanged || (echo 'Web pages not up to date with inputs. Please run `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py` or the equivalent for your machine.' && exit 1)
 
+  check-docs-up-to-date:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check docs are up to date
+        run: |
+          which pip
+          pip install -r requirements-docs.txt
+          mkdocs build --strict
+          (! git status --porcelain --untracked-files=no | grep '^.M') || (echo 'Docs are not up to date. Please run `make docs` locally then commit and upload the results.' && exit 1)
+
   cvs-load-with-input4mips-validation:
     runs-on: ubuntu-latest
     # Ok if this fails, we just want to use it as a warning for us to update input4MIPs-validation 

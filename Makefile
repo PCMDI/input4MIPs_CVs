@@ -50,5 +50,6 @@ docs-serve:  ## serve the docs locally
 .PHONY: virtual-environment
 virtual-environment:  ## update virtual environment, create a new one if it doesn't already exist
 	python3 -m venv venv
-	venv/bin/pip install --upgrade pip mkdocs mkdocs-material mkdocs-autorefs
+	venv/bin/pip install --upgrade pip 
+	venv/bin/pip install -r requirements-docs.txt
 	venv/bin/pip install -e python-packages/input4MIPs-CVs

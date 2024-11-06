@@ -14,7 +14,7 @@ build:
     python: "3.11"
   jobs:
     post_install:
-      - pip install mkdocs mkdocs-material mkdocs-autorefs
+      - pip install -r requirements-docs.txt
       - pip list
 
 mkdocs:
