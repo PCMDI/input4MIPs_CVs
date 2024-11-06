@@ -9,6 +9,6 @@
 - Emails: durack1@llnl.gov
 
 <!--- begin-revision-history:PCMDI-ACMIP -->
-<!--- Do not edit this section, it is automatically updated when the docs are filled out -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
 <!--- No revisions, hence section is blank -->
 <!--- end-revision-history -->

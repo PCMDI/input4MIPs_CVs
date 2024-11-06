@@ -9,6 +9,6 @@
 - Emails: Margreet.vanMarle@Deltares.nl; Guido.vanderWerf@wur.nl
 
 <!--- begin-revision-history:DRES-CMIP-BB4CMIP -->
-<!--- Do not edit this section, it is automatically updated when the docs are filled out -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
 <!--- No revisions, hence section is blank -->
 <!--- end-revision-history -->

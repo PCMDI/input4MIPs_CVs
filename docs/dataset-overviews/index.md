@@ -19,3 +19,41 @@ in particular models participating in [CMIP](https://www.wcrp-climate.org/wgcm-c
 1. [AMIP sea-surface temperature and sea-ice boundary forcing](amip-sst-sea-ice-boundary-forcing.md)
 1. [Aerosol optical properties/MACv2-SP](aerosol-optical-properties-macv2-sp.md)
 1. [Population density](population.md)
+
+## Which data sets should I be using for CMIP7?
+
+### Testing
+
+For testing, 
+[use data sets marked with a MIP era of "CMIP6Plus"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6Plus%22%7D).
+
+A summary of the source ID 
+that identifies the data set to use for CMIP7 testing is given below.
+
+<!--- begin-source-id-summary:testing -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
+<!--- end-source-id-summary -->
+
+### CMIP7 Fast Track
+
+For the CMIP7 fast track, 
+[only use data sets marked with a MIP era of "CMIP7"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP7%22%7D).
+
+A summary of the source ID 
+that identifies the data set to use for the CMIP7 fast track is given below.
+
+<!--- begin-source-id-summary:cmip7_fast_track -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
+<!--- end-source-id-summary -->
+
+### CMIP7
+
+For CMIP7 production simulations, 
+[only use data sets marked with a MIP era of "CMIP7"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP7%22%7D).
+
+A summary of the source ID 
+that identifies the data set to use for CMIP7 is given below.
+
+<!--- begin-source-id-summary:cmip7 -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
+<!--- end-source-id-summary -->

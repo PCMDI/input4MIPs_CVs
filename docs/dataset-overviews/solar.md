@@ -70,7 +70,7 @@ provides a detailed analysis of the changes from earlier versions.
 [TODO: get the link to slides from Bernd which dive into this]
 
 <!--- begin-revision-history:SOLARIS-HEPPA-CMIP -->
-<!--- Do not edit this section, it is automatically updated when the docs are filled out -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 
 ### SOLARIS-HEPPA-CMIP-4-3

@@ -9,6 +9,6 @@
 - Emails: rachel.hoesly@pnnl.gov; ssmith@pnnl.gov
 
 <!--- begin-revision-history:CEDS-CMIP -->
-<!--- Do not edit this section, it is automatically updated when the docs are filled out -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
 <!--- No revisions, hence section is blank -->
 <!--- end-revision-history -->
