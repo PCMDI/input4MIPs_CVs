@@ -23,7 +23,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 Testing: No data available for this phase yet
 
-CMIP7 fast track: No data available for this phase yet
+AR7 fast track: No data available for this phase yet
 
 CMIP7: No data available for this phase yet
 

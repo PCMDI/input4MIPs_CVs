@@ -48,15 +48,15 @@ that identifies the data set to use for CMIP7 testing is given below.
 1. Population density: No data available for this phase yet
 <!--- end-source-id-summary -->
 
-### CMIP7 Fast Track
+### AR7 Fast Track
 
-For the CMIP7 fast track, 
+For the AR7 fast track,
 [only use data sets marked with a MIP era of "CMIP7"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP7%22%7D).
 
 #### Source IDs for use in this phase
 
 A summary of the source ID 
-that identifies the data set to use for the CMIP7 fast track is given below.
+that identifies the data set to use for the AR7 fast track is given below.
 
 <!--- begin-source-id-summary:cmip7_fast_track -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->

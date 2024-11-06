@@ -23,7 +23,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 Testing: [SOLARIS-HEPPA-CMIP-4-4](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-4%22%7D)
 
-CMIP7 fast track: No data available for this phase yet
+AR7 fast track: No data available for this phase yet
 
 CMIP7: No data available for this phase yet
 

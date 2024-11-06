@@ -181,8 +181,8 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
         if row.cmip7_phase == "testing":
             cmip7_phase_pretty = "Testing"
 
-        elif row.cmip7_phase == "cmip7_fast_track":
-            cmip7_phase_pretty = "CMIP7 fast track"
+        elif row.cmip7_phase == "ar7_fast_track":
+            cmip7_phase_pretty = "AR7 fast track"
 
         elif row.cmip7_phase == "cmip7":
             cmip7_phase_pretty = "CMIP7"

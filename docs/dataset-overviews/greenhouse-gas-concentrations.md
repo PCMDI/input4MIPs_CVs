@@ -25,7 +25,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 Testing: [CR-CMIP-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-3-0%22%7D)
 
-CMIP7 fast track: No data available for this phase yet
+AR7 fast track: No data available for this phase yet
 
 CMIP7: No data available for this phase yet
 

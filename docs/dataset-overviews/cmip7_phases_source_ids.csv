@@ -1,37 +1,37 @@
 forcing_int_id,forcing,cmip7_phase,source_id_stub,source_id,ok_if_not_latest
 1,Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions,testing,,,False
-1,Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions,cmip7_fast_track,,,False
+1,Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions,ar7_fast_track,,,False
 1,Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions,cmip7,,,False
 2,Open biomass burning emissions,testing,DRES-CMIP-BB4CMIP7,DRES-CMIP-BB4CMIP7-1-0,False
-2,Open biomass burning emissions,cmip7_fast_track,DRES-CMIP-BB4CMIP7,,False
+2,Open biomass burning emissions,ar7_fast_track,DRES-CMIP-BB4CMIP7,,False
 2,Open biomass burning emissions,cmip7,DRES-CMIP-BB4CMIP7,,False
 3,Land use,testing,UofMD-landState,UofMD-landState-3-0,False
-3,Land use,cmip7_fast_track,UofMD-landState,,False
+3,Land use,ar7_fast_track,UofMD-landState,,False
 3,Land use,cmip7,UofMD-landState,,False
 4,Greenhouse gas concentrations,testing,CR-CMIP,CR-CMIP-0-3-0,False
-4,Greenhouse gas concentrations,cmip7_fast_track,CR-CMIP,,False
+4,Greenhouse gas concentrations,ar7_fast_track,CR-CMIP,,False
 4,Greenhouse gas concentrations,cmip7,CR-CMIP,,False
 5,CO<sub>2</sub> isotopes,testing,,,False
-5,CO<sub>2</sub> isotopes,cmip7_fast_track,,,False
+5,CO<sub>2</sub> isotopes,ar7_fast_track,,,False
 5,CO<sub>2</sub> isotopes,cmip7,,,False
 6,Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties,testing,UOEXETER-CMIP,UOEXETER-CMIP-1-1-3,False
-6,Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties,cmip7_fast_track,UOEXETER-CMIP,,False
+6,Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties,ar7_fast_track,UOEXETER-CMIP,,False
 6,Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties,cmip7,UOEXETER-CMIP,,False
 7,Ozone,testing,,,False
-7,Ozone,cmip7_fast_track,,,False
+7,Ozone,ar7_fast_track,,,False
 7,Ozone,cmip7,,,False
 8,Nitrogen deposition,testing,,,False
-8,Nitrogen deposition,cmip7_fast_track,,,False
+8,Nitrogen deposition,ar7_fast_track,,,False
 8,Nitrogen deposition,cmip7,,,False
 9,Solar,testing,SOLARIS-HEPPA-CMIP,SOLARIS-HEPPA-CMIP-4-4,False
-9,Solar,cmip7_fast_track,SOLARIS-HEPPA-CMIP,,False
+9,Solar,ar7_fast_track,SOLARIS-HEPPA-CMIP,,False
 9,Solar,cmip7,SOLARIS-HEPPA-CMIP,,False
 10,AMIP sea-surface temperature and sea-ice boundary forcing,testing,,,False
-10,AMIP sea-surface temperature and sea-ice boundary forcing,cmip7_fast_track,,,False
+10,AMIP sea-surface temperature and sea-ice boundary forcing,ar7_fast_track,,,False
 10,AMIP sea-surface temperature and sea-ice boundary forcing,cmip7,,,False
 11,Aerosol optical properties/MACv2-SP,testing,,,False
-11,Aerosol optical properties/MACv2-SP,cmip7_fast_track,,,False
+11,Aerosol optical properties/MACv2-SP,ar7_fast_track,,,False
 11,Aerosol optical properties/MACv2-SP,cmip7,,,False
 12,Population density,testing,,,False
-12,Population density,cmip7_fast_track,,,False
+12,Population density,ar7_fast_track,,,False
 12,Population density,cmip7,,,False
