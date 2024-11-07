@@ -1,5 +1,8 @@
 """
-Write the revision history sections in our overview files
+Fill out the auto-generated sections in our overview files
+
+If we need to add any more to this, we should probably refactor first
+as it is on the edge of incomprehensible.
 """
 
 from __future__ import annotations
@@ -78,16 +81,6 @@ def get_cmip7_phase_source_id_summary(cmip7_phase: str) -> tuple[str, ...]:
         )
 
     return tuple(out)
-
-
-# Potential generalisation to reduce duplication below
-# def insert_content_in_section(
-#     key_id_line_prefix: str,
-#     line_to_insert_after: str,
-#     end_line: str,
-#     content_generator: Callable[[str], tuple[str, ...]],
-# ) -> tuple[str, ...]:
-#     pass
 
 
 def add_cmip7_phase_source_id_summaries(raw_split: tuple[str, ...]) -> tuple[str, ...]:
@@ -389,19 +382,24 @@ def add_revision_history(raw_split: tuple[str, ...]) -> tuple[str, ...]:
     return tuple(out)
 
 
-for file in HERE.glob("*.md"):
-    with open(file) as fh:
-        raw = fh.read()
+def main() -> None:
+    for file in HERE.glob("*.md"):
+        with open(file) as fh:
+            raw = fh.read()
 
-    out = tuple(raw.splitlines())
+        out = tuple(raw.splitlines())
 
-    if file.name == "index.md":
-        out = add_cmip7_phase_source_id_summaries(out)
+        if file.name == "index.md":
+            out = add_cmip7_phase_source_id_summaries(out)
 
-    else:
-        out = add_cmip7_phase_source_ids(out)
-        out = add_revision_history(out)
+        else:
+            out = add_cmip7_phase_source_ids(out)
+            out = add_revision_history(out)
 
-    with open(file, "w") as fh:
-        fh.write("\n".join(out))
-        fh.write("\n")
+        with open(file, "w") as fh:
+            fh.write("\n".join(out))
+            fh.write("\n")
+
+
+if __name__ == "__main__":
+    main()
