@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import textwrap
+from collections.abc import Iterable
 from pathlib import Path
 # from typing import Callable
 
@@ -216,7 +217,9 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
     return tuple(out)
 
 
-def add_cmip7_phase_source_ids(raw_split: tuple[str, ...]) -> tuple[str, ...]:
+def add_cmip7_phase_source_ids(
+    raw_split: tuple[str, ...], forcing: str
+) -> tuple[str, ...]:
     """
     Add the source IDs to use for each phase of CMIP7
 
@@ -224,6 +227,9 @@ def add_cmip7_phase_source_ids(raw_split: tuple[str, ...]) -> tuple[str, ...]:
     ----------
     raw_split
         Raw file contents, split into lines
+
+    forcing
+        Forcing for which to generate the info
 
     Returns
     -------
@@ -234,13 +240,10 @@ def add_cmip7_phase_source_ids(raw_split: tuple[str, ...]) -> tuple[str, ...]:
     # modifying content between different function calls.
     out = []
     in_source_id_summmary = False
-    forcing = None
     for line in raw_split:
-        if line.startswith("<!--- begin-cmip7-phases-source-ids:"):
+        if line.startswith("<!--- begin-cmip7-phases-source-ids"):
             in_source_id_summmary = True
             out.append(line)
-            # Assumes forcing name surrounded by quotes
-            forcing = line.split("begin-cmip7-phases-source-ids:")[-1].split('"')[1]
             continue
 
         if line.startswith("<!--- end-cmip7-phases-source-ids"):
@@ -324,7 +327,9 @@ def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, .
     return tuple(out)
 
 
-def add_revision_history(raw_split: tuple[str, ...]) -> tuple[str, ...]:
+def add_revision_history(
+    raw_split: tuple[str, ...], source_id_stub: str
+) -> tuple[str, ...]:
     """
     Insert the revision history in one of the docs
 
@@ -332,6 +337,11 @@ def add_revision_history(raw_split: tuple[str, ...]) -> tuple[str, ...]:
     ----------
     raw_split
         Raw file contents, split into lines
+
+    source_id_stub
+        Stub which indicates the source IDs that should be included in the revision history.
+
+        If a source ID includes this stub, it is included in the revision history.
 
     Returns
     -------
@@ -342,13 +352,10 @@ def add_revision_history(raw_split: tuple[str, ...]) -> tuple[str, ...]:
     # modifying content between different function calls.
     out = []
     in_revision_history = False
-    source_id_prefix = None
     for line in raw_split:
         if line.startswith("<!--- begin-revision-history:"):
             in_revision_history = True
             out.append(line)
-            # Assumes no spaces in the ID of interest
-            source_id_prefix = line.split("begin-revision-history:")[-1].split(" ")[0]
             continue
 
         if line.startswith("<!--- end-revision-history"):
@@ -361,7 +368,7 @@ def add_revision_history(raw_split: tuple[str, ...]) -> tuple[str, ...]:
                 out.append(line)
 
                 revision_history = get_revision_history_for_source_id_stub(
-                    source_id_stub=source_id_prefix
+                    source_id_stub=source_id_stub
                 )
 
                 if revision_history:
@@ -382,6 +389,42 @@ def add_revision_history(raw_split: tuple[str, ...]) -> tuple[str, ...]:
     return tuple(out)
 
 
+def get_file_info(raw_split: Iterable[str]) -> dict[str, str]:
+    """
+    Get the key info for the file
+
+    This extracts values out of the lines at the top of the file.
+
+    Parameters
+    ----------
+    raw_split
+        Raw file contents, split into lines
+
+    Returns
+    -------
+    :
+        Extracted file information.
+    """
+    res = {}
+    for line in raw_split:
+        if line.startswith(
+            "<!--- These values are used by `fill-out-auto-generated-sections.py`"
+        ):
+            continue
+
+        if line.startswith("#"):
+            # Up to title, can exit
+            break
+
+        info_raw = line.split("<!--- ")[1].split(" -->")[0]
+        key, value = info_raw.split("=")
+        value = value.strip('"')
+
+        res[key] = value
+
+    return res
+
+
 def main() -> None:
     for file in HERE.glob("*.md"):
         with open(file) as fh:
@@ -393,13 +436,17 @@ def main() -> None:
             out = add_cmip7_phase_source_id_summaries(out)
 
         else:
-            out = add_cmip7_phase_source_ids(out)
-            out = add_revision_history(out)
+            info = get_file_info(out)
+            out = add_cmip7_phase_source_ids(out, forcing=info["forcing"])
+            out = add_revision_history(out, source_id_stub=info["source_id_stub"])
 
         with open(file, "w") as fh:
             fh.write("\n".join(out))
             fh.write("\n")
 
 
-if __name__ == "__main__":
-    main()
+# # Can't use this here as not called as main, hence the below
+# if __name__ == "__main__":
+#     main()
+#
+main()

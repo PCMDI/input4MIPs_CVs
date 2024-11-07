@@ -1,3 +1,6 @@
+<!--- These values are used by `fill-out-auto-generated-sections.py` -->
+<!--- forcing="Solar" -->
+<!--- source_id_stub="SOLARIS-HEPPA" -->
 # Solar
 
 ## Key contacts
@@ -15,7 +18,7 @@ and aim to release a new version before the end of 2025.
 If you find any other issues, please add them to
 [the discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
 
-<!--- begin-cmip7-phases-source-ids:"Solar" -->
+<!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
 
@@ -83,7 +86,7 @@ provides a detailed analysis of the changes from earlier versions.
 \[TODO: consider whether there's a short summary we can give\]
 [TODO: get the link to slides from Bernd which dive into this]
 
-<!--- begin-revision-history:SOLARIS-HEPPA-CMIP -->
+<!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 

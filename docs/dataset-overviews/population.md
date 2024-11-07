@@ -1,3 +1,6 @@
+<!--- These values are used by `fill-out-auto-generated-sections.py` -->
+<!--- forcing="Population density" -->
+<!--- source_id_stub="tbd" -->
 # Population density
 
 **This section is a work in progress.**
@@ -8,14 +11,9 @@
 - Names: [TBD]
 - Emails: [TBD]
 
-<!--- begin-revision-history:tbd -->
-<!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
-<!--- end-revision-history -->
-
 ## Summary
 
-<!--- begin-cmip7-phases-source-ids:"Population density" -->
+<!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
 
@@ -28,3 +26,8 @@ AR7 fast track: No data available for this phase yet
 CMIP7: No data available for this phase yet
 
 <!--- end-cmip7-phases-source-ids -->
+
+<!--- begin-revision-history -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
+<!--- No revisions, hence section is blank -->
+<!--- end-revision-history -->

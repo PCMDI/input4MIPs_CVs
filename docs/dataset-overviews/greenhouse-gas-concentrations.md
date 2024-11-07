@@ -1,3 +1,6 @@
+<!--- These values are used by `fill-out-auto-generated-sections.py` -->
+<!--- forcing="Greenhouse gas concentrations" -->
+<!--- source_id_stub="CR-CMIP" -->
 # Greenhouse gas concentrations
 
 ## Key contacts
@@ -17,7 +20,7 @@ If you find any other issues, please add them to
 
 ## Summary
 
-<!--- begin-cmip7-phases-source-ids:"Greenhouse gas concentrations" -->
+<!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
 
@@ -133,7 +136,7 @@ so we expect only small differences in the radiative impact of these changes in 
 We will expand this section as we do more analysis 
 and create new versions of the dataset between now and the end of 2024.
 
-<!--- begin-revision-history:CR-CMIP -->
+<!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 <!--- No revisions, hence section is blank -->
 <!--- end-revision-history -->

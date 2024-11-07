@@ -1,3 +1,6 @@
+<!--- These values are used by `fill-out-auto-generated-sections.py` -->
+<!--- forcing="Land use" -->
+<!--- source_id_stub="UofMD-landState" -->
 # Land use
 
 **This section is a work in progress.**
@@ -8,14 +11,9 @@
 - Names: Louise Chini, George Hurtt
 - Emails: lchini@umd.edu; gchurtt@umd.edu
 
-<!--- begin-revision-history:UofMD-landState -->
-<!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
-<!--- end-revision-history -->
-
 ## Summary
 
-<!--- begin-cmip7-phases-source-ids:"Land use" -->
+<!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
 
@@ -28,3 +26,8 @@ AR7 fast track: No data available for this phase yet
 CMIP7: No data available for this phase yet
 
 <!--- end-cmip7-phases-source-ids -->
+
+<!--- begin-revision-history -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
+<!--- No revisions, hence section is blank -->
+<!--- end-revision-history -->
