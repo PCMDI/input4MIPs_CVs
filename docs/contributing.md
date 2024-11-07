@@ -92,6 +92,16 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
 1. Check that the HTML has updated as expected (e.g. the summary view has updated as expected, new datasets are in the datasets view, new files are in the files view)
 1. Commit everything
+1. Build the docs: `mkdocs build --strict` 
+1. Check that the docs updated as expected. 
+   A few of the auto-generated components are worth checking here:
+
+    - are the source IDs for the dataset up to date? 
+      E.g. do we need to update the source IDs to be used for the various CMIP7 phases in 
+      `docs/dataset-overviews/cmip7_phases_source_ids.csv`?
+    - did the revision history come through correctly? If not, there is an issue.
+
+1. Commit everything
 1. Push
 1. Make a pull request
 1. Request a review from @znichollscr and/or @durack1
