@@ -57,6 +57,11 @@ theme:
         icon: material/brightness-7
         name: Switch to light mode
 
+extra:
+  analytics:
+    provider: google
+    property: UA-3843414-4
+
 plugins:
   - search
   - autorefs
