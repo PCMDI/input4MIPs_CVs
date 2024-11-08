@@ -60,8 +60,7 @@ theme:
 extra:
   analytics:
     provider: google
-    # TODO: Paul
-    property: G-XXXXXXXXXX
+    property: UA-3843414-4
 
 plugins:
   - search
