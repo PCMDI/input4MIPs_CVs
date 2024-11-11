@@ -9,6 +9,7 @@
     "dataset_category":"landState",
     "datetime_end":"2024-01-01T00:00:00Z",
     "datetime_start":"0850-01-01T00:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.UofMD.UofMD-landState-3-0.land.yr.multiple-states.gn.v20241002",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/UofMD/UofMD-landState-3-0/land/yr/multiple-states/gn/v20241002/multiple-states_input4MIPs_landState_CMIP_UofMD-landState-3-0_gn_0850-2024.nc",
     "frequency":"yr",
@@ -36,7 +37,7 @@
     "time_range":"0850-2024",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/33f1d5b3-3d97-43d7-8dad-8e5ae905f528",
-    "validated_input4mips":null,
+    "validated_input4mips":true,
     "variable_id":"multiple-states",
     "version":"20241002",
     "xlink":null

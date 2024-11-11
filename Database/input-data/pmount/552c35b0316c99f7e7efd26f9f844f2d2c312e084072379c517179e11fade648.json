@@ -9,6 +9,7 @@
     "dataset_category":"landState",
     "datetime_end":null,
     "datetime_start":null,
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.UofMD.UofMD-landState-3-0.land.fx.multiple-static.gn.v20241002",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/UofMD/UofMD-landState-3-0/land/fx/multiple-static/gn/v20241002/multiple-fixed_input4MIPs_landState_CMIP_UofMD-landState-3-0_gn.nc",
     "frequency":"fx",
@@ -36,7 +37,7 @@
     "time_range":null,
     "timestamp":null,
     "tracking_id":"hdl:21.14100/916d364a-21aa-40e7-b3a9-4f564a603f82",
-    "validated_input4mips":null,
+    "validated_input4mips":false,
     "variable_id":"multiple-static",
     "version":"20241002",
     "xlink":null
