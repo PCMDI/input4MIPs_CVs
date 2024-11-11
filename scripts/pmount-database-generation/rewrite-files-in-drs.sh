@@ -11,6 +11,8 @@
 rewrite_target=$1
 shift
 
+echo "Re-writing files into ${rewrite_target}"
+
 # Alter as you wish
 LOG_LEVEL="DEBUG"
 # LOG_LEVEL="INFO_FILE_ERROR"
@@ -22,4 +24,5 @@ do
     	--cv-source "gh:main" \
         --write-in-drs "${rewrite_target}" \
     	"${file_to_rewrite}"
+        #--allow-cf-checker-warnings \
 done
