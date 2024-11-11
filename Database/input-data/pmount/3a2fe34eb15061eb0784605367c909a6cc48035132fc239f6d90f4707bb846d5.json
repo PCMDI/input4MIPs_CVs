@@ -9,6 +9,7 @@
     "dataset_category":"atmosphericState",
     "datetime_end":null,
     "datetime_start":null,
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.OMIP.MRI.MRI-JRA55-do-1-6-0.ocean.fx.areacello.gr.v20240531",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/OMIP/MRI/MRI-JRA55-do-1-6-0/ocean/fx/areacello/gr/v20240531/areacello_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr.nc",
     "frequency":"fx",

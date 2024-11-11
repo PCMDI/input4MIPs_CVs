@@ -9,6 +9,7 @@
     "dataset_category":"solar",
     "datetime_end":null,
     "datetime_start":null,
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.SOLARIS-HEPPA.SOLARIS-HEPPA-CMIP-4-3.atmos.fx.multiple.gn.v20240730",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/SOLARIS-HEPPA/SOLARIS-HEPPA-CMIP-4-3/atmos/fx/multiple/gn/v20240730/multiple_input4MIPs_solar_CMIP_SOLARIS-HEPPA-CMIP-4-3_gn.nc",
     "frequency":"fx",

@@ -9,6 +9,7 @@
     "dataset_category":"emissions",
     "datetime_end":"2023-11-20T00:00:00Z",
     "datetime_start":"1755-10-20T00:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.uoexeter.UOEXETER-CMIP-1-1-3.atmos.day.utsvolcemis.gn.v20240903",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/uoexeter/UOEXETER-CMIP-1-1-3/atmos/day/utsvolcemis/gn/v20240903/utsvolcemis_input4MIPs_emissions_CMIP_UOEXETER-CMIP-1-1-3_gn_175001-202312.nc",
     "frequency":"day",

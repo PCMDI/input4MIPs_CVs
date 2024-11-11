@@ -9,6 +9,7 @@
     "dataset_category":"SSTsAndSeaIce",
     "datetime_end":null,
     "datetime_start":null,
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.PCMDI.PCMDI-AMIP-1-1-9.ocean.fx.areacello.gn.v20230512",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/PCMDI/PCMDI-AMIP-1-1-9/ocean/fx/areacello/gn/v20230512/areacello_input4MIPs_SSTsAndSeaIce_CMIP_PCMDI-AMIP-1-1-9_gn.nc",
     "frequency":"fx",

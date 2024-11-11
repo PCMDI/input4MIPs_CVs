@@ -9,6 +9,7 @@
     "dataset_category":"aerosolProperties",
     "datetime_end":"2023-12-01T00:00:00Z",
     "datetime_start":"1750-01-01T00:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.uoexeter.UOEXETER-CMIP-1-1-3.atmos.mon.ssa.gnz.v20240903",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/uoexeter/UOEXETER-CMIP-1-1-3/atmos/mon/ssa/gnz/v20240903/ssa_input4MIPs_aerosolProperties_CMIP_UOEXETER-CMIP-1-1-3_gnz_175001-202312.nc",
     "frequency":"mon",

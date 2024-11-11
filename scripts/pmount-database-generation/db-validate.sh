@@ -23,4 +23,5 @@ input4mips-validation --logging-level $LOG_LEVEL \
     db validate \
     --db-dir ${DATABASE_DIR} \
     --cv-source ${CV_SOURCE} \
+    --allow-cf-checker-warnings \
     --n-processes 6

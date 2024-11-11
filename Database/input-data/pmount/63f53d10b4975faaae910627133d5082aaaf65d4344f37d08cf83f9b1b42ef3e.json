@@ -9,6 +9,7 @@
     "dataset_category":"atmosphericState",
     "datetime_end":"2022-12-31T21:00:00Z",
     "datetime_start":"2022-01-01T00:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.OMIP.MRI.MRI-JRA55-do-1-6-0.atmos.3hrPt.psl.gr.v20240531",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/OMIP/MRI/MRI-JRA55-do-1-6-0/atmos/3hrPt/psl/gr/v20240531/psl_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_202201010000-202212312100.nc",
     "frequency":"3hrPt",

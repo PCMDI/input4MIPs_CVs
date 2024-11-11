@@ -9,6 +9,7 @@
     "dataset_category":"SSTsAndSeaIce",
     "datetime_end":"2022-12-16T12:00:00Z",
     "datetime_start":"1870-01-16T12:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.PCMDI.PCMDI-AMIP-1-1-9.ocean.mon.tos.gn.v20230512",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/PCMDI/PCMDI-AMIP-1-1-9/ocean/mon/tos/gn/v20230512/tos_input4MIPs_SSTsAndSeaIce_CMIP_PCMDI-AMIP-1-1-9_gn_187001-202212.nc",
     "frequency":"mon",
