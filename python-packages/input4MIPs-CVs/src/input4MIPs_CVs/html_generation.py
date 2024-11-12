@@ -404,11 +404,10 @@ def get_delivery_summary_view(
     """
     hard_coded_info = [
         {
-            "source_id": "CEDS-CMIP-2024-07-08, CEDS-CMIP-2024-07-08-supplemental",
+            "source_id": "CEDS-CMIP-2024-10-21, CEDS-CMIP-2024-10-21-supplemental",
             "description": "Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions",
-            "expected_publication": "Week of November 11th, 2024",
             "url": "https://www.pnnl.gov/projects/ceds",
-            "status": "Bugs being fixed, data in preparation",
+            "status": "Preliminary dataset available",
         },
         {
             "source_id": "DRES-CMIP-BB4CMIP7-1-0",
@@ -503,13 +502,13 @@ def get_delivery_summary_view(
             )
 
         else:
-            db_source_id = db[
+            db_source_ids = db[
                 db["source_id"].isin(
                     [v.strip() for v in info_d["source_id"].split(",")]
                 )
             ]
 
-            further_info_url = db_source_id["further_info_url"].unique()
+            further_info_url = db_source_ids["further_info_url"].unique()
             if len(further_info_url) == 1:
                 further_info_url = further_info_url[0]
                 if further_info_url.endswith(".invalid"):
@@ -529,7 +528,7 @@ def get_delivery_summary_view(
             tmp["Source ID"] = info_d["source_id"]
             tmp["Status"] = info_d["status"]
 
-            publication_status = db_source_id["publication_status"].unique()
+            publication_status = db_source_ids["publication_status"].unique()
             if len(publication_status) == 1:
                 publication_status = publication_status[0]
 
@@ -537,50 +536,43 @@ def get_delivery_summary_view(
                 raise NotImplementedError(publication_status)
 
             if publication_status in "published":
-                source_version = db_source_id["source_version"].unique()
-                if len(source_version) == 1:
-                    source_version = source_version[0]
-
-                else:
-                    raise NotImplementedError(source_version)
-
-                if len(db_source_id["source_id"].unique()) != 1:
-                    raise AssertionError()
-
-                # All rows have same source ID, hence can use any here
-                esgf_url = get_url_esgf_for_html_table(
-                    db_source_id.iloc[0, :], ["source_id"]
-                )
-
-                ts_min_str = db_source_id["datetime_start"].dropna().min()
-                ts_min_dt = dt.datetime.strptime(ts_min_str, "%Y-%m-%dT%H:%M:%SZ")
-
-                ts_max_str = db_source_id["datetime_end"].dropna().max()
-                ts_max_dt = dt.datetime.strptime(ts_max_str, "%Y-%m-%dT%H:%M:%SZ")
-
-                frequencies = set(db_source_id["frequency"].tolist())
-                if "day" in frequencies:
-                    ts_min = (
-                        f"{ts_min_dt.year:04}-{ts_min_dt.month:02}-{ts_min_dt.day:02}"
-                    )
-                    ts_max = (
-                        f"{ts_max_dt.year:04}-{ts_max_dt.month:02}-{ts_max_dt.day:02}"
+                disp_urls = []
+                for source_id, source_id_df in db_source_ids.groupby("source_id"):
+                    # All rows have the same source ID, so can use any
+                    esgf_url = get_url_esgf_for_html_table(
+                        source_id_df.iloc[0, :], ["source_id"]
                     )
 
-                elif "mon" in frequencies:
-                    ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}"
-                    ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}"
+                    ts_min_str = source_id_df["datetime_start"].dropna().min()
+                    ts_min_dt = dt.datetime.strptime(ts_min_str, "%Y-%m-%dT%H:%M:%SZ")
 
-                elif "yr" in frequencies:
-                    ts_min = f"{ts_min_dt.year:04}"
-                    ts_max = f"{ts_max_dt.year:04}"
+                    ts_max_str = source_id_df["datetime_end"].dropna().max()
+                    ts_max_dt = dt.datetime.strptime(ts_max_str, "%Y-%m-%dT%H:%M:%SZ")
 
-                else:
-                    raise NotImplementedError(frequencies)
+                    frequencies = set(source_id_df["frequency"].tolist())
+                    if "day" in frequencies:
+                        ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}-{ts_min_dt.day:02}"
+                        ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}-{ts_max_dt.day:02}"
 
-                tmp["ESGF publication status"] = esgf_url.replace(
-                    "Published", f"Available: v{source_version} ({ts_min} to {ts_max})"
-                )
+                    elif "mon" in frequencies:
+                        ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}"
+                        ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}"
+
+                    elif "yr" in frequencies:
+                        ts_min = f"{ts_min_dt.year:04}"
+                        ts_max = f"{ts_max_dt.year:04}"
+
+                    else:
+                        raise NotImplementedError(frequencies)
+
+                    disp_url = esgf_url.replace(
+                        "Published",
+                        f"{source_id} ({ts_min} to {ts_max})",
+                    )
+                    disp_urls.append(disp_url)
+
+                disp_urls_joint = ", ".join(disp_urls)
+                tmp["ESGF publication status"] = f"Available: {disp_urls_joint}"
 
             elif publication_status in ["in_publishing_queue", "registered"]:
                 if "expected_publication" in info_d:

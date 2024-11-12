@@ -9,7 +9,8 @@
 # - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.15.0/`
 #
 # Usage:
-#   bash db-add-tree.sh <tree-to-add-from>
+# This must be run from the root of the repository for the paths to work
+#   bash scripts/pmount-database-generation/db-add-tree.sh <tree-to-add-from>
 
 TREE_TO_ADD_FROM=$1
 echo "Adding data from the tree with root: ${TREE_TO_ADD_FROM}"
