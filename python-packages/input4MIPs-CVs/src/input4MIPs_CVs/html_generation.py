@@ -404,7 +404,7 @@ def get_delivery_summary_view(
     """
     hard_coded_info = [
         {
-            "source_id": "CEDS-CMIP-2024-07-08, CEDS-CMIP-2024-07-08-supplemental",
+            "source_id": "CEDS-CMIP-2024-10-21, CEDS-CMIP-2024-10-21-supplemental",
             "description": "Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions",
             "expected_publication": "Week of November 11th, 2024",
             "url": "https://www.pnnl.gov/projects/ceds",
@@ -544,8 +544,9 @@ def get_delivery_summary_view(
                 else:
                     raise NotImplementedError(source_version)
 
-                if len(db_source_id["source_id"].unique()) != 1:
-                    raise AssertionError()
+                source_id = db_source_id["source_id"].unique()
+                if len(source_id) != 1:
+                    raise NotImplementedError(source_id)
 
                 # All rows have same source ID, hence can use any here
                 esgf_url = get_url_esgf_for_html_table(
