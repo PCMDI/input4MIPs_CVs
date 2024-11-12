@@ -536,13 +536,6 @@ def get_delivery_summary_view(
                 raise NotImplementedError(publication_status)
 
             if publication_status in "published":
-                source_version = db_source_ids["source_version"].unique()
-                if len(source_version) == 1:
-                    source_version = source_version[0]
-
-                else:
-                    raise NotImplementedError(source_version)
-
                 disp_urls = []
                 for source_id, source_id_df in db_source_ids.groupby("source_id"):
                     # All rows have the same source ID, so can use any
