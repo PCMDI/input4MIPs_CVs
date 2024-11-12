@@ -9,6 +9,7 @@
     "dataset_category":"atmosphericState",
     "datetime_end":"1971-12-31T12:00:00Z",
     "datetime_start":"1971-01-01T12:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.OMIP.MRI.MRI-JRA55-do-1-6-0.ocean.day.tos.gn.v20240531",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/OMIP/MRI/MRI-JRA55-do-1-6-0/ocean/day/tos/gn/v20240531/tos_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gn_19710101-19711231.nc",
     "frequency":"day",

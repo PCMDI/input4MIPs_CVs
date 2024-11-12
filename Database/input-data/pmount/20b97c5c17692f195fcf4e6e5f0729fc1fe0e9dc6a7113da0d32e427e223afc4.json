@@ -9,6 +9,7 @@
     "dataset_category":"emissions",
     "datetime_end":null,
     "datetime_start":null,
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.DRES.DRES-CMIP-BB4CMIP7-1-0.atmos.fx.gridcellarea.gn.v20241014",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/DRES/DRES-CMIP-BB4CMIP7-1-0/atmos/fx/gridcellarea/gn/v20241014/gridcellarea_input4MIPs_emissions_CMIP_DRES-CMIP-BB4CMIP7-1-0_gn.nc",
     "frequency":"fx",
@@ -36,7 +37,7 @@
     "time_range":null,
     "timestamp":null,
     "tracking_id":"hdl:21.14100/caecea74-2858-4e59-b7f9-2159613ba8ce",
-    "validated_input4mips":null,
+    "validated_input4mips":true,
     "variable_id":"gridcellarea",
     "version":"2024-10-12",
     "xlink":null

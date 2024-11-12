@@ -9,6 +9,7 @@
     "dataset_category":"atmosphericState",
     "datetime_end":"1990-12-31T12:00:00Z",
     "datetime_start":"1990-01-01T12:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.OMIP.MRI.MRI-JRA55-do-1-6-0.land.day.friver.gr.v20240531",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/OMIP/MRI/MRI-JRA55-do-1-6-0/land/day/friver/gr/v20240531/friver_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_19900101-19901231.nc",
     "frequency":"day",

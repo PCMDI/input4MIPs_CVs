@@ -3,10 +3,13 @@
 #
 # Any file in the tree that is not in the database
 # will be added to the database.
-
-# To run this script, you need an environment with input4mips-validation==0.11.3 installed
+#
+# To run this script, you need an environment with input4mips-validation==0.15.0 installed
 # On nimbus, you can get into that with:
-# - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.11.3/`
+# - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.15.0/`
+#
+# Usage:
+#   bash db-add-tree.sh <tree-to-add-from>
 
 TREE_TO_ADD_FROM=$1
 echo "Adding data from the tree with root: ${TREE_TO_ADD_FROM}"

@@ -9,6 +9,7 @@
     "dataset_category":"atmosphericState",
     "datetime_end":"2004-10-31T12:00:00Z",
     "datetime_start":"2004-10-31T12:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.OMIP.MRI.MRI-JRA55-do-1-6-0.ocean.yrC.vos.gr.v20240531",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/OMIP/MRI/MRI-JRA55-do-1-6-0/ocean/yrC/vos/gr/v20240531/vos_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gr_1999-2009-clim.nc",
     "frequency":"yrC",

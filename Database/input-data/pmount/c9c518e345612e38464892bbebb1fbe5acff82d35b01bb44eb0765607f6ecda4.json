@@ -9,6 +9,7 @@
     "dataset_category":"atmosphericState",
     "datetime_end":"2011-12-31T12:00:00Z",
     "datetime_start":"2011-01-01T12:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.OMIP.MRI.MRI-JRA55-do-1-6-0.seaIce.day.siconc.gn.v20240531",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/OMIP/MRI/MRI-JRA55-do-1-6-0/seaIce/day/siconc/gn/v20240531/siconc_input4MIPs_atmosphericState_OMIP_MRI-JRA55-do-1-6-0_gn_20110101-20111231.nc",
     "frequency":"day",
@@ -36,7 +37,7 @@
     "time_range":"20110101-20111231",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/8de056b9-2ac3-45ff-8cce-d9479f2dfe54",
-    "validated_input4mips":false,
+    "validated_input4mips":true,
     "variable_id":"siconc",
     "version":"20240531",
     "xlink":null

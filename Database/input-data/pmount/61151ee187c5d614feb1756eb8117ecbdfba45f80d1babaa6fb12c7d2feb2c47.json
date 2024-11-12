@@ -9,6 +9,7 @@
     "dataset_category":"emissions",
     "datetime_end":"2022-12-16T12:00:00Z",
     "datetime_start":"1750-01-16T12:00:00Z",
+    "doi":null,
     "esgf_dataset_master_id":"input4MIPs.CMIP6Plus.CMIP.DRES.DRES-CMIP-BB4CMIP7-1-0.atmos.mon.H2percentageTEMF.gn.v20241014",
     "filepath":"/p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/DRES/DRES-CMIP-BB4CMIP7-1-0/atmos/mon/H2percentageTEMF/gn/v20241014/H2percentageTEMF_input4MIPs_emissions_CMIP_DRES-CMIP-BB4CMIP7-1-0_gn_175001-202212.nc",
     "frequency":"mon",
@@ -36,7 +37,7 @@
     "time_range":"175001-202212",
     "timestamp":null,
     "tracking_id":"hdl:21.14100/a551322c-478b-4a0f-86a1-6152d7795d61",
-    "validated_input4mips":null,
+    "validated_input4mips":true,
     "variable_id":"H2percentageTEMF",
     "version":"2024-10-12",
     "xlink":null
