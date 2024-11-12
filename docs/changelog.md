@@ -22,6 +22,44 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.0 (2024-11-12)
+
+
+### 🆕 Features
+
+- - Added preliminary CEDS data to the database. See the docs (specifically dataset overviews) for details.
+  - Added preliminary CEDS data source IDs: "CEDS-CMIP-2024-10-21" and "CEDS-CMIP-2024-10-21-supplemental".
+
+  ([#156](https://github.com/PCMDI/input4MIPs_CVs/pull/156))
+
+### 🎉 Improvements
+
+- Re-validated database with the new version of input4mips-validation.
+  The validation status should be more sensible now. ([#155](https://github.com/PCMDI/input4MIPs_CVs/pull/155))
+
+### 📚 Improved Documentation
+
+- Updated expected anthropogenic emissions delivery date. ([#148](https://github.com/PCMDI/input4MIPs_CVs/pull/148))
+- - Improved the [usage documentation for users][usage-as-a-data-user]
+  - Added an [overview of the GHG concentrations][greenhouse-gas-concentrations]
+  - Added an [overview of the solar data][solar]
+  - Added placeholder docs for all other data providers in [the dataset overviews][dataset-overviews]
+  - Fixed up sub-scripts in docs and related HTML files
+  - Fixed a typo in the post-publication comment for "SOLARIS-HEPPA-CMIP-4-3"
+
+  ([#150](https://github.com/PCMDI/input4MIPs_CVs/pull/150))
+- Added google analytics to the docs. ([#153](https://github.com/PCMDI/input4MIPs_CVs/pull/153))
+- - Marked placeholder CEDS source IDs "CEDS-CMIP-2024-07-08" and "CEDS-CMIP-2024-07-08-supplemental" as never published.
+  - Updated the usage instructions in `scripts/pmount-database-generation/db-add-tree.sh`
+  - Updated the HTML generation to handle data sets that have multiple source IDs.
+
+  ([#156](https://github.com/PCMDI/input4MIPs_CVs/pull/156))
+
+### 🔧 Trivial/Internal Changes
+
+- [#145](https://github.com/PCMDI/input4MIPs_CVs/pull/145)
+
+
 ## input4MIPs CVs v6.5.23 (2024-10-22)
 
 
