@@ -39,10 +39,10 @@
         "mip_era":"CMIP6Plus",
         "source_version":"1.0"
     },
-    "G-UHD-SPv2-1-0":{
-        "contact":"sfiedler@geomar.de",
+    "GEOMAR-UHD-SPv2-1-0":{
+        "contact":" stephanie.fiedler@uni-heidelberg.de",
         "further_info_url":"http://www.tbd.invalid",
-        "institution_id":"G-UHD",
+        "institution_id":"GEOMAR-UHD",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "source_version":"1.0"
