@@ -69,7 +69,7 @@ plugins:
   # https://oprypin.github.io/mkdocs-gen-files/
   - gen-files:
       scripts:
-        - docs/dataset-overviews/write-revision-history.py
+        - docs/dataset-overviews/fill-out-auto-generated-sections.py
 
 
 markdown_extensions:
