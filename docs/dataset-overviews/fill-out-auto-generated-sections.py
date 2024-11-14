@@ -23,6 +23,40 @@ REPO_ROOT = HERE.parents[1]
 CURRENT_DB_PATH = REPO_ROOT / "Database" / "input4MIPs_db_file_entries.json"
 CMIP7_PHASES_SOURCE_IDS_CSV = HERE / "cmip7_phases_source_ids.csv"
 
+PHASES_COMMON_TEXT: dict[str, str] = {
+    "testing": (
+        "This data is for testing purposes only.\n"
+        "Production simulations should not be started based on this data.\n"
+        "(As a further bit of context, you can tell that this is testing data "
+        "because it has a `mip_era` metadata value of 'CMIP6Plus'.\n"
+        "This metadata value appears both in the file's global metadata "
+        "as well as its metadata on ESGF.)\n"
+        "\n"
+        "If you have any feedback, please add it to the "
+        "[relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions)."
+    ),
+    "ar7_fast_track": (
+        "This data will be for the AR7 fast track.\n"
+        "All data sets for use in the fast track "
+        "will be published with a `mip_era` metadata value of 'CMIP7'.\n"
+        "This metadata value will appear both in the file's global metadata "
+        "as well as its metadata on ESGF.\n"
+        "\n"
+        "Further details will follow in early 2025."
+    ),
+    "cmip7": (
+        "This data will be for CMIP7.\n"
+        "All data sets for use in CMIP7 "
+        "will be published with a `mip_era` metadata value of 'CMIP7'.\n"
+        "This metadata value will appear both in the file's global metadata "
+        "as well as its metadata on ESGF.\n"
+        "\n"
+        "Further details will follow after the fast track is underway\n"
+        "(including details about how updates to this data "
+        "will be handled over the lifetime of CMIP7)."
+    ),
+}
+
 with open(CURRENT_DB_PATH) as fh:
     db_source = pd.DataFrame(json.load(fh))
 
@@ -55,7 +89,7 @@ def get_cmip7_phase_source_id_summary(cmip7_phase: str) -> tuple[str, ...]:
     out = []
     for _, row in phase_source_ids.sort_values("forcing_int_id").iterrows():
         if pd.isnull(row.source_id):
-            out.append(f"1. {row.forcing}: No data available for this phase yet")
+            out.append(f"1. *{row.forcing}:* No data available for this phase yet")
             continue
 
         # Check status in the database
@@ -85,7 +119,7 @@ def get_cmip7_phase_source_id_summary(cmip7_phase: str) -> tuple[str, ...]:
             raise ValueError(msg)
 
         out.append(
-            f"1. {row.forcing}: [{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
+            f"1. *{row.forcing}:* [{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
         )
 
     return tuple(out)
@@ -127,6 +161,13 @@ def add_cmip7_phase_source_id_summaries(raw_split: tuple[str, ...]) -> tuple[str
             if line.startswith("<!--- Do not edit this section"):
                 out.append(line)
 
+                out.append("")
+                out.append(PHASES_COMMON_TEXT[cmip7_phase])
+                out.append("")
+
+                out.append("#### Source IDs for use in this phase")
+                out.append("")
+
                 source_id_summary = get_cmip7_phase_source_id_summary(
                     cmip7_phase=cmip7_phase
                 )
@@ -136,7 +177,7 @@ def add_cmip7_phase_source_id_summaries(raw_split: tuple[str, ...]) -> tuple[str
 
                 else:
                     out.append(
-                        "No source IDs are available for use in this phase of CMIP7 yet"
+                        "No source IDs are available for use in this phase of CMIP7 yet."
                     )
 
                 continue
@@ -180,45 +221,56 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
     for _, row in forcing_source_ids.iterrows():
         # TODO: enforce order
         if row.cmip7_phase == "testing":
-            cmip7_phase_pretty = "Testing"
+            cmip7_phase_pretty_title = "Testing"
+            cmip7_phase_pretty = "testing"
 
         elif row.cmip7_phase == "ar7_fast_track":
+            cmip7_phase_pretty_title = "AR7 fast track"
             cmip7_phase_pretty = "AR7 fast track"
 
         elif row.cmip7_phase == "cmip7":
+            cmip7_phase_pretty_title = "CMIP7"
             cmip7_phase_pretty = "CMIP7"
 
         else:
             raise NotImplementedError(row.cmip7_phase)
 
+        out.append(f"#### {cmip7_phase_pretty_title}")
+        out.append("")
+
         if pd.isnull(row.source_id):
-            out.append(f"{cmip7_phase_pretty}: No data available for this phase yet")
+            out.append("No data available for this phase yet.")
             out.append("")
-            continue
 
-        # Skipping check of status in the database here because that is done at the summary level.
-        # If we remove it there, we should add that check back in here.
-        # db_source_id_stub_rows = db_source[
-        #     db_source["source_id"].str.contains(row.source_id_stub)
-        # ]
-        #
-        # # May need a more sophisticated sorting algorithm at some point
-        # source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
-        # source_id_latest = source_ids_sorted[-1]
-        # if (not row.ok_if_not_latest) and row.source_id != source_id_latest:
-        #     msg = (
-        #         f"For {row.forcing=} and {row.cmip7_phase=}, {row.source_id=}."
-        #         f"This is not the latest available source ID ({source_ids_sorted=}). "
-        #         f"Given that {row.ok_if_not_latest=},"
-        #         f"either update the source ID to the latest ({source_id_latest}) "
-        #         f"or set `ok_if_not_latest` for {row.forcing=} to `True` "
-        #         f"in {CMIP7_PHASES_SOURCE_IDS_CSV}. "
-        #     )
-        #     raise ValueError(msg)
+        else:
+            # Skipping check of status in the database here because that is done at the summary level.
+            # If we remove it there, we should add that check back in here.
+            # db_source_id_stub_rows = db_source[
+            #     db_source["source_id"].str.contains(row.source_id_stub)
+            # ]
+            #
+            # # May need a more sophisticated sorting algorithm at some point
+            # source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
+            # source_id_latest = source_ids_sorted[-1]
+            # if (not row.ok_if_not_latest) and row.source_id != source_id_latest:
+            #     msg = (
+            #         f"For {row.forcing=} and {row.cmip7_phase=}, {row.source_id=}."
+            #         f"This is not the latest available source ID ({source_ids_sorted=}). "
+            #         f"Given that {row.ok_if_not_latest=},"
+            #         f"either update the source ID to the latest ({source_id_latest}) "
+            #         f"or set `ok_if_not_latest` for {row.forcing=} to `True` "
+            #         f"in {CMIP7_PHASES_SOURCE_IDS_CSV}. "
+            #     )
+            #     raise ValueError(msg)
 
-        out.append(
-            f"{cmip7_phase_pretty}: [{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
-        )
+            out.append(
+                f"For the {cmip7_phase_pretty} of CMIP7, "
+                "use data with the source ID "
+                f"[{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
+            )
+            out.append("")
+
+        out.append(PHASES_COMMON_TEXT[row.cmip7_phase])
         out.append("")
 
     return tuple(out)
@@ -271,7 +323,7 @@ def add_cmip7_phase_source_ids(
 
                 else:
                     out.append(
-                        "No source IDs are available for use in this phase of CMIP7 yet"
+                        "No source IDs are available for use in this phase of CMIP7 yet."
                     )
 
                 continue
