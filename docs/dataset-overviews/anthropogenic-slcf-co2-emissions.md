@@ -19,7 +19,7 @@
 
 The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.
 
-Testing: No data available for this phase yet
+Testing: [CEDS-CMIP-2024-10-21](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D)
 
 AR7 fast track: No data available for this phase yet
 

@@ -34,7 +34,7 @@ that identifies the data set to use for CMIP7 testing is given below.
 
 <!--- begin-source-id-summary:testing -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-1. Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions: No data available for this phase yet
+1. Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions: [CEDS-CMIP-2024-10-21](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D)
 1. Open biomass burning emissions: [DRES-CMIP-BB4CMIP7-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-1-0%22%7D)
 1. Land use: [UofMD-landState-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-0%22%7D)
 1. Greenhouse gas concentrations: [CR-CMIP-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-3-0%22%7D)

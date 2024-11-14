@@ -62,6 +62,13 @@ def get_cmip7_phase_source_id_summary(cmip7_phase: str) -> tuple[str, ...]:
         db_source_id_stub_rows = db_source[
             db_source["source_id"].str.contains(row.source_id_stub)
         ]
+        if not pd.isnull(row.source_id_stub_ignore):
+            # The CEDS clause
+            db_source_id_stub_rows = db_source_id_stub_rows[
+                ~db_source_id_stub_rows["source_id"].str.contains(
+                    row.source_id_stub_ignore
+                )
+            ]
 
         # May need a more sophisticated sorting algorithm at some point
         source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
