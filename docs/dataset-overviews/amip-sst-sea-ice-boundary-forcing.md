@@ -30,11 +30,11 @@ This metadata value appears both in the file's global metadata as well as its me
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
 
-#### AR7 fast track
+#### CMIP7 AR7 fast track
 
 No data available for this phase yet.
 
-This data will be for the AR7 fast track.
+This data will be for the CMIP7 AR7 fast track.
 All data sets for use in the fast track will be published with a `mip_era` metadata value of 'CMIP7'.
 This metadata value will appear both in the file's global metadata as well as its metadata on ESGF.
 
