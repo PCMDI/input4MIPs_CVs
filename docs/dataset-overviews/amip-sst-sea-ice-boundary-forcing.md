@@ -23,10 +23,9 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 No data available for this phase yet.
 
-This data is for testing purposes only.
-Production simulations should not be started based on this data.
-(As a further bit of context, you can tell that this is testing data because it has a `mip_era` metadata value of 'CMIP6Plus'.
-This metadata value appears both in the file's global metadata as well as its metadata on ESGF.)
+This data is for testing (both of the forcing data and of modelling workflows) only.
+Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
+(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
 

@@ -25,11 +25,10 @@ CMIP7_PHASES_SOURCE_IDS_CSV = HERE / "cmip7_phases_source_ids.csv"
 
 PHASES_COMMON_TEXT: dict[str, str] = {
     "testing": (
-        "This data is for testing purposes only.\n"
-        "Production simulations should not be started based on this data.\n"
-        "(As a further bit of context, you can tell that this is testing data "
-        "because it has a `mip_era` metadata value of 'CMIP6Plus'.\n"
-        "This metadata value appears both in the file's global metadata "
+        "This data is for testing (both of the forcing data and of modelling workflows) only.\n"
+        "Production simulations should not be started based on any data "
+        "that has a `mip_era` value equal to 'CMIP6Plus'.\n"
+        "(The `mip_era` metadata value appears both in each file's global attributes "
         "as well as its metadata on ESGF.)\n"
         "\n"
         "If you have any feedback, please add it to the "
@@ -264,7 +263,7 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
             #     raise ValueError(msg)
 
             out.append(
-                f"For the {cmip7_phase_pretty} of CMIP7, "
+                f"For the {cmip7_phase_pretty} phase of CMIP7, "
                 "use data with the source ID "
                 f"[{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
             )
