@@ -871,7 +871,7 @@ def write_db_view_as_html(
         "<body>",
         f"<p><h1>{page_title}: v{version}</h1><p>",
         "<h4>",
-        "<a href='/database-views/#database-views'>Database views homepage</a>",
+        "<a href='/database-views'>Database views homepage</a>",
         "| <a href='input4MIPs_delivery-summary_CMIP6Plus.html'>Delivery summary view</a>",
         "| <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view</a>",
         "| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view</a>",
