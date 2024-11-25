@@ -13,12 +13,6 @@
 
 ## Summary
 
-CEDS data is available for testing (see the section below).
-However, note that some data has errors and, as a result, has been retracted.
-This has led to a more complex situation, where testing data is published under multiple source IDs.
-For everything except non-aircraft emissions of BC, NH<sub>3</sub>, OC, CO, and CH<sub>4</sub>, use the source ID "CEDS-CMIP-2024-10-21".
-For non-aircraft emissions of BC, NH<sub>3</sub>, OC, CO, and CH<sub>4</sub>, use the source ID "TBD".
-
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases

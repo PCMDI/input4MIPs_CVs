@@ -262,11 +262,30 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
             #     )
             #     raise ValueError(msg)
 
-            out.append(
-                f"For the {cmip7_phase_pretty} phase of CMIP7, "
-                "use data with the source ID "
-                f"[{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
-            )
+            if ";" in row.source_id:
+                # Multiple source IDs
+                source_id_sep = "\n- "
+                source_id_str = source_id_sep.join(
+                    [
+                        f"[{sid}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{sid}%22%7D)"
+                        for sid in row.source_id.split(";")
+                    ]
+                )
+                out.append(
+                    f"For the {cmip7_phase_pretty} of CMIP7, "
+                    f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n\n"
+                    "Retrieving and only using valid data will require some care.\n"
+                    "Please make sure you read the guidance given at the start of this Summary section\n"
+                    "and process the data carefully."
+                )
+
+            else:
+                out.append(
+                    f"For the {cmip7_phase_pretty} of CMIP7, "
+                    "use data with the source ID "
+                    f"[{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
+                )
+
             out.append("")
 
         out.append(PHASES_COMMON_TEXT[row.cmip7_phase])

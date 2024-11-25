@@ -1,5 +1,5 @@
 forcing_int_id,forcing,cmip7_phase,source_id_stub,source_id_stub_ignore,source_id,ok_if_not_latest
-1,Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions,testing,CEDS-CMIP,supplemental,CEDS-CMIP-2024-10-21,False
+1,Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions,testing,CEDS-CMIP,supplemental,"CEDS-CMIP-2024-10-21;CEDS-CMIP-2024-11-30",True
 1,Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions,ar7_fast_track,CEDS-CMIP,supplemental,,False
 1,Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions,cmip7,CEDS-CMIP,supplemental,,False
 2,Open biomass burning emissions,testing,DRES-CMIP-BB4CMIP7,,DRES-CMIP-BB4CMIP7-1-0,False
