@@ -223,9 +223,9 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
     out.loc[out["source_id"] == "CEDS-CMIP-2024-07-08", "publication_status"] = (
         "never_published"
     )
-    out.loc[out["source_id"] == "CEDS-CMIP-2024-07-08-supplemental", "publication_status"] = (
-        "never_published"
-    )
+    out.loc[
+        out["source_id"] == "CEDS-CMIP-2024-07-08-supplemental", "publication_status"
+    ] = "never_published"
 
     # Source IDs in publishing queue
     # out.loc[out["source_id"] == "CEDS-CMIP-2024-07-08", "publication_status"] = (
@@ -267,6 +267,15 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
         "(spot.colorado.edu/~koppg/TSI/TSI_Composite-SIST.txt). "
         "The original comment from the data provider is "
         '<a href="https://github.com/PCMDI/input4MIPs_CVs/issues/66#issuecomment-2422882167">here</a>. '
+        'For further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release notes</a>.'
+    )
+    out.loc[
+        out["source_id"] == "SOLARIS-HEPPA-CMIP-4-4", "comment_post_publication"
+    ] = (
+        "v4.5 resolves issues with MEE short-term variability. "
+        "There are no changes to SSI/TSI. "
+        "The original comment from the data provider is "
+        '<a href="https://github.com/PCMDI/input4MIPs_CVs/issues/139#issuecomment-2493311999">here</a>. '
         'For further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release notes</a>.'
     )
 
