@@ -10,13 +10,10 @@
 
 ## Summary
 
-The solar dataset is rapidly approaching a final version and is
-[available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-4%22%7D).
-This version is for testing only, do not use it for any simluations you're not willing to throw away.
-We are collecting bugs in [this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19)
-and aim to release a new version before the end of 2025.
-If you find any other issues, please add them to
-[the discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
+The solar dataset is rapidly approaching a final version.
+The available version(s) is for testing only, do not use it for any simluations you're not willing to throw away.
+We are collecting bugs and other issues in
+[this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
