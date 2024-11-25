@@ -408,24 +408,28 @@ def get_delivery_summary_view(
             "description": "Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions",
             "url": "https://www.pnnl.gov/projects/ceds",
             "status": "Preliminary dataset available",
+            "input4MIPs_internal_page": "anthropogenic-slcf-co2-emissions",
         },
         {
             "source_id": "DRES-CMIP-BB4CMIP7-1-0",
             "description": "Open biomass burning emissions",
             "url": "http://www.globalfiredata.org",
             "status": "Preliminary dataset available",
+            "input4MIPs_internal_page": "open-biomass-burning-emissions",
         },
         {
             "source_id": "UofMD-landState-3-0",
             "description": "Land use",
             "url": "http://luh.umd.edu",
             "status": "Preliminary dataset available",
+            "input4MIPs_internal_page": "land-use",
         },
         {
             "source_id": "CR-CMIP-0-3-0",
             "description": "Greenhouse gas concentrations",
             "url": None,
             "status": "Preliminary dataset available",
+            "input4MIPs_internal_page": "greenhouse-gas-concentrations",
         },
         {
             "source_id": None,  # TBD
@@ -433,12 +437,14 @@ def get_delivery_summary_view(
             "expected_publication": "January 2025",
             "url": None,  # TBD
             "status": "Data in preparation",
+            "input4MIPs_internal_page": "co2-isotopes",
         },
         {
             "source_id": "UOEXETER-CMIP-1-1-3",
             "description": "Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties",
             "url": None,
             "status": "Preliminary dataset available",
+            "input4MIPs_internal_page": "stratospheric-volcanic-so2-emissions-aod",
         },
         {
             "source_id": None,  # TBD
@@ -446,6 +452,7 @@ def get_delivery_summary_view(
             "expected_publication": "~January 2025; 3 months after dependent datasets",
             "url": None,
             "status": "Depends on 1, 2, 4, 5 and 8",
+            "input4MIPs_internal_page": "ozone",
         },
         {
             "source_id": None,  # TBD
@@ -453,18 +460,21 @@ def get_delivery_summary_view(
             "expected_publication": "~January 2025; 3 months after dependent datasets",
             "url": None,
             "status": "Depends on 1, 2, 4, 5 and 8",
+            "input4MIPs_internal_page": "nitrogen-deposition",
         },
         {
             "source_id": "SOLARIS-HEPPA-CMIP-4-4",
             "description": "Solar",
             "url": "https://solarisheppa.geomar.de/cmip7",
             "status": "Preliminary dataset available",
+            "input4MIPs_internal_page": "solar",
         },
         {
             "source_id": "PCMDI-AMIP-1-1-9",
             "description": "AMIP sea-surface temperature and sea-ice boundary forcing",
             "url": "https://pcmdi.llnl.gov/mips/amip/",
             "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release ",
+            "input4MIPs_internal_page": "amip-sst-sea-ice-boundary-forcing",
         },
         {
             "source_id": None,  # TBD
@@ -472,6 +482,7 @@ def get_delivery_summary_view(
             "expected_publication": "~November 2024; Expected a month after dependent datasets",
             "url": None,
             "status": "Depends on 1, test dataset being produced in the meantime",
+            "input4MIPs_internal_page": "aerosol-optical-properties-macv2-sp",
         },
         {
             "source_id": None,  # TBD
@@ -479,6 +490,7 @@ def get_delivery_summary_view(
             "expected_publication": "Unknown: data provider TBD",
             "url": None,
             "status": "Unknown: data provider TBD",
+            "input4MIPs_internal_page": "population",
         },
     ]
 
@@ -486,6 +498,7 @@ def get_delivery_summary_view(
     for i, info_d in enumerate(hard_coded_info):
         tmp = {}
         tmp["Dataset #"] = i + 1
+        input4MIPs_internal_page = info_d["input4MIPs_internal_page"]
 
         if info_d["source_id"] is None:
             if info_d["url"] is not None:
@@ -583,9 +596,23 @@ def get_delivery_summary_view(
             else:
                 raise NotImplementedError(publication_status)
 
+        internal_docs_link = f"Internal docs: <a href='../dataset-overviews/{input4MIPs_internal_page}' target='_blank'>here</a>"
+        tmp["Forcing dataset"] = (
+            f"<b>{tmp['Forcing dataset']}</b></br>{internal_docs_link}"
+        )
+
         res_l.append(tmp)
 
     res = pd.DataFrame(res_l)
+    res = res[
+        [
+            "Dataset #",
+            "Forcing dataset",
+            "Source ID",
+            "Status",
+            "ESGF publication status",
+        ]
+    ]
 
     return res
 
