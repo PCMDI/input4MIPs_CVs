@@ -21,20 +21,19 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### Testing
 
-For the testing of CMIP7, use data with the source ID [UOEXETER-CMIP-1-1-3](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-1-3%22%7D)
+For the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-1-3](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-1-3%22%7D)
 
-This data is for testing purposes only.
-Production simulations should not be started based on this data.
-(As a further bit of context, you can tell that this is testing data because it has a `mip_era` metadata value of 'CMIP6Plus'.
-This metadata value appears both in the file's global metadata as well as its metadata on ESGF.)
+This data is for testing (both of the forcing data and of modelling workflows) only.
+Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
+(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
 
-#### AR7 fast track
+#### CMIP7 AR7 fast track
 
 No data available for this phase yet.
 
-This data will be for the AR7 fast track.
+This data will be for the CMIP7 AR7 fast track.
 All data sets for use in the fast track will be published with a `mip_era` metadata value of 'CMIP7'.
 This metadata value will appear both in the file's global metadata as well as its metadata on ESGF.
 

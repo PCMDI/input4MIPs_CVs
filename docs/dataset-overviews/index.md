@@ -27,10 +27,9 @@ in particular models participating in [CMIP](https://www.wcrp-climate.org/wgcm-c
 <!--- begin-source-id-summary:testing -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 
-This data is for testing purposes only.
-Production simulations should not be started based on this data.
-(As a further bit of context, you can tell that this is testing data because it has a `mip_era` metadata value of 'CMIP6Plus'.
-This metadata value appears both in the file's global metadata as well as its metadata on ESGF.)
+This data is for testing (both of the forcing data and of modelling workflows) only.
+Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
+(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
 
@@ -50,12 +49,12 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
 
-### AR7 Fast Track
+### CMIP7 AR7 Fast Track
 
 <!--- begin-source-id-summary:ar7_fast_track -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 
-This data will be for the AR7 fast track.
+This data will be for the CMIP7 AR7 fast track.
 All data sets for use in the fast track will be published with a `mip_era` metadata value of 'CMIP7'.
 This metadata value will appear both in the file's global metadata as well as its metadata on ESGF.
 
