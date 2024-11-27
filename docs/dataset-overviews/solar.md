@@ -64,7 +64,7 @@ Further details will follow after the fast track is underway
 
 There is a dedicated pre-industrial control file.
 See the files with `fx` in their name
-(`fx` stands for fixed, which fits 
+(`fx` stands for fixed, which is used
 because the pre-industrial control file is a fixed field,
 custom for the pre-industrial control experiment).
 
