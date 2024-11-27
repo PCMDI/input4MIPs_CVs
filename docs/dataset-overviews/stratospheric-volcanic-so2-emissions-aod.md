@@ -53,6 +53,19 @@ Further details will follow after the fast track is underway
 
 <!--- end-cmip7-phases-source-ids -->
 
+<!--- placeholder for piControl recommendation -->
+## Navigating the data
+
+### Recommendation for pre-industrial control
+
+There is a dedicated pre-industrial control file.
+See the files with `fx` in their name
+(`fx` stands for fixed, which is used
+because the pre-industrial control file is a fixed field,
+custom for the pre-industrial control experiment).
+
+<!--- end of placeholder for piControl recommendation -->
+
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 <!--- No revisions, hence section is blank -->

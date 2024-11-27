@@ -53,6 +53,16 @@ Further details will follow after the fast track is underway
 
 <!--- end-cmip7-phases-source-ids -->
 
+<!--- placeholder for piControl recommendation -->
+## Navigating the data
+
+### Recommendation for pre-industrial control
+
+Apply the 1850 land-use state as a constant.
+Do not apply any land-use change or other management.
+
+<!--- end of placeholder for piControl recommendation -->
+
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 <!--- No revisions, hence section is blank -->
