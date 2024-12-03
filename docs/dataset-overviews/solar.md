@@ -114,8 +114,9 @@ provides a detailed analysis of the changes from earlier versions.
 
 ### SOLARIS-HEPPA-CMIP-4-4
 
-v4.5 resolves issues with MEE short-term variability. There are no changes to SSI/TSI. The original
-comment from the data provider is <a
+v4.5 resolves issues with MEE short-term variability. Hence v4.4 is retracted. There are no changes
+to SSI/TSI (so, if you have used v4.4 for SSI/TSI, you do not need to restart). The original comment
+from the data provider is <a
 href="https://github.com/PCMDI/input4MIPs_CVs/issues/139#issuecomment-2493311999">here</a>. For
 further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release
 notes</a>.
