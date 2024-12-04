@@ -131,6 +131,15 @@
         "target_mip":"CMIP",
         "source_version":"4.4"
     },
+    "SOLARIS-HEPPA-CMIP-4-5":{
+        "contact":"bernd@iaa.es",
+        "further_info_url":"http://solarisheppa.geomar.de/cmip7",
+        "institution_id":"SOLARIS-HEPPA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "target_mip":"CMIP",
+        "source_version":"4.5"
+    },
     "UOEXETER-CMIP-0-1-0":{
         "contact":"t.aubry@exeter.ac.uk",
         "further_info_url":"http://www.tbd.invalid",

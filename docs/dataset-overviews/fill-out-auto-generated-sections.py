@@ -411,7 +411,7 @@ def add_revision_history(
     out = []
     in_revision_history = False
     for line in raw_split:
-        if line.startswith("<!--- begin-revision-history:"):
+        if line.startswith("<!--- begin-revision-history"):
             in_revision_history = True
             out.append(line)
             continue

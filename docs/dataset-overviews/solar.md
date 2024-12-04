@@ -10,13 +10,10 @@
 
 ## Summary
 
-The solar dataset is rapidly approaching a final version and is
-[available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-4%22%7D).
-This version is for testing only, do not use it for any simluations you're not willing to throw away.
-We are collecting bugs in [this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19)
-and aim to release a new version before the end of 2025.
-If you find any other issues, please add them to
-[the discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
+The solar dataset is rapidly approaching a final version.
+The available version(s) is for testing only, do not use it for any simluations you're not willing to throw away.
+We are collecting bugs and other issues in
+[this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -26,7 +23,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### Testing
 
-For the testing phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-CMIP-4-4](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-4%22%7D)
+For the testing phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-CMIP-4-5](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-5%22%7D)
 
 This data is for testing (both of the forcing data and of modelling workflows) only.
 Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
@@ -114,6 +111,15 @@ provides a detailed analysis of the changes from earlier versions.
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### SOLARIS-HEPPA-CMIP-4-4
+
+v4.5 resolves issues with MEE short-term variability. Hence v4.4 is retracted. There are no changes
+to SSI/TSI (so, if you have used v4.4 for SSI/TSI, you do not need to restart). The original comment
+from the data provider is <a
+href="https://github.com/PCMDI/input4MIPs_CVs/issues/139#issuecomment-2493311999">here</a>. For
+further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release
+notes</a>.
 
 ### SOLARIS-HEPPA-CMIP-4-3
 

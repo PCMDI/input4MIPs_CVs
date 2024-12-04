@@ -463,7 +463,7 @@ def get_delivery_summary_view(
             "input4MIPs_internal_page": "nitrogen-deposition",
         },
         {
-            "source_id": "SOLARIS-HEPPA-CMIP-4-4",
+            "source_id": "SOLARIS-HEPPA-CMIP-4-5",
             "description": "Solar",
             "url": "https://solarisheppa.geomar.de/cmip7",
             "status": "Preliminary dataset available",
@@ -545,10 +545,13 @@ def get_delivery_summary_view(
             if len(publication_status) == 1:
                 publication_status = publication_status[0]
 
+            elif set(publication_status) == {"published", "retracted"}:
+                publication_status = "published_with_partial_retraction"
+
             else:
                 raise NotImplementedError(publication_status)
 
-            if publication_status in "published":
+            if publication_status in ["published", "published_with_partial_retraction"]:
                 disp_urls = []
                 for source_id, source_id_df in db_source_ids.groupby("source_id"):
                     # All rows have the same source ID, so can use any
@@ -585,7 +588,15 @@ def get_delivery_summary_view(
                     disp_urls.append(disp_url)
 
                 disp_urls_joint = ", ".join(disp_urls)
-                tmp["ESGF publication status"] = f"Available: {disp_urls_joint}"
+
+                if publication_status == "published":
+                    tmp["ESGF publication status"] = f"Available: {disp_urls_joint}"
+                elif publication_status == "published_with_partial_retraction":
+                    tmp["ESGF publication status"] = (
+                        f"Available (but some data has been retracted, be careful!): {disp_urls_joint}"
+                    )
+                else:
+                    raise NotImplementedError(publication_status)
 
             elif publication_status in ["in_publishing_queue", "registered"]:
                 if "expected_publication" in info_d:
@@ -593,6 +604,14 @@ def get_delivery_summary_view(
                         f"Expected: {info_d['expected_publication']}"
                     )
 
+            elif publication_status == "retracted":
+                msg = (
+                    f"publication status for source_id={info_d['source_id']} "
+                    f"is {publication_status}. "
+                    "Please check the source ID being used in the summary view."
+                )
+                raise ValueError(msg)
+                
             else:
                 raise NotImplementedError(publication_status)
 

@@ -23,7 +23,7 @@ forcing_int_id,forcing,cmip7_phase,source_id_stub,source_id_stub_ignore,source_i
 8,Nitrogen deposition,testing,,,,False
 8,Nitrogen deposition,ar7_fast_track,,,,False
 8,Nitrogen deposition,cmip7,,,,False
-9,Solar,testing,SOLARIS-HEPPA-CMIP,,SOLARIS-HEPPA-CMIP-4-4,False
+9,Solar,testing,SOLARIS-HEPPA-CMIP,,SOLARIS-HEPPA-CMIP-4-5,False
 9,Solar,ar7_fast_track,SOLARIS-HEPPA-CMIP,,,False
 9,Solar,cmip7,SOLARIS-HEPPA-CMIP,,,False
 10,AMIP sea-surface temperature and sea-ice boundary forcing,testing,,,,False
