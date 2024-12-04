@@ -34,7 +34,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 For the testing of CMIP7, you will need data from the following source IDs:
 
 - [CEDS-CMIP-2024-10-21](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D)
-- [CEDS-CMIP-2024-11-30](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-30%22%7D).
+- [CEDS-CMIP-2024-11-25](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25%22%7D).
 
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of this Summary section
