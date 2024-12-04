@@ -14,10 +14,9 @@
 ## Summary
 
 CEDS data is available for testing (see the section below).
-However, note that some data has errors and, as a result, has been retracted.
-This has led to a more complex situation, where testing data is published under multiple source IDs.
+However, note that CEDS' testing data is published under multiple source IDs.
 For everything except aircraft emissions and speciatated VOCs, use the source ID "CEDS-CMIP-2024-11-25".
-For everything aircraft emissions and speciatated VOCs, use the source ID "CEDS-CMIP-2024-10-21"
+For aircraft emissions and speciatated VOCs, use the source ID "CEDS-CMIP-2024-10-21"
 (technically, bulk NMVOCs can use either source ID, the data is simply duplicated).
 It is also worth noting that solid biofuel emissions and speciatated VOCs 
 have the suffix "-supplemental" added to their source ID
