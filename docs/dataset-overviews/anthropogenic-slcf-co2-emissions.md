@@ -13,6 +13,16 @@
 
 ## Summary
 
+CEDS data is available for testing (see the section below).
+However, note that some data has errors and, as a result, has been retracted.
+This has led to a more complex situation, where testing data is published under multiple source IDs.
+For everything except aircraft emissions and speciatated VOCs, use the source ID "CEDS-CMIP-2024-11-25".
+For everything aircraft emissions and speciatated VOCs, use the source ID "CEDS-CMIP-2024-10-21"
+(technically, bulk NMVOCs can use either source ID, the data is simply duplicated).
+It is also worth noting that solid biofuel emissions and speciatated VOCs 
+have the suffix "-supplemental" added to their source ID
+(to avoid inadvertent double counting).
+
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
@@ -21,7 +31,14 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### Testing
 
-For the testing phase of CMIP7, use data with the source ID [CEDS-CMIP-2024-10-21](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D)
+For the testing of CMIP7, you will need data from the following source IDs:
+
+- [CEDS-CMIP-2024-10-21](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D)
+- [CEDS-CMIP-2024-11-30](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-30%22%7D).
+
+Retrieving and only using valid data will require some care.
+Please make sure you read the guidance given at the start of this Summary section
+and process the data carefully.
 
 This data is for testing (both of the forcing data and of modelling workflows) only.
 Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.

@@ -281,7 +281,7 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
 
             else:
                 out.append(
-                    f"For the {cmip7_phase_pretty} of CMIP7, "
+                    f"For the {cmip7_phase_pretty} phase of CMIP7, "
                     "use data with the source ID "
                     f"[{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
                 )
