@@ -24,5 +24,5 @@ do
     	--cv-source "gh:main" \
         --write-in-drs "${rewrite_target}" \
     	"${file_to_rewrite}"
-        #--allow-cf-checker-warnings \
+        # --allow-cf-checker-warnings \
 done
