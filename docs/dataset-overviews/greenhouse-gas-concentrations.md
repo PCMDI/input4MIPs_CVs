@@ -26,7 +26,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### Testing
 
-For the testing phase of CMIP7, use data with the source ID [CR-CMIP-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-3-0%22%7D)
+For the testing phase of CMIP7, use data with the source ID [CR-CMIP-0-4-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-4-0%22%7D)
 
 This data is for testing (both of the forcing data and of modelling workflows) only.
 Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
@@ -271,5 +271,15 @@ and create new versions of the dataset between now and the end of 2024.
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
+## Revision history
+
+### CR-CMIP-0-3-0
+
+A number of bugs were identified in v0.3.0, see
+https://github.com/PCMDI/input4MIPs_CVs/discussions/144. As far as we are aware, v0.4.0 fixes all
+major bugs identified in v0.3.0. For the full list of updates since v0.3.0 (and before), see
+https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md. For
+further analysis of the changes between versions, see https://github.com/climate-resource/CMIP6-vs-
+CMIP7-GHG-Concentrations.
+
 <!--- end-revision-history -->
