@@ -13,10 +13,8 @@
 A first version of the greenhouse gas concentrations is 
 [available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-3-0%22%7D).
 This version is for testing only, do not use it for any simluations you're not willing to throw away.
-We are collecting bugs in [this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/144)
-and aim to release a new version which addresses these bugs in December 2025.
-If you find any other issues, please add them to
-[the discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/144).
+If you find any issues, please 
+[create an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new).
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -122,7 +120,7 @@ and compared to CMIP6 here: https://github.com/climate-resource/CMIP6-vs-CMIP7-G
 ### File formats and naming
 
 The file formats are generally close to CMIP6.
-There are two key changes:
+There are three key changes:
 
 1. we have split the global-mean and hemispheric-mean data into separate files.
    In CMIP6, this data was in the same file (with a grid label of `GMNHSH`).
@@ -130,12 +128,29 @@ There are two key changes:
    a) `GMNHSH` is not a grid label recognised in the CMIP CVs and
    b) having global-mean and hemispheric-mean data in the same file required us to introduce a 'sector' co-ordinate, 
       which was confusing and does not follow the CF-conventions.
+1. we have split the files into different time components.
+   One file goes from year 1 to year 999 (inclusive).
+   The next file goes from year 1000 to year 1749 (inclusive).
+   The last file goes from year 1750 to year 2022 (inclusive).
 1. we have simplified the names of all the variables.
    They are now simply the names of the gases,
    for example we now use "co2" rather than "mole_fraction_of_carbon_dioxide"
    A full mapping is provided below 
    (but, a word of warning: this mapping is hard to check within the scope of this repo 
    so please be careful when using it)
+
+There is one more minor change.
+The data now starts in year one, rather than year zero.
+We do this because year zero doesn't exist in most calendars
+(and we want to avoid users of the data having to hack around this 
+when using standard data analysis tools).
+In a future version, 
+we will also split our data into multiple files
+(see [this comment](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/issues/29#issuecomment-2126359264)).
+so if you don't care about data pre-1750, you don't need to load it from disk
+(or worry about any of the calendard headaches that pre-1750 data introduces).
+
+#### Variable name mapping
 
 ```python
 CMIP6_TO_CMIP7_VARIABLE_MAP = {
@@ -245,29 +260,14 @@ CMIP7_TO_NORMAL_VARIABLE_MAP = {
 }
 ```
 
-There is one more minor change.
-The data now starts in year one, rather than year zero.
-We do this because year zero doesn't exist in most calendars
-(and we want to avoid users of the data having to hack around this 
-when using standard data analysis tools).
-In a future version, 
-we will also split our data into multiple files
-(see [this comment](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/issues/29#issuecomment-2126359264)).
-so if you don't care about data pre-1750, you don't need to load it from disk
-(or worry about any of the calendard headaches that pre-1750 data introduces).
-
 ### Data
 
-At present, there are a number of changes from CMIP6.
-The CMIP6 data can be found 
+The analysis of the differences from CMIP6 is done in 
+[this repository](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
+At present, the changes from CMIP6 are minor,
+with the maximum difference in effective radiative forcing terms being 0.02 W / m^2.
+For reference, the CMIP6 data can be found 
 [on the ESGF under the "CMIP6" project and source ID "UoM-CMIP-1-2-0"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22source_id%22%3A%22UoM-CMIP-1-2-0%22%2C%22mip_era%22%3A%22CMIP6%22%7D).
-As we fix the various issues, we expect these changes to reduce.
-From [the analysis done to date](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations),
-there are small changes in CO<sub>2</sub>, CH<sub>4</sub> and N<sub>2</sub>O
-(the most radiatively active species alongside CFC12)
-so we expect only small differences in the radiative impact of these changes in forcings.
-We will expand this section as we do more analysis 
-and create new versions of the dataset between now and the end of 2024.
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
