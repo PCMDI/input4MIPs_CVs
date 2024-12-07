@@ -425,9 +425,9 @@ def get_delivery_summary_view(
             "input4MIPs_internal_page": "land-use",
         },
         {
-            "source_id": "CR-CMIP-0-3-0",
+            "source_id": "CR-CMIP-0-4-0",
             "description": "Greenhouse gas concentrations",
-            "url": None,
+            "url": "https://github.com/climate-resource/CMIP-GHG-Concentration-Generation",
             "status": "Preliminary dataset available",
             "input4MIPs_internal_page": "greenhouse-gas-concentrations",
         },
@@ -611,7 +611,7 @@ def get_delivery_summary_view(
                     "Please check the source ID being used in the summary view."
                 )
                 raise ValueError(msg)
-                
+
             else:
                 raise NotImplementedError(publication_status)
 
