@@ -3,39 +3,36 @@
 <!--- source_id_stub="tbd" -->
 # Aerosol optical properties/MACv2-SP
 
-**This section is a work in progress.**
-**For a first draft, see https://github.com/PCMDI/input4MIPs_CVs/pull/146**
-
 ## Key contacts
 
 - Names: Stephanie Fielder
-- Emails: \[TBD (provider moving institutes)\]
+- Emails: stephanie.fiedler@uni-heidelberg.de
 
 ## Summary
 
-<!--- begin-cmip7-phases-source-ids -->
-<!--- Do not edit this section, it is automatically updated when the docs are built -->
-### Source IDs for CMIP7 phases
+The aerosol optical properties, simple plumes data set does not follow the usual practice for input4MIPs datasets.
+The reason is that these files are directly used by Fortran forcing routines,
+so making them fit the usual specification helps no-one.
+As a result, the information provided here is limited.
+For questions, please use the contact information at the top of this page.
 
-The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.
+That said, we can offer some pointers.
+The methods used for producing this data are stable 
+(see [Stevens et al., 2017](https://gmd.copernicus.org/articles/10/433/2017/)).
+However, the data is entirely dependent on the emissions
+(both biomass burning and anthropogenic),
+so this dataset can only be considered stable once these input emissions are stable.
+
+### Datasets for CMIP7 phases
 
 #### Testing
 
-No data available for this phase yet.
-
-This data is for testing (both of the forcing data and of modelling workflows) only.
-Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
-(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
-
-If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
+For testing, please use the data at this zenodo record
+[zenodo: https://doi.org/10.5281/zenodo.14512962](https://doi.org/10.5281/zenodo.14512962).
 
 #### CMIP7 AR7 fast track
 
 No data available for this phase yet.
-
-This data will be for the CMIP7 AR7 fast track.
-All data sets for use in the fast track will be published with a `mip_era` metadata value of 'CMIP7'.
-This metadata value will appear both in the file's global metadata as well as its metadata on ESGF.
 
 Further details will follow in early 2025.
 
@@ -43,25 +40,20 @@ Further details will follow in early 2025.
 
 No data available for this phase yet.
 
-This data will be for CMIP7.
-All data sets for use in CMIP7 will be published with a `mip_era` metadata value of 'CMIP7'.
-This metadata value will appear both in the file's global metadata as well as its metadata on ESGF.
-
 Further details will follow after the fast track is underway
 (including details about how updates to this data will be handled over the lifetime of CMIP7).
 
-<!--- end-cmip7-phases-source-ids -->
-
-<!--- placeholder for piControl recommendation -->
 ## Navigating the data
 
 ### Recommendation for pre-industrial control
 
-Apply the 1850 value as a constant.
+Use the same approach as is used for anthropogenic emissions.
 
-<!--- end of placeholder for piControl recommendation -->
+### Grids and frequencies provided
 
-<!--- begin-revision-history -->
-<!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
-<!--- end-revision-history -->
+The aerosol optical properties provides scaling factors/parameters 
+to calculate aerosol plumes associated with aerosol emissions
+for models that do not calculate this themselves.
+The provided data is only parameters.
+As a data user, you have to calculate gridded data/input yourself using the relevant Fortran routines.
+For details, see the Zenodo records provided.
