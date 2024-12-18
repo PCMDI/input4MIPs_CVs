@@ -27,8 +27,8 @@ so this dataset can only be considered stable once these input emissions are sta
 
 #### Testing
 
-For testing, please use the data at this zenodo record
-[zenodo: https://doi.org/10.5281/zenodo.14512962](https://doi.org/10.5281/zenodo.14512962).
+For testing, please use the data at this zenodo record:
+[https://doi.org/10.5281/zenodo.14512962](https://doi.org/10.5281/zenodo.14512962).
 
 #### CMIP7 AR7 fast track
 

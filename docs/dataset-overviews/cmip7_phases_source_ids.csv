@@ -29,9 +29,6 @@ forcing_int_id,forcing,cmip7_phase,source_id_stub,source_id_stub_ignore,source_i
 10,AMIP sea-surface temperature and sea-ice boundary forcing,testing,,,,False
 10,AMIP sea-surface temperature and sea-ice boundary forcing,ar7_fast_track,,,,False
 10,AMIP sea-surface temperature and sea-ice boundary forcing,cmip7,,,,False
-11,Aerosol optical properties/MACv2-SP,testing,,,,False
-11,Aerosol optical properties/MACv2-SP,ar7_fast_track,,,,False
-11,Aerosol optical properties/MACv2-SP,cmip7,,,,False
 12,Population density,testing,,,,False
 12,Population density,ar7_fast_track,,,,False
 12,Population density,cmip7,,,,False

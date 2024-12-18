@@ -45,7 +45,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Nitrogen deposition:* No data available for this phase yet
 1. *Solar:* [SOLARIS-HEPPA-CMIP-4-5](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-5%22%7D)
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
-1. *Aerosol optical properties/MACv2-SP:* No data available for this phase yet
+1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
 1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
 
