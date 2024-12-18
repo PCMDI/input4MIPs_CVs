@@ -22,6 +22,38 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.1 (2024-12-18)
+
+
+### 🗑️ Deprecations
+
+- Captured retractions of parts of the CEDS-CMIP-2024-10-21 data. ([#159](https://github.com/PCMDI/input4MIPs_CVs/pull/159))
+- - Retracted CR-CMIP-0-3-0.
+  - Retracted bulk NMVOC from CEDS-CMIP-2024-11-25.
+
+  ([#162](https://github.com/PCMDI/input4MIPs_CVs/pull/162))
+
+### 🆕 Features
+
+- Added the SOLARIS-HEPPA-CMIP-4-5 dataset. ([#159](https://github.com/PCMDI/input4MIPs_CVs/pull/159))
+- Added CEDS-CMIP-2024-11-25 and CEDS-CMIP-2024-11-25-supplemental data. ([#161](https://github.com/PCMDI/input4MIPs_CVs/pull/161))
+- Added the CR-CMIP-0-4-0 dataset. ([#162](https://github.com/PCMDI/input4MIPs_CVs/pull/162))
+
+### 📚 Improved Documentation
+
+- Added information about which source ID to use for which phase of CMIP7 in the [dataset overviews][dataset-overviews] section. ([#151](https://github.com/PCMDI/input4MIPs_CVs/pull/151))
+- Simplified the description of the testing phase in the dataset overview pages and renamed 'AR7 fast track' to 'CMIP7 AR7 fast track' to avoid confusion. ([#157](https://github.com/PCMDI/input4MIPs_CVs/pull/157))
+- - Fixed up the broken "Database views homepage" link in the database views pages
+  - Updated the delivery summary view to include a link to our internal documentation pages
+  - Updated the greenhouse gas concentration data overview to include the mapping between CMIP6, CMIP7 and 'normal' names
+
+  ([#160](https://github.com/PCMDI/input4MIPs_CVs/pull/160))
+
+### 🔧 Trivial/Internal Changes
+
+- [#160](https://github.com/PCMDI/input4MIPs_CVs/pull/160)
+
+
 ## input4MIPs CVs v6.6.0 (2024-11-12)
 
 
