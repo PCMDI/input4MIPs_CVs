@@ -5,11 +5,6 @@ They are not meant to be exhaustive, but they may help.
 
 ## esgpull
 
-<!-- TODO: Zeb to write -->
-
-- use the example of [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations]()
-  which uses esgpull
-
 It is possible to download datasets using [esgpull](https://esgf.github.io/esgf-download/).
 The installation instructions are [here](https://esgf.github.io/esgf-download/installation/).
 
@@ -67,6 +62,9 @@ esgpull update -y --tag ${SEARCH_TAG}
 
 esgpull download --tag ${SEARCH_TAG}
 ```
+
+If you want to see this flow being used within a wider repository,
+please see [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations]().
 
 Unfortunately, there is no uniform set of flags that can be used across all datasets.
 Please see the specific details of each dataset for details about each dataset.
