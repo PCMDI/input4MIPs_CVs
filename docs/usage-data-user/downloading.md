@@ -3,6 +3,17 @@
 Here we provide some examples of how to download data.
 They are not meant to be exhaustive, but they may help.
 
+## Understanding what you need
+
+Unfortunately, given the variety of models, approaches and requirements,
+there is no uniform set of flags that can be used across all datasets
+to 'just get the latest CMIP DECK data'.
+Instead, please see the specific details of each dataset for details about what is available.
+These pages include information about available grids and frequencies 
+and what to use for the pre-industrial control experiments.
+[The datasets overview page is here](../dataset-overviews/index.md),
+from which you can access the information page for each individual dataset.
+
 ## esgpull - commandline ESGF download software
 
 It is possible to download datasets using [esgpull](https://esgf.github.io/esgf-download/).
@@ -25,8 +36,8 @@ Data can then be downloaded as shown below.
 The key thing is to make sure that you are getting the source ID you are interested in.
 (The below example uses the shell commands.
 Obviously you can drive the shell in your programming language of choice,
-which might be a more convenient option.)
-
+which might be a more convenient option, 
+particularly if you require specific combinations of grids and variables.)
 
 ```sh
 CMIP7_VERSION_PROJECT="input4MIPs"
@@ -49,7 +60,9 @@ esgpull download --tag ${SEARCH_TAG}
 If you want to only download data of a specific type,
 you can do that too.
 For example, to only download global-, annual-mean greenhouse gas concentrations,
-you can add the below.
+you can add the below
+(as discussed at the top of this page, knowing that this is possible is not obvious
+and there is no uniform guidance that applies to all forcings, unfortunately).
 
 ```sh
 GRID_LABEL="gn"
@@ -65,11 +78,6 @@ esgpull download --tag ${SEARCH_TAG}
 
 If you want to see this flow being used within a wider repository,
 please see [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations]().
-
-Unfortunately, there is no uniform set of flags that can be used across all datasets.
-Please see the specific details of each dataset for details about each dataset.
-For example, which grids and frequencies are available and what to use for the pre-industrial control experiments.
-[The datasets overview page is here](../dataset-overviews/index.md).
 
 ## Directly from ESGF
 
