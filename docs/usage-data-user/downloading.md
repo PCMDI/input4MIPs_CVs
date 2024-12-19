@@ -74,15 +74,19 @@ For example, which grids and frequencies are available and what to use for the p
 ## Directly from ESGF
 
 The ESGF MetaGrid search interface (see [https://aims2.llnl.gov/search/input4MIPs]())
-provides direct access to the ESGF-hosted datasets. This allows searching via
-search facets, e.g., `MIP Era`, `Target MIP List` (e.g. "CMIP" is the CMIP DECK activity, "ScenarioMIP", etc),
-`Institution ID`, `Source ID`, and numerous other facets.
+provides direct access to the ESGF-hosted datasets. 
+This allows searching via search facets, 
+e.g., `MIP Era`, `Target MIP` 
+(where, for example, a target MIP of "CMIP" means the CMIP DECK activity, "ScenarioMIP" is the scenarios),
+`Institution ID`, `Source ID`.
 
-You can direct download, if you browse down to file level, or select a `wget` script
-which will download via the commandline - and will select all available files that
-comprise a dataset (a collection of files for a single variable, source_id pair).
+You can download directly by browsing down to file level.
+Alternately, you can select a `wget` script which will download via the commandline 
+- and will select all available files that comprise a dataset 
+(a collection of files defined by a unique combination of the search facets).
 
-By default, only the latest (non-deprecated, non-errata) data are listed in a search. In addition,
-you can also limit your search to a local ESGF node, so `aims3.llnl.gov` or `esgf-data2.llnl.gov`
-in West Coast USA, or `esgf1.dkrz.de` in Hamburg, Germany. We are expecting more ESGF
-nodes to begin replicating these data as the project matures.
+By default, only the latest (non-deprecated, non-errata) data are listed in a search. 
+In addition, you can also limit your search to a local ESGF node, 
+for example `aims3.llnl.gov` or `esgf-data2.llnl.gov` on the West Coast of the USA, 
+or `esgf1.dkrz.de` in Hamburg, Germany.
+We are expecting more ESGF nodes to begin replicating these data as the project matures.
