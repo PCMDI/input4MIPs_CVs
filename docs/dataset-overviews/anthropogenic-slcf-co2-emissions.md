@@ -161,7 +161,8 @@ Bulk Gridded emissions: [em_species]-em-anthro_input4MIPs_emissions_CMIP_CEDS-20
 (where YYYY is the starting year contained in this file, and ZZZZ is the ending year)
 netCDF variable name: [em_species]_em_anthro
 
-Gridded aircraft emissions: [em_species]-em-AIR-anthro_input4MIPs_emissions_CMIP_CEDS-2024-10-21_gn_YYYY01-ZZZZ12.nc
+Gridded aircraft emissions: [em_species]-em-AIR-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc
+
 netCDF variable name: [em_species]_em_AIR_anthro
 
 #### Supplemental emissions Data file name format
