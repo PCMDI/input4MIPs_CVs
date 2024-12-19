@@ -8,7 +8,7 @@ They are not meant to be exhaustive, but they may help.
 It is possible to download datasets using [esgpull](https://esgf.github.io/esgf-download/).
 The installation instructions are [here](https://esgf.github.io/esgf-download/installation/).
 
-Having installed esgpull, make sure it is installed on your system with
+Having installed esgpull, make sure it is configured on your system with
 
 ```sh
 esgpull self install
