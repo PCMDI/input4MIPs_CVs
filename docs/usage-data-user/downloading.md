@@ -3,7 +3,7 @@
 Here we provide some examples of how to download data.
 They are not meant to be exhaustive, but they may help.
 
-## esgpull
+## esgpull - commandline ESGF download software
 
 It is possible to download datasets using [esgpull](https://esgf.github.io/esgf-download/).
 The installation instructions are [here](https://esgf.github.io/esgf-download/installation/).
@@ -47,7 +47,7 @@ esgpull download --tag ${SEARCH_TAG}
 ```
 
 If you want to only download data of a specific type,
-you can do that oo.
+you can do that too.
 For example, to only download global-, annual-mean greenhouse gas concentrations,
 you can add the below.
 
@@ -73,4 +73,16 @@ For example, which grids and frequencies are available and what to use for the p
 
 ## Directly from ESGF
 
-<!-- I have no idea what guidance is, I only use the GUI, Paul? -->
+The ESGF MetaGrid search interface (see [https://aims2.llnl.gov/search/input4MIPs]())
+provides direct access to the ESGF-hosted datasets. This allows searching via
+search facets, e.g., `MIP Era`, `Target MIP List` (e.g. "CMIP" is the CMIP DECK activity, "ScenarioMIP", etc),
+`Institution ID`, `Source ID`, and numerous other facets.
+
+You can direct download, if you browse down to file level, or select a `wget` script
+which will download via the commandline - and will select all available files that
+comprise a dataset (a collection of files for a single variable, source_id pair).
+
+By default, only the latest (non-deprecated, non-errata) data are listed in a search. In addition,
+you can also limit your search to a local ESGF node, so `aims3.llnl.gov` or `esgf-data2.llnl.gov`
+in West Coast USA, or `esgf1.dkrz.de` in Hamburg, Germany. We are expecting more ESGF
+nodes to begin replicating these data as the project matures.
