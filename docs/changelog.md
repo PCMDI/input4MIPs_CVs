@@ -22,6 +22,19 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.2 (2024-12-19)
+
+
+### 🆕 Features
+
+- Added guidance for aerosol optical properties, i.e. MAC simple plumes users. ([#165](https://github.com/PCMDI/input4MIPs_CVs/pull/165))
+
+### 📚 Improved Documentation
+
+- Added basic examples of how to download data from ESGF. ([#166](https://github.com/PCMDI/input4MIPs_CVs/pull/166))
+- Fixed up delivery summary for anthropogenic emissions (CEDS). ([#167](https://github.com/PCMDI/input4MIPs_CVs/pull/167))
+
+
 ## input4MIPs CVs v6.6.1 (2024-12-18)
 
 
