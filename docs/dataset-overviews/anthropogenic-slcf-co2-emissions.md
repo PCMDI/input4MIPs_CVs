@@ -172,7 +172,8 @@ netCDF variable name: [em_species]_em_SOLID_BIOFUEL_anthro
 
 VOC speciation grids: VOC01-alcohols-em-speciated-VOC-anthro_input4MIPs_emissions_CMIP_CEDS-2024-10-21-supplemental-data_gn_YYYY01-ZZZZ12.nc
 netCDF variable name: VOC01_alcohols_em_speciated_VOC_anthro
-(There is a separate README file with further information on VOC speciation -- see project web site. Note there is a variable naming inconsistency for these file - described in the VOC README)
+(There is a separate README file with further information on VOC speciation -- see the CEDS project web site. Note there is a variable naming inconsistency for these file - described in the VOC README)
+
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
