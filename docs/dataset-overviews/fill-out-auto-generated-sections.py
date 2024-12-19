@@ -134,6 +134,16 @@ def get_cmip7_phase_source_id_summary(cmip7_phase: str) -> tuple[str, ...]:
             f"1. *{row.forcing}:* [{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
         )
 
+    # The simple plumes exception
+    out.insert(
+        10,
+        "1. *Aerosol optical properties/MACv2-SP*: "
+        "This is not managed via ESGF. "
+        "Please see the "
+        "[aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) "
+        "for details.",
+    )
+
     return tuple(out)
 
 
