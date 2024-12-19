@@ -5,7 +5,7 @@
 
 ## Key contacts
 
-- Names: Stephanie Fielder
+- Names: Stephanie Fiedler
 - Emails: stephanie.fiedler@uni-heidelberg.de
 
 ## Summary
