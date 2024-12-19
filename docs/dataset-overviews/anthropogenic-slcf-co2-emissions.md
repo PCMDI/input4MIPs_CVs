@@ -80,7 +80,8 @@ Repeat the 1850 values.
 
 ### Grids and frequencies provided
 
-CEDS emissions are provided at monthly resolution, on a 0.5 degree grid, with 50-years per data file as per ESGF formatting conventions. (A 0.1° grid for recent decades is also available.) Emissions are relatively smooth over the early portion of this time period, but annual data is supplied for consistency across the dataset. The files are in netcdf v4 (HDFv5) format with CF-compliant metadata.
+CEDS emissions are provided at monthly resolution, on a 0.5 degree grid, with 50-years per data file. (A 0.1° grid for recent decades is also available.) Emissions are relatively smooth over the early portion of this time period, but annual data is supplied for consistency across the dataset. The files are in netcdf v4 (HDFv5) format with CF-compliant and ESGF-compliant metadata.
+
 
 Gridded aircraft emissions are also supplied in a separate file with 25 vertical layers (using the CMIP5 historical emissions Lamarque et al. 2010, as drawn from Lee et al., as a template). Note that aircraft emissions are zero in early years, but files are provided for all years consistency.
 
