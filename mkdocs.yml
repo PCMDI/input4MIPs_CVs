@@ -9,7 +9,9 @@ repo_url: https://github.com/PCMDI/input4MIPs_CVs
 nav:
   - input4MIPs CVs: index.md
   - Usage:
-    - As a data user: usage-data-user.md
+    - As a data user: 
+      - Overview: usage-data-user/index.md
+      - Downloading data: usage-data-user/downloading.md
     - As a data producer: usage-data-producer.md
   - Dataset overviews:
     - Summary: dataset-overviews/index.md

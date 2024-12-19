@@ -5,7 +5,7 @@
 For: 
 
 - different, pre-prepared views of the database, see [database views](database-views/index.md)
-- usage as a data user, see [usage - data user](usage-data-user.md)
+- usage as a data user, see [usage - data user](usage-data-user/index.md)
 - usage as a data producer, see [usage - data producer](usage-data-producer.md)
 - an overview of the repository, see [repository overview](repository-overview.md)
 - guidance on how to contribute to the repository, see [contributing](contributing.md)
