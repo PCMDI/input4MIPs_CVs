@@ -404,7 +404,7 @@ def get_delivery_summary_view(
     """
     hard_coded_info = [
         {
-            "source_id": "CEDS-CMIP-2024-11-25,CEDS-CMIP-2024-11-25-supplemental, CEDS-CMIP-2024-10-21, CEDS-CMIP-2024-10-21-supplemental",
+            "source_id": "CEDS-CMIP-2024-11-25, CEDS-CMIP-2024-11-25-supplemental, CEDS-CMIP-2024-10-21, CEDS-CMIP-2024-10-21-supplemental",
             "description": "Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions",
             "url": "https://www.pnnl.gov/projects/ceds",
             "status": "Preliminary dataset available",
