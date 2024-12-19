@@ -91,7 +91,8 @@ VOC speciation is provided at the 23 species resolution used in HTAP and RETRO.
 
 ### Variables provided
 
-Subsequent CEDS data releases since August 2016 are in a format with data in one variable, with sectors included as a dimension. 
+Subsequent CEDS data releases since August 2016 are in a format of one variable per data file, with the sectors included as a dimension of the variable's data. 
+
 
 The sectors in the netCDF files (other than aviation) are:
 
