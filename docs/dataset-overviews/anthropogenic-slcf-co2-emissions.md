@@ -96,7 +96,8 @@ Subsequent CEDS data releases since August 2016 are in a format of one variable 
 
 The sectors in the netCDF files (other than aviation) are:
 
-Sector	Descriptions
+Sector	Description
+
 - 0: AGR	Non-combustion agricultural sector
 - 1: ENE	Energy transformation and extraction
 - 2: IND	Industrial combustion and processes
