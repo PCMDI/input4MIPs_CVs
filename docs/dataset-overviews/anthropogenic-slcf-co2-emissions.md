@@ -16,13 +16,12 @@ Emissions data for CH<sub>4</sub> and N<sub>2</sub>O are provided from 1970 - 20
 
 When handling this data, some extra care must be taken given that CEDS' testing data is published under multiple source IDs. In addition, solid biofuel emissions and speciated NMVOCs have the suffix "-supplemental" added to their source ID to avoid inadvertent double counting.
 
-- Bulk emissions for all species except NMVOC's and supplementary solid biofuel emissions files are identified by the source ID "CEDS-CMIP-2024-11-25" (or "CEDS-CMIP-2024-11-25-supplemental" for the solid biofuel emissions)
-- Air emissions for all species, NMVOC bulk emissions, and supplementary speciated VOCs are identified by the source ID "CEDS-CMIP-2024-10-21" (or "CEDS-CMIP-2024-10-21-supplemental" for the speciated VOCs)
+- Bulk emissions for all species except NMVOC's and supplementary solid biofuel emissions files are identified by the source ID "CEDS-CMIP-2024-11-25" (or "CEDS-CMIP-2024-11-25-supplemental" for the solid biofuel emissions) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.13952845.svg)](https://doi.org/10.5281/zenodo.13952845)
+- Air emissions for all species, NMVOC bulk emissions, and supplementary speciated VOCs are identified by the source ID "CEDS-CMIP-2024-10-21" (or "CEDS-CMIP-2024-10-21-supplemental" for the speciated VOCs) [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14145000.svg)](https://doi.org/10.5281/zenodo.14145000)
 
 The underlying data releases are documented [here](https://zenodo.org/records/13952845) and [here](https://zenodo.org/records/14145000).
 
 This data is derived from CEDS' v_2024_07_08 aggregate emissions release. Aggregate data by country and sector for this release is also available in units of kilo-tonne (kt) per year and can be found [here](https://zenodo.org/records/12803197). Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso. 
-
 
 Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
 
@@ -85,9 +84,9 @@ CEDS emissions are provided at monthly resolution, on a 0.5 degree grid, with 50
 
 Gridded aircraft emissions are also supplied in a separate file with 25 vertical layers (using the CMIP5 historical emissions Lamarque et al. 2010, as drawn from Lee et al., as a template). Note that aircraft emissions are zero in early years, but files are provided for all years consistency.
 
-The gridded emissions incorporate a monthly seasonal cycle by sector drawing largely from the ECLIPSE project, Carbon Tracker, and EDGAR.
+The gridded emissions incorporate a monthly seasonal cycle by sector drawing largely from the [ECLIPSE project](https://iiasa.ac.at/models-tools-data/global-emission-fields-of-air-pollutants-and-ghgs), [Carbon Tracker](https://carbontracker.org/), and [EDGAR](https://edgar.jrc.ec.europa.eu/).
 
-VOC speciation is provided at the 23 species resolution used in HTAP and RETRO. 
+VOC speciation is provided at the 23 species resolution from [EDGAR](https://edgar.jrc.ec.europa.eu/). 
 
 ### Variables provided
 
