@@ -10,19 +10,19 @@
 
 ## Summary
 
-CEDS v_2024_10_21 and CEDS v_2024_11_25 make up the CMIP6Plus anthropogenic short-lived climate forcer and CO<sub>2</sub> emissions data set including: 
-
-- Bulk emissions for all species except NMVOC's and supplementary solid biofuel emissions files from v_2024_11_25
-- Air emissions for all species, NMVOC bulk emissions, and supplementary speciated VOCs from v_2024_10_21
-
-These data releases are documented [here](https://zenodo.org/records/13952845) and [here](https://zenodo.org/records/14145000).
-
-This data is derived from CEDS v_2024_07_08 aggregate emissions release. CEDS v_2024_07_08 aggregate data by country and sector is also available in units of kilo-tonne (kt) per year which can be found [here](https://zenodo.org/records/12803197).
-
-Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso. 
-
+CEDS data is available for testing (see the section below).
 Emissions data are provided for SO<sub>2</sub>, NOx, BC, OC, NH<sub>3</sub>, NMVOC,  CO, CO<sub>2</sub> from 1750 - 2022.
 Emissions data for CH<sub>4</sub> and N<sub>2</sub>O are provided from 1970 - 2022.
+
+When handling this data, some extra care must be taken given that CEDS' testing data is published under multiple source IDs. In addition, solid biofuel emissions and speciated NMVOCs have the suffix "-supplemental" added to their source ID to avoid inadvertent double counting.
+
+- Bulk emissions for all species except NMVOC's and supplementary solid biofuel emissions files are identified by the source ID "CEDS-CMIP-2024-11-25" (or "CEDS-CMIP-2024-11-25-supplemental" for the solid biofuel emissions)
+- Air emissions for all species, NMVOC bulk emissions, and supplementary speciated VOCs are identified by the source ID "CEDS-CMIP-2024-10-21" (or "CEDS-CMIP-2024-10-21-supplemental" for the speciated VOCs)
+
+The underlying data releases are documented [here](https://zenodo.org/records/13952845) and [here](https://zenodo.org/records/14145000).
+
+This data is derived from CEDS' v_2024_07_08 aggregate emissions release. Aggregate data by country and sector for this release is also available in units of kilo-tonne (kt) per year and can be found [here](https://zenodo.org/records/12803197). Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso. 
+
 
 Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
 
