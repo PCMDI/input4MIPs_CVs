@@ -16,6 +16,27 @@ import packaging.version
 import pandas as pd
 
 
+def format_url_for_html(link: str, desc: str) -> str:
+    """
+    Forat a URL for display on an HTML page
+
+    Parameters
+    ----------
+    link
+        Link to link to
+
+    desc
+        Description to show to the viewer
+
+
+    Returns
+    -------
+    :
+        Formatted link
+    """
+    return f"<a href='{link}' target='_blank'>{desc}</a>"
+
+
 def get_url_esgf_for_html_table(row: pd.Series, search_facets: Iterable[str]) -> str:
     """
     Get the relevant ESGF search URL for a given row in a database view
@@ -479,9 +500,9 @@ def get_delivery_summary_view(
         {
             "source_id": None,  # TBD
             "description": "Aerosol optical properties/MACv2-SP",
-            "expected_publication": "~November 2024; Expected a month after dependent datasets",
-            "url": None,
-            "status": "Depends on 1, test dataset being produced in the meantime",
+            "expected_publication": "Available",
+            "url": "https://zenodo.org/records/14512962",
+            "status": "Preliminary dataset available",
             "input4MIPs_internal_page": "aerosol-optical-properties-macv2-sp",
         },
         {
@@ -501,18 +522,32 @@ def get_delivery_summary_view(
         input4MIPs_internal_page = info_d["input4MIPs_internal_page"]
 
         if info_d["source_id"] is None:
-            if info_d["url"] is not None:
+            if info_d["description"].startswith("Aerosol optical properties/MAC"):
+                # The simple plumes exception
                 tmp["Forcing dataset"] = (
                     f"<a href='{info_d['url']}' target='_blank'>{info_d['description']}</a>"
                 )
-            else:
-                tmp["Forcing dataset"] = info_d["description"]
+                tmp["Source ID"] = (
+                    f"NA (not released on ESGF, see {format_url_for_html(info_d['url'], info_d['url'])} instead)"
+                )
+                tmp["Status"] = info_d["status"]
+                tmp["ESGF publication status"] = (
+                    f"{info_d['expected_publication']}: {format_url_for_html(info_d['url'], info_d['url'])}"
+                )
 
-            tmp["Source ID"] = "TBD"
-            tmp["Status"] = info_d["status"]
-            tmp["ESGF publication status"] = (
-                f"Expected: {info_d['expected_publication']}"
-            )
+            else:
+                if info_d["url"] is not None:
+                    tmp["Forcing dataset"] = (
+                        f"<a href='{info_d['url']}' target='_blank'>{info_d['description']}</a>"
+                    )
+                else:
+                    tmp["Forcing dataset"] = info_d["description"]
+
+                tmp["Source ID"] = "TBD"
+                tmp["Status"] = info_d["status"]
+                tmp["ESGF publication status"] = (
+                    f"Expected: {info_d['expected_publication']}"
+                )
 
         else:
             db_source_ids = db[
