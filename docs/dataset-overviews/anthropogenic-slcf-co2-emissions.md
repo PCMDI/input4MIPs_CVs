@@ -21,7 +21,7 @@ When handling this data, some extra care must be taken given that CEDS' testing 
 
 The underlying data releases are documented [here](https://zenodo.org/records/13952845) and [here](https://zenodo.org/records/14145000).
 
-This data is derived from CEDS' v_2024_07_08 aggregate emissions release. Aggregate data by country and sector for this release is also available in units of kilo-tonne (kt) per year and can be found [here](https://zenodo.org/records/12803197). Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso. 
+This data is derived from CEDS' v_2024_07_08 aggregate emissions release. Aggregate data by country and sector for this release is also available in units of kilo-tonne (kt) per year and can be found [here](https://zenodo.org/records/12803197). Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso.
 
 Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
 
@@ -86,11 +86,11 @@ Gridded aircraft emissions are also supplied in a separate file with 25 vertical
 
 The gridded emissions incorporate a monthly seasonal cycle by sector drawing largely from the [ECLIPSE project](https://iiasa.ac.at/models-tools-data/global-emission-fields-of-air-pollutants-and-ghgs), [Carbon Tracker](https://carbontracker.org/), and [EDGAR](https://edgar.jrc.ec.europa.eu/).
 
-VOC speciation is provided at the 23 species resolution from [EDGAR](https://edgar.jrc.ec.europa.eu/). 
+VOC speciation is provided at the 23 species resolution from [EDGAR](https://edgar.jrc.ec.europa.eu/).
 
 ### Variables provided
 
-Subsequent CEDS data releases since August 2016 are in a format of one variable per data file, with the sectors included as a dimension of the variable's data. 
+Subsequent CEDS data releases since August 2016 are in a format of one variable per data file, with the sectors included as a dimension of the variable's data.
 
 
 The sectors in the netCDF files (other than aviation) are:
@@ -117,9 +117,9 @@ Supplementary "checksum" .csv text files that provide total global mass for each
 
 ### Gridding Methodology
 
-Emissions were first estimated at the level of country, sector, and fuel. Emissions by sector were then mapped to spatial grids by country and sector (several intermediate gridded sectors were combined to form the final release sectors for CMIP6Plus). Grid cells that contain more than one country can have portions of emissions from each country. 
+Emissions were first estimated at the level of country, sector, and fuel. Emissions by sector were then mapped to spatial grids by country and sector (several intermediate gridded sectors were combined to form the final release sectors for CMIP6Plus). Grid cells that contain more than one country can have portions of emissions from each country.
 
-For recent decades, emissions were mapped to the grid level largely using the distribution of emissions from EDGAR within each country and gridding sector (usually using year-specific EDGAR grids from 1970 forward). For some sectors, the emissions distribution varies over time, while for other sectors it was held constant. For most emission species, residential combustion is the dominant source by 1850, so emissions from the RCO sector were distributed using HYDE population distributions by 1900 (with blended spatial distributions between 1900 and 1970). For other sectors the emissions distribution within each country was held fixed before 1970. 
+For recent decades, emissions were mapped to the grid level largely using the distribution of emissions from EDGAR within each country and gridding sector (usually using year-specific EDGAR grids from 1970 forward). For some sectors, the emissions distribution varies over time, while for other sectors it was held constant. For most emission species, residential combustion is the dominant source by 1850, so emissions from the RCO sector were distributed using HYDE population distributions by 1900 (with blended spatial distributions between 1900 and 1970). For other sectors the emissions distribution within each country was held fixed before 1970.
 
 Because of the simplifying assumptions, emissions distributions, particularly in earlier years, should not be taken literally. Overall, however, anthropogenic emissions become small relative to either natural sources or mid-to-late 20th century emissions so we anticipate that these assumptions are not likely to have major impacts on global or regional modeling results.
 
@@ -131,12 +131,12 @@ For more details on the gridding methodology see:
 Feng, L., Smith, S. J., Braun, C., Crippa, M., Gidden, M. J., Hoesly, R., Klimont, Z., van Marle, M., van den Berg, M., and van der Werf, G. R.: The generation of gridded emissions data for CMIP6, Geosci. Model Dev., 13, 461–482, https://doi.org/10.5194/gmd-13-461-2020, 2020.
 
 For more details on the underlying emissions data see:
-Hoesly, R. M., Smith, S. J., Feng, L., Klimont, Z., Janssens-Maenhout, G., Pitkanen, T., Seibert, J. J., Vu, L., Andres, R. J., Bolt, R. M., Bond, T. C., Dawidowski, L., Kholod, N., Kurokawa, J.-I., Li, M., Liu, L., Lu, Z., Moura, M. C. P., O'Rourke, P. R., and Zhang, Q. (2018) Historical (1750–2014) anthropogenic emissions of reactive gases and aerosols from the Community Emissions Data System (CEDS), Geosci. Model Dev., 11, 369-408. doi: 10.5194/gmd-11-369-2018. 
+Hoesly, R. M., Smith, S. J., Feng, L., Klimont, Z., Janssens-Maenhout, G., Pitkanen, T., Seibert, J. J., Vu, L., Andres, R. J., Bolt, R. M., Bond, T. C., Dawidowski, L., Kholod, N., Kurokawa, J.-I., Li, M., Liu, L., Lu, Z., Moura, M. C. P., O'Rourke, P. R., and Zhang, Q. (2018) Historical (1750–2014) anthropogenic emissions of reactive gases and aerosols from the Community Emissions Data System (CEDS), Geosci. Model Dev., 11, 369-408. doi: 10.5194/gmd-11-369-2018.
 
 
 ### Uncertainty
 
-At present, uncertainties are not quantified. 
+At present, uncertainties are not quantified.
 Uncertainties in recent years (most recent 2-3 years) are higher due to delays in reporting data and common revision of data point in recent years (as documented [here](https://iopscience.iop.org/article/10.1088/1748-9326/aaebc3)). Uncertainties farther back in time are also higher, especially the spatial distribution. However, the importance of anthropogenic emissions compared to natural sources also become less significant in these early years. In between (roughly between 1970 and 5 years before now)
 the uncertainties can be smaller.
 
