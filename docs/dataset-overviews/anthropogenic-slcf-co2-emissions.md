@@ -81,7 +81,6 @@ Repeat the 1850 values.
 
 CEDS emissions are provided at monthly resolution, on a 0.5 degree grid, with 50-years per data file. (A 0.1° grid for recent decades is also available.) Emissions are relatively smooth over the early portion of this time period, but annual data is supplied for consistency across the dataset. The files are in netcdf v4 (HDFv5) format with CF-compliant and ESGF-compliant metadata.
 
-
 Gridded aircraft emissions are also supplied in a separate file with 25 vertical layers (using the CMIP5 historical emissions Lamarque et al. 2010, as drawn from Lee et al., as a template). Note that aircraft emissions are zero in early years, but files are provided for all years consistency.
 
 The gridded emissions incorporate a monthly seasonal cycle by sector drawing largely from the [ECLIPSE project](https://iiasa.ac.at/models-tools-data/global-emission-fields-of-air-pollutants-and-ghgs), [Carbon Tracker](https://carbontracker.org/), and [EDGAR](https://edgar.jrc.ec.europa.eu/).
@@ -92,28 +91,28 @@ VOC speciation is provided at the 23 species resolution from [EDGAR](https://edg
 
 Subsequent CEDS data releases since August 2016 are in a format of one variable per data file, with the sectors included as a dimension of the variable's data.
 
-
 The sectors in the netCDF files (other than aviation) are:
 
-Sector	Description
-
-- 0: AGR	Non-combustion agricultural sector
-- 1: ENE	Energy transformation and extraction
-- 2: IND	Industrial combustion and processes
-- 3: TRA	Surface Transportation (Road, Rail, Other)
-- 4: RCO	Residential, commercial, and other
-- 5: SLV	Solvents
-- 6: WST	Waste disposal and handling
-- 7: SHP	International shipping (including VOCs from oil tanker loading/leakage)
+| Sector | Description                                                             |
+|--------|-------------------------------------------------------------------------|
+| 0: AGR | Non-combustion agricultural sector                                      |
+| 1: ENE | Energy transformation and extraction                                    |
+| 2: IND | Industrial combustion and processes                                     |
+| 3: TRA | Surface Transportation (Road, Rail, Other)                              |
+| 4: RCO | Residential, commercial, and other                                      |
+| 5: SLV | Solvents                                                                |
+| 6: WST | Waste disposal and handling                                             |
+| 7: SHP | International shipping (including VOCs from oil tanker loading/leakage) |
 
 Within the netCDF files the sector ids are:
-sector:ids = "0: Agriculture; 1: Energy; 2: Industrial; 3: Transportation; 4: Residential, Commercial, Other; 5: Solvents production and application; 6: Waste; 7: International Shipping" ;
+
+`sector:ids = "0: Agriculture; 1: Energy; 2: Industrial; 3: Transportation; 4: Residential, Commercial, Other; 5: Solvents production and application; 6: Waste; 7: International Shipping" ;`
 
 ### Supplementary Data
 
-For use in setting aerosol size distribution and additional speciation (if desired), an auxiliary dataset emissions providing emissions from solid biomass combustion is also provided. Note that these are a subset of emissions in the main files. These data, therefore, should NOT be added to the emissions in the main files. (Note that no data files for CO2 emissions from solid biomass are released, as CO2 emissions from CEDS are from fossil fuels only.)
+For use in setting aerosol size distribution and additional speciation (if desired), an auxiliary dataset providing emissions from solid biomass combustion is also provided. Note that these are a subset of emissions in the main files. These data, therefore, should NOT be added to the emissions in the main files. (Note that no data files for CO2 emissions from solid biomass are released, as CO2 emissions from CEDS are from fossil fuels only.)
 
-Supplementary "checksum" .csv text files that provide total global mass for each sector, month, and year are also available as well as global seasonal diagnostic plots can be found [here](https://zenodo.org/records/14145000).
+Supplementary checking `.csv` text files that provide total global mass for each sector, month, and year are also available as well as global seasonal diagnostic plots can be found [here](https://zenodo.org/records/14145000).
 
 ### Gridding Methodology
 
@@ -156,24 +155,34 @@ The file formats are identical to CMIP6.
 
 #### Emissions Data file name format
 
-Bulk Gridded emissions: [em_species]-em-anthro_input4MIPs_emissions_CMIP_CEDS-2024-10-21_gn_YYYY01-ZZZZ12.nc
-(where YYYY is the starting year contained in this file, and ZZZZ is the ending year)
-netCDF variable name: [em_species]_em_anthro
+Bulk gridded emissions: 
 
-Gridded aircraft emissions: [em_species]-em-AIR-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc
+- `[em_species]-em-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc`,
+  where `YYYY` is the starting year contained in this file and `ZZZZ` is the ending year.
+- netCDF variable name: `[em_species]_em_anthro`.
 
-netCDF variable name: [em_species]_em_AIR_anthro
+Gridded aircraft emissions: 
+
+- `[em_species]-em-AIR-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc`,
+  where `YYYY` is the starting year contained in this file and `ZZZZ` is the ending year.
+- netCDF variable name: `[em_species]_em_AIR_anthro`
 
 #### Supplemental emissions Data file name format
 
-Gridded biomass emissions: [em_species]-em-SOLID-BIOFUEL-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc
+Gridded biomass emissions: 
 
-netCDF variable name: [em_species]_em_SOLID_BIOFUEL_anthro
+- `[em_species]-em-SOLID-BIOFUEL-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc`,
+  where `YYYY` is the starting year contained in this file and `ZZZZ` is the ending year.
+- netCDF variable name: `[em_species]_em_SOLID_BIOFUEL_anthro`
 
-VOC speciation grids: VOC01-alcohols-em-speciated-VOC-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc
+VOC speciation grids: 
 
-netCDF variable name: VOC01_alcohols_em_speciated_VOC_anthro
-(There is a separate README file with further information on VOC speciation -- see the CEDS project web site. Note there is a variable naming inconsistency for these file - described in the VOC README)
+- `VOC01-alcohols-em-speciated-VOC-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc`,
+  where `YYYY` is the starting year contained in this file and `ZZZZ` is the ending year.
+- netCDF variable name: `VOC01_alcohols_em_speciated_VOC_anthro`
+
+There is a separate README file with further information on VOC speciation -- see the CEDS project web site. 
+Note there is a variable naming inconsistency for these file - described in the VOC README.
 
 
 <!--- begin-revision-history -->
