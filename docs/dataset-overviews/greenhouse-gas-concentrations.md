@@ -10,9 +10,9 @@
 
 ## Summary
 
-A first version of the greenhouse gas concentrations is 
-[available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-3-0%22%7D).
-This version is for testing only, do not use it for any simluations you're not willing to throw away.
+Testing versions of the greenhouse gas concentrations are
+[available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6Plus%22%2C%22dataset_category%22%3A%22GHGConcentrations%22%7D).
+These versions are for testing only, do not use them for any simluations you're not willing to throw away.
 If you find any issues, please 
 [create an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new).
 

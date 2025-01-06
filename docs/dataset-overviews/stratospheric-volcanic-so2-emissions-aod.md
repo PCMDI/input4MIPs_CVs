@@ -11,6 +11,19 @@
 - Names: Thomas Aubry
 - Emails: t.aubry@exeter.ac.uk
 
+Testing versions of the stratospheric volcanic SO<sub>2</sub> emissions
+and aerosol optical properties are
+[available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6Plus%22%2C%22institution_id%22%3A%22uoexeter%22%7D).
+These versions are for testing only, do not use them for any simluations you're not willing to throw away.
+
+Documentation on the dataset is hosted
+[externally](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
+This contains a detailed dive into the data.
+In contrast, this page provides an overview and some key, CMIP-specific information.
+
+If you find any issues, please contribute to
+[the discussion on GitHub](https://github.com/PCMDI/input4MIPs_CVs/discussions/175).
+
 ## Summary
 
 <!--- begin-cmip7-phases-source-ids -->
@@ -52,18 +65,54 @@ Further details will follow after the fast track is underway
 
 <!--- end-cmip7-phases-source-ids -->
 
-<!--- placeholder for piControl recommendation -->
 ## Navigating the data
 
 ### Recommendation for pre-industrial control
 
-There is a dedicated pre-industrial control file.
-See the files with `fx` in their name
+There are dedicated pre-industrial control files.
+These files have `fx` in their name
 (`fx` stands for fixed, which is used
 because the pre-industrial control file is a fixed field,
 custom for the pre-industrial control experiment).
 
-<!--- end of placeholder for piControl recommendation -->
+### Grids and frequencies provided
+
+The volcanic emissions are provided with daily resolution
+alongside latitude, longitude and injection height information.
+
+The aerosol optical properties are provided with monthly resolution
+on a latitudinal grid.
+
+### Variables provided
+
+The mass of SO<sub>2</sub> associated with eruptions of different volcanoes is provided.
+
+Alongside the emissions information, aerosol optical properties are also provided.
+For example, extinction coeffecients and aerosol optical depth.
+
+### Uncertainty
+
+There is considerable uncertainty in the magnitude of eruptions,
+particularly before the satellite era.
+This uncertainty is not reported in the data, but could be in future.
+The uncertainty in the magnitude of eruptions is still relatively large,
+even in surface temperature terms,
+where it could be up to 20% of the anthropogenic warming (so roughly around 0.2K).
+
+## Differences from CMIP6 or other previous versions
+
+### File formats and naming
+
+The file formats are quite different from CMIP6 
+because the data is coming from a different provider.
+The naming may also be different.
+Overall, we would say that the data is more uniform now
+and in line with other input4MIPs data and conventions.
+
+### Data
+
+For a full dive into the changes from CMIP6, see 
+[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
