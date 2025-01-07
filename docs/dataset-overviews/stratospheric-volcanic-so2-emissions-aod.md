@@ -75,6 +75,8 @@ and hence have `monC` in their name
 (they also have a time axis with only twelve points,
 so they're hard to miss).
 For emissions, use [TBD with Thomas].
+For full details, see
+[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
 
 ### Grids and frequencies provided
 
