@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.4 (2025-01-07)
+
+
+### 📚 Improved Documentation
+
+- Updated anthropogenic emissions, i.e. CEDS, documentation. ([#169](https://github.com/PCMDI/input4MIPs_CVs/pull/169))
+
+
 ## input4MIPs CVs v6.6.3 (2024-12-20)
 
 
