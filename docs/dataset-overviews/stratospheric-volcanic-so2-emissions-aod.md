@@ -116,5 +116,11 @@ For a full dive into the changes from CMIP6, see
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
+## Revision history
+
+### UOEXETER-CMIP-1-1-3
+
+v1.2.0 includes climatology data (for piControl simulations) and updates the handling of small
+eruptions.Hence v1.1.3 is retracted.
+
 <!--- end-revision-history -->
