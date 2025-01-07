@@ -21,7 +21,7 @@ When handling this data, some extra care must be taken given that CEDS' testing 
 
 The underlying data releases are documented [here](https://zenodo.org/records/13952845) and [here](https://zenodo.org/records/14145000).
 
-This data is derived from CEDS' v_2024_07_08 aggregate emissions release. Aggregate data by country and sector for this release is also available in units of kilo-tonne (kt) per year and can be found [here](https://zenodo.org/records/12803197). Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso. 
+This data is derived from CEDS' v_2024_07_08 aggregate emissions release. Aggregate data by country and sector for this release is also available in units of kilo-tonne (kt) per year and can be found [here](https://zenodo.org/records/12803197). Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso.
 
 Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
 
@@ -81,45 +81,44 @@ Repeat the 1850 values.
 
 CEDS emissions are provided at monthly resolution, on a 0.5 degree grid, with 50-years per data file. (A 0.1° grid for recent decades is also available.) Emissions are relatively smooth over the early portion of this time period, but annual data is supplied for consistency across the dataset. The files are in netcdf v4 (HDFv5) format with CF-compliant and ESGF-compliant metadata.
 
-
 Gridded aircraft emissions are also supplied in a separate file with 25 vertical layers (using the CMIP5 historical emissions Lamarque et al. 2010, as drawn from Lee et al., as a template). Note that aircraft emissions are zero in early years, but files are provided for all years consistency.
 
 The gridded emissions incorporate a monthly seasonal cycle by sector drawing largely from the [ECLIPSE project](https://iiasa.ac.at/models-tools-data/global-emission-fields-of-air-pollutants-and-ghgs), [Carbon Tracker](https://carbontracker.org/), and [EDGAR](https://edgar.jrc.ec.europa.eu/).
 
-VOC speciation is provided at the 23 species resolution from [EDGAR](https://edgar.jrc.ec.europa.eu/). 
+VOC speciation is provided at the 23 species resolution from [EDGAR](https://edgar.jrc.ec.europa.eu/).
 
 ### Variables provided
 
-Subsequent CEDS data releases since August 2016 are in a format of one variable per data file, with the sectors included as a dimension of the variable's data. 
-
+Subsequent CEDS data releases since August 2016 are in a format of one variable per data file, with the sectors included as a dimension of the variable's data.
 
 The sectors in the netCDF files (other than aviation) are:
 
-Sector	Description
-
-- 0: AGR	Non-combustion agricultural sector
-- 1: ENE	Energy transformation and extraction
-- 2: IND	Industrial combustion and processes
-- 3: TRA	Surface Transportation (Road, Rail, Other)
-- 4: RCO	Residential, commercial, and other
-- 5: SLV	Solvents
-- 6: WST	Waste disposal and handling
-- 7: SHP	International shipping (including VOCs from oil tanker loading/leakage)
+| Sector | Description                                                             |
+|--------|-------------------------------------------------------------------------|
+| 0: AGR | Non-combustion agricultural sector                                      |
+| 1: ENE | Energy transformation and extraction                                    |
+| 2: IND | Industrial combustion and processes                                     |
+| 3: TRA | Surface Transportation (Road, Rail, Other)                              |
+| 4: RCO | Residential, commercial, and other                                      |
+| 5: SLV | Solvents                                                                |
+| 6: WST | Waste disposal and handling                                             |
+| 7: SHP | International shipping (including VOCs from oil tanker loading/leakage) |
 
 Within the netCDF files the sector ids are:
-sector:ids = "0: Agriculture; 1: Energy; 2: Industrial; 3: Transportation; 4: Residential, Commercial, Other; 5: Solvents production and application; 6: Waste; 7: International Shipping" ;
+
+`sector:ids = "0: Agriculture; 1: Energy; 2: Industrial; 3: Transportation; 4: Residential, Commercial, Other; 5: Solvents production and application; 6: Waste; 7: International Shipping" ;`
 
 ### Supplementary Data
 
-For use in setting aerosol size distribution and additional speciation (if desired), an auxiliary dataset emissions providing emissions from solid biomass combustion is also provided. Note that these are a subset of emissions in the main files. These data, therefore, should NOT be added to the emissions in the main files. (Note that no data files for CO2 emissions from solid biomass are released, as CO2 emissions from CEDS are from fossil fuels only.)
+For use in setting aerosol size distribution and additional speciation (if desired), an auxiliary dataset providing emissions from solid biomass combustion is also provided. Note that these are a subset of emissions in the main files. These data, therefore, should NOT be added to the emissions in the main files. (Note that no data files for CO2 emissions from solid biomass are released, as CO2 emissions from CEDS are from fossil fuels only.)
 
-Supplementary "checksum" .csv text files that provide total global mass for each sector, month, and year are also available as well as global seasonal diagnostic plots can be found [here](https://zenodo.org/records/14145000).
+Supplementary checking `.csv` text files that provide total global mass for each sector, month, and year are also available as well as global seasonal diagnostic plots can be found [here](https://zenodo.org/records/14145000).
 
 ### Gridding Methodology
 
-Emissions were first estimated at the level of country, sector, and fuel. Emissions by sector were then mapped to spatial grids by country and sector (several intermediate gridded sectors were combined to form the final release sectors for CMIP6Plus). Grid cells that contain more than one country can have portions of emissions from each country. 
+Emissions were first estimated at the level of country, sector, and fuel. Emissions by sector were then mapped to spatial grids by country and sector (several intermediate gridded sectors were combined to form the final release sectors for CMIP6Plus). Grid cells that contain more than one country can have portions of emissions from each country.
 
-For recent decades, emissions were mapped to the grid level largely using the distribution of emissions from EDGAR within each country and gridding sector (usually using year-specific EDGAR grids from 1970 forward). For some sectors, the emissions distribution varies over time, while for other sectors it was held constant. For most emission species, residential combustion is the dominant source by 1850, so emissions from the RCO sector were distributed using HYDE population distributions by 1900 (with blended spatial distributions between 1900 and 1970). For other sectors the emissions distribution within each country was held fixed before 1970. 
+For recent decades, emissions were mapped to the grid level largely using the distribution of emissions from EDGAR within each country and gridding sector (usually using year-specific EDGAR grids from 1970 forward). For some sectors, the emissions distribution varies over time, while for other sectors it was held constant. For most emission species, residential combustion is the dominant source by 1850, so emissions from the RCO sector were distributed using HYDE population distributions by 1900 (with blended spatial distributions between 1900 and 1970). For other sectors the emissions distribution within each country was held fixed before 1970.
 
 Because of the simplifying assumptions, emissions distributions, particularly in earlier years, should not be taken literally. Overall, however, anthropogenic emissions become small relative to either natural sources or mid-to-late 20th century emissions so we anticipate that these assumptions are not likely to have major impacts on global or regional modeling results.
 
@@ -131,12 +130,12 @@ For more details on the gridding methodology see:
 Feng, L., Smith, S. J., Braun, C., Crippa, M., Gidden, M. J., Hoesly, R., Klimont, Z., van Marle, M., van den Berg, M., and van der Werf, G. R.: The generation of gridded emissions data for CMIP6, Geosci. Model Dev., 13, 461–482, https://doi.org/10.5194/gmd-13-461-2020, 2020.
 
 For more details on the underlying emissions data see:
-Hoesly, R. M., Smith, S. J., Feng, L., Klimont, Z., Janssens-Maenhout, G., Pitkanen, T., Seibert, J. J., Vu, L., Andres, R. J., Bolt, R. M., Bond, T. C., Dawidowski, L., Kholod, N., Kurokawa, J.-I., Li, M., Liu, L., Lu, Z., Moura, M. C. P., O'Rourke, P. R., and Zhang, Q. (2018) Historical (1750–2014) anthropogenic emissions of reactive gases and aerosols from the Community Emissions Data System (CEDS), Geosci. Model Dev., 11, 369-408. doi: 10.5194/gmd-11-369-2018. 
+Hoesly, R. M., Smith, S. J., Feng, L., Klimont, Z., Janssens-Maenhout, G., Pitkanen, T., Seibert, J. J., Vu, L., Andres, R. J., Bolt, R. M., Bond, T. C., Dawidowski, L., Kholod, N., Kurokawa, J.-I., Li, M., Liu, L., Lu, Z., Moura, M. C. P., O'Rourke, P. R., and Zhang, Q. (2018) Historical (1750–2014) anthropogenic emissions of reactive gases and aerosols from the Community Emissions Data System (CEDS), Geosci. Model Dev., 11, 369-408. doi: 10.5194/gmd-11-369-2018.
 
 
 ### Uncertainty
 
-At present, uncertainties are not quantified. 
+At present, uncertainties are not quantified.
 Uncertainties in recent years (most recent 2-3 years) are higher due to delays in reporting data and common revision of data point in recent years (as documented [here](https://iopscience.iop.org/article/10.1088/1748-9326/aaebc3)). Uncertainties farther back in time are also higher, especially the spatial distribution. However, the importance of anthropogenic emissions compared to natural sources also become less significant in these early years. In between (roughly between 1970 and 5 years before now)
 the uncertainties can be smaller.
 
@@ -156,24 +155,34 @@ The file formats are identical to CMIP6.
 
 #### Emissions Data file name format
 
-Bulk Gridded emissions: [em_species]-em-anthro_input4MIPs_emissions_CMIP_CEDS-2024-10-21_gn_YYYY01-ZZZZ12.nc
-(where YYYY is the starting year contained in this file, and ZZZZ is the ending year)
-netCDF variable name: [em_species]_em_anthro
+Bulk gridded emissions: 
 
-Gridded aircraft emissions: [em_species]-em-AIR-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc
+- `[em_species]-em-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc`,
+  where `YYYY` is the starting year contained in this file and `ZZZZ` is the ending year.
+- netCDF variable name: `[em_species]_em_anthro`.
 
-netCDF variable name: [em_species]_em_AIR_anthro
+Gridded aircraft emissions: 
+
+- `[em_species]-em-AIR-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc`,
+  where `YYYY` is the starting year contained in this file and `ZZZZ` is the ending year.
+- netCDF variable name: `[em_species]_em_AIR_anthro`
 
 #### Supplemental emissions Data file name format
 
-Gridded biomass emissions: [em_species]-em-SOLID-BIOFUEL-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc
+Gridded biomass emissions: 
 
-netCDF variable name: [em_species]_em_SOLID_BIOFUEL_anthro
+- `[em_species]-em-SOLID-BIOFUEL-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc`,
+  where `YYYY` is the starting year contained in this file and `ZZZZ` is the ending year.
+- netCDF variable name: `[em_species]_em_SOLID_BIOFUEL_anthro`
 
-VOC speciation grids: VOC01-alcohols-em-speciated-VOC-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc
+VOC speciation grids: 
 
-netCDF variable name: VOC01_alcohols_em_speciated_VOC_anthro
-(There is a separate README file with further information on VOC speciation -- see the CEDS project web site. Note there is a variable naming inconsistency for these file - described in the VOC README)
+- `VOC01-alcohols-em-speciated-VOC-anthro_input4MIPs_emissions_CMIP_[source_id]_gn_YYYY01-ZZZZ12.nc`,
+  where `YYYY` is the starting year contained in this file and `ZZZZ` is the ending year.
+- netCDF variable name: `VOC01_alcohols_em_speciated_VOC_anthro`
+
+There is a separate README file with further information on VOC speciation -- see the CEDS project web site. 
+Note there is a variable naming inconsistency for these file - described in the VOC README.
 
 
 <!--- begin-revision-history -->
