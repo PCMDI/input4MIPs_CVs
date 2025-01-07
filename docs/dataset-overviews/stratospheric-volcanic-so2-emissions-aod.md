@@ -70,10 +70,11 @@ Further details will follow after the fast track is underway
 ### Recommendation for pre-industrial control
 
 There are dedicated pre-industrial control files.
-These files have `fx` in their name
-(`fx` stands for fixed, which is used
-because the pre-industrial control file is a fixed field,
-custom for the pre-industrial control experiment).
+For aerosol optical properties, these are provided as climatologies
+and hence have `monC` in their name
+(they also have a time axis with only twelve points,
+so they're hard to miss).
+For emissions, use [TBD with Thomas].
 
 ### Grids and frequencies provided
 
