@@ -461,7 +461,7 @@ def get_delivery_summary_view(
             "input4MIPs_internal_page": "co2-isotopes",
         },
         {
-            "source_id": "UOEXETER-CMIP-1-1-3",
+            "source_id": "UOEXETER-CMIP-1-2-0",
             "description": "Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties",
             "url": None,
             "status": "Preliminary dataset available",

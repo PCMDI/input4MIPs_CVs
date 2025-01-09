@@ -290,6 +290,12 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
         'For further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release notes</a>.'
     )
 
+    out.loc[out["source_id"] == "UOEXETER-CMIP-1-1-3", "comment_post_publication"] = (
+        "v1.2.0 includes climatology data (for piControl simulations) "
+        "and updates the handling of small eruptions."
+        "Hence v1.1.3 is retracted. "
+    )
+
     return out
 
 

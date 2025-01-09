@@ -3,13 +3,23 @@
 <!--- source_id_stub="UOEXETER-CMIP" -->
 # Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties
 
-**This section is a work in progress.**
-**For a first draft, see https://github.com/PCMDI/input4MIPs_CVs/pull/146**
-
 ## Key contacts
 
 - Names: Thomas Aubry
 - Emails: t.aubry@exeter.ac.uk
+
+Testing versions of the stratospheric volcanic SO<sub>2</sub> emissions
+and aerosol optical properties are
+[available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6Plus%22%2C%22institution_id%22%3A%22uoexeter%22%7D).
+These versions are for testing only, do not use them for any simluations you're not willing to throw away.
+
+Documentation on the dataset is hosted
+[externally](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
+This contains a detailed dive into the data.
+In contrast, this page provides an overview and some key, CMIP-specific information.
+
+If you find any issues, please contribute to
+[the discussion on GitHub](https://github.com/PCMDI/input4MIPs_CVs/discussions/175).
 
 ## Summary
 
@@ -21,7 +31,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### Testing
 
-For the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-1-3](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-1-3%22%7D)
+For the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-2-0%22%7D)
 
 This data is for testing (both of the forcing data and of modelling workflows) only.
 Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
@@ -52,20 +62,73 @@ Further details will follow after the fast track is underway
 
 <!--- end-cmip7-phases-source-ids -->
 
-<!--- placeholder for piControl recommendation -->
 ## Navigating the data
 
 ### Recommendation for pre-industrial control
 
-There is a dedicated pre-industrial control file.
-See the files with `fx` in their name
-(`fx` stands for fixed, which is used
-because the pre-industrial control file is a fixed field,
-custom for the pre-industrial control experiment).
+There are dedicated pre-industrial control files for aerosol optical properties.
+For aerosol optical properties, these are provided as climatologies
+and hence have `monC` in their name
+(they also have a time axis with only twelve points,
+so they're hard to miss).
+There is no recommendation for teams who want to run pre-industrial control
+with volcanic emissions as yet, that is still being developed
+in collaboration with early testing teams who are interested in this application.
 
-<!--- end of placeholder for piControl recommendation -->
+For full details, see
+[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
+
+### Grids and frequencies provided
+
+The volcanic emissions are provided with daily resolution
+alongside latitude, longitude and injection height information.
+
+The aerosol optical properties are provided with monthly resolution
+on a latitudinal grid.
+
+### Variables provided
+
+For the aerosol optical properties dataset,
+the extinction, single scattering albedo, scattering asymmetry factor,
+effective radius, surface area density and volume density are provided.
+For emissions, the volcanic SO<sub>2</sub> injection time,
+latitude, longitude, height, depth and mass are provided.
+Further details are provided in
+[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true)
+(section III and IV).
+
+### Uncertainty
+
+There is considerable uncertainty in the magnitude
+and height of volcanic SO<sub>2</sub> injection for the satellite era.
+These uncertainties are even larger in the pre-satellite era,
+for which there is considerable uncertainty
+on the occurence, timing and location of volcanic SO<sub>2</sub> injections.
+These uncertainties propagate to our aerosol optical properties dataset for the pre-satellite era.
+Uncertainties are currently not reported in the dataset but they will be in the future.
+
+## Differences from CMIP6 or other previous versions
+
+### File formats and naming
+
+The file formats are quite different from CMIP6
+because the data is coming from a different provider.
+The naming may also be different.
+Overall, we would say that the data is more uniform now
+and in line with other input4MIPs data and conventions.
+
+### Data
+
+For a full dive into the changes from CMIP6, see
+[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
+## Revision history
+
+### UOEXETER-CMIP-1-1-3
+
+v1.2.0 includes climatology data (for piControl simulations) and updates the handling of small
+eruptions.Hence v1.1.3 is retracted.
+
 <!--- end-revision-history -->
