@@ -66,12 +66,15 @@ Further details will follow after the fast track is underway
 
 ### Recommendation for pre-industrial control
 
-There are dedicated pre-industrial control files.
+There are dedicated pre-industrial control files for aerosol optical properties.
 For aerosol optical properties, these are provided as climatologies
 and hence have `monC` in their name
 (they also have a time axis with only twelve points,
 so they're hard to miss).
-For emissions, use [TBD with Thomas].
+There is no recommendation for teams who want to run pre-industrial control
+with volcanic emissions as yet, that is still being developed
+in collaboration with early testing teams who are interested in this application.
+
 For full details, see
 [the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
 
@@ -85,25 +88,30 @@ on a latitudinal grid.
 
 ### Variables provided
 
-The mass of SO<sub>2</sub> associated with eruptions of different volcanoes is provided.
-
-Alongside the emissions information, aerosol optical properties are also provided.
-For example, extinction coeffecients and aerosol optical depth.
+For the aerosol optical properties dataset,
+the extinction, single scattering albedo, scattering asymmetry factor,
+effective radius, surface area density and volume density are provided.
+For emissions, the volcanic SO<sub>2</sub> injection time,
+latitude, longitude, height, depth and mass are provided.
+Further details are provided in
+[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true)
+(section III and IV).
 
 ### Uncertainty
 
-There is considerable uncertainty in the magnitude of eruptions,
-particularly before the satellite era.
-This uncertainty is not reported in the data, but could be in future.
-The uncertainty in the magnitude of eruptions is still relatively large,
-even in surface temperature terms,
-where it could be up to 20% of the anthropogenic warming (so roughly around 0.2K).
+There is considerable uncertainty in the magnitude
+and height of volcanic SO<sub>2</sub> injection for the satellite era.
+These uncertainties are even larger in the pre-satellite era,
+for which there is considerable uncertainty
+on the occurence, timing and location of volcanic SO<sub>2</sub> injections.
+These uncertainties propagate to our aerosol optical properties dataset for the pre-satellite era.
+Uncertainties are currently not reported in the dataset but they will be in the future.
 
 ## Differences from CMIP6 or other previous versions
 
 ### File formats and naming
 
-The file formats are quite different from CMIP6 
+The file formats are quite different from CMIP6
 because the data is coming from a different provider.
 The naming may also be different.
 Overall, we would say that the data is more uniform now
@@ -111,7 +119,7 @@ and in line with other input4MIPs data and conventions.
 
 ### Data
 
-For a full dive into the changes from CMIP6, see 
+For a full dive into the changes from CMIP6, see
 [the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
 
 <!--- begin-revision-history -->
