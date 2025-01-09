@@ -22,6 +22,25 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.5 (2025-01-09)
+
+
+### 🆕 Features
+
+- Added source ID UOEXETER-CMIP-1-2-0 to the CVs and associated data to the database. ([#174](https://github.com/PCMDI/input4MIPs_CVs/pull/174))
+
+### 🐛 Bug Fixes
+
+- Added uoexeter to the institution IDs CVs. ([#174](https://github.com/PCMDI/input4MIPs_CVs/pull/174))
+
+### 📚 Improved Documentation
+
+- - Added the link to the [external volcanic forcing documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true)
+  - Fixed the ESGF link in the greenhouse gas concentrations overview
+
+  ([#174](https://github.com/PCMDI/input4MIPs_CVs/pull/174))
+
+
 ## input4MIPs CVs v6.6.4 (2025-01-07)
 
 
