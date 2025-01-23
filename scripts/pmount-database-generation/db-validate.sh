@@ -1,9 +1,9 @@
 #!/bin/bash
 # Validate a database
 #
-# To run this script, you need an environment with input4mips-validation==0.15.0 installed
+# To run this script, you need an environment with input4mips-validation==0.19.0 installed
 # On nimbus, you can get into that with:
-# - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.15.0/`
+# - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.19.0/`
 #
 # Usage:
 # Needs to be run from the root of the repository for hte paths to work
