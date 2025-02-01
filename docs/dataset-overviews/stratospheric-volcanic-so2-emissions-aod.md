@@ -31,7 +31,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### Testing
 
-For the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-2-0%22%7D)
+For the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-3-0%22%7D)
 
 This data is for testing (both of the forcing data and of modelling workflows) only.
 Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
