@@ -15,14 +15,12 @@ or automate the processes and document where that automation happens.
 from __future__ import annotations
 
 import copy
-from typing import Any, Annotated, Union
-
 import json
+from typing import Annotated, Any, Union
 
 import pandas as pd
 import pandas_diff as pd_diff
 import tqdm
-
 import typer
 
 from input4MIPs_CVs.cli.options import REPO_ROOT_DIR_OPTION
@@ -290,9 +288,13 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
         'For further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release notes</a>.'
     )
 
+    out.loc[out["source_id"] == "UOEXETER-CMIP-1-2-0", "comment_post_publication"] = (
+        "v1.3.0 updates the handling of small eruptions in the pre-satellite era. "
+        "Hence v1.2.0 is retracted. "
+    )
     out.loc[out["source_id"] == "UOEXETER-CMIP-1-1-3", "comment_post_publication"] = (
         "v1.2.0 includes climatology data (for piControl simulations) "
-        "and updates the handling of small eruptions."
+        "and updates the handling of small eruptions. "
         "Hence v1.1.3 is retracted. "
     )
 

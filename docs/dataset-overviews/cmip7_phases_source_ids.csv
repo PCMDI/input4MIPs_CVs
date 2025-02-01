@@ -14,7 +14,7 @@ forcing_int_id,forcing,cmip7_phase,source_id_stub,source_id_stub_ignore,source_i
 5,CO<sub>2</sub> isotopes,testing,,,,False
 5,CO<sub>2</sub> isotopes,ar7_fast_track,,,,False
 5,CO<sub>2</sub> isotopes,cmip7,,,,False
-6,Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties,testing,UOEXETER-CMIP,,UOEXETER-CMIP-1-2-0,False
+6,Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties,testing,UOEXETER-CMIP,,UOEXETER-CMIP-1-3-0,False
 6,Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties,ar7_fast_track,UOEXETER-CMIP,,,False
 6,Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties,cmip7,UOEXETER-CMIP,,,False
 7,Ozone,testing,,,,False

@@ -4,9 +4,9 @@
 # This script is archived, please do not use!!
 # (We already have a database set up.)
 #
-# To run this script, you need an environment with input4mips-validation==0.15.0 installed
+# To run this script, you need an environment with input4mips-validation==0.19.0 installed
 # On nimbus, you can get into that with:
-# - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.15.0/`
+# - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.19.0/`
 
 DATABASE_DIR=Database/input-data/pmount
 TREE_TO_CREATE_FROM=/p/user_pub/work/input4MIPs/CMIP6Plus/
