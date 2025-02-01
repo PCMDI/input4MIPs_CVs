@@ -126,9 +126,13 @@ For a full dive into the changes from CMIP6, see
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 
+### UOEXETER-CMIP-1-2-0
+
+v1.3.0 updates the handling of small eruptions in the pre-satellite era. Hence v1.2.0 is retracted.
+
 ### UOEXETER-CMIP-1-1-3
 
 v1.2.0 includes climatology data (for piControl simulations) and updates the handling of small
-eruptions.Hence v1.1.3 is retracted.
+eruptions. Hence v1.1.3 is retracted.
 
 <!--- end-revision-history -->
