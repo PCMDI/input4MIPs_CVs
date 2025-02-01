@@ -6,7 +6,7 @@
 # - `mamba init && source /home/jovyan/.bashrc && mamba activate /shared/input4mips-validation-v0.19.0/`
 #
 # Usage:
-# Needs to be run from the root of the repository for hte paths to work
+# Needs to be run from the root of the repository for the paths to work
 #   bash scripts/pmount-database-generation/db-validate.sh
 
 DATABASE_DIR=Database/input-data/pmount
