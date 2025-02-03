@@ -271,7 +271,10 @@ def get_datasets_view(
         # Incredibly slow way of doing this, but fine for now
         all_times = []
         for v in dsvdf["time_range"].tolist():
-            s, e = v.split("-")
+            toks = v.split("-")
+            s = toks[0]
+            e = toks[1]
+            # Might be one more token if we have a climatology
             all_times.append(s)
             all_times.append(e)
 
@@ -461,7 +464,7 @@ def get_delivery_summary_view(
             "input4MIPs_internal_page": "co2-isotopes",
         },
         {
-            "source_id": "UOEXETER-CMIP-1-2-0",
+            "source_id": "UOEXETER-CMIP-1-3-0",
             "description": "Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties",
             "url": None,
             "status": "Preliminary dataset available",

@@ -90,14 +90,15 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. Activate an environment which has the local `input4IMPs-CVs` package installed (see intructions on how to create such an environment in the sections above)
 1. Update the database: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
 1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
+    - If you get an error about a retracted publication status, you'll need to edit the latest source ID being used for a given dataset. Use the python traceback to help you identify where this is. (TODO: move things into a standalone file so it is easier to see what to edit)
 1. Check that the HTML has updated as expected (e.g. the summary view has updated as expected, new datasets are in the datasets view, new files are in the files view)
 1. Commit everything
-1. Build the docs: `mkdocs build --strict` 
-1. Check that the docs updated as expected. 
+1. Build the docs: `mkdocs build --strict`
+1. Check that the docs updated as expected.
    A few of the auto-generated components are worth checking here:
 
-    - are the source IDs for the dataset up to date? 
-      E.g. do we need to update the source IDs to be used for the various CMIP7 phases in 
+    - are the source IDs for the dataset up to date?
+      E.g. do we need to update the source IDs to be used for the various CMIP7 phases in
       `docs/dataset-overviews/cmip7_phases_source_ids.csv`?
     - did the revision history come through correctly? If not, there is an issue.
 
