@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.6 (2025-02-03)
+
+
+### 🆕 Features
+
+- Added UOEXETER-CMIP-1-3-0, i.e. the next release of the volcanic forcing. ([#178](https://github.com/PCMDI/input4MIPs_CVs/pull/178))
+
+### 🔧 Trivial/Internal Changes
+
+- [#178](https://github.com/PCMDI/input4MIPs_CVs/pull/178)
+
+
 ## input4MIPs CVs v6.6.5 (2025-01-09)
 
 
