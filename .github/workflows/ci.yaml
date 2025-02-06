@@ -82,4 +82,6 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Exclude local links
-          args: "--exclude 'file://' ."
+          # Exclude LUH2, not sure why that's failing but it seems to work in browser
+          # Exclude PCDMI, website is down
+          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' --exclude '^https://pcmdi.llnl.gov/$' ."
