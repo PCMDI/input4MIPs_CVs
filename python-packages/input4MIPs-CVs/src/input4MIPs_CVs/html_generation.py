@@ -482,18 +482,26 @@ def get_delivery_summary_view(
                 db["source_id"].isin([v.strip() for v in info_d["source_ids"]])
             ]
 
-            further_info_url = db_source_ids["further_info_url"].unique()
-            if len(further_info_url) == 1:
-                further_info_url = further_info_url[0]
-                if further_info_url.endswith(".invalid"):
-                    further_info_url = None
+            url_to_use = None
+            if "url" in info_d:
+                url_to_use = info_d["url"]
 
             else:
-                raise NotImplementedError(further_info_url)
+                further_info_url = db_source_ids["further_info_url"].unique()
+                if len(further_info_url) == 1:
+                    further_info_url = further_info_url[0]
+                    if further_info_url.endswith(".invalid"):
+                        further_info_url = None
 
-            if further_info_url is not None:
+                else:
+                    raise NotImplementedError(further_info_url)
+
+                if further_info_url is not None:
+                    url_to_use = further_info_url
+
+            if url_to_use is not None:
                 tmp["Forcing dataset"] = (
-                    f"<a href='{further_info_url}' target='_blank'>{description_html}</a>"
+                    f"<a href='{url_to_use}' target='_blank'>{description_html}</a>"
                 )
 
             else:

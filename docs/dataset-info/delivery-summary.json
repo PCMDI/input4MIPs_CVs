@@ -7,8 +7,8 @@
             "CEDS-CMIP-2024-10-21-supplemental"
         ]
     },
-    "biomass_burning_emms": { "source_ids": [ "DRES-CMIP-BB4CMIP7-1-0" ] },
-    "land_use": { "source_ids": [ "UofMD-landState-3-0" ] },
+    "biomass_burning_emms": { "source_ids": [ "DRES-CMIP-BB4CMIP7-1-0" ], "url": "https://www.globalfiredata.org" },
+    "land_use": { "source_ids": [ "UofMD-landState-3-0" ], "url": "https://luh.umd.edu" },
     "ghg_concentrations": { "source_ids": [ "CR-CMIP-0-4-0" ] },
     "co2_isotopes": {
         "expected_publication": "Unclear, waiting to hear from the data provider (please raise an issue if you need an updated on this dataset's status)",
@@ -32,7 +32,8 @@
     "solar": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-5" ] },
     "amip-ssts": { 
         "source_ids": [ "PCMDI-AMIP-1-1-9" ],  
-        "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release."
+        "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release.",
+        "url": "https://github.com/PCMDI/amipbcs"
     },
     "simple-plumes": {
         "source_ids": null,
