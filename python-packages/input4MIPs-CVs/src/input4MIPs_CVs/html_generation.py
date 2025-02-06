@@ -435,17 +435,6 @@ def get_delivery_summary_view(
     :
         Delivery summary view of `db`
     """
-    # hard_coded_info = [
-    #     {
-    #         "source_id": None,  # TBD
-    #         "description": "Population density",
-    #         "expected_publication": "Unknown: data provider TBD",
-    #         "url": None,
-    #         "status": "Unknown: data provider TBD",
-    #         "input4MIPs_internal_page": "population",
-    #     },
-    # ]
-
     res_l = []
     for ds_id, info_d in delivery_summary_info.items():
         tmp = {}
