@@ -11,6 +11,7 @@ import difflib
 import json
 from collections.abc import Iterable
 from pathlib import Path
+from typing import Any
 
 import packaging.version
 import pandas as pd
@@ -401,6 +402,8 @@ def get_source_id_view(
 
 def get_delivery_summary_view(
     db: pd.DataFrame,
+    delivery_summary_info: dict[str, Any],
+    dataset_info: dict[str, Any],
     view_cols_from_db: tuple[str, ...] = (
         "source_id",
         "publication_status",
@@ -418,6 +421,12 @@ def get_delivery_summary_view(
     db
         Database for which to generate the view
 
+    delivery_summary_info
+        Information to use to create the delivery summary
+
+    dataset_info
+        Dataset information
+
     view_cols_from_db
         The columns from the database which should appear in the generated view.
 
@@ -426,125 +435,52 @@ def get_delivery_summary_view(
     :
         Delivery summary view of `db`
     """
-    hard_coded_info = [
-        {
-            "source_id": "CEDS-CMIP-2024-11-25, CEDS-CMIP-2024-11-25-supplemental, CEDS-CMIP-2024-10-21, CEDS-CMIP-2024-10-21-supplemental",
-            "description": "Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions",
-            "url": "https://www.pnnl.gov/projects/ceds",
-            "status": "Preliminary dataset available",
-            "input4MIPs_internal_page": "anthropogenic-slcf-co2-emissions",
-        },
-        {
-            "source_id": "DRES-CMIP-BB4CMIP7-1-0",
-            "description": "Open biomass burning emissions",
-            "url": "http://www.globalfiredata.org",
-            "status": "Preliminary dataset available",
-            "input4MIPs_internal_page": "open-biomass-burning-emissions",
-        },
-        {
-            "source_id": "UofMD-landState-3-0",
-            "description": "Land use",
-            "url": "http://luh.umd.edu",
-            "status": "Preliminary dataset available",
-            "input4MIPs_internal_page": "land-use",
-        },
-        {
-            "source_id": "CR-CMIP-0-4-0",
-            "description": "Greenhouse gas concentrations",
-            "url": "https://github.com/climate-resource/CMIP-GHG-Concentration-Generation",
-            "status": "Preliminary dataset available",
-            "input4MIPs_internal_page": "greenhouse-gas-concentrations",
-        },
-        {
-            "source_id": None,  # TBD
-            "description": "CO<sub>2</sub> isotopes",
-            "expected_publication": "January 2025",
-            "url": None,  # TBD
-            "status": "Data in preparation",
-            "input4MIPs_internal_page": "co2-isotopes",
-        },
-        {
-            "source_id": "UOEXETER-CMIP-1-3-0",
-            "description": "Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties",
-            "url": None,
-            "status": "Preliminary dataset available",
-            "input4MIPs_internal_page": "stratospheric-volcanic-so2-emissions-aod",
-        },
-        {
-            "source_id": None,  # TBD
-            "description": "Ozone concentrations",
-            "expected_publication": "~January 2025; 3 months after dependent datasets",
-            "url": None,
-            "status": "Depends on 1, 2, 4, 5 and 8",
-            "input4MIPs_internal_page": "ozone",
-        },
-        {
-            "source_id": None,  # TBD
-            "description": "Nitrogen deposition",
-            "expected_publication": "~January 2025; 3 months after dependent datasets",
-            "url": None,
-            "status": "Depends on 1, 2, 4, 5 and 8",
-            "input4MIPs_internal_page": "nitrogen-deposition",
-        },
-        {
-            "source_id": "SOLARIS-HEPPA-CMIP-4-5",
-            "description": "Solar",
-            "url": "https://solarisheppa.geomar.de/cmip7",
-            "status": "Preliminary dataset available",
-            "input4MIPs_internal_page": "solar",
-        },
-        {
-            "source_id": "PCMDI-AMIP-1-1-9",
-            "description": "AMIP sea-surface temperature and sea-ice boundary forcing",
-            "url": "https://pcmdi.llnl.gov/mips/amip/",
-            "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release ",
-            "input4MIPs_internal_page": "amip-sst-sea-ice-boundary-forcing",
-        },
-        {
-            "source_id": None,  # TBD
-            "description": "Aerosol optical properties/MACv2-SP",
-            "expected_publication": "Available",
-            "url": "https://zenodo.org/records/14512962",
-            "status": "Preliminary dataset available",
-            "input4MIPs_internal_page": "aerosol-optical-properties-macv2-sp",
-        },
-        {
-            "source_id": None,  # TBD
-            "description": "Population density",
-            "expected_publication": "Unknown: data provider TBD",
-            "url": None,
-            "status": "Unknown: data provider TBD",
-            "input4MIPs_internal_page": "population",
-        },
-    ]
+    # hard_coded_info = [
+    #     {
+    #         "source_id": None,  # TBD
+    #         "description": "Population density",
+    #         "expected_publication": "Unknown: data provider TBD",
+    #         "url": None,
+    #         "status": "Unknown: data provider TBD",
+    #         "input4MIPs_internal_page": "population",
+    #     },
+    # ]
 
     res_l = []
-    for i, info_d in enumerate(hard_coded_info):
+    for ds_id, info_d in delivery_summary_info.items():
         tmp = {}
-        tmp["Dataset #"] = i + 1
-        input4MIPs_internal_page = info_d["input4MIPs_internal_page"]
+        tmp["Dataset #"] = dataset_info[ds_id]["dataset_number"]
+        input4MIPs_CVs_internal_page = dataset_info[ds_id][
+            "input4MIPs_CVS_internal_page"
+        ]
 
-        if info_d["source_id"] is None:
-            if info_d["description"].startswith("Aerosol optical properties/MAC"):
-                # The simple plumes exception
+        description_html = dataset_info[ds_id]["description_html"]
+
+        if info_d["source_ids"] is None:
+            if ds_id == "simple-plumes":
+                # Fun exception
                 tmp["Forcing dataset"] = (
-                    f"<a href='{info_d['url']}' target='_blank'>{info_d['description']}</a>"
+                    f"<a href='{info_d['url']}' target='_blank'>{description_html}</a>"
                 )
                 tmp["Source ID"] = (
                     f"NA (not released on ESGF, see {format_url_for_html(info_d['url'], info_d['url'])} instead)"
                 )
-                tmp["Status"] = info_d["status"]
+                if "status" in info_d:
+                    tmp["Status"] = info_d["status"]
+                else:
+                    tmp["Status"] = "Preliminary dataset available"
+
                 tmp["ESGF publication status"] = (
-                    f"{info_d['expected_publication']}: {format_url_for_html(info_d['url'], info_d['url'])}"
+                    f"Available: {format_url_for_html(info_d['url'], info_d['url'])}"
                 )
 
             else:
                 if info_d["url"] is not None:
                     tmp["Forcing dataset"] = (
-                        f"<a href='{info_d['url']}' target='_blank'>{info_d['description']}</a>"
+                        f"<a href='{info_d['url']}' target='_blank'>{description_html}</a>"
                     )
                 else:
-                    tmp["Forcing dataset"] = info_d["description"]
+                    tmp["Forcing dataset"] = description_html
 
                 tmp["Source ID"] = "TBD"
                 tmp["Status"] = info_d["status"]
@@ -554,9 +490,7 @@ def get_delivery_summary_view(
 
         else:
             db_source_ids = db[
-                db["source_id"].isin(
-                    [v.strip() for v in info_d["source_id"].split(",")]
-                )
+                db["source_id"].isin([v.strip() for v in info_d["source_ids"]])
             ]
 
             further_info_url = db_source_ids["further_info_url"].unique()
@@ -570,14 +504,17 @@ def get_delivery_summary_view(
 
             if further_info_url is not None:
                 tmp["Forcing dataset"] = (
-                    f"<a href='{further_info_url}' target='_blank'>{info_d['description']}</a>"
+                    f"<a href='{further_info_url}' target='_blank'>{description_html}</a>"
                 )
 
             else:
-                tmp["Forcing dataset"] = info_d["description"]
+                tmp["Forcing dataset"] = description_html
 
-            tmp["Source ID"] = info_d["source_id"]
-            tmp["Status"] = info_d["status"]
+            tmp["Source ID"] = ", ".join(info_d["source_ids"])
+            if "status" in info_d:
+                tmp["Status"] = info_d["status"]
+            else:
+                tmp["Status"] = "Preliminary dataset available"
 
             publication_status = db_source_ids["publication_status"].unique()
             if len(publication_status) == 1:
@@ -653,7 +590,7 @@ def get_delivery_summary_view(
             else:
                 raise NotImplementedError(publication_status)
 
-        internal_docs_link = f"Internal docs: <a href='../dataset-overviews/{input4MIPs_internal_page}' target='_blank'>here</a>"
+        internal_docs_link = f"Internal docs: <a href='../dataset-overviews/{input4MIPs_CVs_internal_page}' target='_blank'>here</a>"
         tmp["Forcing dataset"] = (
             f"<b>{tmp['Forcing dataset']}</b></br>{internal_docs_link}"
         )
@@ -679,6 +616,10 @@ def get_db_views_to_write(
     db_file_path_rel_to_root: Path = Path("Database")
     / "input4MIPs_db_file_entries.json",
     html_dir_rel_to_root: Path = Path("docs") / "database-views",
+    delivery_summary_info_p: Path = Path("docs")
+    / "dataset-info"
+    / "delivery-summary.json",
+    dataset_info_p: Path = Path("docs") / "dataset-info" / "dataset-info.json",
 ) -> tuple[tuple[pd.DataFrame, Path, str], ...]:
     """
     Get the views of the database to write as HTML files
@@ -693,6 +634,12 @@ def get_db_views_to_write(
 
     html_dir_rel_to_root
         Path in which to write the generated HTML files, relative to `repo_root_dir`
+
+    delivery_summary_info_p
+        Path in which the delivery summary information lives
+
+    dataset_info_p
+        Path in which the key dataset information lives
 
     Returns
     -------
@@ -710,12 +657,20 @@ def get_db_views_to_write(
     with open(db_file) as fh:
         db_raw = json.load(fh)
 
+    with open(delivery_summary_info_p) as fh:
+        delivery_summary_info = json.load(fh)
+
+    with open(dataset_info_p) as fh:
+        dataset_info = json.load(fh)
+
     db = pd.DataFrame(db_raw)
 
     files_view = get_files_view(db)
     datasets_view = get_datasets_view(db)
     source_id_view = get_source_id_view(db)
-    delivery_summary_view = get_delivery_summary_view(db)
+    delivery_summary_view = get_delivery_summary_view(
+        db=db, delivery_summary_info=delivery_summary_info, dataset_info=dataset_info
+    )
 
     # Hard-code filenames for now
     res = (
