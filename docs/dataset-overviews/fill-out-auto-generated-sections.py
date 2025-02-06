@@ -12,7 +12,6 @@ import textwrap
 from collections.abc import Iterable
 from pathlib import Path
 
-# from typing import Callable
 import pandas as pd
 
 HERE = Path(__file__).parent
@@ -67,6 +66,27 @@ with open(CMIP7_PHASES_SOURCE_IDS_JSON) as fh:
 
 with open(DATASET_INFO_JSON) as fh:
     DATASET_INFO = json.load(fh)
+
+
+def get_esgf_search_url(source_ids: list[str]) -> str:
+    """
+    Get an ESGF search URL which points to selected source IDs
+
+    Parameters
+    ----------
+    source_ids
+        Source IDs to search for
+
+    Returns
+    -------
+    :
+        URL search
+    """
+    source_id_search = "%22%2C%22".join(source_ids)
+    return (
+        "https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&"
+        f"activeFacets=%7B%22source_id%22%3A%5B%22{source_id_search}%22%5D%7D"
+    )
 
 
 def get_cmip7_phase_source_id_summary(
@@ -148,11 +168,8 @@ def get_cmip7_phase_source_id_summary(
             raise ValueError(msg)
 
         source_id_show = "; ".join(source_ids)
-        source_id_search = "%22%2C%22".join(source_ids)
         out[idx] = (
-            f"1. *{description_html}:* [{source_id_show}]"
-            "(https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&"
-            f"activeFacets=%7B%22source_id%22%3A%5B%22{source_id_search}%22%5D%7D)"
+            f"1. *{description_html}:* [{source_id_show}]({get_esgf_search_url(source_ids)})"
         )
 
     if all("No data available" in v for v in out):
@@ -287,17 +304,14 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
                 out.append(
                     f"For the {cmip7_phase_pretty} phase of CMIP7, "
                     "use data with the source ID "
-                    f"[{source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{source_id}%22%7D)"
+                    f"[{source_id}]({get_esgf_search_url(source_ids)})"
                 )
 
             else:
                 # Multiple source IDs
                 source_id_sep = "\n- "
                 source_id_str = source_id_sep.join(
-                    [
-                        f"[{sid}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{sid}%22%7D)"
-                        for sid in source_ids
-                    ]
+                    [f"[{sid}]({get_esgf_search_url([sid])})" for sid in source_ids]
                 )
                 out.append(
                     f"For the {cmip7_phase_pretty} of CMIP7, "
