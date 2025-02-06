@@ -250,9 +250,9 @@ def other_manual_fixes(db_df: pd.DataFrame) -> pd.DataFrame:
         "see https://github.com/PCMDI/input4MIPs_CVs/discussions/144. "
         "As far as we are aware, v0.4.0 fixes all major bugs identified in v0.3.0. "
         "For the full list of updates since v0.3.0 (and before), "
-        "see https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md. "
+        "see [https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md]()."
         "For further analysis of the changes between versions, "
-        "see https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations."
+        "see [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations]()."
     )
 
     out.loc[

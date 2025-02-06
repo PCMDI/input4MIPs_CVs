@@ -433,7 +433,7 @@ def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, .
         out.append(f"### {source_id}")
         out.append("")
         for txt in comments_post_publication:
-            out.extend(textwrap.wrap(txt, width=100))
+            out.extend(textwrap.wrap(txt, width=100, break_on_hyphens=False))
         out.append("")
 
     return tuple(out)
