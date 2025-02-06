@@ -99,7 +99,7 @@ If you are working elsewhere, you may need to modify the paths slightly.
 
     - are the source IDs for the dataset up to date?
       E.g. do we need to update the source IDs to be used for the various CMIP7 phases in
-      `docs/dataset-overviews/cmip7_phases_source_ids.csv`?
+      `docs/dataset-info/cmip7-phases-source-ids.json`?
     - did the revision history come through correctly? If not, there is an issue.
 
 1. Commit everything

@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Aerosol optical properties/MACv2-SP" -->
+<!--- forcing="simple-plumes" -->
 <!--- source_id_stub="tbd" -->
 # Aerosol optical properties/MACv2-SP
 

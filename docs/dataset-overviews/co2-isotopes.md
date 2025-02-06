@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="CO<sub>2</sub> isotopes" -->
+<!--- forcing="co2_isotopes" -->
 <!--- source_id_stub="tbd" -->
 # CO<sub>2</sub> isotopes
 

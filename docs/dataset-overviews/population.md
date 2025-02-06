@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Population density" -->
+<!--- forcing="population" -->
 <!--- source_id_stub="tbd" -->
 # Population density
 

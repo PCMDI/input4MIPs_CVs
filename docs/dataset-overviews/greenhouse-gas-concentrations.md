@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Greenhouse gas concentrations" -->
+<!--- forcing="ghg_concentrations" -->
 <!--- source_id_stub="CR-CMIP" -->
 # Greenhouse gas concentrations
 

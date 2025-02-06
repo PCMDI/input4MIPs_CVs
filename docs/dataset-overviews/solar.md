@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Solar" -->
+<!--- forcing="solar" -->
 <!--- source_id_stub="SOLARIS-HEPPA" -->
 # Solar
 

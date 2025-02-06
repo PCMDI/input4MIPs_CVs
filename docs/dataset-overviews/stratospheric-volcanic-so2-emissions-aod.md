@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties" -->
+<!--- forcing="volcanic" -->
 <!--- source_id_stub="UOEXETER-CMIP" -->
 # Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties
 

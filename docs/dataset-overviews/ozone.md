@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Ozone" -->
+<!--- forcing="ozone" -->
 <!--- source_id_stub="tbd" -->
 # Ozone
 

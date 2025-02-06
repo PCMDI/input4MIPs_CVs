@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Land use" -->
+<!--- forcing="land_use" -->
 <!--- source_id_stub="UofMD-landState" -->
 # Land use
 

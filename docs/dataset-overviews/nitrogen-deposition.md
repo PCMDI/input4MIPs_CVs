@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Nitrogen deposition" -->
+<!--- forcing="nitrogen-deposition" -->
 <!--- source_id_stub="tbd" -->
 # Nitrogen deposition
 

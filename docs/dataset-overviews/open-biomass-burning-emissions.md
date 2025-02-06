@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Open biomass burning emissions" -->
+<!--- forcing="biomass_burning_emms" -->
 <!--- source_id_stub="DRES-CMIP-BB4CMIP7" -->
 # Open biomass burning emissions
 
