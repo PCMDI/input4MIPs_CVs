@@ -82,4 +82,4 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Exclude local links
-          args: "--exclude 'file://'"
+          args: "--exclude 'file://' ."
