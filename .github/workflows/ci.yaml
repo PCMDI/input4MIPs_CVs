@@ -71,3 +71,16 @@ jobs:
           which pip
           pip install 'input4mips-validation[locked]'
           python scripts/load-cvs-with-input4mips-validation.py
+          
+  urls:
+    if: ${{ !github.event.pull_request.draft }}
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: check-urls-are-valid
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Exclude local links
+          # Not sure why LUH site fails, it works locally.
+          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' ."

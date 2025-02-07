@@ -73,7 +73,7 @@
     },
     "DRES-CMIP-BB4CMIP7-1-0":{
         "contact":"Margreet.vanMarle@Deltares.nl;Guido.vanderWerf@wur.nl",
-        "further_info_url":"http://www.globalfiredata.org",
+        "further_info_url":"https://www.globalfiredata.org",
         "institution_id":"DRES",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",

@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="Greenhouse gas concentrations" -->
+<!--- forcing="ghg_concentrations" -->
 <!--- source_id_stub="CR-CMIP" -->
 # Greenhouse gas concentrations
 
@@ -24,7 +24,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### Testing
 
-For the testing phase of CMIP7, use data with the source ID [CR-CMIP-0-4-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-4-0%22%7D)
+For the testing phase of CMIP7, use data with the source ID [CR-CMIP-0-4-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-0-4-0%22%5D%7D)
 
 This data is for testing (both of the forcing data and of modelling workflows) only.
 Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
@@ -113,7 +113,7 @@ particularly as we shift from using surface flasks to relying on ice cores inste
 ### Examples of working with the data
 
 If helpful, we show how the data can be downloaded from ESGF
-and compared to CMIP6 here: https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations.
+and compared to CMIP6 here: [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations]().
 
 ## Differences from CMIP6 or other previous versions
 
@@ -276,10 +276,10 @@ For reference, the CMIP6 data can be found
 ### CR-CMIP-0-3-0
 
 A number of bugs were identified in v0.3.0, see
-https://github.com/PCMDI/input4MIPs_CVs/discussions/144. As far as we are aware, v0.4.0 fixes all
-major bugs identified in v0.3.0. For the full list of updates since v0.3.0 (and before), see
-https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md. For
-further analysis of the changes between versions, see https://github.com/climate-resource/CMIP6-vs-
-CMIP7-GHG-Concentrations.
+[https://github.com/PCMDI/input4MIPs_CVs/discussions/144](). As far as we are aware, v0.4.0 fixes
+all major bugs identified in v0.3.0. For the full list of updates since v0.3.0 (and before), see
+[https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md]().For
+further analysis of the changes between versions, see
+[https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations]().
 
 <!--- end-revision-history -->

@@ -11,7 +11,6 @@ import json
 import textwrap
 from collections.abc import Iterable
 from pathlib import Path
-# from typing import Callable
 
 import pandas as pd
 
@@ -21,7 +20,10 @@ HERE = Path(__file__).parent
 # Fine for now.
 REPO_ROOT = HERE.parents[1]
 CURRENT_DB_PATH = REPO_ROOT / "Database" / "input4MIPs_db_file_entries.json"
-CMIP7_PHASES_SOURCE_IDS_CSV = HERE / "cmip7_phases_source_ids.csv"
+CMIP7_PHASES_SOURCE_IDS_JSON = (
+    REPO_ROOT / "docs" / "dataset-info" / "cmip7-phases-source-ids.json"
+)
+DATASET_INFO_JSON = REPO_ROOT / "docs" / "dataset-info" / "dataset-info.json"
 
 PHASES_COMMON_TEXT: dict[str, str] = {
     "testing": (
@@ -57,12 +59,39 @@ PHASES_COMMON_TEXT: dict[str, str] = {
 }
 
 with open(CURRENT_DB_PATH) as fh:
-    db_source = pd.DataFrame(json.load(fh))
+    DB_SOURCE = pd.DataFrame(json.load(fh))
 
-cmip7_phases_source_ids = pd.read_csv(CMIP7_PHASES_SOURCE_IDS_CSV)
+with open(CMIP7_PHASES_SOURCE_IDS_JSON) as fh:
+    CMIP7_PHASES_SOURCE_IDS = json.load(fh)
+
+with open(DATASET_INFO_JSON) as fh:
+    DATASET_INFO = json.load(fh)
 
 
-def get_cmip7_phase_source_id_summary(cmip7_phase: str) -> tuple[str, ...]:
+def get_esgf_search_url(source_ids: list[str]) -> str:
+    """
+    Get an ESGF search URL which points to selected source IDs
+
+    Parameters
+    ----------
+    source_ids
+        Source IDs to search for
+
+    Returns
+    -------
+    :
+        URL search
+    """
+    source_id_search = "%22%2C%22".join(source_ids)
+    return (
+        "https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&"
+        f"activeFacets=%7B%22source_id%22%3A%5B%22{source_id_search}%22%5D%7D"
+    )
+
+
+def get_cmip7_phase_source_id_summary(
+    cmip7_phase: str, source_id_stubs: dict[str, str]
+) -> tuple[str, ...]:
     """
     Get the summary of source IDs to use for a given phase of CMIP7
 
@@ -71,6 +100,9 @@ def get_cmip7_phase_source_id_summary(cmip7_phase: str) -> tuple[str, ...]:
     cmip7_phase
         CMIP7 phase for which to create the source ID summary
 
+    source_id_stubs
+        Mapping from forcings to the source ID stub to use to check that things are up to date
+
     Returns
     -------
     :
@@ -78,76 +110,78 @@ def get_cmip7_phase_source_id_summary(cmip7_phase: str) -> tuple[str, ...]:
 
         If the output is empty, no source IDs are available for this phase of CMIP7 yet.
     """
-    phase_source_ids = cmip7_phases_source_ids[
-        cmip7_phases_source_ids["cmip7_phase"] == cmip7_phase
-    ]
-    if phase_source_ids.empty or phase_source_ids["source_id"].isnull().all():
-        # No valid source IDs
-        return []
-
-    out = []
-    for _, row in phase_source_ids.sort_values("forcing_int_id").iterrows():
-        if pd.isnull(row.source_id):
-            out.append(f"1. *{row.forcing}:* No data available for this phase yet")
+    out = [None] * len(DATASET_INFO)
+    for forcing_id, info in CMIP7_PHASES_SOURCE_IDS.items():
+        phase_info = info[cmip7_phase]
+        idx = DATASET_INFO[forcing_id]["dataset_number"] - 1
+        description_html = DATASET_INFO[forcing_id]["description_html"]
+        if phase_info is None:
+            out[idx] = f"1. *{description_html}:* No data available for this phase yet"
             continue
 
-        if ";" in row.source_id:
-            source_ids = row.source_id.split(";")
-        else:
-            source_ids = [row.source_id]
+        if forcing_id == "simple-plumes":
+            # The simple plumes exception
+            out[idx] = (
+                "1. *Aerosol optical properties/MACv2-SP*: "
+                "This is not managed via ESGF. "
+                "Please see the "
+                "[aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) "
+                "for details.",
+            )
+            continue
 
+        source_ids = phase_info["source_ids"]
         # Make sure all source IDs are in the DB
         missing_from_db = [
-            sid for sid in source_ids if sid not in db_source["source_id"].tolist()
+            sid for sid in source_ids if sid not in DB_SOURCE["source_id"].tolist()
         ]
         if missing_from_db:
-            msg = f"These source IDs are not in our database: {missing_from_db}"
+            msg = f"These source IDs are not in our database ({CURRENT_DB_PATH}): {missing_from_db}"
             raise ValueError(msg)
 
         # Check status in the database
-        db_source_id_stub_rows = db_source[
-            db_source["source_id"].str.contains(row.source_id_stub)
+        db_source_id_stub_rows = DB_SOURCE[
+            DB_SOURCE["source_id"].str.contains(source_id_stubs[forcing_id])
         ]
-        if not pd.isnull(row.source_id_stub_ignore):
+        if "source_id_stub_ignore" in phase_info:
             # The CEDS clause
             db_source_id_stub_rows = db_source_id_stub_rows[
                 ~db_source_id_stub_rows["source_id"].str.contains(
-                    row.source_id_stub_ignore
+                    phase_info["source_id_stub_ignore"]
                 )
             ]
 
         # May need a more sophisticated sorting algorithm at some point
         source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
         source_id_latest = source_ids_sorted[-1]
-        if (not row.ok_if_not_latest) and row.source_id != source_id_latest:
+        if (
+            "ok_if_not_latest" in phase_info and not phase_info["ok_if_not_latest"]
+        ) and any(v != source_id_latest for v in phase_info["source_ids"]):
             msg = (
-                f"For {row.forcing=} and {row.cmip7_phase=}, {row.source_id=}."
+                f"For {forcing_id=} and {cmip7_phase=}, {phase_info['source_ids']=}. "
                 f"This is not the latest available source ID ({source_ids_sorted=}). "
-                f"Given that {row.ok_if_not_latest=},"
+                f"Given that {phase_info['ok_if_not_latest']=},"
                 f"either update the source ID to the latest ({source_id_latest}) "
-                f"or set `ok_if_not_latest` for {row.forcing=} to `True` "
-                f"in {CMIP7_PHASES_SOURCE_IDS_CSV}. "
+                f"or set `ok_if_not_latest` to `True` for the info "
+                f"in {CMIP7_PHASES_SOURCE_IDS_JSON}. "
             )
             raise ValueError(msg)
 
-        out.append(
-            f"1. *{row.forcing}:* [{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
+        source_id_show = "; ".join(source_ids)
+        out[idx] = (
+            f"1. *{description_html}:* [{source_id_show}]({get_esgf_search_url(source_ids)})"
         )
 
-    # The simple plumes exception
-    out.insert(
-        10,
-        "1. *Aerosol optical properties/MACv2-SP*: "
-        "This is not managed via ESGF. "
-        "Please see the "
-        "[aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) "
-        "for details.",
-    )
+    if all("No data available" in v for v in out):
+        # No valid source IDs
+        return []
 
     return tuple(out)
 
 
-def add_cmip7_phase_source_id_summaries(raw_split: tuple[str, ...]) -> tuple[str, ...]:
+def add_cmip7_phase_source_id_summaries(
+    raw_split: tuple[str, ...], source_id_stubs: dict[str, str]
+) -> tuple[str, ...]:
     """
     Add the summaries of source IDs to use for each phase of CMIP7
 
@@ -155,6 +189,9 @@ def add_cmip7_phase_source_id_summaries(raw_split: tuple[str, ...]) -> tuple[str
     ----------
     raw_split
         Raw file contents, split into lines
+
+    source_id_stubs
+        Mapping from forcings to the source ID stub to use to check that things are up to date
 
     Returns
     -------
@@ -191,7 +228,7 @@ def add_cmip7_phase_source_id_summaries(raw_split: tuple[str, ...]) -> tuple[str
                 out.append("")
 
                 source_id_summary = get_cmip7_phase_source_id_summary(
-                    cmip7_phase=cmip7_phase
+                    cmip7_phase=cmip7_phase, source_id_stubs=source_id_stubs
                 )
 
                 if source_id_summary:
@@ -228,72 +265,53 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
     :
         Summary of source IDs to use for the CMIP7 phases for the given forcing
     """
-    forcing_source_ids = cmip7_phases_source_ids[
-        cmip7_phases_source_ids["forcing"] == forcing
-    ]
-    if forcing_source_ids.empty:
-        raise AssertionError
-
     out = [
         "### Source IDs for CMIP7 phases",
         "",
         "The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.",
         "",
     ]
-    for _, row in forcing_source_ids.iterrows():
-        # TODO: enforce order
-        if row.cmip7_phase == "testing":
+    for phase in ("testing", "ar7_fast_track", "cmip7"):
+        info = CMIP7_PHASES_SOURCE_IDS[forcing][phase]
+
+        if phase == "testing":
             cmip7_phase_pretty_title = "Testing"
             cmip7_phase_pretty = "testing"
 
-        elif row.cmip7_phase == "ar7_fast_track":
+        elif phase == "ar7_fast_track":
             cmip7_phase_pretty_title = "CMIP7 AR7 fast track"
             cmip7_phase_pretty = "CMIP7 AR7 fast track"
 
-        elif row.cmip7_phase == "cmip7":
+        elif phase == "cmip7":
             cmip7_phase_pretty_title = "CMIP7"
             cmip7_phase_pretty = "CMIP7"
 
         else:
-            raise NotImplementedError(row.cmip7_phase)
+            raise NotImplementedError(phase)
 
         out.append(f"#### {cmip7_phase_pretty_title}")
         out.append("")
 
-        if pd.isnull(row.source_id):
+        if info is None:
             out.append("No data available for this phase yet.")
             out.append("")
 
         else:
-            # Skipping check of status in the database here because that is done at the summary level.
-            # If we remove it there, we should add that check back in here.
-            # db_source_id_stub_rows = db_source[
-            #     db_source["source_id"].str.contains(row.source_id_stub)
-            # ]
-            #
-            # # May need a more sophisticated sorting algorithm at some point
-            # source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
-            # source_id_latest = source_ids_sorted[-1]
-            # if (not row.ok_if_not_latest) and row.source_id != source_id_latest:
-            #     msg = (
-            #         f"For {row.forcing=} and {row.cmip7_phase=}, {row.source_id=}."
-            #         f"This is not the latest available source ID ({source_ids_sorted=}). "
-            #         f"Given that {row.ok_if_not_latest=},"
-            #         f"either update the source ID to the latest ({source_id_latest}) "
-            #         f"or set `ok_if_not_latest` for {row.forcing=} to `True` "
-            #         f"in {CMIP7_PHASES_SOURCE_IDS_CSV}. "
-            #     )
-            #     raise ValueError(msg)
+            source_ids = info["source_ids"]
 
-            if ";" in row.source_id:
+            if len(source_ids) == 1:
+                source_id = source_ids[0]
+                out.append(
+                    f"For the {cmip7_phase_pretty} phase of CMIP7, "
+                    "use data with the source ID "
+                    f"[{source_id}]({get_esgf_search_url(source_ids)})"
+                )
+
+            else:
                 # Multiple source IDs
-                source_ids = row.source_id.split(";")
                 source_id_sep = "\n- "
                 source_id_str = source_id_sep.join(
-                    [
-                        f"[{sid}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{sid}%22%7D)"
-                        for sid in source_ids
-                    ]
+                    [f"[{sid}]({get_esgf_search_url([sid])})" for sid in source_ids]
                 )
                 out.append(
                     f"For the {cmip7_phase_pretty} of CMIP7, "
@@ -303,16 +321,9 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
                     "and process the data carefully."
                 )
 
-            else:
-                out.append(
-                    f"For the {cmip7_phase_pretty} phase of CMIP7, "
-                    "use data with the source ID "
-                    f"[{row.source_id}](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%22{row.source_id}%22%7D)"
-                )
-
             out.append("")
 
-        out.append(PHASES_COMMON_TEXT[row.cmip7_phase])
+        out.append(PHASES_COMMON_TEXT[phase])
         out.append("")
 
     return tuple(out)
@@ -400,7 +411,7 @@ def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, .
 
         If the output is empty, no revisions have been made.
     """
-    source_id_stub_rows = db_source[db_source["source_id"].str.contains(source_id_stub)]
+    source_id_stub_rows = DB_SOURCE[DB_SOURCE["source_id"].str.contains(source_id_stub)]
     source_ids_in_history = source_id_stub_rows["source_id"].unique()
 
     out = []
@@ -422,7 +433,7 @@ def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, .
         out.append(f"### {source_id}")
         out.append("")
         for txt in comments_post_publication:
-            out.extend(textwrap.wrap(txt, width=100))
+            out.extend(textwrap.wrap(txt, width=100, break_on_hyphens=False))
         out.append("")
 
     return tuple(out)
@@ -527,14 +538,28 @@ def get_file_info(raw_split: Iterable[str]) -> dict[str, str]:
 
 
 def main() -> None:
+    file_raw = {}
+    file_info = {}
     for file in HERE.glob("*.md"):
         with open(file) as fh:
             raw = fh.read()
 
-        out = tuple(raw.splitlines())
+        tmp = tuple(raw.splitlines())
+
+        file_raw[file] = tmp
+        if file.name == "index.md":
+            continue
+
+        file_info[file] = get_file_info(tmp)
+
+    for file in HERE.glob("*.md"):
+        out = file_raw[file]
 
         if file.name == "index.md":
-            out = add_cmip7_phase_source_id_summaries(out)
+            source_id_stubs = {
+                v["forcing"]: v["source_id_stub"] for v in file_info.values()
+            }
+            out = add_cmip7_phase_source_id_summaries(out, source_id_stubs)
 
         else:
             info = get_file_info(out)

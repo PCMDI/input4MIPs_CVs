@@ -1,6 +1,6 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="AMIP sea-surface temperature and sea-ice boundary forcing" -->
-<!--- source_id_stub="PCMDI-ACMIP" -->
+<!--- forcing="amip-ssts" -->
+<!--- source_id_stub="PCMDI-AMIP" -->
 # AMIP sea-surface temperature and sea-ice boundary forcing
 
 **This section is a work in progress.**
@@ -21,7 +21,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### Testing
 
-No data available for this phase yet.
+For the testing phase of CMIP7, use data with the source ID [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-9%22%5D%7D)
 
 This data is for testing (both of the forcing data and of modelling workflows) only.
 Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
@@ -31,7 +31,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 #### CMIP7 AR7 fast track
 
-No data available for this phase yet.
+For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-9%22%5D%7D)
 
 This data will be for the CMIP7 AR7 fast track.
 All data sets for use in the fast track will be published with a `mip_era` metadata value of 'CMIP7'.
