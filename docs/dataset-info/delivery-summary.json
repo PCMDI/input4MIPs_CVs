@@ -32,8 +32,7 @@
     "solar": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-5" ] },
     "amip-ssts": { 
         "source_ids": [ "PCMDI-AMIP-1-1-9" ],  
-        "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release.",
-        "url": "https://github.com/PCMDI/amipbcs"
+        "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release."
     },
     "simple-plumes": {
         "source_ids": null,
