@@ -20,13 +20,13 @@
     "ozone": {
         "expected_publication": "piControl - end of March, historical - end of May.",
         "source_ids": null,
-        "status": "Waiting on other forcings to be finalised",
+        "status": "Awaiting finalization of upstream forcings: solar, volcanic, GHG/ODS concentrations, SLCF emissions, land-use changes",
         "url": null
     },
     "nitrogen-deposition": {
-        "expected_publication": "To be confirmed. If same as ozone, then piControl - end of March, historical - end of May.",
+        "expected_publication": "piControl - end of March, historical - end of May.",
         "source_ids": null,
-        "status": "To be confirmed. We think we are waiting on other forcings to be finalised",
+        "status": "Awaiting finalization of upstream forcings: solar, volcanic, GHG/ODS concentrations, SLCF emissions, land-use changes",
         "url": null
     },
     "solar": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-5" ] },
