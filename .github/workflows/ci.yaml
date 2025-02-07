@@ -82,4 +82,5 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Exclude local links
-          args: "--exclude 'file://' ."
+          # Not sure why LUH site fails, it works locally.
+          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' ."
