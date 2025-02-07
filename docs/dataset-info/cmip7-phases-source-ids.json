@@ -65,7 +65,7 @@
     },
     "amip-ssts": {
         "testing": { "source_ids": [ "PCMDI-AMIP-1-1-9" ] },
-        "ar7_fast_track": null,
+        "ar7_fast_track": { "source_ids": [ "PCMDI-AMIP-1-1-9" ] },
         "cmip7": null
     }
 }
