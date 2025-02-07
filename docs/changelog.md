@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.7 (2025-02-07)
+
+
+### 📚 Improved Documentation
+
+- Updated expected delivery dates for ozone and nitrogen deposition forcing. ([#179](https://github.com/PCMDI/input4MIPs_CVs/pull/179))
+
+### 🔧 Trivial/Internal Changes
+
+- [#179](https://github.com/PCMDI/input4MIPs_CVs/pull/179)
+
+
 ## input4MIPs CVs v6.6.6 (2025-02-03)
 
 
