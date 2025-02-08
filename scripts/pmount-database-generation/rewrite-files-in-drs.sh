@@ -21,7 +21,7 @@ for file_to_rewrite in "$@"
 do
     input4mips-validation --logging-level $LOG_LEVEL \
     	validate-file \
-    	--cv-source "gh:main" \
+    	--cv-source "./CVs" \
         --write-in-drs "${rewrite_target}" \
     	"${file_to_rewrite}"
         # --allow-cf-checker-warnings \
