@@ -16,10 +16,11 @@ and also provides an interface to bump the version.
 
 ## The database
 
-In `Database/input-data` there are two components:
+In `Database/input-data` there are three components:
 
 1. The file `esgf-input4MIPs.json`
 1. The directory `Database/input-data/pmount`
+1. The file `Database/input-data/supplementary-source-id-info.yaml`
 
 `Database/input-data/esgf-input4MIPs.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have queried from the ESGF index database.
@@ -45,11 +46,19 @@ The database entries are managed using the scripts in
 See `scripts/pmount-database-generation/README.md`
 for futher details.
 
-At present, we are tracking both of these inputs as part of this repository.
+`Database/input-data/supplementary-source-id-info.yaml`
+contains supplementary information about our data.
+This is data that cannot be scraped from ESGF or the files,
+usually because it is only known after publication of the data
+(e.g. reasons for later deprecation of the data).
+At the moment, the fixes are applied at the source ID level.
+If you need finer-grained control, add in a new source.
+
+At present, we are tracking all of these inputs as part of this repository.
 This is ok for now, as the data is relatively small.
 This may not scale, so if we get to a certain size, we may have to pick a different approach.
 
-The data from these two inputs, plus information from the CVS,
+The data from these three inputs, plus information from the CVS,
 gets combined to create `Database/input4MIPs_db_file_entries.json`.
 This combination is done using `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py`.
 In order to run this script, you should:
@@ -89,6 +98,7 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. If needed, add the source ID entry for the new files to `CVs/input4MIPs_source_id.json`
 1. Activate an environment which has the local `input4IMPs-CVs` package installed (see intructions on how to create such an environment in the sections above)
 1. Update the database: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
+    - If needed, add a reason for the retraction/deprecation of the previous data set in `Database/input-data/supplementary-source-id-info.yaml`
 1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
     - If you get an error about a retracted publication status, you'll need to edit the latest source ID being used for a given dataset. Use the python traceback to help you identify where this is. (TODO: move things into a standalone file so it is easier to see what to edit)
 1. Check that the HTML has updated as expected (e.g. the summary view has updated as expected, new datasets are in the datasets view, new files are in the files view)
