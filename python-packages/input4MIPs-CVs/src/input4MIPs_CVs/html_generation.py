@@ -578,7 +578,7 @@ def get_delivery_summary_view(
 
             elif publication_status == "retracted":
                 msg = (
-                    f"publication status for source_id={info_d['source_id']} "
+                    f"publication status for source_ids={info_d['source_ids']} "
                     f"is {publication_status}. "
                     "Please check the source ID being used in the summary view."
                 )
