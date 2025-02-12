@@ -164,6 +164,15 @@
         "target_mip":"CMIP",
         "source_version":"4.5"
     },
+    "SOLARIS-HEPPA-CMIP-4-6":{
+        "contact":"bernd@iaa.es",
+        "further_info_url":"http://solarisheppa.geomar.de/cmip7",
+        "institution_id":"SOLARIS-HEPPA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "target_mip":"CMIP",
+        "source_version":"4.6"
+    },
     "UCLA-1-0-1":{
         "contact":"jfkok@ucla.edu;dleung@ucar.edu",
         "further_info_url":"http://www.tbd.invalid",
