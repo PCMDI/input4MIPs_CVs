@@ -353,6 +353,14 @@
         "mip_era":"CMIP7",
         "source_version":"2.0"
     },
+    "FZJ-1-0":{
+        "contact":"Michaela Hegglin (m.i.hegglin@fz-juelich.de)",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"FZJ",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0"
+    },
     "MRI-JRA55-do-1-6-0":{
         "activity_id": "input4MIPs",
         "authors": [
