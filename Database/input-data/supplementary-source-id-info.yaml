@@ -27,7 +27,7 @@ SOLARIS-HEPPA-CMIP-4-2:
     An issue was encountered with the proton ionization data in v4.2.
     It was hence retracted.
     The original comment from the data provider is
-    <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/17#issuecomment-2255378927">here</a>.'
+    <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/17#issuecomment-2255378927">here</a>.
 SOLARIS-HEPPA-CMIP-4-3:
   license_id: CC BY 4.0
   comment_post_publication: >-
