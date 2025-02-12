@@ -126,6 +126,11 @@ For a full dive into the changes from CMIP6, see
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 
+### UOEXETER-CMIP-1-3-0
+
+v1.3.1 does minor plus updates and adds the aerosol number density requested by some modelling
+groups. Hence v1.3.0 is deprecated.
+
 ### UOEXETER-CMIP-1-2-0
 
 v1.3.0 updates the handling of small eruptions in the pre-satellite era. Hence v1.2.0 is retracted.
