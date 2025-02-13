@@ -154,17 +154,36 @@ def get_cmip7_phase_source_id_summary(
         # May need a more sophisticated sorting algorithm at some point
         source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
         source_id_latest = source_ids_sorted[-1]
-        if (
-            "ok_if_not_latest" in phase_info and not phase_info["ok_if_not_latest"]
-        ) and any(v != source_id_latest for v in phase_info["source_ids"]):
-            msg = (
+
+        ok_if_not_latest = (
+            "ok_if_not_latest" in phase_info and phase_info["ok_if_not_latest"]
+        )
+        if not ok_if_not_latest and any(
+            v != source_id_latest for v in phase_info["source_ids"]
+        ):
+            msg = [
                 f"For {forcing_id=} and {cmip7_phase=}, {phase_info['source_ids']=}. "
                 f"This is not the latest available source ID ({source_ids_sorted=}). "
-                f"Given that {phase_info['ok_if_not_latest']=},"
-                f"either update the source ID to the latest ({source_id_latest}) "
-                f"or set `ok_if_not_latest` to `True` for the info "
-                f"in {CMIP7_PHASES_SOURCE_IDS_JSON}. "
-            )
+            ]
+
+            if "ok_if_not_latest" in phase_info:
+                msg.extend(
+                    [
+                        f"Given that {phase_info['ok_if_not_latest']=},"
+                        f"either update the source ID to the latest ({source_id_latest}) "
+                        f"or set `ok_if_not_latest` to `True` for the info "
+                        f"in {CMIP7_PHASES_SOURCE_IDS_JSON}. "
+                    ]
+                )
+            else:
+                msg.extend(
+                    [
+                        f"Either update the source ID to the latest ({source_id_latest}) "
+                        f"or set `ok_if_not_latest` to `True` for the info "
+                        f"in {CMIP7_PHASES_SOURCE_IDS_JSON}. "
+                    ]
+                )
+
             raise ValueError(msg)
 
         source_id_show = "; ".join(source_ids)
