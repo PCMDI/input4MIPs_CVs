@@ -164,6 +164,38 @@
         "target_mip":"CMIP",
         "source_version":"4.5"
     },
+    "UCLA-1-0-1":{
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0.1"
+    },
+    "UCLA-1-0-1-constant":{
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0.1"
+    },
+    "UCLA-1-0-1-decreasing":{
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0.1"
+    },
+    "UCLA-1-0-1-increasing":{
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0.1"
+    },
     "UOEXETER-CMIP-0-1-0":{
         "contact":"t.aubry@exeter.ac.uk",
         "further_info_url":"http://www.tbd.invalid",
