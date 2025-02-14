@@ -22,6 +22,22 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.8 (2025-02-14)
+
+
+### 🗑️ Deprecations
+
+- Deprecated UOEXETER-CMIP-1-3-0 data. ([#180](https://github.com/PCMDI/input4MIPs_CVs/pull/180))
+
+### 🆕 Features
+
+- Added UOEXETER-CMIP-1-3-1 data. ([#180](https://github.com/PCMDI/input4MIPs_CVs/pull/180))
+
+### 🔧 Trivial/Internal Changes
+
+- [#180](https://github.com/PCMDI/input4MIPs_CVs/pull/180), [#185](https://github.com/PCMDI/input4MIPs_CVs/pull/185)
+
+
 ## input4MIPs CVs v6.6.7 (2025-02-07)
 
 
