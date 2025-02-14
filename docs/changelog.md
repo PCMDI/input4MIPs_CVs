@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.9 (2025-02-14)
+
+
+### 🆕 Features
+
+- Added UCLA-1-0-1 and associated data, source IDs and institution ID to the CVs. ([#164](https://github.com/PCMDI/input4MIPs_CVs/pull/164))
+
+
 ## input4MIPs CVs v6.6.8 (2025-02-14)
 
 
