@@ -28,7 +28,7 @@ All data sets for use in the fast track are published with a `mip_era` metadata 
 This metadata value appears in both the file's global metadata as well as its metadata on ESGF.
 
 If you find an issue, please
-[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
+[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
 so that the identification and resolution of this issue is publicly accessible.
 
 #### Testing

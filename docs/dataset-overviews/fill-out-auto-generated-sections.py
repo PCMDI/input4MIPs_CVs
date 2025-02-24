@@ -44,7 +44,7 @@ PHASES_COMMON_TEXT: dict[str, str] = {
         "as well as its metadata on ESGF.\n"
         "\n"
         "If you find an issue, please\n"
-        "[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new)\n"
+        "[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)\n"
         "so that the identification and resolution of this issue is publicly accessible."
     ),
     "cmip7": (
