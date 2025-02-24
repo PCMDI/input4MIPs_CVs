@@ -294,6 +294,14 @@
         "mip_era":"CMIP6Plus",
         "source_version":"1.0"
     },
+    "DRES-CMIP-BB4CMIP7-2-0":{
+        "contact":"Margreet.vanMarle@Deltares.nl, Guido.vanderWerf@wur.nl",
+        "further_info_url":"https://www.globalfiredata.org",
+        "institution_id":"DRES",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"2.0"
+    },
     "MRI-JRA55-do-1-6-0":{
         "activity_id": "input4MIPs",
         "authors": [

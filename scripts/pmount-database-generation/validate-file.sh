@@ -15,7 +15,7 @@ LOG_LEVEL="DEBUG"
 # LOG_LEVEL="INFO_FILE_ERROR"
 
 input4mips-validation --logging-level $LOG_LEVEL \
-	validate-file \
-	--cv-source "gh:main" \
-	"${file_to_check}"
-
+    validate-file \
+    --cv-source "./CVs" \
+    "${file_to_check}"
+# --cv-source "gh:main" \
