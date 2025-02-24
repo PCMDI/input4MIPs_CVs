@@ -39,8 +39,8 @@
         "cmip7": null
     },
     "solar": {
-        "testing": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-5" ] },
-        "ar7_fast_track": null,
+        "testing": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-5" ], "ok_if_not_latest": true },
+        "ar7_fast_track": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-6" ] },
         "cmip7": null
     },
     "biomass_burning_emms": {

@@ -37,13 +37,15 @@ PHASES_COMMON_TEXT: dict[str, str] = {
         "[relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions)."
     ),
     "ar7_fast_track": (
-        "This data will be for the CMIP7 AR7 fast track.\n"
+        "This data is for the CMIP7 AR7 fast track.\n"
         "All data sets for use in the fast track "
-        "will be published with a `mip_era` metadata value of 'CMIP7'.\n"
-        "This metadata value will appear both in the file's global metadata "
+        "are published with a `mip_era` metadata value of 'CMIP7'.\n"
+        "This metadata value appears in both the file's global metadata "
         "as well as its metadata on ESGF.\n"
         "\n"
-        "Further details will follow in early 2025."
+        "If you find an issue, please\n"
+        "[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)\n"
+        "so that the identification and resolution of this issue is publicly accessible."
     ),
     "cmip7": (
         "This data will be for CMIP7.\n"
@@ -290,7 +292,7 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
         "The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.",
         "",
     ]
-    for phase in ("testing", "ar7_fast_track", "cmip7"):
+    for phase in ("ar7_fast_track", "testing", "cmip7"):
         info = CMIP7_PHASES_SOURCE_IDS[forcing][phase]
 
         if phase == "testing":

@@ -17,13 +17,12 @@ echo "Re-writing files into ${rewrite_target}"
 LOG_LEVEL="DEBUG"
 # LOG_LEVEL="INFO_FILE_ERROR"
 
-for file_to_rewrite in "$@"
-do
+for file_to_rewrite in "$@"; do
     input4mips-validation --logging-level $LOG_LEVEL \
-    	validate-file \
-    	--cv-source ./CVs \
+        validate-file \
+        --cv-source ./CVs \
         --write-in-drs "${rewrite_target}" \
-    	"${file_to_rewrite}"
-    	# --cv-source "gh:main" \
-        # --allow-cf-checker-warnings \
+        "${file_to_rewrite}"
+    # --allow-cf-checker-warnings \
+    # --cv-source "gh:main" \
 done
