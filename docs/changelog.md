@@ -156,7 +156,7 @@ of rst and use slightly different categories.
 
 ### 📚 Improved Documentation
 
-- Added information about which source ID to use for which phase of CMIP7 in the [dataset overviews][dataset-overviews] section. ([#151](https://github.com/PCMDI/input4MIPs_CVs/pull/151))
+- Added information about which source ID to use for which phase of CMIP7 in the [dataset overviews](dataset-overviews) section. ([#151](https://github.com/PCMDI/input4MIPs_CVs/pull/151))
 - Simplified the description of the testing phase in the dataset overview pages and renamed 'AR7 fast track' to 'CMIP7 AR7 fast track' to avoid confusion. ([#157](https://github.com/PCMDI/input4MIPs_CVs/pull/157))
 - - Fixed up the broken "Database views homepage" link in the database views pages
   - Updated the delivery summary view to include a link to our internal documentation pages

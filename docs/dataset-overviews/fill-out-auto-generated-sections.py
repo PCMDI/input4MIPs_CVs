@@ -114,12 +114,7 @@ def get_cmip7_phase_source_id_summary(
     """
     out = [None] * len(DATASET_INFO)
     for forcing_id, info in CMIP7_PHASES_SOURCE_IDS.items():
-        phase_info = info[cmip7_phase]
         idx = DATASET_INFO[forcing_id]["dataset_number"] - 1
-        description_html = DATASET_INFO[forcing_id]["description_html"]
-        if phase_info is None:
-            out[idx] = f"1. *{description_html}:* No data available for this phase yet"
-            continue
 
         if forcing_id == "simple-plumes":
             # The simple plumes exception
@@ -128,8 +123,15 @@ def get_cmip7_phase_source_id_summary(
                 "This is not managed via ESGF. "
                 "Please see the "
                 "[aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) "
-                "for details.",
+                "for details."
             )
+            continue
+
+        phase_info = info[cmip7_phase]
+        description_html = DATASET_INFO[forcing_id]["description_html"]
+
+        if phase_info is None:
+            out[idx] = f"1. *{description_html}:* No data available for this phase yet"
             continue
 
         source_ids = phase_info["source_ids"]
