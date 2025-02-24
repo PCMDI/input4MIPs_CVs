@@ -3,7 +3,9 @@ name: Data issue
 about: Report an issue with a dataset
 title: ''
 labels: dataset-issue
-assignees: '@durack1,@znichollscr'
+assignees:
+  - durack1
+  - znichollscr
 
 ---
 
