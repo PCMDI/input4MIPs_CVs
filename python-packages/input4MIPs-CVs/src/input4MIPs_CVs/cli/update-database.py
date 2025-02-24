@@ -157,6 +157,12 @@ def add_missing_source_ids(
         placeholder_entry = copy.deepcopy(template)
 
         for k, v in cvs_source_ids_raw[source_id].items():
+            if k == "authors":
+                # Skip this, shouldn't be in the database.
+                # The CVs need to be rethought to handle this better.
+                # We're starting to see the limits of not using an actual database.
+                continue
+
             placeholder_entry[k] = v
 
         placeholder_entry["source_id"] = source_id
