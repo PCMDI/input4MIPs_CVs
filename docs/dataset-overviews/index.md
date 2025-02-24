@@ -47,7 +47,7 @@ so that the identification and resolution of this issue is publicly accessible.
 1. *Nitrogen deposition:* No data available for this phase yet
 1. *Solar:* [SOLARIS-HEPPA-CMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22SOLARIS-HEPPA-CMIP-4-6%22%5D%7D)
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-9%22%5D%7D)
-1. *Aerosol optical properties/MACv2-SP:* No data available for this phase yet
+1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
 1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
 
@@ -74,7 +74,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Nitrogen deposition:* No data available for this phase yet
 1. *Solar:* [SOLARIS-HEPPA-CMIP-4-5](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22SOLARIS-HEPPA-CMIP-4-5%22%5D%7D)
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-9%22%5D%7D)
-1. *Aerosol optical properties/MACv2-SP:* No data available for this phase yet
+1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
 1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
 
@@ -92,5 +92,16 @@ Further details will follow after the fast track is underway
 
 #### Source IDs for use in this phase
 
-No source IDs are available for use in this phase of CMIP7 yet.
+1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* No data available for this phase yet
+1. *Open biomass burning emissions:* No data available for this phase yet
+1. *Land use:* No data available for this phase yet
+1. *Greenhouse gas concentrations:* No data available for this phase yet
+1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
+1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* No data available for this phase yet
+1. *Ozone concentrations:* No data available for this phase yet
+1. *Nitrogen deposition:* No data available for this phase yet
+1. *Solar:* No data available for this phase yet
+1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
+1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
+1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
