@@ -22,6 +22,25 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.10 (2025-02-24)
+
+
+### 🆕 Features
+
+- Added SOLARIS-HEPPA 4.6, the first CMIP7 AR7 fast-track dataset. ([#183](https://github.com/PCMDI/input4MIPs_CVs/pull/183))
+
+### 📚 Improved Documentation
+
+- - Put the datasets to use for AR7 CMIP7 fast track first in docs. For datasets which don't have AR7 CMIP7 datasets yet, the testing datasets are still in the docs, they're just further down now (because these docs are less relevant).
+  - Directed users to use [the new issue template](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md) for creating issues that report issues with datasets to help streamline things and capture key information.
+
+  ([#183](https://github.com/PCMDI/input4MIPs_CVs/pull/183))
+
+### 🔧 Trivial/Internal Changes
+
+- [#190](https://github.com/PCMDI/input4MIPs_CVs/pull/190)
+
+
 ## input4MIPs CVs v6.6.9 (2025-02-14)
 
 
