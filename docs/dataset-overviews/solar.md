@@ -33,7 +33,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 #### CMIP7 AR7 fast track
 
-No data available for this phase yet.
+For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-CMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22SOLARIS-HEPPA-CMIP-4-6%22%5D%7D)
 
 This data will be for the CMIP7 AR7 fast track.
 All data sets for use in the fast track will be published with a `mip_era` metadata value of 'CMIP7'.
