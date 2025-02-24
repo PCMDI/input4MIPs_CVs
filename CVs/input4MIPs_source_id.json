@@ -1,5 +1,24 @@
 {
     "CEDS-CMIP-2024-07-08":{
+        "authors": [
+            {
+                "name": "Rachel Hoesly",
+                "email": "rachel.hoesly@pnnl.gov",
+                "affiliation": [
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
+                ],
+                "orcid": "0000-0003-0965-2729"
+            },
+            {
+                "name": "Steve Smith",
+                "email": "ssmith@pnnl.gov",
+                "affiliation": [
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
+                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                ],
+                "orcid": "0000-0003-0965-2729"
+            }
+        ],
         "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
         "further_info_url":"https://www.pnnl.gov/projects/ceds",
         "institution_id":"PNNL-JGCRI",
