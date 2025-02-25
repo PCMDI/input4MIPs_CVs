@@ -1,5 +1,6 @@
 {
     "CEDS-CMIP-2024-07-08":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Rachel Hoesly",
@@ -27,6 +28,7 @@
         "source_version":"2024-07-08"
     },
     "CEDS-CMIP-2024-07-08-supplemental":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Rachel Hoesly",
@@ -54,6 +56,7 @@
         "source_version":"2024-07-08"
     },
     "CEDS-CMIP-2024-10-21":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Rachel Hoesly",
@@ -81,6 +84,7 @@
         "source_version":"2024-10-21"
     },
     "CEDS-CMIP-2024-10-21-supplemental":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Rachel Hoesly",
@@ -108,6 +112,7 @@
         "source_version":"2024-10-21"
     },
     "CEDS-CMIP-2024-11-25":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Rachel Hoesly",
@@ -135,6 +140,7 @@
         "source_version":"2024-11-25"
     },
     "CEDS-CMIP-2024-11-25-supplemental":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Rachel Hoesly",
@@ -162,6 +168,7 @@
         "source_version":"2024-11-25"
     },
     "CR-CMIP-0-2-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Zebedee Nicholls",
@@ -191,6 +198,7 @@
         "source_version":"0.2.0"
     },
     "CR-CMIP-0-3-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Zebedee Nicholls",
@@ -220,6 +228,7 @@
         "source_version":"0.3.0"
     },
     "CR-CMIP-0-4-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Zebedee Nicholls",
@@ -249,6 +258,7 @@
         "source_version":"0.4.0"
     },
     "DRES-CMIP-BB4CMIP7-1-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Margreet van Marle",
@@ -275,6 +285,7 @@
         "source_version":"1.0"
     },
     "MRI-JRA55-do-1-6-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Hiroyuki Tsujino",
@@ -293,6 +304,7 @@
         "source_version":"1.6.0"
     },
     "PCMDI-AMIP-1-1-9":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Paul Durack",
@@ -311,6 +323,7 @@
         "source_version":"1.1.9"
     },
     "PCMDI-AMIP-ERSST5-1-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Paul Durack",
@@ -337,6 +350,7 @@
         "source_version":"1.0"
     },
     "PCMDI-AMIP-Had1p1-1-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Paul Durack",
@@ -363,6 +377,7 @@
         "source_version":"1.0"
     },
     "PCMDI-AMIP-OI2p1-1-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Paul Durack",
@@ -389,6 +404,7 @@
         "source_version":"1.0"
     },
     "SOLARIS-HEPPA-CMIP-4-1":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Bernd Funke",
@@ -408,6 +424,7 @@
         "source_version":"4.1"
     },
     "SOLARIS-HEPPA-CMIP-4-2":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Bernd Funke",
@@ -427,6 +444,7 @@
         "source_version":"4.2"
     },
     "SOLARIS-HEPPA-CMIP-4-3":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Bernd Funke",
@@ -446,6 +464,7 @@
         "source_version":"4.3"
     },
     "SOLARIS-HEPPA-CMIP-4-4":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Bernd Funke",
@@ -465,6 +484,7 @@
         "source_version":"4.4"
     },
     "SOLARIS-HEPPA-CMIP-4-5":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Bernd Funke",
@@ -484,6 +504,7 @@
         "source_version":"4.5"
     },
     "SOLARIS-HEPPA-CMIP-4-6":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Bernd Funke",
@@ -503,6 +524,7 @@
         "source_version":"4.6"
     },
     "UCLA-1-0-1":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Jasper Kok",
@@ -530,6 +552,7 @@
         "source_version":"1.0.1"
     },
     "UCLA-1-0-1-constant":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Jasper Kok",
@@ -557,6 +580,7 @@
         "source_version":"1.0.1"
     },
     "UCLA-1-0-1-decreasing":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Jasper Kok",
@@ -584,6 +608,7 @@
         "source_version":"1.0.1"
     },
     "UCLA-1-0-1-increasing":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Jasper Kok",
@@ -611,6 +636,7 @@
         "source_version":"1.0.1"
     },
     "UOEXETER-CMIP-0-1-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Thomas Aubry",
@@ -629,6 +655,7 @@
         "source_version":"0.1.0"
     },
     "UOEXETER-CMIP-1-1-2":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Thomas Aubry",
@@ -647,6 +674,7 @@
         "source_version":"1.1.2"
     },
     "UOEXETER-CMIP-1-1-3":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Thomas Aubry",
@@ -665,6 +693,7 @@
         "source_version":"1.1.3"
     },
     "UOEXETER-CMIP-1-2-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Thomas Aubry",
@@ -683,6 +712,7 @@
         "source_version":"1.2.0"
     },
     "UOEXETER-CMIP-1-3-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Thomas Aubry",
@@ -701,6 +731,7 @@
         "source_version":"1.3.0"
     },
     "UOEXETER-CMIP-1-3-1":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Thomas Aubry",
@@ -719,6 +750,7 @@
         "source_version":"1.3.1"
     },
     "UofMD-landState-3-0":{
+        "activity_id": "input4MIPs",
         "authors": [
             {
                 "name": "Louise Chini",
