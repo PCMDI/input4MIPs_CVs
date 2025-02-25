@@ -163,6 +163,13 @@ def add_missing_source_ids(
                 # We're starting to see the limits of not using an actual database.
                 continue
 
+            if k == "dataset_category":
+                # Skip this, it is managed elsewhere in the database
+                # and is only in source ID to help downstream users
+                # (although even that is an ongoing discussion,
+                # see https://github.com/PCMDI/input4MIPs_CVs/issues/201)
+                continue
+
             placeholder_entry[k] = v
 
         placeholder_entry["source_id"] = source_id
