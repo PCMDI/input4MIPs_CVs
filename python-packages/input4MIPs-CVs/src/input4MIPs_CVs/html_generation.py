@@ -511,7 +511,19 @@ def get_delivery_summary_view(
             if "status" in info_d:
                 tmp["Status"] = info_d["status"]
             else:
-                tmp["Status"] = "Preliminary dataset available"
+                mip_era = db[db["source_id"].isin(info_d["source_ids"])][
+                    "mip_era"
+                ].unique()
+                if len(mip_era) > 1:
+                    raise NotImplementedError
+                mip_era = mip_era[0]
+
+                if mip_era == "CMIP6Plus":
+                    tmp["Status"] = "Preliminary dataset available"
+                elif mip_era == "CMIP7":
+                    tmp["Status"] = "CMIP7 dataset available"
+                else:
+                    raise NotImplementedError(mip_era)
 
             publication_status = db_source_ids["publication_status"].unique()
             if len(publication_status) == 1:
@@ -563,10 +575,12 @@ def get_delivery_summary_view(
 
                 if publication_status == "published":
                     tmp["ESGF publication status"] = f"Available: {disp_urls_joint}"
+
                 elif publication_status == "published_with_partial_retraction":
                     tmp["ESGF publication status"] = (
                         f"Available (but some data has been retracted, be careful!): {disp_urls_joint}"
                     )
+
                 else:
                     raise NotImplementedError(publication_status)
 
