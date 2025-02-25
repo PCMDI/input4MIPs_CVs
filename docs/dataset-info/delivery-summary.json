@@ -29,7 +29,7 @@
         "status": "Awaiting finalization of upstream forcings: solar, volcanic, GHG/ODS concentrations, SLCF emissions, land-use changes",
         "url": null
     },
-    "solar": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-5" ] },
+    "solar": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-6" ] },
     "amip-ssts": { 
         "source_ids": [ "PCMDI-AMIP-1-1-9" ],  
         "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release."
