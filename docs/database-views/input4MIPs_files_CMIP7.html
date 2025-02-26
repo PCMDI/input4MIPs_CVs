@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="author" content="Paul J. Durack, Zebedee Nicholls" />
+<meta name="description" content="Controlled vocabulary for input4MIPs" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" charset="utf-8" href="https://pcmdi.github.io/assets/dataTables/jquery.dataTables.min.css" />
+<script type="text/javascript" charset="utf-8" src="https://pcmdi.github.io/assets/jquery/jquery.slim.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://pcmdi.github.io/assets/dataTables/jquery.dataTables.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script type="text/javascript" src="https://pcmdi.github.io/assets/google/googleAnalyticsTag.js" ></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready( function () {
+    $('#table_id').DataTable({pageLength: 25});
+    } );
+//]]>
+</script>
+<title>input4MIPs CMIP7 files</title>
+</head>
+<body>
+<p><h1>input4MIPs CMIP7 files: v6.6.11a1</h1><p>
+<h4>
+<a href='/'>Home</a>
+| <a href='input4MIPs_delivery-summary.html'>Delivery summary view</a>
+| <a href='input4MIPs_source-id_CMIP7.html'>Source ID-level view CMIP7</a>
+| <a href='input4MIPs_datasets_CMIP7.html'>Dataset-level view CMIP7</a>
+| <a href='input4MIPs_files_CMIP7.html'>File-level view CMIP7</a>
+| <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view CMIP6Plus</a>
+| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view CMIP6Plus</a>
+| <a href='input4MIPs_files_CMIP6Plus.html'>File-level view CMIP6Plus</a>
+</h4>
+<table id="table_id" class="display compact">
+  <thead>
+    <tr>
+      <th>default_sort_index</th>
+      <th>ESGF URL</th>
+      <th>mip_era</th>
+      <th>variable_id</th>
+      <th>latest</th>
+      <th>publication_status</th>
+      <th>comment_post_publication</th>
+      <th>source_id</th>
+      <th>contact</th>
+      <th>sha256</th>
+      <th>Conventions</th>
+      <th>activity_id</th>
+      <th>comment</th>
+      <th>creation_date</th>
+      <th>data_node</th>
+      <th>dataset_category</th>
+      <th>datetime_end</th>
+      <th>datetime_start</th>
+      <th>doi</th>
+      <th>esgf_dataset_master_id</th>
+      <th>filepath</th>
+      <th>frequency</th>
+      <th>further_info_url</th>
+      <th>grid</th>
+      <th>grid_label</th>
+      <th>institution</th>
+      <th>institution_id</th>
+      <th>license</th>
+      <th>license_id</th>
+      <th>nominal_resolution</th>
+      <th>product</th>
+      <th>realm</th>
+      <th>references</th>
+      <th>region</th>
+      <th>replica</th>
+      <th>source</th>
+      <th>source_version</th>
+      <th>target_mip</th>
+      <th>time_range</th>
+      <th>timestamp</th>
+      <th>tracking_id</th>
+      <th>validated_input4mips</th>
+      <th>version</th>
+      <th>xlink</th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <th>default_sort_index</th>
+      <th>ESGF URL</th>
+      <th>mip_era</th>
+      <th>variable_id</th>
+      <th>latest</th>
+      <th>publication_status</th>
+      <th>comment_post_publication</th>
+      <th>source_id</th>
+      <th>contact</th>
+      <th>sha256</th>
+      <th>Conventions</th>
+      <th>activity_id</th>
+      <th>comment</th>
+      <th>creation_date</th>
+      <th>data_node</th>
+      <th>dataset_category</th>
+      <th>datetime_end</th>
+      <th>datetime_start</th>
+      <th>doi</th>
+      <th>esgf_dataset_master_id</th>
+      <th>filepath</th>
+      <th>frequency</th>
+      <th>further_info_url</th>
+      <th>grid</th>
+      <th>grid_label</th>
+      <th>institution</th>
+      <th>institution_id</th>
+      <th>license</th>
+      <th>license_id</th>
+      <th>nominal_resolution</th>
+      <th>product</th>
+      <th>realm</th>
+      <th>references</th>
+      <th>region</th>
+      <th>replica</th>
+      <th>source</th>
+      <th>source_version</th>
+      <th>target_mip</th>
+      <th>time_range</th>
+      <th>timestamp</th>
+      <th>tracking_id</th>
+      <th>validated_input4mips</th>
+      <th>version</th>
+      <th>xlink</th>
+    </tr>
+  </tfoot>
+    <tr>
+      <td>0</td>
+      <td><a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22variable_id%22%3A%22Multiple%22%2C%22frequency%22%3A%22day%22%2C%22grid_label%22%3A%22gn%22%2C%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%2C%22mip_era%22%3A%22CMIP7%22%7D' target='_blank'>Published</a></td>
+      <td>CMIP7</td>
+      <td>multiple</td>
+      <td>True</td>
+      <td>published</td>
+      <td>None</td>
+      <td>SOLARIS-HEPPA-CMIP-4-6</td>
+      <td>bernd@iaa.es</td>
+      <td>44ab3b9da0ac2769a463b7db5b45ff7e444168e9a37b3479879dfce1a855b1e8</td>
+      <td>CF-1.7</td>
+      <td>input4MIPs</td>
+      <td>The NASA NOAA LASP (NNL) solar variability models were formerly known as the Naval Research Laboratory (NRL) solar variability models. NNL V1 models will become the operational NOAA/NCEI Solar Irradiance Climate Data Record (CDR) V3 in August 2024. The SSI and F10.7 data are taken from V03. Sub-annual variability has been added for the period before 1874; TSI in this file is the integral over SSI from source data between 0 and 100,000nm</td>
+      <td>2024-12-23T13:31:47Z</td>
+      <td>esgf-data2.llnl.gov</td>
+      <td>solar</td>
+      <td>2023-12-31T12:00:00Z</td>
+      <td>1850-01-01T12:00:00Z</td>
+      <td>None</td>
+      <td>input4MIPs.CMIP7.CMIP.SOLARIS-HEPPA.SOLARIS-HEPPA-CMIP-4-6.atmos.day.multiple.gn.v20250219</td>
+      <td>/p/user_pub/work/input4MIPs/CMIP7/CMIP/SOLARIS-HEPPA/SOLARIS-HEPPA-CMIP-4-6/atmos/day/multiple/gn/v20250219/multiple_input4MIPs_solar_CMIP_SOLARIS-HEPPA-CMIP-4-6_gn_18500101-20231231.nc</td>
+      <td>day</td>
+      <td>https://www.solarisheppa.kit.edu/75.php</td>
+      <td>None</td>
+      <td>gn</td>
+      <td>APARC SOLARIS-HEPPA</td>
+      <td>SOLARIS-HEPPA</td>
+      <td>Solar forcing data produced by SOLARIS-HEPPA is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/). The data producers and data providers make no warranty, either expressed or implied, including but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.</td>
+      <td>CC BY 4.0</td>
+      <td>10000 km</td>
+      <td>derived</td>
+      <td>atmos</td>
+      <td>Funke et al., Geosci. Model Dev., 17, 1217--1227, https://doi.org/10.5194/gmd-17-1217-2024, 2024</td>
+      <td>global</td>
+      <td>False</td>
+      <td>SSI, TSI, and F10.7 from ssi_v03r00 (Odele Coddington et al., pers. comm.); Ap and Kp from ftp.ngdc.noaa.gov until 2014, afterwards from GFZ Potsdam (https://kp.gfz-potsdam.de), P-IPR from SEP-II (Ilya Usoskin et al., pers. comm.), MEE-IPR from FMI APEEP v2024d_cmip7 (Max van de Kamp et al., pers. comm.), GCR-IPR from CRII v2024-02 (Ilya Usoskin et al., pers. comm.)</td>
+      <td>4.6</td>
+      <td>CMIP</td>
+      <td>18500101-20231231</td>
+      <td>2025-02-19T16:06:23.266Z</td>
+      <td>hdl:21.14100/805fcd35-52b8-4bbd-a068-123927cca2a0</td>
+      <td>None</td>
+      <td>20250219</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td><a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22variable_id%22%3A%22Multiple%22%2C%22frequency%22%3A%22fx%22%2C%22grid_label%22%3A%22gn%22%2C%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%2C%22mip_era%22%3A%22CMIP7%22%7D' target='_blank'>Published</a></td>
+      <td>CMIP7</td>
+      <td>multiple</td>
+      <td>True</td>
+      <td>published</td>
+      <td>None</td>
+      <td>SOLARIS-HEPPA-CMIP-4-6</td>
+      <td>bernd@iaa.es</td>
+      <td>6d2709814cbe42a97542d19e503eb51e693d1c95348283d81155e7f981f5c065</td>
+      <td>CF-1.7</td>
+      <td>input4MIPs</td>
+      <td>The NASA NOAA LASP (NNL) solar variability models were formerly known as the Naval Research Laboratory (NRL) solar variability models. NNL V1 models will become the operational NOAA/NCEI Solar Irradiance Climate Data Record (CDR) V3 in August 2024. The SSI and F10.7 data are taken from V03. Sub-annual variability has been added for the period before 1874; TSI in this file is the integral over SSI from source data between 0 and 100,000nm</td>
+      <td>2024-12-23T13:32:03Z</td>
+      <td>esgf-data2.llnl.gov</td>
+      <td>solar</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>input4MIPs.CMIP7.CMIP.SOLARIS-HEPPA.SOLARIS-HEPPA-CMIP-4-6.atmos.fx.multiple.gn.v20250219</td>
+      <td>/p/user_pub/work/input4MIPs/CMIP7/CMIP/SOLARIS-HEPPA/SOLARIS-HEPPA-CMIP-4-6/atmos/fx/multiple/gn/v20250219/multiple_input4MIPs_solar_CMIP_SOLARIS-HEPPA-CMIP-4-6_gn.nc</td>
+      <td>fx</td>
+      <td>https://www.solarisheppa.kit.edu/75.php</td>
+      <td>None</td>
+      <td>gn</td>
+      <td>APARC SOLARIS-HEPPA</td>
+      <td>SOLARIS-HEPPA</td>
+      <td>Solar forcing data produced by SOLARIS-HEPPA is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/). The data producers and data providers make no warranty, either expressed or implied, including but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.</td>
+      <td>CC BY 4.0</td>
+      <td>10000 km</td>
+      <td>derived</td>
+      <td>atmos</td>
+      <td>Funke et al., Geosci. Model Dev., 17, 1217--1227, https://doi.org/10.5194/gmd-17-1217-2024, 2024</td>
+      <td>global</td>
+      <td>False</td>
+      <td>SSI, TSI, and F10.7 from ssi_v03r00 (Odele Coddington et al., pers. comm.); Ap and Kp from ftp.ngdc.noaa.gov until 2014, afterwards from GFZ Potsdam (https://kp.gfz-potsdam.de), P-IPR from SEP-II (Ilya Usoskin et al., pers. comm.), MEE-IPR from FMI APEEP v2024d_cmip7 (Max van de Kamp et al., pers. comm.), GCR-IPR from CRII v2024-02 (Ilya Usoskin et al., pers. comm.)</td>
+      <td>4.6</td>
+      <td>CMIP</td>
+      <td>None</td>
+      <td>2025-02-19T16:06:32.410Z</td>
+      <td>hdl:21.14100/5efc5064-da1f-4b66-9bef-26d991446b48</td>
+      <td>None</td>
+      <td>20250219</td>
+      <td>None</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td><a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22variable_id%22%3A%22Multiple%22%2C%22frequency%22%3A%22mon%22%2C%22grid_label%22%3A%22gn%22%2C%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%2C%22mip_era%22%3A%22CMIP7%22%7D' target='_blank'>Published</a></td>
+      <td>CMIP7</td>
+      <td>multiple</td>
+      <td>True</td>
+      <td>published</td>
+      <td>None</td>
+      <td>SOLARIS-HEPPA-CMIP-4-6</td>
+      <td>bernd@iaa.es</td>
+      <td>536498e442ed4c279ce91eeecabf1908a25142b3dc9a2d0825eb1121886b4581</td>
+      <td>CF-1.7</td>
+      <td>input4MIPs</td>
+      <td>The NASA NOAA LASP (NNL) solar variability models were formerly known as the Naval Research Laboratory (NRL) solar variability models. NNL V1 models will become the operational NOAA/NCEI Solar Irradiance Climate Data Record (CDR) V3 in August 2024. The SSI and F10.7 data are taken from V03. Sub-annual variability has been added for the period before 1874; TSI in this file is the integral over SSI from source data between 0 and 100,000nm</td>
+      <td>2024-12-23T13:32:14Z</td>
+      <td>esgf-data2.llnl.gov</td>
+      <td>solar</td>
+      <td>2023-12-15T12:00:00Z</td>
+      <td>1850-01-15T12:00:00Z</td>
+      <td>None</td>
+      <td>input4MIPs.CMIP7.CMIP.SOLARIS-HEPPA.SOLARIS-HEPPA-CMIP-4-6.atmos.mon.multiple.gn.v20250219</td>
+      <td>/p/user_pub/work/input4MIPs/CMIP7/CMIP/SOLARIS-HEPPA/SOLARIS-HEPPA-CMIP-4-6/atmos/mon/multiple/gn/v20250219/multiple_input4MIPs_solar_CMIP_SOLARIS-HEPPA-CMIP-4-6_gn_185001-202312.nc</td>
+      <td>mon</td>
+      <td>https://www.solarisheppa.kit.edu/75.php</td>
+      <td>None</td>
+      <td>gn</td>
+      <td>APARC SOLARIS-HEPPA</td>
+      <td>SOLARIS-HEPPA</td>
+      <td>Solar forcing data produced by SOLARIS-HEPPA is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/). The data producers and data providers make no warranty, either expressed or implied, including but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.</td>
+      <td>CC BY 4.0</td>
+      <td>10000 km</td>
+      <td>derived</td>
+      <td>atmos</td>
+      <td>Funke et al., Geosci. Model Dev., 17, 1217--1227, https://doi.org/10.5194/gmd-17-1217-2024, 2024</td>
+      <td>global</td>
+      <td>False</td>
+      <td>SSI, TSI, and F10.7 from ssi_v03r00 (Odele Coddington et al., pers. comm.); Ap and Kp from ftp.ngdc.noaa.gov until 2014, afterwards from GFZ Potsdam (https://kp.gfz-potsdam.de)</td>
+      <td>4.6</td>
+      <td>CMIP</td>
+      <td>185001-202312</td>
+      <td>2025-02-19T16:06:41.567Z</td>
+      <td>hdl:21.14100/e9d1fa50-1a40-45fc-835c-8b5a10c4635f</td>
+      <td>None</td>
+      <td>20250219</td>
+      <td>None</td>
+    </tr>
+</table>
+</body>
+</html>

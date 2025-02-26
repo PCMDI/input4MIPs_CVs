@@ -511,7 +511,19 @@ def get_delivery_summary_view(
             if "status" in info_d:
                 tmp["Status"] = info_d["status"]
             else:
-                tmp["Status"] = "Preliminary dataset available"
+                mip_era = db[db["source_id"].isin(info_d["source_ids"])][
+                    "mip_era"
+                ].unique()
+                if len(mip_era) > 1:
+                    raise NotImplementedError
+                mip_era = mip_era[0]
+
+                if mip_era == "CMIP6Plus":
+                    tmp["Status"] = "Preliminary dataset available"
+                elif mip_era == "CMIP7":
+                    tmp["Status"] = "CMIP7 dataset available"
+                else:
+                    raise NotImplementedError(mip_era)
 
             publication_status = db_source_ids["publication_status"].unique()
             if len(publication_status) == 1:
@@ -563,10 +575,12 @@ def get_delivery_summary_view(
 
                 if publication_status == "published":
                     tmp["ESGF publication status"] = f"Available: {disp_urls_joint}"
+
                 elif publication_status == "published_with_partial_retraction":
                     tmp["ESGF publication status"] = (
                         f"Available (but some data has been retracted, be careful!): {disp_urls_joint}"
                     )
+
                 else:
                     raise NotImplementedError(publication_status)
 
@@ -669,43 +683,60 @@ def get_db_views_to_write(
         db=db, delivery_summary_info=delivery_summary_info, dataset_info=dataset_info
     )
 
-    # Hard-code filenames for now
-    res = (
-        # (
-        #     view,
-        #     path_to_write_in,
-        #     header,
-        #     special_sort,
-        # )
-        (
-            files_view[files_view["mip_era"] == "CMIP6Plus"],
-            repo_root_dir / html_dir_rel_to_root / "input4MIPs_files_CMIP6Plus.html",
-            "input4MIPs CMIP6Plus files",
-            True,
-        ),
-        (
-            datasets_view[datasets_view["mip_era"] == "CMIP6Plus"],
-            repo_root_dir / html_dir_rel_to_root / "input4MIPs_datasets_CMIP6Plus.html",
-            "input4MIPs CMIP6Plus datasets",
-            True,
-        ),
-        (
-            source_id_view[source_id_view["mip_era"] == "CMIP6Plus"],
-            repo_root_dir
-            / html_dir_rel_to_root
-            / "input4MIPs_source-id_CMIP6Plus.html",
-            "input4MIPs CMIP6Plus source IDs",
-            True,
-        ),
+    res_l = []
+    for mip_era in ["CMIP6Plus", "CMIP7"]:
+        entries = [
+            # (
+            #     view,
+            #     path_to_write_in,
+            #     header,
+            #     special_sort,
+            # )
+            (
+                files_view[files_view["mip_era"] == mip_era],
+                repo_root_dir
+                / html_dir_rel_to_root
+                / f"input4MIPs_files_{mip_era}.html",
+                f"input4MIPs {mip_era} files",
+                True,
+            ),
+            (
+                datasets_view[datasets_view["mip_era"] == mip_era],
+                repo_root_dir
+                / html_dir_rel_to_root
+                / f"input4MIPs_datasets_{mip_era}.html",
+                f"input4MIPs {mip_era} datasets",
+                True,
+            ),
+            (
+                source_id_view[source_id_view["mip_era"] == mip_era],
+                repo_root_dir
+                / html_dir_rel_to_root
+                / f"input4MIPs_source-id_{mip_era}.html",
+                f"input4MIPs {mip_era} source IDs",
+                True,
+            ),
+        ]
+        res_l.extend(entries)
+
+    # More than one to ensure we don't break old links
+    delivery_summaries = [
         (
             delivery_summary_view,
+            page_path,
+            "input4MIPs delivery summary",
+            False,
+        )
+        for page_path in (
             repo_root_dir
             / html_dir_rel_to_root
             / "input4MIPs_delivery-summary_CMIP6Plus.html",
-            "input4MIPs CMIP6Plus delivery summary",
-            False,
-        ),
-    )
+            repo_root_dir / html_dir_rel_to_root / "input4MIPs_delivery-summary.html",
+        )
+    ]
+
+    res_l.extend(delivery_summaries)
+    res = tuple(res_l)
 
     return res
 
@@ -881,10 +912,13 @@ def write_db_view_as_html(
         f"<p><h1>{page_title}: v{version}</h1><p>",
         "<h4>",
         "<a href='/'>Home</a>",
-        "| <a href='input4MIPs_delivery-summary_CMIP6Plus.html'>Delivery summary view</a>",
-        "| <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view</a>",
-        "| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view</a>",
-        "| <a href='input4MIPs_files_CMIP6Plus.html'>File-level view</a>",
+        "| <a href='input4MIPs_delivery-summary.html'>Delivery summary view</a>",
+        "| <a href='input4MIPs_source-id_CMIP7.html'>Source ID-level view CMIP7</a>",
+        "| <a href='input4MIPs_datasets_CMIP7.html'>Dataset-level view CMIP7</a>",
+        "| <a href='input4MIPs_files_CMIP7.html'>File-level view CMIP7</a>",
+        "| <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view CMIP6Plus</a>",
+        "| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view CMIP6Plus</a>",
+        "| <a href='input4MIPs_files_CMIP6Plus.html'>File-level view CMIP6Plus</a>",
         "</h4>",
         '<table id="table_id" class="display compact">',
         *[f"  {v}" for v in table_header_row.splitlines()],
