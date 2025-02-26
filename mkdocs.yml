@@ -30,9 +30,9 @@ nav:
   - Database views:
     - Overview: database-views/index.md
     - Delivery summary: database-views/input4MIPs_delivery-summary.html
-    - Source ID-level: database-views/input4MIPs_source-id_CMIP7.html
-    - Dataset-level: database-views/input4MIPs_datasets_CMIP7.html
-    - File-level: database-views/input4MIPs_files_CMIP7.html
+    - Source ID-level CMIP7: database-views/input4MIPs_source-id_CMIP7.html
+    - Dataset-level CMIP7: database-views/input4MIPs_datasets_CMIP7.html
+    - File-level CMIP7: database-views/input4MIPs_files_CMIP7.html
     - Source ID-level CMIP6Plus: database-views/input4MIPs_source-id_CMIP6Plus.html
     - Dataset-level CMIP6Plus: database-views/input4MIPs_datasets_CMIP6Plus.html
     - File-level CMIP6Plus: database-views/input4MIPs_files_CMIP6Plus.html
