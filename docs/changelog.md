@@ -22,6 +22,31 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.11 (2025-02-26)
+
+
+### 🆕 Features
+
+- Added the "authors" field to each source ID. This field provides a machine-readable set of information about the author of the dataset identified by each source ID. ([#195](https://github.com/PCMDI/input4MIPs_CVs/pull/195))
+
+### 🎉 Improvements
+
+- Added an "authors" field to the source ID entries to allow DOI entries to be auto-generated (underlying discussion: https://github.com/PCMDI/input4MIPs_CVs/issues/177). ([#195](https://github.com/PCMDI/input4MIPs_CVs/pull/195))
+- Update the source ID CVs so they contain all information required for creating DOIs. ([#200](https://github.com/PCMDI/input4MIPs_CVs/pull/200))
+
+### 🐛 Bug Fixes
+
+- Fixed up incorrect MIP era entry for SOLARIS-HEPPA-CMIP-4-6 in the `CVs/input4MIPs_source_id.json` ([#198](https://github.com/PCMDI/input4MIPs_CVs/pull/198))
+
+### 📚 Improved Documentation
+
+- Fixed minor bugs in the docs (incorrect cross-reference in the CHANGELOG and incorrect information about what version of simple plumes to use for testing). ([#193](https://github.com/PCMDI/input4MIPs_CVs/pull/193))
+- - Added database views for the CMIP7 mip era (previous views were CMIP6Plus only).
+  - Fixed up the source ID for SOLARIS-HEPPA in the CVs and the delivery summary view.
+
+  ([#199](https://github.com/PCMDI/input4MIPs_CVs/pull/199))
+
+
 ## input4MIPs CVs v6.6.10 (2025-02-24)
 
 
