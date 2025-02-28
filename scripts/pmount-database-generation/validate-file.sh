@@ -18,4 +18,3 @@ input4mips-validation --logging-level $LOG_LEVEL \
     validate-file \
     --cv-source "./CVs" \
     "${file_to_check}"
-# --cv-source "gh:main" \
