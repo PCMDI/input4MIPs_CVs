@@ -16,8 +16,14 @@ CR-CMIP-0-3-0:
 DRES-CMIP-BB4CMIP7-1-0:
   license_id: CC BY 4.0
   comment_post_publication: >-
-    DRES-CMIP-BB4CMIP7-2-0 extends DRES-CMIP-BB4CMIP7-1-0 to 2023.
-    Hence DRES-CMIP-BB4CMIP7-1-0 is retracted.
+    Differences with CMIP6-1-2: The dataset contains data until December 2022 based on GFED4s Global Fire Emissions.
+    Furthermore CO2 has been added as separate species.
+    This dataset has been developed for the testing phase of CMIP7.
+
+    DRES-CMIP-BB4CMIP7-2-0 extends the data to 2023.
+    Modellers are advised to use DRES-CMIP-BB4CMIP7-2-0.
+    Tables for validation of the data of various species, geographical areas and sectors 
+    can be found on https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ for the 1997 onwards period.
 DRES-CMIP-BB4CMIP7-2-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
 MRI-JRA55-do-1-6-0:

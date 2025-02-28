@@ -57,6 +57,35 @@ Further details will follow after the fast track is underway
 <!--- placeholder for piControl recommendation -->
 ## Navigating the data
 
+This documentation supports the Open Biomass Burning Emissions dataset 
+developed for the Coupled Model Intercomparison Project (CMIP7) simulations. 
+The dataset consists of:
+
+* Monthly estimates of open biomass burning emissions (forests, grasslands, agricultural waste burning on fields, peatlands)
+* Emission species: BC, OC, CO2, SO2, N2O, NOx, NH3, CH4, CO, NMVOC, H2
+* NMVOC consists of the sum of: 
+  C2H6, CH3OH, C2H5OH, C3H8, C2H2, C2H4, C3H6, C5H8, C10H16, C7H8, C6H6, C8H10, 
+  Toluenelump, HigherAlkenes, HigherAlkanes, CH2O, C2H4O, C3H6O, C2H6S, HCN, HCOOH, CH3COOH, MEK, CH3COCHO, HOCH2CHO. 
+  These NMVOCs are also provided separately.
+* Partitioning of bulk emissions related to different sectoral emissions. 
+  The different sectors are: SAVA (Savanna, grassland, and shrubland fires), 
+  BORF (Boreal forest fires), 
+  TEMF (Temperature forest fires), 
+  DEFO (Tropical forest fires [deforestation and degradation]), 
+  PEAT (Peat fires), 
+  AGRI (Agricultural waste burning)
+
+### Data sources
+
+The BB4CMIP historic biomass burning emissions dataset 
+starting from January 1750 merges satellite records with several existing proxies (visibility, charcoal data) 
+and utilizes the average of six models from the Fire Model Intercomparison Project (FireMIP) protocol 
+to estimate emissions when proxy coverage is limited. 
+Figure 1 and Figure 2 provide more information on which proxies were used in various basis regions to construct the full time series. 
+This has been further explained in Van Marle et al. (2017, https://doi.org/10.5194/gmd-10-3329-2017).
+
+[TODO figures here]
+
 ### Recommendation for pre-industrial control
 
 Apply the 1850 values on repeat.
