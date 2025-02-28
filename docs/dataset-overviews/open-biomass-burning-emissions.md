@@ -21,7 +21,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### CMIP7 AR7 fast track
 
-No data available for this phase yet.
+For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22DRES-CMIP-BB4CMIP7-2-0%22%5D%7D)
 
 This data is for the CMIP7 AR7 fast track.
 All data sets for use in the fast track are published with a `mip_era` metadata value of 'CMIP7'.
@@ -57,6 +57,35 @@ Further details will follow after the fast track is underway
 <!--- placeholder for piControl recommendation -->
 ## Navigating the data
 
+This documentation supports the Open Biomass Burning Emissions dataset 
+developed for the Coupled Model Intercomparison Project (CMIP7) simulations. 
+The dataset consists of:
+
+* Monthly estimates of open biomass burning emissions (forests, grasslands, agricultural waste burning on fields, peatlands)
+* Emission species: BC, OC, CO2, SO2, N2O, NOx, NH3, CH4, CO, NMVOC, H2
+* NMVOC consists of the sum of: 
+  C2H6, CH3OH, C2H5OH, C3H8, C2H2, C2H4, C3H6, C5H8, C10H16, C7H8, C6H6, C8H10, 
+  Toluenelump, HigherAlkenes, HigherAlkanes, CH2O, C2H4O, C3H6O, C2H6S, HCN, HCOOH, CH3COOH, MEK, CH3COCHO, HOCH2CHO. 
+  These NMVOCs are also provided separately.
+* Partitioning of bulk emissions related to different sectoral emissions. 
+  The different sectors are: SAVA (Savanna, grassland, and shrubland fires), 
+  BORF (Boreal forest fires), 
+  TEMF (Temperature forest fires), 
+  DEFO (Tropical forest fires [deforestation and degradation]), 
+  PEAT (Peat fires), 
+  AGRI (Agricultural waste burning)
+
+### Data sources
+
+The BB4CMIP historic biomass burning emissions dataset 
+starting from January 1750 merges satellite records with several existing proxies (visibility, charcoal data) 
+and utilizes the average of six models from the Fire Model Intercomparison Project (FireMIP) protocol 
+to estimate emissions when proxy coverage is limited. 
+Figure 1 and Figure 2 provide more information on which proxies were used in various basis regions to construct the full time series. 
+This has been further explained in Van Marle et al. (2017, https://doi.org/10.5194/gmd-10-3329-2017).
+
+[TODO figures here]
+
 ### Recommendation for pre-industrial control
 
 Apply the 1850 values on repeat.
@@ -65,5 +94,15 @@ Apply the 1850 values on repeat.
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
+## Revision history
+
+### DRES-CMIP-BB4CMIP7-1-0
+
+Differences with CMIP6-1-2: The dataset contains data until December 2022 based on GFED4s Global
+Fire Emissions. Furthermore CO2 has been added as separate species. This dataset has been developed
+for the testing phase of CMIP7. DRES-CMIP-BB4CMIP7-2-0 extends the data to 2023. Modellers are
+advised to use DRES-CMIP-BB4CMIP7-2-0. Tables for validation of the data of various species,
+geographical areas and sectors  can be found on https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ for
+the 1997 onwards period.
+
 <!--- end-revision-history -->
