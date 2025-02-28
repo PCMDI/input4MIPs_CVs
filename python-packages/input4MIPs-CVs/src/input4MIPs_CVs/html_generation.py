@@ -215,6 +215,7 @@ def get_datasets_view(
         "comment_post_publication",
         "source_id",
         "contact",
+        "doi",
     ),
     view_other_cols: tuple[str, ...] = (
         "source_version",
@@ -312,7 +313,10 @@ def get_source_id_view(
         "comment_post_publication",
         "contact",
     ),
-    view_cols_to_aggregate: tuple[str, ...] = ("dataset_category",),
+    view_cols_to_aggregate: tuple[str, ...] = (
+        "doi",
+        "dataset_category",
+    ),
     view_other_cols: tuple[str, ...] = (
         "source_version",
         "institution_id",
@@ -376,7 +380,7 @@ def get_source_id_view(
                 # No need to update
                 continue
 
-            tmp[vc] = ", ".join(tmp[vc].tolist())
+            tmp[vc] = ", ".join(tmp[vc].unique().tolist())
 
         tmp_dd = tmp.drop_duplicates()
         if tmp_dd.shape[0] != 1:
