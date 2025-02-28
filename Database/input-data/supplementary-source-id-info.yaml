@@ -70,5 +70,6 @@ UOEXETER-CMIP-1-3-1:
   comment_post_publication: >-
     v2.0.0 updates the mean historical SAOD (so the SAOD has decreased a bit, but it is still higher than CMIP6).
     Hence v1.3.1 is deprecated.
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
 UofMD-landState-3-0:
   license_id: CC BY 4.0
