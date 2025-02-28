@@ -98,7 +98,11 @@ Apply the 1850 values on repeat.
 
 ### DRES-CMIP-BB4CMIP7-1-0
 
-DRES-CMIP-BB4CMIP7-2-0 extends DRES-CMIP-BB4CMIP7-1-0 to 2023. Hence DRES-CMIP-BB4CMIP7-1-0 is
-retracted.
+Differences with CMIP6-1-2: The dataset contains data until December 2022 based on GFED4s Global
+Fire Emissions. Furthermore CO2 has been added as separate species. This dataset has been developed
+for the testing phase of CMIP7. DRES-CMIP-BB4CMIP7-2-0 extends the data to 2023. Modellers are
+advised to use DRES-CMIP-BB4CMIP7-2-0. Tables for validation of the data of various species,
+geographical areas and sectors  can be found on https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ for
+the 1997 onwards period.
 
 <!--- end-revision-history -->
