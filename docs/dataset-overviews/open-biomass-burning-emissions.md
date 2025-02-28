@@ -21,7 +21,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### CMIP7 AR7 fast track
 
-No data available for this phase yet.
+For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22DRES-CMIP-BB4CMIP7-2-0%22%5D%7D)
 
 This data is for the CMIP7 AR7 fast track.
 All data sets for use in the fast track are published with a `mip_era` metadata value of 'CMIP7'.
@@ -65,5 +65,11 @@ Apply the 1850 values on repeat.
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
+## Revision history
+
+### DRES-CMIP-BB4CMIP7-1-0
+
+DRES-CMIP-BB4CMIP7-2-0 extends DRES-CMIP-BB4CMIP7-1-0 to 2023. Hence DRES-CMIP-BB4CMIP7-1-0 is
+retracted.
+
 <!--- end-revision-history -->
