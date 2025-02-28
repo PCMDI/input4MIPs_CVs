@@ -31,7 +31,7 @@ The source ID that identifies the dataset to use in the different phases of CMIP
 
 #### CMIP7 AR7 fast track
 
-No data available for this phase yet.
+For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [UOEXETER-CMIP-2-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UOEXETER-CMIP-2-0-0%22%5D%7D)
 
 This data is for the CMIP7 AR7 fast track.
 All data sets for use in the fast track are published with a `mip_era` metadata value of 'CMIP7'.
@@ -127,6 +127,11 @@ For a full dive into the changes from CMIP6, see
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### UOEXETER-CMIP-1-3-1
+
+v2.0.0 updates the mean historical SAOD (so the SAOD has decreased a bit, but it is still higher
+than CMIP6). Hence v1.3.1 is deprecated.
 
 ### UOEXETER-CMIP-1-3-0
 
