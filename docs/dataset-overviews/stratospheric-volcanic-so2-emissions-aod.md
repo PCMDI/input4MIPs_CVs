@@ -130,8 +130,10 @@ For a full dive into the changes from CMIP6, see
 
 ### UOEXETER-CMIP-1-3-1
 
-v2.0.0 updates the mean historical SAOD (so the SAOD has decreased a bit, but it is still higher
-than CMIP6). Hence v1.3.1 is deprecated.
+v2.0.0 includes the following key updates: i) new H2SO4 number density variable replacing aerosol
+number density; ii) correction to the 1920-1978 ice-core dataset, improving consistency with
+pyrheliometer measurements and CMIP6. As a result of this change, the mean historical SAOD has
+decreased a bit, but it is still higher than CMIP6. Hence v1.3.1 is deprecated.
 
 ### UOEXETER-CMIP-1-3-0
 
