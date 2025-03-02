@@ -76,14 +76,15 @@ These are all available on the ESGF.
 1. hemispheric-, monthly-mean concentrations (grid label, `gr1z`, frequency, `mon`)
 1. 15-degree latitudinal, monthly-mean concentrations (grid label, `gnz`, frequency, `mon`)
 
-We are also able to produce a 5-degree latitudinal grid.
+We are also able to produce a 0.5-degree latitudinal grid.
 If this is something that would be of interest, 
 please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new)
 and tag `@znichollscr`.
 
 ### Species provided
 
-We provide concentrations for 43 greenhouse gas concentrations and species.
+We provide concentrations for 43 greenhouse gas concentrations and species,
+as well as three equivalent species.
 
 #### Equivalence species
 
@@ -128,16 +129,18 @@ There are three key changes:
    In CMIP6, this data was in the same file (with a grid label of `GMNHSH`).
    We have split this for two reasons: 
    a) `GMNHSH` is not a grid label recognised in the CMIP CVs and
-   b) having global-mean and hemispheric-mean data in the same file required us to introduce a 'sector' co-ordinate, 
+   b) having global-mean and hemispheric-mean data in the same file required us to introduce a 'sector' coordinate,
       which was confusing and does not follow the CF-conventions.
 1. we have split the files into different time components.
    One file goes from year 1 to year 999 (inclusive).
    The next file goes from year 1000 to year 1749 (inclusive).
    The last file goes from year 1750 to year 2022 (inclusive).
+   This simplifies handling and allows groups to avoid loading data
+   they are not interested in (for CMIP, this generally means data pre-1750).
 1. we have simplified the names of all the variables.
    They are now simply the names of the gases,
-   for example we now use "co2" rather than "mole_fraction_of_carbon_dioxide"
-   A full mapping is provided below 
+   for example we now use "co2" rather than "mole_fraction_of_carbon_dioxide".
+   A full mapping is provided below .
    (but, a word of warning: this mapping is hard to check within the scope of this repo 
    so please be careful when using it)
 
@@ -146,11 +149,6 @@ The data now starts in year one, rather than year zero.
 We do this because year zero doesn't exist in most calendars
 (and we want to avoid users of the data having to hack around this 
 when using standard data analysis tools).
-In a future version, 
-we will also split our data into multiple files
-(see [this comment](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/issues/29#issuecomment-2126359264)).
-so if you don't care about data pre-1750, you don't need to load it from disk
-(or worry about any of the calendard headaches that pre-1750 data introduces).
 
 #### Variable name mapping
 
@@ -206,74 +204,33 @@ CMIP6_TO_CMIP7_VARIABLE_MAP = {
 }
 ```
 
-```python
-CMIP7_TO_NORMAL_VARIABLE_MAP = {
-    # name in CMIP7: 'normal' name
-    # For CMIP7, we try to make use of CF-conventions standard names
-    # as much as possible.
-    # For ozone-depleting substances in particular, these are not 'normal' names
-    # (e.g. CF-conventions uses hcc140a, most peoply call this ch3ccl3).
-    'co2': 'co2',
-    'ch4': 'ch4',
-    'n2o': 'n2o',
-    'pfc116': 'c2f6',
-    'pfc218': 'c3f8',
-    'pfc3110': 'c4f10',
-    'pfc4112': 'c5f12',
-    'pfc5114': 'c6f14',
-    'pfc6116': 'c7f16',
-    'pfc7118': 'c8f18',
-    'pfc318': 'cc4f8',
-    'ccl4': 'ccl4',
-    'cf4': 'cf4',
-    'cfc11': 'cfc11',
-    'cfc113': 'cfc113',
-    'cfc114': 'cfc114',
-    'cfc115': 'cfc115',
-    'cfc12': 'cfc12',
-    'ch2cl2': 'ch2cl2',
-    'ch3br': 'ch3br',
-    'hcc140a': 'ch3ccl3',
-    'ch3cl': 'ch3cl',
-    'chcl3': 'chcl3',
-    'halon1211': 'halon1211',
-    'halon1301': 'halon1301',
-    'halon2402': 'halon2402',
-    'hcfc141b': 'hcfc141b',
-    'hcfc142b': 'hcfc142b',
-    'hcfc22': 'hcfc22',
-    'hfc125': 'hfc125',
-    'hfc134a': 'hfc134a',
-    'hfc143a': 'hfc143a',
-    'hfc152a': 'hfc152a',
-    'hfc227ea': 'hfc227ea',
-    'hfc23': 'hfc23',
-    'hfc236fa': 'hfc236fa',
-    'hfc245fa': 'hfc245fa',
-    'hfc32': 'hfc32',
-    'hfc365mfc': 'hfc365mfc',
-    'hfc4310mee': 'hfc4310mee',
-    'nf3': 'nf3',
-    'sf6': 'sf6',
-    'so2f2': 'so2f2',
-    'cfc11eq': 'cfc11eq',
-    'cfc12eq': 'cfc12eq',
-    'hfc134aeq': 'hfc134aeq',
-}
-```
-
 ### Data
 
 The analysis of the differences from CMIP6 is done in 
 [this repository](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
 At present, the changes from CMIP6 are minor,
-with the maximum difference in effective radiative forcing terms being 0.02 W / m^2.
+with the maximum difference in effective radiative forcing terms being 0.05 W / m^2
+(and generally much smaller than this, particularly after 1850).
 For reference, the CMIP6 data can be found 
 [on the ESGF under the "CMIP6" project and source ID "UoM-CMIP-1-2-0"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22source_id%22%3A%22UoM-CMIP-1-2-0%22%2C%22mip_era%22%3A%22CMIP6%22%7D).
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### CR-CMIP-0-4-0
+
+CR-CMIP-1-0-0 switches to much more conventional naming for gases. The affected gases are: c2f6
+(previously pfc116), c3f8 (pfc218), c4f10 (pfc3110), c5f12 (pfc4112), c6f14 (pfc5114), c7f16
+(pfc6116), c8f18 (pfc7118), cc4f8 (pfc318) and ch3ccl3 (hcc140a). A DOI is now also included in each
+file. Please use it so we can track usage of these files. In terms of science, CR-CMIP-1-0-0 updates
+to the latest ice core and AGAGE data, as well as using better data sources for HFC23, CF4, C2F6 and
+C3F8 than CR-CMIP-0-4-0. CR-CMIP-1-0-0 also provides a smoother transition from ice core based
+records to more recent records (i.e. flask and in-situ samples) and more sensible pre-industrial
+values for gases with non-zero pre-industrial concentrations. It also uses the Scripps CO2 record to
+handle the period from 1959  to the start of the flask and in-situ samples from other networks. The
+CR-CMIP-1-0-0 dataset also provides much better information about the original data sources. As a
+result, CR-CMIP-0-4-0 is deprecated.
 
 ### CR-CMIP-0-3-0
 

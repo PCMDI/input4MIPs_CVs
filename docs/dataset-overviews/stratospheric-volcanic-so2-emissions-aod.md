@@ -142,11 +142,11 @@ groups. Hence v1.3.0 is deprecated.
 
 ### UOEXETER-CMIP-1-2-0
 
-v1.3.0 updates the handling of small eruptions in the pre-satellite era. Hence v1.2.0 is retracted.
+v1.3.0 updates the handling of small eruptions in the pre-satellite era. Hence v1.2.0 is deprecated.
 
 ### UOEXETER-CMIP-1-1-3
 
 v1.2.0 includes climatology data (for piControl simulations) and updates the handling of small
-eruptions. Hence v1.1.3 is retracted.
+eruptions. Hence v1.1.3 is deprecated.
 
 <!--- end-revision-history -->
