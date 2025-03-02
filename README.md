@@ -33,7 +33,7 @@ see
 For information about how to use this repository,
 see 
 [usage as a data user](https://input4MIPs-CVs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-user)
-and [usage as a data producer](https://input4MIPs-CVs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-producer).
+and [usage as a data producer](https://input4MIPs-CVs.readthedocs.io/en/latest/usage-data-producer/#usage-as-a-data-producer).
 
 <!--- --8<-- [start:repository-overview] -->
 ## Repository overview
@@ -109,7 +109,9 @@ Office of Science ([OS](https://science.osti.gov/)).
 The work at PCMDI is performed 
 under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
 The work at Climate Resource has been funded by the European Space Agency (ESA) 
-as part of the GHG Forcing For CMIP project of the Climate Change Initiative (CCI) (ESA Contract No. 4000146681/24/I-LR-cl).
+as part of the 
+[GHG Forcing For CMIP project](https://climate.esa.int/en/supporting-modelling/cmip-forcing-ghg-concentrations/)
+of the Climate Change Initiative (CCI) (ESA Contract No. 4000146681/24/I-LR-cl).
 <!--- --8<-- [end:acknowledgement] -->
 
 <!--- 
