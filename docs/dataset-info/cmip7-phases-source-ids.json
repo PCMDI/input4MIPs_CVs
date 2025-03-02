@@ -19,8 +19,8 @@
         "cmip7": null
     },
     "ghg_concentrations": {
-        "testing": { "source_ids": [ "CR-CMIP-0-4-0" ] },
-        "ar7_fast_track": null,
+        "testing": { "source_ids": [ "CR-CMIP-0-4-0" ], "ok_if_not_latest": true },
+        "ar7_fast_track": { "source_ids": [ "CR-CMIP-1-0-0" ]},
         "cmip7": null
     },
     "ozone": {

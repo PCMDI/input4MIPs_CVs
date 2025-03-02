@@ -20,19 +20,21 @@ The CMIP7 MIP era is the label used for data that is suitable to use for CMIP7 p
   As data becomes available, you can then dive into the other views
   to get more detail about what the data actually contains.
   There are (or will be) of order twenty entries in this view.
-- [Source ID-level view](input4MIPs_source-id_CMIP7.html):
+- [Source ID-level view CMIP7](input4MIPs_source-id_CMIP7.html):
   Provides information about the status of different source IDs
-    (for the most relevant, i.e. CMIP7, collection).
+  for the most relevant, i.e. CMIP7, collection.
   In essence, this is the status at the dataset provider level.
   There are (or will be) of order twenty entries in this view.
-- [Dataset-level view](input4MIPs_datasets_CMIP7.html):
-  Provides information at the level of a dataset,
+- [Dataset-level view CMIP7](input4MIPs_datasets_CMIP7.html):
+  Provides information at the level of a dataset
+  for the most relevant, i.e. CMIP7, collection,
   i.e. the information is disaggregated
   with one row for each variable
   (essentially) in the database.
   There are (or will be) of order one thousand entries in this view.
-- [File-level view](input4MIPs_files_CMIP7.html):
-  Provides information at the level of individual files.
+- [File-level view CMIP7](input4MIPs_files_CMIP7.html):
+  Provides information at the level of individual files
+  for the most relevant, i.e. CMIP7, collection.
   There is one row per file.
   This view also includes every column in our database.
   Hence, it contains all information in the database.
