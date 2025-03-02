@@ -3,12 +3,10 @@
 
 [![Latest release](https://img.shields.io/badge/Latest%20release-v6.6.19-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/v6.6.19)
 [![DOI (all versions)](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://zenodo.org/doi/10.5281/zenodo.12629796)
-[![Docs](https://readthedocs.org/projects/input4mips-cvs/badge/?version=latest)](https://input4mips-cvs.readthedocs.io)
-
-### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
+[![Docs](https://readthedocs.org/projects/input4MIPs-CVs/badge/?version=latest)](https://input4MIPs-CVs.readthedocs.io)
 
 Controlled Vocabularies (CVs) for use in input4MIPs.
-Full documentation can be found at: [input4mips-cvs.readthedocs.io](https://input4mips-cvs.readthedocs.io).
+Full documentation can be found at: [input4mips-CVs.readthedocs.io](https://input4mips-CVs.readthedocs.io).
 
 For further information regarding forcing dataset development
 for the Coupled Model Intercomparison Project (CMIP) activities,
@@ -23,7 +21,7 @@ please see the
 -->
 For different, pre-prepared views of the database,
 see 
-[database views](https://input4mips-cvs.readthedocs.io/en/latest/database-views/).
+[database views](https://input4MIPs-CVs.readthedocs.io/en/latest/database-views/).
 
 ## Usage
 
@@ -34,8 +32,8 @@ see
 
 For information about how to use this repository,
 see 
-[usage as a data user](https://input4mips-cvs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-user)
-and [usage as a data producer](https://input4mips-cvs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-producer).
+[usage as a data user](https://input4MIPs-CVs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-user)
+and [usage as a data producer](https://input4MIPs-CVs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-producer).
 
 <!--- --8<-- [start:repository-overview] -->
 ## Repository overview
@@ -52,21 +50,18 @@ however they do provide much more structure than nothing.
 These live in the `CVs` directory.
 
 These CVs are specific to the input4MIPs project.
-They supplement the 'global' CVs, which can be found in 
-[the MIP CMOR tables repository](https://github.com/PCMDI/mip-cmor-tables).
-As much as possible, we rely on the 'global' CVs
+They supplement the 'global' CVs, which are being developed in the
+[WCRP universe](https://github.com/WCRP-CMIP/WCRP-universe).
+As much as possible, we aim to rely on the 'universe' CVs
 and attempt to avoid duplicating information.
-However, the 'global' CVs are currently under heavy development,
+However, the 'universe' CVs are currently under heavy development,
 so there is some duplication at the moment.
 We hope to reduce this over time.
 When in doubt, the CVs in this repository will be the source of truth for the input4MIPs project.
 
-Finally, the CVs also have some reliance on other conventions.
-The most notable is the [CF metadata conventions](https://cfconventions.org/).
-We also use [cfchecker](https://github.com/cedadev/cf-checker)
-for validating files.
-Where the CVs make use of other conventions, we make this as clear as possible.
-However, this is also a work in progress.
+The compliance with these CVs is checked with
+[input4mips-validation](https://github.com/climate-resource/input4mips_validation),
+also a work in progress.
 
 ### Files database
 
@@ -82,7 +77,7 @@ e.g. sometimes there is more than one variable in a file).
 
 To ease exploration of the database, 
 we provide a few pre-prepared views of the database,
-see [database views](https://input4mips-cvs.readthedocs.io/en/latest/database-views/).
+see [database views](https://input4MIPs-CVs.readthedocs.io/en/latest/database-views/).
 <!--- --8<-- [end:repository-overview] -->
 
 ## Contributors
@@ -96,9 +91,25 @@ Thanks to our contributors!
 ## Acknowledgement
 
 <!--- --8<-- [start:acknowledgement] -->
-The repository content has been collected from many contributors representing the input datasets for Model Intercomparison Projects (input4MIPs), including those from climate modeling groups and model intercomparison projects (MIPs) worldwide. The structure of content and tools required to maintain it was developed by climate and computer scientists from the Program for Climate Model Diagnosis and Intercomparison ([PCMDI](https://pcmdi.llnl.gov/)) at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/)), [Climate Resource](https://www.climate-resource.com/), and the Coupled Model Intercomparison Project International Project Office ([CMIP-IPO](https://wcrp-cmip.org/cmip-governance/project-office/)), with assistance from a large and expanding international community.
+The repository content has been collected from many contributors 
+representing the input datasets for Model Intercomparison Projects (input4MIPs), 
+including those from climate modeling groups and model intercomparison projects (MIPs) worldwide. 
+The structure of content and tools required to maintain it was developed by climate 
+and computer scientists from the Program for Climate Model Diagnosis and Intercomparison ([PCMDI](https://pcmdi.llnl.gov/)) 
+at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/)), 
+[Climate Resource](https://www.climate-resource.com/), 
+and the Coupled Model Intercomparison Project International Project Office ([CMIP-IPO](https://wcrp-cmip.org/cmip-governance/project-office/)), 
+with assistance from a large and expanding international community.
 
-This work is sponsored by the Regional and Global Model Analysis ([RGMA](https://climatemodeling.science.energy.gov/program/regional-global-model-analysis)) program of the Earth and Environmental Systems Sciences Division ([EESSD](https://science.osti.gov/ber/Research/eessd)) in the Office of Biological and Environmental Research ([BER](https://science.osti.gov/ber)) within the Department of Energy's ([DOE](https://www.energy.gov/)) Office of Science ([OS](https://science.osti.gov/)). The work at PCMDI is performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
+This work is sponsored by the Regional and Global Model Analysis ([RGMA](https://climatemodeling.science.energy.gov/program/regional-global-model-analysis)) 
+program of the Earth and Environmental Systems Sciences Division ([EESSD](https://science.osti.gov/ber/Research/eessd)) 
+in the Office of Biological and Environmental Research ([BER](https://science.osti.gov/ber)) 
+within the Department of Energy's ([DOE](https://www.energy.gov/))
+Office of Science ([OS](https://science.osti.gov/)). 
+The work at PCMDI is performed 
+under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
+The work at Climate Resource has been funded by the European Space Agency (ESA) 
+as part of the GHG Forcing For CMIP project of the Climate Change Initiative (CCI) (ESA Contract No. 4000146681/24/I-LR-cl).
 <!--- --8<-- [end:acknowledgement] -->
 
 <!--- 
