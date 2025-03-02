@@ -49,6 +49,8 @@ SOLARIS-HEPPA-CMIP-4-4:
     The original comment from the data provider is
     <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/139#issuecomment-2493311999">here</a>.
     For further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release notes</a>.
+SOLARIS-HEPPA-CMIP-4-6:
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2522675
 UOEXETER-CMIP-0-1-0:
   publication_status: never_published
 UOEXETER-CMIP-1-1-2:
@@ -74,6 +76,7 @@ UOEXETER-CMIP-1-3-1:
     improving consistency with pyrheliometer measurements and CMIP6.
     As a result of this change, the mean historical SAOD has decreased a bit, but it is still higher than CMIP6.
     Hence v1.3.1 is deprecated.
+UOEXETER-CMIP-2-0-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
 UofMD-landState-3-0:
   license_id: CC BY 4.0
