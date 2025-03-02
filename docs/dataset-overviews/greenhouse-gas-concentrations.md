@@ -230,11 +230,10 @@ records to more recent records (i.e. flask and in-situ samples) and more sensibl
 values for gases with non-zero pre-industrial concentrations. It also uses the Scripps CO2 record to
 handle the period from 1959  to the start of the flask and in-situ samples from other networks. The
 CR-CMIP-1-0-0 dataset also provides much better information about the original data sources. As a
-result, CR-CMIP-0-4-0 is deprecated. For the full CHANGELOG, see  [https://github.com/climate-resour
-ce/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md](https://github.com/climate-resource/CMI
-P-GHG-Concentration-Generation/blob/main/CHANGELOG.md). For basic analysis of the changes between
-versions, see [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations](https://github
-.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
+result, CR-CMIP-0-4-0 is deprecated. For the full CHANGELOG, see
+[here](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md).
+For basic analysis of the changes between versions, see [this
+repo](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
 
 ### CR-CMIP-0-3-0
 

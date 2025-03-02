@@ -37,11 +37,11 @@ CR-CMIP-0-4-0:
     As a result, CR-CMIP-0-4-0 is deprecated.
 
     For the full CHANGELOG,
-    see 
-    [https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md).
+    see
+    [here](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md).
 
     For basic analysis of the changes between versions,
-    see [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
+    see [this repo](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
 DRES-CMIP-BB4CMIP7-1-0:
   license_id: CC BY 4.0
   comment_post_publication: >-
