@@ -54,7 +54,6 @@ Further details will follow after the fast track is underway
 
 <!--- end-cmip7-phases-source-ids -->
 
-<!--- placeholder for piControl recommendation -->
 ## Navigating the data
 
 This documentation supports the Open Biomass Burning Emissions dataset 
@@ -86,11 +85,129 @@ This has been further explained in Van Marle et al. (2017, https://doi.org/10.51
 
 [TODO figures here]
 
+### Data usage notes
+
+- This dataset is made available as forcing dataset 
+  for the Coupled Model Intercomparison Project Phase (CMIP7) analyses on the ESGF
+  ([https://esgf-node.llnl.gov/search/input4mips/](https://esgf-node.llnl.gov/search/input4mips/)) 
+  and is only needed for models that do not simulate fire emissions. 
+  Emissions are bulk values for all biomes, 
+  ancillary datasets with contribution of emissions 
+  related to agricultural waste burning, fires used in deforestation, boreal forest fires, 
+  peat fires, savanna fires and temperate forest fires are provided per species.
+
+- Models that have their own fire model but do not simulate anthropogenic fires 
+  are advised to use only the emissions related to deforestation and agricultural waste burning. 
+  We provide the fraction of emissions associated with this.
+
+- Beware of carbon double counting: be careful to not double count deforestation carbon emissions. 
+  They are included in the estimates 
+  but several models also have deforestation carbon emissions based for example on historical deforestation rates.
+
+- While the large interannual variability is a key feature of global fire emissions, 
+  modellers may consider using the 5-year smoothened average (to be published March 2025) 
+  to filter out this fire signal to avoid having interannual variability in climate and in fires being out of sync.
+
+- While using: Please check if the global annual emissions for the first and last year of the file are correct. 
+  These are provided in the attributes \[annual\_total\_first\_year\_Tg\_yr\] and \[annual\_total\_last\_year\_Tg\_yr\]
+
+- The data after 2016 is based on GFED4s (van der Werf, 2017) 
+  and is not based on burned area anymore due to a switch in MODIS burned area collections. 
+  GFED4s used collection 5.1 which was superceded by collection 6. 
+  Emissions for the post-2016 period are based on MODIS active fire detections 
+  and a grid-cell specific active fire to carbon emissions conversion based on the 2003-2016 overlapping period.
+
+- The vertical distribution for biomass burning emissions are unspecified. 
+  GFDL chose to use the distributions recommended by Table 4 in [Dentener et al. (2006)](https://doi.org/10.5194/acp-6-4321-2006).
+
+Molecular weights for all species are listed in the following table:
+Note that NOx has different units in anthropogenic vs open burning data.
+
+| Species (bulk) | Molecular weight (g) | Species (NMVOC)                        | Molecular weight (g) |
+| -------------- | -------------------- | -------------------------------------- | -------------------- |
+| CO2            | 44.01                | C2H6 (ethane)                          | 30.07                |
+| CO             | 28.01                | CH3OH (methanol)                       | 32.04                |
+| CH4            | 16.04                | C2H5OH (ethanol)                       | 46.07                |
+| NMHC           | 15                   | C3H8 (propane)                         | 44.1                 |
+| H2             | 2.02                 | C2H2 (acetylene)                       | 26.04                |
+| NOx (as NO)*   | 30.01                | C2H4 (ethylene)                        | 28.05                |
+| N2O            | 44.01                | C3H6 (propylene)                       | 42.08                |
+| PM2.5          | x                    | C5H8 (isoprene)                        | 68.12                |
+| TPM            | x                    | C10H16 (terpenes)                      | 136.24               |
+| TPC (OC+BC)    | 12                   | C7H8 (toluene)                         | 92.14                |
+| OC             | 12                   | C6H6 (benzene)                         | 78.11                |
+| BC             | 12                   | C8H10 (xylene)                         | 106.17               |
+| SO2            | 64.02                | Toluene_lump                           | 12                   |
+| NH3 (ammonia)  | 17.03                | Higher_Alkenes                         | 12                   |
+|                |                      | Higher_Alkanes                         | 12                   |
+|                |                      | CH2O (formaldehyde)                    | 30.03                |
+|                |                      | C2H4O (acetaldehyde)                   | 44.05                |
+|                |                      | C3H6O (acetone)                        | 58.08                |
+|                |                      | C2H6S (dms)                            | 62.07                |
+|                |                      | HCN (hydrogen cyanide)                 | 27.02                |
+|                |                      | HCOOH (formic acid)                    | 47.02                |
+|                |                      | CH3COOH (acetic acid)                  | 60.05                |
+|                |                      | MEK (methyl Ethyl Ketone / 2-butanone) | 72.11                |
+|                |                      | CH3COCHO (methylglyoxal)               | 72.06                |
+|                |                      | HOCH2CHO (hydroxyacetaldehyde)         | 60.05                |
+
+### Species breakdowns
+
+#### Aerosol and aerosol precursor and reactive compounds
+
+Species (12): BC,OC, CO2, SO2, N2O, NOx, NOxasNO2, NH3, CH4, CO, NMVOC, H2
+
+Data volume: ~1.26 GB per species
+
+#### Biomass burning emissions per NMVOC species
+
+Species (25): C2H6, CH3OH, C2H5OH, C3H8, C2H2, C2H4, C3H6, C5H8, C10H16, C7H8, C6H6, C8H10, Toluenelump, HigherAlkenes, HigherAlkanes, CH2O, C2H4O, C3H6O, C2H6S, HCN, HCOOH, CH3COOH, MEK, CH3COCHO, HOCH2CHO
+
+Data volume: ~1.26 GB per species
+
+#### Partitioning of bulk emissions related to different sectoral emissions
+
+For each species given above,
+the percentage of emissions from specific sectors is provided:
+
+1. SAVA (Savanna, grassland, and shrubland fires)
+1. BORF (Boreal forest fires)
+1. TEMF (Temperature forest fires)
+1. DEFO (Tropical forest fires [deforestation and degradation])
+1. PEAT (Peat fires)
+1. AGRI (Agricultural waste burning)
+
+This results in 222 additional datasets (37 variables times 6 sectors per variable).
+
+Data volume:
+
+1. SAVA: ~780 MB per species
+1. BORF: ~311 MB per species
+1. TEMF: ~316 MB per species
+1. DEFO: ~300 MB per species
+1. PEAT: ~300 MB per species
+1. AGRI: ~797 MB per species
+
+#### Data source and grid cell area
+
+Two additional files are provided.
+
+Grid cell area is straighfoward.
+Only one file is provided as the grid for all data is the same.
+
+The data source file provides information about the data source used for each cell.
+The different values are described in the metadata of the provided file.
+In short, this file distinguishes whether the data is based on 
+e.g. GFED, FireMIP, visibility records.
+
+Data volume:
+
+1. grid cell area: 42 kB
+1. data source: 123 MB
+
 ### Recommendation for pre-industrial control
 
 Apply the 1850 values on repeat.
-
-<!--- end of placeholder for piControl recommendation -->
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
