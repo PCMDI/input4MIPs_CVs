@@ -3,9 +3,6 @@
 <!--- source_id_stub="DRES-CMIP-BB4CMIP7" -->
 # Open biomass burning emissions
 
-**This section is a work in progress.**
-**For a first draft, see https://github.com/PCMDI/input4MIPs_CVs/pull/146**
-
 ## Key contacts
 
 - Names: Margreet van Marle, Guido van der Werf
