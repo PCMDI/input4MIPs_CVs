@@ -83,7 +83,11 @@ to estimate emissions when proxy coverage is limited.
 Figure 1 and Figure 2 provide more information on which proxies were used in various basis regions to construct the full time series. 
 This has been further explained in Van Marle et al. (2017, https://doi.org/10.5194/gmd-10-3329-2017).
 
-[TODO figures here]
+![Figure 1: The 17 basis regions used to reconstruct fire emissions.](../assets/biomass_burning_docs_figure_1.png "Figure 1: The 17 basis regions used to reconstruct fire emissions.")
+Figure 1: The 17 basis regions used to reconstruct fire emissions.
+
+![Figure 2: Data sources used for each region per time period..](../assets/biomass_burning_docs_figure_2.png "Figure 2: Data sources used for each region per time period.")
+Figure 2: Data sources used for each region per time period.
 
 ### Data usage notes
 
