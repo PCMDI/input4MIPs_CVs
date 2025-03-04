@@ -83,4 +83,5 @@ jobs:
         with:
           # Exclude local links
           # Not sure why LUH site fails, it works locally.
-          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' ."
+          # Also not sure why we can't hit https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ in CI
+          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' --exclude '^https://www\\.geo\\.vu\\.nl/~gwerf/GFED/GFED4/tables/$' ."
