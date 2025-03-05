@@ -719,6 +719,38 @@
         "mip_era":"CMIP6Plus",
         "source_version":"1.0.1"
     },
+    "UCLA-1-0-2":{
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0.2"
+    },
+    "UCLA-1-0-2-constant":{
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0.2"
+    },
+    "UCLA-1-0-2-decreasing":{
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0.2"
+    },
+    "UCLA-1-0-2-increasing":{
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.0.2"
+    },
     "UOEXETER-CMIP-0-1-0":{
         "activity_id": "input4MIPs",
         "authors": [
