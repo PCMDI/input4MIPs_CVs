@@ -93,8 +93,8 @@ SOLARIS-HEPPA-CMIP-4-6:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2522675
 UCLA-1-0-1:
   comment_post_publication: &ucla-1-0-1-comment >-
-    The labels of increasing and decreasing are backwards in this version.
-    Hence this version is retracted.
+    This version was retracted
+    because the increasing and decreasing labels are backwards.
     The labels are fixed in UCLA-1-0-2*.
 UCLA-1-0-1-constant:
   comment_post_publication: *ucla-1-0-1-comment
