@@ -91,6 +91,17 @@ SOLARIS-HEPPA-CMIP-4-4:
     For further information, see <a href="https://solarisheppa.geomar.de/cmip7">SOLARIS-HEPPA release notes</a>.
 SOLARIS-HEPPA-CMIP-4-6:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2522675
+UCLA-1-0-1:
+  comment_post_publication: &ucla-1-0-1-comment >-
+    This version was retracted
+    because the increasing and decreasing labels are backwards.
+    The labels are fixed in UCLA-1-0-2*.
+UCLA-1-0-1-constant:
+  comment_post_publication: *ucla-1-0-1-comment
+UCLA-1-0-1-decreasing:
+  comment_post_publication: *ucla-1-0-1-comment
+UCLA-1-0-1-increasing:
+  comment_post_publication: *ucla-1-0-1-comment
 UOEXETER-CMIP-0-1-0:
   publication_status: never_published
 UOEXETER-CMIP-1-1-2:
