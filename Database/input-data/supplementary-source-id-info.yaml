@@ -132,3 +132,7 @@ UOEXETER-CMIP-2-0-0:
   further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
 UofMD-landState-3-0:
   license_id: CC BY 4.0
+  comment_post_publication: >-
+    v3.0 contains a number of spurious spikes post-1950.
+    These have been addressed in v3.1.
+    As a result, v3.0 has been retracted.
