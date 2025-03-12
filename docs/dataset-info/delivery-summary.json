@@ -8,7 +8,7 @@
         ]
     },
     "biomass_burning_emms": { "source_ids": [ "DRES-CMIP-BB4CMIP7-2-0" ], "url": "https://www.globalfiredata.org" },
-    "land_use": { "source_ids": [ "UofMD-landState-3-0" ], "url": "https://luh.umd.edu" },
+    "land_use": { "source_ids": [ "UofMD-landState-3-1" ], "url": "https://luh.umd.edu" },
     "ghg_concentrations": { "source_ids": [ "CR-CMIP-1-0-0" ] },
     "co2_isotopes": {
         "expected_publication": "Unclear, waiting to hear from the data provider (please raise an issue if you need an updated on this dataset's status)",
