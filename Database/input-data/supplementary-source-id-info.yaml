@@ -55,6 +55,7 @@ DRES-CMIP-BB4CMIP7-1-0:
     can be found on https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ for the 1997 onwards period.
 DRES-CMIP-BB4CMIP7-2-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
+  license_id: CC BY 4.0
 MRI-JRA55-do-1-6-0:
   license_id: CC BY 4.0
 PCMDI-AMIP-1-1-9:
@@ -136,3 +137,5 @@ UofMD-landState-3-0:
     v3.0 contains a number of spurious spikes post-1950.
     These have been addressed in v3.1.
     As a result, v3.0 has been retracted.
+UofMD-landState-3-1:
+  license_id: CC BY 4.0
