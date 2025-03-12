@@ -18,7 +18,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 #### CMIP7
 
-No data available for this phase yet.
+For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [UofMD-landState-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-3-1%22%5D%7D)
 
 #### Testing
 
@@ -44,5 +44,11 @@ Do not apply any land-use change or other management.
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
+## Revision history
+
+### UofMD-landState-3-0
+
+v3.0 contains a number of spurious spikes post-1950. These have been addressed in v3.1. As a result,
+v3.0 has been retracted.
+
 <!--- end-revision-history -->
