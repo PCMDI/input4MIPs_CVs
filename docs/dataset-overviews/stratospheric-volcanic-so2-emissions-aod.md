@@ -86,7 +86,15 @@ The volcanic emissions are provided with daily resolution
 alongside latitude, longitude and injection height information.
 
 The aerosol optical properties are provided with monthly resolution
-on a latitudinal grid.
+on a latitudinal, vertical and wavelength grid.
+To facilitate use of our dataset in any radiative model,
+we provide the community with scripts
+(see [this associated Github repository](https://github.com/MetOffice/CMIP7_volcanic_aerosol_forcing/tree/main))
+that can be used to interpolate the files we provide on ESGF on any list of wavelength inputted by the user.
+These include a simple method to linearly interpolate to waveband midpoints
+and a weighted averaging method that is more computationally expensive
+but provides more representative averages, particularly for radiation schemes with broad wavebands.
+We therefore recommend modelling groups use the latter method where possible.
 
 ### Variables provided
 
