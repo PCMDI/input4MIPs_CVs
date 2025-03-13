@@ -22,6 +22,25 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.12 (2025-03-13)
+
+
+### 🆕 Features
+
+- Added UCLA-1-0-2 source ID and associated data. ([#194](https://github.com/PCMDI/input4MIPs_CVs/pull/194))
+- Added DRES-CMIP-BB4CMIP7-2-0 and CR-CMIP-1-0-0 source IDs and associated data. ([#197](https://github.com/PCMDI/input4MIPs_CVs/pull/197))
+- Added the UOEXETER-CMIP-2-0-0 source ID and associated data. ([#204](https://github.com/PCMDI/input4MIPs_CVs/pull/204))
+
+### 🐛 Bug Fixes
+
+- Fix DOI associated with Uni. Exeter publications ([#205](https://github.com/PCMDI/input4MIPs_CVs/pull/205))
+
+### 📚 Improved Documentation
+
+- Updated the documentation for biomass burning emissions and greenhouse gas concentrations based on the CMIP7 data releases. ([#197](https://github.com/PCMDI/input4MIPs_CVs/pull/197))
+- Add DOI information to the database views. ([#205](https://github.com/PCMDI/input4MIPs_CVs/pull/205))
+
+
 ## input4MIPs CVs v6.6.11 (2025-02-26)
 
 
