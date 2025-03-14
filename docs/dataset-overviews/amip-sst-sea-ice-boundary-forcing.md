@@ -3,64 +3,70 @@
 <!--- source_id_stub="PCMDI-AMIP" -->
 # AMIP sea-surface temperature and sea-ice boundary forcing
 
-**This section is a work in progress.**
-**For a first draft, see https://github.com/PCMDI/input4MIPs_CVs/pull/146**
-
 ## Key contacts
 
-- Names: Paul Durack
+- Names: Paul J. Durack
 - Emails: durack1@llnl.gov
 
 ## Summary
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-### Source IDs for CMIP7 phases
+### Source IDs for CMIP phases
 
-The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.
-
-#### CMIP7 AR7 fast track
-
-For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-9%22%5D%7D)
-
-This data is for the CMIP7 AR7 fast track.
-All data sets for use in the fast track are published with a `mip_era` metadata value of 'CMIP7'.
-This metadata value appears in both the file's global metadata as well as its metadata on ESGF.
-
-If you find an issue, please
-[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
-so that the identification and resolution of this issue is publicly accessible.
-
-#### Testing
-
-For the testing phase of CMIP7, use data with the source ID [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-9%22%5D%7D)
-
-This data is for testing (both of the forcing data and of modelling workflows) only.
-Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
-(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
-
-If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
+The source ID that identifies the dataset to use is given below.
 
 #### CMIP7
 
-No data available for this phase yet.
+**an issue has been identified in the PCMDI-AMIP-1-1-9 sea ice field for the dataset last month (2022-12).
+A resolution is currently being investigated, and a revised dataset `PCMDI-AMIP-1-1-10` will be made available
+in April with this issue resolved Not other data changes will be made, and the `mip_era` will be incremented
+to `CMIP7`.**
 
-This data will be for CMIP7.
-All data sets for use in CMIP7 will be published with a `mip_era` metadata value of 'CMIP7'.
-This metadata value will appear both in the file's global metadata as well as its metadata on ESGF.
+<!--
+For CMIP7, use data with the source ID [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-9%22%5D%7D)
+-->
+The PCMDI-AMIP-1-1-9 dataset provides temporal coverage 1850-01 through 2022-12, and maintains consistency
+with the previous CMIP6 dataset versions [(versions 1.1.0 through 1.1.8](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22mip_era%22%3A%22CMIP6%22%2C%22institution_id%22%3A%22PCMDI%22%7D)).
 
-Further details will follow after the fast track is underway
-(including details about how updates to this data will be handled over the lifetime of CMIP7).
+Upstream data used to produce the PCMDI-AMIP data product was discontinued in February 2023 (NOAA-OISST v2.0).
+Work is underway to identify a replacement SST and sea ice dataset providing updated temporal coverage to near
+real-time. This new data will break the consistent link with past AMIP simulations that used the HadISST v1.0
+(1870-01 to 1981-10) and NOAA OISST v2.0 (1981-11 to 2022-12), and so will be labeled v2.0.x to demarc this
+change.
+
+Once the v2.0.x dataset is generated, we anticipate regular 6-monthly updates capturing temporal extensions
+will be made available through input4MIPs (just like was done with the v1.1.0 through v1.1.8 versions in CMIP6).
+
+The `mip_era` metadata value of 'CMIP7', is contained in the netcdf file global attributes, and is also
+a `Target MIP List` search facet within the ESGF input4MIPs project page [here](https://aims2.llnl.gov/search/input4MIPs)
+
+If you find a problem related to this dataset, please
+[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
+so that the identification and resolution of the problem is publicly accessible.
+
+If you have a question related to this dataset, please
+[create a discussion on GitHub](https://github.com/PCMDI/input4MIPs_CVs/discussions)
+so that the identification and resolution of the problem is publicly accessible.
+
+#### CMIP6Plus: Testing
+
+For the testing phase, CMIP6Plus, use data with the source ID [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-9%22%5D%7D)
+
+This data is for testing (both of the forcing data and of modelling workflows) only.
+CMIP7 production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
+
+If you have feedback, please create or add to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
 
 <!--- end-cmip7-phases-source-ids -->
 
 <!--- placeholder for piControl recommendation -->
 ## Navigating the data
 
-### Recommendation for pre-industrial control
+### Recommendation for pre-industrial control (piControl)
 
-This data is not used for the pre-industrial control experiment
-hence there is no recommendation.
+This data is only used for the DECK AMIP experiment (CMIP:amip). As it is not used for the piControl
+experiment hence there is no recommendation.
 
 <!--- end of placeholder for piControl recommendation -->
 
