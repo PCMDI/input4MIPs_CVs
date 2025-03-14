@@ -20,7 +20,7 @@ The source ID that identifies the dataset to use is given below.
 
 **an issue has been identified in the PCMDI-AMIP-1-1-9 sea ice field for the dataset last month (2022-12).
 A resolution is currently being investigated, and a revised dataset `PCMDI-AMIP-1-1-10` will be made available
-in April with this issue resolved Not other data changes will be made, and the `mip_era` will be incremented
+in April with this issue resolved. No other data changes are planned. The `mip_era` will be incremented
 to `CMIP7`.**
 
 <!--
@@ -33,7 +33,8 @@ Upstream data used to produce the PCMDI-AMIP data product was discontinued in Fe
 Work is underway to identify a replacement SST and sea ice dataset providing updated temporal coverage to near
 real-time. This new data will break the consistent link with past AMIP simulations that used the HadISST v1.0
 (1870-01 to 1981-10) and NOAA OISST v2.0 (1981-11 to 2022-12), and so will be labeled v2.0.x to demarc this
-change.
+change. Work underway shows that a subset of existing CMIP6-contributing models are sensitive to the SST and
+sea ice changes that will occur in the v1.0.x -> 2.0.x dataset update.
 
 Once the v2.0.x dataset is generated, we anticipate regular 6-monthly updates capturing temporal extensions
 will be made available through input4MIPs (just like was done with the v1.1.0 through v1.1.8 versions in CMIP6).
