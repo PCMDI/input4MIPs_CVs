@@ -22,13 +22,13 @@ If you find any issues, please
 
 The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.
 
-#### CMIP7 AR7 fast track
+#### CMIP7
 
-For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [CR-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-1-0-0%22%5D%7D)
+For the CMIP7 phase of CMIP7, use data with the source ID [CR-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-1-0-0%22%5D%7D)
 
-This data is for the CMIP7 AR7 fast track.
-All data sets for use in the fast track are published with a `mip_era` metadata value of 'CMIP7'.
-This metadata value appears in both the file's global metadata as well as its metadata on ESGF.
+This data is CMIP7.
+All data sets for use in CMIP7 are published with a `mip_era` metadata value of 'CMIP7'.
+This metadata value will appear both in the file's global metadata as well as its metadata on ESGF.
 
 If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
@@ -43,17 +43,6 @@ Production simulations should not be started based on any data that has a `mip_e
 (The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
-
-#### CMIP7
-
-No data available for this phase yet.
-
-This data will be for CMIP7.
-All data sets for use in CMIP7 will be published with a `mip_era` metadata value of 'CMIP7'.
-This metadata value will appear both in the file's global metadata as well as its metadata on ESGF.
-
-Further details will follow after the fast track is underway
-(including details about how updates to this data will be handled over the lifetime of CMIP7).
 
 <!--- end-cmip7-phases-source-ids -->
 
