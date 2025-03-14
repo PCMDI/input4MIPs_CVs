@@ -36,6 +36,7 @@ nav:
     - Source ID-level CMIP6Plus: database-views/input4MIPs_source-id_CMIP6Plus.html
     - Dataset-level CMIP6Plus: database-views/input4MIPs_datasets_CMIP6Plus.html
     - File-level CMIP6Plus: database-views/input4MIPs_files_CMIP6Plus.html
+  - Source ID landing pages: source-id-landing-pages/
   - Repository overview: repository-overview.md
   - Contributing: contributing.md
   - Versioning: versioning.md
@@ -75,6 +76,9 @@ plugins:
   - gen-files:
       scripts:
         - docs/dataset-overviews/fill-out-auto-generated-sections.py
+        - docs/source-id-landing-pages/auto-generate-source-id-pages.py
+  # Required for handling the source ID landing pages
+  - literate-nav:
 
 
 markdown_extensions:
