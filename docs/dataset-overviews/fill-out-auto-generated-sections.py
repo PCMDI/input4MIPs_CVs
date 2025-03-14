@@ -280,7 +280,7 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
     out = [
         "### Source IDs for CMIP7 phases",
         "",
-        "The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.",
+        "The source ID that identifies the dataset to use in CMIP7 is given below.",
         "",
     ]
     for phase in ("cmip7", "testing"):
