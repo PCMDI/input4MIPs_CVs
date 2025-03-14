@@ -354,8 +354,21 @@
         "source_version":"2.0"
     },
     "FZJ-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Michaela Hegglin",
+                "email": "m.i.hegglin@fz-juelich.de",
+                "affiliations": [
+                    "Institute of Energy and Climate Research – Stratosphere (IEK-7), Forschungszentrum Jülich GmbH, 52425 Jülich, Germany",
+                    "Department of Meteorology, University of Reading, Earley Gate, Reading, RG6 6BB, United Kingdom"
+                ],
+                "orcid": "0000-0003-2820-9044"
+            }
+        ],
         "contact":"Michaela Hegglin (m.i.hegglin@fz-juelich.de)",
-        "further_info_url":"http://www.tbd.invalid",
+        "dataset_category":["Ozone", "SurfaceFluxes"],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/nitrogen-deposition/",
         "institution_id":"FZJ",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
