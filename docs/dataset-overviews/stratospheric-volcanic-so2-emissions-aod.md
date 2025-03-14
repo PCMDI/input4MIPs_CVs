@@ -27,7 +27,7 @@ If you find any issues, please contribute to
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
 
-The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.
+The source ID that identifies the dataset to use in CMIP7 is given below.
 
 #### CMIP7
 
