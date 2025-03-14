@@ -331,8 +331,8 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
 
             out.append("")
 
-        out.append(PHASES_COMMON_TEXT[phase])
-        out.append("")
+            out.append(PHASES_COMMON_TEXT[phase])
+            out.append("")
 
     return tuple(out)
 

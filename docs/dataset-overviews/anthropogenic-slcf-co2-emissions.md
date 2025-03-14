@@ -35,14 +35,6 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 No data available for this phase yet.
 
-This data is for use in CMIP7 production simulations.
-All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
-This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
-
-If you find an issue, please
-[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
-so that the identification and resolution of this issue is publicly accessible.
-
 #### Testing
 
 For the testing of CMIP7, you will need data from the following source IDs:
