@@ -37,10 +37,10 @@ PHASES_COMMON_TEXT: dict[str, str] = {
         "[relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions)."
     ),
     "cmip7": (
-        "This data is CMIP7.\n"
-        "All data sets for use in CMIP7 "
+        "This data is for use in CMIP7 production simulations.\n"
+        "All data sets for use in CMIP7 production simulations "
         "are published with a `mip_era` metadata value of 'CMIP7'.\n"
-        "This metadata value will appear both in the file's global metadata "
+        "This metadata value appears both in the file's global metadata "
         "as well as its metadata on ESGF.\n"
         "\n"
         "If you find an issue, please\n"
