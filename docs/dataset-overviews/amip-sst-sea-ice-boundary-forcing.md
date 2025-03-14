@@ -50,7 +50,7 @@ If you have a question related to this dataset, please
 [create a discussion on GitHub](https://github.com/PCMDI/input4MIPs_CVs/discussions)
 so that the identification and resolution of the problem is publicly accessible.
 
-#### CMIP6Plus: Testing
+#### CMIP6Plus: Testing and feedback
 
 For the testing phase, CMIP6Plus, use data with the source ID [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-9%22%5D%7D)
 
