@@ -129,5 +129,6 @@ UOEXETER-CMIP-1-3-1:
     Hence v1.3.1 is deprecated.
 UOEXETER-CMIP-2-0-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
+  further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
 UofMD-landState-3-0:
   license_id: CC BY 4.0
