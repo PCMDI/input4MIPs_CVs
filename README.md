@@ -3,12 +3,12 @@
 
 [![Latest release](https://img.shields.io/badge/Latest%20release-v6.6.13-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/v6.6.13)
 [![DOI (all versions)](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://zenodo.org/doi/10.5281/zenodo.12629796)
-[![Docs](https://readthedocs.org/projects/input4mips-controlled-vocabularies-cvs/badge/?version=latest)](https://input4mips-controlled-vocabularies-cvs.readthedocs.io)
+[![Docs](https://readthedocs.org/projects/input4mips-cvs/badge/?version=latest)](https://input4mips-cvs.readthedocs.io)
 
 ### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
 
 Controlled Vocabularies (CVs) for use in input4MIPs.
-Full documentation can be found at: [input4mips-controlled-vocabularies-cvs.readthedocs.io](https://input4mips-controlled-vocabularies-cvs.readthedocs.io).
+Full documentation can be found at: [input4mips-cvs.readthedocs.io](https://input4mips-cvs.readthedocs.io).
 
 For further information regarding forcing dataset development
 for the Coupled Model Intercomparison Project (CMIP) activities,
@@ -23,7 +23,7 @@ please see the
 -->
 For different, pre-prepared views of the database,
 see 
-[database views](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/database-views/).
+[database views](https://input4mips-cvs.readthedocs.io/en/latest/database-views/).
 
 ## Usage
 
@@ -34,8 +34,8 @@ see
 
 For information about how to use this repository,
 see 
-[usage as a data user](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-user)
-and [usage as a data producer](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-producer).
+[usage as a data user](https://input4mips-cvs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-user)
+and [usage as a data producer](https://input4mips-cvs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-producer).
 
 <!--- --8<-- [start:repository-overview] -->
 ## Repository overview
@@ -82,7 +82,7 @@ e.g. sometimes there is more than one variable in a file).
 
 To ease exploration of the database, 
 we provide a few pre-prepared views of the database,
-see [database views](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/database-views/).
+see [database views](https://input4mips-cvs.readthedocs.io/en/latest/database-views/).
 <!--- --8<-- [end:repository-overview] -->
 
 ## Contributors

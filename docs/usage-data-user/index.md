@@ -77,7 +77,7 @@ to connect with the data providers, and other users about usage questions or oth
 an `issue` to be raised, yet - we can always convert a discussion to an issue if required.
 
 To-date, we have already identified issues, and resolved problems with earlier versions of data,
-and these previously existing issues are briefly described on the [input4MIPs source_id view](https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/database-views/input4MIPs_source-id_CMIP6Plus.html)
+and these previously existing issues are briefly described on the [input4MIPs source_id view](https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_source-id_CMIP6Plus.html)
 search for `retracted` (top right hand search box), or some other criteria that caught issues
 before data was made available on ESGF.
 

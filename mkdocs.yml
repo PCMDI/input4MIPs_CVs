@@ -1,6 +1,6 @@
 site_name: input4MIPs Controlled Vocabularies (CVs)
 site_description: Controlled Vocabularies (CVs) for use in input4MIPs
-site_url: https://input4mips-controlled-vocabularies-cvs.readthedocs.io/
+site_url: https://input4mips-cvs.readthedocs.io/
 edit_uri: blob/main/docs/
 
 repo_name: PCMDI/input4MIPs_CVs
