@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.15 (2025-03-18)
+
+
+### 📚 Improved Documentation
+
+- Removed any mention of the AR7 fast track. It has now been clarified ([#222](https://github.com/PCMDI/input4MIPs_CVs/issues/222)) that there is only one set of DECK simulations, hence we only need to mention CMIP7 in our docs, not CMIP7 and a separate AR7 fast track. ([#223](https://github.com/PCMDI/input4MIPs_CVs/pull/223))
+
+
 ## input4MIPs CVs v6.6.14 (2025-03-18)
 
 
