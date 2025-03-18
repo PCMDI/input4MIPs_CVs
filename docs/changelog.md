@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.14 (2025-03-18)
+
+
+### 📚 Improved Documentation
+
+- Update links to point to input4mips-cvs.readthedocs.io rather than the now deactivated input4mips-controlled-vocabularies-cvs.readthedocs.io. Note that turning off input4mips-controlled-vocabularies-cvs.readthedocs.io did break the further_info_url value in the volcanic files. Please use the new domain instead. ([#226](https://github.com/PCMDI/input4MIPs_CVs/pull/226))
+
+
 ## input4MIPs CVs v6.6.13 (2025-03-13)
 
 
