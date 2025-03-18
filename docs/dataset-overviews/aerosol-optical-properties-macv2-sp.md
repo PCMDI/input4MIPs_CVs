@@ -30,18 +30,11 @@ so this dataset can only be considered stable once these input emissions are sta
 For testing, please use the data at this zenodo record:
 [https://doi.org/10.5281/zenodo.14512962](https://doi.org/10.5281/zenodo.14512962).
 
-#### CMIP7 AR7 fast track
-
-No data available for this phase yet.
-
-Further details will follow in early 2025.
-
 #### CMIP7
 
 No data available for this phase yet.
 
-Further details will follow after the fast track is underway
-(including details about how updates to this data will be handled over the lifetime of CMIP7).
+Further details will follow the release of the short-lived climate forcers CMIP7 data.
 
 ## Navigating the data
 
