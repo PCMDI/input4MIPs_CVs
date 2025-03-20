@@ -12,4 +12,4 @@
 
 - source_id: UOEXETER-CMIP-2-0-0
 - contact: t.aubry@exeter.ac.uk
-- further_info_url: https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
+- further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
