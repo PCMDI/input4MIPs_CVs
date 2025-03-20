@@ -73,6 +73,8 @@ for source_id, info in source_id_entries.items():
         f"- contact: {info['contact']}",
         f"- further_info_url: {info['further_info_url']}",
     ]
+    with open(HERE / source_id_filename, "w") as fh:
+        fh.write("\n".join(to_write))
 
     citation_info = {}
     contributors_l = []
@@ -122,7 +124,7 @@ for source_id, info in source_id_entries.items():
     if creation_years:
         creation_year = get_assumed_unique_value(creation_years)
     else:
-        breakpoint()
+        raise NotImplementedError
 
     creation_dates = (
         db_source_id["creation_date"]
