@@ -22,6 +22,15 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.16 (2025-03-20)
+
+
+### 📚 Improved Documentation
+
+- Added landing pages for all source IDs (except source IDs that were never published) in `docs/source-id-landing-pages`.
+  These can then be linked up with ESGF's metadata using the citation info that is placed next to these landing pages. ([#225](https://github.com/PCMDI/input4MIPs_CVs/pull/225))
+
+
 ## input4MIPs CVs v6.6.15 (2025-03-18)
 
 
