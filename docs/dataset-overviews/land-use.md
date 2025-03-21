@@ -18,7 +18,15 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 #### CMIP7
 
-For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [UofMD-landState-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-3-1%22%5D%7D)
+For the CMIP7 phase of CMIP7, use data with the source ID [UofMD-landState-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-3-1%22%5D%7D)
+
+This data is for use in CMIP7 production simulations.
+All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
+This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
+
+If you find an issue, please
+[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
+so that the identification and resolution of this issue is publicly accessible.
 
 #### Testing
 
