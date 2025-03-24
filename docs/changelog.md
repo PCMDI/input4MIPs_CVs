@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.17 (2025-03-24)
+
+
+### 🆕 Features
+
+- Added UofMD-landState-3-1 source ID and associated land-use data. ([#213](https://github.com/PCMDI/input4MIPs_CVs/pull/213))
+
+### 🐛 Bug Fixes
+
+- Fixed the licence ID of the DRES-CMIP-BB4CMIP7-2-0 entries in the database (too late for the files). ([#213](https://github.com/PCMDI/input4MIPs_CVs/pull/213))
+
+
 ## input4MIPs CVs v6.6.16 (2025-03-20)
 
 
