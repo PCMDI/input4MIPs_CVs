@@ -13,8 +13,8 @@
         "cmip7": null
     },
     "land_use": {
-        "testing": { "source_ids": [ "UofMD-landState-3-0" ] },
-        "cmip7": null
+        "testing": { "source_ids": [ "UofMD-landState-3-0" ] , "ok_if_not_latest": true },
+        "cmip7": { "source_ids": [ "UofMD-landState-3-1" ] }
     },
     "ghg_concentrations": {
         "testing": { "source_ids": [ "CR-CMIP-0-4-0" ], "ok_if_not_latest": true },
