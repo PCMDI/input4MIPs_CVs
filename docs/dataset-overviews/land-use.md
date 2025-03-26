@@ -18,7 +18,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 #### CMIP7
 
-For the CMIP7 phase of CMIP7, use data with the source ID [UofMD-landState-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-3-1%22%5D%7D)
+For the CMIP7 phase of CMIP7, use data with the source ID [UofMD-landState-3-1-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-3-1-1%22%5D%7D)
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -172,6 +172,13 @@ there are a few some notable differences in the land-use information between LUH
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### UofMD-landState-3-1
+
+v3.1 contains an extra variable (crpbf_total) in the land-use management file. This is filled with
+zeroes, so will not affect simulations. However, for completeness, we have released an update
+(v3.1.1) which removes this unnecessary variable (but using v3.1 is fine if that is what you're
+doing already).
 
 ### UofMD-landState-3-0
 
