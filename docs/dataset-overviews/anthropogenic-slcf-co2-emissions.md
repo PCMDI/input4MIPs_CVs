@@ -187,5 +187,21 @@ Note there is a variable naming inconsistency for these file - described in the 
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
+## Revision history
+
+### CEDS-CMIP-2024-11-25-supplemental
+
+A number of updates have been made in CEDS-CMIP-2025-03-18*. These are significantly different from
+this dataset, hence it has been retracted.
+
+### CEDS-CMIP-2024-11-25
+
+A number of updates have been made in CEDS-CMIP-2025-03-18*. These are significantly different from
+this dataset, hence it has been retracted.
+
+### CEDS-CMIP-2024-10-21-supplemental
+
+A number of updates have been made in CEDS-CMIP-2025-03-18*. These are significantly different from
+this dataset, hence it has been retracted.
+
 <!--- end-revision-history -->

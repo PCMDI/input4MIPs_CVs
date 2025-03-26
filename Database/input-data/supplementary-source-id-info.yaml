@@ -2,6 +2,17 @@ CEDS-CMIP-2024-07-08:
   publication_status: never_published
 CEDS-CMIP-2024-07-08-supplemental:
   publication_status: never_published
+CEDS-CMIP-2024-11-25:
+  comment_post_publication: &ceds-pre-2025-03-18-comment >-
+    A number of updates have been made in CEDS-CMIP-2025-03-18*.
+    These are significantly different from this dataset,
+    hence it has been retracted.
+CEDS-CMIP-2024-11-25-supplemental:
+  comment_post_publication: *ceds-pre-2025-03-18-comment
+CEDS-CMIP-2024-10-21-supplemental:
+  comment_post_publication: *ceds-pre-2025-03-18-comment
+CEDS-CMIP-2024-10-21-supplemental:
+  comment_post_publication: *ceds-pre-2025-03-18-comment
 CR-CMIP-0-2-0:
   publication_status: abandoned
 CR-CMIP-0-3-0:
