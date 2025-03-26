@@ -1,10 +1,8 @@
 {
     "slfc_co2_emms": {
         "source_ids": [
-            "CEDS-CMIP-2024-11-25",
-            "CEDS-CMIP-2024-11-25-supplemental",
-            "CEDS-CMIP-2024-10-21",
-            "CEDS-CMIP-2024-10-21-supplemental"
+            "CEDS-CMIP-2025-03-18", 
+            "CEDS-CMIP-2025-03-18-supplemental" 
         ]
     },
     "biomass_burning_emms": { "source_ids": [ "DRES-CMIP-BB4CMIP7-2-0" ], "url": "https://www.globalfiredata.org" },
