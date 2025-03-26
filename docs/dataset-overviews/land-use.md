@@ -173,6 +173,13 @@ there are a few some notable differences in the land-use information between LUH
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 
+### UofMD-landState-3-1
+
+v3.1 contains an extra variable (crpbf_total) in the land-use management file. This is filled with
+zeroes, so will not affect simulations. However, for completeness, we have released an update
+(v3.1.1) which removes this unnecessary variable (but using v3.1 is fine if that is what you're
+doing already).
+
 ### UofMD-landState-3-0
 
 v3.0 contains a number of spurious spikes post-1950. These have been addressed in v3.1. As a result,

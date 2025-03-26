@@ -139,3 +139,9 @@ UofMD-landState-3-0:
     As a result, v3.0 has been retracted.
 UofMD-landState-3-1:
   license_id: CC BY 4.0
+  comment_post_publication: >-
+    v3.1 contains an extra variable (crpbf_total) in the land-use management file.
+    This is filled with zeroes, so will not affect simulations.
+    However, for completeness, we have released an update (v3.1.1)
+    which removes this unnecessary variable
+    (but using v3.1 is fine if that is what you're doing already).
