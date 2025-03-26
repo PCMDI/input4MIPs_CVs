@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.18 (2025-03-26)
+
+
+### 🆕 Features
+
+- Added UofMD-landState-3-1-1 source ID and associated data ([#229](https://github.com/PCMDI/input4MIPs_CVs/pull/229))
+
+
 ## input4MIPs CVs v6.6.17 (2025-03-24)
 
 
