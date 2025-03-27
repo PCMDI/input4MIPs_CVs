@@ -26,6 +26,7 @@ with open(SOURCE_ID_CVS) as fh:
 
 def get_assumed_unique_value(invs: list[Any]) -> Any:
     if len(invs) != 1:
+        breakpoint()
         raise AssertionError(invs)
 
     return invs[0]
@@ -122,7 +123,7 @@ for source_id, info in source_id_entries.items():
         .tolist()
     )
     if creation_years:
-        creation_year = get_assumed_unique_value(creation_years)
+        creation_year = max(creation_years)
     else:
         raise NotImplementedError
 

@@ -15,7 +15,7 @@
                 "email": "ssmith@pnnl.gov",
                 "affiliations": [
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
                 "orcid": "0000-0003-3248-5607"
             }
@@ -44,7 +44,7 @@
                 "email": "ssmith@pnnl.gov",
                 "affiliations": [
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
                 "orcid": "0000-0003-3248-5607"
             }
@@ -73,7 +73,7 @@
                 "email": "ssmith@pnnl.gov",
                 "affiliations": [
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
                 "orcid": "0000-0003-3248-5607"
             }
@@ -102,7 +102,7 @@
                 "email": "ssmith@pnnl.gov",
                 "affiliations": [
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
                 "orcid": "0000-0003-3248-5607"
             }
@@ -131,7 +131,7 @@
                 "email": "ssmith@pnnl.gov",
                 "affiliations": [
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
                 "orcid": "0000-0003-3248-5607"
             }
@@ -160,7 +160,7 @@
                 "email": "ssmith@pnnl.gov",
                 "affiliations": [
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
                 "orcid": "0000-0003-3248-5607"
             }
@@ -172,6 +172,64 @@
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "source_version":"2024-11-25"
+    },
+    "CEDS-CMIP-2025-03-18":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Rachel Hoesly",
+                "email": "rachel.hoesly@pnnl.gov",
+                "affiliations": [
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
+                ],
+                "orcid": "0000-0003-0965-2729"
+            },
+            {
+                "name": "Steve Smith",
+                "email": "ssmith@pnnl.gov",
+                "affiliations": [
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
+                ],
+                "orcid": "0000-0003-3248-5607"
+            }
+        ],
+        "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
+        "dataset_category":["emissions"],
+        "further_info_url":"https://www.pnnl.gov/projects/ceds",
+        "institution_id":"PNNL-JGCRI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"2025-03-18"
+    },
+    "CEDS-CMIP-2025-03-18-supplemental":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Rachel Hoesly",
+                "email": "rachel.hoesly@pnnl.gov",
+                "affiliations": [
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
+                ],
+                "orcid": "0000-0003-0965-2729"
+            },
+            {
+                "name": "Steve Smith",
+                "email": "ssmith@pnnl.gov",
+                "affiliations": [
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
+                ],
+                "orcid": "0000-0003-3248-5607"
+            }
+        ],
+        "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
+        "dataset_category":["emissions"],
+        "further_info_url":"https://www.pnnl.gov/projects/ceds",
+        "institution_id":"PNNL-JGCRI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"2025-03-18"
     },
     "CR-CMIP-0-2-0":{
         "activity_id": "input4MIPs",
