@@ -9,7 +9,7 @@
 
 2. Steve Smith ([ORCID 0000-0003-3248-5607](https://orcid.org/0000-0003-3248-5607))
     - Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA
-    - Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA
+    - Center for Global Sustainability, University of Maryland, College Park, MD, USA
 
 
 ## Basic metadata
