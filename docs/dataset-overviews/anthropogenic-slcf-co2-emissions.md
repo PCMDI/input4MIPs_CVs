@@ -12,9 +12,11 @@
 
 CEDS data is available.
 Emissions data are provided for SO<sub>2</sub>, NOx, BC, OC, NH<sub>3</sub>, NMVOC,  CO, CO<sub>2</sub> from 1750 - 2023.
-Emissions data for CH<sub>4</sub> and N<sub>2</sub>O are provided from 1970 - 2023.
+Emissions data for CH<sub>4</sub> and N<sub>2</sub>O are provided from 1970 - 2023
+(although extensions back to 1750 are available in the "supplemental" source ID).
 
-When handling this data, solid biofuel emissions and speciated NMVOCs have the suffix "-supplemental" added to their source ID to avoid inadvertent double counting.
+When handling this data, solid biofuel emissions and speciated NMVOCs 
+have the suffix "-supplemental" added to their source ID to avoid inadvertent double counting.
 
 For documentation of the underlying data,
 please keep an eye on https://github.com/JGCRI/CEDS,
