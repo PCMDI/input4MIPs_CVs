@@ -10,8 +10,8 @@
     "datetime_end":"1799-12-16T00:00:00Z",
     "datetime_start":"1750-01-16T00:00:00Z",
     "doi":"10.5281/zenodo.15001544",
-    "esgf_dataset_master_id":"input4MIPs.CMIP7.CMIP.PNNL-JGCRI.CEDS-CMIP-2025-03-18.atmos.mon.CO_em_anthro.gn.v20250326",
-    "filepath":"/p/user_pub/work/input4MIPs/CMIP7/CMIP/PNNL-JGCRI/CEDS-CMIP-2025-03-18/atmos/mon/CO_em_anthro/gn/v20250326/CO-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-03-18_gn_175001-179912.nc",
+    "esgf_dataset_master_id":"input4MIPs.CMIP7.CMIP.PNNL-JGCRI.CEDS-CMIP-2025-03-18.atmos.mon.CO_em_anthro.gn.v20250327",
+    "filepath":"/p/user_pub/work/input4MIPs/CMIP7/CMIP/PNNL-JGCRI/CEDS-CMIP-2025-03-18/atmos/mon/CO_em_anthro/gn/v20250327/CO-em-anthro_input4MIPs_emissions_CMIP_CEDS-CMIP-2025-03-18_gn_175001-179912.nc",
     "frequency":"mon",
     "further_info_url":"https://www.pnnl.gov/projects/ceds",
     "grid":"0.5x0.5 degree latitude x longitude",
@@ -39,6 +39,6 @@
     "tracking_id":"hdl:21.14100/d61482c4-09c8-11f0-8c92-3cecef4e749a",
     "validated_input4mips":null,
     "variable_id":"CO_em_anthro",
-    "version":"20250326",
+    "version":"20250327",
     "xlink":null
 }
