@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.23 (2025-04-02)
+
+
+### 📚 Improved Documentation
+
+- Updated the GHG concentration documentation ([#236](https://github.com/PCMDI/input4MIPs_CVs/pull/236))
+
+
 ## input4MIPs CVs v6.6.22 (2025-04-02)
 
 
