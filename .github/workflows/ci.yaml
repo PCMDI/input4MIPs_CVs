@@ -101,4 +101,5 @@ jobs:
           # Exclude local links
           # Not sure why LUH site fails, it works locally.
           # Also not sure why we can't hit https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ in CI
-          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' --exclude '^https://www\\.geo\\.vu\\.nl/~gwerf/GFED/GFED4/tables/$' ."
+          # globalfiredata.org is super flaky, hence exlucded
+          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' --exclude '^https://www\\.geo\\.vu\\.nl/~gwerf/GFED/GFED4/tables/$' --exclude '^https://www.globalfiredata.org' ."
