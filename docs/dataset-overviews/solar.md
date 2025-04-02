@@ -10,10 +10,11 @@
 
 ## Summary
 
-The solar dataset is rapidly approaching a final version.
-The available version(s) is for testing only, do not use it for any simluations you're not willing to throw away.
-We are collecting bugs and other issues in
-[this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
+The CMIP7 version of the solar dataset has been released.
+If you find any problems,
+please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md).
+Discussions on this and earlier versions can be found in
+[https://github.com/PCMDI/input4MIPs_CVs/discussions/19](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -70,12 +71,12 @@ which provides the total solar irradiance at 1 AU.
 
 At present, we provide no analysis of the uncertainty associated with these datasets.
 This is a work in progress, we hope to provide that data when it is available.
-[TBD size of uncertainty in radiative forcing terms, seems relatively large?]
-\[TBD whether uncertainty gets bigger as you go back/forward in time.\]
 
+<!---
 ### Examples of working with the data
 
 [TBD]
+-->
 
 ## Differences from CMIP6 or other previous versions
 
@@ -86,6 +87,8 @@ The key change is in the file naming.
 The files are now named according to the DRS, 
 but this does make it harder to tell which file is which at first glance.
 The pre-industrial control file is a fixed field, hence has `fn` in the filename
+(although even this is not 100% accurate, but we have avoided changing it to minimise downstream headaches,
+for details, see [https://github.com/PCMDI/input4MIPs_CVs/issues/184](https://github.com/PCMDI/input4MIPs_CVs/issues/184)).
 The two different frequencies are also distinguished in the filename,
 `mon` for monthly data and `day` for daily data.
 
@@ -96,8 +99,10 @@ The CMIP6 data can be found
 [on the ESGF under the "CMIP6" project and source ID "SOLARIS-HEPPA-3-2"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6%22%2C%22source_id%22%3A%22SOLARIS-HEPPA-3-2%22%7D).
 [Funke et al., GMD 2024](https://doi.org/10.5194/gmd-17-1217-2024)
 provides a detailed analysis of the changes from earlier versions.
+<!---
 \[TODO: consider whether there's a short summary we can give\]
 [TODO: get the link to slides from Bernd which dive into this]
+-->
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
