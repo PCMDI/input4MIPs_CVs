@@ -10,11 +10,11 @@
 
 ## Summary
 
-Testing versions of the greenhouse gas concentrations are
-[available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6Plus%22%2C%22dataset_category%22%3A%22GHGConcentrations%22%7D).
-These versions are for testing only, do not use them for any simluations you're not willing to throw away.
-If you find any issues, please 
-[create an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new).
+The CMIP7 version of the greenhouse gas concentration dataset has been released.
+If you find any problems,
+please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md).
+Discussions on this version can be found in
+[https://github.com/PCMDI/input4MIPs_CVs/discussions/235](https://github.com/PCMDI/input4MIPs_CVs/discussions/235).
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -105,7 +105,8 @@ particularly as we shift from using surface flasks to relying on ice cores inste
 ### Examples of working with the data
 
 If helpful, we show how the data can be downloaded from ESGF
-and compared to CMIP6 here: [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations]().
+and compared to CMIP6 here:
+[https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
 
 ## Differences from CMIP6 or other previous versions
 
