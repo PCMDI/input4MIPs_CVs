@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.24 (2025-04-03)
+
+
+### 📚 Improved Documentation
+
+- Updated the solar forcings documentation ([#232](https://github.com/PCMDI/input4MIPs_CVs/pull/232))
+
+
 ## input4MIPs CVs v6.6.23 (2025-04-02)
 
 
