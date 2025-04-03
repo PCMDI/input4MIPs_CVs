@@ -8,11 +8,7 @@
 - Names: Thomas Aubry
 - Emails: t.aubry@exeter.ac.uk
 
-Testing versions of the stratospheric volcanic SO<sub>2</sub> emissions
-and aerosol optical properties are
-[available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6Plus%22%2C%22institution_id%22%3A%22uoexeter%22%7D).
-These versions are for testing only, do not use them for any simluations you're not willing to throw away.
-
+The CMIP7 version of the volcanic forcing dataset has been released.
 Documentation on the dataset is hosted
 [externally](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
 This contains a detailed dive into the data.
@@ -60,8 +56,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 There are dedicated pre-industrial control files for aerosol optical properties.
 For aerosol optical properties, these are provided as climatologies
 and hence have `monC` in their name
-(they also have a time axis with only twelve points,
-so they're hard to miss).
+(they also have a time axis with only twelve points, so they're hard to miss).
 There is no recommendation for teams who want to run pre-industrial control
 with volcanic emissions as yet, that is still being developed
 in collaboration with early testing teams who are interested in this application.
@@ -115,6 +110,9 @@ because the data is coming from a different provider.
 The naming may also be different.
 Overall, we would say that the data is more uniform now
 and in line with other input4MIPs data and conventions.
+We do not have a direct mapping/translation guide at this stage
+(although there is some detail in
+[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true)).
 
 ### Data
 
