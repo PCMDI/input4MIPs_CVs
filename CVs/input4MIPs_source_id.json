@@ -431,6 +431,36 @@
         "mip_era":"CMIP6Plus",
         "source_version":"1.6.0"
     },
+    "PBL-HYDE-3-3":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Kees Klein Goldewijk",
+                "email": "c.g.m.kleingoldewijk@uu.nl",
+                "affiliations": [
+                    "Copernicus Institute of Sustainable Development, Utrecht University, Utrecht, P.O. Box 80115, the Netherlands",
+                    "PBL Netherlands Environmental Assessment Agency, The Hague, the Netherlands"
+                ],
+                "orcid": "0000-0003-2714-7507"
+            },
+            {
+                "name": "Arthur Beusen",
+                "email": "Arthur.Beusen@pbl.nl",
+                "affiliations": [
+                    "Department of Earth Sciences, Utrecht University, Utrecht, P.O. Box 80115, the Netherlands",
+                    "PBL Netherlands Environmental Assessment Agency, The Hague, the Netherlands"
+                ],
+                "orcid": "0000-0003-0104-8615"
+            }
+        ],
+        "contact":"c.g.m.kleingoldewijk@uu.nl",
+        "dataset_category":["Population"],
+        "further_info_url":"https://landuse.sites.uu.nl/datasets/",
+        "institution_id":"PBL",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"3.3"
+    },
     "PCMDI-AMIP-1-1-9":{
         "activity_id": "input4MIPs",
         "authors": [
