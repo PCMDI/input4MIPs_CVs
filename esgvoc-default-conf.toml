@@ -1,0 +1,19 @@
+[[projects]]
+project_name = "cmip6"
+github_repo = "https://github.com/WCRP-CMIP/CMIP6_CVs"
+branch = "esgvoc"
+local_path = "repos/CMIP6_CVs"
+db_path = "dbs/cmip6.sqlite"
+
+[[projects]]
+project_name = "cmip6plus"
+github_repo = "https://github.com/WCRP-CMIP/CMIP6Plus_CVs"
+branch = "esgvoc"
+local_path = "repos/CMIP6Plus_CVs"
+db_path = "dbs/cmip6plus.sqlite"
+
+[universe]
+github_repo = "https://github.com/WCRP-CMIP/WCRP-universe"
+branch = "esgvoc"
+local_path = "repos/WCRP-universe"
+db_path = "dbs/universe.sqlite"
