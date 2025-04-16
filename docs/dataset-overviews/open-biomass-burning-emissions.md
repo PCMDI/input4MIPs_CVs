@@ -43,17 +43,25 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 ## Navigating the data
 
 This documentation supports the Open Biomass Burning Emissions dataset 
-developed for the Coupled Model Intercomparison Project (CMIP7) simulations. 
+developed for the Coupled Model Intercomparison Project (CMIP7) simulations,
+including the smoothed version of all variables.
+The smoothed version of all variables is indicated by the inclusion of `smoothed` in the variable name.
+It was constructed to dampen the large interannual variability in biomass burning emissions, especially in the satellite era (1997 onwards).
+The large interannual variability is partly related to interannual variability in drought conditions,
+which likely cause a mismatch with climate models when not based on prescribed climate conditions.
+
 The dataset consists of:
 
 * Monthly estimates of open biomass burning emissions (forests, grasslands, agricultural waste burning on fields, peatlands)
-* Emission species: BC, OC, CO2, SO2, N2O, NOx, NH3, CH4, CO, NMVOC, H2
+* Emission species: BC, OC, CO<sub>2</sub>, SO<sub>2</sub>, N<sub>2</sub>O, NO<sub>x</sub>, NH<sub>3</sub>, CH<sub>4</sub>, CO, NMVOC, H<sub>2</sub>
 * NMVOC consists of the sum of: 
-  C2H6, CH3OH, C2H5OH, C3H8, C2H2, C2H4, C3H6, C5H8, C10H16, C7H8, C6H6, C8H10, 
-  Toluenelump, HigherAlkenes, HigherAlkanes, CH2O, C2H4O, C3H6O, C2H6S, HCN, HCOOH, CH3COOH, MEK, CH3COCHO, HOCH2CHO. 
+  C<sub>2</sub>H<sub>6</sub>, CH<sub>3</sub>OH, C<sub>2</sub>H<sub>5</sub>OH, C<sub>3</sub>H<sub>8</sub>, C<sub>2</sub>H<sub>2</sub>, C<sub>2</sub>H<sub>4</sub>, 
+  C<sub>3</sub>H<sub>6</sub>, C<sub>5</sub>H<sub>8</sub>, C<sub>10</sub>H<sub>16</sub>, C<sub>7</sub>H<sub>8</sub>, C<sub>6</sub>H<sub>6</sub>, C<sub>8</sub>H<sub>10</sub>, 
+  Toluenelump, HigherAlkenes, HigherAlkanes, CH<sub>2</sub>O, C<sub>2</sub>H<sub>4</sub>O, C<sub>3</sub>H<sub>6</sub>O, C<sub>2</sub>H<sub>6</sub>S, HCN, HCOOH, CH<sub>3</sub>COOH, MEK, CH<sub>3</sub>COCHO, HOCH<sub>2</sub>CHO. 
   These NMVOCs are also provided separately.
 * Partitioning of bulk emissions related to different sectoral emissions. 
-  The different sectors are: SAVA (Savanna, grassland, and shrubland fires), 
+  The different sectors are: 
+  SAVA (Savanna, grassland, and shrubland fires), 
   BORF (Boreal forest fires), 
   TEMF (Temperature forest fires), 
   DEFO (Tropical forest fires [deforestation and degradation]), 
@@ -72,8 +80,51 @@ This has been further explained in Van Marle et al. (2017, https://doi.org/10.51
 ![Figure 1: The 17 basis regions used to reconstruct fire emissions.](../assets/biomass_burning_docs_figure_1.png "Figure 1: The 17 basis regions used to reconstruct fire emissions.")
 Figure 1: The 17 basis regions used to reconstruct fire emissions.
 
-![Figure 2: Data sources used for each region per time period..](../assets/biomass_burning_docs_figure_2.png "Figure 2: Data sources used for each region per time period.")
+![Figure 2: Data sources used for each region per time period.](../assets/biomass_burning_docs_figure_2.png "Figure 2: Data sources used for each region per time period.")
 Figure 2: Data sources used for each region per time period.
+
+### Interannual variability and climate models
+
+For the time period between 1997 and 2023 the BB4CMIP7 has relatively large interannual variability due to the variability in climate variables 
+(e.g. temperature, droughts, variation in El Niño Southern Oscillation), but also human activities and variability in lightning. 
+Also before 1997 interannual variability exists due to the variability in Equatorial Asia and the Amazon, where fire emissions are estimated based on visibility data.
+
+An overview of the different data sources used to construct BB4CMIP7, 
+their geographical extent used in BB4CMIP and description of the interannual variability per data source
+is provided below.
+
+1. GFED4s
+    - geographical extent: global
+    - interannual variability: Satellite-based and contains interannual variability resulting from low- and high fires years (for example due to ENSO variability)
+
+1. Visibility
+    - geographical extent: Equatorial Asia, Amazon
+    - interannual variability: Visibility-based dataset which distinguishes between high- and low fire years. 
+
+1. Charcoal signal
+    - geographical extent: Boreal North America, Temperate North America, Central America, Europe
+    - interannual variability: Smoothed dataset with no interannual variability.
+
+1. FireMIP models
+    - geographical extent: Northen Hemisphere, South America, South of Arc of Deforestation, Middle-East, Africa, Boreal Asia, Central Asia, South East Asia, Australia
+    - interannual variability: The interannual variability is based on the median of 6 different fire models (SIMFIRE, CLM, INFERNO, JSBACH, LPJ-GUESS-SPITFIRE, ORCHIDEE).
+
+Climate modelling groups using the BB4CMIP7 dataset indicated that spurious signals appear due to this variability. The smoothed dataset should remedy this situation.
+
+###	Calculation of the smoothed dataset
+
+Since the interannual variability is also characteristic for wildfires and to be able to provide realistic outcomes,
+an imposed climatology or just decadal averaging would lose information on the emissions. 
+Therefore we use the following smoothing procedure:
+
+1. For the time period from 1751 to 2021
+1. For January through to December
+1. The smoothed gridded emissions are the average of the 5 years either side of the year and month of interest (i.e. $smoothed(cell, month, year) = \frac{\sum_{year - 2}^{year+2} raw(cell, month, year)}{5}$)
+1. The emissions for 1750 and 1751 and are kept constant at 1750 and 1751 values
+1. There is no smoothed data available for 2022 and 2023
+
+![Figure 3: Schematic approach for constructing the smoothed BB4CMIP7.](../assets/biomass_burning_docs_figure_3.png "Figure 3: Schematic approach for constructing the smoothed BB4CMIP7.")
+Figure 3: Schematic approach for constructing the smoothed BB4CMIP7
 
 ### Data usage notes
 
@@ -86,6 +137,10 @@ Figure 2: Data sources used for each region per time period.
   related to agricultural waste burning, fires used in deforestation, boreal forest fires, 
   peat fires, savanna fires and temperate forest fires are provided per species.
 
+- The smoothed dataset contains less interannual variability than the non-smoothed dataset 
+  and is specifically developed for the CMIP7 runs. 
+  We don’t recommend using this dataset for other applications. 
+
 - Models that have their own fire model but do not simulate anthropogenic fires 
   are advised to use only the emissions related to deforestation and agricultural waste burning. 
   We provide the fraction of emissions associated with this.
@@ -95,7 +150,7 @@ Figure 2: Data sources used for each region per time period.
   but several models also have deforestation carbon emissions based for example on historical deforestation rates.
 
 - While the large interannual variability is a key feature of global fire emissions, 
-  modellers may consider using the 5-year smoothened average (to be published March 2025) 
+  modellers may consider using the 5-year smoothened average
   to filter out this fire signal to avoid having interannual variability in climate and in fires being out of sync.
 
 - While using: Please check if the global annual emissions for the first and last year of the file are correct. 
@@ -111,47 +166,47 @@ Figure 2: Data sources used for each region per time period.
   GFDL chose to use the distributions recommended by Table 4 in [Dentener et al. (2006)](https://doi.org/10.5194/acp-6-4321-2006).
 
 Molecular weights for all species are listed in the following table:
-Note that NOx has different units in anthropogenic vs open burning data.
+Note that NO<sub>x</sub> has different units in anthropogenic vs open burning data.
 
-| Species (bulk) | Molecular weight (g) | Species (NMVOC)                        | Molecular weight (g) |
-| -------------- | -------------------- | -------------------------------------- | -------------------- |
-| CO2            | 44.01                | C2H6 (ethane)                          | 30.07                |
-| CO             | 28.01                | CH3OH (methanol)                       | 32.04                |
-| CH4            | 16.04                | C2H5OH (ethanol)                       | 46.07                |
-| NMHC           | 15                   | C3H8 (propane)                         | 44.1                 |
-| H2             | 2.02                 | C2H2 (acetylene)                       | 26.04                |
-| NOx (as NO)*   | 30.01                | C2H4 (ethylene)                        | 28.05                |
-| N2O            | 44.01                | C3H6 (propylene)                       | 42.08                |
-| PM2.5          | x                    | C5H8 (isoprene)                        | 68.12                |
-| TPM            | x                    | C10H16 (terpenes)                      | 136.24               |
-| TPC (OC+BC)    | 12                   | C7H8 (toluene)                         | 92.14                |
-| OC             | 12                   | C6H6 (benzene)                         | 78.11                |
-| BC             | 12                   | C8H10 (xylene)                         | 106.17               |
-| SO2            | 64.02                | Toluene_lump                           | 12                   |
-| NH3 (ammonia)  | 17.03                | Higher_Alkenes                         | 12                   |
-|                |                      | Higher_Alkanes                         | 12                   |
-|                |                      | CH2O (formaldehyde)                    | 30.03                |
-|                |                      | C2H4O (acetaldehyde)                   | 44.05                |
-|                |                      | C3H6O (acetone)                        | 58.08                |
-|                |                      | C2H6S (dms)                            | 62.07                |
-|                |                      | HCN (hydrogen cyanide)                 | 27.02                |
-|                |                      | HCOOH (formic acid)                    | 47.02                |
-|                |                      | CH3COOH (acetic acid)                  | 60.05                |
-|                |                      | MEK (methyl Ethyl Ketone / 2-butanone) | 72.11                |
-|                |                      | CH3COCHO (methylglyoxal)               | 72.06                |
-|                |                      | HOCH2CHO (hydroxyacetaldehyde)         | 60.05                |
+| Species (bulk)            | Molecular weight (g) | Species (NMVOC)                                   | Molecular weight (g) |
+| ------------------------- | -------------------- | ------------------------------------------------- | -------------------- |
+| CO<sub>2</sub>            | 44.01                | C<sub>2</sub>H<sub>6</sub> (ethane)               | 30.07                |
+| CO                        | 28.01                | CH<sub>3</sub>OH (methanol)                       | 32.04                |
+| CH<sub>4</sub>            | 16.04                | C<sub>2</sub>H<sub>5</sub>OH (ethanol)            | 46.07                |
+| NMHC                      | 15                   | C<sub>3</sub>H<sub>8</sub> (propane)              | 44.1                 |
+| H<sub>2</sub>             | 2.02                 | C<sub>2</sub>H<sub>2</sub> (acetylene)            | 26.04                |
+| NO<sub>x</sub> (as NO)*   | 30.01                | C<sub>2</sub>H<sub>4</sub> (ethylene)             | 28.05                |
+| N<sub>2</sub>O            | 44.01                | C<sub>3</sub>H<sub>6</sub> (propylene)            | 42.08                |
+| PM2.5                     | x                    | C<sub>5</sub>H<sub>8</sub> (isoprene)             | 68.12                |
+| TPM                       | x                    | C<sub>10</sub>H<sub>16</sub> (terpenes)           | 136.24               |
+| TPC (OC+BC)               | 12                   | C<sub>7</sub>H<sub>8</sub> (toluene)              | 92.14                |
+| OC                        | 12                   | C<sub>6</sub>H<sub>6</sub> (benzene)              | 78.11                |
+| BC                        | 12                   | C<sub>8</sub>H<sub>10</sub> (xylene)              | 106.17               |
+| SO<sub>2</sub>            | 64.02                | Toluene_lump                                      | 12                   |
+| NH<sub>3</sub> (ammonia)  | 17.03                | Higher_Alkenes                                    | 12                   |
+|                           |                      | Higher_Alkanes                                    | 12                   |
+|                           |                      | CH<sub>2</sub>O (formaldehyde)                    | 30.03                |
+|                           |                      | C<sub>2</sub>H<sub>4</sub>O (acetaldehyde)        | 44.05                |
+|                           |                      | C<sub>3</sub>H<sub>6</sub>O (acetone)             | 58.08                |
+|                           |                      | C<sub>2</sub>H<sub>6</sub>S (dms)                 | 62.07                |
+|                           |                      | HCN (hydrogen cyanide)                            | 27.02                |
+|                           |                      | HCOOH (formic acid)                               | 47.02                |
+|                           |                      | CH<sub>3</sub>COOH (acetic acid)                  | 60.05                |
+|                           |                      | MEK (methyl Ethyl Ketone / 2-butanone)            | 72.11                |
+|                           |                      | CH<sub>3</sub>COCHO (methylglyoxal)               | 72.06                |
+|                           |                      | HOCH<sub>2</sub>CHO (hydroxyacetaldehyde)         | 60.05                |
 
 ### Species breakdowns
 
 #### Aerosol and aerosol precursor and reactive compounds
 
-Species (12): BC,OC, CO2, SO2, N2O, NOx, NOxasNO2, NH3, CH4, CO, NMVOC, H2
+Species (12): BC, OC, CO<sub>2</sub>, SO<sub>2</sub>, N<sub>2</sub>O, NO<sub>x</sub>, NO<sub>x</sub>asNO<sub>2</sub>, NH<sub>3</sub>, CH<sub>4</sub>, CO, NMVOC, H<sub>2</sub>
 
 Data volume: ~1.26 GB per species
 
 #### Biomass burning emissions per NMVOC species
 
-Species (25): C2H6, CH3OH, C2H5OH, C3H8, C2H2, C2H4, C3H6, C5H8, C10H16, C7H8, C6H6, C8H10, Toluenelump, HigherAlkenes, HigherAlkanes, CH2O, C2H4O, C3H6O, C2H6S, HCN, HCOOH, CH3COOH, MEK, CH3COCHO, HOCH2CHO
+Species (25): C<sub>2</sub>H<sub>6</sub>, CH<sub>3</sub>OH, C<sub>2</sub>H<sub>5</sub>OH, C<sub>3</sub>H<sub>8</sub>, C<sub>2</sub>H<sub>2</sub>, C<sub>2</sub>H<sub>4</sub>, C<sub>3</sub>H<sub>6</sub>, C<sub>5</sub>H<sub>8</sub>, C<sub>10</sub>H<sub>16</sub>, C<sub>7</sub>H<sub>8</sub>, C<sub>6</sub>H<sub>6</sub>, C<sub>8</sub>H<sub>10</sub>, Toluenelump, HigherAlkenes, HigherAlkanes, CH<sub>2</sub>O, C<sub>2</sub>H<sub>4</sub>O, C<sub>3</sub>H<sub>6</sub>O, C<sub>2</sub>H<sub>6</sub>S, HCN, HCOOH, CH<sub>3</sub>COOH, MEK, CH<sub>3</sub>COCHO, HOCH<sub>2</sub>CHO
 
 Data volume: ~1.26 GB per species
 
