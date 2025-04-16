@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.26 (2025-04-16)
+
+
+### 🆕 Features
+
+- Added the smoothed biomass burning dataset ([#237](https://github.com/PCMDI/input4MIPs_CVs/pull/237))
+
+
 ## input4MIPs CVs v6.6.25 (2025-04-03)
 
 
