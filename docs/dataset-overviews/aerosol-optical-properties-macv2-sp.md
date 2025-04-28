@@ -25,16 +25,15 @@ so this dataset can only be considered stable once these input emissions are sta
 
 ### Datasets for CMIP7 phases
 
+#### CMIP7
+
+For CMIP7, please use the data at this zenodo record:
+[TBD](TBD).
+
 #### Testing
 
 For testing, please use the data at this zenodo record:
 [https://doi.org/10.5281/zenodo.14512962](https://doi.org/10.5281/zenodo.14512962).
-
-#### CMIP7
-
-No data available for this phase yet.
-
-Further details will follow the release of the short-lived climate forcers CMIP7 data.
 
 ## Navigating the data
 
