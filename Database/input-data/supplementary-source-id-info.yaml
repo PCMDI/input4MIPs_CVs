@@ -13,6 +13,16 @@ CEDS-CMIP-2024-10-21-supplemental:
   comment_post_publication: *ceds-pre-2025-03-18-comment
 CEDS-CMIP-2024-10-21-supplemental:
   comment_post_publication: *ceds-pre-2025-03-18-comment
+CEDS-CMIP-2025-03-18:
+  comment_post_publication: &ceds-2025-03-18-comment
+    A bug was found in gridding of data for 2022 and 2023.
+    This does not affect any other values,
+    so this version could still be used for piControl
+    and historical simulations if they have already been started.
+    If not, we recommend updating to the next version
+    for consistency.
+CEDS-CMIP-2025-03-18-supplemental:
+  comment_post_publication: *ceds-2025-03-18-comment
 CR-CMIP-0-2-0:
   publication_status: abandoned
 CR-CMIP-0-3-0:
