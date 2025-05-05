@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.27 (2025-05-05)
+
+
+### 🆕 Features
+
+- Added new version of anthropogenic emissions (CEDS) data. The previous version contained a bug in gridding of 2022 and 2023 data, so any piControl and historical simulations which have been started do not need to be restarted, but if you haven't started yet, please use this new version. ([#239](https://github.com/PCMDI/input4MIPs_CVs/pull/239))
+
+
 ## input4MIPs CVs v6.6.26 (2025-04-16)
 
 
