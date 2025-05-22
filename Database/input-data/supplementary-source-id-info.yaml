@@ -150,7 +150,18 @@ UOEXETER-CMIP-1-3-1:
     As a result of this change, the mean historical SAOD has decreased a bit, but it is still higher than CMIP6.
     Hence v1.3.1 is deprecated.
 UOEXETER-CMIP-2-0-0:
+  comment_post_publication: >-
+    v2.2.1 resolves issues with NaN values in v2.0.0
+    and updates a few other issues
+    (notably the latitudinal distrbution of the Agung eruption).
+    These updates affect both the historical values
+    and the pre-industrial climatologies.
+    As a result of this change, v2.0.0 is deprecated.
+    Please restart any simulations that used v2.0.0
+    and use v2.2.1 instead.
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
+  further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
+UOEXETER-CMIP-2-2-1:
   further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
 UofMD-landState-3-0:
   license_id: CC BY 4.0
