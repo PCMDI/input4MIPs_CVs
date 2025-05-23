@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.28 (2025-05-23)
+
+
+### 📚 Improved Documentation
+
+- Updated the latest CEDS source ID in the delivery summary page ([#245](https://github.com/PCMDI/input4MIPs_CVs/pull/245))
+
+
 ## input4MIPs CVs v6.6.27 (2025-05-05)
 
 
