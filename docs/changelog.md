@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.29 (2025-05-23)
+
+
+### 🆕 Features
+
+- Added new version of the simple plumes based on the latest release of the CEDS data ([#241](https://github.com/PCMDI/input4MIPs_CVs/pull/241))
+
+
 ## input4MIPs CVs v6.6.28 (2025-05-23)
 
 
