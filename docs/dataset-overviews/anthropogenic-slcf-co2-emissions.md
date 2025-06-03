@@ -38,8 +38,8 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 For the CMIP7 phase of CMIP7, you will need data from the following source IDs:
 
-- [CEDS-CMIP-2025-03-18](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-03-18%22%5D%7D)
-- [CEDS-CMIP-2025-03-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-03-18-supplemental%22%5D%7D).
+- [CEDS-CMIP-2025-04-18](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18%22%5D%7D)
+- [CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18-supplemental%22%5D%7D).
 
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
@@ -225,6 +225,18 @@ Note there is a variable naming inconsistency for these file - described in the 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### CEDS-CMIP-2025-03-18-supplemental
+
+A bug was found in gridding of data for 2022 and 2023. This does not affect any other values, so
+this version could still be used for piControl and historical simulations if they have already been
+started. If not, we recommend updating to the next version for consistency.
+
+### CEDS-CMIP-2025-03-18
+
+A bug was found in gridding of data for 2022 and 2023. This does not affect any other values, so
+this version could still be used for piControl and historical simulations if they have already been
+started. If not, we recommend updating to the next version for consistency.
 
 ### CEDS-CMIP-2024-11-25-supplemental
 

@@ -102,4 +102,5 @@ jobs:
           # Not sure why LUH site fails, it works locally.
           # Also not sure why we can't hit https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ in CI
           # globalfiredata.org is super flaky, hence exlucded
-          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' --exclude '^https://www\\.geo\\.vu\\.nl/~gwerf/GFED/GFED4/tables/$' --exclude '^https://www.globalfiredata.org' ."
+          # climate modelling site has been deprecated, will updated later
+          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' --exclude '^https://www\\.geo\\.vu\\.nl/~gwerf/GFED/GFED4/tables/$' --exclude '^https://www.globalfiredata.org' --exclude '^https://climatemodeling.science.energy.gov/program/regional-global-model-analysis$' ." 
