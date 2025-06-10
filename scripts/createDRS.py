@@ -70,11 +70,11 @@ def collateAllFiles(rootDir):
     for filePath in getWalkAllFiles(rootDir):
         print("collateAllFiles:filePath", filePath)
         # check for *.nc suffix
-        bits = filePath.split(".")
-        print("bits:", bits)
-        print("bits[-1]:", bits[-1])
+        # bits = filePath.split(".")
+        # print("bits:", bits)
+        # print("bits[-1]:", bits[-1])
         if bits[-1] == "nc":
-            print("enter bits[-1] == 'nc'")
+            # print("enter bits[-1] == 'nc'")
             ncList.append(filePath)
         else:
             fileList.append(filePath)
@@ -118,7 +118,7 @@ else:
 # test for valid files
 ncList, fileList = collateAllFiles(filePath)
 if ncList:
-    print("Counts - ncList: ", len(ncList), "fileList: ", len(fileList))
+    print("Counts - ncList:", len(ncList), "fileList:", len(fileList))
     input("Press enter to continue...")
     print("ncList:", ncList)
     input("Press enter to continue...")
