@@ -115,7 +115,7 @@ else:
     sys.exit()
 # test for valid files
 ncList, fileList = collateAllFiles(filePath)
-if not ncList:
+if ncList:
     print("Counts - ncList: ", len(ncList), "fileList: ", len(fileList))
     print("ncList:", ncList)
 else:
