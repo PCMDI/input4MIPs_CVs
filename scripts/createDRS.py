@@ -71,6 +71,7 @@ def collateAllFiles(rootDir):
         print("collateAllFiles:filePath", filePath)
         # check for *.nc suffix
         bits = filePath.split(".")
+        print("bits:", bits)
         if bits[-1] == "nc":
             ncList.append(filePath)
         else:
