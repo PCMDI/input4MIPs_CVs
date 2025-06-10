@@ -1,0 +1,77 @@
+{
+  "creators": [
+    {
+      "affiliation": "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
+      "creatorName": "Kok, Jasper",
+      "email": "jfkok@ucla.edu",
+      "familyName": "Kok",
+      "givenName": "Jasper",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0003-0464-8325",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA. Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA",
+      "creatorName": "Leung, Danny",
+      "email": "dleung@ucar.edu",
+      "familyName": "Leung",
+      "givenName": "Danny",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-9879-9978",
+        "schemeURI": "https://orcid.org/"
+      }
+    }
+  ],
+  "dates": [
+    {
+      "date": "2025-02-24",
+      "dateType": "Created"
+    }
+  ],
+  "descriptions": [
+    {
+      "descriptionType": "Abstract",
+      "text": "CMIP forcing dataset (input4MIPs).\nThis is all data published under the unique ID (known as a source ID) UCLA-1-0-2."
+    }
+  ],
+  "formats": [
+    {
+      "format": "application/x-netcdf"
+    }
+  ],
+  "fundingReferences": [],
+  "identifier": {},
+  "language": "en",
+  "publication_year": 2025,
+  "publisher": "Earth System Grid Federation",
+  "relatedIdentifiers": [],
+  "resourceType": {
+    "resourceType": "Digital",
+    "resourceTypeGeneral": "Dataset"
+  },
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+      "rightsURI": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "input4MIPs.CMIP6Plus.AerChemMIP2.UCLA.UCLA-1-0-2",
+      "subjectScheme": "DRS"
+    },
+    {
+      "subject": "forcing data"
+    },
+    {
+      "subject": "climate"
+    },
+    {
+      "subject": "CMIP6Plus"
+    }
+  ],
+  "titles": "UCLA-1-0-2 data provided as part of input4MIPs"
+}

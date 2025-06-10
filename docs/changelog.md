@@ -22,6 +22,139 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.29 (2025-05-23)
+
+
+### 🆕 Features
+
+- Added new version of the simple plumes based on the latest release of the CEDS data ([#241](https://github.com/PCMDI/input4MIPs_CVs/pull/241))
+
+
+## input4MIPs CVs v6.6.28 (2025-05-23)
+
+
+### 📚 Improved Documentation
+
+- Updated the latest CEDS source ID in the delivery summary page ([#245](https://github.com/PCMDI/input4MIPs_CVs/pull/245))
+
+
+## input4MIPs CVs v6.6.27 (2025-05-05)
+
+
+### 🆕 Features
+
+- Added new version of anthropogenic emissions (CEDS) data. The previous version contained a bug in gridding of 2022 and 2023 data, so any piControl and historical simulations which have been started do not need to be restarted, but if you haven't started yet, please use this new version. ([#239](https://github.com/PCMDI/input4MIPs_CVs/pull/239))
+
+
+## input4MIPs CVs v6.6.26 (2025-04-16)
+
+
+### 🆕 Features
+
+- Added the smoothed biomass burning dataset ([#237](https://github.com/PCMDI/input4MIPs_CVs/pull/237))
+
+
+## input4MIPs CVs v6.6.25 (2025-04-03)
+
+
+### 📚 Improved Documentation
+
+- Updated the volcanic forcing documentation ([#234](https://github.com/PCMDI/input4MIPs_CVs/pull/234))
+
+
+## input4MIPs CVs v6.6.24 (2025-04-03)
+
+
+### 📚 Improved Documentation
+
+- Updated the solar forcings documentation ([#232](https://github.com/PCMDI/input4MIPs_CVs/pull/232))
+
+
+## input4MIPs CVs v6.6.23 (2025-04-02)
+
+
+### 📚 Improved Documentation
+
+- Updated the GHG concentration documentation ([#236](https://github.com/PCMDI/input4MIPs_CVs/pull/236))
+
+
+## input4MIPs CVs v6.6.22 (2025-04-02)
+
+
+### 🔧 Trivial/Internal Changes
+
+- [#233](https://github.com/PCMDI/input4MIPs_CVs/pull/233)
+
+
+## input4MIPs CVs v6.6.21 (2025-03-28)
+
+
+### 🐛 Bug Fixes
+
+- Updated the database after republication of CEDS data ([#230](https://github.com/PCMDI/input4MIPs_CVs/pull/230))
+
+
+## input4MIPs CVs v6.6.20 (2025-03-27)
+
+
+### 📚 Improved Documentation
+
+- Cleaned up the README ([#206](https://github.com/PCMDI/input4MIPs_CVs/pull/206))
+
+
+## input4MIPs CVs v6.6.19 (2025-03-27)
+
+
+### 🆕 Features
+
+- Added CEDS-CMIP-2025-03-18 and CEDS-CMIP-2025-03-18-supplemental source ID and data ([#228](https://github.com/PCMDI/input4MIPs_CVs/pull/228))
+
+
+## input4MIPs CVs v6.6.18 (2025-03-26)
+
+
+### 🆕 Features
+
+- Added UofMD-landState-3-1-1 source ID and associated data ([#229](https://github.com/PCMDI/input4MIPs_CVs/pull/229))
+
+
+## input4MIPs CVs v6.6.17 (2025-03-24)
+
+
+### 🆕 Features
+
+- Added UofMD-landState-3-1 source ID and associated land-use data. ([#213](https://github.com/PCMDI/input4MIPs_CVs/pull/213))
+
+### 🐛 Bug Fixes
+
+- Fixed the licence ID of the DRES-CMIP-BB4CMIP7-2-0 entries in the database (too late for the files). ([#213](https://github.com/PCMDI/input4MIPs_CVs/pull/213))
+
+
+## input4MIPs CVs v6.6.16 (2025-03-20)
+
+
+### 📚 Improved Documentation
+
+- Added landing pages for all source IDs (except source IDs that were never published) in `docs/source-id-landing-pages`.
+  These can then be linked up with ESGF's metadata using the citation info that is placed next to these landing pages. ([#225](https://github.com/PCMDI/input4MIPs_CVs/pull/225))
+
+
+## input4MIPs CVs v6.6.15 (2025-03-18)
+
+
+### 📚 Improved Documentation
+
+- Removed any mention of the AR7 fast track. It has now been clarified ([#222](https://github.com/PCMDI/input4MIPs_CVs/issues/222)) that there is only one set of DECK simulations, hence we only need to mention CMIP7 in our docs, not CMIP7 and a separate AR7 fast track. ([#223](https://github.com/PCMDI/input4MIPs_CVs/pull/223))
+
+
+## input4MIPs CVs v6.6.14 (2025-03-18)
+
+
+### 📚 Improved Documentation
+
+- Update links to point to input4mips-cvs.readthedocs.io rather than the now deactivated input4mips-controlled-vocabularies-cvs.readthedocs.io. Note that turning off input4mips-controlled-vocabularies-cvs.readthedocs.io did break the further_info_url value in the volcanic files. Please use the new domain instead. ([#226](https://github.com/PCMDI/input4MIPs_CVs/pull/226))
+
+
 ## input4MIPs CVs v6.6.13 (2025-03-13)
 
 

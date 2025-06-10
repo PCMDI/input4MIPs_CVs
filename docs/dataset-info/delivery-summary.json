@@ -1,14 +1,12 @@
 {
     "slfc_co2_emms": {
         "source_ids": [
-            "CEDS-CMIP-2024-11-25",
-            "CEDS-CMIP-2024-11-25-supplemental",
-            "CEDS-CMIP-2024-10-21",
-            "CEDS-CMIP-2024-10-21-supplemental"
+            "CEDS-CMIP-2025-04-18", 
+            "CEDS-CMIP-2025-04-18-supplemental" 
         ]
     },
     "biomass_burning_emms": { "source_ids": [ "DRES-CMIP-BB4CMIP7-2-0" ], "url": "https://www.globalfiredata.org" },
-    "land_use": { "source_ids": [ "UofMD-landState-3-0" ], "url": "https://luh.umd.edu" },
+    "land_use": { "source_ids": [ "UofMD-landState-3-1-1" ], "url": "https://luh.umd.edu" },
     "ghg_concentrations": { "source_ids": [ "CR-CMIP-1-0-0" ] },
     "co2_isotopes": {
         "expected_publication": "Unclear, waiting to hear from the data provider (please raise an issue if you need an updated on this dataset's status)",
@@ -36,7 +34,7 @@
     },
     "simple-plumes": {
         "source_ids": null,
-        "url": "https://zenodo.org/records/14512962"
+        "url": "https://zenodo.org/records/15283189"
     },
     "population": {
         "expected_publication": "Unknown: data provider TBD",

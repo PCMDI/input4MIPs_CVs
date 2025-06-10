@@ -2,6 +2,27 @@ CEDS-CMIP-2024-07-08:
   publication_status: never_published
 CEDS-CMIP-2024-07-08-supplemental:
   publication_status: never_published
+CEDS-CMIP-2024-11-25:
+  comment_post_publication: &ceds-pre-2025-03-18-comment >-
+    A number of updates have been made in CEDS-CMIP-2025-03-18*.
+    These are significantly different from this dataset,
+    hence it has been retracted.
+CEDS-CMIP-2024-11-25-supplemental:
+  comment_post_publication: *ceds-pre-2025-03-18-comment
+CEDS-CMIP-2024-10-21-supplemental:
+  comment_post_publication: *ceds-pre-2025-03-18-comment
+CEDS-CMIP-2024-10-21-supplemental:
+  comment_post_publication: *ceds-pre-2025-03-18-comment
+CEDS-CMIP-2025-03-18:
+  comment_post_publication: &ceds-2025-03-18-comment
+    A bug was found in gridding of data for 2022 and 2023.
+    This does not affect any other values,
+    so this version could still be used for piControl
+    and historical simulations if they have already been started.
+    If not, we recommend updating to the next version
+    for consistency.
+CEDS-CMIP-2025-03-18-supplemental:
+  comment_post_publication: *ceds-2025-03-18-comment
 CR-CMIP-0-2-0:
   publication_status: abandoned
 CR-CMIP-0-3-0:
@@ -55,6 +76,7 @@ DRES-CMIP-BB4CMIP7-1-0:
     can be found on https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ for the 1997 onwards period.
 DRES-CMIP-BB4CMIP7-2-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
+  license_id: CC BY 4.0
 MRI-JRA55-do-1-6-0:
   license_id: CC BY 4.0
 PCMDI-AMIP-1-1-9:
@@ -129,5 +151,18 @@ UOEXETER-CMIP-1-3-1:
     Hence v1.3.1 is deprecated.
 UOEXETER-CMIP-2-0-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
+  further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
 UofMD-landState-3-0:
   license_id: CC BY 4.0
+  comment_post_publication: >-
+    v3.0 contains a number of spurious spikes post-1950.
+    These have been addressed in v3.1.
+    As a result, v3.0 has been retracted.
+UofMD-landState-3-1:
+  license_id: CC BY 4.0
+  comment_post_publication: >-
+    v3.1 contains an extra variable (crpbf_total) in the land-use management file.
+    This is filled with zeroes, so will not affect simulations.
+    However, for completeness, we have released an update (v3.1.1)
+    which removes this unnecessary variable
+    (but using v3.1 is fine if that is what you're doing already).
