@@ -68,6 +68,7 @@ def collateAllFiles(rootDir):
     """
     fileList, ncList = [[] for _ in range(2)]
     for filePath in getWalkAllFiles(rootDir):
+        print("collateAllFiles:filePath", filePath)
         # check for *.nc suffix
         bits = filePath.split(".")
         if bits[-1] == "nc":
