@@ -114,7 +114,7 @@ else:
     print("Not valid filePath:", filePath)
     sys.exit()
 # test for valid files
-fileList, ncList = collateAllFiles(filePath)
+ncList, fileList = collateAllFiles(filePath)
 if not ncList:
     print("Counts - ncList: ", len(ncList), "fileList: ", len(fileList))
     print("ncList:", ncList)
