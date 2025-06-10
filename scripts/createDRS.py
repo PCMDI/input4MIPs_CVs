@@ -6,7 +6,7 @@ attributes, creates output directories based on file metadata/global attributes
 and copies files to these locations
 
 To run conversion:
-$ durack1$ python createDRS.py $filePath $destPath
+$ python createDRS.py $filePath $destPath
 
 """
 """2024
@@ -105,6 +105,7 @@ parser.add_argument(
     help="Provide a path where new directories should be created",
 )
 argDict = parser.parse_args()
+
 # filePath
 filePath = argDict.filePath
 # test filePath
@@ -113,11 +114,13 @@ if os.path.exists(filePath):
 else:
     print("Not valid filePath:", filePath)
     sys.exit()
+
 # test for valid files
 ncList, fileList = collateAllFiles(filePath)
 if ncList:
     print("Counts - ncList: ", len(ncList), "fileList: ", len(fileList))
     print("ncList:", ncList)
+    input("Press enter to continue...")
 else:
     print("No valid files, exiting")
     sys.exit()
