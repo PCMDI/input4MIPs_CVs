@@ -119,6 +119,7 @@ else:
 ncList, fileList = collateAllFiles(filePath)
 if ncList:
     print("Counts - ncList: ", len(ncList), "fileList: ", len(fileList))
+    input("Press enter to continue...")
     print("ncList:", ncList)
     input("Press enter to continue...")
 else:
