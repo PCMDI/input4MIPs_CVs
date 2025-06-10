@@ -71,10 +71,7 @@ def collateAllFiles(rootDir):
         print("collateAllFiles:filePath", filePath)
         # check for *.nc suffix
         bits = filePath.split(".")
-        # print("bits:", bits)
-        # print("bits[-1]:", bits[-1])
         if bits[-1] == "nc":
-            # print("enter bits[-1] == 'nc'")
             ncList.append(filePath)
         else:
             fileList.append(filePath)
@@ -115,12 +112,10 @@ else:
     print("Not valid filePath:", filePath)
     sys.exit()
 
-# test for valid files
+# test for valid *.nc files
 ncList, fileList = collateAllFiles(filePath)
 if ncList:
     print("Counts - ncList:", len(ncList), "fileList:", len(fileList))
-    input("Press enter to continue...")
-    print("ncList:", ncList)
     input("Press enter to continue...")
 else:
     print("No valid files, exiting")
