@@ -486,7 +486,7 @@
         "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
+        "mip_era":"CMIP6Plus",
         "source_version":"0.0.1"
     },
     "CR-vlho-0-0-1":{
@@ -534,7 +534,7 @@
         "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
+        "mip_era":"CMIP6Plus",
         "source_version":"0.0.1"
     },
     "CR-l-0-0-1":{
@@ -582,7 +582,7 @@
         "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
+        "mip_era":"CMIP6Plus",
         "source_version":"0.0.1"
     },
     "CR-ml-0-0-1":{
@@ -630,7 +630,7 @@
         "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
+        "mip_era":"CMIP6Plus",
         "source_version":"0.0.1"
     },
     "CR-m-0-0-1":{
@@ -678,7 +678,7 @@
         "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
+        "mip_era":"CMIP6Plus",
         "source_version":"0.0.1"
     },
     "CR-h-0-0-1":{
@@ -726,7 +726,7 @@
         "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
+        "mip_era":"CMIP6Plus",
         "source_version":"0.0.1"
     },
     "CR-hl-0-0-1":{
@@ -774,7 +774,7 @@
         "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
+        "mip_era":"CMIP6Plus",
         "source_version":"0.0.1"
     },
     "DRES-CMIP-BB4CMIP7-1-0":{
