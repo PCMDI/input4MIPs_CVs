@@ -14,7 +14,7 @@
         "status": "Data in preparation",
         "url": null
     },
-    "volcanic": { "source_ids": [ "UOEXETER-CMIP-2-0-0" ] },
+    "volcanic": { "source_ids": [ "UOEXETER-CMIP-2-2-1" ] },
     "ozone": {
         "expected_publication": "piControl - end of March, historical - end of May.",
         "source_ids": null,
