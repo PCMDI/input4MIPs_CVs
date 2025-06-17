@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.31 (2025-06-17)
+
+
+### ⚠️ Breaking Changes
+
+- Updated to the latest scrape of the ESGF.
+  Users: note that we are having issues with the scrape.
+  The links to ESGF in the pages remain correct.
+  However our database views will be out of date until this is fixed
+  so please do not rely on them for checking data availability, go to ESGF directly. ([#254](https://github.com/PCMDI/input4MIPs_CVs/pull/254))
+
+
 ## input4MIPs CVs v6.6.30 (2025-06-17)
 
 
