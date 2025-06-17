@@ -56,7 +56,7 @@
     },
     "co2_isotopes": {
         "testing": null,
-        "cmip7": null
+        "cmip7": { "source_ids": [ "ImperialCollege-3-0" ] }
     },
     "amip-ssts": {
         "testing": { "source_ids": [ "PCMDI-AMIP-1-1-9" ], "ok_if_not_latest": true },
