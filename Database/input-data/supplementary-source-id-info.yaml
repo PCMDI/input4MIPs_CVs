@@ -163,6 +163,8 @@ UOEXETER-CMIP-2-0-0:
   further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
 UOEXETER-CMIP-2-2-1:
   further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
+  # While we wait for ESGF scrape to come back up
+  publication_status: published
 UofMD-landState-3-0:
   license_id: CC BY 4.0
   comment_post_publication: >-
