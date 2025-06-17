@@ -12,4 +12,4 @@
 
 - source_id: ImperialCollege-3-0
 - contact: h.graven@imperial.ac.uk
-- further_info_url: tbd.invalid
+- further_info_url: https://profiles.imperial.ac.uk/h.graven

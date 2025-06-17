@@ -8,7 +8,7 @@
     "biomass_burning_emms": { "source_ids": [ "DRES-CMIP-BB4CMIP7-2-0" ], "url": "https://www.globalfiredata.org" },
     "land_use": { "source_ids": [ "UofMD-landState-3-1-1" ], "url": "https://luh.umd.edu" },
     "ghg_concentrations": { "source_ids": [ "CR-CMIP-1-0-0" ] },
-    "co2_isotopes": { "source_ids": [ "ImperialCollege-3-0" ], "url": null },
+    "co2_isotopes": { "source_ids": [ "ImperialCollege-3-0" ] },
     "volcanic": { "source_ids": [ "UOEXETER-CMIP-2-2-1" ] },
     "ozone": {
         "expected_publication": "piControl - end of March, historical - end of May.",

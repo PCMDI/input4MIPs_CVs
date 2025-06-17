@@ -511,7 +511,7 @@
         ],
         "contact":"h.graven@imperial.ac.uk",
         "dataset_category":["atmosphericState"],
-        "further_info_url":"tbd.invalid",
+        "further_info_url":"https://profiles.imperial.ac.uk/h.graven",
         "institution_id":"ImperialCollege",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP7",
