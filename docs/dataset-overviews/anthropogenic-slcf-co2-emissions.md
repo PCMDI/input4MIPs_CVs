@@ -82,8 +82,9 @@ Repeat the 1850 values.
 
 ### Grids and frequencies provided
 
-CEDS emissions are provided at monthly resolution, on a 0.5 degree grid, with 50-years per data file. 
-(A 0.1° grid for recent decades is also available.) 
+CEDS emissions are provided at monthly resolution, on a 0.5 degree grid (grid ID of "gn"),
+with 50-years per data file. 
+A 0.1° grid for recent decades is also available under grid ID of "gr". 
 Emissions are relatively smooth over the early portion of this time period, but annual data is supplied for consistency across the dataset. 
 The files are in netcdf v4 (HDFv5) format with CF-compliant and ESGF-compliant metadata.
 
