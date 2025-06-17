@@ -258,6 +258,13 @@ Apply the 1850 values on repeat.
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 
+### DRES-CMIP-BB4CMIP7-2-0
+
+DRES-CMIP-BB4CMIP7-2-1 fixes a bug with NMVOC bulk data for 2023. This is the only time slice that
+is updated. As this update does not affect any data before 2021 (inclusive), there is no need to
+restart simulations or make any other changes. The new dataset is of course available if people wish
+to use it.
+
 ### DRES-CMIP-BB4CMIP7-1-0
 
 Differences with CMIP6-1-2: The dataset contains data until December 2022 based on GFED4s Global
