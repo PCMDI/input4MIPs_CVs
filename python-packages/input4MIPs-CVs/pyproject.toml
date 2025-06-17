@@ -13,7 +13,7 @@ dependencies = [
     "typer==0.12.3",
 ]
 name = "input4MIPs-CVs"
-version = "6.6.32a1"
+version = "6.6.32"
 description = """Python tooling to help with the input4MIPs-CVs repository
 
 At the moment, intended for internal use only."""
