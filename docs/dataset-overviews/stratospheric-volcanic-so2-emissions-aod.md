@@ -27,7 +27,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 #### CMIP7
 
-For the CMIP7 phase of CMIP7, use data with the source ID [UOEXETER-CMIP-2-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UOEXETER-CMIP-2-0-0%22%5D%7D)
+For the CMIP7 phase of CMIP7, use data with the source ID [UOEXETER-CMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UOEXETER-CMIP-2-2-1%22%5D%7D)
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -122,6 +122,13 @@ For a full dive into the changes from CMIP6, see
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### UOEXETER-CMIP-2-0-0
+
+v2.2.1 resolves issues with NaN values in v2.0.0 and updates a few other issues (notably the
+latitudinal distrbution of the Agung eruption). These updates affect both the historical values and
+the pre-industrial climatologies. As a result of this change, v2.0.0 is deprecated. Please restart
+any simulations that used v2.0.0 and use v2.2.1 instead.
 
 ### UOEXETER-CMIP-1-3-1
 
