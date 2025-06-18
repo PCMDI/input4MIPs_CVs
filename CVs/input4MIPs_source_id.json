@@ -497,6 +497,26 @@
         "mip_era":"CMIP7",
         "source_version":"2.1"
     },
+    "ImperialCollege-3-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Heather Graven",
+                "email": "h.graven@imperial.ac.uk",
+                "affiliations": [
+                    "Imperial College, London"
+                ],
+                "orcid": "0000-0003-3934-2502"
+            }
+        ],
+        "contact":"h.graven@imperial.ac.uk",
+        "dataset_category":["atmosphericState"],
+        "further_info_url":"https://profiles.imperial.ac.uk/h.graven",
+        "institution_id":"ImperialCollege",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"3.0"
+    },
     "MRI-JRA55-do-1-6-0":{
         "activity_id": "input4MIPs",
         "authors": [
