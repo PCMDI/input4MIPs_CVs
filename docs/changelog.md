@@ -22,6 +22,19 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.33 (2025-06-18)
+
+
+### 🆕 Features
+
+- Release the next version of the biomass burning forcing (source ID: DRES-CMIP-BB4CMIP7-2-1).
+  This version fixes a bug in NMVOC bulk for 2023 only.
+  No other time slices are affected,
+  hence any CMIP7 historical runs which use DRES-CMIP-BB4CMIP7-2-0 are fine and can be used 
+  (because the data for DRES-CMIP-BB4CMIP7-2-0 and DRES-CMIP-BB4CMIP7-2-1 
+  are identical for the period of the CMIP7 historical simulations i.e. for all of 1850-2021 inclusive). ([#248](https://github.com/PCMDI/input4MIPs_CVs/pull/248))
+
+
 ## input4MIPs CVs v6.6.32 (2025-06-17)
 
 
