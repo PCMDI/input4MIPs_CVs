@@ -77,6 +77,16 @@ DRES-CMIP-BB4CMIP7-1-0:
 DRES-CMIP-BB4CMIP7-2-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
   license_id: CC BY 4.0
+  comment_post_publication: >-
+    DRES-CMIP-BB4CMIP7-2-1 fixes a bug with NMVOC bulk data for 2023.
+    This is the only time slice that is updated.
+
+    As this update does not affect any data before 2021 (inclusive),
+    there is no need to restart simulations or make any other changes.
+    The new dataset is of course available if people wish to use it.
+DRES-CMIP-BB4CMIP7-2-1:
+  # While we wait for ESGF scrape to come back up
+  publication_status: published
 MRI-JRA55-do-1-6-0:
   license_id: CC BY 4.0
 PCMDI-AMIP-1-1-9:
