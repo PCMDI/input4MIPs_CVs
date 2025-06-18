@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.34 (2025-06-18)
+
+
+### 🆕 Features
+
+- Added CO2 isotopes data under source ID ImperialCollege-3-0 ([#240](https://github.com/PCMDI/input4MIPs_CVs/pull/240))
+
+
 ## input4MIPs CVs v6.6.33 (2025-06-18)
 
 
