@@ -142,7 +142,10 @@ for source_id, info in source_id_entries.items():
         .tolist()
     )
 
-    doi = get_assumed_unique_value(db_source_id["doi"].unique().tolist())
+    # # Urgh CEDS has multiple, just use the first
+    # doi = get_assumed_unique_value(db_source_id["doi"].unique().tolist())
+    doi = db_source_id["doi"].unique().tolist()[0]
+
     license_ids = db_source_id["license_id"].dropna().unique().tolist()
     if license_ids:
         license_id = get_assumed_unique_value(license_ids)

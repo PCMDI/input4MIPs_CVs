@@ -23,6 +23,9 @@ CEDS-CMIP-2025-03-18:
     for consistency.
 CEDS-CMIP-2025-03-18-supplemental:
   comment_post_publication: *ceds-2025-03-18-comment
+CEDS-CMIP-2025-04-18:
+  # Force override while we wait for ESGF scrape to come back up
+  publication_status: published
 CR-CMIP-0-2-0:
   publication_status: abandoned
 CR-CMIP-0-3-0:
