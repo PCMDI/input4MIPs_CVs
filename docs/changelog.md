@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.35 (2025-06-19)
+
+
+### 🆕 Features
+
+- Added high-resolution emissions data (published under source ID CEDS-CMIP-2025-04-18 with grid label "gr") ([#256](https://github.com/PCMDI/input4MIPs_CVs/pull/256))
+
+
 ## input4MIPs CVs v6.6.34 (2025-06-18)
 
 
