@@ -64,7 +64,7 @@
         "source_ids": [
             "PIK-CMIP-1-0-0"
         ],
-        "status": "CMIP7 dataset in preparation",
+        "status": "registered",
         "url": "https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling"
     }
 }
