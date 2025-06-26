@@ -35,13 +35,13 @@
     "ozone": {
         "expected_publication": "piControl - July 2025, historical - August 2025",
         "source_ids": null,
-        "status": "To commence simulations, required upstream forcing finalization: solar, volcanic, GHG/ODS concentrations, SLCF emissions, land-use changes",
+        "status": "Required upstream forcing finalization to commence simulations: solar, volcanic, GHG/ODS concentrations, SLCF emissions, and land-use changes",
         "url": null
     },
     "nitrogen-deposition": {
-        "expected_publication": "piControl - end of March, historical - end of May.",
+        "expected_publication": "piControl - July 2025, historical - August 2025",
         "source_ids": null,
-        "status": "Awaiting finalization of upstream forcings: solar, volcanic, GHG/ODS concentrations, SLCF emissions, land-use changes",
+        "status": "Required upstream forcing finalization to commence simulations: solar, volcanic, GHG/ODS concentrations, SLCF emissions, and land-use changes",
         "url": null
     },
     "solar": {
@@ -60,9 +60,9 @@
         "url": "https://zenodo.org/records/15283189"
     },
     "population": {
-        "expected_publication": "Unknown: data provider TBD",
-        "source_ids": null,
-        "status": "Unknown: data provider TBD",
-        "url": null
+        "expected_publication": "historical - August 2025",
+        "source_ids": "PIK-CMIP-1-0-0",
+        "status": "CMIP7 dataset in preparation",
+        "url": "https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling"
     }
 }
