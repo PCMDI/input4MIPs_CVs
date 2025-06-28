@@ -20,8 +20,9 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 #### CMIP7
 
-For the CMIP7 phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-0] for the historical period (1850-2025) or:
-[PIK-SSP1-1-0-0], [PIK-SSP2-1-0-0], [PIK-SSP3-1-0-0], [PIK-SSP4-1-0-0], [PIK-SSP5-1-0-0] for SSP-based projections (2026-2100)
+For the CMIP7 phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-0] for the historical period (1850-2025).
+For the future scenario (2026-2100) use [PIK-h-1-0-0], [PIK-hl-1-0-0], [PIK-m-1-0-0], [PIK-ml-1-0-0], 
+[PIK-l-1-0-0], [PIK-vllo-1-0-0], [PIK-vlho-1-0-0].
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
 This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
@@ -45,11 +46,12 @@ Apply the 1850 value as a constant.
 
 ### Grids and frequencies provided
 
-We provide annual data (1850-2100) on a regular 0.25 degree grid.
+We provide annual data (1850-2100) on a regular 0.25 ('gn') and 0.5 degree ('gr') grid. 
+Please notify the authors if you would need other resolutions for your simulations. 
 
 ### Variables provided
 
-The dataset contains total population (mid-year estimate) per square kilometer (pop_dens).
+The dataset contains total population (mid-year estimate) per square kilometer of the grid cell area (pop_dens).
 
 ### Uncertainty
 
