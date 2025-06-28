@@ -46,7 +46,9 @@ Apply the 1850 value as a constant.
 
 ### Grids and frequencies provided
 
-We provide annual data (1850-2100) on a regular 0.25 ('gn') and 0.5 degree ('gr') grid. 
+We provide annual data (1850-2100) on a regular 0.25 ('gn') and 0.5 degree ('gr') grid.
+Historical scenario covers 1850-2025, while in the future scenario files additional historical years are provided for
+convenience, i.e. 2022-2025.
 Please notify the authors if you would need other resolutions for your simulations. 
 
 ### Variables provided
