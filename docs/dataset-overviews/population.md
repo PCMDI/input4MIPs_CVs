@@ -21,8 +21,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 #### CMIP7
 
 For the CMIP7 phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-0] for the historical period (1850-2025).
-For the future scenario (2026-2100) use [PIK-h-1-0-0], [PIK-hl-1-0-0], [PIK-m-1-0-0], [PIK-ml-1-0-0], 
-[PIK-l-1-0-0], [PIK-vllo-1-0-0], [PIK-vlho-1-0-0].
+Data for the future scenario (2026-2100) will be added at a later date.
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
 This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
@@ -47,8 +46,8 @@ Apply the 1850 value as a constant.
 ### Grids and frequencies provided
 
 We provide annual data (1850-2100) on a regular 0.25 ('gn') and 0.5 degree ('gr') grid.
-Historical scenario covers 1850-2025, while in the future scenario files additional historical years are provided for
-convenience, i.e. 2022-2025.
+Historical scenario covers 1850-2025.
+Future scenario files will cover 2022-2100, i.e. include additional historical years for convenience.
 Please notify the authors if you would need other resolutions for your simulations. 
 
 ### Variables provided
