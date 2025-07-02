@@ -27,22 +27,27 @@ jobs:
           pip install python-packages/input4MIPs-CVs
           python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-esgf-scrape.py --out-file Database/input-data/esgf-input4MIPs.json --n-threads 4
 
+      - name: Check if scrape was updated
+        uses: tj-actions/verify-changed-files@a1c6acee9df209257a246f2cc6ae8cb6581c1edf # v20
+        id: verify-changed-files
+        with:
+          files: Database/input-data/esgf-input4MIPs.json
+
       - name: Create new MR if needed
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
         env:
+          CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
-          git add Database/input-data/esgf-input4MIPs.json
-          git diff-index --cached --quiet HEAD
-          if [ $? -eq 0 ]; then
-            echo "No changes after grabbing the latest scrape"
-            exit 0
-          fi
+          echo "Changed files: $CHANGED_FILES"
+          git status
 
           TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
           BRANCH_NAME="${TIMESTAMP}_esgf-input4mips-json-update"
           echo ${TIMESTAMP}
           echo ${BRANCH_NAME}
+          git add Database/input-data/esgf-input4MIPs.json
           git checkout -b "${BRANCH_NAME}"
           git commit -m "Update ESGF input4MIPs JSON file"
           git push --set-upstream origin "${BRANCH_NAME}"
