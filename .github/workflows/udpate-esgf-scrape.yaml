@@ -40,13 +40,15 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
-          TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .
+
+          TIMESTAMP=$(date +%Y-%m-%dT%H-%M-%S)
           BRANCH_NAME="${TIMESTAMP}_esgf-input4mips-json-update"
 
           git config --global user.name "$GITHUB_ACTOR"
           git config --global user.email "$CI_COMMIT_EMAIL"
 
-          git add Database/input-data/esgf-input4MIPs.json
+          git add .
           git checkout -b "${BRANCH_NAME}"
           git commit -m "Update ESGF input4MIPs JSON file"
           git push --set-upstream origin "${BRANCH_NAME}"
