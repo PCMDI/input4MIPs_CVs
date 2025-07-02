@@ -1,8 +1,8 @@
 name: Update ESGF scrape
 
 on:
-  push:
-    branches: [auto-scrape-esgf]
+  # push:
+  #   branches: [auto-scrape-esgf]
   workflow_dispatch:
   # TODO: turn on before merging
   # schedule:
