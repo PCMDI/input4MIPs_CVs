@@ -1,0 +1,50 @@
+name: Update ESGF scrape
+
+on:
+  push:
+    branches: [auto-scrape-esgf]
+  workflow_dispatch:
+  # schedule:
+  #   # * is a special character in YAML so you have to quote this string
+  #   # This means every day at 10:00.
+  #   # see https://crontab.guru/#0_10_*_*_*
+  #   - cron:  '0 10 * * *'
+
+jobs:
+  update-esgf-scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Scrape ESGF
+        run: |
+          which pip
+          pip install python-packages/input4MIPs-CVs
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-esgf-scrape.py --out-file Database/input-data/esgf-input4MIPs.json --n-threads 4
+
+      - name: Create new MR if needed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          git add Database/input-data/esgf-input4MIPs.json
+          git diff-index --cached --quiet HEAD
+          if [ $? -eq 0 ]; then
+            echo "No changes after grabbing the latest scrape"
+            exit 0
+          fi
+
+          TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
+          BRANCH_NAME="${TIMESTAMP}_esgf-input4mips-json-update"
+          echo ${TIMESTAMP}
+          echo ${BRANCH_NAME}
+          git checkout -b "${BRANCH_NAME}"
+          git commit -m "Update ESGF input4MIPs JSON file"
+          git push --set-upstream origin "${BRANCH_NAME}"
+          gh pr create --title "Bot: ${TIMESTAMP} update ESGF JSON" --body "Created from update-esgf-scrape action" --label "esgf-json-update" --reviewer znichollscr
+          # gh pr create --title "Bot: ${TIMESTAMP} update ESGF JSON" --body "Created from nimbus bot" --label "esgf-json-update" --reviewer znichollscr --reviewer durack1
