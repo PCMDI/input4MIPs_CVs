@@ -40,13 +40,12 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
-          echo "Changed files: $CHANGED_FILES"
-          git status
-
           TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
           BRANCH_NAME="${TIMESTAMP}_esgf-input4mips-json-update"
-          echo ${TIMESTAMP}
-          echo ${BRANCH_NAME}
+
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$CI_COMMIT_EMAIL"
+
           git add Database/input-data/esgf-input4MIPs.json
           git checkout -b "${BRANCH_NAME}"
           git commit -m "Update ESGF input4MIPs JSON file"
