@@ -42,8 +42,9 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .
-          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .
-          mkdocs build
+          # Leave off for now as can fail
+          # python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .
+          # mkdocs build
 
           TIMESTAMP=$(date +%Y-%m-%dT%H-%M-%S)
           BRANCH_NAME="${TIMESTAMP}_esgf-input4mips-json-update"
