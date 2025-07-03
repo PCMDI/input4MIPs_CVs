@@ -13,6 +13,7 @@ PJD 16 Aug 2024 - added argparse to collect destPath from user
 PJD 16 Aug 2024 - added errno import, needed for linux
 PJD 26 Jun 2025 - update from esgf-node.llnl.gov SOLR index to esgf-node.ornl.gov Globus
 PJD 27 Jun 2025 - update timeout=5 to timeout=35 due to rate limiting
+PJD  3 Jul 2025 - catch rogue solrQry, was still pointing to LLNL SOLR, remapped to ORNL globus
 """
 
 # %% imports
@@ -234,11 +235,16 @@ print(
 print(set(srcIdDDictList).difference(srcIdFDictList))
 
 # %% using source_id entries from Dataset search build and write a library
+# solrQry = (
+#    "https://esgf-node.llnl.gov/esg-search/search/?limit=1000&"
+#    "format=application%2Fsolr%2Bjson&source_id="
+#    "PLACEHOLDER" + "&project=input4mips&project=input4MIPs&"
+#    "distrib=false&fields=*"
+# )  # all fields
 solrQry = (
-    "https://esgf-node.llnl.gov/esg-search/search/?limit=1000&"
-    "format=application%2Fsolr%2Bjson&source_id="
-    "PLACEHOLDER" + "&project=input4mips&project=input4MIPs&"
-    "distrib=false&fields=*"
+    "https://esgf-node.ornl.gov/esgf-1-5-bridge/?limit=1000"
+    "&source_id=PLACEHOLDER"
+    "&project=input4mips&project=input4MIPs&distrib=false"
 )  # all fields
 mstrJson = {}  # create catch dictionary
 oF = "tmp.json"
