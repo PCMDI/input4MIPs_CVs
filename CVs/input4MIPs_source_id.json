@@ -693,7 +693,8 @@
             [
                 {
                     "affiliations":[
-                        "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                        "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany",
+                        "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland"
                     ],
                     "email":"dominik.paprotny@pik-potsdam.de",
                     "name":"Dominik Paprotny",
@@ -752,7 +753,7 @@
             ]
         ],
         "contact":"Dominik Paprotny (dominik.paprotny@pik-potsdam.de); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
-        "dataset_category":"populationDensity",
+        "dataset_category":"population",
         "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
         "institution_id":"PIK",
         "license_id":"CC BY 4.0",
