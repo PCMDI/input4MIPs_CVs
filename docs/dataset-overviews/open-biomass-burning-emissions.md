@@ -130,7 +130,7 @@ Figure 3: Schematic approach for constructing the smoothed BB4CMIP7
 
 - This dataset is made available as forcing dataset 
   for the Coupled Model Intercomparison Project Phase (CMIP7) analyses on the ESGF
-  ([https://esgf-node.llnl.gov/search/input4mips/](https://esgf-node.llnl.gov/search/input4mips/)) 
+  ([https://aims2.llnl.gov/search?project=input4MIPs](https://aims2.llnl.gov/search?project=input4MIPs)) 
   and is only needed for models that do not simulate fire emissions. 
   Emissions are bulk values for all biomes, 
   ancillary datasets with contribution of emissions 
