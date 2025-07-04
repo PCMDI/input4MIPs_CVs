@@ -17,7 +17,6 @@ Terminal summary statistics now use multiple colors.
 
 Each file should have a name of the form `<MR>.<TYPE>.md`, where `<MR>` is the merge request number, and `<TYPE>` is one of:
 
-* `newData`: adding a new source_id and contributor info.
 * `feature`: new user facing features, like new command-line options and new behaviour.
 * `improvement`: improvement of existing functionality, usually without requiring user intervention
 * `fix`: fixes a bug.
