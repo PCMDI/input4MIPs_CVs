@@ -62,7 +62,6 @@
     "population": {
         "source_ids": [
             "PIK-CMIP-1-0-0"
-        ],
-        "url": "https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling"
+        ]
     }
 }
