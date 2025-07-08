@@ -467,18 +467,6 @@ def get_delivery_summary_view(
                     f"Available: {format_url_for_html(info_d['url'], info_d['url'])}"
                 )
 
-            # elif ds_id == "population":
-            #    # Other fun exception
-            #    tmp["Forcing dataset"] = (
-            #        f"<a href='{info_d['url']}' target='_blank'>{description_html}</a>"
-            #    )
-            #    tmp["Source ID"] = "TBD"
-            #    if "status" in info_d:
-            #        tmp["Status"] = info_d["status"]
-            #    else:
-            #        tmp["Status"] = "CMIP7 dataset in preparation"
-            #    tmp["ESGF publication status"] = f"Expected: historical - August 2025"
-
             else:
                 if info_d["url"] is not None:
                     tmp["Forcing dataset"] = (
