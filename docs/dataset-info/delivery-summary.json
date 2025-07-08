@@ -60,11 +60,9 @@
         "url": "https://zenodo.org/records/15283189"
     },
     "population": {
-        "expected_publication": "historical - August 2025",
         "source_ids": [
             "PIK-CMIP-1-0-0"
         ],
-        "status": "registered",
         "url": "https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling"
     }
 }
