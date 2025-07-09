@@ -22,6 +22,38 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.36 (2025-07-09)
+
+
+### 🆕 Features
+
+- Added new source_id PIK-CMIP-1-0-0 in preparation for population data submission ([#258](https://github.com/PCMDI/input4MIPs_CVs/pull/258))
+- Added information to the database for the population datasets ([#272](https://github.com/PCMDI/input4MIPs_CVs/pull/272))
+
+### 🎉 Improvements
+
+- Switched to scraping the ESGF index using a public API and updated the ESGF scrape in the process ([#264](https://github.com/PCMDI/input4MIPs_CVs/pull/264))
+
+### 🐛 Bug Fixes
+
+- Fixed CVs for population source ID (the authors had one list level too many) ([#272](https://github.com/PCMDI/input4MIPs_CVs/pull/272))
+
+### 📚 Improved Documentation
+
+- - Updated documentation for the population dataset 
+  - Updated contributor documentation to reflect new workflows now that the the ESGF poll uses a public API ([#264](https://github.com/PCMDI/input4MIPs_CVs/pull/264))
+
+  ([#270](https://github.com/PCMDI/input4MIPs_CVs/pull/270))
+- - Updated the contributing docs to better reflect NERSC based workflows, point to the newly added environment file and add in the need to check `docs/dataset-info/delivery-summary.json` when adding a new source ID
+  - Updated `docs/database-views/input4MIPs_delivery-summary_CMIP6Plus.html` so it is a simple redirect to `docs/database-views/input4MIPs_delivery-summary.html`
+
+  ([#272](https://github.com/PCMDI/input4MIPs_CVs/pull/272))
+
+### 🔧 Trivial/Internal Changes
+
+- [#272](https://github.com/PCMDI/input4MIPs_CVs/pull/272)
+
+
 ## input4MIPs CVs v6.6.35 (2025-06-19)
 
 
