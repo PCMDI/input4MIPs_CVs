@@ -35,13 +35,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 #### Testing
 
-For the testing phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PIK-CMIP-1-0-0%22%5D%7D)
-
-This data is for testing (both of the forcing data and of modelling workflows) only.
-Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
-(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
-
-If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
+No data available for this phase yet.
 
 <!--- end-cmip7-phases-source-ids -->
 

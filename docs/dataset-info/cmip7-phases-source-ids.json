@@ -35,7 +35,7 @@
         "cmip7": null
     },
     "population": {
-        "testing": { "source_ids": [ "PIK-CMIP-1-0-0" ], "ok_if_not_latest": true },
+        "testing": null,
         "cmip7": { "source_ids": [ "PIK-CMIP-1-0-0" ] }
     },
     "solar": {
