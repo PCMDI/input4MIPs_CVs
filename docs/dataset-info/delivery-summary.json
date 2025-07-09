@@ -33,15 +33,15 @@
         ]
     },
     "ozone": {
-        "expected_publication": "piControl - end of March, historical - end of May.",
+        "expected_publication": "piControl - July 2025, historical - August 2025",
         "source_ids": null,
-        "status": "Awaiting finalization of upstream forcings: solar, volcanic, GHG/ODS concentrations, SLCF emissions, land-use changes",
+        "status": "Model simluations running after finalisation of upstream forcing (solar, volcanic, GHG/ODS concentrations, SLCF emissions, and land-use changes)",
         "url": null
     },
     "nitrogen-deposition": {
-        "expected_publication": "piControl - end of March, historical - end of May.",
+        "expected_publication": "piControl - July 2025, historical - August 2025",
         "source_ids": null,
-        "status": "Awaiting finalization of upstream forcings: solar, volcanic, GHG/ODS concentrations, SLCF emissions, land-use changes",
+        "status": "Model simluations running after finalisation of upstream forcing (solar, volcanic, GHG/ODS concentrations, SLCF emissions, and land-use changes)",
         "url": null
     },
     "solar": {
