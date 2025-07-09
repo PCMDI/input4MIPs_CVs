@@ -723,7 +723,6 @@ def get_db_views_to_write(
         ]
         res_l.extend(entries)
 
-    # More than one to ensure we don't break old links
     delivery_summaries = [
         (
             delivery_summary_view,
@@ -732,9 +731,6 @@ def get_db_views_to_write(
             False,
         )
         for page_path in (
-            repo_root_dir
-            / html_dir_rel_to_root
-            / "input4MIPs_delivery-summary_CMIP6Plus.html",
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_delivery-summary.html",
         )
     ]
