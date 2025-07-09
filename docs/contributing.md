@@ -23,30 +23,25 @@ In `Database/input-data` there are three components:
 
 `Database/input-data/esgf-input4MIPs.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have queried from the ESGF index database.
-<<<<<<< HEAD
 It is generated with `scripts/pollESGF.py` (the process is auto-run every 6-hrs on perlmutter).
-We hope to switch to automated generation of this file in future
+We hope to switch to automated generation of this file in the future
 (see [#69](https://github.com/PCMDI/input4MIPs_CVs/issues/69)).
 
-To update this file, simply copy the latest output from the poll script into this repository.
+If running on perlmutter, to update this file, simply copy the latest output into this repository.
 On perlmutter, the command is:
 
 ```sh
 cp /PATH-TO-DATA-ROOT/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json
 /PATH-TO-DATA-ROOT/ = /global/cfs/projectdirs/m4931/gsharing/user_pub_work/input4MIPs
-=======
-It is generated with `scripts/pollESGF.py`.
-We hope to switch to automated generation of this file in future
-(see [#69](https://github.com/PCMDI/input4MIPs_CVs/issues/69)).
+```
 
-To update the file, simply run the script.
-you may need to have an environment activated with needed requirements
+To update the file locally, simply run the script.
+you may need to have an environment activated with needed dependencies
 (e.g. `requests` before you can run this).
 The command is:
 
 ```sh
 python scripts/pollESGF.py Database/input-data/esgf-input4MIPs.json
->>>>>>> 7bce39d1deabcc1e2b0e5360455324ff7b27e57d
 ```
 
 `Database/input-data/pmount` contains a number of JSON files.
@@ -104,27 +99,19 @@ The paths assume you are working on perlmutter.
 If you are working elsewhere, you may need to modify the paths slightly.
 
 1. Checkout a new branch from main
-<<<<<<< HEAD
-1. Update the ESGF scrape: `cp /PATH-TO-DATA-ROOT/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json`
-1. Activate an environment in which `input4mips-validation` is installed
-1. Update the database by adding the tree you're interested in. Do this by running the following command from the root of this repository: `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /PATH-TO-DATA-ROOT/input4MIPs/CMIP6Plus/CMIP/UofMD/`
-1. (Not compulsory, but recommended because it makes it easier to see changes later) Commit the changes to the database
-1. If needed, add the source ID entry for the new files to `CVs/input4MIPs_source_id.json`
-1. Activate an environment which has the local `input4MIPs-CVs` package installed (see instructions on how to create such an environment in the sections above)
-=======
 1. Update the ESGF scrape: `python scripts/pollESGF.py Database/input-data/esgf-input4MIPs.json`
     - you may need to have an environment activated with needed requirements (e.g. `requests` before you can run this)
+    - alternatively on perlmutter copy the existing file: `cp /PATH-TO-DATA-ROOT/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json`
 1. Activate an environment in which `input4mips-validation` is installed
 1. Update the database by adding the tree you're interested in. 
    Do this by running the following command from the root of this repository: 
    `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` 
-   e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/UofMD/`
+   e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /PATH-TO-DATA-ROOT/input4MIPs/CMIP6Plus/CMIP/UofMD/`
 1. (Not compulsory, but recommended because it makes it easier to see changes later) 
    Commit the changes to the database
 1. If needed, add the source ID entry for the new files to `CVs/input4MIPs_source_id.json`
-1. Activate an environment which has the local `input4IMPs-CVs` package installed 
-   (see intructions on how to create such an environment in the sections above)
->>>>>>> 7bce39d1deabcc1e2b0e5360455324ff7b27e57d
+1. Activate an environment which has the local `input4MIPs-CVs` package installed 
+   (see instructions on how to create such an environment in the sections above)
 1. Update the database: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
     - If needed, add a reason for the retraction/deprecation of the previous data set in `Database/input-data/supplementary-source-id-info.yaml`
 1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
