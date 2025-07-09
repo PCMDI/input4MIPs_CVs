@@ -25,16 +25,16 @@ In `Database/input-data` there are three components:
 `Database/input-data/esgf-input4MIPs.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have queried from the ESGF index database.
 It is generated with `scripts/pollESGF.py`.
-However, the API it queries only allows certain IP addresses,
-so you will only be able to run this if you have been given access.
 We hope to switch to automated generation of this file in future
 (see [#69](https://github.com/PCMDI/input4MIPs_CVs/issues/69)).
 
-To update this file, simply copy the latest output from the poll script into this repository.
-On nimbus, the command is:
+To update the file, simply run the script.
+you may need to have an environment activated with needed requirements
+(e.g. `requests` before you can run this).
+The command is:
 
 ```sh
-cp /p/user_pub/work/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json
+python scripts/pollESGF.py Database/input-data/esgf-input4MIPs.json
 ```
 
 `Database/input-data/pmount` contains a number of JSON files.
@@ -80,7 +80,8 @@ In order to run this script, you should:
 2. Activate the virtual environment (e.g. `source venv/bin/activate`)
 3. Install the local `input4MIPs-CVs` package into the environment
    (e.g. `pip install -e python-packages/input4MIPs-CVs`)
-4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
+4. Run the script 
+   e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
 
 The version is automatically read out of the `VERSION` file if it is not directly specified.
 
@@ -91,17 +92,24 @@ The paths assume you are working on nimbus.
 If you are working elsewhere, you may need to modify the paths slightly.
 
 1. Checkout a new branch from main
-1. Update the ESGF scrape: `cp /p/user_pub/work/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json`
+1. Update the ESGF scrape: `python scripts/pollESGF.py Database/input-data/esgf-input4MIPs.json`
+    - you may need to have an environment activated with needed requirements (e.g. `requests` before you can run this)
 1. Activate an environment in which `input4mips-validation` is installed
-1. Update the database by adding the tree you're interested in. Do this by running the following command from the root of this repository: `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/UofMD/`
-1. (Not compulsory, but recommended because it makes it easier to see changes later) Commit the changes to the database
+1. Update the database by adding the tree you're interested in. 
+   Do this by running the following command from the root of this repository: 
+   `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` 
+   e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/UofMD/`
+1. (Not compulsory, but recommended because it makes it easier to see changes later) 
+   Commit the changes to the database
 1. If needed, add the source ID entry for the new files to `CVs/input4MIPs_source_id.json`
-1. Activate an environment which has the local `input4IMPs-CVs` package installed (see intructions on how to create such an environment in the sections above)
+1. Activate an environment which has the local `input4IMPs-CVs` package installed 
+   (see intructions on how to create such an environment in the sections above)
 1. Update the database: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
     - If needed, add a reason for the retraction/deprecation of the previous data set in `Database/input-data/supplementary-source-id-info.yaml`
 1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
     - If you get an error about a retracted publication status, you'll need to edit the latest source ID being used for a given dataset. Use the python traceback to help you identify where this is. (TODO: move things into a standalone file so it is easier to see what to edit)
-1. Check that the HTML has updated as expected (e.g. the summary view has updated as expected, new datasets are in the datasets view, new files are in the files view)
+1. Check that the HTML has updated as expected 
+   (e.g. the summary view has updated as expected, new datasets are in the datasets view, new files are in the files view)
 1. Commit everything
 1. Build the docs: `mkdocs build --strict`
 1. Check that the docs updated as expected.
@@ -110,6 +118,9 @@ If you are working elsewhere, you may need to modify the paths slightly.
     - are the source IDs for the dataset up to date?
       E.g. do we need to update the source IDs to be used for the various CMIP7 phases in
       `docs/dataset-info/cmip7-phases-source-ids.json`?
+    - did the relevant documentation page (e.g. `docs/dataset-overviews/population.md`) update correctly?
+      If yes, there is an issue. Check the page carefully e.g. the `source_id_stub` at the top of the page
+      (figuring out the logic here will likely require stepping through the python as it is still an evolving process).
     - did the revision history come through correctly? If not, there is an issue.
 
 1. Commit everything

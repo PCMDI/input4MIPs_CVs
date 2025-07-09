@@ -1,6 +1,6 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
 <!--- forcing="population" -->
-<!--- source_id_stub="tbd" -->
+<!--- source_id_stub="PIK" -->
 # Population density
 
 **This section is a work in progress.**
@@ -12,6 +12,9 @@
 
 ## Summary
 
+At present, only data for the historical period (1850-2025) is available.
+Data for future scenarios will be added at a later date.
+
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
@@ -20,8 +23,8 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 #### CMIP7
 
-For the CMIP7 phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-0] for the historical period (1850-2025).
-Data for the future scenario (2026-2100) will be added at a later date.
+For the CMIP7 phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PIK-CMIP-1-0-0%22%5D%7D)
+
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
 This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
