@@ -127,7 +127,8 @@ If you are working elsewhere, you may need to modify the paths slightly.
 
     - are the source IDs for the dataset up to date?
       E.g. do we need to update the source IDs to be used for the various CMIP7 phases in
-      `docs/dataset-info/cmip7-phases-source-ids.json`?
+      `docs/dataset-info/cmip7-phases-source-ids.json`
+      or the delivery summary in `docs/dataset-info/delivery-summary.json`?
     - did the relevant documentation page (e.g. `docs/dataset-overviews/population.md`) update correctly?
       If yes, there is an issue. Check the page carefully e.g. the `source_id_stub` at the top of the page
       (figuring out the logic here will likely require stepping through the python as it is still an evolving process).
