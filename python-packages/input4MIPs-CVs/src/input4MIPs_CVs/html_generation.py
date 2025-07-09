@@ -598,7 +598,7 @@ def get_delivery_summary_view(
                 msg = (
                     f"publication status for source_ids={info_d['source_ids']} "
                     f"is {publication_status}. "
-                    "Please check the source ID being used in the summary view."
+                    "Please check the source ID being used in `docs/dataset-info/delivery-summary.json`."
                 )
                 raise ValueError(msg)
 
@@ -723,7 +723,6 @@ def get_db_views_to_write(
         ]
         res_l.extend(entries)
 
-    # More than one to ensure we don't break old links
     delivery_summaries = [
         (
             delivery_summary_view,
@@ -732,9 +731,6 @@ def get_db_views_to_write(
             False,
         )
         for page_path in (
-            repo_root_dir
-            / html_dir_rel_to_root
-            / "input4MIPs_delivery-summary_CMIP6Plus.html",
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_delivery-summary.html",
         )
     ]

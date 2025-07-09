@@ -3,8 +3,6 @@
 <!--- source_id_stub="PIK" -->
 # Population density
 
-**This section is a work in progress.**
-
 ## Key contacts
 
 - Names: Dominik Paprotny, Laurence Hawker

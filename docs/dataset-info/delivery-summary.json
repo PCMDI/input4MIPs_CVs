@@ -60,9 +60,8 @@
         "url": "https://zenodo.org/records/15283189"
     },
     "population": {
-        "expected_publication": "Unknown: data provider TBD",
-        "source_ids": null,
-        "status": "Unknown: data provider TBD",
-        "url": null
+        "source_ids": [
+            "PIK-CMIP-1-0-0"
+        ]
     }
 }
