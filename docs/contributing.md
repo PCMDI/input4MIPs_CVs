@@ -72,8 +72,8 @@ In order to run this script, you should:
 
 1. Make a virtual environment (e.g. `python3 -m venv venv`)
 2. Activate the virtual environment (e.g. `source venv/bin/activate` - be careful not to activate multiple envs at once!)
-3. Install the local `input4MIPs-CVs` package into the environment
-   (e.g. `pip install -e python-packages/input4MIPs-CVs`)
+3. Install the requirements into the environment
+   (e.g. `pip install -r dev-requirements.txt`)
 4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
 
 ## Generating the HTML pages
@@ -85,8 +85,8 @@ In order to run this script, you should:
 
 1. Reuse the existing `venv` environment (see above), or remake one (e.g. `python3 -m venv venv`)
 2. Activate the virtual environment (e.g. `source venv/bin/activate`)
-3. Install the local `input4MIPs-CVs` package into the environment
-   (e.g. `pip install -e python-packages/input4MIPs-CVs`)
+3. Install the requirements into the environment
+   (e.g. `pip install -r dev-requirements.txt`)
 4. Run the script 
    e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
 
