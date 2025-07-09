@@ -598,7 +598,7 @@ def get_delivery_summary_view(
                 msg = (
                     f"publication status for source_ids={info_d['source_ids']} "
                     f"is {publication_status}. "
-                    "Please check the source ID being used in the summary view."
+                    "Please check the source ID being used in `docs/dataset-info/delivery-summary.json`."
                 )
                 raise ValueError(msg)
 

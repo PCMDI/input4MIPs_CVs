@@ -31,8 +31,7 @@ If running on perlmutter, to update this file, simply copy the latest output int
 On perlmutter, the command is:
 
 ```sh
-cp /PATH-TO-DATA-ROOT/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json
-/PATH-TO-DATA-ROOT/ = /global/cfs/projectdirs/m4931/gsharing/user_pub_work/input4MIPs
+cp /global/cfs/projectdirs/m4931/gsharing/user_pub_work/input4MIPs/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json
 ```
 
 To update the file locally, simply run the script.
@@ -106,7 +105,9 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. Update the database by adding the tree you're interested in. 
    Do this by running the following command from the root of this repository: 
    `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` 
-   e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /PATH-TO-DATA-ROOT/input4MIPs/CMIP6Plus/CMIP/UofMD/`
+   e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /PATH-TO-DATA-ROOT/input4MIPs/CMIP6Plus/CMIP/UofMD/`.
+   On perlmutter, this is something like
+   `bash scripts/pmount-database-generation/db-add-tree.sh /global/cfs/projectdirs/m4931/gsharing/user_pub_work/input4MIPs/...`
 1. (Not compulsory, but recommended because it makes it easier to see changes later) 
    Commit the changes to the database
 1. If needed, add the source ID entry for the new files to `CVs/input4MIPs_source_id.json`
@@ -117,7 +118,9 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. Update the database: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
     - If needed, add a reason for the retraction/deprecation of the previous data set in `Database/input-data/supplementary-source-id-info.yaml`
 1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
-    - If you get an error about a retracted publication status, you'll need to edit the latest source ID being used for a given dataset. Use the python traceback to help you identify where this is. (TODO: move things into a standalone file so it is easier to see what to edit)
+    - If you get an error about a retracted publication status,
+      you'll need to edit the latest source ID being used for a given dataset
+      in `docs/dataset-info/delivery-summary.json`.
 1. Check that the HTML has updated as expected 
    (e.g. the summary view has updated as expected, new datasets are in the datasets view, new files are in the files view)
 1. Commit everything
