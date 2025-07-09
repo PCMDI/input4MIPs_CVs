@@ -45,11 +45,14 @@ def get_esgf_info(n_threads: int) -> dict[str, Any]:
         **COMMON_PARAMS,
         limit=0,
         facets="source_id",
+    )
+    print(f"Pinging {url=} with {params=}")
+    r_source_ids = requests.get(
+        url,
+        params=params,
         # Long timeout just in case
         timeout=100,
     )
-    print(f"Pinging {url=} with {params=}")
-    r_source_ids = requests.get(url, params=params)
     r_source_ids.raise_for_status()
 
     source_ids = []
