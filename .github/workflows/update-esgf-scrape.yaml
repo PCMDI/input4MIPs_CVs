@@ -4,12 +4,11 @@ on:
   # push:
   #   branches: [auto-scrape-esgf]
   workflow_dispatch:
-  # TODO: turn on before merging
-  # schedule:
-  #   # * is a special character in YAML so you have to quote this string
-  #   # This means every day at 10:00.
-  #   # see https://crontab.guru/#0_10_*_*_*
-  #   - cron:  '0 10 * * *'
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    # This means every day at 10:00.
+    # see https://crontab.guru/#0_10_*_*_*
+    - cron:  '0 10 * * *'
 
 jobs:
   update-esgf-scrape:
