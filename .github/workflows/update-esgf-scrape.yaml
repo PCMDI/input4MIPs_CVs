@@ -1,0 +1,58 @@
+name: Update ESGF scrape
+
+on:
+  # push:
+  #   branches: [auto-scrape-esgf]
+  workflow_dispatch:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    # This means every six hours,
+    # see https://crontab.guru/every-6-hours
+    - cron:  '0 */6 * * *'
+
+jobs:
+  update-esgf-scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Scrape ESGF
+        run: |
+          which pip
+          pip install python-packages/input4MIPs-CVs
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-esgf-scrape.py --out-file Database/input-data/esgf-input4MIPs.json --n-threads 4
+
+      - name: Check if scrape was updated
+        uses: tj-actions/verify-changed-files@a1c6acee9df209257a246f2cc6ae8cb6581c1edf # v20
+        id: verify-changed-files
+        with:
+          files: Database/input-data/esgf-input4MIPs.json
+
+      - name: Create new MR if needed
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        env:
+          CHANGED_FILES: ${{ steps.verify-changed-files.outputs.changed_files }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .
+          # Leave off for now as can fail
+          # python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .
+          # mkdocs build
+
+          TIMESTAMP=$(date +%Y-%m-%dT%H-%M-%S)
+          BRANCH_NAME="${TIMESTAMP}_esgf-input4mips-json-update"
+
+          git config --global user.name "$GITHUB_ACTOR"
+          git config --global user.email "$CI_COMMIT_EMAIL"
+
+          git add .
+          git checkout -b "${BRANCH_NAME}"
+          git commit -m "Update ESGF input4MIPs JSON file"
+          git push --set-upstream origin "${BRANCH_NAME}"
+          gh pr create --title "Bot: ${TIMESTAMP} update ESGF JSON" --body "Created from update-esgf-scrape action" --label "esgf-json-update" --reviewer znichollscr --reviewer durack1
