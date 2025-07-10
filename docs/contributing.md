@@ -23,25 +23,15 @@ In `Database/input-data` there are three components:
 
 `Database/input-data/esgf-input4MIPs.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have queried from the ESGF index database.
-It is generated with `scripts/pollESGF.py` (the process is auto-run every 6-hrs on perlmutter).
-We hope to switch to automated generation of this file in the future
-(see [#69](https://github.com/PCMDI/input4MIPs_CVs/issues/69)).
+It is generated via a GitHub action that automatically creates pull requests if new files have been published.
+If you need to run it manually, you can run it with the steps below:
 
-If running on perlmutter, to update this file, simply copy the latest output into this repository.
-On perlmutter, the command is:
-
-```sh
-cp /global/cfs/projectdirs/m4931/gsharing/user_pub_work/input4MIPs/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json
-```
-
-To update the file locally, simply run the script.
-you may need to have an environment activated with needed dependencies
-(e.g. `requests` before you can run this).
-The command is:
-
-```sh
-python scripts/pollESGF.py Database/input-data/esgf-input4MIPs.json
-```
+1. Make a virtual environment (e.g. `python3 -m venv venv`)
+2. Activate the virtual environment 
+   (e.g. `source venv/bin/activate` - be careful not to activate multiple envs at once!)
+3. Install the requirements into the environment
+   (e.g. `pip install -r dev-requirements.txt`)
+4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-esgf-scrape.py --out-file Database/input-data/esgf-input4MIPs.json --n-threads 4`
 
 `Database/input-data/pmount` contains a number of JSON files.
 Each file contains information about one file
@@ -64,7 +54,8 @@ At present, we are tracking all of these inputs as part of this repository.
 This is ok for now, as the data is relatively small.
 This may not scale, so if we get to a certain size, we may have to pick a different approach.
 
-The data from these three inputs, plus information from the Controlled Vocabularies (CVs),
+The data from these three inputs,
+plus information from the Controlled Vocabularies (CVs),
 gets combined to create `Database/input4MIPs_db_file_entries.json`.
 This combination is done using `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py`.
 In order to run this script, you should:
