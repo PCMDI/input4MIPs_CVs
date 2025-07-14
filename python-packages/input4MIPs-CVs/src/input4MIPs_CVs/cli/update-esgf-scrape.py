@@ -39,6 +39,15 @@ def get_source_id_result(
 
 
 def get_esgf_info(n_threads: int) -> dict[str, Any]:
+    session = requests.Session()
+    retries = requests.adapters.Retry(
+        # Just in case flaky
+        total=10,
+        backoff_factor=0.1,
+        status_forcelist=[401, 429],
+    )
+    session.mount("https://", requests.adapters.HTTPAdapter(max_retries=retries))
+
     url = "https://esgf-node.ornl.gov/esgf-1-5-bridge"
     params = dict(
         # hacky, but whatever
@@ -47,7 +56,7 @@ def get_esgf_info(n_threads: int) -> dict[str, Any]:
         facets="source_id",
     )
     print(f"Pinging {url=} with {params=}")
-    r_source_ids = requests.get(
+    r_source_ids = session.get(
         url,
         params=params,
         # Long timeout just in case
@@ -66,15 +75,6 @@ def get_esgf_info(n_threads: int) -> dict[str, Any]:
             raise AssertionError(msg)
 
         source_ids.append(source_id)
-
-    session = requests.Session()
-    retries = requests.adapters.Retry(
-        # Just in case flaky
-        total=10,
-        backoff_factor=0.1,
-        status_forcelist=[429],
-    )
-    session.mount("https://", requests.adapters.HTTPAdapter(max_retries=retries))
 
     search_results = thread_map(
         partial(get_source_id_result, session=session),
