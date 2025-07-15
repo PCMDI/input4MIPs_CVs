@@ -82,11 +82,35 @@ def get_esgf_info(n_threads: int) -> dict[str, Any]:
         max_workers=n_threads,
     )
     res = {}
+    failures = []
     for sr in search_results:
-        sr.raise_for_status()
+        try:
+            sr.raise_for_status()
+        except requests.exceptions.HTTPError:
+            failures.append([sr.url, sr.json()])
+            continue
+
         sr_json = sr.json()
         for ds in sr_json["response"]["docs"]:
             res[ds["instance_id"]] = ds
+
+    if failures:
+        failure_status_counts = {}
+        for f in failures:
+            status = f[1]["status"]
+            try:
+                failure_status_counts[status] += 1
+            except KeyError:
+                failure_status_counts[status] = 1
+
+        detail_lines = "\n".join(
+            [
+                f"{v[0]}\n    {json.dumps(v[1], sort_keys=True, indent=4)}\n"
+                for v in failures
+            ]
+        )
+        msg = f"Detail:\n{detail_lines}\nThere were {len(failures)} failures, {failure_status_counts=}"
+        raise AssertionError(msg)
 
     return res
 
