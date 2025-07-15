@@ -4,6 +4,7 @@ Notes for doing this via STAC API:
 https://hamedalemo.github.io/advanced-geo-python/lectures/earth_search_tutorial.html
 
 Really good example
+Can test with https://api.stac.ceda.ac.uk/
 """
 
 import globus_sdk
