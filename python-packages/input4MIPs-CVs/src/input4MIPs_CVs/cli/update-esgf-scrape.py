@@ -92,11 +92,11 @@ def get_esgf_info(n_threads: int) -> dict[str, Any]:
 
         sr_json = sr.json()
         for ds in sr_json["response"]["docs"]:
-            # Hmmm, appears to be some bug in the bridge API
-            if bool(ds["replica"]):
-                continue
-
             if ds["instance_id"] in res:
+                # Hmmm, appears to be some bug in the bridge API
+                if bool(ds["replica"]):
+                    continue
+
                 msg = (
                     f"Overwriting entry for {ds['instance_id']} "
                     f"from {res[ds['instance_id']]['data_node']} "
