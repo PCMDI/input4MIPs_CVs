@@ -52,11 +52,11 @@ def main():
             print(f"{only_in_base_entry=}")
             print()
 
-        if (
-            entry_latest["data_node"] == "esgf-node.ornl.gov"
-            and entry_base["data_node"] == "esgf-data2.llnl.gov"
-        ):
-            continue
+        # if (
+        #     entry_latest["data_node"] == "esgf-node.ornl.gov"
+        #     and entry_base["data_node"] == "esgf-data2.llnl.gov"
+        # ):
+        #     continue
 
         if (
             entry_latest["data_node"] == "esgf-node.ornl.gov"
