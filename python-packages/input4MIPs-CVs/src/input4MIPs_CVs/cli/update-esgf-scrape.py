@@ -15,6 +15,8 @@ import typer
 from tqdm.contrib.concurrent import thread_map
 
 COMMON_PARAMS = dict(
+    # Note this may not be working,
+    # see https://github.com/esgf2-us/esg_fastapi/issues/102
     replica=False,
     activity_id="input4MIPs",
     type="Dataset",
@@ -94,7 +96,14 @@ def get_esgf_info(n_threads: int) -> dict[str, Any]:
         for ds in sr_json["response"]["docs"]:
             if ds["instance_id"] in res:
                 # Hmmm, appears to be some bug in the bridge API
-                if bool(ds["replica"]):
+                is_replica = (
+                    bool(ds["replica"])
+                    # Some responses have "false" as a string,
+                    # which evalues to True with the check above
+                    # so we have to add this too
+                    and (not ds["replica"] == "false")
+                )
+                if is_replica:
                     continue
 
                 msg = (
