@@ -262,8 +262,25 @@ def diff_db_to_changes_comment(
             break
 
     else:
-        msg = "Comment still too long"
-        raise NotImplementedError(msg)
+        affected_source_ids = "\n- ".join(
+            sorted(diffs_incl_source_id["source_id"].unique())
+        )
+        comment = "\n".join(
+            (
+                f"{diffs_incl_source_id.shape[0]} changes, which don't fit in a single comment.",
+                "",
+                f"Affected source IDs:\n- {affected_source_ids}",
+                "",
+                f"Attributes changed (may not affect all source IDs): {sorted(diffs_incl_source_id['attribute_changed'].unique())}",
+                "",
+                f"Operations performed (may not affect all source IDs): {sorted(diffs_incl_source_id['operation'].unique())}",
+                "",
+            )
+        )
+        if len(comment) > max_characters:
+            print(comment)
+            msg = "Comment still too long"
+            raise NotImplementedError(msg)
 
     return comment
 
