@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.39 (2025-07-16)
+
+
+### 📚 Improved Documentation
+
+- Updated the scrape of ESGF. The entries for PCMDI-AMIP-1-1-9 now point at esgf-node.ornl.gov, the non-replica datasets on ESGF (previously they pointed at eagle.alcf.anl.gov, which was a replica). ([#279](https://github.com/PCMDI/input4MIPs_CVs/pull/279))
+
+### 🔧 Trivial/Internal Changes
+
+- [#279](https://github.com/PCMDI/input4MIPs_CVs/pull/279)
+
+
 ## input4MIPs CVs v6.6.38 (2025-07-15)
 
 
