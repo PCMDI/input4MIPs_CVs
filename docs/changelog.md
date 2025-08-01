@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.40 (2025-08-01)
+
+
+### 🆕 Features
+
+- Updated the ESGF scrape to reflect the shutdown of the LLNL node ([#285](https://github.com/PCMDI/input4MIPs_CVs/pull/285))
+
+
 ## input4MIPs CVs v6.6.39 (2025-07-16)
 
 
