@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    # This means every six hours,
-    # see https://crontab.guru/every-6-hours
-    - cron:  '0 */6 * * *'
+    # This means once a day,
+    # see https://crontab.guru/once-a-day
+    - cron:  '0 0 * * *'
 
 jobs:
   update-esgf-scrape:
