@@ -622,7 +622,9 @@
             ]
         ],
         "contact":"Paul J. Durack (durack1@llnl.gov); Karl E. Taylor (taylor13@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)",
-        "dataset_category":"SSTsAndSeaIce",
+        "dataset_category":[
+            "SSTsAndSeaIce"
+        ],
         "further_info_url":"https://pcmdi.llnl.gov/mips/amip; https://github.com/PCMDI/amipbcs",
         "institution_id":"PCMDI",
         "license_id":"CC BY 4.0",
@@ -805,7 +807,9 @@
             }
         ],
         "contact":"Dominik Paprotny (dominik.paprotny@pik-potsdam.de); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
-        "dataset_category":"population",
+        "dataset_category":[
+            "population"
+        ],
         "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
         "institution_id":"PIK",
         "license_id":"CC BY 4.0",
