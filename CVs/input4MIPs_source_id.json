@@ -578,7 +578,6 @@
     "PCMDI-AMIP-1-1-10":{
         "activity_id":"input4MIPs",
         "authors":[
-            [
                 {
                     "affiliations":[
                         "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
@@ -619,7 +618,6 @@
                     "name":"Chris Mauzey",
                     "orcid":"0000-0003-1156-6774"
                 }
-            ]
         ],
         "contact":"Paul J. Durack (durack1@llnl.gov); Karl E. Taylor (taylor13@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)",
         "dataset_category":[
