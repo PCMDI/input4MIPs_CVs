@@ -60,6 +60,6 @@
     },
     "amip-ssts": {
         "testing": { "source_ids": [ "PCMDI-AMIP-1-1-9" ], "ok_if_not_latest": true },
-        "cmip7": null
+        "cmip7": { "source_ids": ["PCMDI-AMIP-1-1-10"] }
     }
 }

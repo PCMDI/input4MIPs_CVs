@@ -13,6 +13,7 @@ from collections.abc import Iterable
 from pathlib import Path
 
 import pandas as pd
+from packaging.version import Version
 
 HERE = Path(__file__).parent
 
@@ -145,7 +146,18 @@ def get_cmip7_phase_source_id_summary(
             ]
 
         # May need a more sophisticated sorting algorithm at some point
-        source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
+        if any(v.startswith("PCMDI-AMIP") for v in phase_info["source_ids"]):
+            source_ids = tuple(db_source_id_stub_rows["source_id"].unique())
+            version_ids = tuple(
+                v.split("PCMDI-AMIP-")[-1].replace("-", ".") for v in source_ids
+            )
+            pairs = list(zip(source_ids, version_ids))[::-1]
+            pairs.sort(key=lambda x: Version(x[1]))
+            source_ids_sorted = [v[0] for v in pairs]
+
+        else:
+            source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
+
         source_id_latest = source_ids_sorted[-1]
 
         ok_if_not_latest = (
