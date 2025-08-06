@@ -97,9 +97,6 @@ MRI-JRA55-do-1-6-0:
   license_id: CC BY 4.0
 PCMDI-AMIP-1-1-9:
   license_id: CC BY 4.0
-PCMDI-AMIP-1-1-10:
-  # URL given in the CVs isn't a URL, it's two
-  further_info_url: https://pcmdi.llnl.gov/mips/amip
 SOLARIS-HEPPA-CMIP-4-1:
   publication_status: never_published
 SOLARIS-HEPPA-CMIP-4-2:

@@ -625,7 +625,7 @@
         "dataset_category":[
             "SSTsAndSeaIce"
         ],
-        "further_info_url":"https://pcmdi.llnl.gov/mips/amip; https://github.com/PCMDI/amipbcs",
+        "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
         "institution_id":"PCMDI",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP7",
