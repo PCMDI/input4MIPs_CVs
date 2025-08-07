@@ -51,9 +51,9 @@
     },
     "amip-ssts": {
         "source_ids": [
-            "PCMDI-AMIP-1-1-9"
+            "PCMDI-AMIP-1-1-10"
         ],
-        "status": "Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release."
+        "status": "Awaiting publication"
     },
     "simple-plumes": {
         "source_ids": null,
