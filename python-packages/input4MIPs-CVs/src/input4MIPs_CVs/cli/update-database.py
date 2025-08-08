@@ -56,13 +56,11 @@ def merge_pmount_and_esgf_data(
         for esgf_field, db_field in esgf_field_db_field_map.items():
             res.loc[idx, db_field] = esgf_dataset_info[esgf_field]
 
-        if esgf_dataset_info["latest"]:
-            res.loc[idx, "publication_status"] = "published"
+        if esgf_dataset_info["retracted"]:
+            res.loc[idx, "publication_status"] = "retracted"
 
         else:
-            # Not sure if this logic is correct, but we can start like this
-            # and then interate.
-            res.loc[idx, "publication_status"] = "retracted"
+            res.loc[idx, "publication_status"] = "published"
 
     return res
 
