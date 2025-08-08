@@ -147,11 +147,11 @@ def get_cmip7_phase_source_id_summary(
 
         # May need a more sophisticated sorting algorithm at some point
         if any(v.startswith("PCMDI-AMIP") for v in phase_info["source_ids"]):
-            source_ids = tuple(db_source_id_stub_rows["source_id"].unique())
+            all_source_ids = tuple(db_source_id_stub_rows["source_id"].unique())
             version_ids = tuple(
                 v.split("PCMDI-AMIP-")[-1].replace("-", ".") for v in source_ids
             )
-            pairs = list(zip(source_ids, version_ids))[::-1]
+            pairs = list(zip(all_source_ids, version_ids))[::-1]
             pairs.sort(key=lambda x: Version(x[1]))
             source_ids_sorted = [v[0] for v in pairs]
 
