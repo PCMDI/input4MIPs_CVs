@@ -22,6 +22,28 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.41 (2025-08-08)
+
+
+### 🆕 Features
+
+- Added data for CMIP7 AMIP boundary conditions: PCMDI-AMIP-1-1-10 ([#312](https://github.com/PCMDI/input4MIPs_CVs/pull/312))
+
+### 🐛 Bug Fixes
+
+- Fixed a logic error in how we determined publication status. This fixes the status of a number of datasets which were erroneously marked as retracted. ([#313](https://github.com/PCMDI/input4MIPs_CVs/pull/313))
+
+### 📚 Improved Documentation
+
+- Registered PCMDI-AMIP-1-1-10 in anticipation for new data publication for CMIP7
+  Fixed PIK-CMIP-1-0-0 dataset_category type ([#305](https://github.com/PCMDI/input4MIPs_CVs/pull/305))
+- Updated to indicate that PCMDI-AMIP-1-1-10 will be the source ID to use for CMIP7 ([#309](https://github.com/PCMDI/input4MIPs_CVs/pull/309))
+
+### 🔧 Trivial/Internal Changes
+
+- [#301](https://github.com/PCMDI/input4MIPs_CVs/pull/301)
+
+
 ## input4MIPs CVs v6.6.40 (2025-08-01)
 
 
