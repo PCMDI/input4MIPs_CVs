@@ -27,6 +27,9 @@ def get_source_id_result(
     url = "https://esgf-node.ornl.gov/esgf-1-5-bridge"
     # # DKRZ equivalent
     # url = "https://esgf-metagrid.cloud.dkrz.de/metagrid-backend/proxy/search?source_id=CR-CMIP-0-4-0&format=application%2Fsolr%2Bjson&limit=300"
+    # Find all index nodes https://github.com/ESGF/esgf-download/blob/008f08c7a83a65a3b3e8c3d0137af36e209321c2/esgpull/esgpull.py#L142
+    # esgf-node.ipsl.upmc.fr/esg-search/search?source_id=CR-CMIP-0-4-0&format=application%2Fsolr%2Bjson&limit=300
+    # https://github.com/ESGF/esgf-download/blob/008f08c7a83a65a3b3e8c3d0137af36e209321c2/esgpull/utils.py#L65
     params = dict(
         # hacky, but whatever
         **COMMON_PARAMS,
