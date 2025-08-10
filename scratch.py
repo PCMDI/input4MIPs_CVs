@@ -45,6 +45,8 @@ data_search = dict(
             ("activity_id", ["input4MIPs"]),
             ("mip_era", ["CMIP7"]),
             ("type", ["Dataset"]),
+            ("source_id", ["CR-CMIP-1-0-0"]),
+            ("replica", ["true"]),
         ]
     ],
 )
@@ -57,6 +59,7 @@ for i, page in tqdm.tqdm(
     res.extend(content)
 
 res_df = pd.DataFrame(res)
+breakpoint()
 for c in res_df:
     if res_df.loc[:, c].iloc[0] != res_df.loc[:, c].iloc[1]:
         print(c)

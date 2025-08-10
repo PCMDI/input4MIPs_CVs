@@ -25,6 +25,8 @@ def get_source_id_result(
     source_id: str, session: requests.Session
 ) -> requests.models.Response:
     url = "https://esgf-node.ornl.gov/esgf-1-5-bridge"
+    # # DKRZ equivalent
+    # url = "https://esgf-metagrid.cloud.dkrz.de/metagrid-backend/proxy/search?source_id=CR-CMIP-0-4-0&format=application%2Fsolr%2Bjson&limit=300"
     params = dict(
         # hacky, but whatever
         **COMMON_PARAMS,
