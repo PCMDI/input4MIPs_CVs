@@ -1,14 +1,62 @@
 {
   "creators": [
     {
-      "affiliation": "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA",
-      "creatorName": "Durack, Paul",
-      "email": "durack1@llnl.gov",
-      "familyName": "Durack",
+      "affiliation": "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA",
+      "creatorName": "J. Durack, Paul",
+      "email": "durack1@llnl.gov; pauldurack@gmail.com",
+      "familyName": "J. Durack",
       "givenName": "Paul",
       "nameIdenfitier": {
         "nameIdenfitierScheme": "ORCID",
         "pid": "0000-0003-2835-1438",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA",
+      "creatorName": "E. Taylor, Karl",
+      "email": "taylor13@llnl.gov",
+      "familyName": "E. Taylor",
+      "givenName": "Karl",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-6491-2135",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA",
+      "creatorName": "K. Ames, Sasha",
+      "email": "ames4@llnl.gov",
+      "familyName": "K. Ames",
+      "givenName": "Sasha",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0001-9981-2997",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA",
+      "creatorName": "Po-Chedley, Stephen",
+      "email": "pochedley1@llnl.gov",
+      "familyName": "Po-Chedley",
+      "givenName": "Stephen",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-0390-238X",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA",
+      "creatorName": "Mauzey, Chris",
+      "email": "mauzey1@llnl.gov",
+      "familyName": "Mauzey",
+      "givenName": "Chris",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0003-1156-6774",
         "schemeURI": "https://orcid.org/"
       }
     }
