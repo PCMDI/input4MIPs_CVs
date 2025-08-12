@@ -90,6 +90,7 @@ DRES-CMIP-BB4CMIP7-2-0:
 DRES-CMIP-BB4CMIP7-2-1:
   # While we wait for ESGF scrape to come back up
   publication_status: published
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
 ImperialCollege-3-0:
   # While we wait for ESGF scrape to come back up
   publication_status: published
@@ -97,6 +98,9 @@ MRI-JRA55-do-1-6-0:
   license_id: CC BY 4.0
 PCMDI-AMIP-1-1-9:
   license_id: CC BY 4.0
+PCMDI-AMIP-1-1-10:
+  license_id: CC BY 4.0
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2575015
 SOLARIS-HEPPA-CMIP-4-1:
   publication_status: never_published
 SOLARIS-HEPPA-CMIP-4-2:
@@ -181,6 +185,7 @@ UOEXETER-CMIP-2-2-1:
   further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
   # While we wait for ESGF scrape to come back up
   publication_status: published
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
 UofMD-landState-3-0:
   license_id: CC BY 4.0
   comment_post_publication: >-
