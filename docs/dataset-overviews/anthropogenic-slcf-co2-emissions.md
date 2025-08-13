@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="slfc_co2_emms" -->
+<!--- forcing="slcf_co2_emms" -->
 <!--- source_id_stub="CEDS-CMIP" -->
 # Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions
 
