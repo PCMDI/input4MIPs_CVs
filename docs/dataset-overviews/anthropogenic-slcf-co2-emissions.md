@@ -1,5 +1,5 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
-<!--- forcing="slfc_co2_emms" -->
+<!--- forcing="slcf_co2_emms" -->
 <!--- source_id_stub="CEDS-CMIP" -->
 # Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions
 
@@ -45,6 +45,8 @@ Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
 and process the data carefully.
 
+The data has the DOIs: [10.5281/zenodo.15127477](https://doi.org/10.5281/zenodo.15127477), [10.5281/zenodo.15001546](https://doi.org/10.5281/zenodo.15001546).
+
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
 This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
@@ -65,6 +67,8 @@ For the testing phase of CMIP7, you will need data from the following source IDs
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
 and process the data carefully.
+
+The data has the DOIs: [10.5281/zenodo.13952845](https://doi.org/10.5281/zenodo.13952845), [10.5281/zenodo.14145000](https://doi.org/10.5281/zenodo.14145000).
 
 This data is for testing (both of the forcing data and of modelling workflows) only.
 Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.

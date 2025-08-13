@@ -2,6 +2,8 @@
 
 *ESGF link*: [https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-3-1%22%5D%7D](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-3-1%22%5D%7D)
 
+*DOI(s)*: [10.25981/ESGF.input4MIPs.CMIP7/2521499](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2521499)
+
 ## Authors
 
 1. Louise Chini ([ORCID 0000-0002-9070-3505](https://orcid.org/0000-0002-9070-3505))

@@ -32,8 +32,20 @@ def get_assumed_unique_value(invs: list[Any]) -> Any:
     return invs[0]
 
 
+def get_doi_link(doi: str) -> str:
+    if not doi.startswith("https://doi.org/"):
+        return f"https://doi.org/{doi}"
+
+    return doi
+
+
 for source_id, info in source_id_entries.items():
     db_source_id = DB_SOURCE.loc[DB_SOURCE["source_id"] == source_id, :]
+    dois_l = db_source_id["doi"].dropna().unique().tolist()
+    if len(dois_l) > 0:
+        dois_md = ";".join((f"[{doi}]({get_doi_link(doi)})" for doi in dois_l))
+    else:
+        dois_md = "Not provided"
 
     publication_status = db_source_id["publication_status"].unique().tolist()
     if all(v in ["never_published", "abandoned"] for v in publication_status):
@@ -63,6 +75,8 @@ for source_id, info in source_id_entries.items():
         f"# {source_id}",
         "",
         f"*ESGF link*: [{esgf_url}]({esgf_url})",
+        "",
+        f"*DOI(s)*: {dois_md}",
         "",
         "## Authors",
         "",
