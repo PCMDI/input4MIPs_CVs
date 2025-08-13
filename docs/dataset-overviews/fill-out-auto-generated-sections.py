@@ -191,9 +191,23 @@ def get_cmip7_phase_source_id_summary(
 
             raise ValueError(msg)
 
+        db_source_id = DB_SOURCE[DB_SOURCE["source_id"].isin(source_ids)]
+        dois_l = db_source_id["doi"].dropna().unique().tolist()
+        if len(dois_l) > 0:
+            dois_md = ", ".join((f"[{doi}]({get_doi_link(doi)})" for doi in dois_l))
+            if len(dois_l) > 1:
+                doi_s = "DOIs"
+            else:
+                doi_s = "DOI"
+
+            doi_line = f"{doi_s}: {dois_md}."
+
+        else:
+            doi_line = "No DOI provided"
+
         source_id_show = "; ".join(source_ids)
         out[idx] = (
-            f"1. *{description_html}:* [{source_id_show}]({get_esgf_search_url(source_ids)})"
+            f"1. *{description_html}:* [{source_id_show}]({get_esgf_search_url(source_ids)}) ({doi_line})"
         )
 
     if all("No data available" in v for v in out):
@@ -275,6 +289,16 @@ def add_cmip7_phase_source_id_summaries(
     return tuple(out)
 
 
+def get_doi_link(doi: str) -> str:
+    """
+    Get DOI link that can be used in markdown
+    """
+    if not doi.startswith("https://doi.org/"):
+        return f"https://doi.org/{doi}"
+
+    return doi
+
+
 def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, ...]:
     """
     Get the summary of the source IDs to use for each phase of CMIP7 for a given forcing
@@ -341,6 +365,22 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
                     "and process the data carefully."
                 )
 
+            db_source_id = DB_SOURCE[DB_SOURCE["source_id"].isin(source_ids)]
+            dois_l = db_source_id["doi"].dropna().unique().tolist()
+            if len(dois_l) > 0:
+                dois_md = ", ".join((f"[{doi}]({get_doi_link(doi)})" for doi in dois_l))
+                if len(dois_l) > 1:
+                    doi_s = "DOIs"
+                else:
+                    doi_s = "DOI"
+
+                doi_line = f"The data has the {doi_s}: {dois_md}."
+
+            else:
+                doi_line = "No DOIs are available for this data."
+
+            out.append("")
+            out.append(doi_line)
             out.append("")
 
             out.append(PHASES_COMMON_TEXT[phase])
