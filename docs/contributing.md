@@ -40,7 +40,7 @@ This captures the latest set of information we have queried from the ESGF index 
 It is generated via a GitHub action that automatically creates pull requests if new files have been published.
 If you need to run it manually, you can run it with the steps below:
 
-1. If the `venv` virtual environment doesn't exist, or isn't activated - make sure it is (see "Creating a Python virtual environment (`venv`)")
+1. If the `venv` virtual environment doesn't exist, or isn't activated - create/activate it (see "Creating a Python virtual environment (`venv`)")
 1. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-esgf-scrape.py --out-file Database/input-data/esgf-input4MIPs.json --n-threads 4`
 
 `Database/input-data/pmount` contains a number of JSON files.
