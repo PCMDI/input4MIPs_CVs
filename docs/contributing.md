@@ -70,7 +70,7 @@ gets combined to create `Database/input4MIPs_db_file_entries.json`.
 This combination is done using `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py`.
 In order to run this script, you should:
 
-1. If the `venv` virtual environment doesn't exist, or isn't activated - make sure it is (see "Creating a Python virtual environment (`venv`)")
+1. If the `venv` virtual environment doesn't exist, or isn't activated - create/activate it (see "Creating a Python virtual environment (`venv`)")
 1. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
 
 ## Generating the HTML pages
