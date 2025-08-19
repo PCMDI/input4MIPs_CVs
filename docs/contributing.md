@@ -80,7 +80,7 @@ Currently, the HTML pages are generated using
 `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py`.
 In order to run this script, you should:
 
-1. If the `venv` virtual environment doesn't exist, or isn't activated - make sure it is (see "Creating a Python virtual environment (`venv`)")
+1. If the `venv` virtual environment doesn't exist, or isn't activated - create/activate it (see "Creating a Python virtual environment (`venv`)")
 1. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
 
 The version is automatically read out of the `VERSION` file if it is not directly specified.
