@@ -79,7 +79,10 @@
     }
   ],
   "fundingReferences": [],
-  "identifier": {},
+  "identifier": {
+    "id": "10.25981/ESGF.input4MIPs.CMIP6Plus/2583903",
+    "identifierType": "DOI"
+  },
   "language": "en",
   "publication_year": 2023,
   "publisher": "Earth System Grid Federation",
