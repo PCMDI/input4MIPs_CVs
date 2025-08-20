@@ -6,12 +6,24 @@
 
 ## Authors
 
-1. Paul Durack ([ORCID 0000-0003-2835-1438](https://orcid.org/0000-0003-2835-1438))
-    - Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA
+1. Paul J. Durack ([ORCID 0000-0003-2835-1438](https://orcid.org/0000-0003-2835-1438))
+    - PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA
+
+2. Karl E. Taylor ([ORCID 0000-0002-6491-2135](https://orcid.org/0000-0002-6491-2135))
+    - PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA
+
+3. Sasha K. Ames ([ORCID 0000-0001-9981-2997](https://orcid.org/0000-0001-9981-2997))
+    - PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA
+
+4. Stephen Po-Chedley ([ORCID 0000-0002-0390-238X](https://orcid.org/0000-0002-0390-238X))
+    - PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA
+
+5. Chris Mauzey ([ORCID 0000-0003-1156-6774](https://orcid.org/0000-0003-1156-6774))
+    - PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA
 
 
 ## Basic metadata
 
 - source_id: PCMDI-AMIP-1-1-9
-- contact: PCMDI (pcmdi-cmip@llnl.gov)
+- contact: Paul J. Durack (durack1@llnl.gov; pauldurack@gmail.com); Karl E. Taylor (taylor13@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)
 - further_info_url: https://pcmdi.llnl.gov/mips/amip

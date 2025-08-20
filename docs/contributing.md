@@ -13,6 +13,20 @@ Under the hood, this action uses the command-line tool in
 This command-line tool ensures that the version is applied to all relevant places in the repository
 and also provides an interface to bump the version.
 
+## Creating a Python virtual environment (`venv`)
+
+Many of the steps described below require that a custom Python virtual environment is available.
+Rather than repeat these steps, we will document how to create this as an initial step, and thereafter, it can be activated and used repeatedly.
+
+1. Make a virtual environment (e.g. `python3 -m venv venv`)
+2. Activate the virtual environment 
+   (e.g. `source venv/bin/activate` - be careful not to activate multiple envs at once!)
+3. Install the requirements into the environment
+   (e.g. `pip install -r dev-requirements.txt`)
+
+There may be a need to update this environment ocassionally, however, in practice this should work fine once it is generated.
+Follow the prompts to update `pip` or other dependencies if prompted during install or execution.
+
 ## The database
 
 In `Database/input-data` there are three components:
@@ -26,12 +40,8 @@ This captures the latest set of information we have queried from the ESGF index 
 It is generated via a GitHub action that automatically creates pull requests if new files have been published.
 If you need to run it manually, you can run it with the steps below:
 
-1. Make a virtual environment (e.g. `python3 -m venv venv`)
-2. Activate the virtual environment 
-   (e.g. `source venv/bin/activate` - be careful not to activate multiple envs at once!)
-3. Install the requirements into the environment
-   (e.g. `pip install -r dev-requirements.txt`)
-4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-esgf-scrape.py --out-file Database/input-data/esgf-input4MIPs.json --n-threads 4`
+1. If the `venv` virtual environment doesn't exist, or isn't activated - create/activate it (see "Creating a Python virtual environment (`venv`)")
+1. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-esgf-scrape.py --out-file Database/input-data/esgf-input4MIPs.json --n-threads 4`
 
 `Database/input-data/pmount` contains a number of JSON files.
 Each file contains information about one file
@@ -60,11 +70,8 @@ gets combined to create `Database/input4MIPs_db_file_entries.json`.
 This combination is done using `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py`.
 In order to run this script, you should:
 
-1. Make a virtual environment (e.g. `python3 -m venv venv`)
-2. Activate the virtual environment (e.g. `source venv/bin/activate` - be careful not to activate multiple envs at once!)
-3. Install the requirements into the environment
-   (e.g. `pip install -r dev-requirements.txt`)
-4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
+1. If the `venv` virtual environment doesn't exist, or isn't activated - create/activate it (see "Creating a Python virtual environment (`venv`)")
+1. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
 
 ## Generating the HTML pages
 
@@ -73,12 +80,8 @@ Currently, the HTML pages are generated using
 `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py`.
 In order to run this script, you should:
 
-1. Reuse the existing `venv` environment (see above), or remake one (e.g. `python3 -m venv venv`)
-2. Activate the virtual environment (e.g. `source venv/bin/activate`)
-3. Install the requirements into the environment
-   (e.g. `pip install -r dev-requirements.txt`)
-4. Run the script 
-   e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
+1. If the `venv` virtual environment doesn't exist, or isn't activated - create/activate it (see "Creating a Python virtual environment (`venv`)")
+1. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
 
 The version is automatically read out of the `VERSION` file if it is not directly specified.
 

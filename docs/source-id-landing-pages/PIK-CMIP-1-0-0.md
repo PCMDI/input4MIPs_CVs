@@ -27,7 +27,7 @@
     - School of Geographical Sciences, University of Bristol, Bristol, UK
     - WorldPop, University of Southampton, Southampton, UK
 
-7. Andrew Tatem ([ORCID 00000-0002-7270-941X](https://orcid.org/00000-0002-7270-941X))
+7. Andrew Tatem ([ORCID 0000-0002-7270-941X](https://orcid.org/0000-0002-7270-941X))
     - WorldPop, University of Southampton, Southampton, UK
 
 
