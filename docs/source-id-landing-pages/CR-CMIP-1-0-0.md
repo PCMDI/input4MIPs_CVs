@@ -2,6 +2,8 @@
 
 *ESGF link*: [https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-1-0-0%22%5D%7D](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-1-0-0%22%5D%7D)
 
+*DOI(s)*: [https://doi.org/10.5281/zenodo.14892947](https://doi.org/10.5281/zenodo.14892947)
+
 ## Authors
 
 1. Zebedee Nicholls ([ORCID 0000-0002-4767-2723](https://orcid.org/0000-0002-4767-2723))
