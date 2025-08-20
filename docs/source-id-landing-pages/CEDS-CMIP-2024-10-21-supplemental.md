@@ -2,6 +2,8 @@
 
 *ESGF link*: [https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-10-21-supplemental%22%5D%7D](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-10-21-supplemental%22%5D%7D)
 
+*DOI(s)*: [10.5281/zenodo.13952845](https://doi.org/10.5281/zenodo.13952845)
+
 ## Authors
 
 1. Rachel Hoesly ([ORCID 0000-0003-0965-2729](https://orcid.org/0000-0003-0965-2729))

@@ -531,6 +531,104 @@
         "mip_era":"CMIP7",
         "source_version":"2.1"
     },
+    "FZJ-CMIP-nitrogen-1-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Institute of Energy and Climate Research - Stratosphere (ICE-4), Forschungszentrum Juelich GmbH, Juelich, Germany",
+                    "Department of Meteorology, University of Reading, Reading, United Kingdom"
+                ],
+                "email":"m.i.hegglin@fz-juelich.de",
+                "name":"Michaela Hegglin",
+                "orcid":"0000-0003-2820-9044"
+            },
+            {
+                "affiliations":[
+                    "Atmospheric Chemistry Observations and Modeling Laboratory, National Center for Atmospheric Research, Boulder, CO, USA"
+                ],
+                "email":"dkin@ucar.edu",
+                "name":"Douglas Kinnison",
+                "orcid":"0000-0002-3418-0834"
+            },
+            {
+                "affiliations":[
+                    "Institute of Energy and Climate Research - Stratosphere (ICE-4), Forschungszentrum Juelich GmbH, Juelich, Germany"
+                ],
+                "email":"x.ma@fz-juelich.de",
+                "name":"Xiaodan Ma",
+                "orcid":"0000-0002-7001-7620"
+            },
+            {
+                "affiliations":[
+                    "Julich Supercomputing Center, Forschungszentrum Juelich GmbH, Juelich, Germany"
+                ],
+                "email":"o.stein@fz-juelich.de",
+                "name":"Olaf Stein",
+                "orcid":"0000-0002-6684-7103"
+            }
+        ],
+        "contact":"Michaela Hegglin (m.i.hegglin@fz-juelich.de); Douglas Kinnison (dkin@ucar.edu); Xiaodan Ma (x.ma@fz-juelich.de); Olaf Stein (o.stein@fz-juelich.de)",
+        "dataset_category":[ "surfaceFluxes" ],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/nitrogen-deposition",
+        "institution_id":"FZJ",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0"
+    },
+    "FZJ-CMIP-ozone-1-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Institute of Energy and Climate Research - Stratosphere (ICE-4), Forschungszentrum Juelich GmbH, Juelich, Germany",
+                    "Department of Meteorology, University of Reading, Reading, United Kingdom"
+                ],
+                "email":"m.i.hegglin@fz-juelich.de",
+                "name":"Michaela Hegglin",
+                "orcid":"0000-0003-2820-9044"
+            },
+            {
+                "affiliations":[
+                    "Atmospheric Chemistry Observations and Modeling Laboratory, National Center for Atmospheric Research, Boulder, CO, USA"
+                ],
+                "email":"dkin@ucar.edu",
+                "name":"Douglas Kinnison",
+                "orcid":"0000-0002-3418-0834"
+            },
+            {
+                "affiliations":[
+                    "Institute of Energy and Climate Research - Stratosphere (ICE-4), Forschungszentrum Juelich GmbH, Juelich, Germany"
+                ],
+                "email":"x.ma@fz-juelich.de",
+                "name":"Xiaodan Ma",
+                "orcid":"0000-0002-7001-7620"
+            },
+            {
+                "affiliations":[
+                    "Environment and Climate Change Canada, Climate Research Division, Montreal, Canada"
+                ],
+                "email":"david.plummer@ec.gc.ca",
+                "name":"David Plummer",
+                "orcid":"0000-0001-8087-3976"
+            },
+            {
+                "affiliations":[
+                    "Julich Supercomputing Center, Forschungszentrum Juelich GmbH, Juelich, Germany"
+                ],
+                "email":"o.stein@fz-juelich.de",
+                "name":"Olaf Stein",
+                "orcid":"0000-0002-6684-7103"
+            }
+        ],
+        "contact":"Michaela Hegglin (m.i.hegglin@fz-juelich.de); Douglas Kinnison (dkin@ucar.edu); Xiaodan Ma (x.ma@fz-juelich.de); David Plummer (david.plummer@ec.gc.ca); Olaf Stein (o.stein@fz-juelich.de)",
+        "dataset_category":[ "ozone" ],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/ozone",
+        "institution_id":"FZJ",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0"
+    },
     "ImperialCollege-3-0":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -1529,5 +1627,42 @@
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP7",
         "source_version":"3.1.1"
+    },
+    "UReading-CCMI-1-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Institute of Energy and Climate Research - Stratosphere (ICE-4), Forschungszentrum Juelich GmbH, Juelich, Germany",
+                    "Department of Meteorology, University of Reading, Reading, United Kingdom"
+                ],
+                "email":"m.i.hegglin@fz-juelich.de",
+                "name":"Michaela Hegglin",
+                "orcid":"0000-0003-2820-9044"
+            },
+            {
+                "affiliations":[
+                    "Atmospheric Chemistry Observations and Modeling Laboratory, National Center for Atmospheric Research, Boulder, CO, USA"
+                ],
+                "email":"dkin@ucar.edu",
+                "name":"Douglas Kinnison",
+                "orcid":"0000-0002-3418-0834"
+            },
+            {
+                "affiliations":[
+                    "Environment and Climate Change Canada, Climate Research Division, Montreal, Canada"
+                ],
+                "email":"david.plummer@ec.gc.ca",
+                "name":"David Plummer",
+                "orcid":"0000-0001-8087-3976"
+            }
+        ],
+        "contact":"Michaela Hegglin (m.i.hegglin@fz-juelich.de); Douglas Kinnison (dkin@ucar.edu); David Plummer (david.plummer@ec.gc.ca)",
+        "dataset_category":[ "ozone" ],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/ozone",
+        "institution_id":"UReading",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.1"
     }
 }

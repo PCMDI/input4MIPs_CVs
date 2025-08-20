@@ -22,6 +22,34 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.44 (2025-08-20)
+
+
+### 🐛 Bug Fixes
+
+- Updated the status of the simple plumes (it was incorrectly marked as preliminary) ([#333](https://github.com/PCMDI/input4MIPs_CVs/pull/333))
+
+
+## input4MIPs CVs v6.6.43 (2025-08-20)
+
+
+### 🆕 Features
+
+- Registered source IDs for the forthcoming ozone and nitrogen deposition data ([#186](https://github.com/PCMDI/input4MIPs_CVs/pull/186))
+
+
+## input4MIPs CVs v6.6.42 (2025-08-20)
+
+
+### 📚 Improved Documentation
+
+- Added DOIs to the dataset overview summary, individual dataset info, delivery summary database view and source ID landing pages ([#322](https://github.com/PCMDI/input4MIPs_CVs/pull/322))
+
+### 🔧 Trivial/Internal Changes
+
+- [#317](https://github.com/PCMDI/input4MIPs_CVs/pull/317), [#322](https://github.com/PCMDI/input4MIPs_CVs/pull/322), [#330](https://github.com/PCMDI/input4MIPs_CVs/pull/330)
+
+
 ## input4MIPs CVs v6.6.41 (2025-08-08)
 
 

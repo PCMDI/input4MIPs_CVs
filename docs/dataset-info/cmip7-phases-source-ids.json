@@ -1,5 +1,5 @@
 {
-    "slfc_co2_emms": {
+    "slcf_co2_emms": {
         "testing": {
             "source_ids": [
                 "CEDS-CMIP-2024-11-25",
@@ -28,7 +28,7 @@
     },
     "ozone": {
         "testing": null,
-        "cmip7": null
+        "cmip7": { "source_ids": [ "FZJ-CMIP-ozone-1-0" ]}
     },
     "simple-plumes": {
         "testing": null,
@@ -52,7 +52,7 @@
     },
     "nitrogen-deposition": {
         "testing": null,
-        "cmip7": null
+        "cmip7": { "source_ids": [ "FZJ-CMIP-nitrogen-1-0" ] }
     },
     "co2_isotopes": {
         "testing": null,
