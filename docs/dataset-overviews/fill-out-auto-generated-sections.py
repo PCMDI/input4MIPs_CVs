@@ -13,6 +13,7 @@ from collections.abc import Iterable
 from pathlib import Path
 
 import pandas as pd
+from packaging.version import Version
 
 HERE = Path(__file__).parent
 
@@ -36,27 +37,16 @@ PHASES_COMMON_TEXT: dict[str, str] = {
         "If you have any feedback, please add it to the "
         "[relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions)."
     ),
-    "ar7_fast_track": (
-        "This data is for the CMIP7 AR7 fast track.\n"
-        "All data sets for use in the fast track "
+    "cmip7": (
+        "This data is for use in CMIP7 production simulations.\n"
+        "All data sets for use in CMIP7 production simulations "
         "are published with a `mip_era` metadata value of 'CMIP7'.\n"
-        "This metadata value appears in both the file's global metadata "
+        "This metadata value appears both in the file's global metadata "
         "as well as its metadata on ESGF.\n"
         "\n"
         "If you find an issue, please\n"
         "[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)\n"
         "so that the identification and resolution of this issue is publicly accessible."
-    ),
-    "cmip7": (
-        "This data will be for CMIP7.\n"
-        "All data sets for use in CMIP7 "
-        "will be published with a `mip_era` metadata value of 'CMIP7'.\n"
-        "This metadata value will appear both in the file's global metadata "
-        "as well as its metadata on ESGF.\n"
-        "\n"
-        "Further details will follow after the fast track is underway\n"
-        "(including details about how updates to this data "
-        "will be handled over the lifetime of CMIP7)."
     ),
 }
 
@@ -156,7 +146,18 @@ def get_cmip7_phase_source_id_summary(
             ]
 
         # May need a more sophisticated sorting algorithm at some point
-        source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
+        if any(v.startswith("PCMDI-AMIP") for v in phase_info["source_ids"]):
+            all_source_ids = tuple(db_source_id_stub_rows["source_id"].unique())
+            version_ids = tuple(
+                v.split("PCMDI-AMIP-")[-1].replace("-", ".") for v in source_ids
+            )
+            pairs = list(zip(all_source_ids, version_ids))[::-1]
+            pairs.sort(key=lambda x: Version(x[1]))
+            source_ids_sorted = [v[0] for v in pairs]
+
+        else:
+            source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
+
         source_id_latest = source_ids_sorted[-1]
 
         ok_if_not_latest = (
@@ -190,9 +191,23 @@ def get_cmip7_phase_source_id_summary(
 
             raise ValueError(msg)
 
+        db_source_id = DB_SOURCE[DB_SOURCE["source_id"].isin(source_ids)]
+        dois_l = db_source_id["doi"].dropna().unique().tolist()
+        if len(dois_l) > 0:
+            dois_md = ", ".join((f"[{doi}]({get_doi_link(doi)})" for doi in dois_l))
+            if len(dois_l) > 1:
+                doi_s = "DOIs"
+            else:
+                doi_s = "DOI"
+
+            doi_line = f"{doi_s}: {dois_md}."
+
+        else:
+            doi_line = "No DOI provided"
+
         source_id_show = "; ".join(source_ids)
         out[idx] = (
-            f"1. *{description_html}:* [{source_id_show}]({get_esgf_search_url(source_ids)})"
+            f"1. *{description_html}:* [{source_id_show}]({get_esgf_search_url(source_ids)}) ({doi_line})"
         )
 
     if all("No data available" in v for v in out):
@@ -274,6 +289,16 @@ def add_cmip7_phase_source_id_summaries(
     return tuple(out)
 
 
+def get_doi_link(doi: str) -> str:
+    """
+    Get DOI link that can be used in markdown
+    """
+    if not doi.startswith("https://doi.org/"):
+        return f"https://doi.org/{doi}"
+
+    return doi
+
+
 def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, ...]:
     """
     Get the summary of the source IDs to use for each phase of CMIP7 for a given forcing
@@ -291,19 +316,15 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
     out = [
         "### Source IDs for CMIP7 phases",
         "",
-        "The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.",
+        "The source ID that identifies the dataset to use in CMIP7 is given below.",
         "",
     ]
-    for phase in ("ar7_fast_track", "testing", "cmip7"):
+    for phase in ("cmip7", "testing"):
         info = CMIP7_PHASES_SOURCE_IDS[forcing][phase]
 
         if phase == "testing":
             cmip7_phase_pretty_title = "Testing"
             cmip7_phase_pretty = "testing"
-
-        elif phase == "ar7_fast_track":
-            cmip7_phase_pretty_title = "CMIP7 AR7 fast track"
-            cmip7_phase_pretty = "CMIP7 AR7 fast track"
 
         elif phase == "cmip7":
             cmip7_phase_pretty_title = "CMIP7"
@@ -337,17 +358,33 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
                     [f"[{sid}]({get_esgf_search_url([sid])})" for sid in source_ids]
                 )
                 out.append(
-                    f"For the {cmip7_phase_pretty} of CMIP7, "
+                    f"For the {cmip7_phase_pretty} phase of CMIP7, "
                     f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n\n"
                     "Retrieving and only using valid data will require some care.\n"
-                    "Please make sure you read the guidance given at the start of this Summary section\n"
+                    "Please make sure you read the guidance given at the start of the Summary section\n"
                     "and process the data carefully."
                 )
 
+            db_source_id = DB_SOURCE[DB_SOURCE["source_id"].isin(source_ids)]
+            dois_l = db_source_id["doi"].dropna().unique().tolist()
+            if len(dois_l) > 0:
+                dois_md = ", ".join((f"[{doi}]({get_doi_link(doi)})" for doi in dois_l))
+                if len(dois_l) > 1:
+                    doi_s = "DOIs"
+                else:
+                    doi_s = "DOI"
+
+                doi_line = f"The data has the {doi_s}: {dois_md}."
+
+            else:
+                doi_line = "No DOIs are available for this data."
+
+            out.append("")
+            out.append(doi_line)
             out.append("")
 
-        out.append(PHASES_COMMON_TEXT[phase])
-        out.append("")
+            out.append(PHASES_COMMON_TEXT[phase])
+            out.append("")
 
     return tuple(out)
 

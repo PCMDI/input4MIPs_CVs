@@ -6,135 +6,14 @@
 <meta name="description" content="Controlled vocabulary for input4MIPs" />
 <meta name="keywords" content="HTML, CSS, JavaScript" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" type="text/css" charset="utf-8" href="https://pcmdi.github.io/assets/dataTables/jquery.dataTables.min.css" />
-<script type="text/javascript" charset="utf-8" src="https://pcmdi.github.io/assets/jquery/jquery.slim.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="https://pcmdi.github.io/assets/dataTables/jquery.dataTables.min.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script type="text/javascript" src="https://pcmdi.github.io/assets/google/googleAnalyticsTag.js" ></script>
 <script type="text/javascript">
-//<![CDATA[
-$(document).ready( function () {
-    $('#table_id').DataTable({pageLength: 25});
-    } );
-//]]>
 </script>
 <title>input4MIPs delivery summary</title>
 </head>
 <body>
-<p><h1>input4MIPs delivery summary: v6.6.14a1</h1><p>
-<h4>
-<a href='/'>Home</a>
-| <a href='input4MIPs_delivery-summary.html'>Delivery summary view</a>
-| <a href='input4MIPs_source-id_CMIP7.html'>Source ID-level view CMIP7</a>
-| <a href='input4MIPs_datasets_CMIP7.html'>Dataset-level view CMIP7</a>
-| <a href='input4MIPs_files_CMIP7.html'>File-level view CMIP7</a>
-| <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view CMIP6Plus</a>
-| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view CMIP6Plus</a>
-| <a href='input4MIPs_files_CMIP6Plus.html'>File-level view CMIP6Plus</a>
-</h4>
-<table id="table_id" class="display compact">
-  <thead>
-    <tr>
-      <th>Dataset #</th>
-      <th>Forcing dataset</th>
-      <th>Source ID</th>
-      <th>Status</th>
-      <th>ESGF publication status</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <th>Dataset #</th>
-      <th>Forcing dataset</th>
-      <th>Source ID</th>
-      <th>Status</th>
-      <th>ESGF publication status</th>
-    </tr>
-  </tfoot>
-    <tr>
-      <td>1</td>
-      <td><b><a href='https://www.pnnl.gov/projects/ceds' target='_blank'>Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions</a></b></br>Internal docs: <a href='../dataset-overviews/anthropogenic-slcf-co2-emissions' target='_blank'>here</a></td>
-      <td>CEDS-CMIP-2024-11-25, CEDS-CMIP-2024-11-25-supplemental, CEDS-CMIP-2024-10-21, CEDS-CMIP-2024-10-21-supplemental</td>
-      <td>Preliminary dataset available</td>
-      <td>Available (but some data has been retracted, be careful!): <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D' target='_blank'>CEDS-CMIP-2024-10-21 (1750-01 to 2022-12)</a>, <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21-supplemental%22%7D' target='_blank'>CEDS-CMIP-2024-10-21-supplemental (1750-01 to 2022-12)</a>, <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25%22%7D' target='_blank'>Retracted</a>, <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25-supplemental%22%7D' target='_blank'>CEDS-CMIP-2024-11-25-supplemental (1750-01 to 2022-12)</a></td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td><b><a href='https://www.globalfiredata.org' target='_blank'>Open biomass burning emissions</a></b></br>Internal docs: <a href='../dataset-overviews/open-biomass-burning-emissions' target='_blank'>here</a></td>
-      <td>DRES-CMIP-BB4CMIP7-2-0</td>
-      <td>CMIP7 dataset available</td>
-      <td>Available: <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-2-0%22%7D' target='_blank'>DRES-CMIP-BB4CMIP7-2-0 (1750-01 to 2023-12)</a></td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td><b><a href='https://luh.umd.edu' target='_blank'>Land use</a></b></br>Internal docs: <a href='../dataset-overviews/land-use' target='_blank'>here</a></td>
-      <td>UofMD-landState-3-0</td>
-      <td>Preliminary dataset available</td>
-      <td>Available: <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-0%22%7D' target='_blank'>UofMD-landState-3-0 (0850 to 2024)</a></td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td><b><a href='https://github.com/climate-resource/CMIP-GHG-Concentration-Generation' target='_blank'>Greenhouse gas concentrations</a></b></br>Internal docs: <a href='../dataset-overviews/greenhouse-gas-concentrations' target='_blank'>here</a></td>
-      <td>CR-CMIP-1-0-0</td>
-      <td>CMIP7 dataset available</td>
-      <td>Available: <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-1-0-0%22%7D' target='_blank'>CR-CMIP-1-0-0 (0001-01 to 2022-12)</a></td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td><b>CO<sub>2</sub> isotopes</b></br>Internal docs: <a href='../dataset-overviews/co2-isotopes' target='_blank'>here</a></td>
-      <td>TBD</td>
-      <td>Data in preparation</td>
-      <td>Expected: Unclear, waiting to hear from the data provider (please raise an issue if you need an updated on this dataset's status)</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td><b><a href='https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/' target='_blank'>Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties</a></b></br>Internal docs: <a href='../dataset-overviews/stratospheric-volcanic-so2-emissions-aod' target='_blank'>here</a></td>
-      <td>UOEXETER-CMIP-2-0-0</td>
-      <td>CMIP7 dataset available</td>
-      <td>Available: <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-2-0-0%22%7D' target='_blank'>UOEXETER-CMIP-2-0-0 (1750-01-01 to 2023-12-01)</a></td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td><b>Ozone concentrations</b></br>Internal docs: <a href='../dataset-overviews/ozone' target='_blank'>here</a></td>
-      <td>TBD</td>
-      <td>Awaiting finalization of upstream forcings: solar, volcanic, GHG/ODS concentrations, SLCF emissions, land-use changes</td>
-      <td>Expected: piControl - end of March, historical - end of May.</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td><b>Nitrogen deposition</b></br>Internal docs: <a href='../dataset-overviews/nitrogen-deposition' target='_blank'>here</a></td>
-      <td>TBD</td>
-      <td>Awaiting finalization of upstream forcings: solar, volcanic, GHG/ODS concentrations, SLCF emissions, land-use changes</td>
-      <td>Expected: piControl - end of March, historical - end of May.</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td><b><a href='https://www.solarisheppa.kit.edu/75.php' target='_blank'>Solar</a></b></br>Internal docs: <a href='../dataset-overviews/solar' target='_blank'>here</a></td>
-      <td>SOLARIS-HEPPA-CMIP-4-6</td>
-      <td>CMIP7 dataset available</td>
-      <td>Available: <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%7D' target='_blank'>SOLARIS-HEPPA-CMIP-4-6 (1850-01-01 to 2023-12-31)</a></td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td><b><a href='https://pcmdi.llnl.gov/mips/amip' target='_blank'>AMIP sea-surface temperature and sea-ice boundary forcing</a></b></br>Internal docs: <a href='../dataset-overviews/amip-sst-sea-ice-boundary-forcing' target='_blank'>here</a></td>
-      <td>PCMDI-AMIP-1-1-9</td>
-      <td>Final v1 dataset available. v2 dataset awaiting HadISST v2.4 release.</td>
-      <td>Available: <a href='https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-9%22%7D' target='_blank'>PCMDI-AMIP-1-1-9 (1870-01 to 2022-12)</a></td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td><b><a href='https://zenodo.org/records/14512962' target='_blank'>Aerosol optical properties/MACv2-SP</a></b></br>Internal docs: <a href='../dataset-overviews/aerosol-optical-properties-macv2-sp' target='_blank'>here</a></td>
-      <td>NA (not released on ESGF, see <a href='https://zenodo.org/records/14512962' target='_blank'>https://zenodo.org/records/14512962</a> instead)</td>
-      <td>Preliminary dataset available</td>
-      <td>Available: <a href='https://zenodo.org/records/14512962' target='_blank'>https://zenodo.org/records/14512962</a></td>
-    </tr>
-    <tr>
-      <td>12</td>
-      <td><b>Population density</b></br>Internal docs: <a href='../dataset-overviews/population' target='_blank'>here</a></td>
-      <td>TBD</td>
-      <td>Unknown: data provider TBD</td>
-      <td>Expected: Unknown: data provider TBD</td>
-    </tr>
-</table>
+    This page has moved, please see <a href="../database-views/input4MIPs_delivery-summary.html">the delivery summary here</a>
+    and update your bookmarks accordingly.
 </body>
 </html>

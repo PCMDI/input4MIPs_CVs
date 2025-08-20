@@ -35,6 +35,10 @@ set-version:  ## set the repository's version to the value of the environment va
 update-html-pages:  ## update our html pages
 	venv/bin/python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .
 
+.PHONY: update-source-id-pages
+update-source-id-pages:  ## update our source ID landing pages
+	venv/bin/python docs/source-id-landing-pages/auto-generate-source-id-pages.py
+
 .PHONY: docs
 docs:  ## build the docs
 	venv/bin/mkdocs build

@@ -8,11 +8,7 @@
 - Names: Thomas Aubry
 - Emails: t.aubry@exeter.ac.uk
 
-Testing versions of the stratospheric volcanic SO<sub>2</sub> emissions
-and aerosol optical properties are
-[available on the ESGF](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6Plus%22%2C%22institution_id%22%3A%22uoexeter%22%7D).
-These versions are for testing only, do not use them for any simluations you're not willing to throw away.
-
+The CMIP7 version of the volcanic forcing dataset has been released.
 Documentation on the dataset is hosted
 [externally](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
 This contains a detailed dive into the data.
@@ -27,15 +23,17 @@ If you find any issues, please contribute to
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
 
-The source ID that identifies the dataset to use in the different phases of CMIP7 is given below.
+The source ID that identifies the dataset to use in CMIP7 is given below.
 
-#### CMIP7 AR7 fast track
+#### CMIP7
 
-For the CMIP7 AR7 fast track phase of CMIP7, use data with the source ID [UOEXETER-CMIP-2-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UOEXETER-CMIP-2-0-0%22%5D%7D)
+For the CMIP7 phase of CMIP7, use data with the source ID [UOEXETER-CMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UOEXETER-CMIP-2-2-1%22%5D%7D)
 
-This data is for the CMIP7 AR7 fast track.
-All data sets for use in the fast track are published with a `mip_era` metadata value of 'CMIP7'.
-This metadata value appears in both the file's global metadata as well as its metadata on ESGF.
+The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522673](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522673).
+
+This data is for use in CMIP7 production simulations.
+All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
+This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
 
 If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
@@ -45,22 +43,13 @@ so that the identification and resolution of this issue is publicly accessible.
 
 For the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UOEXETER-CMIP-1-3-1%22%5D%7D)
 
+No DOIs are available for this data.
+
 This data is for testing (both of the forcing data and of modelling workflows) only.
 Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
 (The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
-
-#### CMIP7
-
-No data available for this phase yet.
-
-This data will be for CMIP7.
-All data sets for use in CMIP7 will be published with a `mip_era` metadata value of 'CMIP7'.
-This metadata value will appear both in the file's global metadata as well as its metadata on ESGF.
-
-Further details will follow after the fast track is underway
-(including details about how updates to this data will be handled over the lifetime of CMIP7).
 
 <!--- end-cmip7-phases-source-ids -->
 
@@ -71,8 +60,7 @@ Further details will follow after the fast track is underway
 There are dedicated pre-industrial control files for aerosol optical properties.
 For aerosol optical properties, these are provided as climatologies
 and hence have `monC` in their name
-(they also have a time axis with only twelve points,
-so they're hard to miss).
+(they also have a time axis with only twelve points, so they're hard to miss).
 There is no recommendation for teams who want to run pre-industrial control
 with volcanic emissions as yet, that is still being developed
 in collaboration with early testing teams who are interested in this application.
@@ -126,6 +114,9 @@ because the data is coming from a different provider.
 The naming may also be different.
 Overall, we would say that the data is more uniform now
 and in line with other input4MIPs data and conventions.
+We do not have a direct mapping/translation guide at this stage
+(although there is some detail in
+[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true)).
 
 ### Data
 
@@ -135,6 +126,13 @@ For a full dive into the changes from CMIP6, see
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### UOEXETER-CMIP-2-0-0
+
+v2.2.1 resolves issues with NaN values in v2.0.0 and updates a few other issues (notably the
+latitudinal distrbution of the Agung eruption). These updates affect both the historical values and
+the pre-industrial climatologies. As a result of this change, v2.0.0 is deprecated. Please restart
+any simulations that used v2.0.0 and use v2.2.1 instead.
 
 ### UOEXETER-CMIP-1-3-1
 

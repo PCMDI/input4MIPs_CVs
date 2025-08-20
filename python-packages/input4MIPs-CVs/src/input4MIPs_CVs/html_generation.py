@@ -408,10 +408,6 @@ def get_delivery_summary_view(
     db: pd.DataFrame,
     delivery_summary_info: dict[str, Any],
     dataset_info: dict[str, Any],
-    view_cols_from_db: tuple[str, ...] = (
-        "source_id",
-        "publication_status",
-    ),
 ) -> pd.DataFrame:
     """
     Get the delivery summary view of the database
@@ -431,9 +427,6 @@ def get_delivery_summary_view(
     dataset_info
         Dataset information
 
-    view_cols_from_db
-        The columns from the database which should appear in the generated view.
-
     Returns
     -------
     :
@@ -443,6 +436,7 @@ def get_delivery_summary_view(
     for ds_id, info_d in delivery_summary_info.items():
         tmp = {}
         tmp["Dataset #"] = dataset_info[ds_id]["dataset_number"]
+
         input4MIPs_CVs_internal_page = dataset_info[ds_id][
             "input4MIPs_CVS_internal_page"
         ]
@@ -455,8 +449,10 @@ def get_delivery_summary_view(
                 tmp["Forcing dataset"] = (
                     f"<a href='{info_d['url']}' target='_blank'>{description_html}</a>"
                 )
+                url = info_d["url"]
+                tmp["DOI(s)"] = url
                 tmp["Source ID"] = (
-                    f"NA (not released on ESGF, see {format_url_for_html(info_d['url'], info_d['url'])} instead)"
+                    f"NA (not released on ESGF, see {format_url_for_html(url, url)} instead)"
                 )
                 if "status" in info_d:
                     tmp["Status"] = info_d["status"]
@@ -464,7 +460,7 @@ def get_delivery_summary_view(
                     tmp["Status"] = "Preliminary dataset available"
 
                 tmp["ESGF publication status"] = (
-                    f"Available: {format_url_for_html(info_d['url'], info_d['url'])}"
+                    f"Available: {format_url_for_html(url, url)}"
                 )
 
             else:
@@ -476,6 +472,7 @@ def get_delivery_summary_view(
                     tmp["Forcing dataset"] = description_html
 
                 tmp["Source ID"] = "TBD"
+                tmp["DOI(s)"] = "TBD"
                 tmp["Status"] = info_d["status"]
                 tmp["ESGF publication status"] = (
                     f"Expected: {info_d['expected_publication']}"
@@ -485,6 +482,11 @@ def get_delivery_summary_view(
             db_source_ids = db[
                 db["source_id"].isin([v.strip() for v in info_d["source_ids"]])
             ]
+            dois = db_source_ids["doi"].dropna().unique().tolist()
+            if len(dois) > 0:
+                tmp["DOI(s)"] = ";".join(dois)
+            else:
+                tmp["DOI(s)"] = "Not provided"
 
             url_to_use = None
             if "url" in info_d:
@@ -598,7 +600,7 @@ def get_delivery_summary_view(
                 msg = (
                     f"publication status for source_ids={info_d['source_ids']} "
                     f"is {publication_status}. "
-                    "Please check the source ID being used in the summary view."
+                    "Please check the source ID being used in `docs/dataset-info/delivery-summary.json`."
                 )
                 raise ValueError(msg)
 
@@ -617,8 +619,9 @@ def get_delivery_summary_view(
         [
             "Dataset #",
             "Forcing dataset",
-            "Source ID",
             "Status",
+            "DOI(s)",
+            "Source ID",
             "ESGF publication status",
         ]
     ]
@@ -723,7 +726,6 @@ def get_db_views_to_write(
         ]
         res_l.extend(entries)
 
-    # More than one to ensure we don't break old links
     delivery_summaries = [
         (
             delivery_summary_view,
@@ -732,9 +734,6 @@ def get_db_views_to_write(
             False,
         )
         for page_path in (
-            repo_root_dir
-            / html_dir_rel_to_root
-            / "input4MIPs_delivery-summary_CMIP6Plus.html",
             repo_root_dir / html_dir_rel_to_root / "input4MIPs_delivery-summary.html",
         )
     ]

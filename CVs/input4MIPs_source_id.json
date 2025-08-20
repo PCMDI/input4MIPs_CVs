@@ -1,27 +1,29 @@
 {
     "CEDS-CMIP-2024-07-08":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Rachel Hoesly",
-                "email": "rachel.hoesly@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-0965-2729"
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
             },
             {
-                "name": "Steve Smith",
-                "email": "ssmith@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-3248-5607"
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
             }
         ],
         "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"https://www.pnnl.gov/projects/ceds",
         "institution_id":"PNNL-JGCRI",
         "license_id":"CC BY 4.0",
@@ -29,28 +31,30 @@
         "source_version":"2024-07-08"
     },
     "CEDS-CMIP-2024-07-08-supplemental":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Rachel Hoesly",
-                "email": "rachel.hoesly@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-0965-2729"
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
             },
             {
-                "name": "Steve Smith",
-                "email": "ssmith@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-3248-5607"
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
             }
         ],
         "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"https://www.pnnl.gov/projects/ceds",
         "institution_id":"PNNL-JGCRI",
         "license_id":"CC BY 4.0",
@@ -58,28 +62,30 @@
         "source_version":"2024-07-08"
     },
     "CEDS-CMIP-2024-10-21":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Rachel Hoesly",
-                "email": "rachel.hoesly@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-0965-2729"
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
             },
             {
-                "name": "Steve Smith",
-                "email": "ssmith@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-3248-5607"
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
             }
         ],
         "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"https://www.pnnl.gov/projects/ceds",
         "institution_id":"PNNL-JGCRI",
         "license_id":"CC BY 4.0",
@@ -87,28 +93,30 @@
         "source_version":"2024-10-21"
     },
     "CEDS-CMIP-2024-10-21-supplemental":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Rachel Hoesly",
-                "email": "rachel.hoesly@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-0965-2729"
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
             },
             {
-                "name": "Steve Smith",
-                "email": "ssmith@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-3248-5607"
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
             }
         ],
         "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"https://www.pnnl.gov/projects/ceds",
         "institution_id":"PNNL-JGCRI",
         "license_id":"CC BY 4.0",
@@ -116,28 +124,30 @@
         "source_version":"2024-10-21"
     },
     "CEDS-CMIP-2024-11-25":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Rachel Hoesly",
-                "email": "rachel.hoesly@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-0965-2729"
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
             },
             {
-                "name": "Steve Smith",
-                "email": "ssmith@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-3248-5607"
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
             }
         ],
         "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"https://www.pnnl.gov/projects/ceds",
         "institution_id":"PNNL-JGCRI",
         "license_id":"CC BY 4.0",
@@ -145,59 +155,187 @@
         "source_version":"2024-11-25"
     },
     "CEDS-CMIP-2024-11-25-supplemental":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Rachel Hoesly",
-                "email": "rachel.hoesly@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-0965-2729"
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
             },
             {
-                "name": "Steve Smith",
-                "email": "ssmith@pnnl.gov",
-                "affiliations": [
+                "affiliations":[
                     "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
-                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
                 ],
-                "orcid": "0000-0003-3248-5607"
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
             }
         ],
         "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"https://www.pnnl.gov/projects/ceds",
         "institution_id":"PNNL-JGCRI",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "source_version":"2024-11-25"
     },
-    "CR-CMIP-0-2-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+    "CEDS-CMIP-2025-03-18":{
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Zebedee Nicholls",
-                "email": "zebedee.nicholls@climate-resource.com",
-                "affiliations": [
+                "affiliations":[
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
+                ],
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
+            },
+            {
+                "affiliations":[
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
+                ],
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
+            }
+        ],
+        "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://www.pnnl.gov/projects/ceds",
+        "institution_id":"PNNL-JGCRI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"2025-03-18"
+    },
+    "CEDS-CMIP-2025-03-18-supplemental":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
+                ],
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
+            },
+            {
+                "affiliations":[
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
+                    "Center for Global Sustainability, University of Maryland, College Park, MD, USA"
+                ],
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
+            }
+        ],
+        "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://www.pnnl.gov/projects/ceds",
+        "institution_id":"PNNL-JGCRI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"2025-03-18"
+    },
+    "CEDS-CMIP-2025-04-18":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
+                ],
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
+            },
+            {
+                "affiliations":[
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
+                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                ],
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
+            }
+        ],
+        "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://www.pnnl.gov/projects/ceds",
+        "institution_id":"PNNL-JGCRI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"2025-04-18"
+    },
+    "CEDS-CMIP-2025-04-18-supplemental":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA"
+                ],
+                "email":"rachel.hoesly@pnnl.gov",
+                "name":"Rachel Hoesly",
+                "orcid":"0000-0003-0965-2729"
+            },
+            {
+                "affiliations":[
+                    "Joint Global Change Research Institute, Pacific Northwest National Laboratory, College Park, MD, USA",
+                    "Department of Atmospheric and Oceanic Science, University of Maryland, College Park, MD, USA"
+                ],
+                "email":"ssmith@pnnl.gov",
+                "name":"Steve Smith",
+                "orcid":"0000-0003-3248-5607"
+            }
+        ],
+        "contact":"Rachel Hoesly (rachel.hoesly@pnnl.gov); Steve Smith (ssmith@pnnl.gov)",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://www.pnnl.gov/projects/ceds",
+        "institution_id":"PNNL-JGCRI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"2025-04-18"
+    },
+    "CR-CMIP-0-2-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
                     "Climate Resource, Melbourne, Victoria, Australia",
                     "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
                     "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
                 ],
-                "orcid": "0000-0002-4767-2723"
+                "email":"zebedee.nicholls@climate-resource.com",
+                "name":"Zebedee Nicholls",
+                "orcid":"0000-0002-4767-2723"
             },
             {
-                "name": "Malte Meinshausen",
-                "email": "malte.meinshausen@climate-resource.com",
-                "affiliations": [
+                "affiliations":[
                     "Climate Resource, Melbourne, Victoria, Australia",
                     "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
                 ],
-                "orcid": "0000-0003-4048-3521"
+                "email":"malte.meinshausen@climate-resource.com",
+                "name":"Malte Meinshausen",
+                "orcid":"0000-0003-4048-3521"
             }
         ],
         "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
-        "dataset_category":["GHGConcentrations"],
+        "dataset_category":[
+            "GHGConcentrations"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
@@ -205,30 +343,32 @@
         "source_version":"0.2.0"
     },
     "CR-CMIP-0-3-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Zebedee Nicholls",
-                "email": "zebedee.nicholls@climate-resource.com",
-                "affiliations": [
+                "affiliations":[
                     "Climate Resource, Melbourne, Victoria, Australia",
                     "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
                     "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
                 ],
-                "orcid": "0000-0002-4767-2723"
+                "email":"zebedee.nicholls@climate-resource.com",
+                "name":"Zebedee Nicholls",
+                "orcid":"0000-0002-4767-2723"
             },
             {
-                "name": "Malte Meinshausen",
-                "email": "malte.meinshausen@climate-resource.com",
-                "affiliations": [
+                "affiliations":[
                     "Climate Resource, Melbourne, Victoria, Australia",
                     "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
                 ],
-                "orcid": "0000-0003-4048-3521"
+                "email":"malte.meinshausen@climate-resource.com",
+                "name":"Malte Meinshausen",
+                "orcid":"0000-0003-4048-3521"
             }
         ],
         "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
-        "dataset_category":["GHGConcentrations"],
+        "dataset_category":[
+            "GHGConcentrations"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
@@ -236,30 +376,32 @@
         "source_version":"0.3.0"
     },
     "CR-CMIP-0-4-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Zebedee Nicholls",
-                "email": "zebedee.nicholls@climate-resource.com",
-                "affiliations": [
+                "affiliations":[
                     "Climate Resource, Melbourne, Victoria, Australia",
                     "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
                     "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
                 ],
-                "orcid": "0000-0002-4767-2723"
+                "email":"zebedee.nicholls@climate-resource.com",
+                "name":"Zebedee Nicholls",
+                "orcid":"0000-0002-4767-2723"
             },
             {
-                "name": "Malte Meinshausen",
-                "email": "malte.meinshausen@climate-resource.com",
-                "affiliations": [
+                "affiliations":[
                     "Climate Resource, Melbourne, Victoria, Australia",
                     "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
                 ],
-                "orcid": "0000-0003-4048-3521"
+                "email":"malte.meinshausen@climate-resource.com",
+                "name":"Malte Meinshausen",
+                "orcid":"0000-0003-4048-3521"
             }
         ],
         "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
-        "dataset_category":["GHGConcentrations"],
+        "dataset_category":[
+            "GHGConcentrations"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
@@ -267,30 +409,32 @@
         "source_version":"0.4.0"
     },
     "CR-CMIP-1-0-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Zebedee Nicholls",
-                "email": "zebedee.nicholls@climate-resource.com",
-                "affiliations": [
+                "affiliations":[
                     "Climate Resource, Melbourne, Victoria, Australia",
                     "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
                     "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
                 ],
-                "orcid": "0000-0002-4767-2723"
+                "email":"zebedee.nicholls@climate-resource.com",
+                "name":"Zebedee Nicholls",
+                "orcid":"0000-0002-4767-2723"
             },
             {
-                "name": "Malte Meinshausen",
-                "email": "malte.meinshausen@climate-resource.com",
-                "affiliations": [
+                "affiliations":[
                     "Climate Resource, Melbourne, Victoria, Australia",
                     "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
                 ],
-                "orcid": "0000-0003-4048-3521"
+                "email":"malte.meinshausen@climate-resource.com",
+                "name":"Malte Meinshausen",
+                "orcid":"0000-0003-4048-3521"
             }
         ],
         "contact":"zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
-        "dataset_category":["GHGConcentrations"],
+        "dataset_category":[
+            "GHGConcentrations"
+        ],
         "further_info_url":"https://github.com/climate-resource/CMIP-GHG-Concentration-Generation",
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
@@ -298,27 +442,29 @@
         "source_version":"1.0.0"
     },
     "DRES-CMIP-BB4CMIP7-1-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Margreet van Marle",
-                "email": "Margreet.vanMarle@Deltares.nl",
-                "affiliations": [
+                "affiliations":[
                     "Deltares, Delft, the Netherlands"
                 ],
-                "orcid": "0000-0001-7473-5550"
+                "email":"Margreet.vanMarle@Deltares.nl",
+                "name":"Margreet van Marle",
+                "orcid":"0000-0001-7473-5550"
             },
             {
-                "name": "Guido van der Werf",
-                "email": "Guido.vanderWerf@wur.nl",
-                "affiliations": [
+                "affiliations":[
                     "Wageningen University and Research, Meteorology and Air Quality, Wageningen, Netherlands"
                 ],
-                "orcid": "0000-0001-9042-8630"
+                "email":"Guido.vanderWerf@wur.nl",
+                "name":"Guido van der Werf",
+                "orcid":"0000-0001-9042-8630"
             }
         ],
         "contact":"Margreet.vanMarle@Deltares.nl;Guido.vanderWerf@wur.nl",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"https://www.globalfiredata.org",
         "institution_id":"DRES",
         "license_id":"CC BY 4.0",
@@ -326,88 +472,211 @@
         "source_version":"1.0"
     },
     "DRES-CMIP-BB4CMIP7-2-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Margreet van Marle",
-                "email": "Margreet.vanMarle@Deltares.nl",
-                "affiliations": [
+                "affiliations":[
                     "Deltares, Delft, the Netherlands"
                 ],
-                "orcid": "0000-0001-7473-5550"
+                "email":"Margreet.vanMarle@Deltares.nl",
+                "name":"Margreet van Marle",
+                "orcid":"0000-0001-7473-5550"
             },
             {
-                "name": "Guido van der Werf",
-                "email": "Guido.vanderWerf@wur.nl",
-                "affiliations": [
+                "affiliations":[
                     "Wageningen University and Research, Meteorology and Air Quality, Wageningen, Netherlands"
                 ],
-                "orcid": "0000-0001-9042-8630"
+                "email":"Guido.vanderWerf@wur.nl",
+                "name":"Guido van der Werf",
+                "orcid":"0000-0001-9042-8630"
             }
         ],
         "contact":"Margreet.vanMarle@Deltares.nl, Guido.vanderWerf@wur.nl",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"https://www.globalfiredata.org",
         "institution_id":"DRES",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP7",
         "source_version":"2.0"
     },
-    "FZJ-1-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+    "DRES-CMIP-BB4CMIP7-2-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Michaela Hegglin",
-                "email": "m.i.hegglin@fz-juelich.de",
-                "affiliations": [
-                    "Institute of Energy and Climate Research – Stratosphere (IEK-7), Forschungszentrum Jülich GmbH, 52425 Jülich, Germany",
-                    "Department of Meteorology, University of Reading, Earley Gate, Reading, RG6 6BB, United Kingdom"
+                "affiliations":[
+                    "Deltares, Delft, the Netherlands"
                 ],
-                "orcid": "0000-0003-2820-9044"
+                "email":"Margreet.vanMarle@Deltares.nl",
+                "name":"Margreet van Marle",
+                "orcid":"0000-0001-7473-5550"
+            },
+            {
+                "affiliations":[
+                    "Wageningen University and Research, Meteorology and Air Quality, Wageningen, Netherlands"
+                ],
+                "email":"Guido.vanderWerf@wur.nl",
+                "name":"Guido van der Werf",
+                "orcid":"0000-0001-9042-8630"
             }
         ],
-        "contact":"Michaela Hegglin (m.i.hegglin@fz-juelich.de)",
-        "dataset_category":["Ozone", "SurfaceFluxes"],
-        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/nitrogen-deposition/",
-        "institution_id":"FZJ",
+        "contact":"Margreet.vanMarle@Deltares.nl, Guido.vanderWerf@wur.nl",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://www.globalfiredata.org",
+        "institution_id":"DRES",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP6Plus",
-        "source_version":"1.0"
+        "mip_era":"CMIP7",
+        "source_version":"2.1"
+    },
+    "ImperialCollege-3-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Imperial College, London"
+                ],
+                "email":"h.graven@imperial.ac.uk",
+                "name":"Heather Graven",
+                "orcid":"0000-0003-3934-2502"
+            }
+        ],
+        "contact":"h.graven@imperial.ac.uk",
+        "dataset_category":[
+            "atmosphericState"
+        ],
+        "further_info_url":"https://profiles.imperial.ac.uk/h.graven",
+        "institution_id":"ImperialCollege",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"3.0"
     },
     "MRI-JRA55-do-1-6-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Hiroyuki Tsujino",
-                "email": "htsujino@mri-jma.go.jp",
-                "affiliations": [
+                "affiliations":[
                     "JMA Meteorological Research Institute (MRI), Tsukuba, Ibaraki, Japan"
                 ],
-                "orcid": "0000-0003-3336-0275"
+                "email":"htsujino@mri-jma.go.jp",
+                "name":"Hiroyuki Tsujino",
+                "orcid":"0000-0003-3336-0275"
             }
         ],
         "contact":"Hiroyuki Tsujino (htsujino@mri-jma.go.jp)",
-        "dataset_category":["atmosphericState"],
+        "dataset_category":[
+            "atmosphericState"
+        ],
         "further_info_url":"https://climate.mri-jma.go.jp/pub/ocean/JRA55-do/index.html",
         "institution_id":"MRI",
         "license_id":null,
         "mip_era":"CMIP6Plus",
         "source_version":"1.6.0"
     },
-    "PCMDI-AMIP-1-1-9":{
-        "activity_id": "input4MIPs",
-        "authors": [
+    "PCMDI-AMIP-1-1-10":{
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Paul Durack",
-                "email": "durack1@llnl.gov",
-                "affiliations": [
-                    "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA"
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
                 ],
-                "orcid": "0000-0003-2835-1438"
+                "email":"durack1@llnl.gov; pauldurack@gmail.com",
+                "name":"Paul J. Durack",
+                "orcid":"0000-0003-2835-1438"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"taylor13@llnl.gov",
+                "name":"Karl E. Taylor",
+                "orcid":"0000-0002-6491-2135"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"ames4@llnl.gov",
+                "name":"Sasha K. Ames",
+                "orcid":"0000-0001-9981-2997"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"pochedley1@llnl.gov",
+                "name":"Stephen Po-Chedley",
+                "orcid":"0000-0002-0390-238X"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"mauzey1@llnl.gov",
+                "name":"Chris Mauzey",
+                "orcid":"0000-0003-1156-6774"
             }
         ],
-        "contact":"PCMDI (pcmdi-cmip@llnl.gov)",
-        "dataset_category":["SSTsAndSeaIce"],
+        "contact":"Paul J. Durack (durack1@llnl.gov; pauldurack@gmail.com); Karl E. Taylor (taylor13@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)",
+        "dataset_category":[
+            "SSTsAndSeaIce"
+        ],
+        "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
+        "institution_id":"PCMDI",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.10"
+    },
+    "PCMDI-AMIP-1-1-9":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"durack1@llnl.gov; pauldurack@gmail.com",
+                "name":"Paul J. Durack",
+                "orcid":"0000-0003-2835-1438"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"taylor13@llnl.gov",
+                "name":"Karl E. Taylor",
+                "orcid":"0000-0002-6491-2135"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"ames4@llnl.gov",
+                "name":"Sasha K. Ames",
+                "orcid":"0000-0001-9981-2997"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"pochedley1@llnl.gov",
+                "name":"Stephen Po-Chedley",
+                "orcid":"0000-0002-0390-238X"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"mauzey1@llnl.gov",
+                "name":"Chris Mauzey",
+                "orcid":"0000-0003-1156-6774"
+            }
+        ],
+        "contact":"Paul J. Durack (durack1@llnl.gov; pauldurack@gmail.com); Karl E. Taylor (taylor13@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)",
+        "dataset_category":[
+            "SSTsAndSeaIce"
+        ],
         "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
         "institution_id":"PCMDI",
         "license_id":"CC BY 4.0",
@@ -415,238 +684,355 @@
         "source_version":"1.1.9"
     },
     "PCMDI-AMIP-ERSST5-1-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Paul Durack",
-                "email": "durack1@llnl.gov",
-                "affiliations": [
-                    "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA"
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
                 ],
-                "orcid": "0000-0003-2835-1438"
+                "email":"durack1@llnl.gov; pauldurack@gmail.com",
+                "name":"Paul J. Durack",
+                "orcid":"0000-0003-2835-1438"
             },
             {
-                "name": "Mark Zelinka",
-                "email": "zelinka1@llnl.gov",
-                "affiliations": [
-                    "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA"
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
                 ],
-                "orcid": "0000-0002-6570-5445"
+                "email":"zelinka1@llnl.gov",
+                "name":"Mark D. Zelinka",
+                "orcid":"0000-0002-6570-5445"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"taylor13@llnl.gov",
+                "name":"Karl E. Taylor",
+                "orcid":"0000-0002-6491-2135"
             }
         ],
-        "contact":"zelinka1@llnl.gov; durack1@llnl.gov",
-        "dataset_category":["SSTsAndSeaIce"],
+        "contact":"Paul J. Durack (durack1@llnl.gov; pauldurack@gmail.com); Mark D. Zelinka (zelinka1@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)",
+        "dataset_category":[
+            "SSTsAndSeaIce"
+        ],
         "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
         "institution_id":"PCMDI",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP6Plus",
+        "mip_era":"CMIP7Plus",
         "source_version":"1.0"
     },
     "PCMDI-AMIP-Had1p1-1-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Paul Durack",
-                "email": "durack1@llnl.gov",
-                "affiliations": [
-                    "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA"
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
                 ],
-                "orcid": "0000-0003-2835-1438"
+                "email":"durack1@llnl.gov; pauldurack@gmail.com",
+                "name":"Paul J. Durack",
+                "orcid":"0000-0003-2835-1438"
             },
             {
-                "name": "Mark Zelinka",
-                "email": "zelinka1@llnl.gov",
-                "affiliations": [
-                    "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA"
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
                 ],
-                "orcid": "0000-0002-6570-5445"
+                "email":"zelinka1@llnl.gov",
+                "name":"Mark D. Zelinka",
+                "orcid":"0000-0002-6570-5445"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"taylor13@llnl.gov",
+                "name":"Karl E. Taylor",
+                "orcid":"0000-0002-6491-2135"
             }
         ],
-        "contact":"zelinka1@llnl.gov; durack1@llnl.gov",
-        "dataset_category":["SSTsAndSeaIce"],
+        "contact":"Paul J. Durack (durack1@llnl.gov; pauldurack@gmail.com); Mark D. Zelinka (zelinka1@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)",
+        "dataset_category":[
+            "SSTsAndSeaIce"
+        ],
         "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
         "institution_id":"PCMDI",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP6Plus",
+        "mip_era":"CMIP7Plus",
         "source_version":"1.0"
     },
     "PCMDI-AMIP-OI2p1-1-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Paul Durack",
-                "email": "durack1@llnl.gov",
-                "affiliations": [
-                    "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA"
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
                 ],
-                "orcid": "0000-0003-2835-1438"
+                "email":"durack1@llnl.gov; pauldurack@gmail.com",
+                "name":"Paul J. Durack",
+                "orcid":"0000-0003-2835-1438"
             },
             {
-                "name": "Mark Zelinka",
-                "email": "zelinka1@llnl.gov",
-                "affiliations": [
-                    "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA"
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
                 ],
-                "orcid": "0000-0002-6570-5445"
+                "email":"zelinka1@llnl.gov",
+                "name":"Mark D. Zelinka",
+                "orcid":"0000-0002-6570-5445"
+            },
+            {
+                "affiliations":[
+                    "PCMDI, Lawrence Livermore National Laboratory (LLNL), Livermore, CA 94550, USA"
+                ],
+                "email":"taylor13@llnl.gov",
+                "name":"Karl E. Taylor",
+                "orcid":"0000-0002-6491-2135"
             }
         ],
-        "contact":"zelinka1@llnl.gov; durack1@llnl.gov",
-        "dataset_category":["SSTsAndSeaIce"],
+        "contact":"Paul J. Durack (durack1@llnl.gov; pauldurack@gmail.com); Mark D. Zelinka (zelinka1@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)",
+        "dataset_category":[
+            "SSTsAndSeaIce"
+        ],
         "further_info_url":"https://pcmdi.llnl.gov/mips/amip",
         "institution_id":"PCMDI",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP6Plus",
+        "mip_era":"CMIP7Plus",
         "source_version":"1.0"
     },
-    "SOLARIS-HEPPA-CMIP-4-1":{
-        "activity_id": "input4MIPs",
-        "authors": [
+    "PIK-CMIP-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Bernd Funke",
-                "email": "bernd@iaa.es",
-                "affiliations": [
-                    "Instituto de Astrofísica de Andalucía, CSIC, Granada, Spain"
+                "affiliations":[
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany",
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland"
                 ],
-                "orcid": "0000-0003-0462-4702"
+                "email":"dominik.paprotny@pik-potsdam.de",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@pik-potsdam.de); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "SOLARIS-HEPPA-CMIP-4-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Instituto de Astrof\u00edsica de Andaluc\u00eda, CSIC, Granada, Spain"
+                ],
+                "email":"bernd@iaa.es",
+                "name":"Bernd Funke",
+                "orcid":"0000-0003-0462-4702"
             }
         ],
         "contact":"bernd@iaa.es",
-        "dataset_category":["solar"],
+        "dataset_category":[
+            "solar"
+        ],
         "further_info_url":"http://solarisheppa.geomar.de/cmip7",
         "institution_id":"SOLARIS-HEPPA",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "target_mip":"CMIP",
-        "source_version":"4.1"
+        "source_version":"4.1",
+        "target_mip":"CMIP"
     },
     "SOLARIS-HEPPA-CMIP-4-2":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Bernd Funke",
-                "email": "bernd@iaa.es",
-                "affiliations": [
-                    "Instituto de Astrofísica de Andalucía, CSIC, Granada, Spain"
+                "affiliations":[
+                    "Instituto de Astrof\u00edsica de Andaluc\u00eda, CSIC, Granada, Spain"
                 ],
-                "orcid": "0000-0003-0462-4702"
+                "email":"bernd@iaa.es",
+                "name":"Bernd Funke",
+                "orcid":"0000-0003-0462-4702"
             }
         ],
         "contact":"bernd@iaa.es",
-        "dataset_category":["solar"],
+        "dataset_category":[
+            "solar"
+        ],
         "further_info_url":"http://solarisheppa.geomar.de/cmip7",
         "institution_id":"SOLARIS-HEPPA",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "target_mip":"CMIP",
-        "source_version":"4.2"
+        "source_version":"4.2",
+        "target_mip":"CMIP"
     },
     "SOLARIS-HEPPA-CMIP-4-3":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Bernd Funke",
-                "email": "bernd@iaa.es",
-                "affiliations": [
-                    "Instituto de Astrofísica de Andalucía, CSIC, Granada, Spain"
+                "affiliations":[
+                    "Instituto de Astrof\u00edsica de Andaluc\u00eda, CSIC, Granada, Spain"
                 ],
-                "orcid": "0000-0003-0462-4702"
+                "email":"bernd@iaa.es",
+                "name":"Bernd Funke",
+                "orcid":"0000-0003-0462-4702"
             }
         ],
         "contact":"bernd@iaa.es",
-        "dataset_category":["solar"],
+        "dataset_category":[
+            "solar"
+        ],
         "further_info_url":"http://solarisheppa.geomar.de/cmip7",
         "institution_id":"SOLARIS-HEPPA",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "target_mip":"CMIP",
-        "source_version":"4.3"
+        "source_version":"4.3",
+        "target_mip":"CMIP"
     },
     "SOLARIS-HEPPA-CMIP-4-4":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Bernd Funke",
-                "email": "bernd@iaa.es",
-                "affiliations": [
-                    "Instituto de Astrofísica de Andalucía, CSIC, Granada, Spain"
+                "affiliations":[
+                    "Instituto de Astrof\u00edsica de Andaluc\u00eda, CSIC, Granada, Spain"
                 ],
-                "orcid": "0000-0003-0462-4702"
+                "email":"bernd@iaa.es",
+                "name":"Bernd Funke",
+                "orcid":"0000-0003-0462-4702"
             }
         ],
         "contact":"bernd@iaa.es",
-        "dataset_category":["solar"],
+        "dataset_category":[
+            "solar"
+        ],
         "further_info_url":"http://solarisheppa.geomar.de/cmip7",
         "institution_id":"SOLARIS-HEPPA",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "target_mip":"CMIP",
-        "source_version":"4.4"
+        "source_version":"4.4",
+        "target_mip":"CMIP"
     },
     "SOLARIS-HEPPA-CMIP-4-5":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Bernd Funke",
-                "email": "bernd@iaa.es",
-                "affiliations": [
-                    "Instituto de Astrofísica de Andalucía, CSIC, Granada, Spain"
+                "affiliations":[
+                    "Instituto de Astrof\u00edsica de Andaluc\u00eda, CSIC, Granada, Spain"
                 ],
-                "orcid": "0000-0003-0462-4702"
+                "email":"bernd@iaa.es",
+                "name":"Bernd Funke",
+                "orcid":"0000-0003-0462-4702"
             }
         ],
         "contact":"bernd@iaa.es",
-        "dataset_category":["solar"],
+        "dataset_category":[
+            "solar"
+        ],
         "further_info_url":"http://solarisheppa.geomar.de/cmip7",
         "institution_id":"SOLARIS-HEPPA",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "target_mip":"CMIP",
-        "source_version":"4.5"
+        "source_version":"4.5",
+        "target_mip":"CMIP"
     },
     "SOLARIS-HEPPA-CMIP-4-6":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Bernd Funke",
-                "email": "bernd@iaa.es",
-                "affiliations": [
-                    "Instituto de Astrofísica de Andalucía, CSIC, Granada, Spain"
+                "affiliations":[
+                    "Instituto de Astrof\u00edsica de Andaluc\u00eda, CSIC, Granada, Spain"
                 ],
-                "orcid": "0000-0003-0462-4702"
+                "email":"bernd@iaa.es",
+                "name":"Bernd Funke",
+                "orcid":"0000-0003-0462-4702"
             }
         ],
         "contact":"bernd@iaa.es",
-        "dataset_category":["solar"],
+        "dataset_category":[
+            "solar"
+        ],
         "further_info_url":"http://solarisheppa.geomar.de/cmip7",
         "institution_id":"SOLARIS-HEPPA",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP7",
-        "target_mip":"CMIP",
-        "source_version":"4.6"
+        "source_version":"4.6",
+        "target_mip":"CMIP"
     },
     "UCLA-1-0-1":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Jasper Kok",
-                "email": "jfkok@ucla.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA"
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
                 ],
-                "orcid": "0000-0003-0464-8325"
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
             },
             {
-                "name": "Danny Leung",
-                "email": "dleung@ucar.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA",
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
                     "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
                 ],
-                "orcid": "0000-0002-9879-9978"
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
             }
         ],
         "contact":"jfkok@ucla.edu;dleung@ucar.edu",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"UCLA",
         "license_id":"CC BY 4.0",
@@ -654,28 +1040,30 @@
         "source_version":"1.0.1"
     },
     "UCLA-1-0-1-constant":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Jasper Kok",
-                "email": "jfkok@ucla.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA"
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
                 ],
-                "orcid": "0000-0003-0464-8325"
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
             },
             {
-                "name": "Danny Leung",
-                "email": "dleung@ucar.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA",
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
                     "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
                 ],
-                "orcid": "0000-0002-9879-9978"
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
             }
         ],
         "contact":"jfkok@ucla.edu;dleung@ucar.edu",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"UCLA",
         "license_id":"CC BY 4.0",
@@ -683,28 +1071,30 @@
         "source_version":"1.0.1"
     },
     "UCLA-1-0-1-decreasing":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Jasper Kok",
-                "email": "jfkok@ucla.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA"
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
                 ],
-                "orcid": "0000-0003-0464-8325"
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
             },
             {
-                "name": "Danny Leung",
-                "email": "dleung@ucar.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA",
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
                     "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
                 ],
-                "orcid": "0000-0002-9879-9978"
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
             }
         ],
         "contact":"jfkok@ucla.edu;dleung@ucar.edu",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"UCLA",
         "license_id":"CC BY 4.0",
@@ -712,28 +1102,30 @@
         "source_version":"1.0.1"
     },
     "UCLA-1-0-1-increasing":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Jasper Kok",
-                "email": "jfkok@ucla.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA"
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
                 ],
-                "orcid": "0000-0003-0464-8325"
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
             },
             {
-                "name": "Danny Leung",
-                "email": "dleung@ucar.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA",
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
                     "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
                 ],
-                "orcid": "0000-0002-9879-9978"
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
             }
         ],
         "contact":"jfkok@ucla.edu;dleung@ucar.edu",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"UCLA",
         "license_id":"CC BY 4.0",
@@ -741,28 +1133,30 @@
         "source_version":"1.0.1"
     },
     "UCLA-1-0-2":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Jasper Kok",
-                "email": "jfkok@ucla.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA"
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
                 ],
-                "orcid": "0000-0003-0464-8325"
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
             },
             {
-                "name": "Danny Leung",
-                "email": "dleung@ucar.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA",
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
                     "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
                 ],
-                "orcid": "0000-0002-9879-9978"
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
             }
         ],
         "contact":"jfkok@ucla.edu;dleung@ucar.edu",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"UCLA",
         "license_id":"CC BY 4.0",
@@ -770,28 +1164,30 @@
         "source_version":"1.0.2"
     },
     "UCLA-1-0-2-constant":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Jasper Kok",
-                "email": "jfkok@ucla.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA"
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
                 ],
-                "orcid": "0000-0003-0464-8325"
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
             },
             {
-                "name": "Danny Leung",
-                "email": "dleung@ucar.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA",
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
                     "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
                 ],
-                "orcid": "0000-0002-9879-9978"
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
             }
         ],
         "contact":"jfkok@ucla.edu;dleung@ucar.edu",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"UCLA",
         "license_id":"CC BY 4.0",
@@ -799,28 +1195,30 @@
         "source_version":"1.0.2"
     },
     "UCLA-1-0-2-decreasing":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Jasper Kok",
-                "email": "jfkok@ucla.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA"
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
                 ],
-                "orcid": "0000-0003-0464-8325"
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
             },
             {
-                "name": "Danny Leung",
-                "email": "dleung@ucar.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA",
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
                     "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
                 ],
-                "orcid": "0000-0002-9879-9978"
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
             }
         ],
         "contact":"jfkok@ucla.edu;dleung@ucar.edu",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"UCLA",
         "license_id":"CC BY 4.0",
@@ -828,28 +1226,30 @@
         "source_version":"1.0.2"
     },
     "UCLA-1-0-2-increasing":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Jasper Kok",
-                "email": "jfkok@ucla.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA"
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
                 ],
-                "orcid": "0000-0003-0464-8325"
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
             },
             {
-                "name": "Danny Leung",
-                "email": "dleung@ucar.edu",
-                "affiliations": [
-                    "Department of Atmospheric and Oceanic Sciences, University of California – Los Angeles, Los Angeles, California, USA",
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
                     "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
                 ],
-                "orcid": "0000-0002-9879-9978"
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
             }
         ],
         "contact":"jfkok@ucla.edu;dleung@ucar.edu",
-        "dataset_category":["emissions"],
+        "dataset_category":[
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"UCLA",
         "license_id":"CC BY 4.0",
@@ -857,19 +1257,22 @@
         "source_version":"1.0.2"
     },
     "UOEXETER-CMIP-0-1-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Thomas Aubry",
-                "email": "t.aubry@exeter.ac.uk",
-                "affiliations": [
+                "affiliations":[
                     "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
                 ],
-                "orcid": "0000-0002-9275-4293"
+                "email":"t.aubry@exeter.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
             }
         ],
         "contact":"t.aubry@exeter.ac.uk",
-        "dataset_category":["aerosolProperties", "emissions"],
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"uoexeter",
         "license_id":"CC BY 4.0",
@@ -877,19 +1280,22 @@
         "source_version":"0.1.0"
     },
     "UOEXETER-CMIP-1-1-2":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Thomas Aubry",
-                "email": "t.aubry@exeter.ac.uk",
-                "affiliations": [
+                "affiliations":[
                     "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
                 ],
-                "orcid": "0000-0002-9275-4293"
+                "email":"t.aubry@exeter.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
             }
         ],
         "contact":"t.aubry@exeter.ac.uk",
-        "dataset_category":["aerosolProperties", "emissions"],
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"uoexeter",
         "license_id":"CC BY 4.0",
@@ -897,19 +1303,22 @@
         "source_version":"1.1.2"
     },
     "UOEXETER-CMIP-1-1-3":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Thomas Aubry",
-                "email": "t.aubry@exeter.ac.uk",
-                "affiliations": [
+                "affiliations":[
                     "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
                 ],
-                "orcid": "0000-0002-9275-4293"
+                "email":"t.aubry@exeter.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
             }
         ],
         "contact":"t.aubry@exeter.ac.uk",
-        "dataset_category":["aerosolProperties", "emissions"],
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"uoexeter",
         "license_id":"CC BY 4.0",
@@ -917,19 +1326,22 @@
         "source_version":"1.1.3"
     },
     "UOEXETER-CMIP-1-2-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Thomas Aubry",
-                "email": "t.aubry@exeter.ac.uk",
-                "affiliations": [
+                "affiliations":[
                     "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
                 ],
-                "orcid": "0000-0002-9275-4293"
+                "email":"t.aubry@exeter.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
             }
         ],
         "contact":"t.aubry@exeter.ac.uk",
-        "dataset_category":["aerosolProperties", "emissions"],
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
         "further_info_url":"http://www.tbd.invalid",
         "institution_id":"uoexeter",
         "license_id":"CC BY 4.0",
@@ -937,91 +1349,185 @@
         "source_version":"1.2.0"
     },
     "UOEXETER-CMIP-1-3-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Thomas Aubry",
-                "email": "t.aubry@exeter.ac.uk",
-                "affiliations": [
+                "affiliations":[
                     "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
                 ],
-                "orcid": "0000-0002-9275-4293"
+                "email":"t.aubry@exeter.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
             }
         ],
         "contact":"t.aubry@exeter.ac.uk",
-        "dataset_category":["aerosolProperties", "emissions"],
-        "further_info_url":"https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/",
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/",
         "institution_id":"uoexeter",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "source_version":"1.3.0"
     },
     "UOEXETER-CMIP-1-3-1":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Thomas Aubry",
-                "email": "t.aubry@exeter.ac.uk",
-                "affiliations": [
+                "affiliations":[
                     "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
                 ],
-                "orcid": "0000-0002-9275-4293"
+                "email":"t.aubry@exeter.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
             }
         ],
         "contact":"t.aubry@exeter.ac.uk",
-        "dataset_category":["aerosolProperties", "emissions"],
-        "further_info_url":"https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/",
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/",
         "institution_id":"uoexeter",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "source_version":"1.3.1"
     },
     "UOEXETER-CMIP-2-0-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Thomas Aubry",
-                "email": "t.aubry@exeter.ac.uk",
-                "affiliations": [
+                "affiliations":[
                     "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
                 ],
-                "orcid": "0000-0002-9275-4293"
+                "email":"t.aubry@exeter.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
             }
         ],
         "contact":"t.aubry@exeter.ac.uk",
-        "dataset_category":["aerosolProperties", "emissions"],
-        "further_info_url":"https://input4mips-controlled-vocabularies-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/",
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/",
         "institution_id":"uoexeter",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP7",
         "source_version":"2.0.0"
     },
-    "UofMD-landState-3-0":{
-        "activity_id": "input4MIPs",
-        "authors": [
+    "UOEXETER-CMIP-2-2-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
             {
-                "name": "Louise Chini",
-                "email": "lchini@umd.edu",
-                "affiliations": [
+                "affiliations":[
+                    "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
+                ],
+                "email":"t.aubry@exeter.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
+            }
+        ],
+        "contact":"t.aubry@exeter.ac.uk",
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/",
+        "institution_id":"uoexeter",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"2.2.1"
+    },
+    "UofMD-landState-3-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
                     "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
                 ],
-                "orcid": "0000-0002-9070-3505"
+                "email":"lchini@umd.edu",
+                "name":"Louise Chini",
+                "orcid":"0000-0002-9070-3505"
             },
             {
-                "name": "George Hurtt",
-                "email": "gchurtt@umd.edu",
-                "affiliations": [
+                "affiliations":[
                     "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
                 ],
-                "orcid": "0000-0001-7278-202X"
+                "email":"gchurtt@umd.edu",
+                "name":"George Hurtt",
+                "orcid":"0000-0001-7278-202X"
             }
         ],
         "contact":"lchini@umd.edu;gchurtt@umd.edu",
-        "dataset_category":["landState"],
+        "dataset_category":[
+            "landState"
+        ],
         "further_info_url":"https://luh.umd.edu/",
         "institution_id":"UofMD",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "source_version":"3.0"
+    },
+    "UofMD-landState-3-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"lchini@umd.edu",
+                "name":"Louise Chini",
+                "orcid":"0000-0002-9070-3505"
+            },
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"gchurtt@umd.edu",
+                "name":"George Hurtt",
+                "orcid":"0000-0001-7278-202X"
+            }
+        ],
+        "contact":"lchini@umd.edu, gchurtt@umd.edu",
+        "dataset_category":[
+            "landState"
+        ],
+        "further_info_url":"https://luh.umd.edu/",
+        "institution_id":"UofMD",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"3.1"
+    },
+    "UofMD-landState-3-1-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"lchini@umd.edu",
+                "name":"Louise Chini",
+                "orcid":"0000-0002-9070-3505"
+            },
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"gchurtt@umd.edu",
+                "name":"George Hurtt",
+                "orcid":"0000-0001-7278-202X"
+            }
+        ],
+        "contact":"lchini@umd.edu, gchurtt@umd.edu",
+        "dataset_category":[
+            "landState"
+        ],
+        "further_info_url":"https://luh.umd.edu/",
+        "institution_id":"UofMD",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"3.1.1"
     }
 }

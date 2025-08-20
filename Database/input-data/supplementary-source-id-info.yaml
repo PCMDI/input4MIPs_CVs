@@ -2,6 +2,30 @@ CEDS-CMIP-2024-07-08:
   publication_status: never_published
 CEDS-CMIP-2024-07-08-supplemental:
   publication_status: never_published
+CEDS-CMIP-2024-11-25:
+  comment_post_publication: &ceds-pre-2025-03-18-comment >-
+    A number of updates have been made in CEDS-CMIP-2025-03-18*.
+    These are significantly different from this dataset,
+    hence it has been retracted.
+CEDS-CMIP-2024-11-25-supplemental:
+  comment_post_publication: *ceds-pre-2025-03-18-comment
+CEDS-CMIP-2024-10-21-supplemental:
+  comment_post_publication: *ceds-pre-2025-03-18-comment
+CEDS-CMIP-2024-10-21-supplemental:
+  comment_post_publication: *ceds-pre-2025-03-18-comment
+CEDS-CMIP-2025-03-18:
+  comment_post_publication: &ceds-2025-03-18-comment
+    A bug was found in gridding of data for 2022 and 2023.
+    This does not affect any other values,
+    so this version could still be used for piControl
+    and historical simulations if they have already been started.
+    If not, we recommend updating to the next version
+    for consistency.
+CEDS-CMIP-2025-03-18-supplemental:
+  comment_post_publication: *ceds-2025-03-18-comment
+CEDS-CMIP-2025-04-18:
+  # Force override while we wait for ESGF scrape to come back up
+  publication_status: published
 CR-CMIP-0-2-0:
   publication_status: abandoned
 CR-CMIP-0-3-0:
@@ -55,10 +79,28 @@ DRES-CMIP-BB4CMIP7-1-0:
     can be found on https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ for the 1997 onwards period.
 DRES-CMIP-BB4CMIP7-2-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
+  license_id: CC BY 4.0
+  comment_post_publication: >-
+    DRES-CMIP-BB4CMIP7-2-1 fixes a bug with NMVOC bulk data for 2023.
+    This is the only time slice that is updated.
+
+    As this update does not affect any data before 2021 (inclusive),
+    there is no need to restart simulations or make any other changes.
+    The new dataset is of course available if people wish to use it.
+DRES-CMIP-BB4CMIP7-2-1:
+  # While we wait for ESGF scrape to come back up
+  publication_status: published
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
+ImperialCollege-3-0:
+  # While we wait for ESGF scrape to come back up
+  publication_status: published
 MRI-JRA55-do-1-6-0:
   license_id: CC BY 4.0
 PCMDI-AMIP-1-1-9:
   license_id: CC BY 4.0
+PCMDI-AMIP-1-1-10:
+  license_id: CC BY 4.0
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2575015
 SOLARIS-HEPPA-CMIP-4-1:
   publication_status: never_published
 SOLARIS-HEPPA-CMIP-4-2:
@@ -128,6 +170,33 @@ UOEXETER-CMIP-1-3-1:
     As a result of this change, the mean historical SAOD has decreased a bit, but it is still higher than CMIP6.
     Hence v1.3.1 is deprecated.
 UOEXETER-CMIP-2-0-0:
+  comment_post_publication: >-
+    v2.2.1 resolves issues with NaN values in v2.0.0
+    and updates a few other issues
+    (notably the latitudinal distrbution of the Agung eruption).
+    These updates affect both the historical values
+    and the pre-industrial climatologies.
+    As a result of this change, v2.0.0 is deprecated.
+    Please restart any simulations that used v2.0.0
+    and use v2.2.1 instead.
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
+  further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
+UOEXETER-CMIP-2-2-1:
+  further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
+  # While we wait for ESGF scrape to come back up
+  publication_status: published
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
 UofMD-landState-3-0:
   license_id: CC BY 4.0
+  comment_post_publication: >-
+    v3.0 contains a number of spurious spikes post-1950.
+    These have been addressed in v3.1.
+    As a result, v3.0 has been retracted.
+UofMD-landState-3-1:
+  license_id: CC BY 4.0
+  comment_post_publication: >-
+    v3.1 contains an extra variable (crpbf_total) in the land-use management file.
+    This is filled with zeroes, so will not affect simulations.
+    However, for completeness, we have released an update (v3.1.1)
+    which removes this unnecessary variable
+    (but using v3.1 is fine if that is what you're doing already).

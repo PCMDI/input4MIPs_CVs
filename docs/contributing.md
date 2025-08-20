@@ -1,7 +1,6 @@
 # Contributing
 
-Contributing to the repository beyond the instructions above
-is currently a dark art.
+Contributing to the repository beyond the instructions above is currently a dark art.
 A start is the description below.
 We hope to improve these docs over time.
 
@@ -14,6 +13,20 @@ Under the hood, this action uses the command-line tool in
 This command-line tool ensures that the version is applied to all relevant places in the repository
 and also provides an interface to bump the version.
 
+## Creating a Python virtual environment (`venv`)
+
+Many of the steps described below require that a custom Python virtual environment is available.
+Rather than repeat these steps, we will document how to create this as an initial step, and thereafter, it can be activated and used repeatedly.
+
+1. Make a virtual environment (e.g. `python3 -m venv venv`)
+2. Activate the virtual environment 
+   (e.g. `source venv/bin/activate` - be careful not to activate multiple envs at once!)
+3. Install the requirements into the environment
+   (e.g. `pip install -r dev-requirements.txt`)
+
+There may be a need to update this environment ocassionally, however, in practice this should work fine once it is generated.
+Follow the prompts to update `pip` or other dependencies if prompted during install or execution.
+
 ## The database
 
 In `Database/input-data` there are three components:
@@ -24,18 +37,11 @@ In `Database/input-data` there are three components:
 
 `Database/input-data/esgf-input4MIPs.json` is a scrape of information from the ESGF index.
 This captures the latest set of information we have queried from the ESGF index database.
-It is generated with `scripts/pollESGF.py`.
-However, the API it queries only allows certain IP addresses,
-so you will only be able to run this if you have been given access.
-We hope to switch to automated generation of this file in future
-(see [#69](https://github.com/PCMDI/input4MIPs_CVs/issues/69)).
+It is generated via a GitHub action that automatically creates pull requests if new files have been published.
+If you need to run it manually, you can run it with the steps below:
 
-To update this file, simply copy the latest output from the poll script into this repository.
-On nimbus, the command is:
-
-```sh
-cp /p/user_pub/work/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json
-```
+1. If the `venv` virtual environment doesn't exist, or isn't activated - create/activate it (see "Creating a Python virtual environment (`venv`)")
+1. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-esgf-scrape.py --out-file Database/input-data/esgf-input4MIPs.json --n-threads 4`
 
 `Database/input-data/pmount` contains a number of JSON files.
 Each file contains information about one file
@@ -44,7 +50,7 @@ The raw netCDF files are stored elsewhere.
 The database entries are managed using the scripts in
 `scripts/pmount-database-generation`.
 See `scripts/pmount-database-generation/README.md`
-for futher details.
+for further details.
 
 `Database/input-data/supplementary-source-id-info.yaml`
 contains supplementary information about our data.
@@ -58,16 +64,14 @@ At present, we are tracking all of these inputs as part of this repository.
 This is ok for now, as the data is relatively small.
 This may not scale, so if we get to a certain size, we may have to pick a different approach.
 
-The data from these three inputs, plus information from the CVS,
+The data from these three inputs,
+plus information from the Controlled Vocabularies (CVs),
 gets combined to create `Database/input4MIPs_db_file_entries.json`.
 This combination is done using `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py`.
 In order to run this script, you should:
 
-1. Make a virtual environment (e.g. `python3 -m venv venv`)
-2. Activate the virtual environment (e.g. `source venv/bin/activate`)
-3. Install the local `input4MIPs-CVs` package into the environment
-   (e.g. `pip install -e python-packages/input4MIPs-CVs`)
-4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
+1. If the `venv` virtual environment doesn't exist, or isn't activated - create/activate it (see "Creating a Python virtual environment (`venv`)")
+1. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
 
 ## Generating the HTML pages
 
@@ -76,32 +80,43 @@ Currently, the HTML pages are generated using
 `python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py`.
 In order to run this script, you should:
 
-1. Make a virtual environment (e.g. `python3 -m venv venv`)
-2. Activate the virtual environment (e.g. `source venv/bin/activate`)
-3. Install the local `input4MIPs-CVs` package into the environment
-   (e.g. `pip install -e python-packages/input4MIPs-CVs`)
-4. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
+1. If the `venv` virtual environment doesn't exist, or isn't activated - create/activate it (see "Creating a Python virtual environment (`venv`)")
+1. Run the script e.g. `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
 
 The version is automatically read out of the `VERSION` file if it is not directly specified.
 
 ## Summary of steps required to update this repository when a new data source is published on ESGF
 
 This is based on the sections above.
-The paths assume you are working on nimbus.
+The paths assume you are working on perlmutter.
 If you are working elsewhere, you may need to modify the paths slightly.
 
 1. Checkout a new branch from main
-1. Update the ESGF scrape: `cp /p/user_pub/work/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json`
+1. Update the ESGF scrape: `python scripts/pollESGF.py Database/input-data/esgf-input4MIPs.json`
+    - you may need to have an environment activated with needed requirements (e.g. `requests` before you can run this)
+    - alternatively on perlmutter copy the existing file: `cp /PATH-TO-DATA-ROOT/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json`
 1. Activate an environment in which `input4mips-validation` is installed
-1. Update the database by adding the tree you're interested in. Do this by running the following command from the root of this repository: `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /p/user_pub/work/input4MIPs/CMIP6Plus/CMIP/UofMD/`
-1. (Not compulsory, but recommended because it makes it easier to see changes later) Commit the changes to the database
+1. Update the database by adding the tree you're interested in. 
+   Do this by running the following command from the root of this repository: 
+   `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` 
+   e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /PATH-TO-DATA-ROOT/input4MIPs/CMIP6Plus/CMIP/UofMD/`.
+   On perlmutter, this is something like
+   `bash scripts/pmount-database-generation/db-add-tree.sh /global/cfs/projectdirs/m4931/gsharing/user_pub_work/input4MIPs/...`
+1. (Not compulsory, but recommended because it makes it easier to see changes later) 
+   Commit the changes to the database
 1. If needed, add the source ID entry for the new files to `CVs/input4MIPs_source_id.json`
-1. Activate an environment which has the local `input4IMPs-CVs` package installed (see intructions on how to create such an environment in the sections above)
+1. Activate an environment which has the local requirements installed
+    - Make a virtual environment (e.g. `python3 -m venv venv`)
+    - Activate the virtual environment (e.g. `source venv/bin/activate` - be careful not to activate multiple envs at once!)
+    - Install the requirements into the environment (e.g. `pip install -r dev-requirements.txt`)
 1. Update the database: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
     - If needed, add a reason for the retraction/deprecation of the previous data set in `Database/input-data/supplementary-source-id-info.yaml`
 1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`
-    - If you get an error about a retracted publication status, you'll need to edit the latest source ID being used for a given dataset. Use the python traceback to help you identify where this is. (TODO: move things into a standalone file so it is easier to see what to edit)
-1. Check that the HTML has updated as expected (e.g. the summary view has updated as expected, new datasets are in the datasets view, new files are in the files view)
+    - If you get an error about a retracted publication status,
+      you'll need to edit the latest source ID being used for a given dataset
+      in `docs/dataset-info/delivery-summary.json`.
+1. Check that the HTML has updated as expected 
+   (e.g. the summary view has updated as expected, new datasets are in the datasets view, new files are in the files view)
 1. Commit everything
 1. Build the docs: `mkdocs build --strict`
 1. Check that the docs updated as expected.
@@ -109,7 +124,11 @@ If you are working elsewhere, you may need to modify the paths slightly.
 
     - are the source IDs for the dataset up to date?
       E.g. do we need to update the source IDs to be used for the various CMIP7 phases in
-      `docs/dataset-info/cmip7-phases-source-ids.json`?
+      `docs/dataset-info/cmip7-phases-source-ids.json`
+      or the delivery summary in `docs/dataset-info/delivery-summary.json`?
+    - did the relevant documentation page (e.g. `docs/dataset-overviews/population.md`) update correctly?
+      If yes, there is an issue. Check the page carefully e.g. the `source_id_stub` at the top of the page
+      (figuring out the logic here will likely require stepping through the python as it is still an evolving process).
     - did the revision history come through correctly? If not, there is an issue.
 
 1. Commit everything
@@ -120,10 +139,11 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. Merge
 1. Tag @eleanororourke and @vnaik60 so they know a new update is live (e.g. "Hi @eleanororourke @vnaik60 just making sure you've seen this, thanks!")
 1. Celebrate
+1. Begin work on your update on v-next
 
 ## Relationship to input4MIPs validation
 
-This repository contains the database and controlled vocabularies.
+This repository contains the database and Controlled Vocabularies (CVs).
 The [input4MIPs validation](https://github.com/climate-resource/input4mips_validation)
 package implements the logic for validating data, based on the CVs.
 The two are deliberately decoupled, to allow the logic captured within

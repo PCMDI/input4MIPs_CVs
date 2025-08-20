@@ -11,6 +11,9 @@ PJD 25 Jul 2024 - 1216 372 Datasets returned, 350 Files
 PJD 26 Jul 2024 - update to write to ../DatasetsDatabase/input-data/ (was ./)
 PJD 16 Aug 2024 - added argparse to collect destPath from user
 PJD 16 Aug 2024 - added errno import, needed for linux
+PJD 26 Jun 2025 - update from esgf-node.llnl.gov SOLR index to esgf-node.ornl.gov Globus
+PJD 27 Jun 2025 - update timeout=5 to timeout=35 due to rate limiting
+PJD  3 Jul 2025 - catch rogue solrQry, was still pointing to LLNL SOLR, remapped to ORNL globus
 """
 
 # %% imports
@@ -140,29 +143,46 @@ if not is_path_exists_or_creatable(args.destPath):
 
 # %% get SOLR source_id entries
 activityId = "input4MIPs"
+timeOutTime = (
+    35  # <=30 seems to timeout - see https://github.com/esgf2-us/esg_fastapi/issues/76
+)
 
 # Dataset search (type:File search is also possible)
+# inputsD = (
+#    "https://esgf-node.llnl.gov/solr/datasets/select?q=*:*&"
+#    "rows=0&wt=json&facet=true&"
+#    "fq=type:Dataset&fq=replica:false&fq=activity_id:"
+#    + activityId
+#    + "&facet.field=source_id"
+# )
 inputsD = (
-    "https://esgf-node.llnl.gov/solr/datasets/select?q=*:*&"
-    "rows=0&wt=json&facet=true&"
-    "fq=type:Dataset&fq=replica:false&fq=activity_id:"
+    "https://esgf-node.ornl.gov/esgf-1-5-bridge?type=Dataset"
+    "&replica=false&activity_id="
     + activityId
-    + "&facet.field=source_id"
+    + "&facets=source_id&data_node=esgf-data1.llnl.gov,"
+    "esgf-data2.llnl.gov,aims3.llnl.gov,esgf-data.nersc.gov"
 )
 print("inputsD:", inputsD)
-js = requests.get(inputsD, timeout=5)
+js = requests.get(inputsD, timeout=timeOutTime)
 js_mipsD = json.loads(js.text)
 
 # File search - does not return deprecated files
+# inputsF = (
+#    "https://esgf-node.llnl.gov/solr/files/select?q=*:*&"
+#    "rows=0&wt=json&facet=true&"
+#    "fq=type:File&fq=replica:false&fq=activity_id:"
+#    + activityId
+#    + "&facet.field=source_id"
+# )
 inputsF = (
-    "https://esgf-node.llnl.gov/solr/files/select?q=*:*&"
-    "rows=0&wt=json&facet=true&"
-    "fq=type:File&fq=replica:false&fq=activity_id:"
+    "https://esgf-node.ornl.gov/esgf-1-5-bridge?type=File"
+    "&replica=false&activity_id="
     + activityId
-    + "&facet.field=source_id"
+    + "&facets=source_id&data_node=esgf-data1.llnl.gov,"
+    "esgf-data2.llnl.gov,aims3.llnl.gov,esgf-data.nersc.gov"
 )
 print("inputsF:", inputsF)
-js = requests.get(inputsF, timeout=5)
+js = requests.get(inputsF, timeout=timeOutTime)
 js_mipsF = json.loads(js.text)
 
 # %% query results - 240725 1159 (latest data SOLARIS-HEPPA-CMIP-4-2
@@ -209,29 +229,34 @@ srcIdFDictList = list(sorted(srcIdFDict.keys()))
 
 # determine missing/inconsistent
 print(
-    "Search results: Dataset includes, excluded from File ",
+    "Search results: Dataset includes, excluded from File",
     "searches (likely latest:false):",
 )
 print(set(srcIdDDictList).difference(srcIdFDictList))
 
 # %% using source_id entries from Dataset search build and write a library
+# solrQry = (
+#    "https://esgf-node.llnl.gov/esg-search/search/?limit=1000&"
+#    "format=application%2Fsolr%2Bjson&source_id="
+#    "PLACEHOLDER" + "&project=input4mips&project=input4MIPs&"
+#    "distrib=false&fields=*"
+# )  # all fields
 solrQry = (
-    "https://esgf-node.llnl.gov/esg-search/search/?limit=1000&"
-    "format=application%2Fsolr%2Bjson&source_id="
-    "PLACEHOLDER" + "&project=input4mips&project=input4MIPs&"
-    "distrib=false&fields=*"
+    "https://esgf-node.ornl.gov/esgf-1-5-bridge/?limit=1000"
+    "&source_id=PLACEHOLDER"
+    "&project=input4mips&project=input4MIPs&distrib=false"
 )  # all fields
 mstrJson = {}  # create catch dictionary
 oF = "tmp.json"
 for count, srcId in enumerate(srcIdDDict.keys()):
     # print(count, srcId)
     qryStr = solrQry.replace("PLACEHOLDER", srcId)
-    js = requests.get(qryStr, timeout=5)
+    js = requests.get(qryStr, timeout=timeOutTime)
     js_srcId = json.loads(js.text)
     # write to placeholder to test
     srcIdLen = len(js_srcId["response"]["docs"])
     # https://stackoverflow.com/questions/24816237/ipython-notebook-clear-cell-output-in-code
-    print("len(js_srcId):", "{:03d}".format(srcIdLen), srcId)
+    print("{:03d}".format(count), "len(js_srcId):", "{:03d}".format(srcIdLen), srcId)
     for entry in np.arange(0, srcIdLen):
         a = js_srcId["response"]["docs"][entry]
         instId = a["instance_id"]

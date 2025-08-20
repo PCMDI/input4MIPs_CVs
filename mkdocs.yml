@@ -1,6 +1,6 @@
 site_name: input4MIPs Controlled Vocabularies (CVs)
 site_description: Controlled Vocabularies (CVs) for use in input4MIPs
-site_url: https://input4mips-controlled-vocabularies-cvs.readthedocs.io/
+site_url: https://input4mips-cvs.readthedocs.io/
 edit_uri: blob/main/docs/
 
 repo_name: PCMDI/input4MIPs_CVs
@@ -36,6 +36,7 @@ nav:
     - Source ID-level CMIP6Plus: database-views/input4MIPs_source-id_CMIP6Plus.html
     - Dataset-level CMIP6Plus: database-views/input4MIPs_datasets_CMIP6Plus.html
     - File-level CMIP6Plus: database-views/input4MIPs_files_CMIP6Plus.html
+  - Source ID landing pages: source-id-landing-pages/
   - Repository overview: repository-overview.md
   - Contributing: contributing.md
   - Versioning: versioning.md
@@ -75,11 +76,17 @@ plugins:
   - gen-files:
       scripts:
         - docs/dataset-overviews/fill-out-auto-generated-sections.py
+        - docs/source-id-landing-pages/auto-generate-source-id-pages.py
+  # Required for handling the source ID landing pages
+  - literate-nav:
 
 
 markdown_extensions:
   - attr_list
   - footnotes
+  # https://squidfunk.github.io/mkdocs-material/reference/math/#katex-mkdocsyml
+  - pymdownx.arithmatex:
+      generic: true
   # Code highlighting handiness
   - pymdownx.highlight:
       anchor_linenums: true
@@ -94,6 +101,14 @@ markdown_extensions:
   # Ensure that there are links to table of contents items
   - toc:
       permalink: "#"
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 watch:
   - README.md

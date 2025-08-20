@@ -22,7 +22,7 @@ for file_to_rewrite in "$@"; do
         validate-file \
         --cv-source ./CVs \
         --write-in-drs "${rewrite_target}" \
+        --allow-cf-checker-warnings \
         "${file_to_rewrite}"
-    # --allow-cf-checker-warnings \
     # --cv-source "gh:main" \
 done

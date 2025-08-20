@@ -1,0 +1,80 @@
+{
+  "creators": [
+    {
+      "affiliation": "Deltares, Delft, the Netherlands",
+      "creatorName": "van Marle, Margreet",
+      "email": "Margreet.vanMarle@Deltares.nl",
+      "familyName": "van Marle",
+      "givenName": "Margreet",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0001-7473-5550",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Wageningen University and Research, Meteorology and Air Quality, Wageningen, Netherlands",
+      "creatorName": "van der Werf, Guido",
+      "email": "Guido.vanderWerf@wur.nl",
+      "familyName": "van der Werf",
+      "givenName": "Guido",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0001-9042-8630",
+        "schemeURI": "https://orcid.org/"
+      }
+    }
+  ],
+  "dates": [
+    {
+      "date": "2025-05-26",
+      "dateType": "Created"
+    }
+  ],
+  "descriptions": [
+    {
+      "descriptionType": "Abstract",
+      "text": "CMIP forcing dataset (input4MIPs).\nThis is all data published under the unique ID (known as a source ID) DRES-CMIP-BB4CMIP7-2-1."
+    }
+  ],
+  "formats": [
+    {
+      "format": "application/x-netcdf"
+    }
+  ],
+  "fundingReferences": [],
+  "identifier": {
+    "id": "10.25981/ESGF.input4MIPs.CMIP7/2524040",
+    "identifierType": "DOI"
+  },
+  "language": "en",
+  "publication_year": 2025,
+  "publisher": "Earth System Grid Federation",
+  "relatedIdentifiers": [],
+  "resourceType": {
+    "resourceType": "Digital",
+    "resourceTypeGeneral": "Dataset"
+  },
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+      "rightsURI": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "input4MIPs.CMIP7.CMIP.DRES.DRES-CMIP-BB4CMIP7-2-1",
+      "subjectScheme": "DRS"
+    },
+    {
+      "subject": "forcing data"
+    },
+    {
+      "subject": "climate"
+    },
+    {
+      "subject": "CMIP7"
+    }
+  ],
+  "titles": "DRES-CMIP-BB4CMIP7-2-1 data provided as part of input4MIPs"
+}
