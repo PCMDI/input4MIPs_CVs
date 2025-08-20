@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.43 (2025-08-20)
+
+
+### 🆕 Features
+
+- Registered source IDs for the forthcoming ozone and nitrogen deposition data ([#186](https://github.com/PCMDI/input4MIPs_CVs/pull/186))
+
+
 ## input4MIPs CVs v6.6.42 (2025-08-20)
 
 
