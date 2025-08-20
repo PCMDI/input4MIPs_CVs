@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.44 (2025-08-20)
+
+
+### 🐛 Bug Fixes
+
+- Updated the status of the simple plumes (it was incorrectly marked as preliminary) ([#333](https://github.com/PCMDI/input4MIPs_CVs/pull/333))
+
+
 ## input4MIPs CVs v6.6.43 (2025-08-20)
 
 
