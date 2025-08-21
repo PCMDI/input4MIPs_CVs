@@ -22,6 +22,17 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.6.45 (2025-08-21)
+
+
+### 🎉 Improvements
+
+- - Added DOIs for a number of datasets that were missing them
+  - Updated to the latest scrape of ESGF (only minor updates, mainly to timestamps)
+
+  ([#334](https://github.com/PCMDI/input4MIPs_CVs/pull/334))
+
+
 ## input4MIPs CVs v6.6.44 (2025-08-20)
 
 
