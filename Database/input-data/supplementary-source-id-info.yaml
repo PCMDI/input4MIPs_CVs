@@ -92,15 +92,17 @@ DRES-CMIP-BB4CMIP7-2-1:
   publication_status: published
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
 ImperialCollege-3-0:
-  # While we wait for ESGF scrape to come back up
-  publication_status: published
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2583902
 MRI-JRA55-do-1-6-0:
   license_id: CC BY 4.0
 PCMDI-AMIP-1-1-9:
+  doi: 10.25981/ESGF.input4MIPs.CMIP6Plus/2583903
   license_id: CC BY 4.0
 PCMDI-AMIP-1-1-10:
   license_id: CC BY 4.0
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2575015
+PIK-CMIP-1-0-0:
+  doi: 10.25981/ESGF.input4MIPs.CMIP7/2583900
 SOLARIS-HEPPA-CMIP-4-1:
   publication_status: never_published
 SOLARIS-HEPPA-CMIP-4-2:
@@ -138,12 +140,25 @@ UCLA-1-0-1:
     This version was retracted
     because the increasing and decreasing labels are backwards.
     The labels are fixed in UCLA-1-0-2*.
+  doi: &ucla-1-0-1-doi >-
+   10.25981/ESGF.input4MIPs.CMIP6Plus/2583904
 UCLA-1-0-1-constant:
   comment_post_publication: *ucla-1-0-1-comment
+  doi: *ucla-1-0-1-doi
 UCLA-1-0-1-decreasing:
   comment_post_publication: *ucla-1-0-1-comment
+  doi: *ucla-1-0-1-doi
 UCLA-1-0-1-increasing:
   comment_post_publication: *ucla-1-0-1-comment
+  doi: *ucla-1-0-1-doi
+UCLA-1-0-2:
+  doi: *ucla-1-0-1-doi
+UCLA-1-0-2-constant:
+  doi: *ucla-1-0-1-doi
+UCLA-1-0-2-decreasing:
+  doi: *ucla-1-0-1-doi
+UCLA-1-0-2-increasing:
+  doi: *ucla-1-0-1-doi
 UOEXETER-CMIP-0-1-0:
   publication_status: never_published
 UOEXETER-CMIP-1-1-2:

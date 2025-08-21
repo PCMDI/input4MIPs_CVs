@@ -31,7 +31,10 @@
     }
   ],
   "fundingReferences": [],
-  "identifier": {},
+  "identifier": {
+    "id": "10.25981/ESGF.input4MIPs.CMIP7/2583902",
+    "identifierType": "DOI"
+  },
   "language": "en",
   "publication_year": 2025,
   "publisher": "Earth System Grid Federation",
