@@ -233,15 +233,17 @@ Note there is a variable naming inconsistency for these file - described in the 
 
 ### CEDS-CMIP-2025-03-18-supplemental
 
-A bug was found in gridding of data for 2022 and 2023. This does not affect any other values, so
-this version could still be used for piControl and historical simulations if they have already been
-started. If not, we recommend updating to the next version for consistency.
+A bug was found in gridding of data for that led to spurious emissions for CO, CO2, and NOx, for the
+industrial (IND) and energy (ENE) sectors. These spurious emissions span 1961 - 2021. Globally, the
+differences represent less than 0.001% of annual emissions, but sometimes individual grid cell
+changes can sometimes represent a factor of 2 change (for small emissions).
 
 ### CEDS-CMIP-2025-03-18
 
-A bug was found in gridding of data for 2022 and 2023. This does not affect any other values, so
-this version could still be used for piControl and historical simulations if they have already been
-started. If not, we recommend updating to the next version for consistency.
+A bug was found in gridding of data for that led to spurious emissions for CO, CO2, and NOx, for the
+industrial (IND) and energy (ENE) sectors. These spurious emissions span 1961 - 2021. Globally, the
+differences represent less than 0.001% of annual emissions, but sometimes individual grid cell
+changes can sometimes represent a factor of 2 change (for small emissions).
 
 ### CEDS-CMIP-2024-11-25-supplemental
 
