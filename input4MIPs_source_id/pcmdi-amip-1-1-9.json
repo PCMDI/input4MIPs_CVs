@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "pcmdi-amip-1-1-9",
+    "type": "source",
+    "activity_id": "input4MIPs",
+    "authors": [
+        {
+            "name": "Paul Durack",
+            "email": "durack1@llnl.gov",
+            "affiliations": [
+                "Program for Climate Model Diagnosis and Intercomparison, Lawrence Livermore National Laboratory, Livermore, California, USA"
+            ],
+            "orcid": "0000-0003-2835-1438"
+        }
+    ],
+    "contact": "PCMDI (pcmdi-cmip@llnl.gov)",
+    "dataset_category": [
+        "SSTsAndSeaIce"
+    ],
+    "further_info_url": "https://pcmdi.llnl.gov/mips/amip",
+    "institution_id": "PCMDI",
+    "license_id": "CC BY 4.0",
+    "mip_era": "CMIP6Plus",
+    "source_version": "1.1.9"
+}

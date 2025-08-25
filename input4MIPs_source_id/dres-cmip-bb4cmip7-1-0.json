@@ -1,0 +1,33 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "dres-cmip-bb4cmip7-1-0",
+    "type": "source",
+    "activity_id": "input4MIPs",
+    "authors": [
+        {
+            "name": "Margreet van Marle",
+            "email": "Margreet.vanMarle@Deltares.nl",
+            "affiliations": [
+                "Deltares, Delft, the Netherlands"
+            ],
+            "orcid": "0000-0001-7473-5550"
+        },
+        {
+            "name": "Guido van der Werf",
+            "email": "Guido.vanderWerf@wur.nl",
+            "affiliations": [
+                "Wageningen University and Research, Meteorology and Air Quality, Wageningen, Netherlands"
+            ],
+            "orcid": "0000-0001-9042-8630"
+        }
+    ],
+    "contact": "Margreet.vanMarle@Deltares.nl;Guido.vanderWerf@wur.nl",
+    "dataset_category": [
+        "emissions"
+    ],
+    "further_info_url": "https://www.globalfiredata.org",
+    "institution_id": "DRES",
+    "license_id": "CC BY 4.0",
+    "mip_era": "CMIP6Plus",
+    "source_version": "1.0"
+}

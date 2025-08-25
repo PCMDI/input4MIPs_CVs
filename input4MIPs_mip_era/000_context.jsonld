@@ -1,0 +1,8 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/mip_era/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type"
+    }
+}

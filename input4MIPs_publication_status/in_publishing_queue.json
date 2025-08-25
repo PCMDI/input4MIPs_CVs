@@ -1,0 +1,5 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "in_publishing_queue",
+    "type": "publication_status"
+}

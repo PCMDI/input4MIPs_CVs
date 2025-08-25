@@ -1,0 +1,33 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "uofmd-landstate-3-1-1",
+    "type": "source",
+    "activity_id": "input4MIPs",
+    "authors": [
+        {
+            "name": "Louise Chini",
+            "email": "lchini@umd.edu",
+            "affiliations": [
+                "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+            ],
+            "orcid": "0000-0002-9070-3505"
+        },
+        {
+            "name": "George Hurtt",
+            "email": "gchurtt@umd.edu",
+            "affiliations": [
+                "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+            ],
+            "orcid": "0000-0001-7278-202X"
+        }
+    ],
+    "contact": "lchini@umd.edu, gchurtt@umd.edu",
+    "dataset_category": [
+        "landState"
+    ],
+    "further_info_url": "https://luh.umd.edu/",
+    "institution_id": "UofMD",
+    "license_id": "CC BY 4.0",
+    "mip_era": "CMIP7",
+    "source_version": "3.1.1"
+}

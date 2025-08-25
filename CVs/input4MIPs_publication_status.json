@@ -1,20 +1,20 @@
 {
-    "registered":{
-        "description":"Dataset is known, but no data has been received for publication yet"
+    "registered": {
+        "description": "Dataset is known, but no data has been received for publication yet"
     },
-    "in_publishing_queue":{
-        "description":"Dataset is known and in the publication queue"
+    "in_publishing_queue": {
+        "description": "Dataset is known and in the publication queue"
     },
-    "published":{
-        "description":"Dataset is published"
+    "published": {
+        "description": "Dataset is published"
     },
-    "retracted":{
-        "description":"Dataset has been retracted. It should no longer be used, except for reproduction of earlier results/experiments"
+    "retracted": {
+        "description": "Dataset has been retracted. It should no longer be used, except for reproduction of earlier results/experiments"
     },
-    "abandoned":{
-        "description":"The dataset was registered, but then never produced (for whatever reason)."
+    "abandoned": {
+        "description": "The dataset was registered, but then never produced (for whatever reason)."
     },
-    "never_published":{
-        "description":"The dataset was registered, but never published on ESGF. Note: the dataset may have been published via other channels, that is out of our control."
+    "never_published": {
+        "description": "The dataset was registered, but never published on ESGF. Note: the dataset may have been published via other channels, that is out of our control."
     }
 }

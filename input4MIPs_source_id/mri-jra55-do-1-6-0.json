@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "mri-jra55-do-1-6-0",
+    "type": "source",
+    "activity_id": "input4MIPs",
+    "authors": [
+        {
+            "name": "Hiroyuki Tsujino",
+            "email": "htsujino@mri-jma.go.jp",
+            "affiliations": [
+                "JMA Meteorological Research Institute (MRI), Tsukuba, Ibaraki, Japan"
+            ],
+            "orcid": "0000-0003-3336-0275"
+        }
+    ],
+    "contact": "Hiroyuki Tsujino (htsujino@mri-jma.go.jp)",
+    "dataset_category": [
+        "atmosphericState"
+    ],
+    "further_info_url": "https://climate.mri-jma.go.jp/pub/ocean/JRA55-do/index.html",
+    "institution_id": "MRI",
+    "license_id": null,
+    "mip_era": "CMIP6Plus",
+    "source_version": "1.6.0"
+}

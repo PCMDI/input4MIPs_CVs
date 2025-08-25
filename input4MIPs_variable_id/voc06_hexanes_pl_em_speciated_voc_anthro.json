@@ -1,0 +1,5 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "voc06_hexanes_pl_em_speciated_voc_anthro",
+    "type": "variable"
+}

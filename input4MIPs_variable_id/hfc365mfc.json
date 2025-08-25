@@ -1,0 +1,5 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "hfc365mfc",
+    "type": "variable"
+}

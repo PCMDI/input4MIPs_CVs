@@ -1,0 +1,11 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/publication_status/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "description": {
+            "@id": "https://schema.org/description"
+        }
+    }
+}

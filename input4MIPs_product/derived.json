@@ -1,0 +1,6 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "derived",
+    "type": "product",
+    "description": "Data is derived from observations, but is not directly observations"
+}

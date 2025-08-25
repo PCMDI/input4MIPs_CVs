@@ -1,0 +1,17 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/license/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "conditions": {
+            "@id": "https://schema.org/description"
+        },
+        "long_name": {
+            "@id": "https://schema.org/name"
+        },
+        "license_url": {
+            "@id": "https://schema.org/url"
+        }
+    }
+}

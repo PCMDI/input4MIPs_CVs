@@ -1,0 +1,26 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "solaris-heppa-cmip-4-4",
+    "type": "source",
+    "activity_id": "input4MIPs",
+    "authors": [
+        {
+            "name": "Bernd Funke",
+            "email": "bernd@iaa.es",
+            "affiliations": [
+                "Instituto de Astrof\u00edsica de Andaluc\u00eda, CSIC, Granada, Spain"
+            ],
+            "orcid": "0000-0003-0462-4702"
+        }
+    ],
+    "contact": "bernd@iaa.es",
+    "dataset_category": [
+        "solar"
+    ],
+    "further_info_url": "http://solarisheppa.geomar.de/cmip7",
+    "institution_id": "SOLARIS-HEPPA",
+    "license_id": "CC BY 4.0",
+    "mip_era": "CMIP6Plus",
+    "target_mip": "CMIP",
+    "source_version": "4.4"
+}

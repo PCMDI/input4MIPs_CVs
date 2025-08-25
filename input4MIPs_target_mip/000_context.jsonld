@@ -1,0 +1,17 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/activity/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "URL": {
+            "@id": "https://schema.org/url"
+        },
+        "full_name": {
+            "@id": "https://schema.org/name"
+        },
+        "mip_era": {
+            "@id": "https://espri-mod.github.io/mip-cmor-tables/mip_era"
+        }
+    }
+}

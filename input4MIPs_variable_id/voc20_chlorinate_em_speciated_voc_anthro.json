@@ -1,0 +1,5 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "voc20_chlorinate_em_speciated_voc_anthro",
+    "type": "variable"
+}

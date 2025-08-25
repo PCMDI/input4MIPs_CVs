@@ -1,114 +1,114 @@
 {
-    "CMIP6":{
-        "AerChemMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Aerosols and Chemistry Model Intercomparison Project"
+    "CMIP6": {
+        "AerChemMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Aerosols and Chemistry Model Intercomparison Project"
         },
-        "C4MIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Coupled Climate Carbon Cycle Model Intercomparison Project"
+        "C4MIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Coupled Climate Carbon Cycle Model Intercomparison Project"
         },
-        "CDRMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Carbon Dioxide Removal Model Intercomparison Project"
+        "CDRMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Carbon Dioxide Removal Model Intercomparison Project"
         },
-        "CFMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Cloud Feedback Model Intercomparison Project"
+        "CFMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Cloud Feedback Model Intercomparison Project"
         },
-        "CMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
+        "CMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
         },
-        "CORDEX":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Coordinated Regional Climate Downscaling Experiment"
+        "CORDEX": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Coordinated Regional Climate Downscaling Experiment"
         },
-        "DAMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Detection and Attribution Model Intercomparison Project"
+        "DAMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Detection and Attribution Model Intercomparison Project"
         },
-        "DCPP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Decadal Climate Prediction Project"
+        "DCPP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Decadal Climate Prediction Project"
         },
-        "DynVarMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Dynamics and Variability Model Intercomparison Project"
+        "DynVarMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Dynamics and Variability Model Intercomparison Project"
         },
-        "FAFMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Flux-Anomaly-Forced Model Intercomparison Project"
+        "FAFMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Flux-Anomaly-Forced Model Intercomparison Project"
         },
-        "GMMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Global Monsoons Model Intercomparison Project"
+        "GMMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Global Monsoons Model Intercomparison Project"
         },
-        "GeoMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Geoengineering Model Intercomparison Project"
+        "GeoMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Geoengineering Model Intercomparison Project"
         },
-        "HighResMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"High-Resolution Model Intercomparison Project"
+        "HighResMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "High-Resolution Model Intercomparison Project"
         },
-        "ISMIP6":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Ice Sheet Model Intercomparison Project for CMIP6"
+        "ISMIP6": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Ice Sheet Model Intercomparison Project for CMIP6"
         },
-        "LS3MIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Land Surface, Snow and Soil Moisture"
+        "LS3MIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Land Surface, Snow and Soil Moisture"
         },
-        "LUMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Land-Use Model Intercomparison Project"
+        "LUMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Land-Use Model Intercomparison Project"
         },
-        "OMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Ocean Model Intercomparison Project"
+        "OMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Ocean Model Intercomparison Project"
         },
-        "PAMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Polar Amplification Model Intercomparison Project"
+        "PAMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Polar Amplification Model Intercomparison Project"
         },
-        "PMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Palaeoclimate Modelling Intercomparison Project"
+        "PMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Palaeoclimate Modelling Intercomparison Project"
         },
-        "RFMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Radiative Forcing Model Intercomparison Project"
+        "RFMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Radiative Forcing Model Intercomparison Project"
         },
-        "SIMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Sea Ice Model Intercomparison Project"
+        "SIMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Sea Ice Model Intercomparison Project"
         },
-        "ScenarioMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Scenario Model Intercomparison Project"
+        "ScenarioMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Scenario Model Intercomparison Project"
         },
-        "VIACSAB":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Vulnerability, Impacts, Adaptation and Climate Services Advisory Board"
+        "VIACSAB": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Vulnerability, Impacts, Adaptation and Climate Services Advisory Board"
         },
-        "VolMIP":{
-            "URL":"www.tbd.invalid",
-            "full_name":"Volcanic Forcings Model Intercomparison Project"
+        "VolMIP": {
+            "URL": "www.tbd.invalid",
+            "full_name": "Volcanic Forcings Model Intercomparison Project"
         }
     },
-    "CMIP6Plus":{
-        "CMIP":{
-            "URL":"https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
-            "full_name":"CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
+    "CMIP6Plus": {
+        "CMIP": {
+            "URL": "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf",
+            "full_name": "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments"
         },
-        "LESFMIP":{
-            "URL":"https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
-            "full_name":"The Large Ensemble Single Forcing Model Intercomparison Project"
+        "LESFMIP": {
+            "URL": "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full",
+            "full_name": "The Large Ensemble Single Forcing Model Intercomparison Project"
         },
-        "Prototype":{
-            "URL":"www.tbd.invalid",
-            "full_name":"MIP identity to capture all prototype datasets collected for uncertainty exploration - not for CMIP production use"
+        "Prototype": {
+            "URL": "www.tbd.invalid",
+            "full_name": "MIP identity to capture all prototype datasets collected for uncertainty exploration - not for CMIP production use"
         }
     }
 }

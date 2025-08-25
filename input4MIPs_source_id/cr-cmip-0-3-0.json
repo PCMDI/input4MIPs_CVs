@@ -1,0 +1,36 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cr-cmip-0-3-0",
+    "type": "source",
+    "activity_id": "input4MIPs",
+    "authors": [
+        {
+            "name": "Zebedee Nicholls",
+            "email": "zebedee.nicholls@climate-resource.com",
+            "affiliations": [
+                "Climate Resource, Melbourne, Victoria, Australia",
+                "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+            ],
+            "orcid": "0000-0002-4767-2723"
+        },
+        {
+            "name": "Malte Meinshausen",
+            "email": "malte.meinshausen@climate-resource.com",
+            "affiliations": [
+                "Climate Resource, Melbourne, Victoria, Australia",
+                "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+            ],
+            "orcid": "0000-0003-4048-3521"
+        }
+    ],
+    "contact": "zebedee.nicholls@climate-resource.com;malte.meinshausen@climate-resource.com",
+    "dataset_category": [
+        "GHGConcentrations"
+    ],
+    "further_info_url": "http://www.tbd.invalid",
+    "institution_id": "CR",
+    "license_id": "CC BY 4.0",
+    "mip_era": "CMIP6Plus",
+    "source_version": "0.3.0"
+}

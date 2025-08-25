@@ -1,0 +1,21 @@
+
+
+{
+     
+      "@context": {
+      "@base":"https://espri-mod.github.io/mip-cmor-tables/institution/",
+      "@vocab": "http://schema.org/",
+      "id": "@id",
+      "type":"@type",
+      
+      "acronyms": {"@id": "https://es-vocab.ipsl.fr/acronyms"},
+      "name": {"@id": "https://schema.org/name"},
+      
+      "cmip-acronym":{"@id":"https://schema.org/alternateName"},
+      "established":{"@id":"https://schema.org/foundingDate"},
+      "labels":{"@id":"https://schema.org/alternateName"},
+      "location":{"@id":"https://schema.org/location"},
+      "ror":{"@id":"https://ror.org/"},
+      "url":{"@id":"https://schema.org/url"}
+    }
+}

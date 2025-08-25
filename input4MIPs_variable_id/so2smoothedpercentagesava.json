@@ -1,0 +1,5 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "so2smoothedpercentagesava",
+    "type": "variable"
+}

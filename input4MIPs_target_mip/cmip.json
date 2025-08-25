@@ -1,0 +1,6 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "cmip",
+    "type": "activity",
+    "mip_era": "cmip6plus"
+}

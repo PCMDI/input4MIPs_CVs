@@ -1,0 +1,35 @@
+{
+    "@context": {
+        "@base": "https://espri-mod.github.io/mip-cmor-tables/source/",
+        "@vocab": "http://schema.org/",
+        "id": "@id",
+        "type": "@type",
+        "activity_id": {
+            "@id": "https://espri-mod.github.io/mip-cmor-tables/activity"
+        },
+        "authors": {
+            "@id": "https://schema.org/author"
+        },
+        "contact": {
+            "@id": "https://schema.org/email"
+        },
+        "dataset_category": {
+            "@id": "https://espri-mod.github.io/mip-cmor-tables/dataset_category"
+        },
+        "further_info_url": {
+            "@id": "https://schema.org/url"
+        },
+        "institution_id": {
+            "@id": "https://espri-mod.github.io/mip-cmor-tables/institution"
+        },
+        "license_id": {
+            "@id": "https://schema.org/license"
+        },
+        "mip_era": {
+            "@id": "https://espri-mod.github.io/mip-cmor-tables/mip_era"
+        },
+        "source_version": {
+            "@id": "https://schema.org/version"
+        }
+    }
+}

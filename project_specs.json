@@ -1,0 +1,258 @@
+{
+  "project_id": "input4mips",
+  "description": "TODO?",
+  "drs_specs": [
+    {
+      "type": "directory",
+      "separator": "/",
+      "parts": [
+        {
+          "collection_id": "input4MIPs_activity_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_mip_era",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_target_mip",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_institution_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_source_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_realm",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_frequency",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_variable_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_grid_label",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_version",
+          "is_required": true,
+          "kind": "collection"
+        }
+      ]
+    },
+    {
+      "type": "file_name",
+      "separator": "_",
+      "properties": {
+        "extension": "nc",
+        "extension_separator": "."
+      },
+      "parts": [
+        {
+          "collection_id": "input4MIPs_variable_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_activity_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_dataset_category",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_target_mip",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_source_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_grid_label",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_time_range",
+          "is_required": false,
+          "kind": "collection"
+        }
+      ]
+    },
+    {
+      "type": "dataset_id",
+      "separator": ".",
+      "parts": [
+        {
+          "collection_id": "input4MIPs_activity_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_mip_era",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_target_mip",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_institution_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_source_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_realm",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_frequency",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_variable_id",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_grid_label",
+          "is_required": true,
+          "kind": "collection"
+        },
+        {
+          "collection_id": "input4MIPs_version",
+          "is_required": true,
+          "kind": "collection"
+        }
+      ]
+    }
+  ],
+  "global_attributes_specs": {
+    "specs": {
+      "Conventions": {
+        "source_collection": "input4MIPs_Conventions",
+        "value_type": "string"
+      },
+      "activity_id": {
+        "source_collection": "input4MIPs_activity_id",
+        "value_type": "string"
+      },
+      "contact": {
+        "source_collection": "input4MIPs_contact",
+        "default_value": "",
+        "value_type": "string"
+      },
+      "creation_date": {
+        "source_collection": "input4MIPs_creation_date",
+        "value_type": "string"
+      },
+      "dataset_category": {
+        "source_collection": "input4MIPs_dataset_category",
+        "value_type": "string"
+      },
+      "frequency": {
+        "source_collection": "input4MIPs_frequency",
+        "value_type": "string"
+      },
+      "further_info_url": {
+        "source_collection": "input4MIPs_further_info_url",
+        "value_type": "string"
+      },
+      "grid_label": {
+        "source_collection": "input4MIPs_grid_label",
+        "value_type": "string"
+      },
+      "institution": {
+        "source_collection": "input4MIPs_institution_id",
+        "specific_key": "description",
+        "value_type": "string"
+      },
+      "institution_id": {
+        "source_collection": "input4MIPs_institution_id",
+        "value_type": "string"
+      },
+      "license": {
+        "source_collection": "input4MIPs_license",
+        "value_type": "string"
+      },
+      "mip_era": {
+        "source_collection": "input4MIPs_mip_era",
+        "value_type": "string"
+      },
+      "nominal_resolution": {
+        "source_collection": "input4MIPs_nominal_resolution",
+        "value_type": "string"
+      },
+      "realm": {
+        "source_collection": "input4MIPs_realm",
+        "value_type": "string"
+      },
+      "region": {
+        "source_collection": "input4MIPs_region",
+        "value_type": "string"
+      },
+      "source": {
+        "source_collection": "input4MIPs_source_id",
+        "specific_key": "description",
+        "value_type": "string"
+      },
+      "source_id": {
+        "source_collection": "input4MIPs_source_id",
+        "value_type": "string"
+      },
+      "source_version": {
+        "source_collection": "input4MIPs_source_version",
+        "value_type": "string"
+      },
+      "target_mip": {
+        "source_collection": "input4MIPs_target_mip",
+        "value_type": "string"
+      },
+      "title": {
+        "source_collection": "input4MIPs_title",
+        "value_type": "string"
+      },
+      "tracking_id": {
+        "source_collection": "input4MIPs_tracking_id",
+        "value_type": "string"
+      },
+      "variable_id": {
+        "source_collection": "input4MIPs_variable_id",
+        "value_type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ucla-1-0-1",
+    "type": "source",
+    "activity_id": "input4MIPs",
+    "authors": [
+        {
+            "name": "Jasper Kok",
+            "email": "jfkok@ucla.edu",
+            "affiliations": [
+                "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
+            ],
+            "orcid": "0000-0003-0464-8325"
+        },
+        {
+            "name": "Danny Leung",
+            "email": "dleung@ucar.edu",
+            "affiliations": [
+                "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
+                "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
+            ],
+            "orcid": "0000-0002-9879-9978"
+        }
+    ],
+    "contact": "jfkok@ucla.edu;dleung@ucar.edu",
+    "dataset_category": [
+        "emissions"
+    ],
+    "further_info_url": "http://www.tbd.invalid",
+    "institution_id": "UCLA",
+    "license_id": "CC BY 4.0",
+    "mip_era": "CMIP6Plus",
+    "source_version": "1.0.1"
+}

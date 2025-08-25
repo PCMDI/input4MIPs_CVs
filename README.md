@@ -1,152 +1,131 @@
-<!--- --8<-- [start:header] -->
-# input4MIPs Controlled Vocabularies (CVs)
+# CV Build Test for a New Project  
 
-[![Latest release](https://img.shields.io/badge/Latest%20release-v6.6.25-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/v6.6.25)
-[![DOI (all versions)](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://zenodo.org/doi/10.5281/zenodo.12629796)
-[![Docs](https://readthedocs.org/projects/input4MIPs-CVs/badge/?version=latest)](https://input4MIPs-CVs.readthedocs.io)
+## Objective  
+This project aims to build the CV for a new project.  
 
-Controlled Vocabularies (CVs) for use in input4MIPs.
-Full documentation can be found at: [input4mips-CVs.readthedocs.io](https://input4mips-CVs.readthedocs.io).
+### **Input & Output**  
+- **Input CV:** [PCMDI/input4MIPs_CVs](https://github.com/PCMDI/input4MIPs_CVs/tree/main/CVs)  
+- **Output:** A repository compatible with the ESGVOC library: [ESGF Vocabulary](https://esgf.github.io/esgf-vocab/)  
 
-For further information regarding forcing dataset development
-for the Coupled Model Intercomparison Project (CMIP) activities,
-please see the
-[CMIP Forcing Task Team homepage](https://wcrp-cmip.org/cmip7-task-teams/forcings/).
+---
 
-<!--- --8<-- [end:header] -->
+## **Project Steps & Progress**  
 
-<!--- 
-    Note: different link here compared to in `docs/` 
-    so that the link renders correctly on the GitHub homepage 
--->
-For different, pre-prepared views of the database,
-see 
-[database views](https://input4MIPs-CVs.readthedocs.io/en/latest/database-views/).
+### **1. Repository Setup**  
+- Create a new repository or a branch within an existing one to store the new project CV format (this repository).  
 
-## Usage
+### **2. Define the DRS (Directory, Filename, Dataset Name)**  
+- Most projects have a **DRS** linked to the CV.  
+- Define the DRS in the correct format.  
+- Example: [CMIP6Plus Project Specs](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/esgvoc/project_specs.json).  
 
-<!--- 
-    Note: point to rendered docs 
-    to avoid link rendering issues on the GitHub homepage 
--->
+**Tracking history:**  
+- A simple script (`scripts/build_drs.py`) will be used to track the history of each file.  
+- This script is project-specific (not reusable) and was written for efficiency.  
+- **Output:** `project_spec.json` is created!  
 
-For information about how to use this repository,
-see 
-[usage as a data user](https://input4MIPs-CVs.readthedocs.io/en/latest/usage-data-user/#usage-as-a-data-user)
-and [usage as a data producer](https://input4MIPs-CVs.readthedocs.io/en/latest/usage-data-producer/#usage-as-a-data-producer).
+---
 
-<!--- --8<-- [start:repository-overview] -->
-## Repository overview
+### **3. Create Directories for Each Collection**  
+Each collection requires a directory containing **terms** and **context** files.  
 
-The repository captures two key pieces of information.
+#### **Example: "activity" Collection**  
+- Source: [input4MIPs_activity_id.json](https://github.com/PCMDI/input4MIPs_CVs/blob/main/CVs/input4MIPs_activity_id.json).  
+- It contains only one term: **input4MIPs**.  
 
-### Controlled vocabularies
+#### **Checking CMIP Universe Compatibility**  
+- Verify if the term exists in the **CMIP Universe**:  
+  [WCRP-Universe Activity](https://github.com/WCRP-CMIP/WCRP-universe/tree/esgvoc/activity)  
+- **Result:** **Not found**.  
 
-The first is the controlled vocabularies (CVs) used within the input4MIPs project.
-The CVs define the allowed terms which can be used for various pieces of metadata.
-The precise rules are still somewhat fuzzy 
-and these CVs should be considered a work in progress,
-however they do provide much more structure than nothing.
-These live in the `CVs` directory.
+#### **Two Solutions**  
+1. **Request Addition:** Open an issue in the **WCRP-Universe repository**.  
+2. **Create a New Term** (not covered here).  
 
-These CVs are specific to the input4MIPs project.
-They supplement the 'global' CVs, which are being developed in the
-[WCRP universe](https://github.com/WCRP-CMIP/WCRP-universe).
-As much as possible, we aim to rely on the 'universe' CVs
-and attempt to avoid duplicating information.
-However, the 'universe' CVs are currently under heavy development,
-so there is some duplication at the moment.
-We hope to reduce this over time.
-When in doubt, the CVs in this repository will be the source of truth for the input4MIPs project.
+Once the term is added to the WCRP-Universe repository, proceed with the following steps:  
 
-The compliance with these CVs is checked with
-[input4mips-validation](https://github.com/climate-resource/input4mips_validation),
-also a work in progress.
+#### **Steps to Integrate in This Repository**  
+1. **Create a directory** → `input4MIPs_activity_id/`  
+2. **Add a context file** → `000_context.jsonld`  
+   - Use an existing template:  
+     [Example Context File](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/esgvoc/activity_id/000_context.jsonld).  
+3. **Add the term definition** → `input4MIPs.json`  
+   - Fetch relevant data from the **CMIP Universe**.  
+   - Use an existing example:  
+     [Example Term File](https://github.com/WCRP-CMIP/CMIP6Plus_CVs/blob/esgvoc/activity_id/cmip.json).  
+   - Modify the ID to match the universe's ID.  
 
-### Files database
+---
 
-The second key piece of information is a database of the files we know about within the input4MIPs project.
-At the moment, this database is stored as a JSON file within this repository,
-`Database/input4MIPs_db_file_entries.json`
-(although this may change in future, if this solution doesn't scale well).
-This database provides a record of the files known to the input4MIPs project,
-given that the ESGF index is not publicly queriable 
-(nor perfectly suited to input4MIPs data, 
-which does not always conform to the ESGF's data model, 
-e.g. sometimes there is more than one variable in a file).
+### **Repeat for Each Collection & Required Terms**  
+Follow the above steps for all necessary collections and terms. 
 
-To ease exploration of the database, 
-we provide a few pre-prepared views of the database,
-see [database views](https://input4MIPs-CVs.readthedocs.io/en/latest/database-views/).
-<!--- --8<-- [end:repository-overview] -->
 
-## Contributors
+#### institution_id 
 
-<!--- --8<-- [start:contributors] -->
-[![Contributors](https://contrib.rocks/image?repo=PCMDI/input4MIPs_CVs)](https://github.com/PCMDI/input4MIPs_CVs/graphs/contributors)
+institution is a known datadescriptor in the universe. 
+##### Create context
 
-Thanks to our contributors!
-<!--- --8<-- [end:contributors] -->
+lets take the institution context and copy/paste it in a input4MIPs_institution_id directory  
 
-## Acknowledgement
+##### Create terms
 
-<!--- --8<-- [start:acknowledgement] -->
-The repository content has been collected from many contributors 
-representing the input datasets for Model Intercomparison Projects (input4MIPs), 
-including those from climate modeling groups and model intercomparison projects (MIPs) worldwide. 
-The structure of content and tools required to maintain it was developed by climate 
-and computer scientists from the Program for Climate Model Diagnosis and Intercomparison ([PCMDI](https://pcmdi.llnl.gov/)) 
-at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/)), 
-[Climate Resource](https://www.climate-resource.com/), 
-and the Coupled Model Intercomparison Project International Project Office ([CMIP-IPO](https://wcrp-cmip.org/cmip-governance/project-office/)), 
-with assistance from a large and expanding international community.
+then, for each term, check if it exists in universe, if not : ask for it the be registered 
 
-This work is sponsored by the Regional and Global Model Analysis ([RGMA](https://climatemodeling.science.energy.gov/program/regional-global-model-analysis)) 
-program of the Earth and Environmental Systems Sciences Division ([EESSD](https://science.osti.gov/ber/Research/eessd)) 
-in the Office of Biological and Environmental Research ([BER](https://science.osti.gov/ber)) 
-within the Department of Energy's ([DOE](https://www.energy.gov/))
-Office of Science ([OS](https://science.osti.gov/)). 
-The work at PCMDI is performed 
-under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
-The work at Climate Resource has been funded by the European Space Agency (ESA) 
-as part of the 
-[GHG Forcing For CMIP project](https://climate.esa.int/en/supporting-modelling/cmip-forcing-ghg-concentrations/)
-of the Climate Change Initiative (CCI) (ESA Contract No. 4000146681/24/I-LR-cl).
-<!--- --8<-- [end:acknowledgement] -->
+for now those are missing : 
+CR not found in universe
+DRES not found in universe
+UCLA not found in universe
+uoexeter not found in universe
++ 
+CNRM-Cerfacs is CNRM-CERFACS in universe 
 
-<!--- 
-    Note: different link here compared to in `docs/` 
-    so that the link renders correctly on the GitHub homepage 
--->
-<p>
-    <img src="https://pcmdi.github.io/assets/PCMDI/100px-PCMDI-Logo-NoText-square-png8.png"
-         width="65"
-         style="margin-right: 30px"
-         title="Program for Climate Model Diagnosis and Intercomparison"
-         alt="Program for Climate Model Diagnosis and Intercomparison"
-    >&nbsp;
-    <img src="https://pcmdi.github.io/assets/DOE/480px-DOE_Seal_Color.png"
-         width="65"
-         style="margin-right: 30px"
-         title="United States Department of Energy"
-         alt="United States Department of Energy"
-    >&nbsp;
-    <img src="https://pcmdi.github.io/assets/LLNL/212px-LLNLiconPMS286-WHITEBACKGROUND.png"
-         width="65"
-         style="margin-right: 30px"
-         title="Lawrence Livermore National Laboratory"
-         alt="Lawrence Livermore National Laboratory"
-    >&nbsp;
-    <img src="https://pcmdi.github.io/assets/CMIP/100px-CMIP_Logo_RGB_Positive-square-96dpi.png"
-         width="65"
-         style="margin-right: 30px"
-         title="Couple Model Intercomparison Project International Project Office"
-         alt="Couple Model Intercomparison Project International Project Office"
-    >&nbsp;
-    <img src="https://raw.githubusercontent.com/PCMDI/input4MIPs_CVs/main/docs/assets/CR_Logo%20_Square_400x400.png"
-         width="65"
-         style="margin-right: 30px"
-         title="Climate Resource"
-         alt="Climate Resource"
-    >
-</p>
+
+#### source_id 
+this one is interesting ! 
+
+this collection is exactly the same as the datadescriptor source in the universe. 
+BUT not every term here are part of the universe. Go to issues in universe to add it 
+and then the term in this repo, in this collection will be a link to these future one. 
+
+#### dataset_category
+
+this one is interesting too ! 
+this collection does not have an equivalent in the universe. But looking at existaing one, it seems that it could be the same meaning as "realm". so the idea is to add these term in universe in realm ? go to issues in universe to add it. Or even ask if realm is the good datadescriptor to put those term in 
+
+here we have added those one in realm (for example purposes, but seems OK for now)  
+
+when this is done, we can then create terms here witch are only link to those in univere realm 
+
+
+#### license 
+this is also an interesting one
+this one is pretty easy, there is already the term "CC BY 4.0" in the universe, therefore we just have to create a collection input4MIPs_license with a term in json file that point to universe term. 
+but, there is a key, value that is not the same in the universe "conditions", we will add it here. 
+
+#### mip_era 
+
+this one exists in universe and all input4MIPs terms are all present, lets use them 
+
+#### product 
+
+this one exists in universe, it only misses "reanalyses", ==> issue in universe. Then we can create input4MIPs terms
+
+#### publication status
+this one is interesting as well ! 
+it doesnt exist in universe, and nothing that already exist have the same meaning  ==> issues on universe in order to add this new datadesciptors and terms  
+Then we will create those term 
+
+#### target_mip
+this one is also intersting 
+the collection in input4MIPs is called target_mip but there the "activity" datadescriptor in universe that seems do be exactly what it described. But this a nested dict with "mip_era" as key for the first level. this kind of link is not CV (cf CV-TaskTeam work). what we can do is specified the "mip_era" in each terms here but the activity is picked from universe. 
+in addition, there is no "prototype" term in activity in universe ==> issues in universe
+
+
+### Esgvoc
+the basic access to input4MIPs CV is now possible
+lets try the DRS app with all this new defined CV !
+
+
+
+That’s all, folks! 🚀

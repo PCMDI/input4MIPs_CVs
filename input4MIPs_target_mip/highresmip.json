@@ -1,0 +1,6 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "highresmip",
+    "type": "activity",
+    "mip_era": "cmip6"
+}

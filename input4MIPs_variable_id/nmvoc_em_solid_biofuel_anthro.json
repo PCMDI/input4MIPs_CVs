@@ -1,0 +1,5 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "nmvoc_em_solid_biofuel_anthro",
+    "type": "variable"
+}

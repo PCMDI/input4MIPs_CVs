@@ -1,0 +1,6 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "observations",
+    "type": "product",
+    "description": "Data is directly from observations"
+}

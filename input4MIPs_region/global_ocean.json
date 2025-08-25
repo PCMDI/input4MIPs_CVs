@@ -1,0 +1,5 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "global_ocean",
+    "type": "region"
+}

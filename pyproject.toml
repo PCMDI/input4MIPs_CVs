@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+
+[project]
+name = "test-new-cv"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.32.3",
+    "esgvoc",
+    "jupyter-console>=6.6.3",
+]
+[tool.setuptools]
+packages = ["scripts"]
+
+[tool.uv.sources]
+esgvoc = { git = "https://github.com/ESGF/esgf-vocab.git", branch = "default_project_config" }
