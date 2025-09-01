@@ -187,10 +187,6 @@
         "source_collection": "input4MIPs_frequency",
         "value_type": "string"
       },
-      "further_info_url": {
-        "source_collection": "input4MIPs_further_info_url",
-        "value_type": "string"
-      },
       "grid_label": {
         "source_collection": "input4MIPs_grid_label",
         "value_type": "string"
@@ -231,10 +227,6 @@
       },
       "source_id": {
         "source_collection": "input4MIPs_source_id",
-        "value_type": "string"
-      },
-      "source_version": {
-        "source_collection": "input4MIPs_source_version",
         "value_type": "string"
       },
       "target_mip": {
