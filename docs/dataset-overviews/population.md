@@ -21,7 +21,9 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 #### CMIP7
 
-For the CMIP7 phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PIK-CMIP-1-0-0%22%5D%7D)
+For the CMIP7 phase of CMIP7 (1850-2025), use data with the source ID [PIK-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PIK-CMIP-1-0-0%22%5D%7D)
+For the future scenario (2026-2100) use [PIK-h-1-0-0], [PIK-hl-1-0-0], [PIK-m-1-0-0], [PIK-ml-1-0-0], 
+[PIK-l-1-0-0], [PIK-vllo-1-0-0], [PIK-vlho-1-0-0].
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2583900](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2583900).
 
@@ -49,8 +51,8 @@ Apply the 1850 value as a constant.
 ### Grids and frequencies provided
 
 We provide annual data (1850-2100) on a regular 0.25 ('gn') and 0.5 degree ('gr') grid.
-Historical scenario covers 1850-2025.
-Future scenario files will cover 2022-2100, i.e. include additional historical years for convenience.
+Historical scenario files covers 1850-2025.
+Future scenario files cover 2022-2100, i.e. include additional historical years for convenience.
 Please notify the authors if you would need other resolutions for your simulations. 
 
 ### Variables provided
@@ -65,7 +67,7 @@ The dataset contains many sources of uncertainty that are difficult to quantify 
 
 This dataset was created by joint effort of Horizon Europe project [COMPASS](https://compass-climate.eu/) 
 and project [WorldPop](https://www.worldpop.org/). The data was created at high resolution (30 arc seconds, ~1 km)
-and upscaled to 0.25 degree. The following steps were followed:
+and upscaled to 0.25 and 0.5 degree. The following steps were followed:
 (1) WorldPop [gridded constrained global population data for 2015-2025](https://www.worldpop.org/blog/beta-test-our-new-global-population-data-2015-to-2030/) 
 were combined with FuturePop projections based on SSP v3.2 trajectories.
 (2) The WorldPop gridded population was extrapolated back to 1975 using [Global Human Settlement Layer](https://human-settlement.emergency.copernicus.eu/)
