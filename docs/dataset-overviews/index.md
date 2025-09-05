@@ -43,7 +43,7 @@ so that the identification and resolution of this issue is publicly accessible.
 1. *Greenhouse gas concentrations:* [CR-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-1-0-0%22%5D%7D) (DOI: [https://doi.org/10.5281/zenodo.14892947](https://doi.org/10.5281/zenodo.14892947).)
 1. *CO<sub>2</sub> isotopes:* [ImperialCollege-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22ImperialCollege-3-0%22%5D%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2583902](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2583902).)
 1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-CMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UOEXETER-CMIP-2-2-1%22%5D%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522673](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522673).)
-1. *Ozone concentrations:* [FZJ-CMIP-ozone-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22FZJ-CMIP-ozone-1-0%22%5D%7D) (No DOI provided)
+1. *Ozone concentrations:* [FZJ-CMIP-ozone-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22FZJ-CMIP-ozone-1-0%22%5D%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).)
 1. *Nitrogen deposition:* [FZJ-CMIP-nitrogen-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22FZJ-CMIP-nitrogen-1-0%22%5D%7D) (No DOI provided)
 1. *Solar:* [SOLARIS-HEPPA-CMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22SOLARIS-HEPPA-CMIP-4-6%22%5D%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522675](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522675).)
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* [PCMDI-AMIP-1-1-10](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PCMDI-AMIP-1-1-10%22%5D%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2575015](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2575015).)
@@ -77,3 +77,19 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
 1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
+
+## CMIP7 input4MIPs data licensing
+
+It was decided at the June 2025 CMIP Core Panel meeting that:
+
+> CMIP7 DECK forcings data licensing:
+> data should be licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) 
+> or No Rights Reserved (CC0) license.
+> This is to enable open access to CMIP7 products.
+
+Almost all data providers have complied with this in a way that is easily queriable.
+If you have doubts, please double check the `license_id` and `license` attributes
+in files' global attributes or look at the pages which show this metadata:
+
+- [Dataset-level view CMIP7](../database-views/input4MIPs_datasets_CMIP7.html)
+- [File-level view CMIP7](../database-views/input4MIPs_files_CMIP7.html)

@@ -22,6 +22,36 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.0 (2025-09-05)
+
+
+### 🆕 Features
+
+- Added released CMIP7 data for ozone (FZJ-CMIP-ozone-1-0) ([#349](https://github.com/PCMDI/input4MIPs_CVs/pull/349))
+
+### 🐛 Bug Fixes
+
+- Added missing author to the "FZJ-CMIP-ozone-1-0" and "FZJ-CMIP-nitrogen-1-0" source IDs ([#345](https://github.com/PCMDI/input4MIPs_CVs/pull/345))
+
+### 🔧 Trivial/Internal Changes
+
+- [#344](https://github.com/PCMDI/input4MIPs_CVs/pull/344), [#349](https://github.com/PCMDI/input4MIPs_CVs/pull/349)
+
+
+## input4MIPs CVs v6.6.46 (2025-08-23)
+
+
+### 📚 Improved Documentation
+
+- Updated the post-publication comment for CEDS-CMIP-2025-03-18.
+  Previously we had said that CEDS-CMIP-2025-03-18 was fine for use in CMIP7 piControl and historical simulations.
+  This is not quite correct, post further investigation (see zenodo.org/records/15127477).
+  CEDS-CMIP-2025-03-18 differs from the recommended dataset (CEDS-CMIP-2025-04-18) by 0.001% globally and up to factors of 2 in individual grid cells.
+  If you have started simulations with CEDS-CMIP-2025-03-18,
+  then please make sure you capture this in reporting and consider updating to use the final, recommended dataset CEDS-CMIP-2025-04-18.
+  For full details of this issue, see [#242](https://github.com/PCMDI/input4MIPs_CVs/issues/242). ([#340](https://github.com/PCMDI/input4MIPs_CVs/pull/340))
+
+
 ## input4MIPs CVs v6.6.45 (2025-08-21)
 
 

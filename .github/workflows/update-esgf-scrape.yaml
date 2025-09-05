@@ -4,11 +4,11 @@ on:
   # push:
   #   branches: [auto-scrape-esgf]
   workflow_dispatch:
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    # This means once a day,
-    # see https://crontab.guru/once-a-day
-    - cron:  '0 0 * * *'
+  # schedule:
+  #   # * is a special character in YAML so you have to quote this string
+  #   # This means once a day,
+  #   # see https://crontab.guru/once-a-day
+  #   - cron:  '0 0 * * *'
 
 jobs:
   update-esgf-scrape:
