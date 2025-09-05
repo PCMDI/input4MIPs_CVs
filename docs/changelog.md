@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.1 (2025-09-05)
+
+
+### 📚 Improved Documentation
+
+- Added a section to the dataset overview docs which summarised the licensing arrangements that apply to CMIP7 input4MIPs data ([#350](https://github.com/PCMDI/input4MIPs_CVs/pull/350))
+
+
 ## input4MIPs CVs v6.7.0 (2025-09-05)
 
 
