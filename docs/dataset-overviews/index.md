@@ -89,7 +89,7 @@ It was decided at the June 2025 CMIP Core Panel meeting that:
 
 Almost all data providers have complied with this in a way that is easily queriable.
 If you have doubts, please double check the `license_id` and `license` attributes
-in files' global attributes or look at the pages' which show this metadata:
+in files' global attributes or look at the pages which show this metadata:
 
 - [Dataset-level view CMIP7](../database-views/input4MIPs_datasets_CMIP7.html)
 - [File-level view CMIP7](../database-views/input4MIPs_files_CMIP7.html)
