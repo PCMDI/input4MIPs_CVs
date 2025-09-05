@@ -78,7 +78,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
 
-## CMIP data licensing
+## CMIP7 input4MIPs data licensing
 
 It was decided at the June 2025 CMIP Core Panel meeting that:
 
