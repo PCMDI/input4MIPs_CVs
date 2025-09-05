@@ -77,3 +77,19 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
 1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
+
+## CMIP7 input4MIPs data licensing
+
+It was decided at the June 2025 CMIP Core Panel meeting that:
+
+> CMIP7 DECK forcings data licensing:
+> data should be licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) 
+> or No Rights Reserved (CC0) license.
+> This is to enable open access to CMIP7 products.
+
+Almost all data providers have complied with this in a way that is easily queriable.
+If you have doubts, please double check the `license_id` and `license` attributes
+in files' global attributes or look at the pages which show this metadata:
+
+- [Dataset-level view CMIP7](../database-views/input4MIPs_datasets_CMIP7.html)
+- [File-level view CMIP7](../database-views/input4MIPs_files_CMIP7.html)
