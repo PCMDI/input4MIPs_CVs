@@ -22,6 +22,22 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.0 (2025-09-05)
+
+
+### 🆕 Features
+
+- Added released CMIP7 data for ozone (FZJ-CMIP-ozone-1-0) ([#349](https://github.com/PCMDI/input4MIPs_CVs/pull/349))
+
+### 🐛 Bug Fixes
+
+- Added missing author to the "FZJ-CMIP-ozone-1-0" and "FZJ-CMIP-nitrogen-1-0" source IDs ([#345](https://github.com/PCMDI/input4MIPs_CVs/pull/345))
+
+### 🔧 Trivial/Internal Changes
+
+- [#344](https://github.com/PCMDI/input4MIPs_CVs/pull/344), [#349](https://github.com/PCMDI/input4MIPs_CVs/pull/349)
+
+
 ## input4MIPs CVs v6.6.46 (2025-08-23)
 
 
