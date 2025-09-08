@@ -984,7 +984,7 @@
         "mip_era":"CMIP7",
         "source_version":"1.0.0"
     },
-    "PIK-h-1-0-0":{
+    "PIK-h-0-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
             {
@@ -1054,10 +1054,10 @@
         "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
         "institution_id":"PIK",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
-        "source_version":"1.0.0"
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
     },
-    "PIK-hl-1-0-0":{
+    "PIK-hl-0-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
             {
@@ -1127,10 +1127,10 @@
         "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
         "institution_id":"PIK",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
-        "source_version":"1.0.0"
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
     },
-    "PIK-m-1-0-0":{
+    "PIK-m-0-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
             {
@@ -1200,10 +1200,10 @@
         "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
         "institution_id":"PIK",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
-        "source_version":"1.0.0"
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
     },
-    "PIK-ml-1-0-0":{
+    "PIK-ml-0-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
             {
@@ -1273,10 +1273,10 @@
         "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
         "institution_id":"PIK",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
-        "source_version":"1.0.0"
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
     },
-    "PIK-l-1-0-0":{
+    "PIK-l-0-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
             {
@@ -1346,10 +1346,10 @@
         "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
         "institution_id":"PIK",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
-        "source_version":"1.0.0"
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
     },
-    "PIK-vllo-1-0-0":{
+    "PIK-vllo-0-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
             {
@@ -1419,10 +1419,10 @@
         "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
         "institution_id":"PIK",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
-        "source_version":"1.0.0"
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
     },
-    "PIK-vlho-1-0-0":{
+    "PIK-vlho-0-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
             {
@@ -1492,8 +1492,8 @@
         "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
         "institution_id":"PIK",
         "license_id":"CC BY 4.0",
-        "mip_era":"CMIP7",
-        "source_version":"1.0.0"
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
     },
     "SOLARIS-HEPPA-CMIP-4-1":{
         "activity_id":"input4MIPs",
