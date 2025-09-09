@@ -63,12 +63,12 @@ If you would like a historical forcing without the QBO signal,
 please comment on [this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/22),
 specifically [this thread](https://github.com/PCMDI/input4MIPs_CVs/discussions/22#discussioncomment-14174159).
 
-## Differences from CMIP6 or other previous versions
+## Differences in format from CMIP6 or other previous versions
 
-The data is currently very similar, if not the same as CMIP6
+The data format is currently very similar, if not the same as CMIP6
 (e.g. variable names are the same, dimensions are the same).
 The only change is that we have cleaned up the format to make it as close to being CF-compliant as possible
-(it is not fully compliant because of a bounds for latitudes,
+(although it is not fully compliant because of a bounds issue for latitudes,
 please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
 if these bounds errors are an insurmountable problem).
 
