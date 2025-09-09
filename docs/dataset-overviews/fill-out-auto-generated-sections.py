@@ -262,7 +262,7 @@ def add_cmip7_phase_source_id_summaries(
                 out.append(PHASES_COMMON_TEXT[cmip7_phase])
                 out.append("")
 
-                out.append("#### Source IDs for use in this phase")
+                out.append("##### Source IDs for use in this phase")
                 out.append("")
 
                 source_id_summary = get_cmip7_phase_source_id_summary(

@@ -22,7 +22,16 @@ in particular models participating in [CMIP](https://www.wcrp-climate.org/wgcm-c
 
 ## Which data sets should I be using for CMIP7?
 
-### CMIP7
+### DECK
+
+DECK (Diagnostic, Evaluation and Characterization of Klima) simulations
+i.e. key model characterisation experiments.
+In practice, when we talk about the DECK,
+the forcings task team just focusses on forcings for the pre-industrial control (piControl) and historical experiments,
+as if we provide these, then we provide forcings required for all DECK experiments
+(the other DECK experiments all build on relatively trivial modifications of the piControl and historical forcings).
+
+#### CMIP7
 
 <!--- begin-source-id-summary:cmip7 -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -35,7 +44,7 @@ If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
 so that the identification and resolution of this issue is publicly accessible.
 
-#### Source IDs for use in this phase
+##### Source IDs for use in this phase
 
 1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [CEDS-CMIP-2025-04-18; CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18%22%2C%22CEDS-CMIP-2025-04-18-supplemental%22%5D%7D) (DOIs: [10.5281/zenodo.15127477](https://doi.org/10.5281/zenodo.15127477), [10.5281/zenodo.15001546](https://doi.org/10.5281/zenodo.15001546).)
 1. *Open biomass burning emissions:* [DRES-CMIP-BB4CMIP7-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22DRES-CMIP-BB4CMIP7-2-0%22%5D%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2524040](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2524040).)
@@ -51,7 +60,7 @@ so that the identification and resolution of this issue is publicly accessible.
 1. *Population density:* [PIK-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PIK-CMIP-1-0-0%22%5D%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2583900](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2583900).)
 <!--- end-source-id-summary -->
 
-### Testing
+#### Testing
 
 <!--- begin-source-id-summary:testing -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -62,7 +71,7 @@ Production simulations should not be started based on any data that has a `mip_e
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
 
-#### Source IDs for use in this phase
+##### Source IDs for use in this phase
 
 1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [CEDS-CMIP-2024-11-25; CEDS-CMIP-2024-11-25-supplemental; CEDS-CMIP-2024-10-21; CEDS-CMIP-2024-10-21-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-11-25%22%2C%22CEDS-CMIP-2024-11-25-supplemental%22%2C%22CEDS-CMIP-2024-10-21%22%2C%22CEDS-CMIP-2024-10-21-supplemental%22%5D%7D) (DOIs: [10.5281/zenodo.13952845](https://doi.org/10.5281/zenodo.13952845), [10.5281/zenodo.14145000](https://doi.org/10.5281/zenodo.14145000).)
 1. *Open biomass burning emissions:* [DRES-CMIP-BB4CMIP7-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22DRES-CMIP-BB4CMIP7-1-0%22%5D%7D) (No DOI provided)
