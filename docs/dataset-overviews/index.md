@@ -87,6 +87,73 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
 
+### ScenarioMIP
+
+ScenarioMIP scenario simulations
+i.e. exploration of the climate under a selected range of possible futures.
+As a result of the way that input4MIPs forcings are distributed,
+the different scenarios are identified as part of the source ID of each forcing.
+As a result, each forcing will have multiple source IDs, one for each scenario to run.
+This leads to a lot of source IDs.
+We considered changing this (see [discussion #64](https://github.com/PCMDI/input4MIPs_CVs/discussions/64)),
+but ultimately decided that would be too disruptive given the time available.
+
+#### CMIP7
+
+<!--- begin-source-id-summary:scenariomip-cmip7 -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
+
+This data is for use in CMIP7 production simulations.
+All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
+This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
+
+If you find an issue, please
+[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
+so that the identification and resolution of this issue is publicly accessible.
+
+##### Source IDs for use in this phase
+
+1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* No data available for this phase yet
+1. *Open biomass burning emissions:* No data available for this phase yet
+1. *Land use:* No data available for this phase yet
+1. *Greenhouse gas concentrations:* No data available for this phase yet
+1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
+1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* No data available for this phase yet
+1. *Ozone concentrations:* No data available for this phase yet
+1. *Nitrogen deposition:* No data available for this phase yet
+1. *Solar:* No data available for this phase yet
+1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
+1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
+1. *Population density:* No data available for this phase yet
+<!--- end-source-id-summary -->
+
+#### Testing
+
+<!--- begin-source-id-summary:scenariomip-testing -->
+<!--- Do not edit this section, it is automatically updated when the docs are built -->
+
+This data is for testing (both of the forcing data and of modelling workflows) only.
+Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
+(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
+
+If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
+
+##### Source IDs for use in this phase
+
+1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* No data available for this phase yet
+1. *Open biomass burning emissions:* No data available for this phase yet
+1. *Land use:* No data available for this phase yet
+1. *Greenhouse gas concentrations:* No data available for this phase yet
+1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
+1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* No data available for this phase yet
+1. *Ozone concentrations:* No data available for this phase yet
+1. *Nitrogen deposition:* No data available for this phase yet
+1. *Solar:* No data available for this phase yet
+1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
+1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
+1. *Population density:* No data available for this phase yet
+<!--- end-source-id-summary -->
+
 ## CMIP7 input4MIPs data licensing
 
 It was decided at the June 2025 CMIP Core Panel meeting that:

@@ -319,72 +319,92 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
         "The source ID that identifies the dataset to use in CMIP7 is given below.",
         "",
     ]
-    for phase in ("deck-cmip7", "deck-testing"):
-        info = CMIP7_PHASES_SOURCE_IDS[forcing][phase]
+    for mip in ("deck", "scenariomip"):
+        if mip == "deck":
+            mip_display = "DECK"
 
-        if phase.endswith("testing"):
-            cmip7_phase_pretty_title = "Testing"
-            cmip7_phase_pretty = "testing"
-
-        elif phase.endswith("cmip7"):
-            cmip7_phase_pretty_title = "CMIP7"
-            cmip7_phase_pretty = "CMIP7"
+        elif mip == "scenariomip":
+            mip_display = "ScenarioMIP"
 
         else:
-            raise NotImplementedError(phase)
+            raise NotImplementedError(mip)
 
-        out.append(f"#### {cmip7_phase_pretty_title}")
+        out.append(f"#### {mip_display}")
         out.append("")
 
-        if info is None:
-            out.append("No data available for this phase yet.")
-            out.append("")
+        for step in (
+            "cmip7",
+            "testing",
+        ):
+            phase = f"{mip}-{step}"
 
-        else:
-            source_ids = info["source_ids"]
+            info = CMIP7_PHASES_SOURCE_IDS[forcing][phase]
 
-            if len(source_ids) == 1:
-                source_id = source_ids[0]
-                out.append(
-                    f"For the {cmip7_phase_pretty} phase of CMIP7, "
-                    "use data with the source ID "
-                    f"[{source_id}]({get_esgf_search_url(source_ids)})"
-                )
+            if step == "testing":
+                cmip7_step_pretty_title = "Testing"
+                cmip7_step_pretty = "testing"
+
+            elif step == "cmip7":
+                cmip7_step_pretty_title = "CMIP7"
+                cmip7_step_pretty = "CMIP7"
 
             else:
-                # Multiple source IDs
-                source_id_sep = "\n- "
-                source_id_str = source_id_sep.join(
-                    [f"[{sid}]({get_esgf_search_url([sid])})" for sid in source_ids]
-                )
-                out.append(
-                    f"For the {cmip7_phase_pretty} phase of CMIP7, "
-                    f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n\n"
-                    "Retrieving and only using valid data will require some care.\n"
-                    "Please make sure you read the guidance given at the start of the Summary section\n"
-                    "and process the data carefully."
-                )
+                raise NotImplementedError(step)
 
-            db_source_id = DB_SOURCE[DB_SOURCE["source_id"].isin(source_ids)]
-            dois_l = db_source_id["doi"].dropna().unique().tolist()
-            if len(dois_l) > 0:
-                dois_md = ", ".join((f"[{doi}]({get_doi_link(doi)})" for doi in dois_l))
-                if len(dois_l) > 1:
-                    doi_s = "DOIs"
+            out.append(f"##### {cmip7_step_pretty_title}")
+            out.append("")
+
+            if info is None:
+                out.append("No data available for this phase yet.")
+                out.append("")
+
+            else:
+                source_ids = info["source_ids"]
+
+                if len(source_ids) == 1:
+                    source_id = source_ids[0]
+                    out.append(
+                        f"For the {mip_display} simulations in the {cmip7_step_pretty} phase of CMIP7, "
+                        "use data with the source ID "
+                        f"[{source_id}]({get_esgf_search_url(source_ids)})"
+                    )
+
                 else:
-                    doi_s = "DOI"
+                    # Multiple source IDs
+                    source_id_sep = "\n- "
+                    source_id_str = source_id_sep.join(
+                        [f"[{sid}]({get_esgf_search_url([sid])})" for sid in source_ids]
+                    )
+                    out.append(
+                        f"For the {mip} simulations in the {cmip7_step_pretty} phase of CMIP7, "
+                        f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n\n"
+                        "Retrieving and only using valid data will require some care.\n"
+                        "Please make sure you read the guidance given at the start of the Summary section\n"
+                        "and process the data carefully."
+                    )
 
-                doi_line = f"The data has the {doi_s}: {dois_md}."
+                db_source_id = DB_SOURCE[DB_SOURCE["source_id"].isin(source_ids)]
+                dois_l = db_source_id["doi"].dropna().unique().tolist()
+                if len(dois_l) > 0:
+                    dois_md = ", ".join(
+                        (f"[{doi}]({get_doi_link(doi)})" for doi in dois_l)
+                    )
+                    if len(dois_l) > 1:
+                        doi_s = "DOIs"
+                    else:
+                        doi_s = "DOI"
 
-            else:
-                doi_line = "No DOIs are available for this data."
+                    doi_line = f"The data has the {doi_s}: {dois_md}."
 
-            out.append("")
-            out.append(doi_line)
-            out.append("")
+                else:
+                    doi_line = "No DOIs are available for this data."
 
-            out.append(PHASES_COMMON_TEXT[phase.split("-")[-1]])
-            out.append("")
+                out.append("")
+                out.append(doi_line)
+                out.append("")
+
+                out.append(PHASES_COMMON_TEXT[phase.split("-")[-1]])
+                out.append("")
 
     return tuple(out)
 
