@@ -259,7 +259,7 @@ def add_cmip7_phase_source_id_summaries(
                 out.append(line)
 
                 out.append("")
-                out.append(PHASES_COMMON_TEXT[cmip7_phase])
+                out.append(PHASES_COMMON_TEXT[cmip7_phase.split("-")[-1]])
                 out.append("")
 
                 out.append("##### Source IDs for use in this phase")
@@ -319,14 +319,14 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
         "The source ID that identifies the dataset to use in CMIP7 is given below.",
         "",
     ]
-    for phase in ("cmip7", "testing"):
+    for phase in ("deck-cmip7", "deck-testing"):
         info = CMIP7_PHASES_SOURCE_IDS[forcing][phase]
 
-        if phase == "testing":
+        if phase.endswith("testing"):
             cmip7_phase_pretty_title = "Testing"
             cmip7_phase_pretty = "testing"
 
-        elif phase == "cmip7":
+        elif phase.endswith("cmip7"):
             cmip7_phase_pretty_title = "CMIP7"
             cmip7_phase_pretty = "CMIP7"
 
@@ -383,7 +383,7 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
             out.append(doi_line)
             out.append("")
 
-            out.append(PHASES_COMMON_TEXT[phase])
+            out.append(PHASES_COMMON_TEXT[phase.split("-")[-1]])
             out.append("")
 
     return tuple(out)

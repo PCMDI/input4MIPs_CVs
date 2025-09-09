@@ -33,7 +33,7 @@ as if we provide these, then we provide forcings required for all DECK experimen
 
 #### CMIP7
 
-<!--- begin-source-id-summary:cmip7 -->
+<!--- begin-source-id-summary:deck-cmip7 -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 
 This data is for use in CMIP7 production simulations.
@@ -62,7 +62,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 #### Testing
 
-<!--- begin-source-id-summary:testing -->
+<!--- begin-source-id-summary:deck-testing -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 
 This data is for testing (both of the forcing data and of modelling workflows) only.
