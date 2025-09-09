@@ -1,0 +1,74 @@
+{
+    "slcf_co2_emms": {
+        "expected_publication": "October 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "biomass_burning_emms": {
+        "expected_publication": "October 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "land_use": {
+        "expected_publication": "December 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "ghg_concentrations": {
+        "expected_publication": "October 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "co2_isotopes": {
+        "expected_publication": "October 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "volcanic": {
+        "expected_publication": "October 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "ozone": {
+        "expected_publication": "December 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "nitrogen-deposition": {
+        "expected_publication": "December 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "solar": {
+        "expected_publication": "October 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "amip-ssts": {
+        "expected_publication": "Never",
+        "source_ids": null,
+        "status": "Not used in ScenarioMIP",
+        "url": null
+    },
+    "simple-plumes": {
+        "expected_publication": "October 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    },
+    "population": {
+        "expected_publication": "October 2025",
+        "source_ids": null,
+        "status": "Draft data in preparation",
+        "url": null
+    }
+}
