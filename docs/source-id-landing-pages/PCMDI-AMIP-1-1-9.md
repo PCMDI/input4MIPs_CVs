@@ -25,5 +25,5 @@
 ## Basic metadata
 
 - source_id: PCMDI-AMIP-1-1-9
-- contact: Paul J. Durack (durack1@llnl.gov; pauldurack@gmail.com); Karl E. Taylor (taylor13@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)
+- contact: Paul J. Durack (durack.ocean@gmail.com); Karl E. Taylor (taylor13@llnl.gov); PCMDI (pcmdi-cmip@llnl.gov)
 - further_info_url: https://pcmdi.llnl.gov/mips/amip

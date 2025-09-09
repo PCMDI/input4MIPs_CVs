@@ -86,7 +86,7 @@ jobs:
       - name: Check CVs load
         run: |
           which pip
-          pip install 'input4mips-validation[locked]==0.19.1'
+          pip install 'input4mips-validation[locked]'
           python scripts/load-cvs-with-input4mips-validation.py
           
   urls:
