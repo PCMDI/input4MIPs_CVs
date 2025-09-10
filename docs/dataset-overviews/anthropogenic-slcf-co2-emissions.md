@@ -36,7 +36,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 #### CMIP7
 
-For the CMIP7 phase of CMIP7, you will need data from the following source IDs:
+For the CMIP7 phase of CMIP, you will need data from the following source IDs:
 
 - [CEDS-CMIP-2025-04-18](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18%22%5D%7D)
 - [CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18-supplemental%22%5D%7D).
@@ -50,6 +50,8 @@ The data has the DOIs: [10.5281/zenodo.15127477](https://doi.org/10.5281/zenodo.
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
 This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
+
+A summary of differences between the CMIP7 and previous versions of the dataset can be found on https://github.com/JGCRI/CEDS/tree/master/documentation
 
 If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
