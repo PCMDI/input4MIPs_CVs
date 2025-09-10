@@ -20,13 +20,13 @@ have the suffix "-supplemental" added to their source ID to avoid inadvertent do
 
 For documentation of the underlying data,
 please keep an eye on https://github.com/JGCRI/CEDS,
-which will be updated with more documentation soon.
+which will be updated with more documentation soon. 
 
 This data is derived from CEDS' aggregate emissions releases.
 <!--- Aggregate data by country and sector for this release is also available in units of kilo-tonne (kt) per year and can be found [here](https://zenodo.org/records/12803197). -->
 <!--- Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso. -->
 
-Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
+Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS). A summary of differences between the CMIP7 and previous versions of the dataset can be found on https://github.com/JGCRI/CEDS/tree/master/documentation
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -50,8 +50,6 @@ The data has the DOIs: [10.5281/zenodo.15127477](https://doi.org/10.5281/zenodo.
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
 This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
-
-A summary of differences between the CMIP7 and previous versions of the dataset can be found on https://github.com/JGCRI/CEDS/tree/master/documentation
 
 If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
