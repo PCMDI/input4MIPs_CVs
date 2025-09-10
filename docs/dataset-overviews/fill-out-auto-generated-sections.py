@@ -342,11 +342,11 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
 
             if step == "testing":
                 cmip7_step_pretty_title = "Testing"
-                cmip7_step_pretty = "testing"
+                prod_or_testing_phase_str = "testing"
 
             elif step == "cmip7":
                 cmip7_step_pretty_title = "CMIP7"
-                cmip7_step_pretty = "CMIP7"
+                prod_or_testing_phase_str = "production"
 
             else:
                 raise NotImplementedError(step)
@@ -364,7 +364,7 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
                 if len(source_ids) == 1:
                     source_id = source_ids[0]
                     out.append(
-                        f"For the {mip_display} simulations in the {cmip7_step_pretty} phase of CMIP7, "
+                        f"For the {mip_display} simulations in the {prod_or_testing_phase_str} phase of CMIP7, "
                         "use data with the source ID "
                         f"[{source_id}]({get_esgf_search_url(source_ids)})"
                     )
@@ -376,7 +376,7 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
                         [f"[{sid}]({get_esgf_search_url([sid])})" for sid in source_ids]
                     )
                     out.append(
-                        f"For the {mip} simulations in the {cmip7_step_pretty} phase of CMIP7, "
+                        f"For the {mip} simulations in the {prod_or_testing_phase_str} phase of CMIP7, "
                         f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n\n"
                         "Retrieving and only using valid data will require some care.\n"
                         "Please make sure you read the guidance given at the start of the Summary section\n"
