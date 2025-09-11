@@ -37,6 +37,9 @@ nav:
     - Source ID-level CMIP6Plus: database-views/input4MIPs_source-id_CMIP6Plus.html
     - Dataset-level CMIP6Plus: database-views/input4MIPs_datasets_CMIP6Plus.html
     - File-level CMIP6Plus: database-views/input4MIPs_files_CMIP6Plus.html
+    - Source ID-level CMIP7Plus: database-views/input4MIPs_source-id_CMIP7Plus.html
+    - Dataset-level CMIP7Plus: database-views/input4MIPs_datasets_CMIP7Plus.html
+    - File-level CMIP7Plus: database-views/input4MIPs_files_CMIP7Plus.html
   - Source ID landing pages: source-id-landing-pages/
   - Repository overview: repository-overview.md
   - Contributing: contributing.md

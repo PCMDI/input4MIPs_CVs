@@ -714,7 +714,7 @@ def get_db_views_to_write(
     )
 
     res_l = []
-    for mip_era in ["CMIP6Plus", "CMIP7"]:
+    for mip_era in ["CMIP6Plus", "CMIP7", "CMIP7Plus"]:
         entries = [
             # (
             #     view,
@@ -943,14 +943,17 @@ def write_db_view_as_html(
         f"<p><h1>{page_title}: v{version}</h1><p>",
         "<h4>",
         "<a href='/'>Home</a>",
-        "| <a href='input4MIPs_delivery-summary.html'>Delivery summary view DECK</a>",
-        "| <a href='input4MIPs_delivery-summary-scenariomip.html'>Delivery summary view ScenarioMIP</a>",
-        "| <a href='input4MIPs_source-id_CMIP7.html'>Source ID-level view CMIP7</a>",
-        "| <a href='input4MIPs_datasets_CMIP7.html'>Dataset-level view CMIP7</a>",
-        "| <a href='input4MIPs_files_CMIP7.html'>File-level view CMIP7</a>",
-        "| <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID-level view CMIP6Plus</a>",
-        "| <a href='input4MIPs_datasets_CMIP6Plus.html'>Dataset-level view CMIP6Plus</a>",
-        "| <a href='input4MIPs_files_CMIP6Plus.html'>File-level view CMIP6Plus</a>",
+        "| Delivery summary: <a href='input4MIPs_delivery-summary.html'>DECK</a>",
+        "| <a href='input4MIPs_delivery-summary-scenariomip.html'>ScenarioMIP</a>",
+        "| CMIP7: <a href='input4MIPs_source-id_CMIP7.html'>Source ID's</a>",
+        "| <a href='input4MIPs_datasets_CMIP7.html'>Datasets</a>",
+        "| <a href='input4MIPs_files_CMIP7.html'>Files</a>",
+        "| CMIP6Plus: <a href='input4MIPs_source-id_CMIP6Plus.html'>Source ID's</a>",
+        "| <a href='input4MIPs_datasets_CMIP6Plus.html'>Datasets</a>",
+        "| <a href='input4MIPs_files_CMIP6Plus.html'>Files</a>",
+        "| CMIP7Plus: <a href='input4MIPs_source-id_CMIP7Plus.html'>Source ID's</a>",
+        "| <a href='input4MIPs_datasets_CMIP7Plus.html'>Datasets</a>",
+        "| <a href='input4MIPs_files_CMIP7Plus.html'>Files</a>",
         "</h4>",
         '<table id="table_id" class="display compact">',
         *[f"  {v}" for v in table_header_row.splitlines()],
