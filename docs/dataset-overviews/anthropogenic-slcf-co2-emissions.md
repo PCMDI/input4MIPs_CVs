@@ -35,9 +35,11 @@ A summary of differences between the CMIP7 and previous versions of the dataset 
 
 The source ID that identifies the dataset to use in CMIP7 is given below.
 
-#### CMIP7
+#### DECK
 
-For the CMIP7 phase of CMIP7, you will need data from the following source IDs:
+##### CMIP7
+
+For the deck simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
 - [CEDS-CMIP-2025-04-18](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18%22%5D%7D)
 - [CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18-supplemental%22%5D%7D).
@@ -56,9 +58,9 @@ If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
 so that the identification and resolution of this issue is publicly accessible.
 
-#### Testing
+##### Testing
 
-For the testing phase of CMIP7, you will need data from the following source IDs:
+For the deck simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
 - [CEDS-CMIP-2024-11-25](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-11-25%22%5D%7D)
 - [CEDS-CMIP-2024-11-25-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-11-25-supplemental%22%5D%7D)
@@ -76,6 +78,16 @@ Production simulations should not be started based on any data that has a `mip_e
 (The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
+
+#### ScenarioMIP
+
+##### CMIP7
+
+No data available for this phase yet.
+
+##### Testing
+
+No data available for this phase yet.
 
 <!--- end-cmip7-phases-source-ids -->
 

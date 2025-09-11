@@ -10,7 +10,9 @@
 
 ## Summary
 
-The CMIP7 version of the greenhouse gas concentration dataset has been released.
+The CMIP7 version of the greenhouse gas concentration dataset
+for the DECK simulations has been released.
+There are no releases for ScenarioMIP simulations yet.
 If you find any problems,
 please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md).
 Discussions on this version can be found in
@@ -22,9 +24,11 @@ Discussions on this version can be found in
 
 The source ID that identifies the dataset to use in CMIP7 is given below.
 
-#### CMIP7
+#### DECK
 
-For the CMIP7 phase of CMIP7, use data with the source ID [CR-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-1-0-0%22%5D%7D)
+##### CMIP7
+
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [CR-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-1-0-0%22%5D%7D)
 
 The data has the DOI: [https://doi.org/10.5281/zenodo.14892947](https://doi.org/10.5281/zenodo.14892947).
 
@@ -36,9 +40,9 @@ If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
 so that the identification and resolution of this issue is publicly accessible.
 
-#### Testing
+##### Testing
 
-For the testing phase of CMIP7, use data with the source ID [CR-CMIP-0-4-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-0-4-0%22%5D%7D)
+For the DECK simulations in the testing phase of CMIP7, use data with the source ID [CR-CMIP-0-4-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-CMIP-0-4-0%22%5D%7D)
 
 The data has the DOI: [10.5281/zenodo.13365838](https://doi.org/10.5281/zenodo.13365838).
 
@@ -47,6 +51,16 @@ Production simulations should not be started based on any data that has a `mip_e
 (The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
+
+#### ScenarioMIP
+
+##### CMIP7
+
+No data available for this phase yet.
+
+##### Testing
+
+No data available for this phase yet.
 
 <!--- end-cmip7-phases-source-ids -->
 
