@@ -26,7 +26,8 @@ This data is derived from CEDS' aggregate emissions releases.
 <!--- Aggregate data by country and sector for this release is also available in units of kilo-tonne (kt) per year and can be found [here](https://zenodo.org/records/12803197). -->
 <!--- Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso. -->
 
-Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS). A summary of differences between the CMIP7 and previous versions of the dataset can be found on https://github.com/JGCRI/CEDS/tree/master/documentation
+Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
+A summary of differences between the CMIP7 and previous versions of the dataset can be found on https://github.com/JGCRI/CEDS/tree/master/documentation.
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
