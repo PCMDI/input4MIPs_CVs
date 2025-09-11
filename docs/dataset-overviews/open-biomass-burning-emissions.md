@@ -167,7 +167,7 @@ Figure 3: Schematic approach for constructing the smoothed BB4CMIP7
   and a grid-cell specific active fire to carbon emissions conversion based on the 2003-2016 overlapping period.
 
 - The vertical distribution for biomass burning emissions are unspecified. 
-  GFDL chose to use the distributions recommended by Table 4 in [Dentener et al. (2006)](https://doi.org/10.5194/acp-6-4321-2006).
+  GFDL chose to use the distributions recommended by Table 4 in [Dentener et al. (2006)](https://doi.org/10.5194/acp-6-4321-2006) for their CMIP5 and CMIP6 simulations.
 
 Molecular weights for all species are listed in the following table:
 Note that NO<sub>x</sub> has different units in anthropogenic vs open burning data.
