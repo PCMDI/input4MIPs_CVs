@@ -20,7 +20,7 @@ have the suffix "-supplemental" added to their source ID to avoid inadvertent do
 
 For documentation of the underlying data,
 please keep an eye on https://github.com/JGCRI/CEDS,
-which will be updated with more documentation soon. 
+which will be updated with more documentation soon.
 
 This data is derived from CEDS' aggregate emissions releases.
 <!--- Aggregate data by country and sector for this release is also available in units of kilo-tonne (kt) per year and can be found [here](https://zenodo.org/records/12803197). -->
