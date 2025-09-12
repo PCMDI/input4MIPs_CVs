@@ -41,8 +41,8 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 For the deck simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [CEDS-CMIP-2025-04-18](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18%22%5D%7D)
-- [CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18-supplemental%22%5D%7D).
+- [CEDS-CMIP-2025-04-18](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18%22%7D)
+- [CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18-supplemental%22%7D).
 
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
@@ -62,10 +62,10 @@ so that the identification and resolution of this issue is publicly accessible.
 
 For the deck simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
-- [CEDS-CMIP-2024-11-25](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-11-25%22%5D%7D)
-- [CEDS-CMIP-2024-11-25-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-11-25-supplemental%22%5D%7D)
-- [CEDS-CMIP-2024-10-21](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-10-21%22%5D%7D)
-- [CEDS-CMIP-2024-10-21-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-10-21-supplemental%22%5D%7D).
+- [CEDS-CMIP-2024-11-25](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25%22%7D)
+- [CEDS-CMIP-2024-11-25-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25-supplemental%22%7D)
+- [CEDS-CMIP-2024-10-21](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D)
+- [CEDS-CMIP-2024-10-21-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21-supplemental%22%7D).
 
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
