@@ -51,6 +51,7 @@ jobs:
           which pip
           pip install -r requirements-docs.txt
           mkdocs build --strict
+          git diff
           (! git status --porcelain --untracked-files=no | grep '^.M') || (echo 'Docs are not up to date. Please run `make docs` locally then commit and upload the results.' && exit 1)
 
   check-source-id-landing-pages-up-to-date:

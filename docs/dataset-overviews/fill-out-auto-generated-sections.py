@@ -88,6 +88,134 @@ def get_esgf_search_url(source_ids: list[str]) -> str:
 # https://esgf-metagrid.cloud.dkrz.de/search?project=input4MIPs&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-03-18-supplemental%22%7D
 
 
+def extract_scenario_from_source_id(source_id: str) -> str | None:
+    """
+    Extract the scenario from a given source ID
+
+    This is provided as there is no other way to communicate scenario information.
+    For the discussion we had about changing the DRS to fix this
+    and why we ultimately didn't change,
+    see [input4MIPs_CVs #64](https://github.com/PCMDI/input4MIPs_CVs/discussions/64)
+
+    Parameters
+    ----------
+    source_id
+        Source ID from which to get the scenario
+
+    Returns
+    -------
+    :
+        The scenario extracted from `source_id`.
+        `None` is returned if the source ID is not for scenarios
+        i.e. `source_id` is for data related to historical or piControl
+
+    Raises
+    ------
+    ValueError
+        The source ID is not known to apply to historical or piControl
+        and cannot be parsed to extract the scenario.
+    """
+    KNOWN_HISTORICAL_SOURCE_IDS = {
+        "CEDS-CMIP-2024-07-08",
+        "CEDS-CMIP-2024-07-08-supplemental",
+        "CEDS-CMIP-2024-10-21",
+        "CEDS-CMIP-2024-10-21-supplemental",
+        "CEDS-CMIP-2024-11-25",
+        "CEDS-CMIP-2024-11-25-supplemental",
+        "CEDS-CMIP-2025-03-18",
+        "CEDS-CMIP-2025-03-18-supplemental",
+        "CEDS-CMIP-2025-04-18",
+        "CEDS-CMIP-2025-04-18-supplemental",
+        "CR-CMIP-0-2-0",
+        "CR-CMIP-0-3-0",
+        "CR-CMIP-0-4-0",
+        "CR-CMIP-1-0-0",
+        "DRES-CMIP-BB4CMIP7-1-0",
+        "DRES-CMIP-BB4CMIP7-2-0",
+        "DRES-CMIP-BB4CMIP7-2-1",
+        "FZJ-CMIP-nitrogen-1-0",
+        "FZJ-CMIP-ozone-1-0",
+        "ImperialCollege-3-0",
+        "MRI-JRA55-do-1-6-0",
+        "PCMDI-AMIP-1-1-10",
+        "PCMDI-AMIP-1-1-9",
+        "PCMDI-AMIP-ERSST5-1-0",
+        "PCMDI-AMIP-Had1p1-1-0",
+        "PCMDI-AMIP-OI2p1-1-0",
+        "PIK-CMIP-1-0-0",
+        "SOLARIS-HEPPA-CMIP-4-1",
+        "SOLARIS-HEPPA-CMIP-4-2",
+        "SOLARIS-HEPPA-CMIP-4-3",
+        "SOLARIS-HEPPA-CMIP-4-4",
+        "SOLARIS-HEPPA-CMIP-4-5",
+        "SOLARIS-HEPPA-CMIP-4-6",
+        "UCLA-1-0-1",
+        "UCLA-1-0-1-constant",
+        "UCLA-1-0-1-decreasing",
+        "UCLA-1-0-1-increasing",
+        "UCLA-1-0-2",
+        "UCLA-1-0-2-constant",
+        "UCLA-1-0-2-decreasing",
+        "UCLA-1-0-2-increasing",
+        "UOEXETER-CMIP-0-1-0",
+        "UOEXETER-CMIP-1-1-2",
+        "UOEXETER-CMIP-1-1-3",
+        "UOEXETER-CMIP-1-2-0",
+        "UOEXETER-CMIP-1-3-0",
+        "UOEXETER-CMIP-1-3-1",
+        "UOEXETER-CMIP-2-0-0",
+        "UOEXETER-CMIP-2-2-1",
+        "UReading-CCMI-1-1",
+        "UofMD-landState-3-0",
+        "UofMD-landState-3-1",
+        "UofMD-landState-3-1-1",
+    }
+    if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
+        return None
+
+    KNOWN_SCENARIOS = {"vllo", "vlho", "l", "m", "ml", "h", "hl"}
+
+    for known_prefix in ("PIK-",):
+        if known_prefix in source_id:
+            # Assume that scenario information is the first part of the hyphen-separated
+            # source ID after the prefix.
+            # e.g. we are assuming that for a prefix like "PIK-",
+            # the source ID is of the form "PIK-scenarioname-other-stuff"
+            # e.g. "PIK-vllo-0-1-0".
+            scenario = source_id.split(known_prefix)[1].split("-")[0]
+            if scenario in KNOWN_SCENARIOS:
+                return scenario
+
+    msg = f"Could not parse {source_id=} to find a known scenario"
+    raise ValueError(msg)
+
+
+def get_version(source_id: str, source_id_stub: str, cmip7_phase: str) -> Version:
+    tmp = source_id.split(source_id_stub)[-1].strip("-").replace("-", ".")
+
+    for danger, sanitised in (("supplemental", "alpha"), ("CMIP.", "")):
+        tmp = tmp.replace(danger, sanitised)
+
+    if (scenario := extract_scenario_from_source_id(source_id)) is not None:
+        tmp = tmp.replace(f"{scenario}.", "")
+
+    res = Version(tmp)
+
+    return res
+
+
+def get_latest_source_ids(
+    source_ids: tuple[str, ...], source_id_stub: str, cmip7_phase: str
+) -> tuple[str, ...]:
+    version_ids = tuple(get_version(v, source_id_stub, cmip7_phase) for v in source_ids)
+    pairs = list(zip(source_ids, version_ids))[::-1]
+
+    version_id_latest = max(version_ids)
+    source_ids_latest = tuple(v[0] for v in pairs if v[1] == version_id_latest)
+
+    return source_ids_latest
+
+
 def get_cmip7_phase_source_id_summary(
     cmip7_phase: str, source_id_stubs: dict[str, str]
 ) -> tuple[str, ...]:
@@ -152,37 +280,43 @@ def get_cmip7_phase_source_id_summary(
                 )
             ]
 
-        # May need a more sophisticated sorting algorithm at some point
-        if any(v.startswith("PCMDI-AMIP") for v in phase_info["source_ids"]):
-            all_source_ids = tuple(db_source_id_stub_rows["source_id"].unique())
-            version_ids = tuple(
-                v.split("PCMDI-AMIP-")[-1].replace("-", ".") for v in source_ids
+        # Note: the use of extract_scenario_from_source_id here
+        # effectively checks parsing of all source IDs
+        if cmip7_phase.startswith("scenariomip"):
+            source_ids_for_phase = tuple(
+                sid
+                for sid in db_source_id_stub_rows["source_id"].unique()
+                if extract_scenario_from_source_id(sid) is not None
             )
-            pairs = list(zip(all_source_ids, version_ids))[::-1]
-            pairs.sort(key=lambda x: Version(x[1]))
-            source_ids_sorted = [v[0] for v in pairs]
-
         else:
-            source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
+            source_ids_for_phase = tuple(
+                sid
+                for sid in db_source_id_stub_rows["source_id"].unique()
+                if extract_scenario_from_source_id(sid) is None
+            )
 
-        source_id_latest = source_ids_sorted[-1]
+        source_ids_latest = get_latest_source_ids(
+            source_ids_for_phase,
+            source_id_stub=source_id_stubs[forcing_id],
+            cmip7_phase=cmip7_phase,
+        )
 
         ok_if_not_latest = (
             "ok_if_not_latest" in phase_info and phase_info["ok_if_not_latest"]
         )
-        if not ok_if_not_latest and any(
-            v != source_id_latest for v in phase_info["source_ids"]
+        if not ok_if_not_latest and sorted(tuple(phase_info["source_ids"])) != sorted(
+            source_ids_latest
         ):
             msg = [
                 f"For {forcing_id=} and {cmip7_phase=}, {phase_info['source_ids']=}. "
-                f"This is not the latest available source ID ({source_ids_sorted=}). "
+                f"This is not the latest available source IDs ({source_ids_latest=}). "
             ]
 
             if "ok_if_not_latest" in phase_info:
                 msg.extend(
                     [
                         f"Given that {phase_info['ok_if_not_latest']=},"
-                        f"either update the source ID to the latest ({source_id_latest}) "
+                        f"either update the source ID to the latest ({source_ids_latest}) "
                         f"or set `ok_if_not_latest` to `True` for the info "
                         f"in {CMIP7_PHASES_SOURCE_IDS_JSON}. "
                     ]
@@ -190,7 +324,7 @@ def get_cmip7_phase_source_id_summary(
             else:
                 msg.extend(
                     [
-                        f"Either update the source ID to the latest ({source_id_latest}) "
+                        f"Either update the source ID to the latest ({source_ids_latest}) "
                         f"or set `ok_if_not_latest` to `True` for the info "
                         f"in {CMIP7_PHASES_SOURCE_IDS_JSON}. "
                     ]
@@ -382,13 +516,21 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
                     source_id_str = source_id_sep.join(
                         [f"[{sid}]({get_esgf_search_url([sid])})" for sid in source_ids]
                     )
-                    out.append(
-                        f"For the {mip} simulations in the {prod_or_testing_phase_str} phase of CMIP7, "
-                        f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n\n"
-                        "Retrieving and only using valid data will require some care.\n"
-                        "Please make sure you read the guidance given at the start of the Summary section\n"
-                        "and process the data carefully."
-                    )
+
+                    if mip == "scenariomip":
+                        out.append(
+                            f"For the {mip} simulations in the {prod_or_testing_phase_str} phase of CMIP7, "
+                            f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n"
+                        )
+
+                    else:
+                        out.append(
+                            f"For the {mip} simulations in the {prod_or_testing_phase_str} phase of CMIP7, "
+                            f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n\n"
+                            "Retrieving and only using valid data will require some care.\n"
+                            "Please make sure you read the guidance given at the start of the Summary section\n"
+                            "and process the data carefully."
+                        )
 
                 db_source_id = DB_SOURCE[DB_SOURCE["source_id"].isin(source_ids)]
                 dois_l = db_source_id["doi"].dropna().unique().tolist()

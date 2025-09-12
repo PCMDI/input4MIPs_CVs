@@ -47,7 +47,17 @@
     "population": {
         "deck-testing": null,
         "deck-cmip7": { "source_ids": [ "PIK-CMIP-1-0-0" ] },
-        "scenariomip-testing": null,
+        "scenariomip-testing": { 
+            "source_ids": [ 
+                "PIK-vllo-0-1-0",
+                "PIK-vlho-0-1-0",
+                "PIK-l-0-1-0",
+                "PIK-ml-0-1-0",
+                "PIK-m-0-1-0",
+                "PIK-hl-0-1-0",
+                "PIK-h-0-1-0"
+            ] 
+        },
         "scenariomip-cmip7": null
     },
     "solar": {

@@ -65,59 +65,6 @@ def merge_pmount_and_esgf_data(
     return res
 
 
-def hack_in_prototype_amip_info(db_df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Hack in the prototype AMIP info
-
-    This can be removed once this information is actually published
-    """
-    common = {
-        "contact": "zelinka1@llnl.gov; durack1@llnl.gov",
-        "further_info_url": "https://pcmdi.llnl.gov/mips/amip",
-        "institution_id": "PCMDI",
-        "license_id": "CC BY 4.0",
-        "mip_era": "CMIP6Plus",
-        "source_version": "1.0",
-        "target_mip": "Prototype",
-        "comment": (
-            "Prototype dataset for the evaluation of SST forcing uncertainty "
-            "over the satellite era - not for production use in any simulations, "
-            "including CMIP7"
-        ),
-    }
-
-    to_add = {
-        "PCMDI-AMIP-ERSST5-1-0": {
-            "source": "PCMDI-AMIP ERSST5 1.0: SST based on NOAA ERSST 5.0",
-            **common,
-        },
-        "PCMDI-AMIP-Had1p1-1-0": {
-            "source": "PCMDI-AMIP Had-1.1 1.0: SST based on UK MetOffice HadISST 1.1",
-            **common,
-        },
-        "PCMDI-AMIP-OI2p1-1-0": {
-            "source": "PCMDI-AMIP OI-2.1 1.0: SST based on NOAA NCEP OI2.1",
-            **common,
-        },
-        # "PCMDI-AMIP-Had2p4-1-0" appears to be missing from
-        # https://github.com/PCMDI/input4MIPs_CVs/pull/26
-        # hence not included yet
-    }
-    for source_id, values in to_add.items():
-        if source_id in db_df["source_id"]:
-            continue
-
-        flat = {k: None for k in db_df.columns}
-        flat["source_id"] = source_id
-        flat["publication_status"] = "registered"
-        flat = flat | values
-        row = pd.Series(flat)
-
-        db_df = pd.concat([db_df, row.to_frame().T]).reset_index(drop=True)
-
-    return db_df
-
-
 def add_missing_source_ids(
     db_df: pd.DataFrame,
     cvs_source_ids_raw: dict[str, dict[str, str]],
@@ -321,8 +268,6 @@ def main(
     pmount_df = pd.DataFrame(pmount_raw)
 
     db_df = merge_pmount_and_esgf_data(pmount_df=pmount_df, esgf_raw=esgf_raw)
-
-    db_df = hack_in_prototype_amip_info(db_df)
 
     db_df = add_missing_source_ids(db_df=db_df, cvs_source_ids_raw=source_ids_raw)
 
