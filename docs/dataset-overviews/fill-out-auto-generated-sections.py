@@ -81,6 +81,11 @@ def get_esgf_search_url(source_ids: list[str]) -> str:
     )
 
 
+def sort_source_ids(source_ids: tuple[str, ...], cmip7_phase: str) -> str:
+    # breakpoint()
+    raise NotImplementedError
+
+
 def get_cmip7_phase_source_id_summary(
     cmip7_phase: str, source_id_stubs: dict[str, str]
 ) -> tuple[str, ...]:
@@ -157,6 +162,11 @@ def get_cmip7_phase_source_id_summary(
 
         else:
             source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
+
+        source_ids_sorted = sort_source_ids(
+            tuple(db_source_id_stub_rows["source_id"].unique()),
+            cmip7_phase=cmip7_phase,
+        )
 
         source_id_latest = source_ids_sorted[-1]
 
