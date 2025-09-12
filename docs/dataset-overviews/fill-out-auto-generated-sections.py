@@ -81,9 +81,39 @@ def get_esgf_search_url(source_ids: list[str]) -> str:
     )
 
 
-def sort_source_ids(source_ids: tuple[str, ...], cmip7_phase: str) -> str:
+def get_version(source_id: str, source_id_stub: str) -> Version:
+    tmp = source_id.split(source_id_stub)[-1].strip("-").replace("-", ".")
+
+    for danger, sanitised in (("supplemental", "alpha"),):
+        tmp = tmp.replace(danger, sanitised)
+
+    res = Version(tmp)
+
+    return res
+
+
+def sort_source_ids(
+    source_ids: tuple[str, ...], source_id_stub: str, cmip7_phase: str
+) -> str:
+    version_ids = tuple(get_version(v, source_id_stub) for v in source_ids)
+    pairs = list(zip(source_ids, version_ids))[::-1]
+    pairs.sort(key=lambda x: x[1])
     # breakpoint()
+    source_ids_sorted = [v[0] for v in pairs]
     raise NotImplementedError
+
+    # May need a more sophisticated sorting algorithm at some point
+    if any(v.startswith("PCMDI-AMIP") for v in phase_info["source_ids"]):
+        all_source_ids = tuple(db_source_id_stub_rows["source_id"].unique())
+        version_ids = tuple(
+            v.split("PCMDI-AMIP-")[-1].replace("-", ".") for v in source_ids
+        )
+        pairs = list(zip(all_source_ids, version_ids))[::-1]
+        pairs.sort(key=lambda x: Version(x[1]))
+        source_ids_sorted = [v[0] for v in pairs]
+
+    else:
+        source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
 
 
 def get_cmip7_phase_source_id_summary(
@@ -150,21 +180,9 @@ def get_cmip7_phase_source_id_summary(
                 )
             ]
 
-        # May need a more sophisticated sorting algorithm at some point
-        if any(v.startswith("PCMDI-AMIP") for v in phase_info["source_ids"]):
-            all_source_ids = tuple(db_source_id_stub_rows["source_id"].unique())
-            version_ids = tuple(
-                v.split("PCMDI-AMIP-")[-1].replace("-", ".") for v in source_ids
-            )
-            pairs = list(zip(all_source_ids, version_ids))[::-1]
-            pairs.sort(key=lambda x: Version(x[1]))
-            source_ids_sorted = [v[0] for v in pairs]
-
-        else:
-            source_ids_sorted = sorted(db_source_id_stub_rows["source_id"].unique())
-
         source_ids_sorted = sort_source_ids(
             tuple(db_source_id_stub_rows["source_id"].unique()),
+            source_id_stub=source_id_stubs[forcing_id],
             cmip7_phase=cmip7_phase,
         )
 
