@@ -151,7 +151,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Solar:* No data available for this phase yet
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
-1. *Population density:* [PIK-vllo-0-1-0; PIK-vlho-0-1-0; PIK-l-0-1-0; PIK-ml-0-1-0; PIK-m-0-1-0; PIK-hl-0-1-0; PIK-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PIK-vllo-0-1-0%22%2C%22PIK-vlho-0-1-0%22%2C%22PIK-l-0-1-0%22%2C%22PIK-ml-0-1-0%22%2C%22PIK-m-0-1-0%22%2C%22PIK-hl-0-1-0%22%2C%22PIK-h-0-1-0%22%5D%7D) (No DOI provided)
+1. *Population density:* [PIK-vllo-0-1-0; PIK-vlho-0-1-0; PIK-l-0-1-0; PIK-ml-0-1-0; PIK-m-0-1-0; PIK-hl-0-1-0; PIK-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-1-0%22%2C%22PIK-vlho-0-1-0%22%2C%22PIK-l-0-1-0%22%2C%22PIK-ml-0-1-0%22%2C%22PIK-m-0-1-0%22%2C%22PIK-hl-0-1-0%22%2C%22PIK-h-0-1-0%22%7D) (No DOI provided)
 <!--- end-source-id-summary -->
 
 ## CMIP7 input4MIPs data licensing
