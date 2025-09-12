@@ -97,6 +97,8 @@ As a result, each forcing will have multiple source IDs, one for each scenario t
 This leads to a lot of source IDs.
 We considered changing this (see [discussion #64](https://github.com/PCMDI/input4MIPs_CVs/discussions/64)),
 but ultimately decided that would be too disruptive given the time available.
+For advice on how to extract the scenario information from the source ID,
+see [extracting scenario from the source ID](extracting-scenario-from-source-id).
 
 #### CMIP7
 
