@@ -441,7 +441,7 @@
         "mip_era":"CMIP7",
         "source_version":"1.0.0"
     },
-    "CR-vllo-0-0-1":{
+    "CR-vllo-0-1-0":{
         "activity_id": "input4MIPs",
         "authors": [
             {
@@ -487,9 +487,9 @@
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "source_version":"0.0.1"
+        "source_version":"0.1.0"
     },
-    "CR-vlho-0-0-1":{
+    "CR-vlho-0-1-0":{
         "activity_id": "input4MIPs",
         "authors": [
             {
@@ -535,9 +535,9 @@
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "source_version":"0.0.1"
+        "source_version":"0.1.0"
     },
-    "CR-l-0-0-1":{
+    "CR-l-0-1-0":{
         "activity_id": "input4MIPs",
         "authors": [
             {
@@ -583,9 +583,9 @@
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "source_version":"0.0.1"
+        "source_version":"0.1.0"
     },
-    "CR-ml-0-0-1":{
+    "CR-ml-0-1-0":{
         "activity_id": "input4MIPs",
         "authors": [
             {
@@ -631,9 +631,9 @@
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "source_version":"0.0.1"
+        "source_version":"0.1.0"
     },
-    "CR-m-0-0-1":{
+    "CR-m-0-1-0":{
         "activity_id": "input4MIPs",
         "authors": [
             {
@@ -679,9 +679,9 @@
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "source_version":"0.0.1"
+        "source_version":"0.1.0"
     },
-    "CR-h-0-0-1":{
+    "CR-h-0-1-0":{
         "activity_id": "input4MIPs",
         "authors": [
             {
@@ -727,9 +727,9 @@
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "source_version":"0.0.1"
+        "source_version":"0.1.0"
     },
-    "CR-hl-0-0-1":{
+    "CR-hl-0-1-0":{
         "activity_id": "input4MIPs",
         "authors": [
             {
@@ -775,7 +775,7 @@
         "institution_id":"CR",
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
-        "source_version":"0.0.1"
+        "source_version":"0.1.0"
     },
     "DRES-CMIP-BB4CMIP7-1-0":{
         "activity_id":"input4MIPs",
