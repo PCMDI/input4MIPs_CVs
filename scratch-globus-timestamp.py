@@ -28,8 +28,8 @@ sr = searcher.search(esgf_uuid, "")
 
 for time_start, time_end in [
     # "2025-08-08",
-    ("2024-08-01", "2024-08-31"),
-    ("2025-02-01", "2025-02-28"),
+    # ("2024-08-01", "2024-08-31"),
+    # ("2025-02-01", "2025-02-28"),
     ("2025-08-09", "*"),
 ]:
     time_search = dict(
@@ -65,6 +65,8 @@ for time_start, time_end in [
 
     print(f"{res_df.shape=}")
     print(f"{res_df['master_id'].unique()=}")
+    breakpoint()
+    res_df[res_df["source_id"] == ["FZJ-CMIP-ozone-1-0"]]
     print(res_df["_timestamp"].unique())
     try:
         # TODO: report that source_id is a list rather than string

@@ -23,15 +23,15 @@ from esgpull import Esgpull
 
 esgp = Esgpull()
 index_nodes_to_try = [
-    "ceda.ac.uk",
-    "eagle.alcf.anl.gov",
-    "esg-dn1.nsc.liu.se",
-    "esgdata.gfdl.noaa.gov",
-    "esgf-data.dkrz.de",
-    "esgf-data.nersc.gov",
-    "esgf-data2.llnl.gov",
-    "esgf-node.ipsl.upmc.fr",
-    "esgf-node.llnl.gov",
+    # "ceda.ac.uk",
+    # "eagle.alcf.anl.gov",
+    # "esg-dn1.nsc.liu.se",
+    # "esgdata.gfdl.noaa.gov",
+    # "esgf-data.dkrz.de",
+    # "esgf-data.nersc.gov",
+    # "esgf-data2.llnl.gov",
+    # "esgf-node.ipsl.upmc.fr",
+    # "esgf-node.llnl.gov",
     "esgf-node.ornl.gov",
     "esgf-node.ornl.gov/esgf-1-5-bridge",
     "esgf.nci.org.au",
@@ -52,12 +52,14 @@ for index_node in index_nodes_to_try:
             if "bridge" not in index_node
             else index_node
         )
+        https://esgf-node.ornl.gov/search?source_id=FZJ-CMIP-ozone-1-0&format=application%2Fsolr%2Bjson
+        http://esgf-node.ornl.gov/search?source_id=FZJ-CMIP-ozone-1-0&format=application%2Fsolr%2Bjson
         r = httpx.get(
             # f"https://{index_node_search}?source_id=CR-CMIP-1-0-0&format=application%2Fsolr%2Bjson"
             # f"https://{index_node_search}?source_id=CR-CMIP-1-0-0&format=application/solr+json"
             f"https://{index_node_search}",
             params=dict(
-                source_id="CR-CMIP-1-0-0",
+                source_id="FZJ-CMIP-ozone-1-0",
                 format="application/solr+json",
                 distrib=True,
                 limit=1000,
@@ -69,6 +71,7 @@ for index_node in index_nodes_to_try:
         js = r.json()
         print(f'{js["response"]["numFound"]=}')
         print(f'{set([v["data_node"] for v in js["response"]["docs"]])=}')
+        breakpoint()
 
     except Exception as e:
         print(f"Search failed: {e}")
