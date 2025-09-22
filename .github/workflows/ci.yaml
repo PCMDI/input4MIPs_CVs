@@ -17,7 +17,7 @@ jobs:
       - name: Check database up to date
         run: |
           which pip
-          pip install dev-requirements.txt
+          pip install -r dev-requirements.txt
           python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir . --check-unchanged || (echo 'Database entries not up to date with inputs. Please run `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .` or the equivalent for your machine.' && exit 1)
 
   check-web-pages-up-to-date:
@@ -33,7 +33,7 @@ jobs:
       - name: Check HTML pages are up to date
         run: |
           which pip
-          pip install dev-requirements.txt
+          pip install -r dev-requirements.txt
           python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --version `cat VERSION` --repo-root-dir . --check-unchanged || (echo 'Web pages not up to date with inputs. Please run `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py` or the equivalent for your machine.' && exit 1)
 
   check-docs-up-to-date:
