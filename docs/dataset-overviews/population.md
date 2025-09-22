@@ -47,7 +47,24 @@ No data available for this phase yet.
 
 ##### Testing
 
-No data available for this phase yet.
+For the scenariomip simulations in the testing phase of CMIP7, you will need data from the following source IDs:
+
+- [PIK-vllo-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-1-0%22%7D)
+- [PIK-vlho-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vlho-0-1-0%22%7D)
+- [PIK-l-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-l-0-1-0%22%7D)
+- [PIK-ml-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ml-0-1-0%22%7D)
+- [PIK-m-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-m-0-1-0%22%7D)
+- [PIK-hl-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-hl-0-1-0%22%7D)
+- [PIK-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-0-1-0%22%7D).
+
+
+No DOIs are available for this data.
+
+This data is for testing (both of the forcing data and of modelling workflows) only.
+Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
+(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
+
+If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
 
 <!--- end-cmip7-phases-source-ids -->
 
@@ -61,8 +78,8 @@ Apply the 1850 value as a constant.
 ### Grids and frequencies provided
 
 We provide annual data (1850-2100) on a regular 0.25 ('gn') and 0.5 degree ('gr') grid.
-Historical scenario covers 1850-2025.
-Future scenario files will cover 2022-2100, i.e. include additional historical years for convenience.
+Historical files cover 1850-2025.
+Future scenario files cover 2022-2100, i.e. include additional historical years for convenience.
 Please notify the authors if you would need other resolutions for your simulations. 
 
 ### Variables provided
@@ -77,7 +94,7 @@ The dataset contains many sources of uncertainty that are difficult to quantify 
 
 This dataset was created by joint effort of Horizon Europe project [COMPASS](https://compass-climate.eu/) 
 and project [WorldPop](https://www.worldpop.org/). The data was created at high resolution (30 arc seconds, ~1 km)
-and upscaled to 0.25 degree. The following steps were followed:
+and upscaled to 0.25 and 0.5 degree. The following steps were followed:
 (1) WorldPop [gridded constrained global population data for 2015-2025](https://www.worldpop.org/blog/beta-test-our-new-global-population-data-2015-to-2030/) 
 were combined with FuturePop projections based on SSP v3.2 trajectories.
 (2) The WorldPop gridded population was extrapolated back to 1975 using [Global Human Settlement Layer](https://human-settlement.emergency.copernicus.eu/)

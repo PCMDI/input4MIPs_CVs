@@ -97,6 +97,8 @@ As a result, each forcing will have multiple source IDs, one for each scenario t
 This leads to a lot of source IDs.
 We considered changing this (see [discussion #64](https://github.com/PCMDI/input4MIPs_CVs/discussions/64)),
 but ultimately decided that would be too disruptive given the time available.
+For advice on how to extract the scenario information from the source ID,
+see [extracting scenario from the source ID](extracting-scenario-from-source-id).
 
 #### CMIP7
 
@@ -151,7 +153,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Solar:* No data available for this phase yet
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
-1. *Population density:* No data available for this phase yet
+1. *Population density:* [PIK-vllo-0-1-0; PIK-vlho-0-1-0; PIK-l-0-1-0; PIK-ml-0-1-0; PIK-m-0-1-0; PIK-hl-0-1-0; PIK-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-1-0%22%2C%22PIK-vlho-0-1-0%22%2C%22PIK-l-0-1-0%22%2C%22PIK-ml-0-1-0%22%2C%22PIK-m-0-1-0%22%2C%22PIK-hl-0-1-0%22%2C%22PIK-h-0-1-0%22%7D) (No DOI provided)
 <!--- end-source-id-summary -->
 
 ## CMIP7 input4MIPs data licensing
