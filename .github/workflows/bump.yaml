@@ -39,7 +39,7 @@ jobs:
       - name: Install the environment
         run: |
           which pip
-          pip install dev-requirements.txt
+          pip install -r dev-requirements.txt
           # Pin towncrier
           # Particularly because of https://github.com/twisted/towncrier/issues/648
           pip install 'towncrier==23.11.0'
