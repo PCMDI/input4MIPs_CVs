@@ -14,7 +14,7 @@ For the latest information, please see the
 `extract_scenario_from_source_id` function
 in [docs/dataset-overviews/fill-out-auto-generated-sections.py](https://github.com/PCMDI/input4MIPs_CVs/blob/main/docs/dataset-overviews/fill-out-auto-generated-sections.py).
 
-We have include a copy of this function as at 2025-09-12 below
+We have include a copy of this function as at 2025-09-22 below
 so you can see the logic,
 but this extract is not automatically updated so it could be out of date
 by the time you are reading this.
@@ -106,7 +106,17 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
         return None
 
-    KNOWN_SCENARIOS = {"vllo", "vlho", "l", "m", "ml", "h", "hl"}
+    KNOWN_SCENARIOS = {
+        "vllo",
+        "vlho",
+        "l",
+        "m",
+        "ml",
+        "h",
+        "hl",
+        # Used for scenario indepdendent forcings i.e. volcanic and solar
+        "ScenarioMIP",
+    }
 
     for known_prefix in ("PIK-",):
         if known_prefix in source_id:
