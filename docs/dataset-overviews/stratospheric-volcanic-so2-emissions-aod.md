@@ -25,9 +25,11 @@ If you find any issues, please contribute to
 
 The source ID that identifies the dataset to use in CMIP7 is given below.
 
-#### CMIP7
+#### DECK
 
-For the CMIP7 phase of CMIP7, use data with the source ID [UOEXETER-CMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UOEXETER-CMIP-2-2-1%22%5D%7D)
+##### CMIP7
+
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [UOEXETER-CMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-2-2-1%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522673](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522673).
 
@@ -39,9 +41,9 @@ If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
 so that the identification and resolution of this issue is publicly accessible.
 
-#### Testing
+##### Testing
 
-For the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UOEXETER-CMIP-1-3-1%22%5D%7D)
+For the DECK simulations in the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-3-1%22%7D)
 
 No DOIs are available for this data.
 
@@ -50,6 +52,16 @@ Production simulations should not be started based on any data that has a `mip_e
 (The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
+
+#### ScenarioMIP
+
+##### CMIP7
+
+No data available for this phase yet.
+
+##### Testing
+
+No data available for this phase yet.
 
 <!--- end-cmip7-phases-source-ids -->
 

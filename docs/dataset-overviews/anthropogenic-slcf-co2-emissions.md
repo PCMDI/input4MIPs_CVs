@@ -27,6 +27,7 @@ This data is derived from CEDS' aggregate emissions releases.
 <!--- Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso. -->
 
 Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
+A summary of differences between the CMIP7 and previous versions of the dataset can be found on https://github.com/JGCRI/CEDS/tree/master/documentation.
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -34,12 +35,14 @@ Full details on the dataset and all relevant links can be found on the [CEDS Git
 
 The source ID that identifies the dataset to use in CMIP7 is given below.
 
-#### CMIP7
+#### DECK
 
-For the CMIP7 phase of CMIP7, you will need data from the following source IDs:
+##### CMIP7
 
-- [CEDS-CMIP-2025-04-18](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18%22%5D%7D)
-- [CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2025-04-18-supplemental%22%5D%7D).
+For the deck simulations in the production phase of CMIP7, you will need data from the following source IDs:
+
+- [CEDS-CMIP-2025-04-18](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18%22%7D)
+- [CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18-supplemental%22%7D).
 
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
@@ -55,14 +58,14 @@ If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
 so that the identification and resolution of this issue is publicly accessible.
 
-#### Testing
+##### Testing
 
-For the testing phase of CMIP7, you will need data from the following source IDs:
+For the deck simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
-- [CEDS-CMIP-2024-11-25](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-11-25%22%5D%7D)
-- [CEDS-CMIP-2024-11-25-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-11-25-supplemental%22%5D%7D)
-- [CEDS-CMIP-2024-10-21](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-10-21%22%5D%7D)
-- [CEDS-CMIP-2024-10-21-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CEDS-CMIP-2024-10-21-supplemental%22%5D%7D).
+- [CEDS-CMIP-2024-11-25](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25%22%7D)
+- [CEDS-CMIP-2024-11-25-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25-supplemental%22%7D)
+- [CEDS-CMIP-2024-10-21](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D)
+- [CEDS-CMIP-2024-10-21-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21-supplemental%22%7D).
 
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
@@ -75,6 +78,16 @@ Production simulations should not be started based on any data that has a `mip_e
 (The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
+
+#### ScenarioMIP
+
+##### CMIP7
+
+No data available for this phase yet.
+
+##### Testing
+
+No data available for this phase yet.
 
 <!--- end-cmip7-phases-source-ids -->
 

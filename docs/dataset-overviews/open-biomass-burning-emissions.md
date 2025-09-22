@@ -16,9 +16,11 @@
 
 The source ID that identifies the dataset to use in CMIP7 is given below.
 
-#### CMIP7
+#### DECK
 
-For the CMIP7 phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22DRES-CMIP-BB4CMIP7-2-0%22%5D%7D)
+##### CMIP7
+
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-2-0%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2524040](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2524040).
 
@@ -30,9 +32,9 @@ If you find an issue, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
 so that the identification and resolution of this issue is publicly accessible.
 
-#### Testing
+##### Testing
 
-For the testing phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22DRES-CMIP-BB4CMIP7-1-0%22%5D%7D)
+For the DECK simulations in the testing phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-1-0%22%7D)
 
 No DOIs are available for this data.
 
@@ -41,6 +43,16 @@ Production simulations should not be started based on any data that has a `mip_e
 (The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
 
 If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
+
+#### ScenarioMIP
+
+##### CMIP7
+
+No data available for this phase yet.
+
+##### Testing
+
+No data available for this phase yet.
 
 <!--- end-cmip7-phases-source-ids -->
 
@@ -167,7 +179,7 @@ Figure 3: Schematic approach for constructing the smoothed BB4CMIP7
   and a grid-cell specific active fire to carbon emissions conversion based on the 2003-2016 overlapping period.
 
 - The vertical distribution for biomass burning emissions are unspecified. 
-  GFDL chose to use the distributions recommended by Table 4 in [Dentener et al. (2006)](https://doi.org/10.5194/acp-6-4321-2006).
+  GFDL chose to use the distributions recommended by Table 4 in [Dentener et al. (2006)](https://doi.org/10.5194/acp-6-4321-2006) for their CMIP5 and CMIP6 simulations.
 
 Molecular weights for all species are listed in the following table:
 Note that NO<sub>x</sub> has different units in anthropogenic vs open burning data.

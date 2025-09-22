@@ -22,6 +22,46 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.2 (2025-09-12)
+
+
+### 🐛 Bug Fixes
+
+- Fixed up entries in the source IDs that had multiple email addresses in author fields (these caused issues for DOI creation and broke the data model) ([#338](https://github.com/PCMDI/input4MIPs_CVs/pull/338))
+
+### 📚 Improved Documentation
+
+- Updated the ozone docs to clarify that the similarity with CMIP6 is in formats only, not the data itself necessarily ([#351](https://github.com/PCMDI/input4MIPs_CVs/pull/351))
+- Added sections for documenting data to use for ScenarioMIP. These are currently empty, but will be filled soon ([#352](https://github.com/PCMDI/input4MIPs_CVs/pull/352))
+- Added an extra link to the SLFC emissions documentation ([#354](https://github.com/PCMDI/input4MIPs_CVs/pull/354))
+- Updated description of how GFDL handled vertical dimension for biomass burning emissions ([#356](https://github.com/PCMDI/input4MIPs_CVs/pull/356))
+- Fixed cross-links to ESGF on the dataset overview pages ([#358](https://github.com/PCMDI/input4MIPs_CVs/pull/358))
+
+
+## input4MIPs CVs v6.7.1 (2025-09-05)
+
+
+### 📚 Improved Documentation
+
+- Added a section to the dataset overview docs which summarised the licensing arrangements that apply to CMIP7 input4MIPs data ([#350](https://github.com/PCMDI/input4MIPs_CVs/pull/350))
+
+
+## input4MIPs CVs v6.7.0 (2025-09-05)
+
+
+### 🆕 Features
+
+- Added released CMIP7 data for ozone (FZJ-CMIP-ozone-1-0) ([#349](https://github.com/PCMDI/input4MIPs_CVs/pull/349))
+
+### 🐛 Bug Fixes
+
+- Added missing author to the "FZJ-CMIP-ozone-1-0" and "FZJ-CMIP-nitrogen-1-0" source IDs ([#345](https://github.com/PCMDI/input4MIPs_CVs/pull/345))
+
+### 🔧 Trivial/Internal Changes
+
+- [#344](https://github.com/PCMDI/input4MIPs_CVs/pull/344), [#349](https://github.com/PCMDI/input4MIPs_CVs/pull/349)
+
+
 ## input4MIPs CVs v6.6.46 (2025-08-23)
 
 

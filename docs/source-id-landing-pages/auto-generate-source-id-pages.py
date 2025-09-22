@@ -26,7 +26,7 @@ with open(SOURCE_ID_CVS) as fh:
 
 def get_assumed_unique_value(invs: list[Any]) -> Any:
     if len(invs) != 1:
-        breakpoint()
+        # breakpoint()
         raise AssertionError(invs)
 
     return invs[0]
