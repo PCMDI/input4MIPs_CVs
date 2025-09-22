@@ -22,6 +22,22 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.3 (2025-09-22)
+
+
+### 🆕 Features
+
+- Added CMIP7Plus datasets (for use post-CMIP7) and CMIP6Plus (testing) datasets for populations within ScenarioMIP ([#359](https://github.com/PCMDI/input4MIPs_CVs/pull/359))
+
+### 📚 Improved Documentation
+
+- Added documentation about how to extract the scenario from a source ID ([#359](https://github.com/PCMDI/input4MIPs_CVs/pull/359))
+
+### 🔧 Trivial/Internal Changes
+
+- [#363](https://github.com/PCMDI/input4MIPs_CVs/pull/363)
+
+
 ## input4MIPs CVs v6.7.2 (2025-09-12)
 
 
