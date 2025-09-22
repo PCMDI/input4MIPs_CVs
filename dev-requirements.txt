@@ -25,7 +25,7 @@ httpcore==1.0.9
 httpx==0.28.1
 idna==3.10
 importlib_metadata==8.7.0
--e git+ssh://git@github.com/PCMDI/input4MIPs_CVs.git@36c507d1248cd89d899dc76d92e6aa6cdc3bd6ee#egg=input4MIPs_CVs&subdirectory=python-packages/input4MIPs-CVs
+-e python-packages/input4MIPs-CVs
 intake-esgf==2025.7.16
 Jinja2==3.1.6
 jsonschema==4.25.0
