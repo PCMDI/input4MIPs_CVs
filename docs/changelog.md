@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.4 (2025-09-23)
+
+
+### 🐛 Bug Fixes
+
+- Fixed up the docs to clarify that CMIP7 historical nitrogen deposition is not released yet ([#364](https://github.com/PCMDI/input4MIPs_CVs/pull/364))
+
+
 ## input4MIPs CVs v6.7.3 (2025-09-22)
 
 
