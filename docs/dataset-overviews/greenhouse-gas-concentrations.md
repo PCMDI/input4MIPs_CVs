@@ -12,7 +12,7 @@
 
 The CMIP7 version of the greenhouse gas concentration dataset
 for the DECK simulations has been released.
-There are no releases for ScenarioMIP simulations yet.
+**Test** data is available for the ScenarioMIP simulations.
 If you find any problems,
 please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md).
 Discussions on this version can be found in
@@ -122,7 +122,7 @@ particularly as we shift from using surface flasks to relying on ice cores inste
 
 ### Examples of working with the data
 
-If helpful, we show how the data can be downloaded from ESGF
+If helpful, we show how the historical data can be downloaded from ESGF
 and compared to CMIP6 here:
 [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
 
@@ -214,7 +214,7 @@ CMIP6_TO_CMIP7_VARIABLE_MAP = {
 
 ### Data
 
-The analysis of the differences from CMIP6 is done in 
+The analysis of the differences in historical data from CMIP6 is done in 
 [this repository](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
 At present, the changes from CMIP6 are minor,
 with the maximum difference in effective radiative forcing terms being 0.05 W / m^2
