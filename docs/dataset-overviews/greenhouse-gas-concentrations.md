@@ -1,6 +1,6 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
 <!--- forcing="ghg_concentrations" -->
-<!--- source_id_stub="CR-CMIP" -->
+<!--- source_id_stub="CR" -->
 # Greenhouse gas concentrations
 
 ## Key contacts
@@ -60,7 +60,24 @@ No data available for this phase yet.
 
 ##### Testing
 
-No data available for this phase yet.
+For the scenariomip simulations in the testing phase of CMIP7, you will need data from the following source IDs:
+
+- [CR-vllo-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vllo-0-1-0%22%7D)
+- [CR-vlho-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vlho-0-1-0%22%7D)
+- [CR-l-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-l-0-1-0%22%7D)
+- [CR-ml-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-ml-0-1-0%22%7D)
+- [CR-m-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-m-0-1-0%22%7D)
+- [CR-hl-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-hl-0-1-0%22%7D)
+- [CR-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-h-0-1-0%22%7D).
+
+
+The data has the DOI: [dev-test](https://doi.org/dev-test).
+
+This data is for testing (both of the forcing data and of modelling workflows) only.
+Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
+(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
+
+If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
 
 <!--- end-cmip7-phases-source-ids -->
 

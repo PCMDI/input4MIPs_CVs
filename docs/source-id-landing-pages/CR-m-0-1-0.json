@@ -1,0 +1,108 @@
+{
+  "creators": [
+    {
+      "affiliation": "Climate Resource S GmbH, Berlin, Germany. Climate Resource, Melbourne, Victoria, Australia. Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria. School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia",
+      "creatorName": "Nicholls, Zebedee",
+      "email": "zebedee.nicholls@climate-resource.com",
+      "familyName": "Nicholls",
+      "givenName": "Zebedee",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-4767-2723",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Climate Resource S GmbH, Berlin, Germany",
+      "creatorName": "Bockting, Florence",
+      "email": "florence.bockting@climate-resource.com",
+      "familyName": "Bockting",
+      "givenName": "Florence",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "https://orcid.org/0000-0003-0924-6413",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Climate Resource S GmbH, Berlin, Germany",
+      "creatorName": "Pflueger, Mika",
+      "email": "mika.pflueger@climate-resource.com",
+      "familyName": "Pflueger",
+      "givenName": "Mika",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-7814-8916",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Climate Resource, Melbourne, Victoria, Australia. School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia",
+      "creatorName": "Meinshausen, Malte",
+      "email": "malte.meinshausen@climate-resource.com",
+      "familyName": "Meinshausen",
+      "givenName": "Malte",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0003-4048-3521",
+        "schemeURI": "https://orcid.org/"
+      }
+    }
+  ],
+  "dates": [
+    {
+      "date": "2025-09-18",
+      "dateType": "Created"
+    },
+    {
+      "date": "2025-09-17",
+      "dateType": "Created"
+    }
+  ],
+  "descriptions": [
+    {
+      "descriptionType": "Abstract",
+      "text": "CMIP forcing dataset (input4MIPs).\nThis is all data published under the unique ID (known as a source ID) CR-m-0-1-0."
+    }
+  ],
+  "formats": [
+    {
+      "format": "application/x-netcdf"
+    }
+  ],
+  "fundingReferences": [],
+  "identifier": {
+    "id": "dev-test",
+    "identifierType": "DOI"
+  },
+  "language": "en",
+  "publication_year": 2025,
+  "publisher": "Earth System Grid Federation",
+  "relatedIdentifiers": [],
+  "resourceType": {
+    "resourceType": "Digital",
+    "resourceTypeGeneral": "Dataset"
+  },
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+      "rightsURI": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "input4MIPs.CMIP6Plus.ScenarioMIP.CR.CR-m-0-1-0",
+      "subjectScheme": "DRS"
+    },
+    {
+      "subject": "forcing data"
+    },
+    {
+      "subject": "climate"
+    },
+    {
+      "subject": "CMIP6Plus"
+    }
+  ],
+  "titles": "CR-m-0-1-0 data provided as part of input4MIPs"
+}
