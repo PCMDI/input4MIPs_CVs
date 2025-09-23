@@ -23,7 +23,7 @@ from esgpull import Esgpull
 
 esgp = Esgpull()
 index_nodes_to_try = [
-    # "ceda.ac.uk",
+    # "esgf.ceda.ac.uk",
     # "eagle.alcf.anl.gov",
     # "esg-dn1.nsc.liu.se",
     # "esgdata.gfdl.noaa.gov",
