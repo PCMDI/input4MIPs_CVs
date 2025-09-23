@@ -12,7 +12,7 @@
     - Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria
     - School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia
 
-2. Florence Bockting ([ORCID https://orcid.org/0000-0003-0924-6413](https://orcid.org/https://orcid.org/0000-0003-0924-6413))
+2. Florence Bockting ([ORCID 0000-0003-0924-6413](https://orcid.org/0000-0003-0924-6413))
     - Climate Resource S GmbH, Berlin, Germany
 
 3. Mika Pflueger ([ORCID 0000-0002-7814-8916](https://orcid.org/0000-0002-7814-8916))
