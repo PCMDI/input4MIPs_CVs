@@ -19,25 +19,26 @@ This means the following steps:
    ([ROR search can be done here](https://ror.org/)).
 
     a. if your organisation does not have an ROR, please make an issue in the
-     [MIP CMOR tables repository to note this](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=No+ROR+for+institute+X)
+     [WCRP universe repository to note this](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=BLANK_ISSUE)
      and tag @znichollscr.
 
     b. if your organisation does have an ROR, please make an issue in the
-     [MIP CMOR tables repository to register your institute](https://github.com/PCMDI/mip-cmor-tables/issues/new?assignees=&labels=add_institution&projects=&template=add-Institution.md&title=New+Institution).
+     [WCRP universe repository to register your institution](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=add_institution.yml)
      The template should be straightforward.
      If there are any issues, just make the issue and tag @znichollscr.
-     If you have any issues with this, feel free to [make a general issue](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=Help+needed+to+register+ROR+for+institute+X)
+     If you have any issues with this, feel free to
+     [make a general issue](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=BLANK_ISSUE)
      and tag @znichollscr.
 
 1. (optional, but recommend) if you supply your data as part of a consortium, then there is an extra step
 
-  - firstly, make sure that all institutes in your consortium have registered their RORs in the MIP CMOR tables
+  - firstly, make sure that all institutes in your consortium have registered their RORs in the WCRP universe
     in the same way that you did for your institute in the previous step.
 
-  - then, please make an issue in the [MIP CMOR tables repository to register your consortium](https://github.com/PCMDI/mip-cmor-tables/issues/new?assignees=&labels=add_consortium&projects=&template=add-consortium.md&title=New+Consortium). 
-    The template should be straightforward.
-    If there are any issues, just make the issue and tag @znichollscr.
-    If you have any issues with this, feel free to [make a general issue](https://github.com/pcmdi/mip-cmor-tables/issues/new?assignees=&labels=&projects=&template=default.md&title=Help+needed+to+register+ROR+for+institute+X)
+  - then, please make an issue in the [WCRP universe repository to register your consortium](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=BLANK_ISSUE). 
+    The data we will need will be the same as
+    [what is here](https://github.com/WCRP-CMIP/WCRP-universe/blob/esgvoc/consortium/solaris-heppa.json).
+    If you have any issues with this, feel free to [make a general issue](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=BLANK_ISSUE)
     and tag @znichollscr.
 
 ## Register your source ID
