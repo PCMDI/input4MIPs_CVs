@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.5 (2025-09-24)
+
+
+### 📚 Improved Documentation
+
+- Fixed the advice about where to go to register new institutes and consortia ([#367](https://github.com/PCMDI/input4MIPs_CVs/pull/367))
+
+
 ## input4MIPs CVs v6.7.4 (2025-09-23)
 
 
