@@ -175,7 +175,7 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
 
     KNOWN_SCENARIOS = {"vllo", "vlho", "l", "m", "ml", "h", "hl"}
 
-    for known_prefix in ("PIK-",):
+    for known_prefix in ("PIK-", "CR-"):
         if known_prefix in source_id:
             # Assume that scenario information is the first part of the hyphen-separated
             # source ID after the prefix.
