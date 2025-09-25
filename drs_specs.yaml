@@ -1,0 +1,77 @@
+# DIRECTORY DRS SPECIFICATIONS
+directory:
+  type: directory
+  regex: '^input4MIPs/([A-Za-z0-9-]+/){9}v[0-9]{8}$'
+  separator: /
+  parts:
+    - source_collection: activity_id
+      is_required: true
+    - source_collection: mip_era
+      is_required: true
+    - source_collection: target_mip
+      is_required: true
+    - source_collection: institution_id
+      is_required: true
+    - source_collection: source_id
+      is_required: true
+    - source_collection: realm
+      is_required: true
+    - source_collection: frequency
+      is_required: true
+    - source_collection: variable_id
+      is_required: true
+    - source_collection: grid_label
+      is_required: true
+    - source_collection: version
+      is_required: true
+
+# FILE NAME DRS SPECIFICATIONS
+file_name:
+  type: file_name
+  regex: '^([A-Za-z0-9-]+_){5}[A-Za-z0-9-]+(?:_[0-9]{6}-[0-9]{6})?\.nc$'
+  separator: _
+  properties:
+    extension: nc
+    extension_separator: .
+  parts:
+    - source_collection: variable_id
+      is_required: true
+    - source_collection: activity_id
+      is_required: true
+    - source_collection: dataset_category
+      is_required: true
+    - source_collection: target_mip
+      is_required: true
+    - source_collection: source_id
+      is_required: true
+    - source_collection: grid_label
+      is_required: true
+    - source_collection: time_range
+      is_required: false
+
+# DATASET ID DRS SPECIFICATIONS
+dataset_id:
+  type: dataset_id
+  regex: '^input4MIPs(\\.[A-Za-z0-9-]+){9}$'
+  separator: .
+  parts:
+    - source_collection: activity_id
+      is_required: true
+    - source_collection: mip_era
+      is_required: true
+    - source_collection: target_mip
+      is_required: true
+    - source_collection: institution_id
+      is_required: true
+    - source_collection: source_id
+      is_required: true
+    - source_collection: realm
+      is_required: true
+    - source_collection: frequency
+      is_required: true
+    - source_collection: variable_id
+      is_required: true
+    - source_collection: grid_label
+      is_required: true
+    - source_collection: version
+      is_required: true
