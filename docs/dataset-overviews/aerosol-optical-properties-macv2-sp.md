@@ -1,6 +1,6 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
 <!--- forcing="simple-plumes" -->
-<!--- source_id_stub="tbd" -->
+<!--- source_id_stub="NA" -->
 # Aerosol optical properties/MACv2-SP
 
 ## Key contacts
