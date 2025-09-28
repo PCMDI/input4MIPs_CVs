@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.6 (2025-09-28)
+
+
+### 🆕 Features
+
+- Added test scenario greenhouse gas data ([#365](https://github.com/PCMDI/input4MIPs_CVs/pull/365))
+
+
 ## input4MIPs CVs v6.7.5 (2025-09-24)
 
 
