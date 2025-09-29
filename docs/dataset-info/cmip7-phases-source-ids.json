@@ -29,7 +29,17 @@
     "ghg_concentrations": {
         "deck-testing": { "source_ids": [ "CR-CMIP-0-4-0" ], "ok_if_not_latest": true },
         "deck-cmip7": { "source_ids": [ "CR-CMIP-1-0-0" ]},
-        "scenariomip-testing": null,
+        "scenariomip-testing": { 
+            "source_ids": [
+                "CR-vllo-0-1-0",
+                "CR-vlho-0-1-0",
+                "CR-l-0-1-0",
+                "CR-ml-0-1-0",
+                "CR-m-0-1-0",
+                "CR-hl-0-1-0",
+                "CR-h-0-1-0"
+            ]
+        },
         "scenariomip-cmip7": null
     },
     "ozone": {
@@ -80,7 +90,7 @@
     },
     "nitrogen-deposition": {
         "deck-testing": null,
-        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-nitrogen-1-0" ] },
+        "deck-cmip7": null,
         "scenariomip-testing": null,
         "scenariomip-cmip7": null
     },

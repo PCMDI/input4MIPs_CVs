@@ -1,0 +1,30 @@
+# CR-vlho-0-1-0
+
+*ESGF link*: [https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-vlho-0-1-0%22%5D%7D](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22CR-vlho-0-1-0%22%5D%7D)
+
+*DOI(s)*: [dev-test](https://doi.org/dev-test)
+
+## Authors
+
+1. Zebedee Nicholls ([ORCID 0000-0002-4767-2723](https://orcid.org/0000-0002-4767-2723))
+    - Climate Resource S GmbH, Berlin, Germany
+    - Climate Resource, Melbourne, Victoria, Australia
+    - Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria
+    - School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia
+
+2. Florence Bockting ([ORCID 0000-0003-0924-6413](https://orcid.org/0000-0003-0924-6413))
+    - Climate Resource S GmbH, Berlin, Germany
+
+3. Mika Pflueger ([ORCID 0000-0002-7814-8916](https://orcid.org/0000-0002-7814-8916))
+    - Climate Resource S GmbH, Berlin, Germany
+
+4. Malte Meinshausen ([ORCID 0000-0003-4048-3521](https://orcid.org/0000-0003-4048-3521))
+    - Climate Resource, Melbourne, Victoria, Australia
+    - School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia
+
+
+## Basic metadata
+
+- source_id: CR-vlho-0-1-0
+- contact: zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com
+- further_info_url: https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations

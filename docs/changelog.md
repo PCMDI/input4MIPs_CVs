@@ -22,6 +22,46 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.6 (2025-09-28)
+
+
+### 🆕 Features
+
+- Added test scenario greenhouse gas data ([#365](https://github.com/PCMDI/input4MIPs_CVs/pull/365))
+
+
+## input4MIPs CVs v6.7.5 (2025-09-24)
+
+
+### 📚 Improved Documentation
+
+- Fixed the advice about where to go to register new institutes and consortia ([#367](https://github.com/PCMDI/input4MIPs_CVs/pull/367))
+
+
+## input4MIPs CVs v6.7.4 (2025-09-23)
+
+
+### 🐛 Bug Fixes
+
+- Fixed up the docs to clarify that CMIP7 historical nitrogen deposition is not released yet ([#364](https://github.com/PCMDI/input4MIPs_CVs/pull/364))
+
+
+## input4MIPs CVs v6.7.3 (2025-09-22)
+
+
+### 🆕 Features
+
+- Added CMIP7Plus datasets (for use post-CMIP7) and CMIP6Plus (testing) datasets for populations within ScenarioMIP ([#359](https://github.com/PCMDI/input4MIPs_CVs/pull/359))
+
+### 📚 Improved Documentation
+
+- Added documentation about how to extract the scenario from a source ID ([#359](https://github.com/PCMDI/input4MIPs_CVs/pull/359))
+
+### 🔧 Trivial/Internal Changes
+
+- [#363](https://github.com/PCMDI/input4MIPs_CVs/pull/363)
+
+
 ## input4MIPs CVs v6.7.2 (2025-09-12)
 
 

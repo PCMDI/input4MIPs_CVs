@@ -1,6 +1,6 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
 <!--- forcing="volcanic" -->
-<!--- source_id_stub="UOEXETER-CMIP" -->
+<!--- source_id_stub="UOEXETER" -->
 # Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties
 
 ## Key contacts

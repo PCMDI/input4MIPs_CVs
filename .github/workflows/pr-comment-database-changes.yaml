@@ -24,7 +24,7 @@ jobs:
           COMMIT_ID: ${{ github.event.pull_request.head.sha }}
         run: |
           which pip
-          pip install python-packages/input4MIPs-CVs
+          pip install -r dev-requirements.txt
           python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/create-database-diff-comment.py --current-db Database/input4MIPs_db_file_entries.json --out-file $BODY_FILE --commit-id $COMMIT_ID
           # # Turn on for debugging
           # cat $BODY_FILE

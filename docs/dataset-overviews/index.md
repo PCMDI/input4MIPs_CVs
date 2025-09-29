@@ -53,7 +53,7 @@ so that the identification and resolution of this issue is publicly accessible.
 1. *CO<sub>2</sub> isotopes:* [ImperialCollege-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22ImperialCollege-3-0%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2583902](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2583902).)
 1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-CMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-2-2-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522673](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522673).)
 1. *Ozone concentrations:* [FZJ-CMIP-ozone-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-0%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).)
-1. *Nitrogen deposition:* [FZJ-CMIP-nitrogen-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-nitrogen-1-0%22%7D) (No DOI provided)
+1. *Nitrogen deposition:* No data available for this phase yet
 1. *Solar:* [SOLARIS-HEPPA-CMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522675](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522675).)
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* [PCMDI-AMIP-1-1-10](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-10%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2575015](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2575015).)
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
@@ -145,7 +145,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* No data available for this phase yet
 1. *Open biomass burning emissions:* No data available for this phase yet
 1. *Land use:* No data available for this phase yet
-1. *Greenhouse gas concentrations:* No data available for this phase yet
+1. *Greenhouse gas concentrations:* [CR-vllo-0-1-0; CR-vlho-0-1-0; CR-l-0-1-0; CR-ml-0-1-0; CR-m-0-1-0; CR-hl-0-1-0; CR-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vllo-0-1-0%22%2C%22CR-vlho-0-1-0%22%2C%22CR-l-0-1-0%22%2C%22CR-ml-0-1-0%22%2C%22CR-m-0-1-0%22%2C%22CR-hl-0-1-0%22%2C%22CR-h-0-1-0%22%7D) (DOI: [dev-test](https://doi.org/dev-test).)
 1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
 1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* No data available for this phase yet
 1. *Ozone concentrations:* No data available for this phase yet
