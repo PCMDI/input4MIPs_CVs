@@ -30,10 +30,9 @@
         "url": null
     },
     "volcanic": {
-        "expected_publication": "October 2025",
-        "source_ids": null,
-        "status": "Draft data in preparation",
-        "url": null
+        "source_ids": [
+            "UOEXETER-ScenarioMIP-2-2-1"
+        ]
     },
     "ozone": {
         "expected_publication": "December 2025",
