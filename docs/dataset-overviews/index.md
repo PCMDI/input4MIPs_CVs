@@ -120,7 +120,7 @@ so that the identification and resolution of this issue is publicly accessible.
 1. *Land use:* No data available for this phase yet
 1. *Greenhouse gas concentrations:* No data available for this phase yet
 1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
-1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* No data available for this phase yet
+1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-ScenarioMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-ScenarioMIP-2-2-1%22%7D) (No DOI provided)
 1. *Ozone concentrations:* No data available for this phase yet
 1. *Nitrogen deposition:* No data available for this phase yet
 1. *Solar:* No data available for this phase yet

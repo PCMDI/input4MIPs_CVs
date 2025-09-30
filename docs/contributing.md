@@ -20,7 +20,8 @@ Rather than repeat these steps, we will document how to create this as an initia
 
 1. Make a virtual environment (e.g. `python3 -m venv venv`)
 2. Activate the virtual environment 
-   (e.g. `source venv/bin/activate` - be careful not to activate multiple envs at once!)
+   (e.g. `source venv/bin/activate` or `venv\Scripts\activate` on windows 
+   - be careful not to activate multiple envs at once!)
 3. Install the requirements into the environment
    (e.g. `pip install -r dev-requirements.txt`)
 
@@ -92,10 +93,14 @@ The paths assume you are working on perlmutter.
 If you are working elsewhere, you may need to modify the paths slightly.
 
 1. Checkout a new branch from main
-1. Update the ESGF scrape: `python scripts/pollESGF.py Database/input-data/esgf-input4MIPs.json`
+1. Update the ESGF scrape: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-esgf-scrape.py --out-file Database/input-data/esgf-input4MIPs.json --n-threads 4`
     - you may need to have an environment activated with needed requirements (e.g. `requests` before you can run this)
-    - alternatively on perlmutter copy the existing file: `cp /PATH-TO-DATA-ROOT/input4MIPs/esgf-input4MIPs.json Database/input-data/esgf-input4MIPs.json`
 1. Activate an environment in which `input4mips-validation` is installed
+    - on perlmutter, probably something like `module load conda` then `conda activate input4mips-validation`
+    - if you don't have an environment already, you'll need something like
+      `module load conda`
+      then `conda create --name input4mips-validation 'input4mips-validation-locked==0.20.0'`
+      then `conda activate input4mips-validation`
 1. Update the database by adding the tree you're interested in. 
    Do this by running the following command from the root of this repository: 
    `bash scripts/pmount-database-generation/db-add-tree.sh <root-of-tree-to-add>` 
@@ -105,10 +110,7 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. (Not compulsory, but recommended because it makes it easier to see changes later) 
    Commit the changes to the database
 1. If needed, add the source ID entry for the new files to `CVs/input4MIPs_source_id.json`
-1. Activate an environment which has the local requirements installed
-    - Make a virtual environment (e.g. `python3 -m venv venv`)
-    - Activate the virtual environment (e.g. `source venv/bin/activate` - be careful not to activate multiple envs at once!)
-    - Install the requirements into the environment (e.g. `pip install -r dev-requirements.txt`)
+1. Activate an environment which has the local requirements installed (see 'creating a python virtual environment' above)
 1. Update the database: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-database.py --repo-root-dir .`
     - If needed, add a reason for the retraction/deprecation of the previous data set in `Database/input-data/supplementary-source-id-info.yaml`
 1. Update the HTML pages: `python python-packages/input4MIPs-CVs/src/input4MIPs_CVs/cli/update-html-pages.py --repo-root-dir .`

@@ -173,9 +173,19 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
         return None
 
-    KNOWN_SCENARIOS = {"vllo", "vlho", "l", "m", "ml", "h", "hl"}
+    KNOWN_SCENARIOS = {
+        "vllo",
+        "vlho",
+        "l",
+        "m",
+        "ml",
+        "h",
+        "hl",
+        # Used for scenario indepdendent forcings i.e. volcanic and solar
+        "ScenarioMIP",
+    }
 
-    for known_prefix in ("PIK-", "CR-"):
+    for known_prefix in ("PIK-", "CR-", "UOEXETER-"):
         if known_prefix in source_id:
             # Assume that scenario information is the first part of the hyphen-separated
             # source ID after the prefix.

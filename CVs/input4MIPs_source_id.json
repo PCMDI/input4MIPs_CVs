@@ -2401,6 +2401,29 @@
         "mip_era":"CMIP7",
         "source_version":"2.2.1"
     },
+    "UOEXETER-ScenarioMIP-2-2-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
+                ],
+                "email":"thomas.aubry@earth.ox.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
+            }
+        ],
+        "contact":"thomas.aubry@earth.ox.ac.uk",
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/",
+        "institution_id":"uoexeter",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"2.2.1"
+    },
     "UofMD-landState-3-0":{
         "activity_id":"input4MIPs",
         "authors":[
