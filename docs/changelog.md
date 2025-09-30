@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.7 (2025-09-30)
+
+
+### 🆕 Features
+
+- Added volcanic future data for CMIP7 ScenarioMIP simulations ([#361](https://github.com/PCMDI/input4MIPs_CVs/pull/361))
+
+
 ## input4MIPs CVs v6.7.6 (2025-09-28)
 
 

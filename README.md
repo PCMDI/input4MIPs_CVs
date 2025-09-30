@@ -1,7 +1,7 @@
 <!--- --8<-- [start:header] -->
 # input4MIPs Controlled Vocabularies (CVs)
 
-[![Latest release](https://img.shields.io/badge/Latest%20release-v6.7.6-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/v6.7.6)
+[![Latest release](https://img.shields.io/badge/Latest%20release-v6.7.7-brightgreen.svg)](https://github.com/PCMDI/input4MIPs_CVs/releases/tag/v6.7.7)
 [![DOI (all versions)](https://zenodo.org/badge/doi/10.5281/zenodo.12629796.svg)](https://zenodo.org/doi/10.5281/zenodo.12629796)
 [![Docs](https://readthedocs.org/projects/input4MIPs-CVs/badge/?version=latest)](https://input4MIPs-CVs.readthedocs.io)
 
