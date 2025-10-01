@@ -29,7 +29,17 @@
     "ghg_concentrations": {
         "deck-testing": { "source_ids": [ "CR-CMIP-0-4-0" ], "ok_if_not_latest": true },
         "deck-cmip7": { "source_ids": [ "CR-CMIP-1-0-0" ]},
-        "scenariomip-testing": null,
+        "scenariomip-testing": { 
+            "source_ids": [
+                "CR-vllo-0-1-0",
+                "CR-vlho-0-1-0",
+                "CR-l-0-1-0",
+                "CR-ml-0-1-0",
+                "CR-m-0-1-0",
+                "CR-hl-0-1-0",
+                "CR-h-0-1-0"
+            ]
+        },
         "scenariomip-cmip7": null
     },
     "ozone": {
@@ -47,7 +57,17 @@
     "population": {
         "deck-testing": null,
         "deck-cmip7": { "source_ids": [ "PIK-CMIP-1-0-0" ] },
-        "scenariomip-testing": null,
+        "scenariomip-testing": { 
+            "source_ids": [ 
+                "PIK-vllo-0-1-0",
+                "PIK-vlho-0-1-0",
+                "PIK-l-0-1-0",
+                "PIK-ml-0-1-0",
+                "PIK-m-0-1-0",
+                "PIK-hl-0-1-0",
+                "PIK-h-0-1-0"
+            ] 
+        },
         "scenariomip-cmip7": null
     },
     "solar": {
@@ -66,11 +86,11 @@
         "deck-testing": { "source_ids": [ "UOEXETER-CMIP-1-3-1" ], "ok_if_not_latest": true },
         "deck-cmip7": { "source_ids": [ "UOEXETER-CMIP-2-2-1" ] },
         "scenariomip-testing": null,
-        "scenariomip-cmip7": null
+        "scenariomip-cmip7": { "source_ids": [ "UOEXETER-ScenarioMIP-2-2-1" ] }
     },
     "nitrogen-deposition": {
         "deck-testing": null,
-        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-nitrogen-1-0" ] },
+        "deck-cmip7": null,
         "scenariomip-testing": null,
         "scenariomip-cmip7": null
     },

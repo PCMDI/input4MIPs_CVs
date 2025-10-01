@@ -441,6 +441,342 @@
         "mip_era":"CMIP7",
         "source_version":"1.0.0"
     },
+    "CR-vllo-0-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
+    },
+    "CR-vlho-0-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
+    },
+    "CR-l-0-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
+    },
+    "CR-ml-0-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
+    },
+    "CR-m-0-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
+    },
+    "CR-h-0-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
+    },
+    "CR-hl-0-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"0.1.0"
+    },
     "DRES-CMIP-BB4CMIP7-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -2639,6 +2975,29 @@
             }
         ],
         "contact":"t.aubry@exeter.ac.uk",
+        "dataset_category":[
+            "aerosolProperties",
+            "emissions"
+        ],
+        "further_info_url":"https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/",
+        "institution_id":"uoexeter",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"2.2.1"
+    },
+    "UOEXETER-ScenarioMIP-2-2-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Faculty of Environment, Science and Economy, University of Exeter, Exeter, EX4 4QF, UK"
+                ],
+                "email":"thomas.aubry@earth.ox.ac.uk",
+                "name":"Thomas Aubry",
+                "orcid":"0000-0002-9275-4293"
+            }
+        ],
+        "contact":"thomas.aubry@earth.ox.ac.uk",
         "dataset_category":[
             "aerosolProperties",
             "emissions"
