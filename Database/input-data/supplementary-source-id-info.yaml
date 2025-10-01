@@ -104,6 +104,13 @@ PCMDI-AMIP-1-1-10:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2575015
 PIK-CMIP-1-0-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2583900
+  comment_post_publication: >-
+    These datasets used an old version of WorldPop/FuturePop data.
+    PIK-CMIP-1-0-1 uses revised WorldPop/FuturePop data hence supercedes PIK-CMIP-1-0-0.
+    Note that even for PIK-CMIP-1-0-1, HYDE 3.2 is still used as newer data were not obtained.
+    PIK-CMIP-1-0-1 also includes a fix to a bug discovered in the 0.25 degree resolution files in PIK-CMIP-1-0-0
+    thanks to @slm7826 and @vnaik60 (see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/362">#362</a>).
+    The 0.5 degree data was not affected by this bug.
 SOLARIS-HEPPA-CMIP-4-1:
   publication_status: never_published
 SOLARIS-HEPPA-CMIP-4-2:
