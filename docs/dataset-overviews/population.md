@@ -23,9 +23,9 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-0%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-1%22%7D)
 
-The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2583900](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2583900).
+No DOIs are available for this data.
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -49,13 +49,13 @@ No data available for this phase yet.
 
 For the scenariomip simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
-- [PIK-vllo-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-1-0%22%7D)
-- [PIK-vlho-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vlho-0-1-0%22%7D)
-- [PIK-l-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-l-0-1-0%22%7D)
-- [PIK-ml-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ml-0-1-0%22%7D)
-- [PIK-m-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-m-0-1-0%22%7D)
-- [PIK-hl-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-hl-0-1-0%22%7D)
-- [PIK-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-0-1-0%22%7D).
+- [PIK-vllo-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-2-0%22%7D)
+- [PIK-vlho-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vlho-0-2-0%22%7D)
+- [PIK-l-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-l-0-2-0%22%7D)
+- [PIK-ml-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ml-0-2-0%22%7D)
+- [PIK-m-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-m-0-2-0%22%7D)
+- [PIK-hl-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-hl-0-2-0%22%7D)
+- [PIK-h-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-0-2-0%22%7D).
 
 
 No DOIs are available for this data.
@@ -111,5 +111,16 @@ Full documentation of the data will be available soon.
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
+## Revision history
+
+### PIK-CMIP-1-0-0
+
+These datasets used an old version of WorldPop/FuturePop data. PIK-CMIP-1-0-1 uses revised
+WorldPop/FuturePop data hence supercedes PIK-CMIP-1-0-0. If you have started historical simulations
+based on `PIK-CMIP-1-0-0`, please restart and use the updated files. Note that even for
+PIK-CMIP-1-0-1, HYDE 3.2 is still used as newer data were not obtained. PIK-CMIP-1-0-1 also includes
+a fix to a bug discovered in the 0.25 degree resolution files in PIK-CMIP-1-0-0 thanks to @slm7826
+and @vnaik60 (see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/362">#362</a>). The 0.5
+degree data was not affected by this bug.
+
 <!--- end-revision-history -->
