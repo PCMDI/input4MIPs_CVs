@@ -156,6 +156,8 @@ This is based on the sections above.
       then `conda activate input4mips-validation`
 1. Re-write the files in the DRS (this also does validation): 
    `bash scripts/pmount-database-generation/rewrite-files-in-drs.sh <output-folder> <input-file(s)>`
+    - if you get an error like `KeyError: "'<source-id>'. self.source_ids`, 
+      then the first step is to add a source ID for these files into `CVs/input4MIPs_source_id.json`
     - you can change the amount of output by altering the log level in `scripts/pmount-database-generation.rewrite-files-in-drs.sh`
     - do a quick check to see if the files were copied into the DRS (i.e. folder structure)
       or re-written (which means their name was probably changed).
