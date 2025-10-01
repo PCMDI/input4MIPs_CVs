@@ -56,16 +56,16 @@
     },
     "population": {
         "deck-testing": null,
-        "deck-cmip7": { "source_ids": [ "PIK-CMIP-1-0-0" ] },
+        "deck-cmip7": { "source_ids": [ "PIK-CMIP-1-0-1" ] },
         "scenariomip-testing": { 
             "source_ids": [ 
-                "PIK-vllo-0-1-0",
-                "PIK-vlho-0-1-0",
-                "PIK-l-0-1-0",
-                "PIK-ml-0-1-0",
-                "PIK-m-0-1-0",
-                "PIK-hl-0-1-0",
-                "PIK-h-0-1-0"
+                "PIK-vllo-0-2-0",
+                "PIK-vlho-0-2-0",
+                "PIK-l-0-2-0",
+                "PIK-ml-0-2-0",
+                "PIK-m-0-2-0",
+                "PIK-hl-0-2-0",
+                "PIK-h-0-2-0"
             ] 
         },
         "scenariomip-cmip7": null
