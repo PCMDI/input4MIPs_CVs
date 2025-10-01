@@ -44,7 +44,7 @@
     },
     "ozone": {
         "deck-testing": null,
-        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-ozone-1-0" ]},
+        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-ozone-1-1" ]},
         "scenariomip-testing": null,
         "scenariomip-cmip7": null
     },
