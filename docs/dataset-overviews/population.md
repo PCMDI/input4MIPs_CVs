@@ -116,10 +116,11 @@ Full documentation of the data will be available soon.
 ### PIK-CMIP-1-0-0
 
 These datasets used an old version of WorldPop/FuturePop data. PIK-CMIP-1-0-1 uses revised
-WorldPop/FuturePop data hence supercedes PIK-CMIP-1-0-0. Note that even for PIK-CMIP-1-0-1, HYDE 3.2
-is still used as newer data were not obtained. PIK-CMIP-1-0-1 also includes a fix to a bug
-discovered in the 0.25 degree resolution files in PIK-CMIP-1-0-0 thanks to @slm7826 and @vnaik60
-(see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/362">#362</a>). The 0.5 degree data was
-not affected by this bug.
+WorldPop/FuturePop data hence supercedes PIK-CMIP-1-0-0. If you have started historical simulations
+based on `PIK-CMIP-1-0-0`, please restart and use the updated files. Note that even for
+PIK-CMIP-1-0-1, HYDE 3.2 is still used as newer data were not obtained. PIK-CMIP-1-0-1 also includes
+a fix to a bug discovered in the 0.25 degree resolution files in PIK-CMIP-1-0-0 thanks to @slm7826
+and @vnaik60 (see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/362">#362</a>). The 0.5
+degree data was not affected by this bug.
 
 <!--- end-revision-history -->

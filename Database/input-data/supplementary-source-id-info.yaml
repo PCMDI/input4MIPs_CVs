@@ -107,6 +107,7 @@ PIK-CMIP-1-0-0:
   comment_post_publication: >-
     These datasets used an old version of WorldPop/FuturePop data.
     PIK-CMIP-1-0-1 uses revised WorldPop/FuturePop data hence supercedes PIK-CMIP-1-0-0.
+    If you have started historical simulations based on `PIK-CMIP-1-0-0`, please restart and use the updated files.
     Note that even for PIK-CMIP-1-0-1, HYDE 3.2 is still used as newer data were not obtained.
     PIK-CMIP-1-0-1 also includes a fix to a bug discovered in the 0.25 degree resolution files in PIK-CMIP-1-0-0
     thanks to @slm7826 and @vnaik60 (see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/362">#362</a>).
