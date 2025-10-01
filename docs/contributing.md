@@ -143,6 +143,29 @@ If you are working elsewhere, you may need to modify the paths slightly.
 1. Celebrate
 1. Begin work on your update on v-next
 
+## Summary of steps required to validate a new dataset before putting it in the publication queue
+
+This is based on the sections above.
+
+1. Checkout a new branch from main
+1. Activate an environment in which `input4mips-validation` is installed
+    - on perlmutter, probably something like `module load conda` then `conda activate input4mips-validation`
+    - if you don't have an environment already, you'll need something like
+      `module load conda`
+      then `conda create --name input4mips-validation 'input4mips-validation-locked==0.20.0'`
+      then `conda activate input4mips-validation`
+1. Re-write the files in the DRS (this also does validation): 
+   `bash scripts/pmount-database-generation/rewrite-files-in-drs.sh <output-folder> <input-file(s)>`
+    - you can change the amount of output by altering the log level in `scripts/pmount-database-generation.rewrite-files-in-drs.sh`
+    - do a quick check to see if the files were copied into the DRS (i.e. folder structure)
+      or re-written (which means their name was probably changed).
+      If they were re-written, check with the data provider whether they want to provide new files with the correct name
+      so they don't get confused when the files are eventually published.
+1. If this all passes, then these files are good to go and can be pushed into the publication queue
+1. On perlmutter, that means copying the files written in the DRS
+   to a temporary directory in `/global/cfs/projectdirs/m4931/`
+   and then letting the publication team know that they are ready to be published
+
 ## Relationship to input4MIPs validation
 
 This repository contains the database and Controlled Vocabularies (CVs).
