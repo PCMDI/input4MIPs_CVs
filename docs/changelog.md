@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.10 (2025-10-03)
+
+
+### 🐛 Bug Fixes
+
+- Added new version of ozone under source ID `FZJ-CMIP-ozone-1-1`, which fixes the lack of a fill value in `FZJ-CMIP-ozone-1-0`. `FZJ-CMIP-ozone-1-0` is still usable if you are extremely careful about fill values ([#376](https://github.com/PCMDI/input4MIPs_CVs/pull/376))
+
+
 ## input4MIPs CVs v6.7.9 (2025-10-03)
 
 
