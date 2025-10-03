@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.9 (2025-10-03)
+
+
+### 🆕 Features
+
+- Added future solar forcing for testing under source ID `SOLARIS-HEPPA-ScenarioMIP-4-6-a002` ([#369](https://github.com/PCMDI/input4MIPs_CVs/pull/369))
+
+
 ## input4MIPs CVs v6.7.8 (2025-10-03)
 
 
