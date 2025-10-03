@@ -92,13 +92,6 @@ DRES-CMIP-BB4CMIP7-2-1:
   # While we wait for ESGF scrape to come back up
   publication_status: published
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
-FZJ-CMIP-ozone-1-0:
-  comment_post_publication: >-
-    The fill value attribute was missing in these files.
-    They were hence retracted 
-    (although, if you're very careful, they are still usable, you just have to set the fill value manually).
-    The original issue that identified this is
-    <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/373">here</a>.
 ImperialCollege-3-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2583902
 MRI-JRA55-do-1-6-0:

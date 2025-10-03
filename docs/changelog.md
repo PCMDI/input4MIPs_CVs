@@ -22,6 +22,21 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.8 (2025-10-03)
+
+
+### ⚠️ Breaking Changes
+
+- Register source IDs for updated population datasets. 
+  These updated datasets will be published under `PIK-CMIP-1-0-1` and `PIK-<scenario-name>-0-2-0`.
+  If you have started historical simulations based on `PIK-CMIP-1-0-0`, please restart and use the updated files. ([#374](https://github.com/PCMDI/input4MIPs_CVs/pull/374))
+
+### 🆕 Features
+
+- + added published population data (PIK-CMIP-1-0-1) to the database
+  + added new published scenario testing version for the population data (PIK-scenario-0-2-0) ([#377](https://github.com/PCMDI/input4MIPs_CVs/pull/377))
+
+
 ## input4MIPs CVs v6.7.7 (2025-09-30)
 
 

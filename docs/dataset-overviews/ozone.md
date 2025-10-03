@@ -22,7 +22,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-ozone-1-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-1%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-ozone-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-0%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).
 
@@ -86,12 +86,5 @@ if these bounds errors are an insurmountable problem).
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-## Revision history
-
-### FZJ-CMIP-ozone-1-0
-
-The fill value attribute was missing in these files. They were hence retracted  (although, if you're
-very careful, they are still usable, you just have to set the fill value manually). The original
-issue that identified this is <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/373">here</a>.
-
+<!--- No revisions, hence section is blank -->
 <!--- end-revision-history -->

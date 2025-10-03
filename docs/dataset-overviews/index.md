@@ -52,7 +52,7 @@ so that the identification and resolution of this issue is publicly accessible.
 1. *Greenhouse gas concentrations:* [CR-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-1-0-0%22%7D) (DOI: [https://doi.org/10.5281/zenodo.14892947](https://doi.org/10.5281/zenodo.14892947).)
 1. *CO<sub>2</sub> isotopes:* [ImperialCollege-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22ImperialCollege-3-0%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2583902](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2583902).)
 1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-CMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-2-2-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522673](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522673).)
-1. *Ozone concentrations:* [FZJ-CMIP-ozone-1-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).)
+1. *Ozone concentrations:* [FZJ-CMIP-ozone-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-0%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).)
 1. *Nitrogen deposition:* No data available for this phase yet
 1. *Solar:* [SOLARIS-HEPPA-CMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522675](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522675).)
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* [PCMDI-AMIP-1-1-10](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-10%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2575015](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2575015).)
@@ -150,7 +150,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* No data available for this phase yet
 1. *Ozone concentrations:* No data available for this phase yet
 1. *Nitrogen deposition:* No data available for this phase yet
-1. *Solar:* No data available for this phase yet
+1. *Solar:* [SOLARIS-HEPPA-ScenarioMIP-4-6-a002](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6-a002%22%7D) (No DOI provided)
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
 1. *Population density:* [PIK-vllo-0-2-0; PIK-vlho-0-2-0; PIK-l-0-2-0; PIK-ml-0-2-0; PIK-m-0-2-0; PIK-hl-0-2-0; PIK-h-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-2-0%22%2C%22PIK-vlho-0-2-0%22%2C%22PIK-l-0-2-0%22%2C%22PIK-ml-0-2-0%22%2C%22PIK-m-0-2-0%22%2C%22PIK-hl-0-2-0%22%2C%22PIK-h-0-2-0%22%7D) (No DOI provided)

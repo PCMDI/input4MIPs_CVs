@@ -34,7 +34,7 @@
     },
     "ozone": {
         "source_ids": [ 
-            "FZJ-CMIP-ozone-1-1"
+            "FZJ-CMIP-ozone-1-0" 
         ]
     },
     "nitrogen-deposition": {
@@ -59,7 +59,7 @@
     },
     "population": {
         "source_ids": [
-            "PIK-CMIP-1-0-0"
+            "PIK-CMIP-1-0-1"
         ]
     }
 }

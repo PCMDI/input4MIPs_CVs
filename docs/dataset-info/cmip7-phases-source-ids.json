@@ -44,7 +44,7 @@
     },
     "ozone": {
         "deck-testing": null,
-        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-ozone-1-1" ]},
+        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-ozone-1-0" ], "ok_if_not_latest": true },
         "scenariomip-testing": null,
         "scenariomip-cmip7": null
     },
@@ -73,7 +73,7 @@
     "solar": {
         "deck-testing": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-5" ], "ok_if_not_latest": true },
         "deck-cmip7": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-6" ] },
-        "scenariomip-testing": null,
+        "scenariomip-testing": { "source_ids": [ "SOLARIS-HEPPA-ScenarioMIP-4-6-a002" ] },
         "scenariomip-cmip7": null
     },
     "biomass_burning_emms": {
