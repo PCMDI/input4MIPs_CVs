@@ -209,14 +209,15 @@ def print_diffs(start: pd.DataFrame, end: pd.DataFrame) -> None:
 
         elif row["operation"] == "delete":
             if row.object_json["tracking_id"] is not None:
-                raise NotImplementedError(row["operation"])
+                print(f"Removed entry {diff_keys}: {row['object_values']}.")
 
-            print(
-                f"Removed entry {diff_keys}: {row['object_values']}, "
-                "This had no files associated with it, "
-                f"it was just a placeholder for a dataset that had "
-                f"publication status: {row.object_json['publication_status']}"
-            )
+            else:
+                print(
+                    f"Removed entry {diff_keys}: {row['object_values']}, "
+                    "This had no files associated with it, "
+                    f"it was just a placeholder for a dataset that had "
+                    f"publication status: {row.object_json['publication_status']}"
+                )
 
         else:
             raise NotImplementedError(row["operation"])
