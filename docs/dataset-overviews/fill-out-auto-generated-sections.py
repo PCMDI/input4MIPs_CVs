@@ -176,8 +176,8 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         return None
 
     KNOWN_SCENARIOS = {
-        "vllo",
-        "vlho",
+        "vl",
+        "ln",
         "l",
         "m",
         "ml",
@@ -186,6 +186,8 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         # Used for scenario indepdendent forcings i.e. volcanic and solar
         "ScenarioMIP",
     }
+    # Draft names before final decision
+    KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho"}
 
     for known_prefix in ("PIK-", "CR-", "UOEXETER-", "SOLARIS-HEPPA-"):
         if known_prefix in source_id:
@@ -198,6 +200,10 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
             if scenario in KNOWN_SCENARIOS:
                 return scenario
 
+            if scenario in KNOWN_SCENARIOS_LEGACY:
+                # Not an error, but also not a known scenario
+                return None
+
     msg = f"Could not parse {source_id=} to find a known scenario"
     raise ValueError(msg)
 
@@ -205,7 +211,14 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
 def get_version(source_id: str, source_id_stub: str, cmip7_phase: str) -> Version:
     tmp = source_id.split(source_id_stub)[-1].strip("-").replace("-", ".")
 
-    for danger, sanitised in (("supplemental", "alpha"), ("CMIP.", "")):
+    for danger, sanitised in (
+        ("supplemental", "alpha"),
+        ("CMIP.", ""),
+        # Legacy ScenarioMIP names.
+        # Hamm, the entire logic of all this is really starting to fall over.
+        ("vllo.", ""),
+        ("vlho.", ""),
+    ):
         tmp = tmp.replace(danger, sanitised)
 
     if (scenario := extract_scenario_from_source_id(source_id)) is not None:
