@@ -52,7 +52,19 @@ No data available for this phase yet.
 
 ##### Testing
 
-No data available for this phase yet.
+For the scenariomip simulations in the testing phase of CMIP7, you will need data from the following source IDs:
+
+- [IIASA-IAMC-scendraft1-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%7D)
+- [IIASA-IAMC-scendraft2-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft2-0-3-0%22%7D).
+
+
+No DOIs are available for this data.
+
+This data is for testing (both of the forcing data and of modelling workflows) only.
+Production simulations should not be started based on any data that has a `mip_era` value equal to 'CMIP6Plus'.
+(The `mip_era` metadata value appears both in each file's global attributes as well as its metadata on ESGF.)
+
+If you have any feedback, please add it to the [relevant GitHub discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions).
 
 <!--- end-cmip7-phases-source-ids -->
 
