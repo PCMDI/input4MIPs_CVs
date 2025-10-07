@@ -1,6 +1,6 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
 <!--- forcing="biomass_burning_emms" -->
-<!--- source_id_stub="DRES-CMIP-BB4CMIP7" -->
+<!--- source_id_stub=["DRES-CMIP-BB4CMIP7", "IIASA-IAMC"] -->
 # Open biomass burning emissions
 
 ## Key contacts
@@ -58,6 +58,8 @@ No data available for this phase yet.
 
 ## Navigating the data
 
+### DECK
+
 This documentation supports the Open Biomass Burning Emissions dataset 
 developed for the Coupled Model Intercomparison Project (CMIP7) simulations,
 including the smoothed version of all variables.
@@ -84,7 +86,7 @@ The dataset consists of:
   PEAT (Peat fires), 
   AGRI (Agricultural waste burning)
 
-### Data sources
+#### Data sources
 
 The BB4CMIP historic biomass burning emissions dataset 
 starting from January 1750 merges satellite records with several existing proxies (visibility, charcoal data) 
@@ -99,7 +101,7 @@ Figure 1: The 17 basis regions used to reconstruct fire emissions.
 ![Figure 2: Data sources used for each region per time period.](../assets/biomass_burning_docs_figure_2.png "Figure 2: Data sources used for each region per time period.")
 Figure 2: Data sources used for each region per time period.
 
-### Interannual variability and climate models
+#### Interannual variability and climate models
 
 For the time period between 1997 and 2023 the BB4CMIP7 has relatively large interannual variability due to the variability in climate variables 
 (e.g. temperature, droughts, variation in El Niño Southern Oscillation), but also human activities and variability in lightning. 
@@ -127,7 +129,7 @@ is provided below.
 
 Climate modelling groups using the BB4CMIP7 dataset indicated that spurious signals appear due to this variability. The smoothed dataset should remedy this situation.
 
-###	Calculation of the smoothed dataset
+####	Calculation of the smoothed dataset
 
 Since the interannual variability is also characteristic for wildfires and to be able to provide realistic outcomes,
 an imposed climatology or just decadal averaging would lose information on the emissions. 
@@ -142,7 +144,7 @@ Therefore we use the following smoothing procedure:
 ![Figure 3: Schematic approach for constructing the smoothed BB4CMIP7.](../assets/biomass_burning_docs_figure_3.png "Figure 3: Schematic approach for constructing the smoothed BB4CMIP7.")
 Figure 3: Schematic approach for constructing the smoothed BB4CMIP7
 
-### Data usage notes
+#### Data usage notes
 
 - This dataset is made available as forcing dataset 
   for the Coupled Model Intercomparison Project Phase (CMIP7) analyses on the ESGF
@@ -212,21 +214,21 @@ Note that NO<sub>x</sub> has different units in anthropogenic vs open burning da
 |                           |                      | CH<sub>3</sub>COCHO (methylglyoxal)               | 72.06                |
 |                           |                      | HOCH<sub>2</sub>CHO (hydroxyacetaldehyde)         | 60.05                |
 
-### Species breakdowns
+#### Species breakdowns
 
-#### Aerosol and aerosol precursor and reactive compounds
+##### Aerosol and aerosol precursor and reactive compounds
 
 Species (12): BC, OC, CO<sub>2</sub>, SO<sub>2</sub>, N<sub>2</sub>O, NO<sub>x</sub>, NO<sub>x</sub>asNO<sub>2</sub>, NH<sub>3</sub>, CH<sub>4</sub>, CO, NMVOC, H<sub>2</sub>
 
 Data volume: ~1.26 GB per species
 
-#### Biomass burning emissions per NMVOC species
+##### Biomass burning emissions per NMVOC species
 
 Species (25): C<sub>2</sub>H<sub>6</sub>, CH<sub>3</sub>OH, C<sub>2</sub>H<sub>5</sub>OH, C<sub>3</sub>H<sub>8</sub>, C<sub>2</sub>H<sub>2</sub>, C<sub>2</sub>H<sub>4</sub>, C<sub>3</sub>H<sub>6</sub>, C<sub>5</sub>H<sub>8</sub>, C<sub>10</sub>H<sub>16</sub>, C<sub>7</sub>H<sub>8</sub>, C<sub>6</sub>H<sub>6</sub>, C<sub>8</sub>H<sub>10</sub>, Toluenelump, HigherAlkenes, HigherAlkanes, CH<sub>2</sub>O, C<sub>2</sub>H<sub>4</sub>O, C<sub>3</sub>H<sub>6</sub>O, C<sub>2</sub>H<sub>6</sub>S, HCN, HCOOH, CH<sub>3</sub>COOH, MEK, CH<sub>3</sub>COCHO, HOCH<sub>2</sub>CHO
 
 Data volume: ~1.26 GB per species
 
-#### Partitioning of bulk emissions related to different sectoral emissions
+##### Partitioning of bulk emissions related to different sectoral emissions
 
 For each species given above,
 the percentage of emissions from specific sectors is provided:
@@ -249,7 +251,7 @@ Data volume:
 1. PEAT: ~300 MB per species
 1. AGRI: ~797 MB per species
 
-#### Data source and grid cell area
+##### Data source and grid cell area
 
 Two additional files are provided.
 
@@ -266,9 +268,16 @@ Data volume:
 1. grid cell area: 42 kB
 1. data source: 123 MB
 
-### Recommendation for pre-industrial control
+#### Recommendation for pre-industrial control
 
 Apply the 1850 values on repeat.
+
+### ScenarioMIP
+
+The data for ScenarioMIP comes from a range of IAMs,
+rather than the CEDS consortium.
+[TODO: any information about how ScenarioMIP files differ from the DECK files
+There shouldn't be any major differences except maybe naming of VOCs.]
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->

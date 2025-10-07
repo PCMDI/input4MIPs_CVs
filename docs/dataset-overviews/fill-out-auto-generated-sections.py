@@ -187,7 +187,7 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         "ScenarioMIP",
     }
 
-    for known_prefix in ("PIK-", "CR-", "UOEXETER-", "SOLARIS-HEPPA-"):
+    for known_prefix in ("PIK-", "CR-", "UOEXETER-", "SOLARIS-HEPPA-", "IIASA-IAMC"):
         if known_prefix in source_id:
             # Assume that scenario information is the first part of the hyphen-separated
             # source ID after the prefix.
@@ -281,9 +281,15 @@ def get_cmip7_phase_source_id_summary(
             raise ValueError(msg)
 
         # Check status in the database
-        db_source_id_stub_rows = DB_SOURCE[
-            DB_SOURCE["source_id"].str.contains(source_id_stubs[forcing_id])
-        ]
+        source_id_stub_rows_indexer = pd.Series(
+            [False] * DB_SOURCE.shape[0], DB_SOURCE.index
+        )
+        for sids in source_id_stubs[forcing_id]:
+            source_id_stub_rows_indexer = source_id_stub_rows_indexer | DB_SOURCE[
+                "source_id"
+            ].str.contains(sids)
+
+        db_source_id_stub_rows = DB_SOURCE[source_id_stub_rows_indexer]
         if "source_id_stub_ignore" in phase_info:
             # The CEDS clause
             db_source_id_stub_rows = db_source_id_stub_rows[
@@ -632,7 +638,9 @@ def add_cmip7_phase_source_ids(
     return tuple(out)
 
 
-def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, ...]:
+def get_revision_history_for_source_id_stub(
+    source_id_stub: list[str],
+) -> tuple[str, ...]:
     """
     Get revision history for a given source ID stub
 
@@ -643,7 +651,7 @@ def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, .
     Parameters
     ----------
     source_id_stub
-        Source ID stub for which to create the revision history
+        Source ID stubs for which to create the revision history
 
     Returns
     -------
@@ -652,7 +660,15 @@ def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, .
 
         If the output is empty, no revisions have been made.
     """
-    source_id_stub_rows = DB_SOURCE[DB_SOURCE["source_id"].str.contains(source_id_stub)]
+    source_id_stub_rows_indexer = pd.Series(
+        [False] * DB_SOURCE.shape[0], DB_SOURCE.index
+    )
+    for sids in source_id_stub:
+        source_id_stub_rows_indexer = source_id_stub_rows_indexer | DB_SOURCE[
+            "source_id"
+        ].str.contains(sids)
+
+    source_id_stub_rows = DB_SOURCE[source_id_stub_rows_indexer]
     source_ids_in_history = source_id_stub_rows["source_id"].unique()
 
     out = []
@@ -746,7 +762,7 @@ def add_revision_history(
     return tuple(out)
 
 
-def get_file_info(raw_split: Iterable[str]) -> dict[str, str]:
+def get_file_info(raw_split: Iterable[str]) -> dict[str, str | list[str]]:
     """
     Get the key info for the file
 
@@ -775,9 +791,15 @@ def get_file_info(raw_split: Iterable[str]) -> dict[str, str]:
 
         info_raw = line.split("<!--- ")[1].split(" -->")[0]
         key, value = info_raw.split("=")
-        value = value.strip('"')
+        if "[" in value:
+            value = json.loads(value)
+        else:
+            value = value.strip('"')
 
         res[key] = value
+
+    if isinstance(res["source_id_stub"], str):
+        res["source_id_stub"] = [res["source_id_stub"]]
 
     return res
 

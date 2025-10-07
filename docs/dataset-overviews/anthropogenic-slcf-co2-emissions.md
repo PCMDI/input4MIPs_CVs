@@ -1,6 +1,6 @@
 <!--- These values are used by `fill-out-auto-generated-sections.py` -->
 <!--- forcing="slcf_co2_emms" -->
-<!--- source_id_stub="CEDS" -->
+<!--- source_id_stub=["CEDS", "IIASA-IAMC"] -->
 # Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions
 
 ## Key contacts
@@ -93,11 +93,13 @@ No data available for this phase yet.
 
 ## Navigating the data
 
-### Recommendation for pre-industrial control
+### DECK
+
+#### Recommendation for pre-industrial control
 
 Repeat the 1850 values.
 
-### Grids and frequencies provided
+#### Grids and frequencies provided
 
 CEDS emissions are provided at monthly resolution, on a 0.5 degree grid (grid ID of "gn"),
 with 50-years per data file. 
@@ -115,7 +117,7 @@ The gridded emissions incorporate a monthly seasonal cycle by sector drawing lar
 
 VOC speciation is provided at the 23 species resolution from [EDGAR](https://edgar.jrc.ec.europa.eu/).
 
-### Variables provided
+#### Variables provided
 
 Subsequent CEDS data releases since August 2016 are in a format of one variable per data file, with the sectors included as a dimension of the variable's data.
 
@@ -136,7 +138,7 @@ Within the netCDF files the sector ids are:
 
 `sector:ids = "0: Agriculture; 1: Energy; 2: Industrial; 3: Transportation; 4: Residential, Commercial, Other; 5: Solvents production and application; 6: Waste; 7: International Shipping" ;`
 
-### Supplementary Data
+#### Supplementary Data
 
 For use in setting aerosol size distribution and additional speciation (if desired), 
 an auxiliary dataset providing emissions from solid biomass combustion is also provided. 
@@ -149,7 +151,7 @@ Supplementary checking `.csv` text files that provide total global mass for each
 are also available as well as global seasonal diagnostic plots can be found [here](https://zenodo.org/records/14145000).
 -->
 
-### Gridding Methodology
+#### Gridding Methodology
 
 Emissions were first estimated at the level of country, sector, and fuel. 
 Emissions by sector were then mapped to spatial grids by country and sector 
@@ -181,8 +183,7 @@ Feng, L., Smith, S. J., Braun, C., Crippa, M., Gidden, M. J., Hoesly, R., Klimon
 For more details on the underlying emissions data see:
 Hoesly, R. M., Smith, S. J., Feng, L., Klimont, Z., Janssens-Maenhout, G., Pitkanen, T., Seibert, J. J., Vu, L., Andres, R. J., Bolt, R. M., Bond, T. C., Dawidowski, L., Kholod, N., Kurokawa, J.-I., Li, M., Liu, L., Lu, Z., Moura, M. C. P., O'Rourke, P. R., and Zhang, Q. (2018) Historical (1750–2014) anthropogenic emissions of reactive gases and aerosols from the Community Emissions Data System (CEDS), Geosci. Model Dev., 11, 369-408. doi: 10.5194/gmd-11-369-2018.
 
-
-### Uncertainty
+#### Uncertainty
 
 At present, uncertainties are not quantified.
 Uncertainties in recent years (most recent 2-3 years) 
@@ -204,11 +205,11 @@ may also be of interest.
 Comparison figures showing CMIP6 vs CMIP6Plus data sets by aggregate region and sector can be found [here](https://github.com/JGCRI/CEDS/blob/master/documentation/Version_comparison_figures_v_2024_07_08_vs_2016_07_16(CMIP6).pdf).
 -->
 
-### File formats and naming
+#### File formats and naming
 
 The file formats are identical to CMIP6.
 
-#### Emissions Data file name format
+##### Emissions Data file name format
 
 Bulk gridded emissions: 
 
@@ -222,7 +223,7 @@ Gridded aircraft emissions:
   where `YYYY` is the starting year contained in this file and `ZZZZ` is the ending year.
 - netCDF variable name: `[em_species]_em_AIR_anthro`
 
-#### Supplemental emissions Data file name format
+##### Supplemental emissions Data file name format
 
 Gridded biomass emissions: 
 
@@ -239,6 +240,12 @@ VOC speciation grids:
 There is a separate README file with further information on VOC speciation -- see the CEDS project web site. 
 Note there is a variable naming inconsistency for these file - described in the VOC README.
 
+### ScenarioMIP
+
+The data for ScenarioMIP comes from a range of IAMs,
+rather than the CEDS consortium.
+[TODO: any information about how ScenarioMIP files differ from the DECK files.
+There shouldn't be any major differences]
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
