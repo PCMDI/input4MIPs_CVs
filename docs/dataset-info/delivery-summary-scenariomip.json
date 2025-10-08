@@ -2,13 +2,13 @@
     "slcf_co2_emms": {
         "expected_publication": "October 2025",
         "source_ids": null,
-        "status": "Draft data in preparation",
+        "status": "Draft data available",
         "url": null
     },
     "biomass_burning_emms": {
         "expected_publication": "October 2025",
         "source_ids": null,
-        "status": "Draft data in preparation",
+        "status": "Draft data available",
         "url": null
     },
     "land_use": {
@@ -20,7 +20,7 @@
     "ghg_concentrations": {
         "expected_publication": "October 2025",
         "source_ids": null,
-        "status": "Draft data in preparation",
+        "status": "Draft data available",
         "url": null
     },
     "co2_isotopes": {
@@ -49,7 +49,7 @@
     "solar": {
         "expected_publication": "October 2025",
         "source_ids": null,
-        "status": "Draft data in preparation",
+        "status": "Draft data available",
         "url": null
     },
     "amip-ssts": {
@@ -67,7 +67,7 @@
     "population": {
         "expected_publication": "October 2025",
         "source_ids": null,
-        "status": "Draft data in preparation",
+        "status": "Draft data available",
         "url": null
     }
 }

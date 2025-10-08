@@ -13,6 +13,7 @@ from collections.abc import Iterable
 from pathlib import Path
 
 import pandas as pd
+from attrs import define
 from packaging.version import Version
 
 HERE = Path(__file__).parent
@@ -88,7 +89,18 @@ def get_esgf_search_url(source_ids: list[str]) -> str:
 # https://esgf-metagrid.cloud.dkrz.de/search?project=input4MIPs&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-03-18-supplemental%22%7D
 
 
-def extract_scenario_from_source_id(source_id: str) -> str | None:
+@define
+class ScenarioInfo:
+    """Scenario information"""
+
+    name: str
+    """Scenario name"""
+
+    legacy: bool
+    """Is this a legacy scenario name (from early ScenarioMIP drafts)?"""
+
+
+def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
     """
     Extract the scenario from a given source ID
 
@@ -176,8 +188,8 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         return None
 
     KNOWN_SCENARIOS = {
-        "vllo",
-        "vlho",
+        "vl",
+        "ln",
         "l",
         "m",
         "ml",
@@ -186,8 +198,16 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         # Used for scenario indepdendent forcings i.e. volcanic and solar
         "ScenarioMIP",
     }
+    # Draft names before final decision
+    KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho", "scendraft1", "scendraft2"}
 
-    for known_prefix in ("PIK-", "CR-", "UOEXETER-", "SOLARIS-HEPPA-"):
+    for known_prefix in (
+        "PIK-",
+        "CR-",
+        "UOEXETER-",
+        "SOLARIS-HEPPA-",
+        "IIASA-IAMC-",
+    ):
         if known_prefix in source_id:
             # Assume that scenario information is the first part of the hyphen-separated
             # source ID after the prefix.
@@ -196,7 +216,10 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
             # e.g. "PIK-vllo-0-1-0".
             scenario = source_id.split(known_prefix)[1].split("-")[0]
             if scenario in KNOWN_SCENARIOS:
-                return scenario
+                return ScenarioInfo(name=scenario, legacy=False)
+
+            if scenario in KNOWN_SCENARIOS_LEGACY:
+                return ScenarioInfo(name=scenario, legacy=True)
 
     msg = f"Could not parse {source_id=} to find a known scenario"
     raise ValueError(msg)
@@ -205,11 +228,14 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
 def get_version(source_id: str, source_id_stub: str, cmip7_phase: str) -> Version:
     tmp = source_id.split(source_id_stub)[-1].strip("-").replace("-", ".")
 
-    for danger, sanitised in (("supplemental", "alpha"), ("CMIP.", "")):
+    for danger, sanitised in (
+        ("supplemental", "alpha"),
+        ("CMIP.", ""),
+    ):
         tmp = tmp.replace(danger, sanitised)
 
-    if (scenario := extract_scenario_from_source_id(source_id)) is not None:
-        tmp = tmp.replace(f"{scenario}.", "")
+    if (scenario_info := extract_scenario_from_source_id(source_id)) is not None:
+        tmp = tmp.replace(f"{scenario_info.name}.", "")
 
     res = Version(tmp)
 
@@ -217,11 +243,25 @@ def get_version(source_id: str, source_id_stub: str, cmip7_phase: str) -> Versio
 
 
 def get_latest_source_ids(
-    source_ids: tuple[str, ...], source_id_stub: str, cmip7_phase: str
+    source_ids: tuple[str, ...], source_id_stub: list[str], cmip7_phase: str
 ) -> tuple[str, ...]:
-    version_ids = tuple(get_version(v, source_id_stub, cmip7_phase) for v in source_ids)
+    version_ids_l = []
+    for source_id in source_ids:
+        for relevant_stub in source_id_stub:
+            if source_id.startswith(relevant_stub):
+                break
+        else:
+            msg = "Didn't find any relevant stub"
+            raise AssertionError(msg)
+
+        vid = get_version(source_id, relevant_stub, cmip7_phase)
+        version_ids_l.append(vid)
+
+    version_ids = tuple(version_ids_l)
     pairs = list(zip(source_ids, version_ids))[::-1]
 
+    if not version_ids:
+        breakpoint()
     version_id_latest = max(version_ids)
     source_ids_latest = tuple(v[0] for v in pairs if v[1] == version_id_latest)
 
@@ -281,9 +321,15 @@ def get_cmip7_phase_source_id_summary(
             raise ValueError(msg)
 
         # Check status in the database
-        db_source_id_stub_rows = DB_SOURCE[
-            DB_SOURCE["source_id"].str.contains(source_id_stubs[forcing_id])
-        ]
+        source_id_stub_rows_indexer = pd.Series(
+            [False] * DB_SOURCE.shape[0], DB_SOURCE.index
+        )
+        for sids in source_id_stubs[forcing_id]:
+            source_id_stub_rows_indexer = source_id_stub_rows_indexer | DB_SOURCE[
+                "source_id"
+            ].str.contains(sids)
+
+        db_source_id_stub_rows = DB_SOURCE[source_id_stub_rows_indexer]
         if "source_id_stub_ignore" in phase_info:
             # The CEDS clause
             db_source_id_stub_rows = db_source_id_stub_rows[
@@ -300,6 +346,7 @@ def get_cmip7_phase_source_id_summary(
                 for sid in db_source_id_stub_rows["source_id"].unique()
                 if extract_scenario_from_source_id(sid) is not None
             )
+
         else:
             source_ids_for_phase = tuple(
                 sid
@@ -632,7 +679,9 @@ def add_cmip7_phase_source_ids(
     return tuple(out)
 
 
-def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, ...]:
+def get_revision_history_for_source_id_stub(
+    source_id_stub: list[str],
+) -> tuple[str, ...]:
     """
     Get revision history for a given source ID stub
 
@@ -643,7 +692,7 @@ def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, .
     Parameters
     ----------
     source_id_stub
-        Source ID stub for which to create the revision history
+        Source ID stubs for which to create the revision history
 
     Returns
     -------
@@ -652,7 +701,15 @@ def get_revision_history_for_source_id_stub(source_id_stub: str) -> tuple[str, .
 
         If the output is empty, no revisions have been made.
     """
-    source_id_stub_rows = DB_SOURCE[DB_SOURCE["source_id"].str.contains(source_id_stub)]
+    source_id_stub_rows_indexer = pd.Series(
+        [False] * DB_SOURCE.shape[0], DB_SOURCE.index
+    )
+    for sids in source_id_stub:
+        source_id_stub_rows_indexer = source_id_stub_rows_indexer | DB_SOURCE[
+            "source_id"
+        ].str.contains(sids)
+
+    source_id_stub_rows = DB_SOURCE[source_id_stub_rows_indexer]
     source_ids_in_history = source_id_stub_rows["source_id"].unique()
 
     out = []
@@ -746,7 +803,7 @@ def add_revision_history(
     return tuple(out)
 
 
-def get_file_info(raw_split: Iterable[str]) -> dict[str, str]:
+def get_file_info(raw_split: Iterable[str]) -> dict[str, str | list[str]]:
     """
     Get the key info for the file
 
@@ -775,9 +832,15 @@ def get_file_info(raw_split: Iterable[str]) -> dict[str, str]:
 
         info_raw = line.split("<!--- ")[1].split(" -->")[0]
         key, value = info_raw.split("=")
-        value = value.strip('"')
+        if "[" in value:
+            value = json.loads(value)
+        else:
+            value = value.strip('"')
 
         res[key] = value
+
+    if isinstance(res["source_id_stub"], str):
+        res["source_id_stub"] = [res["source_id_stub"]]
 
     return res
 

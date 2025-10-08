@@ -142,8 +142,8 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 ##### Source IDs for use in this phase
 
-1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* No data available for this phase yet
-1. *Open biomass burning emissions:* No data available for this phase yet
+1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [IIASA-IAMC-scendraft1-0-3-0; IIASA-IAMC-scendraft2-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%2C%22IIASA-IAMC-scendraft2-0-3-0%22%7D) (No DOI provided)
+1. *Open biomass burning emissions:* [IIASA-IAMC-scendraft1-0-3-0; IIASA-IAMC-scendraft2-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%2C%22IIASA-IAMC-scendraft2-0-3-0%22%7D) (No DOI provided)
 1. *Land use:* No data available for this phase yet
 1. *Greenhouse gas concentrations:* [CR-vllo-0-1-0; CR-vlho-0-1-0; CR-l-0-1-0; CR-ml-0-1-0; CR-m-0-1-0; CR-hl-0-1-0; CR-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vllo-0-1-0%22%2C%22CR-vlho-0-1-0%22%2C%22CR-l-0-1-0%22%2C%22CR-ml-0-1-0%22%2C%22CR-m-0-1-0%22%2C%22CR-hl-0-1-0%22%2C%22CR-h-0-1-0%22%7D) (DOI: [dev-test](https://doi.org/dev-test).)
 1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
