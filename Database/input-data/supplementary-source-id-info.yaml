@@ -92,6 +92,13 @@ DRES-CMIP-BB4CMIP7-2-1:
   # While we wait for ESGF scrape to come back up
   publication_status: published
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
+FZJ-CMIP-nitrogen-1-0:
+  comment_post_publication: >-
+    Multiple files shared the same tracking ID.
+    They were hence retracted.
+    This is fixed in FZJ-CMIP-nitrogen-1-1.
+    However, the data is unchanged
+    so simulations do not need to be restarted.
 FZJ-CMIP-ozone-1-0:
   comment_post_publication: >-
     The fill value attribute was missing in these files.
