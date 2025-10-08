@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.12 (2025-10-08)
+
+
+### 🆕 Features
+
+- + Added draft emissions for CMIP6Plus (under source ID `IIASA-IAMC-scendraft1-0-3-0`) ([#380](https://github.com/PCMDI/input4MIPs_CVs/pull/380))
+
+
 ## input4MIPs CVs v6.7.11 (2025-10-07)
 
 
