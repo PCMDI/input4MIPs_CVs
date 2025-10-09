@@ -163,6 +163,8 @@ This is based on the sections above.
       or re-written (which means their name was probably changed).
       If they were re-written, check with the data provider whether they want to provide new files with the correct name
       so they don't get confused when the files are eventually published.
+1. Validate the written tree:
+   `bash scripts/pmount-database-generation/validate-tree.sh <root-of-written-tree>`
 1. If this all passes, then these files are good to go and can be pushed into the publication queue
 1. On perlmutter, that means copying the files written in the DRS
    to a temporary directory in `/global/cfs/projectdirs/m4931/`
