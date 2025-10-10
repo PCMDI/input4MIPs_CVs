@@ -32,7 +32,8 @@
     "volcanic": {
         "source_ids": [
             "UOEXETER-ScenarioMIP-2-2-1"
-        ]
+        ],
+        "url": "https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/"
     },
     "ozone": {
         "expected_publication": "December 2025",
