@@ -34,13 +34,13 @@
     },
     "ozone": {
         "source_ids": [ 
-            "FZJ-CMIP-ozone-1-1" 
+            "FZJ-CMIP-ozone-1-2" 
         ]
     },
     "nitrogen-deposition": {
-        "expected_publication": "piControl - August 2025, historical - August 2025",
-        "source_ids": [ "FZJ-CMIP-nitrogen-1-0" ],
-        "status": "Final data preparation in progress"
+        "source_ids": [ 
+            "FZJ-CMIP-nitrogen-1-1"
+        ]
     },
     "solar": {
         "source_ids": [

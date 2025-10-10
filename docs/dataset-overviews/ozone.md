@@ -22,9 +22,9 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-ozone-1-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-1%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-ozone-1-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-2%22%7D)
 
-The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).
+No DOIs are available for this data.
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -88,10 +88,16 @@ if these bounds errors are an insurmountable problem).
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 
+### FZJ-CMIP-ozone-1-1
+
+A spurious large value was found in the climatology data related to this dataset, see <a
+href="https://github.com/PCMDI/input4MIPs_CVs/issues/373">here</a>. In addition, the latitudinal
+bounds in this file were not correct. Both of these issues are corrected in FZJ-CMIP-ozone-1-2.
+
 ### FZJ-CMIP-ozone-1-0
 
 The fill value attribute was missing in these files. They were hence retracted  (although, if you're
 very careful, they are still usable, you just have to set the fill value manually). The original
-issue that identified this is
+issue that identified this is <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/373">here</a>
 
 <!--- end-revision-history -->

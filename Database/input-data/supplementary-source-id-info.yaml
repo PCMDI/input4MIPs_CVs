@@ -108,7 +108,6 @@ FZJ-CMIP-ozone-1-0:
     <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/373">here</a>
 FZJ-CMIP-ozone-1-1:
   comment_post_publication: >-
-    [TODO: check this is correct before merging]
     A spurious large value was found in the climatology data related to this dataset,
     see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/373">here</a>.
     In addition, the latitudinal bounds in this file were not correct.

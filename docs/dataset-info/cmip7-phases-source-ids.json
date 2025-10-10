@@ -44,7 +44,7 @@
     },
     "ozone": {
         "deck-testing": null,
-        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-ozone-1-1" ] },
+        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-ozone-1-2" ] },
         "scenariomip-testing": null,
         "scenariomip-cmip7": null
     },
@@ -90,7 +90,7 @@
     },
     "nitrogen-deposition": {
         "deck-testing": null,
-        "deck-cmip7": null,
+        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-nitrogen-1-1" ] },
         "scenariomip-testing": null,
         "scenariomip-cmip7": null
     },
