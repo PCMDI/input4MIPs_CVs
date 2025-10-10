@@ -34,12 +34,12 @@
     },
     "ozone": {
         "source_ids": [ 
-            "FZJ-CMIP-ozone-1-1" 
+            "FZJ-CMIP-ozone-1-2" 
         ]
     },
     "nitrogen-deposition": {
         "source_ids": [ 
-            "FZJ-CMIP-nitrogen-1-0" 
+            "FZJ-CMIP-nitrogen-1-1"
         ]
     },
     "solar": {

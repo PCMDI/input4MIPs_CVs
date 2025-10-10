@@ -22,7 +22,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-nitrogen-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-nitrogen-1-0%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-nitrogen-1-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-nitrogen-1-1%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584172](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584172).
 
@@ -66,5 +66,11 @@ to make it as close to being CF-compliant as possible.
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
-<!--- No revisions, hence section is blank -->
+## Revision history
+
+### FZJ-CMIP-nitrogen-1-0
+
+Multiple files shared the same tracking ID. They were hence retracted. This is fixed in
+FZJ-CMIP-nitrogen-1-1. However, the data is unchanged so simulations do not need to be restarted.
+
 <!--- end-revision-history -->

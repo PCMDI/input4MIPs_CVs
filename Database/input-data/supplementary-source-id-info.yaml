@@ -92,12 +92,26 @@ DRES-CMIP-BB4CMIP7-2-1:
   # While we wait for ESGF scrape to come back up
   publication_status: published
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
+FZJ-CMIP-nitrogen-1-0:
+  comment_post_publication: >-
+    Multiple files shared the same tracking ID.
+    They were hence retracted.
+    This is fixed in FZJ-CMIP-nitrogen-1-1.
+    However, the data is unchanged
+    so simulations do not need to be restarted.
 FZJ-CMIP-ozone-1-0:
   comment_post_publication: >-
     The fill value attribute was missing in these files.
     They were hence retracted 
     (although, if you're very careful, they are still usable, you just have to set the fill value manually).
     The original issue that identified this is
+    <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/373">here</a>
+FZJ-CMIP-ozone-1-1:
+  comment_post_publication: >-
+    A spurious large value was found in the climatology data related to this dataset,
+    see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/373">here</a>.
+    In addition, the latitudinal bounds in this file were not correct.
+    Both of these issues are corrected in FZJ-CMIP-ozone-1-2.
 ImperialCollege-3-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2583902
 MRI-JRA55-do-1-6-0:
@@ -216,6 +230,8 @@ UOEXETER-CMIP-2-2-1:
   # While we wait for ESGF scrape to come back up
   publication_status: published
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
+UOEXETER-ScenarioMIP-2-2-1:
+  further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
 UofMD-landState-3-0:
   license_id: CC BY 4.0
   comment_post_publication: >-
