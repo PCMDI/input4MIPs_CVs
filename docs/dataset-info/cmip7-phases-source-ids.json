@@ -17,7 +17,12 @@
             ],
             "ok_if_not_latest": true
         },
-        "scenariomip-testing": null,
+        "scenariomip-testing": {
+            "source_ids": [ 
+                "IIASA-IAMC-scendraft1-0-3-0", 
+                "IIASA-IAMC-scendraft2-0-3-0"
+            ]
+        },
         "scenariomip-cmip7": null
     },
     "land_use": {
@@ -79,7 +84,12 @@
     "biomass_burning_emms": {
         "deck-testing": { "source_ids": [ "DRES-CMIP-BB4CMIP7-1-0" ], "ok_if_not_latest": true },
         "deck-cmip7": { "source_ids": [ "DRES-CMIP-BB4CMIP7-2-0" ], "ok_if_not_latest": true },
-        "scenariomip-testing": null,
+        "scenariomip-testing": {
+            "source_ids": [ 
+                "IIASA-IAMC-scendraft1-0-3-0", 
+                "IIASA-IAMC-scendraft2-0-3-0"
+            ]
+        },
         "scenariomip-cmip7": null
     },
     "volcanic": {

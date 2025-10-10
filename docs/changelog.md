@@ -22,6 +22,23 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.12 (2025-10-08)
+
+
+### 🆕 Features
+
+- + Added draft emissions for CMIP6Plus (under source ID `IIASA-IAMC-scendraft1-0-3-0`) ([#380](https://github.com/PCMDI/input4MIPs_CVs/pull/380))
+
+
+## input4MIPs CVs v6.7.11 (2025-10-07)
+
+
+### 🆕 Features
+
+- Added nitrogen deposition dataset for CMIP7 (under source ID `FZJ-CMIP-nitrogen-1-0`).
+  This now completes the full set of CMIP7 historical forcings. ([#382](https://github.com/PCMDI/input4MIPs_CVs/pull/382))
+
+
 ## input4MIPs CVs v6.7.10 (2025-10-03)
 
 
