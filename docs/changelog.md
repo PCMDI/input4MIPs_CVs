@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.13 (2025-10-13)
+
+
+### 🐛 Bug Fixes
+
+- - Bumped the recommended ozone source ID to `FZJ-CMIP-ozone-1-2` as `FZJ-CMIP-ozone-1-1` had spurious NaN values
+  - Bumped the recommend nitrogen deposition source ID to `FZJ-CMIP-nitrogen-1-1` as `FZJ-CMIP-nitrogen-1-0` had files with duplicate tracking IDs (the data is unchanged, so simulations don't have to be restarted but it is better to use `FZJ-CMIP-nitrogen-1-1` if possible)
+  - Fixed the URL link for `UOEXETER-ScenarioMIP-2-2-1` so it points to "input4mips-cvs.readthedocs.io" rather than "input4mips-controlled-vocabularies-cvs.readthedocs.io" which is no longer available
+
+  ([#379](https://github.com/PCMDI/input4MIPs_CVs/pull/379))
+
+
 ## input4MIPs CVs v6.7.12 (2025-10-08)
 
 
