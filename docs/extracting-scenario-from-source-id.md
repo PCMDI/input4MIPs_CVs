@@ -67,7 +67,10 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         "DRES-CMIP-BB4CMIP7-2-0",
         "DRES-CMIP-BB4CMIP7-2-1",
         "FZJ-CMIP-nitrogen-1-0",
+        "FZJ-CMIP-nitrogen-1-1",
         "FZJ-CMIP-ozone-1-0",
+        "FZJ-CMIP-ozone-1-1",
+        "FZJ-CMIP-ozone-1-2",
         "ImperialCollege-3-0",
         "MRI-JRA55-do-1-6-0",
         "PCMDI-AMIP-1-1-10",
@@ -76,6 +79,7 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         "PCMDI-AMIP-Had1p1-1-0",
         "PCMDI-AMIP-OI2p1-1-0",
         "PIK-CMIP-1-0-0",
+        "PIK-CMIP-1-0-1",
         "SOLARIS-HEPPA-CMIP-4-1",
         "SOLARIS-HEPPA-CMIP-4-2",
         "SOLARIS-HEPPA-CMIP-4-3",
@@ -118,7 +122,7 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         "ScenarioMIP",
     }
 
-    for known_prefix in ("PIK-",):
+    for known_prefix in ("PIK-", "CR-", "UOEXETER-", "SOLARIS-HEPPA-"):
         if known_prefix in source_id:
             # Assume that scenario information is the first part of the hyphen-separated
             # source ID after the prefix.
