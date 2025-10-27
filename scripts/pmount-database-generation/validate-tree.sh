@@ -20,10 +20,11 @@ LOG_LEVEL="INFO_FILE_ERROR"
 
 input4mips-validation --logging-level $LOG_LEVEL \
 	validate-tree \
-	--cv-source "gh:main" \
+	--cv-source "./CVs" \
 	"${dir_to_check}" \
 	--rglob-input "${rglob_input}" \
 	--output-html "${timestamp}_validate-tree-output.html"
+	# --cv-source "gh:main" \
     # --allow-cf-checker-warnings \
 
 echo "Wrote HTML summary to ${timestamp}_validate-tree-output.html"
