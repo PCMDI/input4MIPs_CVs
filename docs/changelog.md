@@ -22,6 +22,19 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.14 (2025-10-27)
+
+
+### ⚠️ Breaking Changes
+
+- Added new nitrogen deposition data (FZJ-nitrogen-1-2) to replace erroneous data (FZJ-nitrogen-1-1).
+  If you have started historical simulations, please restart as FZJ-nitrogen-1-1 has factor of 2 errors. ([#387](https://github.com/PCMDI/input4MIPs_CVs/pull/387))
+
+### 🆕 Features
+
+- Added the missing piControl with QBO file for ozone (same source ID i.e. FZJ-ozone-1-2, just make sure you look in the latest version) ([#387](https://github.com/PCMDI/input4MIPs_CVs/pull/387))
+
+
 ## input4MIPs CVs v6.7.13 (2025-10-13)
 
 
