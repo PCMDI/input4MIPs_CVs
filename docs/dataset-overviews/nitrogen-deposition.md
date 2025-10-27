@@ -22,7 +22,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-nitrogen-1-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-nitrogen-1-1%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-nitrogen-1-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-nitrogen-1-2%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584172](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584172).
 
@@ -67,6 +67,13 @@ to make it as close to being CF-compliant as possible.
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### FZJ-CMIP-nitrogen-1-1
+
+There were factor of 2 errors in the wetNOy fields and other outputs. They were hence retracted. If
+you have started simulations with FZJ-CMIP-nitrogen-1-1, please restart them with the updated
+FZJ-CMIP-nitrogen-1-2 data. The original issue that identified this is <a
+href="https://github.com/PCMDI/input4MIPs_CVs/issues/385">here</a>
 
 ### FZJ-CMIP-nitrogen-1-0
 

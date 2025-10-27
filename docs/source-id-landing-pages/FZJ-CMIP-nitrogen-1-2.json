@@ -37,18 +37,6 @@
       }
     },
     {
-      "affiliation": "Environment and Climate Change Canada, Climate Research Division, Montreal, Canada",
-      "creatorName": "Plummer, David",
-      "email": "david.plummer@ec.gc.ca",
-      "familyName": "Plummer",
-      "givenName": "David",
-      "nameIdenfitier": {
-        "nameIdenfitierScheme": "ORCID",
-        "pid": "0000-0001-8087-3976",
-        "schemeURI": "https://orcid.org/"
-      }
-    },
-    {
       "affiliation": "Julich Supercomputing Center, Forschungszentrum Juelich GmbH, Juelich, Germany",
       "creatorName": "Stein, Olaf",
       "email": "o.stein@fz-juelich.de",
@@ -75,22 +63,14 @@
   ],
   "dates": [
     {
-      "date": "2025-10-05",
-      "dateType": "Created"
-    },
-    {
-      "date": "2025-10-22",
-      "dateType": "Created"
-    },
-    {
-      "date": "2025-10-10",
+      "date": "2025-10-25",
       "dateType": "Created"
     }
   ],
   "descriptions": [
     {
       "descriptionType": "Abstract",
-      "text": "CMIP forcing dataset (input4MIPs).\nThis is all data published under the unique ID (known as a source ID) FZJ-CMIP-ozone-1-2."
+      "text": "CMIP forcing dataset (input4MIPs).\nThis is all data published under the unique ID (known as a source ID) FZJ-CMIP-nitrogen-1-2."
     }
   ],
   "formats": [
@@ -100,7 +80,7 @@
   ],
   "fundingReferences": [],
   "identifier": {
-    "id": "10.25981/ESGF.input4MIPs.CMIP7/2584173",
+    "id": "10.25981/ESGF.input4MIPs.CMIP7/2584172",
     "identifierType": "DOI"
   },
   "language": "en",
@@ -119,7 +99,7 @@
   ],
   "subjects": [
     {
-      "subject": "input4MIPs.CMIP7.CMIP.FZJ.FZJ-CMIP-ozone-1-2",
+      "subject": "input4MIPs.CMIP7.CMIP.FZJ.FZJ-CMIP-nitrogen-1-2",
       "subjectScheme": "DRS"
     },
     {
@@ -132,5 +112,5 @@
       "subject": "CMIP7"
     }
   ],
-  "titles": "FZJ-CMIP-ozone-1-2 data provided as part of input4MIPs"
+  "titles": "FZJ-CMIP-nitrogen-1-2 data provided as part of input4MIPs"
 }

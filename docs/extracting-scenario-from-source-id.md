@@ -68,6 +68,7 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         "DRES-CMIP-BB4CMIP7-2-1",
         "FZJ-CMIP-nitrogen-1-0",
         "FZJ-CMIP-nitrogen-1-1",
+        "FZJ-CMIP-nitrogen-1-2",
         "FZJ-CMIP-ozone-1-0",
         "FZJ-CMIP-ozone-1-1",
         "FZJ-CMIP-ozone-1-2",
