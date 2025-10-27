@@ -70,10 +70,11 @@ to make it as close to being CF-compliant as possible.
 
 ### FZJ-CMIP-nitrogen-1-1
 
-There were factor of 2 errors in the wetNOy fields and other outputs. They were hence retracted. If
-you have started simulations with FZJ-CMIP-nitrogen-1-1, please restart them with the updated
-FZJ-CMIP-nitrogen-1-2 data. The original issue that identified this is <a
-href="https://github.com/PCMDI/input4MIPs_CVs/issues/385">here</a>
+There were faulty N-deposition values in the 1930s across variables and the variable wetNOy was 50%
+too high in both the PI and historical forcing fields due to double-counting of some wetNOy
+components. They were hence retracted. If you have started simulations with FZJ-CMIP-nitrogen-1-1,
+please restart them with the updated FZJ-CMIP-nitrogen-1-2 data. The original issue that identified
+this is <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/385">here</a>
 
 ### FZJ-CMIP-nitrogen-1-0
 
