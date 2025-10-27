@@ -99,6 +99,15 @@ FZJ-CMIP-nitrogen-1-0:
     This is fixed in FZJ-CMIP-nitrogen-1-1.
     However, the data is unchanged
     so simulations do not need to be restarted.
+FZJ-CMIP-nitrogen-1-1:
+  comment_post_publication: >-
+    There were factor of 2 errors in the wetNOy fields
+    and other outputs.
+    They were hence retracted.
+    If you have started simulations with FZJ-CMIP-nitrogen-1-1,
+    please restart them with the updated FZJ-CMIP-nitrogen-1-2 data.
+    The original issue that identified this is
+    <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/385">here</a>
 FZJ-CMIP-ozone-1-0:
   comment_post_publication: >-
     The fill value attribute was missing in these files.
