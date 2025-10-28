@@ -6,7 +6,7 @@
 ## Key contacts
 
 - Names: Dominik Paprotny, Laurence Hawker
-- Emails: dominik.paprotny@pik-potsdam.de, laurence.hawker@bristol.ac.uk
+- Emails: dominik.paprotny@usz.edu.pl, laurence.hawker@bristol.ac.uk
 
 ## Summary
 
@@ -95,14 +95,19 @@ The dataset contains many sources of uncertainty that are difficult to quantify 
 This dataset was created by joint effort of Horizon Europe project [COMPASS](https://compass-climate.eu/) 
 and project [WorldPop](https://www.worldpop.org/). The data was created at high resolution (30 arc seconds, ~1 km)
 and upscaled to 0.25 and 0.5 degree. The following steps were followed:
-(1) WorldPop [gridded constrained global population data for 2015-2025](https://www.worldpop.org/blog/beta-test-our-new-global-population-data-2015-to-2030/) 
+
+(1) WorldPop [gridded constrained global population data for 2015-2025](https://www.worldpop.org/blog/worldpop-unveils-global-2-next-generation-global-population-dataset/) 
 were combined with FuturePop projections based on SSP v3.2 trajectories.
+
 (2) The WorldPop gridded population was extrapolated back to 1975 using [Global Human Settlement Layer](https://human-settlement.emergency.copernicus.eu/)
+
 (3) Data were further extrapolated back to 1850 using [HYDE 3.2](https://geo.public.data.uu.nl/vault-hyde/HYDE%203.2%5B1710494848%5D/original/)
+
 (4) The data were adjusted to match annual national timeseries of population:
 (a) 1850-1949 from a new compilation of historical population, adjusted to modern country borders made in [COMPASS D3.1](https://zenodo.org/records/14892500)
 (b) 1950-2023 from United Nations [World Population Prospects 2024](https://population.un.org/wpp/) with minor adjustments made in [COMPASS D3.1](https://zenodo.org/records/14892500).
 (c) 2025-2100 extrapolated from 2020 with gap-filled SSP v3.2 data, and 2024 interpolated between 2023 and 2025.
+
 (5) The population counts were converted to population density based on the size of grid-cells converted from their latitude.
 
 Full documentation of the data will be available soon.
