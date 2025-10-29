@@ -2731,6 +2731,517 @@
         "mip_era":"CMIP7",
         "source_version":"0.2.0"
     },
+    "PIK-h-1-0-0":{
+      "activity_id":"input4MIPs",
+      "authors":[
+          {
+              "affiliations":[
+                  "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany",
+                  "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland"
+              ],
+              "email":"dominik.paprotny@usz.edu.pl",
+              "name":"Dominik Paprotny",
+              "orcid":"0000-0001-5090-8402"
+          },
+          {
+              "affiliations":[
+                  "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"laurence.hawker@bristol.ac.uk",
+              "name":"Laurence Hawker",
+              "orcid":"0000-0002-8317-7084"
+          },
+          {
+              "affiliations":[
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"M.Bondarenko@soton.ac.uk",
+              "name":"Maksym Bondarenko",
+              "orcid":"0000-0003-4958-6551"
+          },
+          {
+              "affiliations":[
+                  "Department of Social Statistics and Demography, University of Southampton, UK"
+              ],
+              "email":"J.D.Hilton@soton.ac.uk",
+              "name":"Jason Hilton",
+              "orcid":"0000-0001-9473-757X"
+          },
+          {
+              "affiliations":[
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"n.tejedor-garavito@soton.ac.uk",
+              "name":"Natalia Tejedor Garavito",
+              "orcid":"0000-0002-1140-6263"
+          },
+          {
+              "affiliations":[
+                  "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"evgeny.noi@bristol.ac.uk",
+              "name":"Evgeny Noi",
+              "orcid":"0000-0002-7914-1548"
+          },
+          {
+              "affiliations":[
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"A.J.Tatem@soton.ac.uk",
+              "name":"Andrew Tatem",
+              "orcid":"0000-0002-7270-941X"
+          }
+      ],
+      "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+      "dataset_category":[
+          "population"
+      ],
+      "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+      "institution_id":"PIK",
+      "license_id":"CC BY 4.0",
+      "mip_era":"CMIP7",
+      "source_version":"1.0.0"
+    },
+    "PIK-hl-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-m-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-ml-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-l-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-vl-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-ln-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
     "SOLARIS-HEPPA-CMIP-4-1":{
         "activity_id":"input4MIPs",
         "authors":[
