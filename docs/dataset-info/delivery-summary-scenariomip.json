@@ -65,9 +65,14 @@
         "url": null
     },
     "population": {
-        "expected_publication": "October 2025",
-        "source_ids": null,
-        "status": "Draft data available",
-        "url": null
+        "source_ids": [
+            "PIK-vllo-1-0-0",
+            "PIK-vlho-1-0-0",
+            "PIK-l-1-0-0",
+            "PIK-ml-1-0-0",
+            "PIK-m-1-0-0",
+            "PIK-hl-1-0-0",
+            "PIK-h-1-0-0"
+        ]
     }
 }
