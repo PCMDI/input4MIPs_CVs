@@ -43,11 +43,30 @@ No data available for this phase yet.
 
 ##### CMIP7
 
-No data available for this phase yet.
+For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
+
+- [PIK-vl-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vl-1-0-0%22%7D)
+- [PIK-ln-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ln-1-0-0%22%7D)
+- [PIK-l-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-l-1-0-0%22%7D)
+- [PIK-ml-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ml-1-0-0%22%7D)
+- [PIK-m-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-m-1-0-0%22%7D)
+- [PIK-hl-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-hl-1-0-0%22%7D)
+- [PIK-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-1-0-0%22%7D).
+
+
+No DOIs are available for this data.
+
+This data is for use in CMIP7 production simulations.
+All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
+This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
+
+If you find an issue, please
+[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
+so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
-For the scenariomip simulations in the testing phase of CMIP7, you will need data from the following source IDs:
+For the ScenarioMIP simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
 - [PIK-vllo-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-2-0%22%7D)
 - [PIK-vlho-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vlho-0-2-0%22%7D)

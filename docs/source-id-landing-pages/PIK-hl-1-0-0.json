@@ -1,0 +1,137 @@
+{
+  "creators": [
+    {
+      "affiliation": "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland. Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany",
+      "creatorName": "Paprotny, Dominik",
+      "email": "dominik.paprotny@usz.edu.pl",
+      "familyName": "Paprotny",
+      "givenName": "Dominik",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0001-5090-8402",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "School of Geographical Sciences, University of Bristol, Bristol, UK. WorldPop, University of Southampton, Southampton, UK",
+      "creatorName": "Hawker, Laurence",
+      "email": "laurence.hawker@bristol.ac.uk",
+      "familyName": "Hawker",
+      "givenName": "Laurence",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-8317-7084",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "WorldPop, University of Southampton, Southampton, UK",
+      "creatorName": "Bondarenko, Maksym",
+      "email": "M.Bondarenko@soton.ac.uk",
+      "familyName": "Bondarenko",
+      "givenName": "Maksym",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0003-4958-6551",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Department of Social Statistics and Demography, University of Southampton, UK",
+      "creatorName": "Hilton, Jason",
+      "email": "J.D.Hilton@soton.ac.uk",
+      "familyName": "Hilton",
+      "givenName": "Jason",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0001-9473-757X",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "WorldPop, University of Southampton, Southampton, UK",
+      "creatorName": "Tejedor Garavito, Natalia",
+      "email": "n.tejedor-garavito@soton.ac.uk",
+      "familyName": "Tejedor Garavito",
+      "givenName": "Natalia",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-1140-6263",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "School of Geographical Sciences, University of Bristol, Bristol, UK. WorldPop, University of Southampton, Southampton, UK",
+      "creatorName": "Noi, Evgeny",
+      "email": "evgeny.noi@bristol.ac.uk",
+      "familyName": "Noi",
+      "givenName": "Evgeny",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-7914-1548",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "WorldPop, University of Southampton, Southampton, UK",
+      "creatorName": "Tatem, Andrew",
+      "email": "A.J.Tatem@soton.ac.uk",
+      "familyName": "Tatem",
+      "givenName": "Andrew",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-7270-941X",
+        "schemeURI": "https://orcid.org/"
+      }
+    }
+  ],
+  "dates": [
+    {
+      "date": "2025-10-28",
+      "dateType": "Created"
+    }
+  ],
+  "descriptions": [
+    {
+      "descriptionType": "Abstract",
+      "text": "CMIP forcing dataset (input4MIPs).\nThis is all data published under the unique ID (known as a source ID) PIK-hl-1-0-0."
+    }
+  ],
+  "formats": [
+    {
+      "format": "application/x-netcdf"
+    }
+  ],
+  "fundingReferences": [],
+  "identifier": {},
+  "language": "en",
+  "publication_year": 2025,
+  "publisher": "Earth System Grid Federation",
+  "relatedIdentifiers": [],
+  "resourceType": {
+    "resourceType": "Digital",
+    "resourceTypeGeneral": "Dataset"
+  },
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+      "rightsURI": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "input4MIPs.CMIP7.ScenarioMIP.PIK.PIK-hl-1-0-0",
+      "subjectScheme": "DRS"
+    },
+    {
+      "subject": "forcing data"
+    },
+    {
+      "subject": "climate"
+    },
+    {
+      "subject": "CMIP7"
+    }
+  ],
+  "titles": "PIK-hl-1-0-0 data provided as part of input4MIPs"
+}
