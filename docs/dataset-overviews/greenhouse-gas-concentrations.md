@@ -60,7 +60,7 @@ No data available for this phase yet.
 
 ##### Testing
 
-For the scenariomip simulations in the testing phase of CMIP7, you will need data from the following source IDs:
+For the ScenarioMIP simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
 - [CR-vllo-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vllo-0-1-0%22%7D)
 - [CR-vlho-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vlho-0-1-0%22%7D)

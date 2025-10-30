@@ -581,13 +581,13 @@ def get_cmip7_phases_source_id_summary_for_forcing(forcing: str) -> tuple[str, .
 
                     if mip == "scenariomip":
                         out.append(
-                            f"For the {mip} simulations in the {prod_or_testing_phase_str} phase of CMIP7, "
+                            f"For the {mip_display} simulations in the {prod_or_testing_phase_str} phase of CMIP7, "
                             f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n"
                         )
 
                     else:
                         out.append(
-                            f"For the {mip} simulations in the {prod_or_testing_phase_str} phase of CMIP7, "
+                            f"For the {mip_display} simulations in the {prod_or_testing_phase_str} phase of CMIP7, "
                             f"you will need data from the following source IDs:\n{source_id_sep}{source_id_str}.\n\n"
                             "Retrieving and only using valid data will require some care.\n"
                             "Please make sure you read the guidance given at the start of the Summary section\n"

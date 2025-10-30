@@ -71,9 +71,20 @@
                 "PIK-m-0-2-0",
                 "PIK-hl-0-2-0",
                 "PIK-h-0-2-0"
-            ] 
+            ],
+            "ok_if_not_latest": true
         },
-        "scenariomip-cmip7": null
+        "scenariomip-cmip7": { 
+            "source_ids": [ 
+                "PIK-vl-1-0-0",
+                "PIK-ln-1-0-0",
+                "PIK-l-1-0-0",
+                "PIK-ml-1-0-0",
+                "PIK-m-1-0-0",
+                "PIK-hl-1-0-0",
+                "PIK-h-1-0-0"
+            ] 
+        }
     },
     "solar": {
         "deck-testing": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-5" ], "ok_if_not_latest": true },

@@ -126,7 +126,7 @@ so that the identification and resolution of this issue is publicly accessible.
 1. *Solar:* No data available for this phase yet
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
-1. *Population density:* No data available for this phase yet
+1. *Population density:* [PIK-vl-1-0-0; PIK-ln-1-0-0; PIK-l-1-0-0; PIK-ml-1-0-0; PIK-m-1-0-0; PIK-hl-1-0-0; PIK-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vl-1-0-0%22%2C%22PIK-ln-1-0-0%22%2C%22PIK-l-1-0-0%22%2C%22PIK-ml-1-0-0%22%2C%22PIK-m-1-0-0%22%2C%22PIK-hl-1-0-0%22%2C%22PIK-h-1-0-0%22%7D) (No DOI provided)
 <!--- end-source-id-summary -->
 
 #### Testing

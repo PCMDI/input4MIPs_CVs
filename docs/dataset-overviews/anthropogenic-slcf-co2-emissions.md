@@ -39,7 +39,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the deck simulations in the production phase of CMIP7, you will need data from the following source IDs:
+For the DECK simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
 - [CEDS-CMIP-2025-04-18](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18%22%7D)
 - [CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18-supplemental%22%7D).
@@ -60,7 +60,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
-For the deck simulations in the testing phase of CMIP7, you will need data from the following source IDs:
+For the DECK simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
 - [CEDS-CMIP-2024-11-25](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25%22%7D)
 - [CEDS-CMIP-2024-11-25-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25-supplemental%22%7D)
@@ -87,7 +87,7 @@ No data available for this phase yet.
 
 ##### Testing
 
-For the scenariomip simulations in the testing phase of CMIP7, you will need data from the following source IDs:
+For the ScenarioMIP simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
 - [IIASA-IAMC-scendraft1-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%7D)
 - [IIASA-IAMC-scendraft2-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft2-0-3-0%22%7D).
