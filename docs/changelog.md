@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.15 (2025-10-30)
+
+
+### 🆕 Features
+
+- Added population forcings for ScenarioMIP (see source IDs `PIK-*-1-0-0`) ([#389](https://github.com/PCMDI/input4MIPs_CVs/pull/389))
+
+
 ## input4MIPs CVs v6.7.14 (2025-10-27)
 
 
