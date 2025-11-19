@@ -75,6 +75,11 @@ If you would like a historical forcing without the QBO signal,
 please comment on [this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/22),
 specifically [this thread](https://github.com/PCMDI/input4MIPs_CVs/discussions/22#discussioncomment-14174159).
 
+There are also `zmta` (temperature) files available.
+These provide the temperature output that is consistent with the provided ozone files.
+This may be useful for those wishing to post-process the ozone forcings into other forms
+(e.g. https://github.com/PCMDI/input4MIPs_CVs/discussions/378).
+
 ## Differences in format from CMIP6 or other previous versions
 
 The data format is currently very similar, if not the same as CMIP6
