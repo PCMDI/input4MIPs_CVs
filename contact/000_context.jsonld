@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base": "https://espri-mod.github.io/mip-cmor-tables/contact/",
+        "@base": "https://esgvoc.ipsl.fr/resource/universe/contact/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type": "@type"

@@ -47,15 +47,15 @@ def convert() -> None:
 
         # Map each property to an appropriate URI
         property_mappings = {
-            "activity_id": "https://espri-mod.github.io/mip-cmor-tables/activity",
-            "institution_id": "https://espri-mod.github.io/mip-cmor-tables/institution",
+            "activity_id": "https://esgvoc.ipsl.fr/resource/universe/activity",
+            "institution_id": "https://esgvoc.ipsl.fr/resource/universe/institution",
             "contact": "https://schema.org/email",
             "license_id": "https://schema.org/license",
-            "mip_era": "https://espri-mod.github.io/mip-cmor-tables/mip_era",
+            "mip_era": "https://esgvoc.ipsl.fr/resource/universe/mip_era",
             "source_version": "https://schema.org/version",
             "further_info_url": "https://schema.org/url",
-            "dataset_category": "https://espri-mod.github.io/mip-cmor-tables/dataset_category",
-            "target_mip": "https://espri-mod.github.io/mip-cmor-tables/target_mip",
+            "dataset_category": "https://esgvoc.ipsl.fr/resource/universe/dataset_category",
+            "target_mip": "https://esgvoc.ipsl.fr/resource/universe/target_mip",
             "authors": "https://schema.org/author",
         }
 

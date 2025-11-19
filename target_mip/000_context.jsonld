@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base": "https://espri-mod.github.io/mip-cmor-tables/activity/",
+        "@base": "https://esgvoc.ipsl.fr/resource/universe/activity/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type": "@type",
@@ -11,7 +11,7 @@
             "@id": "https://schema.org/name"
         },
         "mip_era": {
-            "@id": "https://espri-mod.github.io/mip-cmor-tables/mip_era"
+            "@id": "https://esgvoc.ipsl.fr/resource/universe/mip_era"
         }
     }
 }

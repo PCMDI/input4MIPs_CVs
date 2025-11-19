@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base": "https://espri-mod.github.io/mip-cmor-tables/directory_date/",
+        "@base": "https://esgvoc.ipsl.fr/resource/universe/directory_date/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type": "@type"

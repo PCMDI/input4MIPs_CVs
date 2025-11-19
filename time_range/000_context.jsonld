@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base": "https://espri-mod.github.io/mip-cmor-tables/time_range/",
+        "@base": "https://esgvoc.ipsl.fr/resource/universe/time_range/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type": "@type"

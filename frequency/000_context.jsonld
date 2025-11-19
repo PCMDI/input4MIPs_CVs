@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base": "https://espri-mod.github.io/mip-cmor-tables/frequency/",
+        "@base": "https://esgvoc.ipsl.fr/resource/universe/frequency/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type": "@type"

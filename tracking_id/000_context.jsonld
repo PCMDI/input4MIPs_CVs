@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base": "https://espri-mod.github.io/mip-cmor-tables/tracking_id/",
+        "@base": "https://esgvoc.ipsl.fr/resource/universe/tracking_id/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type": "@type"

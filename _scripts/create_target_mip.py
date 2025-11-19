@@ -38,7 +38,7 @@ def convert() -> None:
         properties = {
             "URL": "https://schema.org/url",
             "full_name": "https://schema.org/name",
-            "mip_era": "https://espri-mod.github.io/mip-cmor-tables/mip_era",
+            "mip_era": "https://esgvoc.ipsl.fr/resource/universe/mip_era",
         }
         create_context_file(collection_name, "activity", properties)
 

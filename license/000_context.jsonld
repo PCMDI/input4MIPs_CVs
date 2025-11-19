@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base": "https://espri-mod.github.io/mip-cmor-tables/license/",
+        "@base": "https://esgvoc.ipsl.fr/resource/universe/license/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type": "@type",

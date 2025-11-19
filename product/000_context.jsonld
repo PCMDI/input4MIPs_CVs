@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base": "https://espri-mod.github.io/mip-cmor-tables/product/",
+        "@base": "https://esgvoc.ipsl.fr/resource/universe/product/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type": "@type",

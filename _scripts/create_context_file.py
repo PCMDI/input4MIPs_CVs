@@ -36,7 +36,7 @@ def create_context_file(
     # Base context structure
     context = {
         "@context": {
-            "@base": f"https://espri-mod.github.io/mip-cmor-tables/{DDtype}/",
+            "@base": f"https://esgvoc.ipsl.fr/resource/universe/{DDtype}/",
             "@vocab": "http://schema.org/",
             "id": "@id",
             "type": "@type",

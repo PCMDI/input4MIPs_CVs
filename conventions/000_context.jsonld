@@ -1,6 +1,6 @@
 {
     "@context": {
-        "@base": "https://espri-mod.github.io/mip-cmor-tables/conventions/",
+        "@base": "https://esgvoc.ipsl.fr/resource/universe/conventions/",
         "@vocab": "http://schema.org/",
         "id": "@id",
         "type": "@type"
