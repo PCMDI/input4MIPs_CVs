@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.16 (2025-11-20)
+
+
+### 🆕 Features
+
+- Added ozone-related zmta (temperature) datasets for FZJ-CMIP-ozone-1-2 ([#390](https://github.com/PCMDI/input4MIPs_CVs/pull/390))
+
+### 🎉 Improvements
+
+- Updated ESGF scrape ([#390](https://github.com/PCMDI/input4MIPs_CVs/pull/390))
+
+
 ## input4MIPs CVs v6.7.15 (2025-10-30)
 
 
