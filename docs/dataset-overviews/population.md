@@ -116,7 +116,7 @@ and project [WorldPop](https://www.worldpop.org/). The data was created at high 
 and upscaled to 0.25 and 0.5 degree. The following steps were followed:
 
 (1) WorldPop [gridded constrained global population data for 2015-2025](https://www.worldpop.org/blog/worldpop-unveils-global-2-next-generation-global-population-dataset/) 
-were combined with FuturePop projections based on SSP v3.2 trajectories.
+were combined with FuturePop [projections based on SSP v3.2 trajectories](https://hub.worldpop.org/doi/10.5258/SOTON/WP00849).
 
 (2) The WorldPop gridded population was extrapolated back to 1975 using [Global Human Settlement Layer](https://human-settlement.emergency.copernicus.eu/)
 
