@@ -27,7 +27,7 @@ This data is derived from CEDS' aggregate emissions releases.
 <!--- Note that country totals in these summary files do not include international shipping or aircraft emissions, which are reported under the "global" iso. -->
 
 Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
-A summary of differences between the CMIP7 and previous versions of the dataset can be found on https://github.com/JGCRI/CEDS/tree/master/documentation.
+A summary of differences between the CMIP7 and previous versions of the dataset can be found on the [CEDS GitHub documentation page](https://github.com/JGCRI/CEDS/tree/master/documentation).
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
