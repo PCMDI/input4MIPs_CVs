@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.17 (2025-11-24)
+
+
+### 📚 Improved Documentation
+
+- Added external link to [FuturePop](https://hub.worldpop.org/doi/10.5258/SOTON/WP00849) in the population dataset docs ([#392](https://github.com/PCMDI/input4MIPs_CVs/pull/392))
+
+
 ## input4MIPs CVs v6.7.16 (2025-11-20)
 
 
