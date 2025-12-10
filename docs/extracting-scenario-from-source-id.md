@@ -111,9 +111,11 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
         return None
 
+    # Draft names before final decision
+    KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho"}
     KNOWN_SCENARIOS = {
-        "vllo",
-        "vlho",
+        "vl",
+        "ln",
         "l",
         "m",
         "ml",
@@ -133,6 +135,10 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
             scenario = source_id.split(known_prefix)[1].split("-")[0]
             if scenario in KNOWN_SCENARIOS:
                 return scenario
+
+            if scenario in KNOWN_SCENARIOS_LEGACY:
+                # Not an error, but also not a known scenario
+                return None
 
     msg = f"Could not parse {source_id=} to find a known scenario"
     raise ValueError(msg)

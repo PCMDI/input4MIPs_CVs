@@ -68,8 +68,6 @@ so that the identification and resolution of this issue is publicly accessible.
 
 For the ScenarioMIP simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
-- [PIK-vllo-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-2-0%22%7D)
-- [PIK-vlho-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vlho-0-2-0%22%7D)
 - [PIK-l-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-l-0-2-0%22%7D)
 - [PIK-ml-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ml-0-2-0%22%7D)
 - [PIK-m-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-m-0-2-0%22%7D)

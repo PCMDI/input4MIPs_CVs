@@ -43,9 +43,14 @@
                 "CR-m-0-1-0",
                 "CR-hl-0-1-0",
                 "CR-h-0-1-0"
-            ]
+            ],
+            "ok_if_not_latest": true
         },
-        "scenariomip-cmip7": null
+        "scenariomip-cmip7": { 
+            "source_ids": [
+                "CR-vl-1-0-0"
+            ]
+        }
     },
     "ozone": {
         "deck-testing": null,
@@ -64,8 +69,6 @@
         "deck-cmip7": { "source_ids": [ "PIK-CMIP-1-0-1" ] },
         "scenariomip-testing": { 
             "source_ids": [ 
-                "PIK-vllo-0-2-0",
-                "PIK-vlho-0-2-0",
                 "PIK-l-0-2-0",
                 "PIK-ml-0-2-0",
                 "PIK-m-0-2-0",
