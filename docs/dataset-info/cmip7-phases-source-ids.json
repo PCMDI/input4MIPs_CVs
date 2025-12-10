@@ -48,7 +48,8 @@
         },
         "scenariomip-cmip7": { 
             "source_ids": [
-                "CR-vl-1-0-0"
+                "CR-vl-1-0-0",
+                "CR-h-1-0-0"
             ]
         }
     },
