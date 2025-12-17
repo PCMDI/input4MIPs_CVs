@@ -47,9 +47,9 @@ def get_source_id_result(
 
         raise AssertionError(v)
 
-    if "timestamp" in r_source_id and isinstance(r_source_id["timestamp"], list):
-        if len(r_source_id["timestamp"] != 1):
-            msg = f"Unexpected value for {source_id=} for {source_id['timestamp']}"
+    if "_timestamp" in r_source_id and isinstance(r_source_id["_timestamp"], list):
+        if len(r_source_id["_timestamp"] != 1):
+            msg = f"Unexpected value for {source_id=} for {source_id['_timestamp']}"
             raise AssertionError(msg)
 
         r_source_id["timestamp"] = r_source_id["timestamp"][0]
