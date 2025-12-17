@@ -118,7 +118,7 @@ so that the identification and resolution of this issue is publicly accessible.
 1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* No data available for this phase yet
 1. *Open biomass burning emissions:* No data available for this phase yet
 1. *Land use:* No data available for this phase yet
-1. *Greenhouse gas concentrations:* [CR-vl-1-0-0; CR-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-1-0-0%22%2C%22CR-h-1-0-0%22%7D) (No DOI provided)
+1. *Greenhouse gas concentrations:* [CR-vl-1-0-0; CR-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-1-0-0%22%2C%22CR-h-1-0-0%22%7D) (DOI: [dev-test](https://doi.org/dev-test).)
 1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
 1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-ScenarioMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-ScenarioMIP-2-2-1%22%7D) (No DOI provided)
 1. *Ozone concentrations:* No data available for this phase yet

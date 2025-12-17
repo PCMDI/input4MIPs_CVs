@@ -186,6 +186,19 @@ def get_files_view(
         ]
     )
 
+    def fix_timestamp(v: str | list | None) -> str | None:
+        if isinstance(v, str) or v is None:
+            return v
+
+        if isinstance(v, list) and len(v) == 1:
+            return v[0]
+
+        raise AssertionError(v)
+
+    # Workaround https://github.com/esgf2-us/esgf-1.5-design/issues/86
+    if "timestamp" in col_order:
+        db["timestamp"] = [fix_timestamp(v) for v in db["timestamp"]]
+
     res = db[list(col_order)].drop_duplicates()
     # Only keep entries which actually have a file
     res = res[~res["sha256"].isnull()]
