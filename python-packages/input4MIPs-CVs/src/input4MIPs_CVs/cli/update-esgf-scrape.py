@@ -157,7 +157,7 @@ def get_esgf_info(n_threads: int) -> dict[str, Any]:
 
     for k in res:
         if "_timestamp" in res[k] and isinstance(res[k]["_timestamp"], list):
-            if len(res[k]["_timestamp"] != 1):
+            if len(res[k]["_timestamp"]) != 1:
                 msg = f"Unexpected value for {source_id=} for {source_id['_timestamp']}"
                 raise AssertionError(msg)
 
