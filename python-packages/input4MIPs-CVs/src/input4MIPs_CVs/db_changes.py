@@ -115,6 +115,21 @@ def diff_db_to_changes_comment(
         ],
     ]
 
+    # Workaround https://github.com/esgf2-us/esgf-1.5-design/issues/86
+    def fix_timestamp(v: str | list | None) -> str | None:
+        if isinstance(v, str) or v is None:
+            return v
+
+        if isinstance(v, list) and len(v) == 1:
+            return v[0]
+
+        raise AssertionError(v)
+
+    if "timestamp" in summary_table_columns:
+        diffs_incl_source_id["timestamp"] = [
+            fix_timestamp(v) for v in diffs_incl_source_id["timestamp"]
+        ]
+
     summary_table = (
         diffs_incl_source_id[summary_table_columns]
         .fillna("None")

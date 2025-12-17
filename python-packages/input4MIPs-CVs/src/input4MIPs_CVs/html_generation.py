@@ -186,6 +186,7 @@ def get_files_view(
         ]
     )
 
+    # Workaround https://github.com/esgf2-us/esgf-1.5-design/issues/86
     def fix_timestamp(v: str | list | None) -> str | None:
         if isinstance(v, str) or v is None:
             return v
@@ -195,7 +196,6 @@ def get_files_view(
 
         raise AssertionError(v)
 
-    # Workaround https://github.com/esgf2-us/esgf-1.5-design/issues/86
     if "timestamp" in col_order:
         db["timestamp"] = [fix_timestamp(v) for v in db["timestamp"]]
 
