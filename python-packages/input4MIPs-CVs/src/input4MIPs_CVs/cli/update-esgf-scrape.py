@@ -37,6 +37,23 @@ def get_source_id_result(
     # print(f"Pinging {url=} with {params=}")
     r_source_id = session.get(url, params=params)
 
+    # Workaround https://github.com/esgf2-us/esgf-1.5-design/issues/86
+    def fix_timestamp(v: str | list | None) -> str | None:
+        if isinstance(v, str) or v is None:
+            return v
+
+        if isinstance(v, list) and len(v) == 1:
+            return v[0]
+
+        raise AssertionError(v)
+
+    if "timestamp" in r_source_id and isinstance(r_source_id["timestamp"], list):
+        if len(r_source_id["timestamp"] != 1):
+            msg = f"Unexpected value for {source_id=} for {source_id['timestamp']}"
+            raise AssertionError(msg)
+
+        r_source_id["timestamp"] = r_source_id["timestamp"][0]
+
     return r_source_id
 
 
