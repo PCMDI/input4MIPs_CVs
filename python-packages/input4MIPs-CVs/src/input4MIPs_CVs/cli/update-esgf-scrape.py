@@ -161,7 +161,7 @@ def get_esgf_info(n_threads: int) -> dict[str, Any]:
                 msg = f"Unexpected value for {source_id=} for {source_id['_timestamp']}"
                 raise AssertionError(msg)
 
-            res[k]["timestamp"] = res[k]["timestamp"][0]
+            res[k]["_timestamp"] = res[k]["_timestamp"][0]
 
     return res
 
