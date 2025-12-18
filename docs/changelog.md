@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.18 (2025-12-18)
+
+
+### 🆕 Features
+
+- Added CMIP7 GHG concentration forcings for the first scenarios in the ScenarioMIP running order (see source IDs `CR-*-1-0-0`) ([#399](https://github.com/PCMDI/input4MIPs_CVs/pull/399))
+
+
 ## input4MIPs CVs v6.7.17 (2025-11-24)
 
 
