@@ -224,6 +224,10 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
             if scenario in KNOWN_SCENARIOS_LEGACY:
                 return ScenarioInfo(name=scenario, legacy=True)
 
+            if scenario in KNOWN_SCENARIOS_LEGACY:
+                # Not an error, but also not a known scenario
+                return None
+
     msg = f"Could not parse {source_id=} to find a known scenario"
     raise ValueError(msg)
 
@@ -234,6 +238,10 @@ def get_version(source_id: str, source_id_stub: str, cmip7_phase: str) -> Versio
     for danger, sanitised in (
         ("supplemental", "alpha"),
         ("CMIP.", ""),
+        # Legacy ScenarioMIP names.
+        # Hamm, the entire logic of all this is really starting to fall over.
+        ("vllo.", ""),
+        ("vlho.", ""),
     ):
         tmp = tmp.replace(danger, sanitised)
 

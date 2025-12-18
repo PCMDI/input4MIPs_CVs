@@ -18,10 +18,10 @@
         "url": null
     },
     "ghg_concentrations": {
-        "expected_publication": "October 2025",
-        "source_ids": null,
-        "status": "Draft data available",
-        "url": null
+        "source_ids": [
+            "CR-vl-1-0-0",
+            "CR-h-1-0-0"
+        ]
     },
     "co2_isotopes": {
         "expected_publication": "October 2025",

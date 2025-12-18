@@ -145,6 +145,24 @@ def get_esgf_info(n_threads: int) -> dict[str, Any]:
         msg = f"Detail:\n{detail_lines}\nThere were {len(failures)} failures, {failure_status_counts=}"
         raise AssertionError(msg)
 
+    # Workaround https://github.com/esgf2-us/esgf-1.5-design/issues/86
+    def fix_timestamp(v: str | list | None) -> str | None:
+        if isinstance(v, str) or v is None:
+            return v
+
+        if isinstance(v, list) and len(v) == 1:
+            return v[0]
+
+        raise AssertionError(v)
+
+    for k in res:
+        if "_timestamp" in res[k] and isinstance(res[k]["_timestamp"], list):
+            if len(res[k]["_timestamp"]) != 1:
+                msg = f"Unexpected value for {source_id=} for {source_id['_timestamp']}"
+                raise AssertionError(msg)
+
+            res[k]["_timestamp"] = res[k]["_timestamp"][0]
+
     return res
 
 
