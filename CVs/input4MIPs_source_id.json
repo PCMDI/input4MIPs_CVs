@@ -1327,6 +1327,28 @@
         "mip_era":"CMIP7",
         "source_version":"3.0"
     },
+    "IIASA-IAMC-1-0-0_H":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
     "IIASA-IAMC-scendraft1-0-3-0":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -1414,6 +1436,94 @@
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "source_version":"0.3.0"
+    },
+    "IIASA-IAMC-vl-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "IIASA-IAMC-vl-1-0-0-supplemental":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "IIASA-IAMC-h-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "IIASA-IAMC-h-1-0-0-supplemental":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
     },
     "MRI-JRA55-do-1-6-0":{
         "activity_id":"input4MIPs",
