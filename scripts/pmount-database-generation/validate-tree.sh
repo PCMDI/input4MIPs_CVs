@@ -23,8 +23,8 @@ input4mips-validation --logging-level $LOG_LEVEL \
 	--cv-source "./CVs" \
 	"${dir_to_check}" \
 	--rglob-input "${rglob_input}" \
-        --allow-cf-checker-warnings \
 	--output-html "${timestamp}_validate-tree-output.html"
 	# --cv-source "gh:main" \
+        # --allow-cf-checker-warnings \
 
 echo "Wrote HTML summary to ${timestamp}_validate-tree-output.html"
