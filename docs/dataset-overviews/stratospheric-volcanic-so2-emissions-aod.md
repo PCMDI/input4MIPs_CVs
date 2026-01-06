@@ -57,7 +57,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 ##### CMIP7
 
-For the ScenarioMIP simulations in the production phase of CMIP7, use data with the source ID [UOEXETER-ScenarioMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-ScenarioMIP-2-2-1%22%7D)
+For the ScenarioMIP simulations in the production phase of CMIP7, use data with the source ID [UOEXETER-ScenarioMIP-2-2-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-ScenarioMIP-2-2-2%22%7D)
 
 No DOIs are available for this data.
 
