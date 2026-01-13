@@ -12,7 +12,7 @@
         ]
     },
     "land_use": {
-        "expected_publication": "February 2025",
+        "expected_publication": "February 2026",
         "source_ids": null,
         "status": "Draft data in preparation",
         "url": null
@@ -24,7 +24,7 @@
         ]
     },
     "co2_isotopes": {
-        "expected_publication": "October 2025",
+        "expected_publication": "October 2026",
         "source_ids": null,
         "status": "Draft data in preparation",
         "url": null
@@ -35,13 +35,13 @@
         ]
     },
     "ozone": {
-        "expected_publication": "March 2025",
+        "expected_publication": "March 2026",
         "source_ids": null,
         "status": "Draft data in preparation",
         "url": null
     },
     "nitrogen-deposition": {
-        "expected_publication": "March 2025",
+        "expected_publication": "March 2026",
         "source_ids": null,
         "status": "Draft data in preparation",
         "url": null
