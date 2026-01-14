@@ -151,8 +151,8 @@ For a full dive into the changes from CMIP6, see
 
 ### UOEXETER-ScenarioMIP-2-2-1
 
-v2.2.2 resolves issues with masking in v2.2.1. As a result of this change, v2.2.1 is deprecated.
-Please restart any simulations that used v2.2.1 and use v2.2.2 instead.
+v2.2.2 resolves issues with troposphere masking in v2.2.1. As a result of this change, v2.2.1 is
+deprecated. Please restart any scenario simulations that used v2.2.1 and use v2.2.2 instead.
 
 ### UOEXETER-CMIP-2-0-0
 

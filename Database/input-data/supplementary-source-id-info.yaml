@@ -236,9 +236,9 @@ UOEXETER-CMIP-2-2-1:
 UOEXETER-ScenarioMIP-2-2-1:
   further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
   comment_post_publication: >-
-    v2.2.2 resolves issues with masking in v2.2.1.
+    v2.2.2 resolves issues with troposphere masking in v2.2.1.
     As a result of this change, v2.2.1 is deprecated.
-    Please restart any simulations that used v2.2.1
+    Please restart any scenario simulations that used v2.2.1
     and use v2.2.2 instead.
 UofMD-landState-3-0:
   license_id: CC BY 4.0
