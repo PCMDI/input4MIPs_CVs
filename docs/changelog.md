@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.19 (2026-01-14)
+
+
+### 🆕 Features
+
+- Added future emissions for the high (h) and very low (vl) scenarios ([#402](https://github.com/PCMDI/input4MIPs_CVs/pull/402))
+
+### 🐛 Bug Fixes
+
+- Added fixed future volcanic emissions files (UOEXETER-ScenarioMIP-2-2-2). The previous files (UOEXETER-ScenarioMIP-2-2-1) had an incorrect mask applied, so did not end up with the same state as the pre-industrial control files. ([#402](https://github.com/PCMDI/input4MIPs_CVs/pull/402))
+
+
 ## input4MIPs CVs v6.7.18 (2025-12-18)
 
 
