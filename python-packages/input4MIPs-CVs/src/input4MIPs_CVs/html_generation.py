@@ -470,7 +470,7 @@ def get_delivery_summary_view(
                     tmp["Source ID"] = "TBD"
                     tmp["Status"] = info_d["status"]
 
-                    tmp["ESGF publication status"] = "Expected: October 2025"
+                    tmp["ESGF publication status"] = "Expected: January 2026"
 
             else:
                 if info_d["url"] is not None:

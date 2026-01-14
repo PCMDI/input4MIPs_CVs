@@ -1,18 +1,18 @@
 {
     "slcf_co2_emms": {
-        "expected_publication": "October 2025",
-        "source_ids": null,
-        "status": "Draft data available",
-        "url": null
+        "source_ids": [
+            "IIASA-IAMC-vl-1-0-0",
+            "IIASA-IAMC-h-1-0-0"
+        ]
     },
     "biomass_burning_emms": {
-        "expected_publication": "October 2025",
-        "source_ids": null,
-        "status": "Draft data available",
-        "url": null
+        "source_ids": [
+            "IIASA-IAMC-vl-1-0-0",
+            "IIASA-IAMC-h-1-0-0"
+        ]
     },
     "land_use": {
-        "expected_publication": "December 2025",
+        "expected_publication": "February 2026",
         "source_ids": null,
         "status": "Draft data in preparation",
         "url": null
@@ -24,30 +24,30 @@
         ]
     },
     "co2_isotopes": {
-        "expected_publication": "October 2025",
+        "expected_publication": "October 2026",
         "source_ids": null,
         "status": "Draft data in preparation",
         "url": null
     },
     "volcanic": {
         "source_ids": [
-            "UOEXETER-ScenarioMIP-2-2-1"
+            "UOEXETER-ScenarioMIP-2-2-2"
         ]
     },
     "ozone": {
-        "expected_publication": "December 2025",
+        "expected_publication": "March 2026",
         "source_ids": null,
         "status": "Draft data in preparation",
         "url": null
     },
     "nitrogen-deposition": {
-        "expected_publication": "December 2025",
+        "expected_publication": "March 2026",
         "source_ids": null,
         "status": "Draft data in preparation",
         "url": null
     },
     "solar": {
-        "expected_publication": "October 2025",
+        "expected_publication": "February 2026",
         "source_ids": null,
         "status": "Draft data available",
         "url": null
@@ -59,7 +59,7 @@
         "url": null
     },
     "simple-plumes": {
-        "expected_publication": "October 2025",
+        "expected_publication": "January 2026",
         "source_ids": null,
         "status": "Draft data in preparation",
         "url": null
