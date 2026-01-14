@@ -24,9 +24,6 @@ CEDS-CMIP-2025-03-18:
     can sometimes represent a factor of 2 change (for small emissions).
 CEDS-CMIP-2025-03-18-supplemental:
   comment_post_publication: *ceds-2025-03-18-comment
-CEDS-CMIP-2025-04-18:
-  # Force override while we wait for ESGF scrape to come back up
-  publication_status: published
 CR-CMIP-0-2-0:
   publication_status: abandoned
 CR-CMIP-0-3-0:
@@ -89,8 +86,6 @@ DRES-CMIP-BB4CMIP7-2-0:
     there is no need to restart simulations or make any other changes.
     The new dataset is of course available if people wish to use it.
 DRES-CMIP-BB4CMIP7-2-1:
-  # While we wait for ESGF scrape to come back up
-  publication_status: published
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2524040
 FZJ-CMIP-nitrogen-1-0:
   comment_post_publication: >-
@@ -237,11 +232,14 @@ UOEXETER-CMIP-2-0-0:
   further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
 UOEXETER-CMIP-2-2-1:
   further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
-  # While we wait for ESGF scrape to come back up
-  publication_status: published
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2522673
 UOEXETER-ScenarioMIP-2-2-1:
   further_info_url: https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/stratospheric-volcanic-so2-emissions-aod/
+  comment_post_publication: >-
+    v2.2.2 resolves issues with troposphere masking in v2.2.1.
+    As a result of this change, v2.2.1 is deprecated.
+    Please restart any scenario simulations that used v2.2.1
+    and use v2.2.2 instead.
 UofMD-landState-3-0:
   license_id: CC BY 4.0
   comment_post_publication: >-

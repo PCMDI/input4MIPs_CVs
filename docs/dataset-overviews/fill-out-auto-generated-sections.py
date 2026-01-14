@@ -151,6 +151,7 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "FZJ-CMIP-ozone-1-0",
         "FZJ-CMIP-ozone-1-1",
         "FZJ-CMIP-ozone-1-2",
+        "IIASA-IAMC-1-0-0",
         "ImperialCollege-3-0",
         "MRI-JRA55-do-1-6-0",
         "PCMDI-AMIP-1-1-10",
@@ -271,8 +272,6 @@ def get_latest_source_ids(
     version_ids = tuple(version_ids_l)
     pairs = list(zip(source_ids, version_ids))[::-1]
 
-    if not version_ids:
-        breakpoint()
     version_id_latest = max(version_ids)
     source_ids_latest = tuple(v[0] for v in pairs if v[1] == version_id_latest)
 
