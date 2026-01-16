@@ -47,10 +47,9 @@
         "url": null
     },
     "solar": {
-        "expected_publication": "February 2026",
-        "source_ids": null,
-        "status": "Draft data available",
-        "url": null
+        "source_ids": [
+            "SOLARIS-HEPPA-ScenarioMIP-4-6"
+        ]
     },
     "amip-ssts": {
         "expected_publication": "Never",

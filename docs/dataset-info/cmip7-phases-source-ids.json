@@ -101,8 +101,8 @@
     "solar": {
         "deck-testing": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-5" ], "ok_if_not_latest": true },
         "deck-cmip7": { "source_ids": [ "SOLARIS-HEPPA-CMIP-4-6" ] },
-        "scenariomip-testing": { "source_ids": [ "SOLARIS-HEPPA-ScenarioMIP-4-6-a002" ] },
-        "scenariomip-cmip7": null
+        "scenariomip-testing": { "source_ids": [ "SOLARIS-HEPPA-ScenarioMIP-4-6-a002" ], "ok_if_not_latest": true },
+        "scenariomip-cmip7": { "source_ids": [ "SOLARIS-HEPPA-ScenarioMIP-4-6" ] }
     },
     "biomass_burning_emms": {
         "deck-testing": { "source_ids": [ "DRES-CMIP-BB4CMIP7-1-0" ], "ok_if_not_latest": true },
