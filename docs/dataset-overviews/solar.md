@@ -54,7 +54,17 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 ##### CMIP7
 
-No data available for this phase yet.
+For the ScenarioMIP simulations in the production phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-ScenarioMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6%22%7D)
+
+No DOIs are available for this data.
+
+This data is for use in CMIP7 production simulations.
+All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
+This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
+
+If you find an issue, please
+[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
+so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
@@ -131,6 +141,12 @@ provides a detailed analysis of the changes from earlier versions.
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### SOLARIS-HEPPA-ScenarioMIP-4-6-a002
+
+SOLARIS-HEPPA-ScenarioMIP-4-6 is the same as SOLARIS-HEPPA-ScenarioMIP-4-6-a002, it just has updated
+metadata. If you used SOLARIS-HEPPA-ScenarioMIP-4-6-a002, this is fine, you do not need to restart
+your simulations with SOLARIS-HEPPA-ScenarioMIP-4-6.
 
 ### SOLARIS-HEPPA-CMIP-4-4
 
