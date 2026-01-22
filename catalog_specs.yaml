@@ -1,4 +1,4 @@
-version: v3.0.0
+version: v3.0.2
 
 catalog_properties:
   name: stac
@@ -6,87 +6,114 @@ catalog_properties:
   extensions:
     - name: file
       version: v2.1.0
+    - name: alternate-assets
+      version: v1.2.0
+  regex_id: '^input4MIPs(\\.[A-Za-z0-9-]+){8}\.v[0-9]{8}$'
+  regex_base_id: '^input4MIPs(\\.[A-Za-z0-9-]+){8}$'
 
 dataset_properties:
   - source_collection: activity_id
     catalog_field_value_type: string_array
     is_required: true
+
   - source_collection: conventions
     catalog_field_value_type: string_array
     is_required: true
+
   - source_collection: contact
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: creation_date
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: dataset_category
     catalog_field_value_type: string_array
     is_required: true
+
   - source_collection: frequency
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: grid_label
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: institution_id
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: license
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: mip_era
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: nominal_resolution
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: product
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: publication_status
     catalog_field_value_type: string
     is_required: false
+
   - source_collection: realm
     catalog_field_value_type: string_array
     is_required: true
+
   - source_collection: region
     catalog_field_value_type: string_array
     is_required: false
+
   - source_collection: source_id
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: target_mip
     catalog_field_value_type: string_array
     is_required: true
   - source_collection: time_range
     catalog_field_value_type: string
     is_required: false
+
   - source_collection: title
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: tracking_id
     catalog_field_name: pid
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: variable_id
     source_collection_key: standard_name
     catalog_field_name: variable_cf_standard_name
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: variable_id
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: variable_id
     source_collection_key: long_name
     catalog_field_name: variable_long_name
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: variable_id
     source_collection_key: units
     catalog_field_name: variable_units
     catalog_field_value_type: string
     is_required: true
+
   - source_collection: version
     catalog_field_value_type: string
     is_required: true
