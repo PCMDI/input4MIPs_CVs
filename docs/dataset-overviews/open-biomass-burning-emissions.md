@@ -5,8 +5,15 @@
 
 ## Key contacts
 
+Historical: 
+
 - Names: Margreet van Marle, Guido van der Werf
 - Emails: Margreet.vanMarle@Deltares.nl; Guido.vanderWerf@wur.nl
+
+ScenarioMIP: 
+
+- Names: Jarmo Kikstra, Marco Zecchetto, Annika Hoegner
+- Emails: kikstra@iiasa.ac.at, zecchetto@iiasa.ac.at, hoegner@iiasa.ac.at
 
 ## Summary
 
@@ -155,7 +162,7 @@ is provided below.
 
 Climate modelling groups using the BB4CMIP7 dataset indicated that spurious signals appear due to this variability. The smoothed dataset should remedy this situation.
 
-####	Calculation of the smoothed dataset
+#### Calculation of the smoothed dataset
 
 Since the interannual variability is also characteristic for wildfires and to be able to provide realistic outcomes,
 an imposed climatology or just decadal averaging would lose information on the emissions. 
@@ -301,7 +308,10 @@ Apply the 1850 values on repeat.
 ### ScenarioMIP
 
 The data for ScenarioMIP comes from a range of IAMs,
-rather than the CEDS consortium.
+rather than the group who produces the historical data.
+Brief documentation, version history with changes compared to earlier testing data,
+and global sums is available on [Zenodo](10.5281/zenodo.17981825).
+Please add any feedback to [https://github.com/PCMDI/input4MIPs_CVs/discussions/406]().
 [TODO: any information about how ScenarioMIP files differ from the DECK files
 There shouldn't be any major differences except maybe naming of VOCs.]
 
