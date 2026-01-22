@@ -40,7 +40,7 @@ A summary of differences between the CMIP7 and previous versions of the dataset 
 #### ScenarioMIP emissions
 
 Brief documentation, version history with changes compared to earlier testing data,
-and global sums is available on [Zenodo](10.5281/zenodo.17981825).
+and global sums is available on [Zenodo](https://doi.org/10.5281/zenodo.17981825).
 Please add any feedback to [https://github.com/PCMDI/input4MIPs_CVs/discussions/406]().
 
 <!--- begin-cmip7-phases-source-ids -->

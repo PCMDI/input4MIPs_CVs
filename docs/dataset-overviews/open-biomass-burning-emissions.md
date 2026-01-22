@@ -310,7 +310,7 @@ Apply the 1850 values on repeat.
 The data for ScenarioMIP comes from a range of IAMs,
 rather than the group who produces the historical data.
 Brief documentation, version history with changes compared to earlier testing data,
-and global sums is available on [Zenodo](10.5281/zenodo.17981825).
+and global sums is available on [Zenodo](https://doi.org/10.5281/zenodo.17981825).
 Please add any feedback to [https://github.com/PCMDI/input4MIPs_CVs/discussions/406]().
 [TODO: any information about how ScenarioMIP files differ from the DECK files
 There shouldn't be any major differences except maybe naming of VOCs.]
