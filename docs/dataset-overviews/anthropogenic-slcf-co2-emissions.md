@@ -4,17 +4,20 @@
 # Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions
 
 ## Key contacts
+
 Historical: 
+
 - Names: Rachel Hoesly, Steve Smith
 - Emails: rachel.hoesly@pnnl.gov; ssmith@pnnl.gov
 
 ScenarioMIP: 
-- Names: Jarmo Kikstra,...
-- Emails: kikstra@iiasa.ac.at,....
+
+- Names: Jarmo Kikstra, Marco Zecchetto, Annika Hoegner
+- Emails: kikstra@iiasa.ac.at, zecchetto@iiasa.ac.at, hoegner@iiasa.ac.at
 
 ## Summary
 
-#### CEDS Historical Emissions: 
+#### CEDS historical emissions
 
 Emissions data are provided for SO<sub>2</sub>, NOx, BC, OC, NH<sub>3</sub>, NMVOC,  CO, CO<sub>2</sub> from 1750 - 2023.
 Emissions data for CH<sub>4</sub> and N<sub>2</sub>O are provided from 1970 - 2023
@@ -34,9 +37,11 @@ This data is derived from CEDS' aggregate emissions releases.
 Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
 A summary of differences between the CMIP7 and previous versions of the dataset can be found on the [CEDS GitHub documentation page](https://github.com/JGCRI/CEDS/tree/master/documentation).
 
-#### ScenarioMIP Emissions: 
+#### ScenarioMIP emissions
 
-Brief documentation, version history with changes compared to earlier testing data, and global sums is available on [Zenodo](10.5281/zenodo.17981825). Please add any feedback to https://github.com/PCMDI/input4MIPs_CVs/discussions/406 
+Brief documentation, version history with changes compared to earlier testing data,
+and global sums is available on [Zenodo](10.5281/zenodo.17981825).
+Please add any feedback to [https://github.com/PCMDI/input4MIPs_CVs/discussions/406]().
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
