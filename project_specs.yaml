@@ -1,2 +1,3 @@
-project_id: input4mip
-description: todo
+project_id: input4mips
+description: Data Reference Syntax (DRS) specifications for Input datasets for Model Intercomparison Projects (input4MIPS)
+drs_name: input4MIPs
