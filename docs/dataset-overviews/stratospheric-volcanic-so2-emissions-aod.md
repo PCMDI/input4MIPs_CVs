@@ -6,7 +6,7 @@
 ## Key contacts
 
 - Names: Thomas Aubry
-- Emails: t.aubry@exeter.ac.uk
+- Emails: thomas.aubry@earth.ox.ac.uk
 
 The CMIP7 version of the volcanic forcing dataset has been released.
 Documentation on the dataset is hosted
@@ -88,7 +88,7 @@ with volcanic emissions as yet, that is still being developed
 in collaboration with early testing teams who are interested in this application.
 
 For full details, see
-[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
+[the GMD pre-print documenting the stratospheric aerosol optical property dataset](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990/).
 
 ### Grids and frequencies provided
 
@@ -114,7 +114,8 @@ effective radius, surface area density and volume density are provided.
 For emissions, the volcanic SO<sub>2</sub> injection time,
 latitude, longitude, height, depth and mass are provided.
 Further details are provided in
-[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true)
+[the GMD pre-print documenting the stratospheric aerosol optical property dataset](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990/)
+<!--- @Thomas what section should I update the below to? -->
 (section III and IV).
 
 ### Uncertainty
@@ -138,12 +139,12 @@ Overall, we would say that the data is more uniform now
 and in line with other input4MIPs data and conventions.
 We do not have a direct mapping/translation guide at this stage
 (although there is some detail in
-[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true)).
+[the GMD pre-print documenting the stratospheric aerosol optical property dataset](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990/).
 
 ### Data
 
 For a full dive into the changes from CMIP6, see
-[the external documentation](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
+[the GMD pre-print documenting the stratospheric aerosol optical property dataset](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990/).
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
