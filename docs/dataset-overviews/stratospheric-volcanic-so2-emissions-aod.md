@@ -8,7 +8,7 @@
 - Names: Thomas Aubry
 - Emails: thomas.aubry@earth.ox.ac.uk
 
-The CMIP7 version of the volcanic forcing dataset has been released.
+The CMIP7 version of the stratospheric aerosol forcing datasets forcing dataset has been released.
 Documentation on the dataset is hosted
 [externally](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
 This contains a detailed dive into the data.
