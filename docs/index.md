@@ -10,6 +10,7 @@ For:
 - an overview of the repository, see [repository overview](repository-overview.md)
 - guidance on how to contribute to the repository, see [contributing](contributing.md)
 - information about our versioning strategy, see [versioning](versioning.md)
+- an archive of email updates sent by the CMIP IPO about the forcings, see [forcings email archive](forcings-email-archive/index.md)
 
 ## Contributors
 
