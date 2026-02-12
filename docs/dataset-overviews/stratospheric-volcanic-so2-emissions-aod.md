@@ -9,9 +9,16 @@
 - Emails: thomas.aubry@earth.ox.ac.uk
 
 The CMIP7 version of the stratospheric aerosol forcing datasets forcing dataset has been released.
-Documentation on the dataset is hosted
-[externally](https://docs.google.com/document/d/1blX5kv0We1BteqWzMKs0OuhazAcAonay/edit?usp=sharing&ouid=104358532925985160745&rtpof=true&sd=true).
-This contains a detailed dive into the data.
+The dataset is documented in two papers in the CMIP7 forcing and inputs special issue hosted by Geoscientific Model Development:
+
+- Stratospheric aerosol optical properties: [https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990]()
+- Volcanic SO<sub>2</sub> emissions: [https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546]()
+
+The ScenarioMIP dataset is documented in the same manuscript
+as the historical stratospheric aerosol optical property dataset:
+[https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546]().
+
+These papers contain a detailed dive into the data.
 In contrast, this page provides an overview and some key, CMIP-specific information.
 
 If you find any issues, please contribute to
@@ -114,9 +121,9 @@ effective radius, surface area density and volume density are provided.
 For emissions, the volcanic SO<sub>2</sub> injection time,
 latitude, longitude, height, depth and mass are provided.
 Further details are provided in
-[the GMD pre-print documenting the stratospheric aerosol optical property dataset](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990/)
-<!--- @Thomas what section should I update the below to? -->
-(section III and IV).
+the GMD pre-prints documenting the stratospheric
+[aerosol optical property](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990/)
+and [volcanic sulfur emission](https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546/) datasets.
 
 ### Uncertainty
 
@@ -144,7 +151,9 @@ We do not have a direct mapping/translation guide at this stage
 ### Data
 
 For a full dive into the changes from CMIP6, see
-[the GMD pre-print documenting the stratospheric aerosol optical property dataset](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990/).
+the GMD pre-prints documenting the stratospheric
+[aerosol optical property](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990/)
+and [volcanic sulfur emission](https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546/) datasets.
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
