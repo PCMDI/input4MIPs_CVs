@@ -11,12 +11,12 @@
 The CMIP7 version of the stratospheric aerosol forcing datasets forcing dataset has been released.
 The dataset is documented in two papers in the CMIP7 forcing and inputs special issue hosted by Geoscientific Model Development:
 
-- Stratospheric aerosol optical properties: [https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990]()
-- Volcanic SO<sub>2</sub> emissions: [https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546]()
+- Stratospheric aerosol optical properties: [https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990)
+- Volcanic SO<sub>2</sub> emissions: [https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546](https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546)
 
 The ScenarioMIP dataset is documented in the same manuscript
 as the historical stratospheric aerosol optical property dataset:
-[https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546]().
+[https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546](https://egusphere.copernicus.org/preprints/2026/egusphere-2026-546).
 
 These papers contain a detailed dive into the data.
 In contrast, this page provides an overview and some key, CMIP-specific information.
