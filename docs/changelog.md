@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.22 (2026-02-13)
+
+
+### 📚 Improved Documentation
+
+- Updated volcanic forcing documentation with updated email address and other information ([#409](https://github.com/PCMDI/input4MIPs_CVs/pull/409))
+
+
 ## input4MIPs CVs v6.7.21 (2026-01-16)
 
 
