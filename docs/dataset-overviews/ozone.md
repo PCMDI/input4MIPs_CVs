@@ -44,7 +44,14 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-ozone-1-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-2%22%7D)
+For the DECK simulations in the production phase of CMIP7, you will need data from the following source IDs:
+
+- [FZJ-CMIP-ozone-1-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-2%22%7D)
+- [FZJ-CMIP-ozone-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-2-0%22%7D).
+
+Retrieving and only using valid data will require some care.
+Please make sure you read the guidance given at the start of the Summary section
+and process the data carefully.
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).
 
