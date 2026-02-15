@@ -37,7 +37,7 @@ This means the following steps:
 
   - then, please make an issue in the [WCRP universe repository to register your consortium](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=BLANK_ISSUE). 
     The data we will need will be the same as
-    [what is here](https://github.com/WCRP-CMIP/WCRP-universe/blob/esgvoc/consortium/solaris-heppa.json).
+    [what is here](https://github.com/WCRP-CMIP/WCRP-universe/blob/esgvoc/organisation/solaris-heppa.json).
     If you have any issues with this, feel free to [make a general issue](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=BLANK_ISSUE)
     and tag @znichollscr.
 
