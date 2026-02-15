@@ -1,15 +1,14 @@
 import re
 
-to_rewrite = """Experiment short name | Experiment description | Anthropogenic Forcing | Volcanic Forcing | Solar Forcing | Start Year | End Year | Main purpose
--- | -- | -- | -- | -- | -- | -- | --
-amip | Atmosphere with SSTs   and SICs prescribed | Time-varying | Time-varying | Time-varying | 1979 | 2021 | Evaluation, SST/sea   ice forced variability
-piControl and/or   esm-piControl | Coupled   atmosphere-ocean pre-industrial control | All 1850, CO2 prescribed   concentration or zero emissions | Fixed mean radiative   forcing matching historical simulation (i.e. 1850–2021 mean) | Fixed mean value   matching first two solar cycles of the historical simulation (i.e. 1850–1873   mean) | 1 | 400+ | Evaluation, unforced   variability
-abrupt- 4xCO2 | CO2   prescribed to 4 times   preindustrial | Same as piControl   except CO2 concentration prescribed to 4 times piControl | Same as piControl | Same as piControl | 1 (branching from   year 101 or later of piControl) | 300+   (1000) | Equilibrium climate   sensitivity, feedback, fast responses
-1pctCO2 | CO2 prescribed   to increase at 1% yr-1 | Same as piControl   except CO2 prescribed to increase at 1% yr-1 | Same as   piControl | Same as   piControl | 1 (branching from   year 101 or later of piControl) | 150 | Transient climate   sensitivity
-historical and/or esm-hist | Simulation of the   recent past | All time varying, CO2   prescribed concentration or emission | Time   varying | Time   varying | 1850 | 2021 | Evaluation
-piClim-Control   (amip) | Preindustrial   conditions including SST and SIC prescribed | All 1850, CO2   prescribed concentration | Same as piControl | Same as piControl | 1 | 30 | Baseline for   model-specific   effective radiative   forcing (ERF)   calculations
-piClim-anthro (amip) | As piClim-Control    except present-day anthropogenic forcing | All 2021, CO2   prescribed concentration | Same as piControl | Same as piControl | 1 | 30 | Quantify present-day   total   anthropogenic ERF
-piClim-4xCO2 (amip) | As piClim-Control    except CO2 concentrations set to 4 times   preindustrial | All 1850 except CO2   prescribed at 4 times preindustrial concentration | Same as piControl | Same as piControl | 1 | 30 | Quantify ERF of 4 ×   CO2
+to_rewrite = """Scenario | Scenario extension | Primary emission or temperature design criteria
+-- | -- | --
+High (H) | H-ext | Emissions   as high as plausible consistent with climate policy rollback
+**High Low (HL)** | HL-ext | High   emissions until second half of the century, followed by rapid decline to net   zero CO2 in 2100
+Medium (M) | M-ext | Emissions   consistent with current policies frozen as of 2025
+Medium Low   (ML) | ML-ext | Medium   emissions until 2040 followed by gradual decline to net zero CO2 in 2100
+Low (L) | L-ext | Emissions   consistent with staying likely below 2C and not returning to 1.5C before end   of the century
+Very Low   (VL)   **(Formerly Very Low Low Overshoot;   VLLO)** | VL-ext | Emissions   consistent with limiting warming to 1.5C at the end of the century with   overshoot as low as plausible
+Low to   Negative (LN)   **(Formerly Very Low High Overshoot;   VLHO)** | LN-ext | Emissions   consistent with limiting warming to 1.5C at end of the century with high   overshoot compared to the VL scenario.
 """
 
 
