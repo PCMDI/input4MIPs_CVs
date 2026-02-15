@@ -81,7 +81,7 @@ please see [https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentration
 
 ## Directly from ESGF
 
-The ESGF MetaGrid search interface (see [https://aims2.llnl.gov/search/input4MIPs]())
+The ESGF MetaGrid search interface (see [https://esgf-node.ornl.gov/search/input4MIPs]())
 provides direct access to the ESGF-hosted datasets. 
 This allows searching via search facets, 
 e.g., `MIP Era`, `Target MIP` 
