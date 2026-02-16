@@ -22,6 +22,22 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.24 (2026-02-16)
+
+
+### 📚 Improved Documentation
+
+- Add an archive of updates about the forcings sent by the CMIP International Project Office (IPO). ([#410](https://github.com/PCMDI/input4MIPs_CVs/pull/410))
+
+
+## input4MIPs CVs v6.7.23 (2026-02-16)
+
+
+### 🐛 Bug Fixes
+
+- Update all ESGF links to use the live ORNL node rather than the deprecated aims2 node ([#412](https://github.com/PCMDI/input4MIPs_CVs/pull/412))
+
+
 ## input4MIPs CVs v6.7.22 (2026-02-13)
 
 

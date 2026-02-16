@@ -107,7 +107,7 @@ def get_url_esgf_for_html_table(row: pd.Series, search_facets: Iterable[str]) ->
 
     url = "".join(
         [
-            "https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B",
+            "https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B",
             search_components,
             "%7D",
         ]

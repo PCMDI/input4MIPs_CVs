@@ -37,7 +37,7 @@ This means the following steps:
 
   - then, please make an issue in the [WCRP universe repository to register your consortium](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=BLANK_ISSUE). 
     The data we will need will be the same as
-    [what is here](https://github.com/WCRP-CMIP/WCRP-universe/blob/esgvoc/consortium/solaris-heppa.json).
+    [what is here](https://github.com/WCRP-CMIP/WCRP-universe/blob/esgvoc/organisation/solaris-heppa.json).
     If you have any issues with this, feel free to [make a general issue](https://github.com/WCRP-CMIP/WCRP-universe/issues/new?template=BLANK_ISSUE)
     and tag @znichollscr.
 
@@ -100,7 +100,7 @@ Your files will be downloaded to PCMDI by someone else (likely @durack1).
 
 This is not a step that you, as a data producer, will perform.
 However, for completeness, once the data has been received and passed validation,
-it will be published on the ESGF and into the [input4MIPs project](https://aims2.llnl.gov/search?project=input4MIPs).
+it will be published on the ESGF and into the [input4MIPs project](https://esgf-node.ornl.gov/search?project=input4MIPs).
 Once this is done, the repository maintainers will add it to our database in `Database`.
 This is not something that you, as a data producer, need to do.
 However, feel free to check the records that have been made (see HTML links above)
