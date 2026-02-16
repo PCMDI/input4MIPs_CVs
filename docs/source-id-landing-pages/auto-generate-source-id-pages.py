@@ -58,7 +58,7 @@ for source_id, info in source_id_entries.items():
 
     source_id_filename = f"{source_id}.md"
     source_id_citation_info_filename = f"{source_id}.json"
-    esgf_url = f"https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22{source_id}%22%5D%7D"
+    esgf_url = f"https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22{source_id}%22%5D%7D"
     author_info_lines = []
     for i, author in enumerate(info["authors"]):
         orcid_info = f"[ORCID {author['orcid']}](https://orcid.org/{author['orcid']})"
