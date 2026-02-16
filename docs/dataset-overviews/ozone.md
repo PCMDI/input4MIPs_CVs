@@ -11,10 +11,11 @@
 ## Summary
 
 Ozone forcing for the pre-industrial control and historical (and associated) simulations is available.
-As a result of an issue being found, obtaining the correct set of files needed
-for models that rely on exogenous ozone forcing can be complicated.
-For all historical simulations, files with the source ID `FZJ-CMIP-ozone-2-0` should be used.
-For pre-industrial control simulations, files with the source ID `FZJ-CMIP-ozone-1-2` should be used
+As a result of an issue being found ([#400](https://github.com/PCMDI/input4MIPs_CVs/issues/400)),
+models that rely on exogenous ozone forcing are required to use different versions of the ozone files
+for pre-industrial control (and related) simulations and historical (and related) simulations.
+For all historical (and related) simulations, files with the source ID `FZJ-CMIP-ozone-2-0` should be used.
+For pre-industrial control (and related) simulations, files with the source ID `FZJ-CMIP-ozone-1-2` should be used
 (note that this guidance differs from the email communication sent by the CMIP IPO on 12 February 2026).
 For details of your options for pre-industrial control simulations,
 please see [Recommendation for pre-industrial control](#recommendation-for-pre-industrial-control).
