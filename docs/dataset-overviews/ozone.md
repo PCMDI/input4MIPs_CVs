@@ -95,8 +95,8 @@ If you wish to use this forcing for your piControl,
 simply apply it on repeat.
 
 The second is a transient file which has a time range equal to `182901-184912` in the filename.
-This file is found in the same directory as the historical forcing
-so please be careful to only use it for piControl and do not include it in historical forcing.
+This file is found in the same directory as files for the time range after 1850
+so please be careful to only use it for piControl and do not include for other simulations.
 This transient piControl forcing includes the QBO signal
 but uses average solar forcing and repeating 1850 emissions.
 If you wish to use this forcing for your piControl,
