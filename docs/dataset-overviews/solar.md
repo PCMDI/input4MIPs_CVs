@@ -26,7 +26,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-CMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-CMIP-4-6](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522675](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522675).
 
@@ -40,7 +40,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
-For the DECK simulations in the testing phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-CMIP-4-5](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-5%22%7D)
+For the DECK simulations in the testing phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-CMIP-4-5](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-5%22%7D)
 
 No DOIs are available for this data.
 
@@ -54,7 +54,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 ##### CMIP7
 
-For the ScenarioMIP simulations in the production phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-ScenarioMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6%22%7D)
+For the ScenarioMIP simulations in the production phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-ScenarioMIP-4-6](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6%22%7D)
 
 No DOIs are available for this data.
 
@@ -68,7 +68,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
-For the ScenarioMIP simulations in the testing phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-ScenarioMIP-4-6-a002](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6-a002%22%7D)
+For the ScenarioMIP simulations in the testing phase of CMIP7, use data with the source ID [SOLARIS-HEPPA-ScenarioMIP-4-6-a002](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6-a002%22%7D)
 
 No DOIs are available for this data.
 
@@ -130,7 +130,7 @@ The two different frequencies are also distinguished in the filename,
 
 There are some changes from CMIP6.
 The CMIP6 data can be found 
-[on the ESGF under the "CMIP6" project and source ID "SOLARIS-HEPPA-3-2"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6%22%2C%22source_id%22%3A%22SOLARIS-HEPPA-3-2%22%7D).
+[on the ESGF under the "CMIP6" project and source ID "SOLARIS-HEPPA-3-2"](https://esgf-node.ornl.gov/search?project=input4MIPs&activeFacets=%7B%22mip_era%22%3A%22CMIP6%22%2C%22source_id%22%3A%22SOLARIS-HEPPA-3-2%22%7D).
 [Funke et al., GMD 2024](https://doi.org/10.5194/gmd-17-1217-2024)
 provides a detailed analysis of the changes from earlier versions.
 <!---

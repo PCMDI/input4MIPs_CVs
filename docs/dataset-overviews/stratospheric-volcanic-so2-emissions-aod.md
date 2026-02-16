@@ -36,7 +36,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [UOEXETER-CMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-2-2-1%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [UOEXETER-CMIP-2-2-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-2-2-1%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522673](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522673).
 
@@ -50,7 +50,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
-For the DECK simulations in the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-3-1%22%7D)
+For the DECK simulations in the testing phase of CMIP7, use data with the source ID [UOEXETER-CMIP-1-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-3-1%22%7D)
 
 No DOIs are available for this data.
 
@@ -64,7 +64,7 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 ##### CMIP7
 
-For the ScenarioMIP simulations in the production phase of CMIP7, use data with the source ID [UOEXETER-ScenarioMIP-2-2-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-ScenarioMIP-2-2-2%22%7D)
+For the ScenarioMIP simulations in the production phase of CMIP7, use data with the source ID [UOEXETER-ScenarioMIP-2-2-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-ScenarioMIP-2-2-2%22%7D)
 
 No DOIs are available for this data.
 
