@@ -1,0 +1,128 @@
+{
+  "creators": [
+    {
+      "affiliation": "Institute of Energy and Climate Research - Stratosphere (ICE-4), Forschungszentrum Juelich GmbH, Juelich, Germany. Department of Meteorology, University of Reading, Reading, United Kingdom",
+      "creatorName": "Hegglin, Michaela",
+      "email": "m.i.hegglin@fz-juelich.de",
+      "familyName": "Hegglin",
+      "givenName": "Michaela",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0003-2820-9044",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Atmospheric Chemistry Observations and Modeling Laboratory, National Center for Atmospheric Research, Boulder, CO, USA",
+      "creatorName": "Kinnison, Douglas",
+      "email": "dkin@ucar.edu",
+      "familyName": "Kinnison",
+      "givenName": "Douglas",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-3418-0834",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Institute of Energy and Climate Research - Stratosphere (ICE-4), Forschungszentrum Juelich GmbH, Juelich, Germany",
+      "creatorName": "Ma, Xiaodan",
+      "email": "x.ma@fz-juelich.de",
+      "familyName": "Ma",
+      "givenName": "Xiaodan",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-7001-7620",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Environment and Climate Change Canada, Climate Research Division, Montreal, Canada",
+      "creatorName": "Plummer, David",
+      "email": "david.plummer@ec.gc.ca",
+      "familyName": "Plummer",
+      "givenName": "David",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0001-8087-3976",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Julich Supercomputing Center, Forschungszentrum Juelich GmbH, Juelich, Germany",
+      "creatorName": "Stein, Olaf",
+      "email": "o.stein@fz-juelich.de",
+      "familyName": "Stein",
+      "givenName": "Olaf",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-6684-7103",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Deutsches Zentrum fuer Luft- und Raumfahrt e.V. (DLR), Institut fuer Physik der Atmosphaere, Oberpfaffenhofen, Germany",
+      "creatorName": "Joeckel, Patrick",
+      "email": "Patrick.Joeckel@dlr.de",
+      "familyName": "Joeckel",
+      "givenName": "Patrick",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-8964-1394",
+        "schemeURI": "https://orcid.org/"
+      }
+    }
+  ],
+  "dates": [
+    {
+      "date": "2026-02-01",
+      "dateType": "Created"
+    }
+  ],
+  "descriptions": [
+    {
+      "descriptionType": "Abstract",
+      "text": "CMIP forcing dataset (input4MIPs).\nThis is all data published under the unique ID (known as a source ID) FZJ-CMIP-ozone-2-0."
+    }
+  ],
+  "formats": [
+    {
+      "format": "application/x-netcdf"
+    }
+  ],
+  "fundingReferences": [],
+  "identifier": {
+    "id": "10.25981/ESGF.input4MIPs.CMIP7/2584173",
+    "identifierType": "DOI"
+  },
+  "language": "en",
+  "publication_year": 2026,
+  "publisher": "Earth System Grid Federation",
+  "relatedIdentifiers": [],
+  "resourceType": {
+    "resourceType": "Digital",
+    "resourceTypeGeneral": "Dataset"
+  },
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+      "rightsURI": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "input4MIPs.CMIP7.CMIP.FZJ.FZJ-CMIP-ozone-2-0",
+      "subjectScheme": "DRS"
+    },
+    {
+      "subject": "forcing data"
+    },
+    {
+      "subject": "climate"
+    },
+    {
+      "subject": "CMIP7"
+    }
+  ],
+  "titles": "FZJ-CMIP-ozone-2-0 data provided as part of input4MIPs"
+}
