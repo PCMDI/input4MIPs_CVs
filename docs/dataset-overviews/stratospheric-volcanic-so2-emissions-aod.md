@@ -8,7 +8,7 @@
 - Names: Thomas Aubry
 - Emails: thomas.aubry@earth.ox.ac.uk
 
-The CMIP7 version of the stratospheric aerosol forcing datasets forcing dataset has been released.
+The CMIP7 version of the stratospheric aerosol forcing dataset has been released.
 The dataset is documented in two papers in the CMIP7 forcing and inputs special issue hosted by Geoscientific Model Development:
 
 - Stratospheric aerosol optical properties: [https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990)
