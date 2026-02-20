@@ -4222,6 +4222,36 @@
         "mip_era":"CMIP7",
         "source_version":"3.1"
     },
+    "UofMD-landState-h-3-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"lchini@umd.edu",
+                "name":"Louise Chini",
+                "orcid":"0000-0002-9070-3505"
+            },
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"gchurtt@umd.edu",
+                "name":"George Hurtt",
+                "orcid":"0000-0001-7278-202X"
+            }
+        ],
+        "contact":"lchini@umd.edu, gchurtt@umd.edu",
+        "dataset_category":[
+            "landState"
+        ],
+        "further_info_url":"https://luh.umd.edu/",
+        "institution_id":"UofMD",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"3.1"
+    },
     "UReading-CCMI-1-1":{
         "activity_id":"input4MIPs",
         "authors":[
