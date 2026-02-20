@@ -1,14 +1,14 @@
 {
     "slcf_co2_emms": {
         "source_ids": [
-            "IIASA-IAMC-vl-1-0-0",
-            "IIASA-IAMC-h-1-0-0"
+            "IIASA-IAMC-vl-1-1-0",
+            "IIASA-IAMC-h-1-1-0"
         ]
     },
     "biomass_burning_emms": {
         "source_ids": [
-            "IIASA-IAMC-vl-1-0-0",
-            "IIASA-IAMC-h-1-0-0"
+            "IIASA-IAMC-vl-1-1-0",
+            "IIASA-IAMC-h-1-1-0"
         ]
     },
     "land_use": {
