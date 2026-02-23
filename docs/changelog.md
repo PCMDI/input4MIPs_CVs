@@ -22,6 +22,19 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.26 (2026-02-23)
+
+
+### ⚠️ Breaking Changes
+
+- Added updated scenario emissions datasets
+
+  These fix minor issues in processing,
+  most notably the removal of small negative values.
+  If you can, please restart any simulations which used 1.0 datasets
+  and run them with the 1.1 datasets instead. ([#418](https://github.com/PCMDI/input4MIPs_CVs/pull/418))
+
+
 ## input4MIPs CVs v6.7.25 (2026-02-17)
 
 
