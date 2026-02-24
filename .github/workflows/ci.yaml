@@ -100,10 +100,10 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           # Exclude local links
-          # Not sure why LUH site fails, it works locally.
+          # LUH has certificate error.
           # Also not sure why we can't hit https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ in CI
           # globalfiredata.org is super flaky, hence exlucded
           # climate modelling site has been deprecated, will updated later
           # IIASA has some bot check in front of it so gives a 403
           # https://human-settlement.emergency.copernicus.eu/ has some certificate error
-          args: "--exclude 'file://' --exclude '^https://luh\\.umd\\.edu/$' --exclude '^https://www\\.geo\\.vu\\.nl/~gwerf/GFED/GFED4/tables/$' --exclude '^https://www.globalfiredata.org' --exclude '^https://climatemodeling.science.energy.gov/program/regional-global-model-analysis$' --exclude '^https://iiasa.ac.at/models-tools-data/global-emission-fields-of-air-pollutants-and-ghgs$' --exclude '^https://doi.org/dev-test$' --exclude '^https://human-settlement.emergency.copernicus.eu/$' ." 
+          args: "--exclude 'file://' --exclude '^https?://luh\\.umd\\.edu/$' --exclude '^https://www\\.geo\\.vu\\.nl/~gwerf/GFED/GFED4/tables/$' --exclude '^https://www.globalfiredata.org' --exclude '^https://climatemodeling.science.energy.gov/program/regional-global-model-analysis$' --exclude '^https://iiasa.ac.at/models-tools-data/global-emission-fields-of-air-pollutants-and-ghgs$' --exclude '^https://doi.org/dev-test$' --exclude '^https://human-settlement.emergency.copernicus.eu/$' ."
