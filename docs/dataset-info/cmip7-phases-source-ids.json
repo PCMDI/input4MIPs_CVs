@@ -35,7 +35,12 @@
         "deck-testing": { "source_ids": [ "UofMD-landState-3-0" ] , "ok_if_not_latest": true },
         "deck-cmip7": { "source_ids": [ "UofMD-landState-3-1-1" ] },
         "scenariomip-testing": null,
-        "scenariomip-cmip7": null
+        "scenariomip-cmip7": {
+            "source_ids": [
+                "UofMD-landState-vl-3-1",
+                "UofMD-landState-h-3-1"
+            ]
+        }
     },
     "ghg_concentrations": {
         "deck-testing": { "source_ids": [ "CR-CMIP-0-4-0" ], "ok_if_not_latest": true },

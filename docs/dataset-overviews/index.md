@@ -117,7 +117,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [IIASA-IAMC-vl-1-0-0; IIASA-IAMC-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-0-0%22%2C%22IIASA-IAMC-h-1-0-0%22%7D) (DOI: [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).)
 1. *Open biomass burning emissions:* [IIASA-IAMC-vl-1-0-0; IIASA-IAMC-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-0-0%22%2C%22IIASA-IAMC-h-1-0-0%22%7D) (DOI: [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).)
-1. *Land use:* No data available for this phase yet
+1. *Land use:* [UofMD-landState-vl-3-1; UofMD-landState-h-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-3-1%22%2C%22UofMD-landState-h-3-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2521499](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2521499).)
 1. *Greenhouse gas concentrations:* [CR-vl-1-0-0; CR-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-1-0-0%22%2C%22CR-h-1-0-0%22%7D) (DOI: [dev-test](https://doi.org/dev-test).)
 1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
 1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-ScenarioMIP-2-2-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-ScenarioMIP-2-2-2%22%7D) (No DOI provided)

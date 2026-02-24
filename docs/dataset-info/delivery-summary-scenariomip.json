@@ -12,10 +12,10 @@
         ]
     },
     "land_use": {
-        "expected_publication": "February 2026",
-        "source_ids": null,
-        "status": "Draft data in preparation",
-        "url": null
+        "source_ids": [
+            "UofMD-landState-vl-3-1",
+            "UofMD-landState-h-3-1"
+        ]
     },
     "ghg_concentrations": {
         "source_ids": [
