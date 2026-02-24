@@ -20,7 +20,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-2-0%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-2-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-2-0%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2524040](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2524040).
 
@@ -34,7 +34,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
-For the DECK simulations in the testing phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-1-0%22%7D)
+For the DECK simulations in the testing phase of CMIP7, use data with the source ID [DRES-CMIP-BB4CMIP7-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-1-0%22%7D)
 
 No DOIs are available for this data.
 
@@ -50,8 +50,8 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [IIASA-IAMC-vl-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-0-0%22%7D)
-- [IIASA-IAMC-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-0-0%22%7D).
+- [IIASA-IAMC-vl-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-0%22%7D)
+- [IIASA-IAMC-h-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-0%22%7D).
 
 
 The data has the DOI: [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).
@@ -68,8 +68,8 @@ so that the identification and resolution of this issue is publicly accessible.
 
 For the ScenarioMIP simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
-- [IIASA-IAMC-scendraft1-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%7D)
-- [IIASA-IAMC-scendraft2-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft2-0-3-0%22%7D).
+- [IIASA-IAMC-scendraft1-0-3-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%7D)
+- [IIASA-IAMC-scendraft2-0-3-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft2-0-3-0%22%7D).
 
 
 No DOIs are available for this data.
@@ -174,7 +174,7 @@ Figure 3: Schematic approach for constructing the smoothed BB4CMIP7
 
 - This dataset is made available as forcing dataset 
   for the Coupled Model Intercomparison Project Phase (CMIP7) analyses on the ESGF
-  ([https://aims2.llnl.gov/search?project=input4MIPs](https://aims2.llnl.gov/search?project=input4MIPs)) 
+  ([https://esgf-node.ornl.gov/search?project=input4MIPs](https://esgf-node.ornl.gov/search?project=input4MIPs)) 
   and is only needed for models that do not simulate fire emissions. 
   Emissions are bulk values for all biomes, 
   ancillary datasets with contribution of emissions 

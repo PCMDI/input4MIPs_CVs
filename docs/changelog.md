@@ -22,6 +22,76 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.26 (2026-02-23)
+
+
+### ⚠️ Breaking Changes
+
+- Added updated scenario emissions datasets
+
+  These fix minor issues in processing,
+  most notably the removal of small negative values.
+  If you can, please restart any simulations which used 1.0 datasets
+  and run them with the 1.1 datasets instead. ([#418](https://github.com/PCMDI/input4MIPs_CVs/pull/418))
+
+
+## input4MIPs CVs v6.7.25 (2026-02-17)
+
+
+### ⚠️ Breaking Changes
+
+- Added data with the source ID `FZJ-CMIP-ozone-2-0`.
+  This data updates the historical forcing data provided in `FZJ-CMIP-ozone-1-2`.
+
+  As a result of an issue being found ([#400](https://github.com/PCMDI/input4MIPs_CVs/issues/400)),
+  models that rely on exogenous ozone forcing are now required to use different versions of the ozone files
+  for pre-industrial control (and related) simulations and historical (and related) simulations.
+  For all historical (and related) simulations, files with the source ID `FZJ-CMIP-ozone-2-0` should be used.
+  For pre-industrial control (and related) simulations, files with the source ID `FZJ-CMIP-ozone-1-2` should be used
+  (note that this guidance differs from the email communication sent by the CMIP IPO on 12 February 2026).
+  For details of your options for pre-industrial control simulations,
+  please see [the ozone dataset page](https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/ozone/).
+
+  The CMIP Panel co-chairs are recommending that,
+  for modelling centres who rely on ozone as an external forcing,
+  historical, and other relevant DECK (e.g., AMIP), simulations
+  should be re-run with the `FZJ-CMIP-ozone-2-0` ozone if possible.
+  (Pre-industrial control simulations do not need to be re-run
+  because they are unaffected by the release of `FZJ-CMIP-ozone-2-0`.)
+
+  If any modelling centres cannot re-run their historical simulations,
+  they should contact the ozone forcing providers for guidance on
+  how to ensure a smooth connection between the scenario ozone forcing files.
+
+  If any modelling centres run historical simulations
+  with both the `FZJ-CMIP-ozone-1-2` and `FZJ-CMIP-ozone-2-0` forcing,
+  these simulations would be of interest to the Forcings Task Team. ([#413](https://github.com/PCMDI/input4MIPs_CVs/pull/413))
+
+
+## input4MIPs CVs v6.7.24 (2026-02-16)
+
+
+### 📚 Improved Documentation
+
+- Add an archive of updates about the forcings sent by the CMIP International Project Office (IPO). ([#410](https://github.com/PCMDI/input4MIPs_CVs/pull/410))
+
+
+## input4MIPs CVs v6.7.23 (2026-02-16)
+
+
+### 🐛 Bug Fixes
+
+- Update all ESGF links to use the live ORNL node rather than the deprecated aims2 node ([#412](https://github.com/PCMDI/input4MIPs_CVs/pull/412))
+
+
+## input4MIPs CVs v6.7.22 (2026-02-13)
+
+
+### 📚 Improved Documentation
+
+- Updated volcanic forcing documentation with updated email address and other information ([#409](https://github.com/PCMDI/input4MIPs_CVs/pull/409))
+
+
 ## input4MIPs CVs v6.7.21 (2026-01-16)
 
 

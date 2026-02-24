@@ -17,7 +17,7 @@ When it is ready, the CMIP7 dataset will be released
 with a `mip_era` metadata value of 'CMIP7'.
 This metadata is contained in the netCDF file global attributes, 
 and is also available as use as a search facet (with label `Target MIP List`)
-within the ESGF input4MIPs project page [here](https://aims2.llnl.gov/search/input4MIPs).
+within the ESGF input4MIPs project page [here](https://esgf-node.ornl.gov/search/input4MIPs).
 
 If you find a problem related to this dataset, please
 [create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
@@ -37,7 +37,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [PCMDI-AMIP-1-1-10](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-10%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [PCMDI-AMIP-1-1-10](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-10%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2575015](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2575015).
 
@@ -51,7 +51,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
-For the DECK simulations in the testing phase of CMIP7, use data with the source ID [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-9%22%7D)
+For the DECK simulations in the testing phase of CMIP7, use data with the source ID [PCMDI-AMIP-1-1-9](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-9%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP6Plus/2583903](https://doi.org/10.25981/ESGF.input4MIPs.CMIP6Plus/2583903).
 

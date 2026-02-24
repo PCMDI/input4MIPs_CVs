@@ -40,6 +40,7 @@ nav:
     - Source ID-level CMIP7Plus: database-views/input4MIPs_source-id_CMIP7Plus.html
     - Dataset-level CMIP7Plus: database-views/input4MIPs_datasets_CMIP7Plus.html
     - File-level CMIP7Plus: database-views/input4MIPs_files_CMIP7Plus.html
+  - Archive of email updates sent by CMIP IPO: forcings-email-archive/
   - Extracting scenario from source ID: extracting-scenario-from-source-id.md
   - Source ID landing pages: source-id-landing-pages/
   - Repository overview: repository-overview.md

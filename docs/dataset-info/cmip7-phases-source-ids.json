@@ -26,8 +26,8 @@
         },
         "scenariomip-cmip7": {
             "source_ids": [ 
-                "IIASA-IAMC-vl-1-0-0", 
-                "IIASA-IAMC-h-1-0-0"
+                "IIASA-IAMC-vl-1-1-0",
+                "IIASA-IAMC-h-1-1-0"
             ]
         }
     },
@@ -66,7 +66,10 @@
     },
     "ozone": {
         "deck-testing": null,
-        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-ozone-1-2" ] },
+        "deck-cmip7": { 
+            "source_ids": [ "FZJ-CMIP-ozone-1-2", "FZJ-CMIP-ozone-2-0" ],
+            "ok_if_not_latest": true
+        },
         "scenariomip-testing": null,
         "scenariomip-cmip7": null
     },
@@ -121,8 +124,8 @@
         },
         "scenariomip-cmip7": {
             "source_ids": [ 
-                "IIASA-IAMC-vl-1-0-0", 
-                "IIASA-IAMC-h-1-0-0"
+                "IIASA-IAMC-vl-1-1-0",
+                "IIASA-IAMC-h-1-1-0"
             ]
         }
     },

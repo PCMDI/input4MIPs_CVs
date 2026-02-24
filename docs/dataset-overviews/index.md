@@ -46,18 +46,18 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Source IDs for use in this phase
 
-1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [CEDS-CMIP-2025-04-18; CEDS-CMIP-2025-04-18-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18%22%2C%22CEDS-CMIP-2025-04-18-supplemental%22%7D) (DOIs: [10.5281/zenodo.15127477](https://doi.org/10.5281/zenodo.15127477), [10.5281/zenodo.15001546](https://doi.org/10.5281/zenodo.15001546).)
-1. *Open biomass burning emissions:* [DRES-CMIP-BB4CMIP7-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-2-0%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2524040](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2524040).)
-1. *Land use:* [UofMD-landState-3-1-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-1-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2521499](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2521499).)
-1. *Greenhouse gas concentrations:* [CR-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-1-0-0%22%7D) (DOI: [https://doi.org/10.5281/zenodo.14892947](https://doi.org/10.5281/zenodo.14892947).)
-1. *CO<sub>2</sub> isotopes:* [ImperialCollege-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22ImperialCollege-3-0%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2583902](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2583902).)
-1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-CMIP-2-2-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-2-2-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522673](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522673).)
-1. *Ozone concentrations:* [FZJ-CMIP-ozone-1-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-2%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).)
-1. *Nitrogen deposition:* [FZJ-CMIP-nitrogen-1-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-nitrogen-1-2%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584172](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584172).)
-1. *Solar:* [SOLARIS-HEPPA-CMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522675](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522675).)
-1. *AMIP sea-surface temperature and sea-ice boundary forcing:* [PCMDI-AMIP-1-1-10](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-10%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2575015](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2575015).)
+1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [CEDS-CMIP-2025-04-18; CEDS-CMIP-2025-04-18-supplemental](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18%22%2C%22CEDS-CMIP-2025-04-18-supplemental%22%7D) (DOIs: [10.5281/zenodo.15127477](https://doi.org/10.5281/zenodo.15127477), [10.5281/zenodo.15001546](https://doi.org/10.5281/zenodo.15001546).)
+1. *Open biomass burning emissions:* [DRES-CMIP-BB4CMIP7-2-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-2-0%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2524040](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2524040).)
+1. *Land use:* [UofMD-landState-3-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-1-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2521499](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2521499).)
+1. *Greenhouse gas concentrations:* [CR-CMIP-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-1-0-0%22%7D) (DOI: [https://doi.org/10.5281/zenodo.14892947](https://doi.org/10.5281/zenodo.14892947).)
+1. *CO<sub>2</sub> isotopes:* [ImperialCollege-3-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22ImperialCollege-3-0%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2583902](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2583902).)
+1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-CMIP-2-2-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-2-2-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522673](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522673).)
+1. *Ozone concentrations:* [FZJ-CMIP-ozone-1-2; FZJ-CMIP-ozone-2-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-2%22%2C%22FZJ-CMIP-ozone-2-0%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).)
+1. *Nitrogen deposition:* [FZJ-CMIP-nitrogen-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-nitrogen-1-2%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584172](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584172).)
+1. *Solar:* [SOLARIS-HEPPA-CMIP-4-6](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-6%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2522675](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2522675).)
+1. *AMIP sea-surface temperature and sea-ice boundary forcing:* [PCMDI-AMIP-1-1-10](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-10%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2575015](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2575015).)
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
-1. *Population density:* [PIK-CMIP-1-0-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-1%22%7D) (No DOI provided)
+1. *Population density:* [PIK-CMIP-1-0-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-1%22%7D) (No DOI provided)
 <!--- end-source-id-summary -->
 
 #### Testing
@@ -73,16 +73,16 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 ##### Source IDs for use in this phase
 
-1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [CEDS-CMIP-2024-11-25; CEDS-CMIP-2024-11-25-supplemental; CEDS-CMIP-2024-10-21; CEDS-CMIP-2024-10-21-supplemental](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25%22%2C%22CEDS-CMIP-2024-11-25-supplemental%22%2C%22CEDS-CMIP-2024-10-21%22%2C%22CEDS-CMIP-2024-10-21-supplemental%22%7D) (DOIs: [10.5281/zenodo.13952845](https://doi.org/10.5281/zenodo.13952845), [10.5281/zenodo.14145000](https://doi.org/10.5281/zenodo.14145000).)
-1. *Open biomass burning emissions:* [DRES-CMIP-BB4CMIP7-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-1-0%22%7D) (No DOI provided)
-1. *Land use:* [UofMD-landState-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-0%22%7D) (No DOI provided)
-1. *Greenhouse gas concentrations:* [CR-CMIP-0-4-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-4-0%22%7D) (DOI: [10.5281/zenodo.13365838](https://doi.org/10.5281/zenodo.13365838).)
+1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [CEDS-CMIP-2024-11-25; CEDS-CMIP-2024-11-25-supplemental; CEDS-CMIP-2024-10-21; CEDS-CMIP-2024-10-21-supplemental](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25%22%2C%22CEDS-CMIP-2024-11-25-supplemental%22%2C%22CEDS-CMIP-2024-10-21%22%2C%22CEDS-CMIP-2024-10-21-supplemental%22%7D) (DOIs: [10.5281/zenodo.13952845](https://doi.org/10.5281/zenodo.13952845), [10.5281/zenodo.14145000](https://doi.org/10.5281/zenodo.14145000).)
+1. *Open biomass burning emissions:* [DRES-CMIP-BB4CMIP7-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22DRES-CMIP-BB4CMIP7-1-0%22%7D) (No DOI provided)
+1. *Land use:* [UofMD-landState-3-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-0%22%7D) (No DOI provided)
+1. *Greenhouse gas concentrations:* [CR-CMIP-0-4-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-4-0%22%7D) (DOI: [10.5281/zenodo.13365838](https://doi.org/10.5281/zenodo.13365838).)
 1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
-1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-CMIP-1-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-3-1%22%7D) (No DOI provided)
+1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-CMIP-1-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-CMIP-1-3-1%22%7D) (No DOI provided)
 1. *Ozone concentrations:* No data available for this phase yet
 1. *Nitrogen deposition:* No data available for this phase yet
-1. *Solar:* [SOLARIS-HEPPA-CMIP-4-5](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-5%22%7D) (No DOI provided)
-1. *AMIP sea-surface temperature and sea-ice boundary forcing:* [PCMDI-AMIP-1-1-9](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-9%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP6Plus/2583903](https://doi.org/10.25981/ESGF.input4MIPs.CMIP6Plus/2583903).)
+1. *Solar:* [SOLARIS-HEPPA-CMIP-4-5](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-CMIP-4-5%22%7D) (No DOI provided)
+1. *AMIP sea-surface temperature and sea-ice boundary forcing:* [PCMDI-AMIP-1-1-9](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PCMDI-AMIP-1-1-9%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP6Plus/2583903](https://doi.org/10.25981/ESGF.input4MIPs.CMIP6Plus/2583903).)
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
 1. *Population density:* No data available for this phase yet
 <!--- end-source-id-summary -->
@@ -115,18 +115,18 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Source IDs for use in this phase
 
-1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [IIASA-IAMC-vl-1-0-0; IIASA-IAMC-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-0-0%22%2C%22IIASA-IAMC-h-1-0-0%22%7D) (DOI: [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).)
-1. *Open biomass burning emissions:* [IIASA-IAMC-vl-1-0-0; IIASA-IAMC-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-0-0%22%2C%22IIASA-IAMC-h-1-0-0%22%7D) (DOI: [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).)
-1. *Land use:* [UofMD-landState-vl-3-1; UofMD-landState-h-3-1](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-3-1%22%2C%22UofMD-landState-h-3-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2521499](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2521499).)
-1. *Greenhouse gas concentrations:* [CR-vl-1-0-0; CR-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-1-0-0%22%2C%22CR-h-1-0-0%22%7D) (DOI: [dev-test](https://doi.org/dev-test).)
+1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [IIASA-IAMC-vl-1-1-0; IIASA-IAMC-h-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-0%22%2C%22IIASA-IAMC-h-1-1-0%22%7D) (DOI: [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).)
+1. *Open biomass burning emissions:* [IIASA-IAMC-vl-1-1-0; IIASA-IAMC-h-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-0%22%2C%22IIASA-IAMC-h-1-1-0%22%7D) (DOI: [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).)
+1. *Land use:* [UofMD-landState-vl-3-1; UofMD-landState-h-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-3-1%22%2C%22UofMD-landState-h-3-1%22%7D) (DOI: [10.25981/ESGF.input4MIPs.CMIP7/2521499](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2521499).)
+1. *Greenhouse gas concentrations:* [CR-vl-1-0-0; CR-h-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-1-0-0%22%2C%22CR-h-1-0-0%22%7D) (DOI: [dev-test](https://doi.org/dev-test).)
 1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
-1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-ScenarioMIP-2-2-2](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-ScenarioMIP-2-2-2%22%7D) (No DOI provided)
+1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* [UOEXETER-ScenarioMIP-2-2-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UOEXETER-ScenarioMIP-2-2-2%22%7D) (No DOI provided)
 1. *Ozone concentrations:* No data available for this phase yet
 1. *Nitrogen deposition:* No data available for this phase yet
-1. *Solar:* [SOLARIS-HEPPA-ScenarioMIP-4-6](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6%22%7D) (No DOI provided)
+1. *Solar:* [SOLARIS-HEPPA-ScenarioMIP-4-6](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6%22%7D) (No DOI provided)
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
-1. *Population density:* [PIK-vl-1-0-0; PIK-ln-1-0-0; PIK-l-1-0-0; PIK-ml-1-0-0; PIK-m-1-0-0; PIK-hl-1-0-0; PIK-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vl-1-0-0%22%2C%22PIK-ln-1-0-0%22%2C%22PIK-l-1-0-0%22%2C%22PIK-ml-1-0-0%22%2C%22PIK-m-1-0-0%22%2C%22PIK-hl-1-0-0%22%2C%22PIK-h-1-0-0%22%7D) (No DOI provided)
+1. *Population density:* [PIK-vl-1-0-0; PIK-ln-1-0-0; PIK-l-1-0-0; PIK-ml-1-0-0; PIK-m-1-0-0; PIK-hl-1-0-0; PIK-h-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vl-1-0-0%22%2C%22PIK-ln-1-0-0%22%2C%22PIK-l-1-0-0%22%2C%22PIK-ml-1-0-0%22%2C%22PIK-m-1-0-0%22%2C%22PIK-hl-1-0-0%22%2C%22PIK-h-1-0-0%22%7D) (No DOI provided)
 <!--- end-source-id-summary -->
 
 #### Testing
@@ -142,18 +142,18 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 ##### Source IDs for use in this phase
 
-1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [IIASA-IAMC-scendraft1-0-3-0; IIASA-IAMC-scendraft2-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%2C%22IIASA-IAMC-scendraft2-0-3-0%22%7D) (No DOI provided)
-1. *Open biomass burning emissions:* [IIASA-IAMC-scendraft1-0-3-0; IIASA-IAMC-scendraft2-0-3-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%2C%22IIASA-IAMC-scendraft2-0-3-0%22%7D) (No DOI provided)
+1. *Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions:* [IIASA-IAMC-scendraft1-0-3-0; IIASA-IAMC-scendraft2-0-3-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%2C%22IIASA-IAMC-scendraft2-0-3-0%22%7D) (No DOI provided)
+1. *Open biomass burning emissions:* [IIASA-IAMC-scendraft1-0-3-0; IIASA-IAMC-scendraft2-0-3-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%2C%22IIASA-IAMC-scendraft2-0-3-0%22%7D) (No DOI provided)
 1. *Land use:* No data available for this phase yet
-1. *Greenhouse gas concentrations:* [CR-vllo-0-1-0; CR-vlho-0-1-0; CR-l-0-1-0; CR-ml-0-1-0; CR-m-0-1-0; CR-hl-0-1-0; CR-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vllo-0-1-0%22%2C%22CR-vlho-0-1-0%22%2C%22CR-l-0-1-0%22%2C%22CR-ml-0-1-0%22%2C%22CR-m-0-1-0%22%2C%22CR-hl-0-1-0%22%2C%22CR-h-0-1-0%22%7D) (DOI: [dev-test](https://doi.org/dev-test).)
+1. *Greenhouse gas concentrations:* [CR-vllo-0-1-0; CR-vlho-0-1-0; CR-l-0-1-0; CR-ml-0-1-0; CR-m-0-1-0; CR-hl-0-1-0; CR-h-0-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vllo-0-1-0%22%2C%22CR-vlho-0-1-0%22%2C%22CR-l-0-1-0%22%2C%22CR-ml-0-1-0%22%2C%22CR-m-0-1-0%22%2C%22CR-hl-0-1-0%22%2C%22CR-h-0-1-0%22%7D) (DOI: [dev-test](https://doi.org/dev-test).)
 1. *CO<sub>2</sub> isotopes:* No data available for this phase yet
 1. *Stratospheric volcanic SO<sub>2</sub> emissions and aerosol optical properties:* No data available for this phase yet
 1. *Ozone concentrations:* No data available for this phase yet
 1. *Nitrogen deposition:* No data available for this phase yet
-1. *Solar:* [SOLARIS-HEPPA-ScenarioMIP-4-6-a002](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6-a002%22%7D) (No DOI provided)
+1. *Solar:* [SOLARIS-HEPPA-ScenarioMIP-4-6-a002](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22SOLARIS-HEPPA-ScenarioMIP-4-6-a002%22%7D) (No DOI provided)
 1. *AMIP sea-surface temperature and sea-ice boundary forcing:* No data available for this phase yet
 1. *Aerosol optical properties/MACv2-SP*: This is not managed via ESGF. Please see the [aerosol optical properties/MACv2-SP specific page](aerosol-optical-properties-macv2-sp) for details.
-1. *Population density:* [PIK-vllo-0-2-0; PIK-vlho-0-2-0; PIK-l-0-2-0; PIK-ml-0-2-0; PIK-m-0-2-0; PIK-hl-0-2-0; PIK-h-0-2-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-2-0%22%2C%22PIK-vlho-0-2-0%22%2C%22PIK-l-0-2-0%22%2C%22PIK-ml-0-2-0%22%2C%22PIK-m-0-2-0%22%2C%22PIK-hl-0-2-0%22%2C%22PIK-h-0-2-0%22%7D) (No DOI provided)
+1. *Population density:* [PIK-vllo-0-2-0; PIK-vlho-0-2-0; PIK-l-0-2-0; PIK-ml-0-2-0; PIK-m-0-2-0; PIK-hl-0-2-0; PIK-h-0-2-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vllo-0-2-0%22%2C%22PIK-vlho-0-2-0%22%2C%22PIK-l-0-2-0%22%2C%22PIK-ml-0-2-0%22%2C%22PIK-m-0-2-0%22%2C%22PIK-hl-0-2-0%22%2C%22PIK-h-0-2-0%22%7D) (No DOI provided)
 <!--- end-source-id-summary -->
 
 ## CMIP7 input4MIPs data licensing

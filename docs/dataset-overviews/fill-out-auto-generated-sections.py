@@ -77,16 +77,9 @@ def get_esgf_search_url(source_ids: list[str]) -> str:
     """
     source_id_search = "%22%2C%22".join(source_ids)
     return (
-        "https://aims2.llnl.gov/search?project=input4MIPs&versionType=all"
+        "https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all"
         f"&activeFacets=%7B%22source_id%22%3A%22{source_id_search}%22%7D"
     )
-    # return (
-    #     "https://esgf-metagrid.cloud.dkrz.de/search?project=input4MIPs&versionType=all"
-    #     f"&activeFacets=%7B%22source_id%22%3A%22{source_id_search}%22%7D"
-    # )
-
-
-# https://esgf-metagrid.cloud.dkrz.de/search?project=input4MIPs&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-03-18-supplemental%22%7D
 
 
 @define
@@ -151,7 +144,9 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "FZJ-CMIP-ozone-1-0",
         "FZJ-CMIP-ozone-1-1",
         "FZJ-CMIP-ozone-1-2",
+        "FZJ-CMIP-ozone-2-0",
         "IIASA-IAMC-1-0-0",
+        "IIASA-IAMC-1-1-0",
         "ImperialCollege-3-0",
         "MRI-JRA55-do-1-6-0",
         "PCMDI-AMIP-1-1-10",

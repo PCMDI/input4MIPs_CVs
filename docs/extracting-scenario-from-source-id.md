@@ -21,7 +21,7 @@ by the time you are reading this.
 
 
 ```python
-def extract_scenario_from_source_id(source_id: str) -> str | None:
+def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
     """
     Extract the scenario from a given source ID
 
@@ -72,6 +72,9 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         "FZJ-CMIP-ozone-1-0",
         "FZJ-CMIP-ozone-1-1",
         "FZJ-CMIP-ozone-1-2",
+        "FZJ-CMIP-ozone-2-0",
+        "IIASA-IAMC-1-0-0",
+        "IIASA-IAMC-1-1-0",
         "ImperialCollege-3-0",
         "MRI-JRA55-do-1-6-0",
         "PCMDI-AMIP-1-1-10",
@@ -111,8 +114,6 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
         return None
 
-    # Draft names before final decision
-    KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho"}
     KNOWN_SCENARIOS = {
         "vl",
         "ln",
@@ -124,8 +125,16 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
         # Used for scenario indepdendent forcings i.e. volcanic and solar
         "ScenarioMIP",
     }
+    # Draft names before final decision
+    KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho", "scendraft1", "scendraft2"}
 
-    for known_prefix in ("PIK-", "CR-", "UOEXETER-", "SOLARIS-HEPPA-"):
+    for known_prefix in (
+        "PIK-",
+        "CR-",
+        "UOEXETER-",
+        "SOLARIS-HEPPA-",
+        "IIASA-IAMC-",
+    ):
         if known_prefix in source_id:
             # Assume that scenario information is the first part of the hyphen-separated
             # source ID after the prefix.
@@ -134,7 +143,10 @@ def extract_scenario_from_source_id(source_id: str) -> str | None:
             # e.g. "PIK-vllo-0-1-0".
             scenario = source_id.split(known_prefix)[1].split("-")[0]
             if scenario in KNOWN_SCENARIOS:
-                return scenario
+                return ScenarioInfo(name=scenario, legacy=False)
+
+            if scenario in KNOWN_SCENARIOS_LEGACY:
+                return ScenarioInfo(name=scenario, legacy=True)
 
             if scenario in KNOWN_SCENARIOS_LEGACY:
                 # Not an error, but also not a known scenario

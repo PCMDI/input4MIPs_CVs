@@ -28,7 +28,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [CR-CMIP-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-1-0-0%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [CR-CMIP-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-1-0-0%22%7D)
 
 The data has the DOI: [https://doi.org/10.5281/zenodo.14892947](https://doi.org/10.5281/zenodo.14892947).
 
@@ -42,7 +42,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
-For the DECK simulations in the testing phase of CMIP7, use data with the source ID [CR-CMIP-0-4-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-4-0%22%7D)
+For the DECK simulations in the testing phase of CMIP7, use data with the source ID [CR-CMIP-0-4-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-CMIP-0-4-0%22%7D)
 
 The data has the DOI: [10.5281/zenodo.13365838](https://doi.org/10.5281/zenodo.13365838).
 
@@ -58,8 +58,8 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [CR-vl-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-1-0-0%22%7D)
-- [CR-h-1-0-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-h-1-0-0%22%7D).
+- [CR-vl-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-1-0-0%22%7D)
+- [CR-h-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-h-1-0-0%22%7D).
 
 
 The data has the DOI: [dev-test](https://doi.org/dev-test).
@@ -76,13 +76,13 @@ so that the identification and resolution of this issue is publicly accessible.
 
 For the ScenarioMIP simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
-- [CR-vllo-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vllo-0-1-0%22%7D)
-- [CR-vlho-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vlho-0-1-0%22%7D)
-- [CR-l-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-l-0-1-0%22%7D)
-- [CR-ml-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-ml-0-1-0%22%7D)
-- [CR-m-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-m-0-1-0%22%7D)
-- [CR-hl-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-hl-0-1-0%22%7D)
-- [CR-h-0-1-0](https://aims2.llnl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-h-0-1-0%22%7D).
+- [CR-vllo-0-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vllo-0-1-0%22%7D)
+- [CR-vlho-0-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vlho-0-1-0%22%7D)
+- [CR-l-0-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-l-0-1-0%22%7D)
+- [CR-ml-0-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-ml-0-1-0%22%7D)
+- [CR-m-0-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-m-0-1-0%22%7D)
+- [CR-hl-0-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-hl-0-1-0%22%7D)
+- [CR-h-0-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-h-0-1-0%22%7D).
 
 
 The data has the DOI: [dev-test](https://doi.org/dev-test).
@@ -251,7 +251,7 @@ At present, the changes from CMIP6 are minor,
 with the maximum difference in effective radiative forcing terms being 0.05 W / m^2
 (and generally much smaller than this, particularly after 1850).
 For reference, the CMIP6 data can be found 
-[on the ESGF under the "CMIP6" project and source ID "UoM-CMIP-1-2-0"](https://aims2.llnl.gov/search?project=input4MIPs&activeFacets=%7B%22source_id%22%3A%22UoM-CMIP-1-2-0%22%2C%22mip_era%22%3A%22CMIP6%22%7D).
+[on the ESGF under the "CMIP6" project and source ID "UoM-CMIP-1-2-0"](https://esgf-node.ornl.gov/search?project=input4MIPs&activeFacets=%7B%22source_id%22%3A%22UoM-CMIP-1-2-0%22%2C%22mip_era%22%3A%22CMIP6%22%7D).
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
