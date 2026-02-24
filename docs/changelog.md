@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.27 (2026-02-24)
+
+
+### 🆕 Features
+
+- Added land use datasets for high priority ScenarioMIP simulations under the source IDs `UofMD-landState-vl-3-1` and `UofMD-landState-h-3-1` ([#417](https://github.com/PCMDI/input4MIPs_CVs/pull/417))
+
+
 ## input4MIPs CVs v6.7.26 (2026-02-23)
 
 
