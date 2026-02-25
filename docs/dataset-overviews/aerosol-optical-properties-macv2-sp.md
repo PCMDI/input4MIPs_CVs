@@ -41,11 +41,13 @@ For testing, please use the data at this zenodo record:
 
 ##### CMIP7
 
-No data available for this phase yet.
+For CMIP7, please use the data at this zenodo record:
+[https://zenodo.org/records/18713154](https://zenodo.org/records/18713154).
 
 ##### Testing
 
-No data available for this phase yet.
+For testing, please use the data at this zenodo record:
+[https://zenodo.org/records/18713154](https://zenodo.org/records/18713154).
 
 ## Navigating the data
 
