@@ -1,0 +1,8 @@
+file://
+^https?://luh\\.umd\\.edu/$
+^https://www\\.geo\\.vu\\.nl/~gwerf/GFED/GFED4/tables/$
+^https://www.globalfiredata.org
+^https://climatemodeling.science.energy.gov/program/regional-global-model-analysis$
+^https://iiasa.ac.at/models-tools-data/global-emission-fields-of-air-pollutants-and-ghgs$
+^https://doi.org/dev-test$
+^https://human-settlement.emergency.copernicus.eu/$
