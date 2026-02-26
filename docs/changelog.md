@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.29 (2026-02-26)
+
+
+### 🆕 Features
+
+- Added information about where to get the simple plumes datasets to use for ScenarioMIP. These are not distributed via ESGF, hence we cannot point to any specific source IDs. ([#422](https://github.com/PCMDI/input4MIPs_CVs/pull/422))
+
+
 ## input4MIPs CVs v6.7.28 (2026-02-26)
 
 
