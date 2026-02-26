@@ -86,7 +86,10 @@ No data available for this phase yet.
 
 The piControl forcing should come from files with the source ID `FZJ-CMIP-ozone-1-2` data,
 (there are no specific piControl files available in the `FZJ-CMIP-ozone-2-0` data).
-Note that this guidance differs from the email communication sent by the CMIP IPO on 12 February 2026.
+The CMIP IPO sent this guidance in their
+[email communication on 16 February 2026](../forcings-email-archive/2026-02-16/#recommendation-for-pre-industrial-control),
+updating the guidance from the
+[email communication on 12 February 2026](../forcings-email-archive/2026-02-12/#2026-02-12-update).
 
 For pre-industrial control, there are two options.
 The first is the monthly climatology file (frequency value of `monC`).
@@ -113,6 +116,13 @@ There are also `zmta` (temperature) files available.
 These provide the temperature output that is consistent with the provided ozone files.
 This may be useful for those wishing to post-process the ozone forcings into other forms
 (e.g. https://github.com/PCMDI/input4MIPs_CVs/discussions/378).
+
+Three state-of-the-art stratosphere-troposphere-resolving chemistry-climate models
+- WACCM-CESM (USA), CMAM (Canada), and EMAC (Germany) -
+have been used to create this dataset.
+The models were run in amip (or coupled?) mode driven by the DECK CMIP7 forcing datasets.
+More details on the simulations and their fidelity against observations
+will be documented in a peer-reviewed journal article (Hegglin et al, in prep).   
 
 ## Differences in format from CMIP6 or other previous versions
 
