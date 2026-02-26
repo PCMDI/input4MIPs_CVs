@@ -59,10 +59,9 @@
         "url": null
     },
     "simple-plumes": {
-        "expected_publication": "January 2026",
         "source_ids": null,
-        "status": "Draft data in preparation",
-        "url": null
+        "url": "https://zenodo.org/records/18713154",
+        "status": "CMIP7 dataset available"
     },
     "population": {
         "source_ids": [
