@@ -12,3 +12,4 @@ Here we provide an archive of emails with updates about the forcings sent by the
 - [2025-10-29](2025-10-29.md)
 - [2026-02-12](2026-02-12.md)
 - [2026-02-16](2026-02-16.md)
+- [2026-02-24](2026-02-24.md)
