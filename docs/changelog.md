@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.30 (2026-03-02)
+
+
+### 📚 Improved Documentation
+
+- Added email update from IPO from 2026-02-26 and sorted email updates by date ([#424](https://github.com/PCMDI/input4MIPs_CVs/pull/424))
+
+### 🔧 Trivial/Internal Changes
+
+- [#423](https://github.com/PCMDI/input4MIPs_CVs/pull/423)
+
+
 ## input4MIPs CVs v6.7.29 (2026-02-26)
 
 
