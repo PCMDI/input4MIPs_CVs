@@ -83,6 +83,7 @@ plugins:
       scripts:
         - docs/dataset-overviews/fill-out-auto-generated-sections.py
         - docs/source-id-landing-pages/auto-generate-source-id-pages.py
+        - docs/forcings-email-archive/auto-generate-index-and-nav.py
   # Required for handling the source ID landing pages
   - literate-nav:
 
