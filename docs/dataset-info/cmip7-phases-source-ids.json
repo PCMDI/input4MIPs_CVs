@@ -138,8 +138,8 @@
     "nitrogen-deposition": {
         "deck-testing": null,
         "deck-cmip7": { 
-            "source_ids": [ "FZJ-CMIP-nitrogen-1-2", "FZJ-CMIP-nitrogen-2-0" ],
-            "ok_if_not_latest": true
+            "source_ids": [ "FZJ-CMIP-nitrogen-2-0" ],
+            "ok_if_not_latest": false
         },
         "scenariomip-testing": null,
         "scenariomip-cmip7": null
