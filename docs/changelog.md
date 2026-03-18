@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.31 (2026-03-18)
+
+
+### 📚 Improved Documentation
+
+- Fixed up broken links in CHANGELOG entries for the historical GHG concentration forcing ([#426](https://github.com/PCMDI/input4MIPs_CVs/pull/426))
+
+
 ## input4MIPs CVs v6.7.30 (2026-03-02)
 
 
