@@ -10,7 +10,22 @@
 
 ## Summary
 
-Nitrogen deposition data is now available.
+Nitrogen deposition forcing for the pre-industrial control and historical (and associated) simulations is available.
+
+As a result of an issue being found ([#425](https://github.com/PCMDI/input4MIPs_CVs/issues/425)),
+we're providing an updated dataset.
+This resolves an apparent latitudinal shift found in the forcing
+when moving from PI to historical forcing files.
+The error was introduced due to aerosol properties being ingested into one of the historical simulations starting in 1950 instead of 1850
+along with an issue in the averaging of the climatological file.
+The implication of this error on existing simulations (and their predicted climate forcing)
+is deemed to be small (due to compensating effects on N<sub>2</sub>O and CO<sub>2</sub> concentrations).
+Therefore, existing model simulations based on `FZJ-CMIP-nitrogen-1-2`
+do not need to be rerun if such a rerun is not possible.
+Modelling teams that have not begun their simulations should, however,
+use the latest version of the forcings as specified below.
+Modelling teams should record the version of the forcing files they use following the CMIP7 guidance
+(see the 5<sup>th</sup> dot point here https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_modellers/#1-requirements-expectations).
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -22,7 +37,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-nitrogen-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-nitrogen-1-2%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [FZJ-CMIP-nitrogen-2-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-nitrogen-2-0%22%7D)
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584172](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584172).
 
@@ -67,6 +82,16 @@ to make it as close to being CF-compliant as possible.
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### FZJ-CMIP-nitrogen-1-2
+
+A member of the community raised an issue with a discontinuity between the piControl climatology and
+the historical nitrogen deposition in this version. The full discussion is at
+https://github.com/PCMDI/input4MIPs_CVs/issues/425. FZJ-CMIP-nitrogen-2-0 fixes the underlying issue
+(related to both timing of aerosol property ingestion and the averaging of the piControl climatology
+files). If you have started or completed simulations with FZJ-CMIP-nitrogen-1-2, you do not need to
+restart or re-run them. However, if you have not yet started simulations, please use
+FZJ-CMIP-nitrogen-2-0.
 
 ### FZJ-CMIP-nitrogen-1-1
 
