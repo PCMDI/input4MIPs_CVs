@@ -1,0 +1,25 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "imperialcollege-3-0",
+    "type": "source",
+    "activity_id": "input4MIPs",
+    "authors": [
+        {
+            "affiliations": [
+                "Imperial College, London"
+            ],
+            "email": "h.graven@imperial.ac.uk",
+            "name": "Heather Graven",
+            "orcid": "0000-0003-3934-2502"
+        }
+    ],
+    "contact": "h.graven@imperial.ac.uk",
+    "dataset_category": [
+        "atmosphericState"
+    ],
+    "further_info_url": "https://profiles.imperial.ac.uk/h.graven",
+    "institution_id": "ImperialCollege",
+    "license_id": "CC BY 4.0",
+    "mip_era": "CMIP7",
+    "source_version": "3.0"
+}
