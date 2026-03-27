@@ -53,6 +53,15 @@ For the ScenarioMIP simulations in the production phase of CMIP7, you will need 
 - [PIK-hl-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-hl-1-0-0%22%7D)
 - [PIK-h-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-1-0-0%22%7D).
 
+For extended ScenarioMIP simulations in CMIP7, you will need data from the following source IDs
+
+- PIK-vl-ext-1-0-0
+- PIK-ln-ext-1-0-0
+- PIK-l-ext-1-0-0
+- PIK-ml-ext-1-0-0
+- PIK-m-ext-1-0-0
+- PIK-hl-ext-1-0-0
+- PIK-h-ext-1-0-0
 
 No DOIs are available for this data.
 
@@ -96,9 +105,13 @@ Apply the 1850 value as a constant.
 
 ### Grids and frequencies provided
 
-We provide annual data (1850-2100) on a regular 0.25 ('gn') and 0.5 degree ('gr') grid.
-Historical files cover 1850-2025.
-Future scenario files cover 2022-2100, i.e. include additional historical years for convenience.
+We provide annual data (1850-2300) on a regular 0.25 ('gn') and 0.5 degree ('gr') grid, as follows:
+ - Historical files cover 1850-2025.
+- Future scenario files cover 2022-2100, i.e. include additional historical years for convenience.
+- Extended future scenario files cover 2100-2200 and 2201-2300. 
+
+In the current absence of SSP projections beyond 2300, we recommend keeping population constant after 2300.
+
 Please notify the authors if you would need other resolutions for your simulations. 
 
 ### Variables provided
@@ -116,16 +129,22 @@ and project [WorldPop](https://www.worldpop.org/). The data was created at high 
 and upscaled to 0.25 and 0.5 degree. The following steps were followed:
 
 (1) WorldPop [gridded constrained global population data for 2015-2025](https://www.worldpop.org/blog/worldpop-unveils-global-2-next-generation-global-population-dataset/) 
-were combined with FuturePop [projections based on SSP v3.2 trajectories](https://hub.worldpop.org/doi/10.5258/SOTON/WP00849).
+were combined with FuturePop [projections based on SSP v3.2 trajectories](https://hub.worldpop.org/doi/10.5258/SOTON/WP00849), 
+as well as extended FuturePop projections until 2300 based on extended SSPs from IIASA.
 
 (2) The WorldPop gridded population was extrapolated back to 1975 using [Global Human Settlement Layer](https://human-settlement.emergency.copernicus.eu/)
 
 (3) Data were further extrapolated back to 1850 using [HYDE 3.2](https://geo.public.data.uu.nl/vault-hyde/HYDE%203.2%5B1710494848%5D/original/)
 
 (4) The data were adjusted to match annual national timeseries of population:
+
 (a) 1850-1949 from a new compilation of historical population, adjusted to modern country borders made in [COMPASS D3.1](https://zenodo.org/records/14892500)
+
 (b) 1950-2023 from United Nations [World Population Prospects 2024](https://population.un.org/wpp/) with minor adjustments made in [COMPASS D3.1](https://zenodo.org/records/14892500).
+
 (c) 2025-2100 extrapolated from 2020 with gap-filled SSP v3.2 data, and 2024 interpolated between 2023 and 2025.
+
+(d) 2101-2300 extrapolated from 2100 with gap-filled SSP extensions.
 
 (5) The population counts were converted to population density based on the size of grid-cells converted from their latitude.
 
