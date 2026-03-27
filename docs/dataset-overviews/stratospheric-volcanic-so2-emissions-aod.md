@@ -90,6 +90,8 @@ There are dedicated pre-industrial control files for aerosol optical properties.
 For aerosol optical properties, these are provided as climatologies
 and hence have `monC` in their name
 (they also have a time axis with only twelve points, so they're hard to miss).
+(Note that these files were calculated slightly differently to how it was done in CMIP6,
+see [data differences from CMIP6 below](#data)).
 There is no recommendation for teams who want to run pre-industrial control
 with volcanic emissions as yet, that is still being developed
 in collaboration with early testing teams who are interested in this application.
@@ -149,6 +151,15 @@ We do not have a direct mapping/translation guide at this stage
 [the GMD pre-print documenting the stratospheric aerosol optical property dataset](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4990/).
 
 ### Data
+
+The CMIP7 climatology files for extinction, single scattering albedo and asymetry
+were all calculated by using a standard average over time.
+This is different from CMIP6
+where the climatology for single scattering albedo and assymetry were calculated as weighted averages
+(the weights for single scattering albedo being the extinction;
+the weights for assymetry being the product of extinction and single scattering albedo).
+For consistency and because of the small impact,
+we recommend using the climatology files as given without the weighted average.
 
 For a full dive into the changes from CMIP6, see
 the GMD pre-prints documenting the stratospheric
