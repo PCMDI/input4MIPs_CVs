@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.34 (2026-03-27)
+
+
+### 📚 Improved Documentation
+
+- Added documentation clarifying how the stratospheric volcanic aerosol optical depth pre-industrial control data was produced and how it differs from CMIP6 in response to [this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/175#discussioncomment-16130203). ([#431](https://github.com/PCMDI/input4MIPs_CVs/pull/431))
+
+
 ## input4MIPs CVs v6.7.33 (2026-03-23)
 
 
