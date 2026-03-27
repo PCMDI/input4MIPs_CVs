@@ -64,6 +64,31 @@ CR-CMIP-0-4-0:
 
     For basic analysis of the changes between versions,
     see [this repo](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
+CR-vl-1-0-0:
+  comment_post_publication: >-
+    The CR-vl-1-0-0 dataset has been superseded by CR-vl-1-1-0.
+    CR-vl-1-1-0 fixes small, but nonetheless unphysical, negative values in CR-vl-1-0-0.
+    CR-vl-1-1-0 also has other small differences (relative difference <1e-3)
+    because it is consistent with the extensions
+    (which define concentrations out to the end of 2100,
+    whereas CR-vl-1-0-0 is based on the assumption of constant emissions
+    from June 2100 to December 2100).
+
+    However, given how small the changes are,
+    if you have already performed simulations with CR-vl-1-0-0,
+    you do not need to re-run them.
+CR-h-1-0-0:
+  comment_post_publication: >-
+    The CR-h-1-0-0 dataset has been superseded by CR-h-1-1-0.
+    CR-h-1-1-0 has small differences from CR-h-1-0-0 (relative difference <1e-3)
+    because it is consistent with the extensions
+    (which define concentrations out to the end of 2100,
+    whereas CR-h-1-0-0 is based on the assumption of constant emissions
+    from June 2100 to December 2100).
+
+    However, given how small the changes are,
+    if you have already performed simulations with CR-h-1-0-0,
+    you do not need to re-run them.
 DRES-CMIP-BB4CMIP7-1-0:
   license_id: CC BY 4.0
   comment_post_publication: >-
