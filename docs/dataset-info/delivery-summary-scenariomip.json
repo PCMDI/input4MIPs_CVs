@@ -14,7 +14,9 @@
     "land_use": {
         "source_ids": [
             "UofMD-landState-vl-3-1",
-            "UofMD-landState-h-3-1"
+            "UofMD-landState-h-3-1",
+            "UofMD-landState-vl-3-1-1",
+            "UofMD-landState-h-3-1-1"
         ]
     },
     "ghg_concentrations": {

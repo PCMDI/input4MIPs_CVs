@@ -305,3 +305,21 @@ UofMD-landState-3-1:
     However, for completeness, we have released an update (v3.1.1)
     which removes this unnecessary variable
     (but using v3.1 is fine if that is what you're doing already).
+UofMD-landState-3-1-1:
+  comment_post_publication: >-
+    v3.1.1 did not include a DOI attribute.
+    v3.1.2 adds this attribute and other funding information.
+    The data itself is unchanged, so you can use either v3.1.1 or v3.1.2 for simulations
+    (but please get metadata, particularly DOIs from v3.1.2).
+UofMD-landState-vl-3-1:
+  comment_post_publication: >-
+    v3.1 did not include a DOI attribute or information about the underlying IAM that produced the scenario.
+    v3.1.1 adds this attribute and other funding information.
+    The data itself is unchanged, so you can use either v3.1 or v3.1.1 for simulations
+    (but please get metadata, particularly DOIs from v3.1.1).
+UofMD-landState-h-3-1:
+  comment_post_publication: >-
+    v3.1 did not include a DOI attribute or information about the underlying IAM that produced the scenario.
+    v3.1.1 adds this attribute and other funding information.
+    The data itself is unchanged, so you can use either v3.1 or v3.1.1 for simulations
+    (but please get metadata, particularly DOIs from v3.1.1).
