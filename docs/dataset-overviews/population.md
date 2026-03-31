@@ -104,7 +104,8 @@ Apply the 1850 value as a constant.
 ### Grids and frequencies provided
 
 We provide annual data (1850-2300) on a regular 0.25 ('gn') and 0.5 degree ('gr') grid, as follows:
- - Historical files cover 1850-2025.
+
+- Historical files cover 1850-2025.
 - Future scenario files cover 2022-2100, i.e. include additional historical years for convenience.
 - Extended future scenario files cover 2100-2200 and 2201-2300. 
 
