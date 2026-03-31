@@ -26,8 +26,8 @@
         },
         "scenariomip-cmip7": {
             "source_ids": [ 
-                "IIASA-IAMC-vl-1-0-0", 
-                "IIASA-IAMC-h-1-0-0"
+                "IIASA-IAMC-vl-1-1-0",
+                "IIASA-IAMC-h-1-1-0"
             ]
         }
     },
@@ -35,7 +35,12 @@
         "deck-testing": { "source_ids": [ "UofMD-landState-3-0" ] , "ok_if_not_latest": true },
         "deck-cmip7": { "source_ids": [ "UofMD-landState-3-1-1" ] },
         "scenariomip-testing": null,
-        "scenariomip-cmip7": null
+        "scenariomip-cmip7": {
+            "source_ids": [
+                "UofMD-landState-vl-3-1",
+                "UofMD-landState-h-3-1"
+            ]
+        }
     },
     "ghg_concentrations": {
         "deck-testing": { "source_ids": [ "CR-CMIP-0-4-0" ], "ok_if_not_latest": true },
@@ -131,8 +136,8 @@
         },
         "scenariomip-cmip7": {
             "source_ids": [ 
-                "IIASA-IAMC-vl-1-0-0", 
-                "IIASA-IAMC-h-1-0-0"
+                "IIASA-IAMC-vl-1-1-0",
+                "IIASA-IAMC-h-1-1-0"
             ]
         }
     },
@@ -144,7 +149,10 @@
     },
     "nitrogen-deposition": {
         "deck-testing": null,
-        "deck-cmip7": { "source_ids": [ "FZJ-CMIP-nitrogen-1-2" ] },
+        "deck-cmip7": { 
+            "source_ids": [ "FZJ-CMIP-nitrogen-2-0" ],
+            "ok_if_not_latest": false
+        },
         "scenariomip-testing": null,
         "scenariomip-cmip7": null
     },

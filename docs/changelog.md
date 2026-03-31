@@ -22,6 +22,102 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.34 (2026-03-27)
+
+
+### 📚 Improved Documentation
+
+- Added documentation clarifying how the stratospheric volcanic aerosol optical depth pre-industrial control data was produced and how it differs from CMIP6 in response to [this discussion](https://github.com/PCMDI/input4MIPs_CVs/discussions/175#discussioncomment-16130203). ([#431](https://github.com/PCMDI/input4MIPs_CVs/pull/431))
+
+
+## input4MIPs CVs v6.7.33 (2026-03-23)
+
+
+### 📚 Improved Documentation
+
+- Added 2026-03-20 IPO email update ([#428](https://github.com/PCMDI/input4MIPs_CVs/pull/428))
+
+
+## input4MIPs CVs v6.7.32 (2026-03-20)
+
+
+### ⚠️ Breaking Changes
+
+- Added data with the source ID `FZJ-CMIP-nitrogen-2-0`. This data updates the historical forcing data provided in `FZJ-CMIP-nitrogen-1-2`.
+
+  As a result of an issue being found ([#425](https://github.com/PCMDI/input4MIPs_CVs/issues/425)),
+  a new version of the nitrogen deposition forcing has been released.
+
+  Modelling centres who have already run their piControl and/or historical simulations do not need to re-run.
+  Modelling centres who have not yet started their piControl and/or historical simulations should use the `FZJ-CMIP-nitrogen-2-0` data.
+  For further details about the error and recommended action,
+  please see [the nitrogen deposition dataset page](https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/nitrogen-deposition/).
+
+  If any modelling centres run piControl and/or historical simulations with both the `FZJ-CMIP-nitrogen-2-0` and `FZJ-CMIP-nitrogen-1-2` forcing,
+  these simulations would be of interest to the Forcings Task Team. ([#427](https://github.com/PCMDI/input4MIPs_CVs/pull/427))
+
+### 📚 Improved Documentation
+
+- Fixed a typo in the stratospheric aerosol forcing page ([#427](https://github.com/PCMDI/input4MIPs_CVs/pull/427))
+
+
+## input4MIPs CVs v6.7.31 (2026-03-18)
+
+
+### 📚 Improved Documentation
+
+- Fixed up broken links in CHANGELOG entries for the historical GHG concentration forcing ([#426](https://github.com/PCMDI/input4MIPs_CVs/pull/426))
+
+
+## input4MIPs CVs v6.7.30 (2026-03-02)
+
+
+### 📚 Improved Documentation
+
+- Added email update from IPO from 2026-02-26 and sorted email updates by date ([#424](https://github.com/PCMDI/input4MIPs_CVs/pull/424))
+
+### 🔧 Trivial/Internal Changes
+
+- [#423](https://github.com/PCMDI/input4MIPs_CVs/pull/423)
+
+
+## input4MIPs CVs v6.7.29 (2026-02-26)
+
+
+### 🆕 Features
+
+- Added information about where to get the simple plumes datasets to use for ScenarioMIP. These are not distributed via ESGF, hence we cannot point to any specific source IDs. ([#422](https://github.com/PCMDI/input4MIPs_CVs/pull/422))
+
+
+## input4MIPs CVs v6.7.28 (2026-02-26)
+
+
+### 📚 Improved Documentation
+
+- Added the CMIP IPO email communication from 2026-02-24 ([#421](https://github.com/PCMDI/input4MIPs_CVs/pull/421))
+
+
+## input4MIPs CVs v6.7.27 (2026-02-24)
+
+
+### 🆕 Features
+
+- Added land use datasets for high priority ScenarioMIP simulations under the source IDs `UofMD-landState-vl-3-1` and `UofMD-landState-h-3-1` ([#417](https://github.com/PCMDI/input4MIPs_CVs/pull/417))
+
+
+## input4MIPs CVs v6.7.26 (2026-02-23)
+
+
+### ⚠️ Breaking Changes
+
+- Added updated scenario emissions datasets
+
+  These fix minor issues in processing,
+  most notably the removal of small negative values.
+  If you can, please restart any simulations which used 1.0 datasets
+  and run them with the 1.1 datasets instead. ([#418](https://github.com/PCMDI/input4MIPs_CVs/pull/418))
+
+
 ## input4MIPs CVs v6.7.25 (2026-02-17)
 
 

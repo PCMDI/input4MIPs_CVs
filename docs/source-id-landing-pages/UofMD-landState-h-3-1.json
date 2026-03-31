@@ -1,0 +1,80 @@
+{
+  "creators": [
+    {
+      "affiliation": "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA",
+      "creatorName": "Chini, Louise",
+      "email": "lchini@umd.edu",
+      "familyName": "Chini",
+      "givenName": "Louise",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-9070-3505",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA",
+      "creatorName": "Hurtt, George",
+      "email": "gchurtt@umd.edu",
+      "familyName": "Hurtt",
+      "givenName": "George",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0001-7278-202X",
+        "schemeURI": "https://orcid.org/"
+      }
+    }
+  ],
+  "dates": [
+    {
+      "date": "2026-02-20",
+      "dateType": "Created"
+    }
+  ],
+  "descriptions": [
+    {
+      "descriptionType": "Abstract",
+      "text": "CMIP forcing dataset (input4MIPs).\nThis is all data published under the unique ID (known as a source ID) UofMD-landState-h-3-1."
+    }
+  ],
+  "formats": [
+    {
+      "format": "application/x-netcdf"
+    }
+  ],
+  "fundingReferences": [],
+  "identifier": {
+    "id": "10.25981/ESGF.input4MIPs.CMIP7/2521499",
+    "identifierType": "DOI"
+  },
+  "language": "en",
+  "publication_year": 2026,
+  "publisher": "Earth System Grid Federation",
+  "relatedIdentifiers": [],
+  "resourceType": {
+    "resourceType": "Digital",
+    "resourceTypeGeneral": "Dataset"
+  },
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+      "rightsURI": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-h-3-1",
+      "subjectScheme": "DRS"
+    },
+    {
+      "subject": "forcing data"
+    },
+    {
+      "subject": "climate"
+    },
+    {
+      "subject": "CMIP7"
+    }
+  ],
+  "titles": "UofMD-landState-h-3-1 data provided as part of input4MIPs"
+}

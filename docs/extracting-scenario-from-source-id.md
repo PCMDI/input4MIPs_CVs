@@ -74,6 +74,7 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "FZJ-CMIP-ozone-1-2",
         "FZJ-CMIP-ozone-2-0",
         "IIASA-IAMC-1-0-0",
+        "IIASA-IAMC-1-1-0",
         "ImperialCollege-3-0",
         "MRI-JRA55-do-1-6-0",
         "PCMDI-AMIP-1-1-10",
@@ -135,11 +136,12 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
     KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho", "scendraft1", "scendraft2"}
 
     for known_prefix in (
-        "PIK-",
         "CR-",
-        "UOEXETER-",
-        "SOLARIS-HEPPA-",
         "IIASA-IAMC-",
+        "PIK-",
+        "SOLARIS-HEPPA-",
+        "UOEXETER-",
+        "UofMD-landState-",
     ):
         if known_prefix in source_id:
             # Assume that scenario information is the first part of the hyphen-separated

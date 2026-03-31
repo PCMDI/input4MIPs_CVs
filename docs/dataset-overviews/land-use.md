@@ -48,7 +48,21 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 ##### CMIP7
 
-No data available for this phase yet.
+For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
+
+- [UofMD-landState-vl-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-3-1%22%7D)
+- [UofMD-landState-h-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-h-3-1%22%7D).
+
+
+The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2521499](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2521499).
+
+This data is for use in CMIP7 production simulations.
+All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
+This metadata value appears both in the file's global metadata as well as its metadata on ESGF.
+
+If you find an issue, please
+[create an issue on GitHub](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md)
+so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 

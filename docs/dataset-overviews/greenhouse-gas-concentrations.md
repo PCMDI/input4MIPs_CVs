@@ -290,17 +290,18 @@ already performed simulations with CR-h-1-0-0, you do not need to re-run them.
 
 ### CR-CMIP-0-4-0
 
-CR-CMIP-1-0-0 switches to much more conventional naming for gases. The affected gases are: c2f6
-(previously pfc116), c3f8 (pfc218), c4f10 (pfc3110), c5f12 (pfc4112), c6f14 (pfc5114), c7f16
-(pfc6116), c8f18 (pfc7118), cc4f8 (pfc318) and ch3ccl3 (hcc140a). A DOI is now also included in each
-file. Please use it so we can track usage of these files. In terms of science, CR-CMIP-1-0-0 updates
-to the latest ice core and AGAGE data, as well as using better data sources for HFC23, CF4, C2F6 and
-C3F8 than CR-CMIP-0-4-0. CR-CMIP-1-0-0 also provides a smoother transition from ice core based
-records to more recent records (i.e. flask and in-situ samples) and more sensible pre-industrial
-values for gases with non-zero pre-industrial concentrations. It also uses the Scripps CO2 record to
-handle the period from 1959  to the start of the flask and in-situ samples from other networks. The
-CR-CMIP-1-0-0 dataset also provides much better information about the original data sources. As a
-result, CR-CMIP-0-4-0 is deprecated. For the full CHANGELOG, see
+CR-CMIP-0-4-0 is superceded by CR-CMIP-1-0-0. CR-CMIP-1-0-0 switches to much more conventional
+naming for gases. The affected gases are: c2f6 (previously pfc116), c3f8 (pfc218), c4f10 (pfc3110),
+c5f12 (pfc4112), c6f14 (pfc5114), c7f16 (pfc6116), c8f18 (pfc7118), cc4f8 (pfc318) and ch3ccl3
+(hcc140a). In CR-CMIP-1-0-0, a DOI is now also included in each file. Please use it so we can track
+usage of these files. In terms of science, CR-CMIP-1-0-0 updates to the latest ice core and AGAGE
+data, as well as using better data sources for HFC23, CF4, C2F6 and C3F8 than CR-CMIP-0-4-0.
+CR-CMIP-1-0-0 also provides a smoother transition from ice core based records to more recent records
+(i.e. flask and in-situ samples) and more sensible pre-industrial values for gases with non-zero
+pre-industrial concentrations. It also uses the Scripps CO2 record to handle the period from 1959
+to the start of the flask and in-situ samples from other networks. The CR-CMIP-1-0-0 dataset also
+provides much better information about the original data sources. As a result, CR-CMIP-0-4-0 is
+deprecated. For the full CHANGELOG, see
 [here](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md).
 For basic analysis of the changes between versions, see [this
 repo](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
@@ -308,10 +309,11 @@ repo](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
 ### CR-CMIP-0-3-0
 
 A number of bugs were identified in v0.3.0, see
-[https://github.com/PCMDI/input4MIPs_CVs/discussions/144](). As far as we are aware, v0.4.0 fixes
-all major bugs identified in v0.3.0. For the full list of updates since v0.3.0 (and before), see
-[https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md]().
+[https://github.com/PCMDI/input4MIPs_CVs/discussions/144](https://github.com/PCMDI/input4MIPs_CVs/discussions/144).
+As far as we are aware, v0.4.0 fixes all major bugs identified in v0.3.0. For the full list of
+updates since v0.3.0 (and before), see
+[https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md](https://github.com/climate-resource/CMIP-GHG-Concentration-Generation/blob/main/CHANGELOG.md).
 For further analysis of the changes between versions, see
-[https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations]().
+[https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
 
 <!--- end-revision-history -->
