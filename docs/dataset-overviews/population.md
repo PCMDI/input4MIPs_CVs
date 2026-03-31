@@ -10,8 +10,10 @@
 
 ## Summary
 
-At present, only data for the historical period (1850-2025) is available.
-Data for future scenarios will be added at a later date.
+The CMIP7 version of the population density dataset
+for the DECK and ScenarioMIP simulations has been released.
+If you find any problems,
+please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md).
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -25,7 +27,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-1%22%7D)
 
-No DOIs are available for this data.
+The data has the DOI: [https://doi.org/10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -61,7 +63,7 @@ For the ScenarioMIP simulations in the production phase of CMIP7, you will need 
 - [PIK-h-ext-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-ext-1-0-0%22%7D).
 
 
-No DOIs are available for this data.
+The data has the DOI: [https://doi.org/10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
