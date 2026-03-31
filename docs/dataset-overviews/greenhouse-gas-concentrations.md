@@ -11,12 +11,14 @@
 ## Summary
 
 The CMIP7 version of the greenhouse gas concentration dataset
-for the DECK simulations has been released.
-**Test** data is available for the ScenarioMIP simulations.
+for the DECK and ScenarioMIP simulations has been released.
 If you find any problems,
 please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md).
-Discussions on this version can be found in
-[https://github.com/PCMDI/input4MIPs_CVs/discussions/235](https://github.com/PCMDI/input4MIPs_CVs/discussions/235).
+
+Note that v1.0.0 of the greenhouse gas scenario forcings has been superseded.
+However, the differences from v1.0.0 are very small so,
+if you have already run simulations using v1.0.0 datasets,
+you do not need to re-run with the newer datasets.
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -58,11 +60,23 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [CR-vl-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-1-0-0%22%7D)
-- [CR-h-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-h-1-0-0%22%7D).
+- [CR-vl-ext-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-ext-1-1-0%22%7D)
+- [CR-vl-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-vl-1-1-0%22%7D)
+- [CR-ml-ext-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-ml-ext-1-1-0%22%7D)
+- [CR-ml-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-ml-1-1-0%22%7D)
+- [CR-m-ext-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-m-ext-1-1-0%22%7D)
+- [CR-m-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-m-1-1-0%22%7D)
+- [CR-ln-ext-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-ln-ext-1-1-0%22%7D)
+- [CR-ln-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-ln-1-1-0%22%7D)
+- [CR-l-ext-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-l-ext-1-1-0%22%7D)
+- [CR-l-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-l-1-1-0%22%7D)
+- [CR-hl-ext-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-hl-ext-1-1-0%22%7D)
+- [CR-hl-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-hl-1-1-0%22%7D)
+- [CR-h-ext-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-h-ext-1-1-0%22%7D)
+- [CR-h-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CR-h-1-1-0%22%7D).
 
 
-The data has the DOI: [dev-test](https://doi.org/dev-test).
+The data has the DOI: [10.5281/zenodo.19243739](https://doi.org/10.5281/zenodo.19243739).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -256,6 +270,23 @@ For reference, the CMIP6 data can be found
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### CR-vl-1-0-0
+
+The CR-vl-1-0-0 dataset has been superseded by CR-vl-1-1-0. CR-vl-1-1-0 fixes small, but nonetheless
+unphysical, negative values in CR-vl-1-0-0. CR-vl-1-1-0 also has other small differences (relative
+difference <1e-3) because it is consistent with the extensions (which define concentrations out to
+the end of 2100, whereas CR-vl-1-0-0 is based on the assumption of constant emissions from June 2100
+to December 2100). However, given how small the changes are, if you have already performed
+simulations with CR-vl-1-0-0, you do not need to re-run them.
+
+### CR-h-1-0-0
+
+The CR-h-1-0-0 dataset has been superseded by CR-h-1-1-0. CR-h-1-1-0 has small differences from
+CR-h-1-0-0 (relative difference <1e-3) because it is consistent with the extensions (which define
+concentrations out to the end of 2100, whereas CR-h-1-0-0 is based on the assumption of constant
+emissions from June 2100 to December 2100). However, given how small the changes are, if you have
+already performed simulations with CR-h-1-0-0, you do not need to re-run them.
 
 ### CR-CMIP-0-4-0
 
