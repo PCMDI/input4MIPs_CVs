@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.35 (2026-03-31)
+
+
+### 🆕 Features
+
+- Added greenhouse gas concentration forcing for all ScenarioMIP scenarios and their extensions (see source IDs of the form `CR-*-1-1-0`). This includes updates of the already released `vl` and `h` scenario forcings, but these updates are small so if you have already run with the v1.0.0 versions of these forcings for the `vl` or `h` simulations, you do not need to re-run. ([#433](https://github.com/PCMDI/input4MIPs_CVs/pull/433))
+
+
 ## input4MIPs CVs v6.7.34 (2026-03-27)
 
 
