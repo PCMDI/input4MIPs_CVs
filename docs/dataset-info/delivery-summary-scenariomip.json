@@ -19,8 +19,20 @@
     },
     "ghg_concentrations": {
         "source_ids": [
-            "CR-vl-1-0-0",
-            "CR-h-1-0-0"
+            "CR-vl-ext-1-1-0",
+            "CR-vl-1-1-0",
+            "CR-ml-ext-1-1-0",
+            "CR-ml-1-1-0",
+            "CR-m-ext-1-1-0",
+            "CR-m-1-1-0",
+            "CR-ln-ext-1-1-0",
+            "CR-ln-1-1-0",
+            "CR-l-ext-1-1-0",
+            "CR-l-1-1-0",
+            "CR-hl-ext-1-1-0",
+            "CR-hl-1-1-0",
+            "CR-h-ext-1-1-0",
+            "CR-h-1-1-0"
         ]
     },
     "co2_isotopes": {
@@ -66,12 +78,19 @@
     "population": {
         "source_ids": [
             "PIK-vl-1-0-0",
+            "PIK-vl-ext-1-0-0",
             "PIK-ln-1-0-0",
+            "PIK-ln-ext-1-0-0",
             "PIK-l-1-0-0",
+            "PIK-l-ext-1-0-0",
             "PIK-ml-1-0-0",
+            "PIK-ml-ext-1-0-0",
             "PIK-m-1-0-0",
+            "PIK-m-ext-1-0-0",
             "PIK-hl-1-0-0",
-            "PIK-h-1-0-0"
+            "PIK-hl-ext-1-0-0",
+            "PIK-h-1-0-0",
+            "PIK-h-ext-1-0-0"
         ]
     }
 }
