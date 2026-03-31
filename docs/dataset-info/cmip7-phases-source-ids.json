@@ -59,8 +59,20 @@
         },
         "scenariomip-cmip7": { 
             "source_ids": [
-                "CR-vl-1-0-0",
-                "CR-h-1-0-0"
+                "CR-vl-ext-1-1-0",
+                "CR-vl-1-1-0",
+                "CR-ml-ext-1-1-0",
+                "CR-ml-1-1-0",
+                "CR-m-ext-1-1-0",
+                "CR-m-1-1-0",
+                "CR-ln-ext-1-1-0",
+                "CR-ln-1-1-0",
+                "CR-l-ext-1-1-0",
+                "CR-l-1-1-0",
+                "CR-hl-ext-1-1-0",
+                "CR-hl-1-1-0",
+                "CR-h-ext-1-1-0",
+                "CR-h-1-1-0"
             ]
         }
     },
