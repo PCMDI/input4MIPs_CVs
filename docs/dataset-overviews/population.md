@@ -15,13 +15,6 @@ for the DECK and ScenarioMIP simulations has been released.
 If you find any problems,
 please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md).
 
-Please note, the ScenarioMIP data has a DOI:
-[https://doi.org/10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
-However, this was not included in the file attributes
-so does not appear in the (auto-generated) text below.
-For the DOI, please ignore the text below and use the DOI given above
-if you need to cite the data.
-
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
@@ -70,7 +63,7 @@ For the ScenarioMIP simulations in the production phase of CMIP7, you will need 
 - [PIK-h-ext-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-ext-1-0-0%22%7D).
 
 
-No DOIs are available for this data.
+The data has the DOI: [10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
