@@ -46,22 +46,20 @@ No data available for this phase yet.
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
 - [PIK-vl-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vl-1-0-0%22%7D)
+- [PIK-vl-ext-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-vl-ext-1-0-0%22%7D)
 - [PIK-ln-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ln-1-0-0%22%7D)
+- [PIK-ln-ext-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ln-ext-1-0-0%22%7D)
 - [PIK-l-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-l-1-0-0%22%7D)
+- [PIK-l-ext-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-l-ext-1-0-0%22%7D)
 - [PIK-ml-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ml-1-0-0%22%7D)
+- [PIK-ml-ext-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-ml-ext-1-0-0%22%7D)
 - [PIK-m-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-m-1-0-0%22%7D)
+- [PIK-m-ext-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-m-ext-1-0-0%22%7D)
 - [PIK-hl-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-hl-1-0-0%22%7D)
-- [PIK-h-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-1-0-0%22%7D).
+- [PIK-hl-ext-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-hl-ext-1-0-0%22%7D)
+- [PIK-h-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-1-0-0%22%7D)
+- [PIK-h-ext-1-0-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-ext-1-0-0%22%7D).
 
-For extended ScenarioMIP simulations in CMIP7, you will need data from the following source IDs
-
-- PIK-vl-ext-1-0-0
-- PIK-ln-ext-1-0-0
-- PIK-l-ext-1-0-0
-- PIK-ml-ext-1-0-0
-- PIK-m-ext-1-0-0
-- PIK-hl-ext-1-0-0
-- PIK-h-ext-1-0-0
 
 No DOIs are available for this data.
 
