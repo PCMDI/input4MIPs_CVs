@@ -271,7 +271,7 @@ def diff_db_to_changes_comment(
                 "",
                 f"Affected source IDs:\n- {affected_source_ids}",
                 "",
-                f"Attributes changed (may not affect all source IDs): {sorted(diffs_incl_source_id['attribute_changed'].unique())}",
+                f"Attributes changed (may not affect all source IDs): {sorted(diffs_incl_source_id['attribute_changed'].dropna().unique())}",
                 "",
                 f"Operations performed (may not affect all source IDs): {sorted(diffs_incl_source_id['operation'].unique())}",
                 "",
