@@ -183,18 +183,26 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "UofMD-landState-3-0",
         "UofMD-landState-3-1",
         "UofMD-landState-3-1-1",
+        "UofMD-landState-3-1-2",
     }
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
         return None
 
     KNOWN_SCENARIOS = {
         "vl",
+        "vl-ext",
         "ln",
+        "ln-ext",
         "l",
+        "l-ext",
         "m",
+        "m-ext",
         "ml",
+        "ml-ext",
         "h",
+        "h-ext",
         "hl",
+        "hl-ext",
         # Used for scenario indepdendent forcings i.e. volcanic and solar
         "ScenarioMIP",
     }
@@ -215,7 +223,11 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
             # e.g. we are assuming that for a prefix like "PIK-",
             # the source ID is of the form "PIK-scenarioname-other-stuff"
             # e.g. "PIK-vllo-0-1-0".
-            scenario = source_id.split(known_prefix)[1].split("-")[0]
+            toks = source_id.split(known_prefix)[1].split("-")
+            scenario = toks[0]
+            if toks[1] == "ext":
+                scenario = "-".join(toks[:2])
+
             if scenario in KNOWN_SCENARIOS:
                 return ScenarioInfo(name=scenario, legacy=False)
 
@@ -244,7 +256,7 @@ def get_version(source_id: str, source_id_stub: str, cmip7_phase: str) -> Versio
         tmp = tmp.replace(danger, sanitised)
 
     if (scenario_info := extract_scenario_from_source_id(source_id)) is not None:
-        tmp = tmp.replace(f"{scenario_info.name}.", "")
+        tmp = tmp.replace(f"{scenario_info.name.replace('-', '.')}.", "")
 
     res = Version(tmp)
 

@@ -22,6 +22,38 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.38 (2026-04-09)
+
+
+### 🎉 Improvements
+
+- Added land-use data with better metadata (see source IDs `UofMD-landState-2-1-2`, `UofMD-landState-vl-3-1-1`, `UofMD-landState-h-3-1-1`), although the data itself is unchanged so simulations based on the previous versions (`UofMD-landState-3-1-1`, `UofMD-landState-vl-3-1`, `UofMD-landState-h-3-1`) do not need to be re-run ([#438](https://github.com/PCMDI/input4MIPs_CVs/pull/438))
+
+
+## input4MIPs CVs v6.7.37 (2026-04-09)
+
+
+### 📚 Improved Documentation
+
+- Added note about which nitrogen deposition forcing data to use if pre-industrial control cannot be re-run ([#437](https://github.com/PCMDI/input4MIPs_CVs/pull/437))
+
+
+## input4MIPs CVs v6.7.36 (2026-04-02)
+
+
+### 🆕 Features
+
+- Added extensions (2101-2300) for population forcing (see source IDs `PIK-*-ext-1-0-0`) ([#436](https://github.com/PCMDI/input4MIPs_CVs/pull/436))
+
+
+## input4MIPs CVs v6.7.35 (2026-03-31)
+
+
+### 🆕 Features
+
+- Added greenhouse gas concentration forcing for all ScenarioMIP scenarios and their extensions (see source IDs of the form `CR-*-1-1-0`). This includes updates of the already released `vl` and `h` scenario forcings, but these updates are small so if you have already run with the v1.0.0 versions of these forcings for the `vl` or `h` simulations, you do not need to re-run. ([#433](https://github.com/PCMDI/input4MIPs_CVs/pull/433))
+
+
 ## input4MIPs CVs v6.7.34 (2026-03-27)
 
 

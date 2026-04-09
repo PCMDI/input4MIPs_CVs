@@ -24,6 +24,11 @@ Therefore, existing model simulations based on `FZJ-CMIP-nitrogen-1-2`
 do not need to be rerun if such a rerun is not possible.
 Modelling teams that have not begun their simulations should, however,
 use the latest version of the forcings as specified below.
+If you have run pre-industrial control simulations with `FZJ-CMIP-nitrogen-1-2`,
+it is recommended to nonetheless run historical simulations with `FZJ-CMIP-nitrogen-2-0`
+because the discontinuity going from pre-industrial control `FZJ-CMIP-nitrogen-1-2`
+to historical `FZJ-CMIP-nitrogen-2-0` is expected to introduce smaller issues
+than using `FZJ-CMIP-nitrogen-1-2` over the historical period.
 Modelling teams should record the version of the forcing files they use following the CMIP7 guidance
 (see the 5<sup>th</sup> dot point here https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_modellers/#1-requirements-expectations).
 

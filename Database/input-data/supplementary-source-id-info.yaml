@@ -65,6 +65,31 @@ CR-CMIP-0-4-0:
 
     For basic analysis of the changes between versions,
     see [this repo](https://github.com/climate-resource/CMIP6-vs-CMIP7-GHG-Concentrations).
+CR-vl-1-0-0:
+  comment_post_publication: >-
+    The CR-vl-1-0-0 dataset has been superseded by CR-vl-1-1-0.
+    CR-vl-1-1-0 fixes small, but nonetheless unphysical, negative values in CR-vl-1-0-0.
+    CR-vl-1-1-0 also has other small differences (relative difference <1e-3)
+    because it is consistent with the extensions
+    (which define concentrations out to the end of 2100,
+    whereas CR-vl-1-0-0 is based on the assumption of constant emissions
+    from June 2100 to December 2100).
+
+    However, given how small the changes are,
+    if you have already performed simulations with CR-vl-1-0-0,
+    you do not need to re-run them.
+CR-h-1-0-0:
+  comment_post_publication: >-
+    The CR-h-1-0-0 dataset has been superseded by CR-h-1-1-0.
+    CR-h-1-1-0 has small differences from CR-h-1-0-0 (relative difference <1e-3)
+    because it is consistent with the extensions
+    (which define concentrations out to the end of 2100,
+    whereas CR-h-1-0-0 is based on the assumption of constant emissions
+    from June 2100 to December 2100).
+
+    However, given how small the changes are,
+    if you have already performed simulations with CR-h-1-0-0,
+    you do not need to re-run them.
 DRES-CMIP-BB4CMIP7-1-0:
   license_id: CC BY 4.0
   comment_post_publication: >-
@@ -173,6 +198,34 @@ PIK-CMIP-1-0-0:
     PIK-CMIP-1-0-1 also includes a fix to a bug discovered in the 0.25 degree resolution files in PIK-CMIP-1-0-0
     thanks to @slm7826 and @vnaik60 (see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/362">#362</a>).
     The 0.5 degree data was not affected by this bug.
+PIK-vl-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-vl-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-ln-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-ln-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-l-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-l-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-ml-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-ml-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-m-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-m-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-hl-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-hl-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-h-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-h-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
 SOLARIS-HEPPA-CMIP-4-1:
   publication_status: never_published
 SOLARIS-HEPPA-CMIP-4-2:
@@ -296,3 +349,21 @@ UofMD-landState-3-1:
     However, for completeness, we have released an update (v3.1.1)
     which removes this unnecessary variable
     (but using v3.1 is fine if that is what you're doing already).
+UofMD-landState-3-1-1:
+  comment_post_publication: >-
+    v3.1.1 did not include a DOI attribute.
+    v3.1.2 adds this attribute and other funding information.
+    The data itself is unchanged, so you can use either v3.1.1 or v3.1.2 for simulations
+    (but please get metadata, particularly DOIs from v3.1.2).
+UofMD-landState-vl-3-1:
+  comment_post_publication: >-
+    v3.1 did not include a DOI attribute or information about the underlying IAM that produced the scenario.
+    v3.1.1 adds this attribute and other funding information.
+    The data itself is unchanged, so you can use either v3.1 or v3.1.1 for simulations
+    (but please get metadata, particularly DOIs from v3.1.1).
+UofMD-landState-h-3-1:
+  comment_post_publication: >-
+    v3.1 did not include a DOI attribute or information about the underlying IAM that produced the scenario.
+    v3.1.1 adds this attribute and other funding information.
+    The data itself is unchanged, so you can use either v3.1 or v3.1.1 for simulations
+    (but please get metadata, particularly DOIs from v3.1.1).

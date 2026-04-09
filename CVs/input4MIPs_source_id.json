@@ -873,6 +873,678 @@
         "mip_era":"CMIP7",
         "source_version":"1.0.0"
     },
+    "CR-vl-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-vl-ext-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-ln-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-ln-ext-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-l-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-l-ext-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-ml-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-ml-ext-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-m-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-m-ext-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-hl-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-hl-ext-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-h-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
+    "CR-h-ext-1-1-0":{
+        "activity_id": "input4MIPs",
+        "authors": [
+            {
+                "name": "Zebedee Nicholls",
+                "email": "zebedee.nicholls@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany",
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0002-4767-2723"
+            },
+            {
+                "name": "Florence Bockting",
+                "email": "florence.bockting@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0003-0924-6413"
+            },
+            {
+                "name": "Mika Pflueger",
+                "email": "mika.pflueger@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource S GmbH, Berlin, Germany"
+                ],
+                "orcid": "0000-0002-7814-8916"
+            },
+            {
+                "name": "Malte Meinshausen",
+                "email": "malte.meinshausen@climate-resource.com",
+                "affiliations": [
+                    "Climate Resource, Melbourne, Victoria, Australia",
+                    "School of Geography, Earth and Atmospheric Sciences, The University of Melbourne, Melbourne, Victoria, Australia"
+                ],
+                "orcid": "0000-0003-4048-3521"
+            }
+        ],
+        "contact":"zebedee.nicholls@climate-resource.com;florence.bockting@climate-resource.com;mika.pflueger@climate-resource.com;malte.meinshausen@climate-resource.com",
+        "dataset_category":["GHGConcentrations"],
+        "further_info_url":"https://github.com/climate-resource/cmip7-scenariomip-ghg-concentrations",
+        "institution_id":"CR",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.0"
+    },
     "DRES-CMIP-BB4CMIP7-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -3976,6 +4648,524 @@
         "mip_era":"CMIP7",
         "source_version":"1.0.0"
     },
+    "PIK-h-ext-1-0-0":{
+      "activity_id":"input4MIPs",
+      "authors":[
+          {
+              "affiliations":[
+                  "Baltic Climate Centre, University of Szczecin, Szczecin, Poland",
+                  "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany",
+                  "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland"
+              ],
+              "email":"dominik.paprotny@usz.edu.pl",
+              "name":"Dominik Paprotny",
+              "orcid":"0000-0001-5090-8402"
+          },
+          {
+              "affiliations":[
+                  "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"laurence.hawker@bristol.ac.uk",
+              "name":"Laurence Hawker",
+              "orcid":"0000-0002-8317-7084"
+          },
+          {
+              "affiliations":[
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"M.Bondarenko@soton.ac.uk",
+              "name":"Maksym Bondarenko",
+              "orcid":"0000-0003-4958-6551"
+          },
+          {
+              "affiliations":[
+                  "Department of Social Statistics and Demography, University of Southampton, UK"
+              ],
+              "email":"J.D.Hilton@soton.ac.uk",
+              "name":"Jason Hilton",
+              "orcid":"0000-0001-9473-757X"
+          },
+          {
+              "affiliations":[
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"n.tejedor-garavito@soton.ac.uk",
+              "name":"Natalia Tejedor Garavito",
+              "orcid":"0000-0002-1140-6263"
+          },
+          {
+              "affiliations":[
+                  "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"evgeny.noi@bristol.ac.uk",
+              "name":"Evgeny Noi",
+              "orcid":"0000-0002-7914-1548"
+          },
+          {
+              "affiliations":[
+                  "WorldPop, University of Southampton, Southampton, UK"
+              ],
+              "email":"A.J.Tatem@soton.ac.uk",
+              "name":"Andrew Tatem",
+              "orcid":"0000-0002-7270-941X"
+          }
+      ],
+      "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+      "dataset_category":[
+          "population"
+      ],
+      "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+      "institution_id":"PIK",
+      "license_id":"CC BY 4.0",
+      "mip_era":"CMIP7",
+      "source_version":"1.0.0"
+    },
+    "PIK-hl-ext-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Baltic Climate Centre, University of Szczecin, Szczecin, Poland",
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-m-ext-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                   "Baltic Climate Centre, University of Szczecin, Szczecin, Poland",
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-ml-ext-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Baltic Climate Centre, University of Szczecin, Szczecin, Poland",
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-l-ext-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Baltic Climate Centre, University of Szczecin, Szczecin, Poland",
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-vl-ext-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Baltic Climate Centre, University of Szczecin, Szczecin, Poland",
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
+    "PIK-ln-ext-1-0-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Baltic Climate Centre, University of Szczecin, Szczecin, Poland",
+                    "Institute of Marine and Environmental Sciences, University of Szczecin, Szczecin, Poland",
+                    "Research Department Transformation Pathways, Potsdam Institute for Climate Impact Research (PIK), Member of the Leibniz Association, Potsdam, Germany"
+                ],
+                "email":"dominik.paprotny@usz.edu.pl",
+                "name":"Dominik Paprotny",
+                "orcid":"0000-0001-5090-8402"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"laurence.hawker@bristol.ac.uk",
+                "name":"Laurence Hawker",
+                "orcid":"0000-0002-8317-7084"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"M.Bondarenko@soton.ac.uk",
+                "name":"Maksym Bondarenko",
+                "orcid":"0000-0003-4958-6551"
+            },
+            {
+                "affiliations":[
+                    "Department of Social Statistics and Demography, University of Southampton, UK"
+                ],
+                "email":"J.D.Hilton@soton.ac.uk",
+                "name":"Jason Hilton",
+                "orcid":"0000-0001-9473-757X"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"n.tejedor-garavito@soton.ac.uk",
+                "name":"Natalia Tejedor Garavito",
+                "orcid":"0000-0002-1140-6263"
+            },
+            {
+                "affiliations":[
+                    "School of Geographical Sciences, University of Bristol, Bristol, UK",
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"evgeny.noi@bristol.ac.uk",
+                "name":"Evgeny Noi",
+                "orcid":"0000-0002-7914-1548"
+            },
+            {
+                "affiliations":[
+                    "WorldPop, University of Southampton, Southampton, UK"
+                ],
+                "email":"A.J.Tatem@soton.ac.uk",
+                "name":"Andrew Tatem",
+                "orcid":"0000-0002-7270-941X"
+            }
+        ],
+        "contact":"Dominik Paprotny (dominik.paprotny@usz.edu.pl); Laurence Hawker (laurence.hawker@bristol.ac.uk)",
+        "dataset_category":[
+            "population"
+        ],
+        "further_info_url":"https://github.com/HORIZON-COMPASS/Exposure-and-vulnerability-modelling",
+        "institution_id":"PIK",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0.0"
+    },
     "SOLARIS-HEPPA-CMIP-4-1":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -4720,6 +5910,36 @@
         "mip_era":"CMIP7",
         "source_version":"3.1.1"
     },
+    "UofMD-landState-3-1-2":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"lchini@umd.edu",
+                "name":"Louise Chini",
+                "orcid":"0000-0002-9070-3505"
+            },
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"gchurtt@umd.edu",
+                "name":"George Hurtt",
+                "orcid":"0000-0001-7278-202X"
+            }
+        ],
+        "contact":"lchini@umd.edu, gchurtt@umd.edu",
+        "dataset_category":[
+            "landState"
+        ],
+        "further_info_url":"https://luh.umd.edu/",
+        "institution_id":"UofMD",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"3.1.2"
+    },
     "UofMD-landState-vl-3-1":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -4779,6 +5999,66 @@
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP7",
         "source_version":"3.1"
+    },
+    "UofMD-landState-vl-3-1-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"lchini@umd.edu",
+                "name":"Louise Chini",
+                "orcid":"0000-0002-9070-3505"
+            },
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"gchurtt@umd.edu",
+                "name":"George Hurtt",
+                "orcid":"0000-0001-7278-202X"
+            }
+        ],
+        "contact":"lchini@umd.edu, gchurtt@umd.edu",
+        "dataset_category":[
+            "landState"
+        ],
+        "further_info_url":"https://luh.umd.edu/",
+        "institution_id":"UofMD",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"3.1.1"
+    },
+    "UofMD-landState-h-3-1-1":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"lchini@umd.edu",
+                "name":"Louise Chini",
+                "orcid":"0000-0002-9070-3505"
+            },
+            {
+                "affiliations":[
+                    "Department of Geographical Sciences, University of Maryland, College Park, MD 20742, USA"
+                ],
+                "email":"gchurtt@umd.edu",
+                "name":"George Hurtt",
+                "orcid":"0000-0001-7278-202X"
+            }
+        ],
+        "contact":"lchini@umd.edu, gchurtt@umd.edu",
+        "dataset_category":[
+            "landState"
+        ],
+        "further_info_url":"https://luh.umd.edu/",
+        "institution_id":"UofMD",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"3.1.1"
     },
     "UReading-CCMI-1-1":{
         "activity_id":"input4MIPs",

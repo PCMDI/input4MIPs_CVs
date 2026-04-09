@@ -29,9 +29,9 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [UofMD-landState-3-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-1-1%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [UofMD-landState-3-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-1-2%22%7D)
 
-The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2521499](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2521499).
+The data has the DOI: [10.5281/zenodo.19261724](https://doi.org/10.5281/zenodo.19261724).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -59,11 +59,11 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [UofMD-landState-vl-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-3-1%22%7D)
-- [UofMD-landState-h-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-h-3-1%22%7D).
+- [UofMD-landState-vl-3-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-3-1-1%22%7D)
+- [UofMD-landState-h-3-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-h-3-1-1%22%7D).
 
 
-The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2521499](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2521499).
+The data has the DOIs: [10.5281/zenodo.19353397](https://doi.org/10.5281/zenodo.19353397), [10.5281/zenodo.19354835](https://doi.org/10.5281/zenodo.19354835).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -211,6 +211,26 @@ there are a few some notable differences in the land-use information between LUH
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### UofMD-landState-vl-3-1
+
+v3.1 did not include a DOI attribute or information about the underlying IAM that produced the
+scenario. v3.1.1 adds this attribute and other funding information. The data itself is unchanged, so
+you can use either v3.1 or v3.1.1 for simulations (but please get metadata, particularly DOIs from
+v3.1.1).
+
+### UofMD-landState-h-3-1
+
+v3.1 did not include a DOI attribute or information about the underlying IAM that produced the
+scenario. v3.1.1 adds this attribute and other funding information. The data itself is unchanged, so
+you can use either v3.1 or v3.1.1 for simulations (but please get metadata, particularly DOIs from
+v3.1.1).
+
+### UofMD-landState-3-1-1
+
+v3.1.1 did not include a DOI attribute. v3.1.2 adds this attribute and other funding information.
+The data itself is unchanged, so you can use either v3.1.1 or v3.1.2 for simulations (but please get
+metadata, particularly DOIs from v3.1.2).
 
 ### UofMD-landState-3-1
 
