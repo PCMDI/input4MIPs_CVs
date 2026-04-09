@@ -10,6 +10,13 @@
 
 ## Summary
 
+Note that v1.1.0 of the anthropogenic emissions forcings has been superseded.
+However, the updates only affect hydrogen biomass burning emissions so,
+if you do not use hydrogen biomass burning emissions
+and have already run simulations using v1.1.0 datasets,
+you do not need to re-run with the newer datasets.
+If you do use hydrogen biomass burning emissions, you need to re-run.
+
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases

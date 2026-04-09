@@ -10,6 +10,15 @@
 
 ## Summary
 
+Note that v3.1.1 of the historical land-use forcing
+and v3.1 of the scenario land-use forcing
+have been superseded.
+However, the updates are only to metadata so,
+if you have already run simulations using
+the v3.1.1 historical land-use forcing
+or v3.1 scenario land-use forcing,
+you do not need to re-run with the newer datasets.
+
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
