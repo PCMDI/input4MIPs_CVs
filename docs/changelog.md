@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.38 (2026-04-09)
+
+
+### 🎉 Improvements
+
+- Added land-use data with better metadata (see source IDs `UofMD-landState-2-1-2`, `UofMD-landState-vl-3-1-1`, `UofMD-landState-h-3-1-1`), although the data itself is unchanged so simulations based on the previous versions (`UofMD-landState-3-1-1`, `UofMD-landState-vl-3-1`, `UofMD-landState-h-3-1`) do not need to be re-run ([#438](https://github.com/PCMDI/input4MIPs_CVs/pull/438))
+
+
 ## input4MIPs CVs v6.7.37 (2026-04-09)
 
 
