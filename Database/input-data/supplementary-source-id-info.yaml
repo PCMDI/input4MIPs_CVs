@@ -182,6 +182,34 @@ PIK-CMIP-1-0-0:
     PIK-CMIP-1-0-1 also includes a fix to a bug discovered in the 0.25 degree resolution files in PIK-CMIP-1-0-0
     thanks to @slm7826 and @vnaik60 (see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/362">#362</a>).
     The 0.5 degree data was not affected by this bug.
+PIK-vl-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-vl-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-ln-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-ln-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-l-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-l-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-ml-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-ml-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-m-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-m-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-hl-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-hl-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-h-1-0-0:
+  doi: 10.5281/zenodo.19353707
+PIK-h-ext-1-0-0:
+  doi: 10.5281/zenodo.19353707
 SOLARIS-HEPPA-CMIP-4-1:
   publication_status: never_published
 SOLARIS-HEPPA-CMIP-4-2:

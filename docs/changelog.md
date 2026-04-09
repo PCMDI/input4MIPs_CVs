@@ -22,6 +22,22 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.37 (2026-04-09)
+
+
+### 📚 Improved Documentation
+
+- Added note about which nitrogen deposition forcing data to use if pre-industrial control cannot be re-run ([#437](https://github.com/PCMDI/input4MIPs_CVs/pull/437))
+
+
+## input4MIPs CVs v6.7.36 (2026-04-02)
+
+
+### 🆕 Features
+
+- Added extensions (2101-2300) for population forcing (see source IDs `PIK-*-ext-1-0-0`) ([#436](https://github.com/PCMDI/input4MIPs_CVs/pull/436))
+
+
 ## input4MIPs CVs v6.7.35 (2026-03-31)
 
 
