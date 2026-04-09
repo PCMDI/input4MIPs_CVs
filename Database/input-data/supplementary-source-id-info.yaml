@@ -137,6 +137,22 @@ FZJ-CMIP-ozone-1-2:
     For piControl, please continue to use the FZJ-CMIP-ozone-1-2 files
     (note that this guidance differs from the email communication sent by the CMIP IPO
     on 12 February 2026).
+IIASA-IAMC-vl-1-1-0:
+  comment_post_publication: >-
+    The IIASA-IAMC-vl-1-1-0 dataset has been superseded by IIASA-IAMC-vl-1-1-1.
+    IIASA-IAMC-vl-1-1-1 fixes the biomass burning emissions in IIASA-IAMC-vl-1-1-0,
+    which were all zero (i.e. clearly wrong).
+
+    If you use biomass burning emissions, please re-run your simulations.
+    If you do not use biomass burning emissions, you do not need to re-run.
+IIASA-IAMC-h-1-1-0:
+  comment_post_publication: >-
+    The IIASA-IAMC-h-1-1-0 dataset has been superseded by IIASA-IAMC-h-1-1-1.
+    IIASA-IAMC-h-1-1-1 fixes the biomass burning emissions in IIASA-IAMC-h-1-1-0,
+    which were all zero (i.e. clearly wrong).
+
+    If you use biomass burning emissions, please re-run your simulations.
+    If you do not use biomass burning emissions, you do not need to re-run.
 ImperialCollege-3-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2583902
 MRI-JRA55-do-1-6-0:
