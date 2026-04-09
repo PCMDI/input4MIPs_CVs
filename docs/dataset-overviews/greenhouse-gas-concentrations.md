@@ -16,7 +16,7 @@ If you find any problems,
 please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?template=data_issue.md).
 
 Note that v1.0.0 of the greenhouse gas scenario forcings has been superseded.
-However, the differences from v1.0.0 are very small so,
+However, the updates are very small so,
 if you have already run simulations using v1.0.0 datasets,
 you do not need to re-run with the newer datasets.
 
