@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.39 (2026-04-10)
+
+
+### 🆕 Features
+
+- Added ozone and nitrogen deposition forcing for the `vl` and `h` ScenarioMIP scenarios ([#439](https://github.com/PCMDI/input4MIPs_CVs/pull/439))
+
+
 ## input4MIPs CVs v6.7.38 (2026-04-09)
 
 
