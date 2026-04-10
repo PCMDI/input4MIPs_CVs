@@ -83,7 +83,12 @@
             "ok_if_not_latest": true
         },
         "scenariomip-testing": null,
-        "scenariomip-cmip7": null
+        "scenariomip-cmip7": {
+            "source_ids": [
+                "FZJ-CMIP-ozone-vl-1-0",
+                "FZJ-CMIP-ozone-h-1-0"
+            ]
+        }
     },
     "simple-plumes": {
         "deck-testing": null,
@@ -161,7 +166,12 @@
             "ok_if_not_latest": false
         },
         "scenariomip-testing": null,
-        "scenariomip-cmip7": null
+        "scenariomip-cmip7": {
+            "source_ids": [
+                "FZJ-CMIP-nitrogen-vl-1-0",
+                "FZJ-CMIP-nitrogen-h-1-0"
+            ]
+        }
     },
     "co2_isotopes": {
         "deck-testing": null,
