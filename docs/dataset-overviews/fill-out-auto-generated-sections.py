@@ -210,6 +210,8 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
 
     for known_prefix in (
         "CR-",
+        "FZJ-CMIP-nitrogen-",
+        "FZJ-CMIP-ozone-",
         "IIASA-IAMC-",
         "PIK-",
         "SOLARIS-HEPPA-",
