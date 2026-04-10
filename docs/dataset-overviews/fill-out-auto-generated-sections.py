@@ -183,6 +183,7 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "UofMD-landState-3-0",
         "UofMD-landState-3-1",
         "UofMD-landState-3-1-1",
+        "UofMD-landState-3-1-2",
     }
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
         return None
