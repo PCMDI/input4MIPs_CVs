@@ -10,6 +10,8 @@
 
 ## Summary
 
+### DECK
+
 Nitrogen deposition forcing for the pre-industrial control and historical (and associated) simulations is available.
 
 As a result of an issue being found ([#425](https://github.com/PCMDI/input4MIPs_CVs/issues/425)),
@@ -31,6 +33,10 @@ to historical `FZJ-CMIP-nitrogen-2-0` is expected to introduce smaller issues
 than using `FZJ-CMIP-nitrogen-1-2` over the historical period.
 Modelling teams should record the version of the forcing files they use following the CMIP7 guidance
 (see the 5<sup>th</sup> dot point here https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_modellers/#1-requirements-expectations).
+
+### ScenarioMIP
+
+Nitrogen deposition forcing for the `vl` and `h` ScenarioMIP (and associated) simulations is available.
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->

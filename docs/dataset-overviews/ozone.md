@@ -10,7 +10,10 @@
 
 ## Summary
 
+### DECK
+
 Ozone forcing for the pre-industrial control and historical (and associated) simulations is available.
+
 As a result of an issue being found ([#400](https://github.com/PCMDI/input4MIPs_CVs/issues/400)),
 models that rely on exogenous ozone forcing are required to use different versions of the ozone files
 for pre-industrial control (and related) simulations and historical (and related) simulations.
@@ -34,6 +37,10 @@ how to ensure a smooth connection between the scenario ozone forcing files.
 If any modelling centres run historical simulations
 with both the `FZJ-CMIP-ozone-1-2` and `FZJ-CMIP-ozone-2-0` forcing,
 these simulations would be of interest to the Forcings Task Team.
+
+### ScenarioMIP
+
+Ozone forcing for the `vl` and `h` ScenarioMIP (and associated) simulations is available.
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
