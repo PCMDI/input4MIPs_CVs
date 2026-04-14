@@ -22,6 +22,22 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.40 (2026-04-13)
+
+
+### 📚 Improved Documentation
+
+- Added pointer to ongoing discussion about the impact of not doing a weighted-average for the stratospheric aerosol optical properties climatology (https://github.com/PCMDI/input4MIPs_CVs/discussions/175#discussioncomment-16130203) ([#440](https://github.com/PCMDI/input4MIPs_CVs/pull/440))
+
+
+## input4MIPs CVs v6.7.39 (2026-04-10)
+
+
+### 🆕 Features
+
+- Added ozone and nitrogen deposition forcing for the `vl` and `h` ScenarioMIP scenarios ([#439](https://github.com/PCMDI/input4MIPs_CVs/pull/439))
+
+
 ## input4MIPs CVs v6.7.38 (2026-04-09)
 
 

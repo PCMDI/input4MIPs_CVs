@@ -159,7 +159,9 @@ where the climatology for single scattering albedo and assymetry were calculated
 (the weights for single scattering albedo being the extinction;
 the weights for assymetry being the product of extinction and single scattering albedo).
 For consistency and because of the small impact,
-we recommend using the climatology files as given without the weighted average.
+we recommend using the climatology files as given without the weighted average
+(further investigations into the impact of this difference can be found
+[in discussion #175](https://github.com/PCMDI/input4MIPs_CVs/discussions/175#discussioncomment-16397980)).
 
 For a full dive into the changes from CMIP6, see
 the GMD pre-prints documenting the stratospheric
