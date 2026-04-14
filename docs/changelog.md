@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.41 (2026-04-14)
+
+
+### ⚠️ Breaking Changes
+
+- Updated versions of the emissions forcing for the `vl` and `h` ScenarioMIP scenarios (`IIASA-IAMC-vl-1-1-1` and `IIASA-IAMC-h-1-1-1`). This update fixes an issue with the biomass burning emissions (which are all zero in `IIASA-IAMC-vl-1-1-0` and `IIASA-IAMC-h-1-1-0`). If you do not use biomass burning emissions, you do not need to re-run. Otherwise, please re-run to use the correct values. ([#432](https://github.com/PCMDI/input4MIPs_CVs/pull/432))
+
+### 🆕 Features
+
+- Added emissions forcing for all ScenarioMIP scenarios (see source IDs of the form `IIASA-IAMC-*-1-1-1`). ([#432](https://github.com/PCMDI/input4MIPs_CVs/pull/432))
+
+
 ## input4MIPs CVs v6.7.40 (2026-04-13)
 
 
