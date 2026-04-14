@@ -26,8 +26,14 @@
         },
         "scenariomip-cmip7": {
             "source_ids": [ 
-                "IIASA-IAMC-vl-1-1-0",
-                "IIASA-IAMC-h-1-1-0"
+                "IIASA-IAMC-1-1-1",
+                "IIASA-IAMC-vl-1-1-1",
+                "IIASA-IAMC-ln-1-1-1",
+                "IIASA-IAMC-l-1-1-1",
+                "IIASA-IAMC-ml-1-1-1",
+                "IIASA-IAMC-m-1-1-1",
+                "IIASA-IAMC-hl-1-1-1",
+                "IIASA-IAMC-h-1-1-1"
             ]
         }
     },
@@ -148,8 +154,14 @@
         },
         "scenariomip-cmip7": {
             "source_ids": [ 
-                "IIASA-IAMC-vl-1-1-0",
-                "IIASA-IAMC-h-1-1-0"
+                "IIASA-IAMC-1-1-1",
+                "IIASA-IAMC-vl-1-1-1",
+                "IIASA-IAMC-ln-1-1-1",
+                "IIASA-IAMC-l-1-1-1",
+                "IIASA-IAMC-ml-1-1-1",
+                "IIASA-IAMC-m-1-1-1",
+                "IIASA-IAMC-hl-1-1-1",
+                "IIASA-IAMC-h-1-1-1"
             ]
         }
     },

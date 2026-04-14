@@ -10,6 +10,8 @@
 
 ## Summary
 
+#### DECK
+
 CEDS data is available.
 Emissions data are provided for SO<sub>2</sub>, NOx, BC, OC, NH<sub>3</sub>, NMVOC,  CO, CO<sub>2</sub> from 1750 - 2023.
 Emissions data for CH<sub>4</sub> and N<sub>2</sub>O are provided from 1970 - 2023
@@ -28,6 +30,13 @@ This data is derived from CEDS' aggregate emissions releases.
 
 Full details on the dataset and all relevant links can be found on the [CEDS GitHub page](https://github.com/JGCRI/CEDS).
 A summary of differences between the CMIP7 and previous versions of the dataset can be found on the [CEDS GitHub documentation page](https://github.com/JGCRI/CEDS/tree/master/documentation).
+
+#### ScenarioMIP
+
+Note that v1.1.0 of the anthropogenic emissions forcings has been superseded.
+However, the updates only affect hydrogen biomass burning emissions so
+the anthropogenic emissions are unaffected
+(i.e. the data in v1.1.0 and v1.1.1 are the same).
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -85,8 +94,14 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [IIASA-IAMC-vl-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-0%22%7D)
-- [IIASA-IAMC-h-1-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-0%22%7D).
+- [IIASA-IAMC-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-1-1-1%22%7D)
+- [IIASA-IAMC-vl-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-1%22%7D)
+- [IIASA-IAMC-ln-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-1-1-1%22%7D)
+- [IIASA-IAMC-l-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-1-1-1%22%7D)
+- [IIASA-IAMC-ml-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-1-1-1%22%7D)
+- [IIASA-IAMC-m-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-1-1-1%22%7D)
+- [IIASA-IAMC-hl-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-1-1-1%22%7D)
+- [IIASA-IAMC-h-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-1%22%7D).
 
 
 The data has the DOI: [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).
@@ -276,6 +291,20 @@ There shouldn't be any major differences]
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### IIASA-IAMC-vl-1-1-0
+
+The IIASA-IAMC-vl-1-1-0 dataset has been superseded by IIASA-IAMC-vl-1-1-1. IIASA-IAMC-vl-1-1-1
+fixes the hydrogen biomass burning emissions in IIASA-IAMC-vl-1-1-0, which were all zero (i.e.
+clearly wrong). If you use hydrogen biomass burning emissions, please re-run your simulations. If
+you do not use hydrogen biomass burning emissions, you do not need to re-run.
+
+### IIASA-IAMC-h-1-1-0
+
+The IIASA-IAMC-h-1-1-0 dataset has been superseded by IIASA-IAMC-h-1-1-1. IIASA-IAMC-h-1-1-1 fixes
+the hydrogen biomass burning emissions in IIASA-IAMC-h-1-1-0, which were all zero (i.e. clearly
+wrong). If you use hydrogen biomass burning emissions, please re-run your simulations. If you do not
+use hydrogen biomass burning emissions, you do not need to re-run.
 
 ### CEDS-CMIP-2025-03-18-supplemental
 

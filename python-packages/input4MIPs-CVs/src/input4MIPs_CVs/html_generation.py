@@ -558,32 +558,49 @@ def get_delivery_summary_view(
                         source_id_df.iloc[0, :], ["source_id"]
                     )
 
-                    ts_min_str = source_id_df["datetime_start"].dropna().min()
-                    ts_min_dt = dt.datetime.strptime(ts_min_str, "%Y-%m-%dT%H:%M:%SZ")
-
-                    ts_max_str = source_id_df["datetime_end"].dropna().max()
-                    ts_max_dt = dt.datetime.strptime(ts_max_str, "%Y-%m-%dT%H:%M:%SZ")
-
                     frequencies = set(source_id_df["frequency"].tolist())
-                    if "day" in frequencies:
-                        ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}-{ts_min_dt.day:02}"
-                        ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}-{ts_max_dt.day:02}"
-
-                    elif "mon" in frequencies:
-                        ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}"
-                        ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}"
-
-                    elif "yr" in frequencies:
-                        ts_min = f"{ts_min_dt.year:04}"
-                        ts_max = f"{ts_max_dt.year:04}"
+                    if frequencies == {"fx"}:
+                        # Only fx data
+                        disp_url = esgf_url.replace(
+                            "Published",
+                            f"{source_id} (time-invariant data only)",
+                        )
 
                     else:
-                        raise NotImplementedError(frequencies)
+                        ts_min_str = source_id_df["datetime_start"].dropna().min()
+                        ts_min_dt = dt.datetime.strptime(
+                            ts_min_str, "%Y-%m-%dT%H:%M:%SZ"
+                        )
 
-                    disp_url = esgf_url.replace(
-                        "Published",
-                        f"{source_id} ({ts_min} to {ts_max})",
-                    )
+                        ts_max_str = source_id_df["datetime_end"].dropna().max()
+                        ts_max_dt = dt.datetime.strptime(
+                            ts_max_str, "%Y-%m-%dT%H:%M:%SZ"
+                        )
+
+                        ts_max_dt = dt.datetime.strptime(
+                            ts_max_str, "%Y-%m-%dT%H:%M:%SZ"
+                        )
+
+                        if "day" in frequencies:
+                            ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}-{ts_min_dt.day:02}"
+                            ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}-{ts_max_dt.day:02}"
+
+                        elif "mon" in frequencies:
+                            ts_min = f"{ts_min_dt.year:04}-{ts_min_dt.month:02}"
+                            ts_max = f"{ts_max_dt.year:04}-{ts_max_dt.month:02}"
+
+                        elif "yr" in frequencies:
+                            ts_min = f"{ts_min_dt.year:04}"
+                            ts_max = f"{ts_max_dt.year:04}"
+
+                        else:
+                            raise NotImplementedError(frequencies)
+
+                        disp_url = esgf_url.replace(
+                            "Published",
+                            f"{source_id} ({ts_min} to {ts_max})",
+                        )
+
                     disp_urls.append(disp_url)
 
                 disp_urls_joint = ", ".join(disp_urls)
