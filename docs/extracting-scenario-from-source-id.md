@@ -14,7 +14,7 @@ For the latest information, please see the
 `extract_scenario_from_source_id` function
 in [docs/dataset-overviews/fill-out-auto-generated-sections.py](https://github.com/PCMDI/input4MIPs_CVs/blob/main/docs/dataset-overviews/fill-out-auto-generated-sections.py).
 
-We have include a copy of this function as at 2025-09-22 below
+We have include a copy of this function as at 2026-04-14 below
 so you can see the logic,
 but this extract is not automatically updated so it could be out of date
 by the time you are reading this.
@@ -69,12 +69,11 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "FZJ-CMIP-nitrogen-1-0",
         "FZJ-CMIP-nitrogen-1-1",
         "FZJ-CMIP-nitrogen-1-2",
+        "FZJ-CMIP-nitrogen-2-0",
         "FZJ-CMIP-ozone-1-0",
         "FZJ-CMIP-ozone-1-1",
         "FZJ-CMIP-ozone-1-2",
         "FZJ-CMIP-ozone-2-0",
-        "IIASA-IAMC-1-0-0",
-        "IIASA-IAMC-1-1-0",
         "ImperialCollege-3-0",
         "MRI-JRA55-do-1-6-0",
         "PCMDI-AMIP-1-1-10",
@@ -110,9 +109,21 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "UofMD-landState-3-0",
         "UofMD-landState-3-1",
         "UofMD-landState-3-1-1",
+        "UofMD-landState-3-1-2",
     }
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
         return None
+
+    # IIASA releases areacella under a different source ID.
+    # This applies to all scenarios.
+    scenario_indepent_scenario_label = "ScenarioMIP"
+    IIASA_SPECIAL_CASES = {
+        "IIASA-IAMC-1-0-0",
+        "IIASA-IAMC-1-1-0",
+        "IIASA-IAMC-1-1-1",
+    }
+    if source_id in IIASA_SPECIAL_CASES:
+        return ScenarioInfo(name=scenario_indepent_scenario_label, legacy=False)
 
     KNOWN_SCENARIOS = {
         "vl",
@@ -130,7 +141,7 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "hl",
         "hl-ext",
         # Used for scenario indepdendent forcings i.e. volcanic and solar
-        "ScenarioMIP",
+        scenario_indepent_scenario_label,
     }
     # Draft names before final decision
     KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho", "scendraft1", "scendraft2"}

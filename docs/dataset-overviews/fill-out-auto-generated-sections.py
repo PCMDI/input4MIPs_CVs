@@ -146,8 +146,6 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "FZJ-CMIP-ozone-1-1",
         "FZJ-CMIP-ozone-1-2",
         "FZJ-CMIP-ozone-2-0",
-        "IIASA-IAMC-1-0-0",
-        "IIASA-IAMC-1-1-0",
         "ImperialCollege-3-0",
         "MRI-JRA55-do-1-6-0",
         "PCMDI-AMIP-1-1-10",
@@ -188,6 +186,17 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
         return None
 
+    # IIASA releases areacella under a different source ID.
+    # This applies to all scenarios.
+    scenario_indepent_scenario_label = "ScenarioMIP"
+    IIASA_SPECIAL_CASES = {
+        "IIASA-IAMC-1-0-0",
+        "IIASA-IAMC-1-1-0",
+        "IIASA-IAMC-1-1-1",
+    }
+    if source_id in IIASA_SPECIAL_CASES:
+        return ScenarioInfo(name=scenario_indepent_scenario_label, legacy=False)
+
     KNOWN_SCENARIOS = {
         "vl",
         "vl-ext",
@@ -204,7 +213,7 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "hl",
         "hl-ext",
         # Used for scenario indepdendent forcings i.e. volcanic and solar
-        "ScenarioMIP",
+        scenario_indepent_scenario_label,
     }
     # Draft names before final decision
     KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho", "scendraft1", "scendraft2"}
