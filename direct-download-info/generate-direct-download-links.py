@@ -56,7 +56,7 @@ def main(
 
     out_file.parent.mkdir(exist_ok=True)
     with open(out_file, "w") as fh:
-        json.dump(out, fh)
+        json.dump(out, fh, indent=2)
 
 
 if __name__ == "__main__":
