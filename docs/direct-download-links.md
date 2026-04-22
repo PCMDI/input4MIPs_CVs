@@ -3,7 +3,7 @@
 There have been some issues accessing the data via metagrid.
 Here we demonstrate how direct download links can be obtained from the links provided in
 [github.com/PCMDI/input4MIPs_CVs/blob/main/direct-download-info/direct-download-info.json](https://github.com/PCMDI/input4MIPs_CVs/blob/main/direct-download-info/direct-download-info.json).
-We will attempt to keep this file up-to-date as files are published
+We will attempt to keep `direct-download-info.json` up-to-date as files are published
 as a backup to finding files via metagrid
 or globus (see [https://app.globus.org/file-manager?origin_id=904ff241-867c-404e-b355-64b701ba6ac1&origin_path=%2Fuser_pub_work%2Finput4MIPs%2FCMIP7%2F](https://app.globus.org/file-manager?origin_id=904ff241-867c-404e-b355-64b701ba6ac1&origin_path=%2Fuser_pub_work%2Finput4MIPs%2FCMIP7%2F)).
 
