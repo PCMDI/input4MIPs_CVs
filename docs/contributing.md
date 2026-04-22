@@ -107,6 +107,12 @@ If you are working elsewhere, you may need to modify the paths slightly.
    e.g. `bash scripts/pmount-database-generation/db-add-tree.sh /PATH-TO-DATA-ROOT/input4MIPs/CMIP6Plus/CMIP/UofMD/`.
    On perlmutter, this is something like
    `bash scripts/pmount-database-generation/db-add-tree.sh /global/cfs/projectdirs/m4931/gsharing/user_pub_work/input4MIPs/...`
+1. Update the direct download links.
+   Do this by running the following command from the root of this repository: 
+   `python direct-download-info/generate-direct-download-links.py <root-of-tree-to-generate-from>` 
+   e.g. `python direct-download-info/generate-direct-download-links.py /data/store/input4MIPs/CMIP7` 
+   On perlmutter, this is something like
+   `python direct-download-info/generate-direct-download-links.py /global/cfs/projectdirs/m4931/gsharing/user_pub_work/input4MIPs/CMIP7`.
 1. (Not compulsory, but recommended because it makes it easier to see changes later) 
    Commit the changes to the database
 1. If needed, add the source ID entry for the new files to `CVs/input4MIPs_source_id.json`
