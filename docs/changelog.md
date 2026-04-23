@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.42 (2026-04-23)
+
+
+### 🆕 Features
+
+- Added direct download links to the repository and documentation about how to use them to get download links in the case of metagrid not being up ([#442](https://github.com/PCMDI/input4MIPs_CVs/pull/442))
+
+
 ## input4MIPs CVs v6.7.41 (2026-04-14)
 
 
