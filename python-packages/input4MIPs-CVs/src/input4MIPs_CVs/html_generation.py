@@ -447,7 +447,21 @@ def get_delivery_summary_view(
             if ds_id == "simple-plumes":
                 # Fun exception
                 url = info_d["url"]
-                if url is not None:
+                if isinstance(url, list):
+                    tmp["Forcing dataset"] = description_html
+                    urls = " ".join(
+                        (format_url_for_html(value, value) for value in url)
+                    )
+                    tmp["DOI(s)"] = urls
+                    tmp["Source ID"] = f"NA (not released on ESGF, see {urls} instead)"
+                    if "status" in info_d:
+                        tmp["Status"] = info_d["status"]
+                    else:
+                        tmp["Status"] = "Preliminary dataset available"
+
+                    tmp["ESGF publication status"] = f"Available: {urls}"
+
+                elif url is not None:
                     tmp["Forcing dataset"] = (
                         f"<a href='{info_d['url']}' target='_blank'>{description_html}</a>"
                     )

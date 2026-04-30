@@ -41,8 +41,10 @@ For testing, please use the data at this zenodo record:
 
 ##### CMIP7
 
-For CMIP7, please use the data at this zenodo record:
-[https://zenodo.org/records/18713154](https://zenodo.org/records/18713154).
+For CMIP7, please use the data at these zenodo records:
+
+- [https://zenodo.org/records/18713154](https://zenodo.org/records/18713154)
+- [https://zenodo.org/records/19845296](https://zenodo.org/records/19845296)
 
 ##### Testing
 
