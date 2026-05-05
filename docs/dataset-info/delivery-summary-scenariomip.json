@@ -84,7 +84,10 @@
     },
     "simple-plumes": {
         "source_ids": null,
-        "url": "https://zenodo.org/records/18713154",
+        "url": [
+            "https://zenodo.org/records/18713154",
+            "https://zenodo.org/records/19845296"
+        ],
         "status": "CMIP7 dataset available"
     },
     "population": {
