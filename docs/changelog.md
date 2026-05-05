@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.43 (2026-05-05)
+
+
+### 🆕 Features
+
+- Added links to the Zenodo record which contains simple plumes for scenarios other than vl and h ([#445](https://github.com/PCMDI/input4MIPs_CVs/pull/445))
+
+
 ## input4MIPs CVs v6.7.42 (2026-04-23)
 
 
