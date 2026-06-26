@@ -317,12 +317,61 @@ There shouldn't be any major differences]
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 
+### IIASA-IAMC-vl-1-1-1
+
+The IIASA-IAMC-vl-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
+been corrected in IIASA-IAMC-vl-1-1-2. If you have started or completed simulations with aviation
+emissions from IIASA-IAMC-vl-1-1-1, you do not need to restart or re-run them. However, if you have
+not yet started simulations, please use IIASA-IAMC-vl-1-1-2.
+
 ### IIASA-IAMC-vl-1-1-0
 
 The IIASA-IAMC-vl-1-1-0 dataset has been superseded by IIASA-IAMC-vl-1-1-1. IIASA-IAMC-vl-1-1-1
 fixes the hydrogen biomass burning emissions in IIASA-IAMC-vl-1-1-0, which were all zero (i.e.
 clearly wrong). If you use hydrogen biomass burning emissions, please re-run your simulations. If
 you do not use hydrogen biomass burning emissions, you do not need to re-run.
+
+### IIASA-IAMC-ml-1-1-1
+
+The IIASA-IAMC-ml-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
+been corrected in IIASA-IAMC-ml-1-1-2. If you have started or completed simulations with aviation
+emissions from IIASA-IAMC-ml-1-1-1, you do not need to restart or re-run them. However, if you have
+not yet started simulations, please use IIASA-IAMC-ml-1-1-2.
+
+### IIASA-IAMC-m-1-1-1
+
+The IIASA-IAMC-m-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
+been corrected in IIASA-IAMC-m-1-1-2. If you have started or completed simulations with aviation
+emissions from IIASA-IAMC-m-1-1-1, you do not need to restart or re-run them. However, if you have
+not yet started simulations, please use IIASA-IAMC-m-1-1-2.
+
+### IIASA-IAMC-ln-1-1-1
+
+The IIASA-IAMC-ln-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
+been corrected in IIASA-IAMC-ln-1-1-2. If you have started or completed simulations with aviation
+emissions from IIASA-IAMC-ln-1-1-1, you do not need to restart or re-run them. However, if you have
+not yet started simulations, please use IIASA-IAMC-ln-1-1-2.
+
+### IIASA-IAMC-l-1-1-1
+
+The IIASA-IAMC-l-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
+been corrected in IIASA-IAMC-l-1-1-2. If you have started or completed simulations with aviation
+emissions from IIASA-IAMC-l-1-1-1, you do not need to restart or re-run them. However, if you have
+not yet started simulations, please use IIASA-IAMC-l-1-1-2.
+
+### IIASA-IAMC-hl-1-1-1
+
+The IIASA-IAMC-hl-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
+been corrected in IIASA-IAMC-hl-1-1-2. If you have started or completed simulations with aviation
+emissions from IIASA-IAMC-hl-1-1-1, you do not need to restart or re-run them. However, if you have
+not yet started simulations, please use IIASA-IAMC-hl-1-1-2.
+
+### IIASA-IAMC-h-1-1-1
+
+The IIASA-IAMC-h-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
+been corrected in IIASA-IAMC-h-1-1-2. If you have started or completed simulations with aviation
+emissions from IIASA-IAMC-h-1-1-1, you do not need to restart or re-run them. However, if you have
+not yet started simulations, please use IIASA-IAMC-h-1-1-2.
 
 ### IIASA-IAMC-h-1-1-0
 
