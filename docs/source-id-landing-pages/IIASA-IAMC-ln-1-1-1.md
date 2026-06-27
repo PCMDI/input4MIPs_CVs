@@ -20,4 +20,4 @@
 
 - source_id: IIASA-IAMC-ln-1-1-1
 - contact: kikstra@iiasa.ac.at, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at
-- further_info_url: https://doi.org/10.5281/zenodo.17981825
+- further_info_url: https://doi.org/10.5281/zenodo.17981824
