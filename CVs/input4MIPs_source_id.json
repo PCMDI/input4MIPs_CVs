@@ -6340,5 +6340,33 @@
         "license_id":"CC BY 4.0",
         "mip_era":"CMIP6Plus",
         "source_version":"1.1"
+    },    
+    "ImperialCollege-CFMIP4-1-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Physics & Grantham Institute, Imperial College London, London, UK"
+                ],
+                "email":"p.ceppi@imperial.ac.uk",
+                "name":"Paulo Ceppi",
+                "orcid":"0000-0002-3754-3506"
+            },
+            {
+                "affiliations":[
+                    "Department of Physics, Imperial College London, London, UK"
+                ],
+                "email":"anzhuo.dai16@imperial.ac.uk",
+                "name":"An-Zhuo Dai",
+                "orcid":"0009-0007-6114-2642"
+            }
+        ],
+        "contact":"Paulo Ceppi (p.ceppi@imperial.ac.uk); An-Zhuo Dai (anzhuo.dai16@imperial.ac.uk)",
+        "dataset_category":["atmosphericState"],
+        "further_info_url":"https://www.cfmip.org/experiments/cfmip4cmip7",
+        "institution_id":"ImperialCollege",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.0"
     }
 }
