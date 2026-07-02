@@ -6362,7 +6362,7 @@
             }
         ],
         "contact":"Paulo Ceppi (p.ceppi@imperial.ac.uk); An-Zhuo Dai (anzhuo.dai16@imperial.ac.uk)",
-        "dataset_category":["atmosphericState"],
+        "dataset_category":[ "SSTsAndSeaIce" ],
         "further_info_url":"https://www.cfmip.org/experiments/cfmip4cmip7",
         "institution_id":"ImperialCollege",
         "license_id":"CC BY 4.0",
