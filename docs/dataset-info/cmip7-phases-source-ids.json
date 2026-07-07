@@ -92,6 +92,8 @@
         "scenariomip-cmip7": {
             "source_ids": [
                 "FZJ-CMIP-ozone-vl-1-0",
+                "FZJ-CMIP-ozone-m-1-0",
+                "FZJ-CMIP-ozone-hl-1-0",
                 "FZJ-CMIP-ozone-h-1-0"
             ]
         }
@@ -181,6 +183,8 @@
         "scenariomip-cmip7": {
             "source_ids": [
                 "FZJ-CMIP-nitrogen-vl-1-0",
+                "FZJ-CMIP-nitrogen-m-1-0",
+                "FZJ-CMIP-nitrogen-hl-1-0",
                 "FZJ-CMIP-nitrogen-h-1-0"
             ]
         }
