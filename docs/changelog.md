@@ -22,6 +22,32 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.44 (2026-07-11)
+
+
+### ⚠️ Breaking Changes
+
+- Released data with source IDs of the form `IIASA-IAMC-*-1-1-2`
+
+  As a result of an issue being found ([#449](https://github.com/PCMDI/input4MIPs_CVs/issues/449)),
+  aviation data needs to come from files with a different source ID than the rest of the data.
+  For aviation data, files with source IDs of the form `IIASA-IAMC-*-1-1-2` should be used.
+  For all other data, files with source IDs of the form `IIASA-IAMC-*-1-1-1` should be used.
+
+  The implication of this error on existing simulations (and their predicted climate forcing)
+  is deemed to be small (due to the small size of this sector in the overall climate system).
+  Therefore, existing model simulations based solely on `IIASA-IAMC-*-1-1-1`
+  do not need to be rerun if such a rerun is not possible.
+  Modelling teams that have not begun their simulations should, however,
+  use the latest version of the aviation emission forcings as specified above.
+  Modelling teams should record the version of the forcing files they use following the CMIP7 guidance
+  (see the 5<sup>th</sup> dot point here https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Guidance_for_modellers/#1-requirements-expectations).
+
+  If any modelling centres run simulations
+  with both the `IIASA-IAMC-*-1-1-2` and `IIASA-IAMC-*-1-1-1` aviation emissions forcing,
+  these simulations would be of interest to the Forcings Task Team. ([#451](https://github.com/PCMDI/input4MIPs_CVs/pull/451))
+
+
 ## input4MIPs CVs v6.7.43 (2026-05-05)
 
 
