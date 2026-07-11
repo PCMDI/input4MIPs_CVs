@@ -82,6 +82,8 @@ No data available for this phase yet.
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
 - [FZJ-CMIP-ozone-vl-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-vl-1-0%22%7D)
+- [FZJ-CMIP-ozone-m-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-m-1-0%22%7D)
+- [FZJ-CMIP-ozone-hl-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-hl-1-0%22%7D)
 - [FZJ-CMIP-ozone-h-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-h-1-0%22%7D).
 
 
