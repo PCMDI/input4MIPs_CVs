@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.45 (2026-07-11)
+
+
+### 🆕 Features
+
+- Added land-use data for the `M` scenario under source ID `UofMD-landState-m-3-1` ([#452](https://github.com/PCMDI/input4MIPs_CVs/pull/452))
+
+
 ## input4MIPs CVs v6.7.44 (2026-07-11)
 
 
