@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.46 (2026-07-11)
+
+
+### 🆕 Features
+
+- Added ozone and nitrogen deposition data for the `M` and `HL` scenarios under source IDs `FZJ-CMIP-nitrogen-m-1-0`, `FZJ-CMIP-nitrogen-hl-1-0`, `FZJ-CMIP-ozone-m-1-0` and `FZJ-CMIP-ozone-hl-1-0` ([#458](https://github.com/PCMDI/input4MIPs_CVs/pull/458))
+
+
 ## input4MIPs CVs v6.7.45 (2026-07-11)
 
 
