@@ -2,6 +2,7 @@
 
 Here we provide an archive of emails with updates about the forcings sent by the CMIP International Project Office (IPO).
 
+- [2026-06-19](2026-06-19.md)
 - [2026-03-20](2026-03-20.md)
 - [2026-02-26](2026-02-26.md)
 - [2026-02-24](2026-02-24.md)
