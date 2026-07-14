@@ -28,31 +28,41 @@
             "source_ids": [ 
                 "IIASA-IAMC-1-1-1",
                 "IIASA-IAMC-vl-1-1-1",
+                "IIASA-IAMC-vl-1-1-2",
                 "IIASA-IAMC-vl-ext-1-1-1",
                 "IIASA-IAMC-ln-1-1-1",
+                "IIASA-IAMC-ln-1-1-2",
                 "IIASA-IAMC-ln-ext-1-1-1",
                 "IIASA-IAMC-l-1-1-1",
+                "IIASA-IAMC-l-1-1-2",
                 "IIASA-IAMC-l-ext-1-1-1",
                 "IIASA-IAMC-ml-1-1-1",
+                "IIASA-IAMC-ml-1-1-2",
                 "IIASA-IAMC-ml-ext-1-1-1",
                 "IIASA-IAMC-m-1-1-1",
+                "IIASA-IAMC-m-1-1-2",
                 "IIASA-IAMC-m-ext-1-1-1",
                 "IIASA-IAMC-hl-1-1-1",
+                "IIASA-IAMC-hl-1-1-2",
                 "IIASA-IAMC-hl-ext-1-1-1",
                 "IIASA-IAMC-h-1-1-1",
+                "IIASA-IAMC-h-1-1-2",
                 "IIASA-IAMC-h-ext-1-1-1"
-            ]
+            ],
+            "ok_if_not_latest": true
         }
     },
     "land_use": {
-        "deck-testing": { "source_ids": [ "UofMD-landState-3-0" ] , "ok_if_not_latest": true },
+        "deck-testing": { "source_ids": [ "UofMD-landState-3-0" ], "ok_if_not_latest": true },
         "deck-cmip7": { "source_ids": [ "UofMD-landState-3-1-2" ] },
         "scenariomip-testing": null,
         "scenariomip-cmip7": {
             "source_ids": [
                 "UofMD-landState-vl-3-1-1",
+                "UofMD-landState-m-3-1",
                 "UofMD-landState-h-3-1-1"
-            ]
+            ],
+            "ok_if_not_latest": true
         }
     },
     "ghg_concentrations": {
@@ -99,6 +109,8 @@
         "scenariomip-cmip7": {
             "source_ids": [
                 "FZJ-CMIP-ozone-vl-1-0",
+                "FZJ-CMIP-ozone-m-1-0",
+                "FZJ-CMIP-ozone-hl-1-0",
                 "FZJ-CMIP-ozone-h-1-0"
             ]
         }
@@ -163,20 +175,28 @@
             "source_ids": [ 
                 "IIASA-IAMC-1-1-1",
                 "IIASA-IAMC-vl-1-1-1",
+                "IIASA-IAMC-vl-1-1-2",
                 "IIASA-IAMC-vl-ext-1-1-1",
                 "IIASA-IAMC-ln-1-1-1",
+                "IIASA-IAMC-ln-1-1-2",
                 "IIASA-IAMC-ln-ext-1-1-1",
                 "IIASA-IAMC-l-1-1-1",
+                "IIASA-IAMC-l-1-1-2",
                 "IIASA-IAMC-l-ext-1-1-1",
                 "IIASA-IAMC-ml-1-1-1",
+                "IIASA-IAMC-ml-1-1-2",
                 "IIASA-IAMC-ml-ext-1-1-1",
                 "IIASA-IAMC-m-1-1-1",
+                "IIASA-IAMC-m-1-1-2",
                 "IIASA-IAMC-m-ext-1-1-1",
                 "IIASA-IAMC-hl-1-1-1",
+                "IIASA-IAMC-hl-1-1-2",
                 "IIASA-IAMC-hl-ext-1-1-1",
                 "IIASA-IAMC-h-1-1-1",
+                "IIASA-IAMC-h-1-1-2",
                 "IIASA-IAMC-h-ext-1-1-1"
-            ]
+            ],
+            "ok_if_not_latest": true
         }
     },
     "volcanic": {
@@ -195,6 +215,8 @@
         "scenariomip-cmip7": {
             "source_ids": [
                 "FZJ-CMIP-nitrogen-vl-1-0",
+                "FZJ-CMIP-nitrogen-m-1-0",
+                "FZJ-CMIP-nitrogen-hl-1-0",
                 "FZJ-CMIP-nitrogen-h-1-0"
             ]
         }

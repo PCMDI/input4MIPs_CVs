@@ -516,22 +516,37 @@ def get_delivery_summary_view(
                 url_to_use = info_d["url"]
 
             else:
-                further_info_url = db_source_ids["further_info_url"].unique()
+                further_info_url = db_source_ids["further_info_url"].unique().tolist()
                 if len(further_info_url) == 1:
                     further_info_url = further_info_url[0]
                     if further_info_url.endswith(".invalid"):
                         further_info_url = None
 
-                else:
-                    raise NotImplementedError(further_info_url)
-
                 if further_info_url is not None:
-                    url_to_use = further_info_url
+                    if isinstance(further_info_url, str):
+                        url_to_use = further_info_url
+                    elif isinstance(further_info_url, list):
+                        url_to_use = tuple(further_info_url)
+                    else:
+                        raise NotImplementedError(further_info_url)
 
             if url_to_use is not None:
-                tmp["Forcing dataset"] = (
-                    f"<a href='{url_to_use}' target='_blank'>{description_html}</a>"
-                )
+                if isinstance(url_to_use, str):
+                    tmp["Forcing dataset"] = (
+                        f"<a href='{url_to_use}' target='_blank'>{description_html}</a>"
+                    )
+
+                elif isinstance(url_to_use, tuple):
+                    formatted_urls = ", ".join(
+                        f"<a href='{url}' target='_blank'>{url}</a>"
+                        for url in url_to_use
+                    )
+                    tmp["Forcing dataset"] = (
+                        f"{description_html} (see {formatted_urls})"
+                    )
+
+                else:
+                    raise NotImplementedError(url_to_use)
 
             else:
                 tmp["Forcing dataset"] = description_html
