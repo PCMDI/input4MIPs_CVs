@@ -329,8 +329,29 @@ Apply the 1850 values on repeat.
 
 The data for ScenarioMIP comes from a range of IAMs,
 rather than the CEDS consortium.
-[TODO: any information about how ScenarioMIP files differ from the DECK files
-There shouldn't be any major differences except maybe naming of VOCs.]
+The file naming and general format should be very similar, if not the same, as the historical
+(a thorough check of this is on our to-do list,
+see [issue #460](https://github.com/PCMDI/input4MIPs_CVs/issues/460),
+the difference in sector names has already been noted,
+see [this comment](https://github.com/PCMDI/input4MIPs_CVs/pull/448/changes#r3440328945)).
+
+The key difference is that the data is not contiguous in time,
+but instead is provided as monthly data for specific years.
+Your code will have to handle this,
+and you will have to interpolate between these timesteps yourself.
+The key thing is that the months need to be interpolated separately
+to preserve the monthly variation within each interpolated year.
+
+If you do not have any existing interpolation methods,
+our suggestion is to linearly interpolate based on the monthly data
+i.e. $E(y, m, ...) = E(y_0, m, ...) + \frac{y - y_0}{y_1 - y_0} \cdot (E(y_1, m, ...) - E(y_0, m, ...))$,
+where $y$ is the year and $m$ is the month for which your are generating interpolated data,
+$...$ represents non-time (i.e. spatial) dimensions,
+$y_0$ is the previous year for which there is data in the forcings dataset
+and $y_1$ is the next year for which there is data in the forcings dataset.
+For example, assuming the data is reported for 2030 and 2035 in the forcings dataset,
+values for a given month in 2032 would be given by
+$E(2032, m, ...) = E(2030, m, ...) + \frac{2032 - 2030}{2035 - 2030} \cdot (E(2035, m, ...) - E(2035, m, ...))$.
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
