@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.48 (2026-07-15)
+
+
+### 📚 Improved Documentation
+
+- Added information about the non-contiguous time axis of the emissions data to the docs ([#448](https://github.com/PCMDI/input4MIPs_CVs/pull/448))
+
+
 ## input4MIPs CVs v6.7.47 (2026-07-15)
 
 
