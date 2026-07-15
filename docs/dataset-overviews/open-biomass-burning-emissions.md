@@ -59,15 +59,29 @@ For the ScenarioMIP simulations in the production phase of CMIP7, you will need 
 
 - [IIASA-IAMC-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-1-1-1%22%7D)
 - [IIASA-IAMC-vl-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-1%22%7D)
+- [IIASA-IAMC-vl-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-2%22%7D)
+- [IIASA-IAMC-vl-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-ext-1-1-1%22%7D)
 - [IIASA-IAMC-ln-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-1-1-1%22%7D)
+- [IIASA-IAMC-ln-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-1-1-2%22%7D)
+- [IIASA-IAMC-ln-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-ext-1-1-1%22%7D)
 - [IIASA-IAMC-l-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-1-1-1%22%7D)
+- [IIASA-IAMC-l-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-1-1-2%22%7D)
+- [IIASA-IAMC-l-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-ext-1-1-1%22%7D)
 - [IIASA-IAMC-ml-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-1-1-1%22%7D)
+- [IIASA-IAMC-ml-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-1-1-2%22%7D)
+- [IIASA-IAMC-ml-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-ext-1-1-1%22%7D)
 - [IIASA-IAMC-m-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-1-1-1%22%7D)
+- [IIASA-IAMC-m-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-1-1-2%22%7D)
+- [IIASA-IAMC-m-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-ext-1-1-1%22%7D)
 - [IIASA-IAMC-hl-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-1-1-1%22%7D)
-- [IIASA-IAMC-h-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-1%22%7D).
+- [IIASA-IAMC-hl-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-1-1-2%22%7D)
+- [IIASA-IAMC-hl-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-ext-1-1-1%22%7D)
+- [IIASA-IAMC-h-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-1%22%7D)
+- [IIASA-IAMC-h-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-2%22%7D)
+- [IIASA-IAMC-h-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-ext-1-1-1%22%7D).
 
 
-The data has the DOI: [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).
+The data has the DOIs: [10.5281/zenodo.17981824](https://doi.org/10.5281/zenodo.17981824), [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
