@@ -22,6 +22,19 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.47 (2026-07-15)
+
+
+### 🆕 Features
+
+- Added scenario extensions for anthropogenic and biomass burning emissions under source IDs of the form `IIASA-IAMC-*-ext-1-1-1` ([#453](https://github.com/PCMDI/input4MIPs_CVs/pull/453))
+
+### 📚 Improved Documentation
+
+- Added 2026-06-19 IPO email update ([#450](https://github.com/PCMDI/input4MIPs_CVs/pull/450))
+- Updated the ScenarioMIP delivery summary view (https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_delivery-summary-scenariomip.html) ([#453](https://github.com/PCMDI/input4MIPs_CVs/pull/453))
+
+
 ## input4MIPs CVs v6.7.46 (2026-07-11)
 
 
