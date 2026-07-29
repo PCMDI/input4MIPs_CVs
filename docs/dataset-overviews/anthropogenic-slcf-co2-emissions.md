@@ -34,14 +34,22 @@ A summary of differences between the CMIP7 and previous versions of the dataset 
 #### ScenarioMIP
 
 As a result of an issue being found ([#449](https://github.com/PCMDI/input4MIPs_CVs/issues/449)),
-aviation data needs to come from files with a different source ID than the rest of the data.
-For aviation data, files with source IDs of the form `IIASA-IAMC-*-1-1-2` should be used.
-For all other data, files with source IDs of the form `IIASA-IAMC-*-1-1-1` should be used.
+aviation data for scenario simulations (but not extensions)
+needs to come from files with a different source ID than the rest of the data.
+For aviation data in scenario simulations, files with source IDs of the form `IIASA-IAMC-*-1-1-2` should be used.
+For all other data in scenario simulations, files with source IDs of the form `IIASA-IAMC-*-1-1-1` should be used.
+For all data in scenario *extension* simulations, files with source IDs of the form `IIASA-IAMC-*-1-1-1` should be used
+(the issue with aviation emissions was found before the extension files were produced,
+hence the aviation emissions bug does not appear in the `*ext*1-1-1` extension files).
 
 The implication of this error on existing simulations (and their predicted climate forcing)
 is deemed to be small (due to the small size of this sector in the overall climate system).
 Therefore, existing model simulations based solely on `IIASA-IAMC-*-1-1-1`
-do not need to be rerun if such a rerun is not possible.
+do not need to be rerun if such a rerun is not possible
+and scenario simulations based solely on `IIASA-IAMC-*-1-1-1`
+can be connected with the available extensions
+(even though the extensions fix the aviation emissions seasonality issue
+so there will be a discontinuity from 2100 to 2101).
 Modelling teams that have not begun their simulations should, however,
 use the latest version of the aviation emission forcings as specified above.
 Modelling teams should record the version of the forcing files they use following the CMIP7 guidance
