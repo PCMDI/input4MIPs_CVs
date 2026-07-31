@@ -33,14 +33,13 @@ A summary of differences between the CMIP7 and previous versions of the dataset 
 
 #### ScenarioMIP
 
-As a result of an issue being found ([#449](https://github.com/PCMDI/input4MIPs_CVs/issues/449)),
-aviation data for scenario simulations (but not extensions)
+As a result of an issue being found
+([#449](https://github.com/PCMDI/input4MIPs_CVs/issues/449)
+and [this comment](https://github.com/PCMDI/input4MIPs_CVs/discussions/464#discussioncomment-17835122)),
+aviation data for scenario simulations and their extensions
 needs to come from files with a different source ID than the rest of the data.
-For aviation data in scenario simulations, files with source IDs of the form `IIASA-IAMC-*-1-1-2` should be used.
-For all other data in scenario simulations, files with source IDs of the form `IIASA-IAMC-*-1-1-1` should be used.
-For all data in scenario *extension* simulations, files with source IDs of the form `IIASA-IAMC-*-1-1-1` should be used
-(the issue with aviation emissions was found before the extension files were produced,
-hence the aviation emissions bug does not appear in the `*ext*1-1-1` extension files).
+For aviation data, files with source IDs of the form `IIASA-IAMC-*-1-1-2` should be used.
+For all other data, files with source IDs of the form `IIASA-IAMC-*-1-1-1` should be used.
 
 The implication of this error on existing simulations (and their predicted climate forcing)
 is deemed to be small (due to the small size of this sector in the overall climate system).
