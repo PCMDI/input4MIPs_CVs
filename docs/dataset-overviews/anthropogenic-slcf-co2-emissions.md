@@ -44,11 +44,7 @@ For all other data, files with source IDs of the form `IIASA-IAMC-*-1-1-1` shoul
 The implication of this error on existing simulations (and their predicted climate forcing)
 is deemed to be small (due to the small size of this sector in the overall climate system).
 Therefore, existing model simulations based solely on `IIASA-IAMC-*-1-1-1`
-do not need to be rerun if such a rerun is not possible
-and scenario simulations based solely on `IIASA-IAMC-*-1-1-1`
-can be connected with the available extensions
-(even though the extensions fix the aviation emissions seasonality issue
-so there will be a discontinuity from 2100 to 2101).
+do not need to be rerun if such a rerun is not possible.
 Modelling teams that have not begun their simulations should, however,
 use the latest version of the aviation emission forcings as specified above.
 Modelling teams should record the version of the forcing files they use following the CMIP7 guidance
