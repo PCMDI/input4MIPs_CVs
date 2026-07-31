@@ -3061,6 +3061,44 @@
         "mip_era":"CMIP7",
         "source_version":"1.1.2"
     },
+    "IIASA-IAMC-vl-ext-1-1-2":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"hoegner@iiasa.ac.at",
+                "name":"Annika Hoegner",
+                "orcid":"0000-0002-4178-9664"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"zecchetto@iiasa.ac.at",
+                "name":"Marco Zecchetto",
+                "orcid":"0000-0002-7506-2631"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, benjamin.sanderson@cicero.oslo.no, marit.sandstad@cicero.oslo.no, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://doi.org/10.5281/zenodo.17981824",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.2"
+    },
     "IIASA-IAMC-ln-1-1-1":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -3166,6 +3204,44 @@
             }
         ],
         "contact":"kikstra@iiasa.ac.at, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://doi.org/10.5281/zenodo.17981824",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.2"
+    },
+    "IIASA-IAMC-ln-ext-1-1-2":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"hoegner@iiasa.ac.at",
+                "name":"Annika Hoegner",
+                "orcid":"0000-0002-4178-9664"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"zecchetto@iiasa.ac.at",
+                "name":"Marco Zecchetto",
+                "orcid":"0000-0002-7506-2631"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, benjamin.sanderson@cicero.oslo.no, marit.sandstad@cicero.oslo.no, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
         "dataset_category":[
             "emissions"
         ],
@@ -3289,6 +3365,44 @@
         "mip_era":"CMIP7",
         "source_version":"1.1.2"
     }, 
+    "IIASA-IAMC-l-ext-1-1-2":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"hoegner@iiasa.ac.at",
+                "name":"Annika Hoegner",
+                "orcid":"0000-0002-4178-9664"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"zecchetto@iiasa.ac.at",
+                "name":"Marco Zecchetto",
+                "orcid":"0000-0002-7506-2631"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, benjamin.sanderson@cicero.oslo.no, marit.sandstad@cicero.oslo.no, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://doi.org/10.5281/zenodo.17981824",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.2"
+    },
     "IIASA-IAMC-ml-1-1-1":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -3394,6 +3508,44 @@
             }
         ],
         "contact":"kikstra@iiasa.ac.at, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://doi.org/10.5281/zenodo.17981824",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.2"
+    },
+    "IIASA-IAMC-ml-ext-1-1-2":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"hoegner@iiasa.ac.at",
+                "name":"Annika Hoegner",
+                "orcid":"0000-0002-4178-9664"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"zecchetto@iiasa.ac.at",
+                "name":"Marco Zecchetto",
+                "orcid":"0000-0002-7506-2631"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, benjamin.sanderson@cicero.oslo.no, marit.sandstad@cicero.oslo.no, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
         "dataset_category":[
             "emissions"
         ],
@@ -3517,6 +3669,44 @@
         "mip_era":"CMIP7",
         "source_version":"1.1.2"
     },
+    "IIASA-IAMC-m-ext-1-1-2":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"hoegner@iiasa.ac.at",
+                "name":"Annika Hoegner",
+                "orcid":"0000-0002-4178-9664"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"zecchetto@iiasa.ac.at",
+                "name":"Marco Zecchetto",
+                "orcid":"0000-0002-7506-2631"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, benjamin.sanderson@cicero.oslo.no, marit.sandstad@cicero.oslo.no, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://doi.org/10.5281/zenodo.17981824",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.2"
+    },
     "IIASA-IAMC-hl-1-1-1":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -3631,6 +3821,44 @@
         "mip_era":"CMIP7",
         "source_version":"1.1.2"
     },
+    "IIASA-IAMC-hl-ext-1-1-2":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"hoegner@iiasa.ac.at",
+                "name":"Annika Hoegner",
+                "orcid":"0000-0002-4178-9664"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"zecchetto@iiasa.ac.at",
+                "name":"Marco Zecchetto",
+                "orcid":"0000-0002-7506-2631"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, benjamin.sanderson@cicero.oslo.no, marit.sandstad@cicero.oslo.no, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://doi.org/10.5281/zenodo.17981824",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.2"
+    },
     "IIASA-IAMC-h-1-1-1":{
         "activity_id":"input4MIPs",
         "authors":[
@@ -3736,6 +3964,44 @@
             }
         ],
         "contact":"kikstra@iiasa.ac.at, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"https://doi.org/10.5281/zenodo.17981824",
+        "institution_id":"IIASA-IAMC",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP7",
+        "source_version":"1.1.2"
+    },
+    "IIASA-IAMC-h-ext-1-1-2":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"kikstra@iiasa.ac.at",
+                "name":"Jarmo S. Kikstra",
+                "orcid":"0000-0001-9405-1228"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"hoegner@iiasa.ac.at",
+                "name":"Annika Hoegner",
+                "orcid":"0000-0002-4178-9664"
+            },
+            {
+                "affiliations":[
+                    "Energy, Climate and Environment Program, International Institute for Applied Systems Analysis (IIASA), 2361 Laxenburg, Austria"
+                ],
+                "email":"zecchetto@iiasa.ac.at",
+                "name":"Marco Zecchetto",
+                "orcid":"0000-0002-7506-2631"
+            }
+        ],
+        "contact":"kikstra@iiasa.ac.at, benjamin.sanderson@cicero.oslo.no, marit.sandstad@cicero.oslo.no, hoegner@iiasa.ac.at, zecchetto@iiasa.ac.at",
         "dataset_category":[
             "emissions"
         ],
