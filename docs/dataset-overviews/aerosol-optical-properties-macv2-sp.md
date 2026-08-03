@@ -45,6 +45,7 @@ For CMIP7, please use the data at these zenodo records:
 
 - [https://zenodo.org/records/18713154](https://zenodo.org/records/18713154)
 - [https://zenodo.org/records/19845296](https://zenodo.org/records/19845296)
+- [https://zenodo.org/records/21671953](https://zenodo.org/records/21671953)
 
 ##### Testing
 
