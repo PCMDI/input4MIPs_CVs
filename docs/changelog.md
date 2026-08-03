@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.49 (2026-08-03)
+
+
+### 🆕 Features
+
+- Added aerosol simple plumes extension dataset ([#466](https://github.com/PCMDI/input4MIPs_CVs/pull/466))
+
+
 ## input4MIPs CVs v6.7.48 (2026-07-15)
 
 
