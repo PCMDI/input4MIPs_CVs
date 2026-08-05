@@ -33,8 +33,11 @@ A summary of differences between the CMIP7 and previous versions of the dataset 
 
 #### ScenarioMIP
 
-As a result of an issue being found ([#449](https://github.com/PCMDI/input4MIPs_CVs/issues/449)),
-aviation data needs to come from files with a different source ID than the rest of the data.
+As a result of an issue being found
+([#449](https://github.com/PCMDI/input4MIPs_CVs/issues/449)
+and [this comment](https://github.com/PCMDI/input4MIPs_CVs/discussions/464#discussioncomment-17835122)),
+aviation data for scenario simulations and their extensions
+needs to come from files with a different source ID than the rest of the data.
 For aviation data, files with source IDs of the form `IIASA-IAMC-*-1-1-2` should be used.
 For all other data, files with source IDs of the form `IIASA-IAMC-*-1-1-1` should be used.
 
@@ -116,24 +119,31 @@ For the ScenarioMIP simulations in the production phase of CMIP7, you will need 
 - [IIASA-IAMC-vl-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-1%22%7D)
 - [IIASA-IAMC-vl-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-2%22%7D)
 - [IIASA-IAMC-vl-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-ext-1-1-1%22%7D)
+- [IIASA-IAMC-vl-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-ext-1-1-2%22%7D)
 - [IIASA-IAMC-ln-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-1-1-1%22%7D)
 - [IIASA-IAMC-ln-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-1-1-2%22%7D)
 - [IIASA-IAMC-ln-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-ext-1-1-1%22%7D)
+- [IIASA-IAMC-ln-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-ext-1-1-2%22%7D)
 - [IIASA-IAMC-l-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-1-1-1%22%7D)
 - [IIASA-IAMC-l-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-1-1-2%22%7D)
 - [IIASA-IAMC-l-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-ext-1-1-1%22%7D)
+- [IIASA-IAMC-l-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-ext-1-1-2%22%7D)
 - [IIASA-IAMC-ml-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-1-1-1%22%7D)
 - [IIASA-IAMC-ml-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-1-1-2%22%7D)
 - [IIASA-IAMC-ml-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-ext-1-1-1%22%7D)
+- [IIASA-IAMC-ml-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-ext-1-1-2%22%7D)
 - [IIASA-IAMC-m-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-1-1-1%22%7D)
 - [IIASA-IAMC-m-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-1-1-2%22%7D)
 - [IIASA-IAMC-m-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-ext-1-1-1%22%7D)
+- [IIASA-IAMC-m-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-ext-1-1-2%22%7D)
 - [IIASA-IAMC-hl-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-1-1-1%22%7D)
 - [IIASA-IAMC-hl-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-1-1-2%22%7D)
 - [IIASA-IAMC-hl-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-ext-1-1-1%22%7D)
+- [IIASA-IAMC-hl-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-ext-1-1-2%22%7D)
 - [IIASA-IAMC-h-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-1%22%7D)
 - [IIASA-IAMC-h-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-2%22%7D)
-- [IIASA-IAMC-h-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-ext-1-1-1%22%7D).
+- [IIASA-IAMC-h-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-ext-1-1-1%22%7D)
+- [IIASA-IAMC-h-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-ext-1-1-2%22%7D).
 
 
 The data has the DOIs: [10.5281/zenodo.17981824](https://doi.org/10.5281/zenodo.17981824), [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).
@@ -343,6 +353,13 @@ $E(2032, m, ...) = E(2030, m, ...) + \frac{2032 - 2030}{2035 - 2030} \cdot (E(20
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 
+### IIASA-IAMC-vl-ext-1-1-1
+
+The IIASA-IAMC-vl-ext-1-1-1 dataset's aviation emissions have an issue with their seasonality. This
+has been corrected in IIASA-IAMC-vl-ext-1-1-2. If you have started or completed simulations with
+aviation emissions from IIASA-IAMC-vl-ext-1-1-1, you do not need to restart or re-run them. However,
+if you have not yet started simulations, please use IIASA-IAMC-vl-ext-1-1-2.
+
 ### IIASA-IAMC-vl-1-1-1
 
 The IIASA-IAMC-vl-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
@@ -357,12 +374,26 @@ fixes the hydrogen biomass burning emissions in IIASA-IAMC-vl-1-1-0, which were 
 clearly wrong). If you use hydrogen biomass burning emissions, please re-run your simulations. If
 you do not use hydrogen biomass burning emissions, you do not need to re-run.
 
+### IIASA-IAMC-ml-ext-1-1-1
+
+The IIASA-IAMC-ml-ext-1-1-1 dataset's aviation emissions have an issue with their seasonality. This
+has been corrected in IIASA-IAMC-ml-ext-1-1-2. If you have started or completed simulations with
+aviation emissions from IIASA-IAMC-ml-ext-1-1-1, you do not need to restart or re-run them. However,
+if you have not yet started simulations, please use IIASA-IAMC-ml-ext-1-1-2.
+
 ### IIASA-IAMC-ml-1-1-1
 
 The IIASA-IAMC-ml-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
 been corrected in IIASA-IAMC-ml-1-1-2. If you have started or completed simulations with aviation
 emissions from IIASA-IAMC-ml-1-1-1, you do not need to restart or re-run them. However, if you have
 not yet started simulations, please use IIASA-IAMC-ml-1-1-2.
+
+### IIASA-IAMC-m-ext-1-1-1
+
+The IIASA-IAMC-m-ext-1-1-1 dataset's aviation emissions have an issue with their seasonality. This
+has been corrected in IIASA-IAMC-m-ext-1-1-2. If you have started or completed simulations with
+aviation emissions from IIASA-IAMC-m-ext-1-1-1, you do not need to restart or re-run them. However,
+if you have not yet started simulations, please use IIASA-IAMC-m-ext-1-1-2.
 
 ### IIASA-IAMC-m-1-1-1
 
@@ -371,12 +402,26 @@ been corrected in IIASA-IAMC-m-1-1-2. If you have started or completed simulatio
 emissions from IIASA-IAMC-m-1-1-1, you do not need to restart or re-run them. However, if you have
 not yet started simulations, please use IIASA-IAMC-m-1-1-2.
 
+### IIASA-IAMC-ln-ext-1-1-1
+
+The IIASA-IAMC-ln-ext-1-1-1 dataset's aviation emissions have an issue with their seasonality. This
+has been corrected in IIASA-IAMC-ln-ext-1-1-2. If you have started or completed simulations with
+aviation emissions from IIASA-IAMC-ln-ext-1-1-1, you do not need to restart or re-run them. However,
+if you have not yet started simulations, please use IIASA-IAMC-ln-ext-1-1-2.
+
 ### IIASA-IAMC-ln-1-1-1
 
 The IIASA-IAMC-ln-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
 been corrected in IIASA-IAMC-ln-1-1-2. If you have started or completed simulations with aviation
 emissions from IIASA-IAMC-ln-1-1-1, you do not need to restart or re-run them. However, if you have
 not yet started simulations, please use IIASA-IAMC-ln-1-1-2.
+
+### IIASA-IAMC-l-ext-1-1-1
+
+The IIASA-IAMC-l-ext-1-1-1 dataset's aviation emissions have an issue with their seasonality. This
+has been corrected in IIASA-IAMC-l-ext-1-1-2. If you have started or completed simulations with
+aviation emissions from IIASA-IAMC-l-ext-1-1-1, you do not need to restart or re-run them. However,
+if you have not yet started simulations, please use IIASA-IAMC-l-ext-1-1-2.
 
 ### IIASA-IAMC-l-1-1-1
 
@@ -385,12 +430,26 @@ been corrected in IIASA-IAMC-l-1-1-2. If you have started or completed simulatio
 emissions from IIASA-IAMC-l-1-1-1, you do not need to restart or re-run them. However, if you have
 not yet started simulations, please use IIASA-IAMC-l-1-1-2.
 
+### IIASA-IAMC-hl-ext-1-1-1
+
+The IIASA-IAMC-hl-ext-1-1-1 dataset's aviation emissions have an issue with their seasonality. This
+has been corrected in IIASA-IAMC-hl-ext-1-1-2. If you have started or completed simulations with
+aviation emissions from IIASA-IAMC-hl-ext-1-1-1, you do not need to restart or re-run them. However,
+if you have not yet started simulations, please use IIASA-IAMC-hl-ext-1-1-2.
+
 ### IIASA-IAMC-hl-1-1-1
 
 The IIASA-IAMC-hl-1-1-1 dataset's aviation emissions have an issue with their seasonality. This has
 been corrected in IIASA-IAMC-hl-1-1-2. If you have started or completed simulations with aviation
 emissions from IIASA-IAMC-hl-1-1-1, you do not need to restart or re-run them. However, if you have
 not yet started simulations, please use IIASA-IAMC-hl-1-1-2.
+
+### IIASA-IAMC-h-ext-1-1-1
+
+The IIASA-IAMC-h-ext-1-1-1 dataset's aviation emissions have an issue with their seasonality. This
+has been corrected in IIASA-IAMC-h-ext-1-1-2. If you have started or completed simulations with
+aviation emissions from IIASA-IAMC-h-ext-1-1-1, you do not need to restart or re-run them. However,
+if you have not yet started simulations, please use IIASA-IAMC-h-ext-1-1-2.
 
 ### IIASA-IAMC-h-1-1-1
 
