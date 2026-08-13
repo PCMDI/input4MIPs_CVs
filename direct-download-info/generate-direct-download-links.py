@@ -22,9 +22,7 @@ def main(
     """
     Generate the direct download links
     """
-    DOWNLOAD_LINK_ROOT = (
-        "https://metagrid.esgf-west.org/thredds/fileServer/user_pub_work"
-    )
+    DOWNLOAD_LINK_ROOT = "https://esgf-node.ornl.gov/thredds/fileServer/user_pub_work"
 
     out = []
     for nc_file in tqdm.tqdm(tree_root.rglob("**/*.nc")):
