@@ -58,21 +58,20 @@ def main():
         # ):
         #     continue
 
-        base_node = "metagrid.esgf-west.org"
         if (
-            entry_latest["data_node"] == base_node
+            entry_latest["data_node"] == "esgf-node.ornl.gov"
             and entry_base["data_node"] == "eagle.alcf.anl.gov"
         ):
             continue
 
         if (
-            entry_latest["data_node"] == base_node
+            entry_latest["data_node"] == "esgf-node.ornl.gov"
             and entry_base["data_node"] == "aims3.llnl.gov"
         ):
             continue
 
         if (
-            entry_latest["data_node"] == base_node
+            entry_latest["data_node"] == "esgf-node.ornl.gov"
             and entry_base["data_node"] == "esgf-data.nersc.gov"
         ):
             continue
