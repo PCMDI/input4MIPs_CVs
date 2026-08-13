@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.52 (2026-08-13)
+
+
+### 📚 Improved Documentation
+
+- Updated metagrid related links to point at metagrid.esgf-west.org as this seems to provide a more stable interface ([#468](https://github.com/PCMDI/input4MIPs_CVs/pull/468))
+
+
 ## input4MIPs CVs v6.7.51 (2026-08-05)
 
 
