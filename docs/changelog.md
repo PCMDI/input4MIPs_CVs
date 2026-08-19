@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.54 (2026-08-19)
+
+
+### 📚 Improved Documentation
+
+- Clarified that there is only a difference in NOx units between anthropogenic emissions and open biomass burning emissions for historical data. The units are the same for anthropogenic emissions and open biomass burning emissions in the scenario data (historical open biomass burning emissions is the odd one out). ([#467](https://github.com/PCMDI/input4MIPs_CVs/pull/467))
+
+
 ## input4MIPs CVs v6.7.53 (2026-08-19)
 
 
