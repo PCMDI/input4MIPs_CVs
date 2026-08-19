@@ -230,8 +230,8 @@ Figure 3: Schematic approach for constructing the smoothed BB4CMIP7
   GFDL chose to use the distributions recommended by Table 4 in [Dentener et al. (2006)](https://doi.org/10.5194/acp-6-4321-2006) for their CMIP5 and CMIP6 simulations.
 
 Molecular weights for all species are listed in the following table:
-Note that NO<sub>x</sub> has different units in historical anthropogenic vs open burning data
-(the units are the same in the scenario data, historical open burning data is the odd one out).
+Note that NO<sub>x</sub> has different units in historical anthropogenic vs open burning data.
+However, in the scenario data, open burning and anthropogenic emissions both have the same units.
 
 | Species (bulk)            | Molecular weight (g) | Species (NMVOC)                                   | Molecular weight (g) |
 | ------------------------- | -------------------- | ------------------------------------------------- | -------------------- |
