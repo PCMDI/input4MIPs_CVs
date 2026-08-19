@@ -55,7 +55,8 @@
         "source_ids": [
             "UofMD-landState-vl-3-1-1",
             "UofMD-landState-m-3-1-1",
-            "UofMD-landState-h-3-1-1"
+            "UofMD-landState-h-3-1-1",
+            "UofMD-landState-h-ext-3-1"
         ]
     },
     "ghg_concentrations": {
