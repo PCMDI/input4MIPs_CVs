@@ -1,0 +1,5 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fzj-cmip-nitrogen-1-0",
+  "type": "source"
+}
