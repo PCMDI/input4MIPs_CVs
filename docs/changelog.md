@@ -27,7 +27,7 @@ of rst and use slightly different categories.
 
 ### 🆕 Features
 
-- Added land-use data for the high scenario extension under source ID `UofMD-landState-vl-ext-3-1` ([#472](https://github.com/PCMDI/input4MIPs_CVs/pull/472))
+- Added land-use data for the very-low scenario extension under source ID `UofMD-landState-vl-ext-3-1` ([#472](https://github.com/PCMDI/input4MIPs_CVs/pull/472))
 
 
 ## input4MIPs CVs v6.7.54 (2026-08-19)
