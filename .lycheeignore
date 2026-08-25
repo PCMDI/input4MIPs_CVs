@@ -15,6 +15,10 @@ file://
 ^https://doi.org/dev-test$
 ^https://human-settlement.emergency.copernicus.eu/$
 # LUH zenodo archives which aren't up yet
+^https://doi.org/10.5281/zenodo.22017128$
+^https://doi.org/10.5281/zenodo.21893767$
+^https://doi.org/10.5281/zenodo.20971086$
+# Typos coming through from files
 ^https://doi.org/110.5281/zenodo.22017128$
 ^https://doi.org/110.5281/zenodo.21893767$
 ^https://doi.org/110.5281/zenodo.20971086$
