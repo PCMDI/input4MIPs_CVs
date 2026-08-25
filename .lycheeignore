@@ -1,3 +1,10 @@
+# Exclude local and home links
+# LUH has certificate error.
+# Also not sure why we can't hit https://www.geo.vu.nl/~gwerf/GFED/GFED4/tables/ in CI
+# globalfiredata.org is super flaky, hence exlucded
+# climate modelling site has been deprecated, will updated later
+# IIASA has some bot check in front of it so gives a 403
+# https://human-settlement.emergency.copernicus.eu/ has some certificate error
 file://
 ^http://luh.umd.edu/$
 ^https://luh.umd.edu/$
@@ -7,3 +14,9 @@ file://
 ^https://iiasa.ac.at/models-tools-data/global-emission-fields-of-air-pollutants-and-ghgs$
 ^https://doi.org/dev-test$
 ^https://human-settlement.emergency.copernicus.eu/$
+# LUH zenodo archives which aren't up yet
+^https://doi.org/110.5281/zenodo.22017128$
+^https://doi.org/110.5281/zenodo.21893767$
+^https://doi.org/110.5281/zenodo.20971086$
+# We don't care about this being live
+^https://contrib.rocks/image?repo=PCMDI/input4MIPs_CVs$
