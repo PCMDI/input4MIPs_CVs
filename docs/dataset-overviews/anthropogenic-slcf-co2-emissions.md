@@ -71,8 +71,8 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 For the DECK simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [CEDS-CMIP-2025-04-18](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18%22%7D)
-- [CEDS-CMIP-2025-04-18-supplemental](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18-supplemental%22%7D).
+- [CEDS-CMIP-2025-04-18](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18%22%7D)
+- [CEDS-CMIP-2025-04-18-supplemental](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2025-04-18-supplemental%22%7D).
 
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
@@ -92,10 +92,10 @@ so that the identification and resolution of this issue is publicly accessible.
 
 For the DECK simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
-- [CEDS-CMIP-2024-11-25](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25%22%7D)
-- [CEDS-CMIP-2024-11-25-supplemental](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25-supplemental%22%7D)
-- [CEDS-CMIP-2024-10-21](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D)
-- [CEDS-CMIP-2024-10-21-supplemental](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21-supplemental%22%7D).
+- [CEDS-CMIP-2024-11-25](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25%22%7D)
+- [CEDS-CMIP-2024-11-25-supplemental](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-11-25-supplemental%22%7D)
+- [CEDS-CMIP-2024-10-21](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21%22%7D)
+- [CEDS-CMIP-2024-10-21-supplemental](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22CEDS-CMIP-2024-10-21-supplemental%22%7D).
 
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
@@ -115,35 +115,35 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [IIASA-IAMC-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-1-1-1%22%7D)
-- [IIASA-IAMC-vl-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-1%22%7D)
-- [IIASA-IAMC-vl-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-2%22%7D)
-- [IIASA-IAMC-vl-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-ext-1-1-1%22%7D)
-- [IIASA-IAMC-vl-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-ext-1-1-2%22%7D)
-- [IIASA-IAMC-ln-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-1-1-1%22%7D)
-- [IIASA-IAMC-ln-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-1-1-2%22%7D)
-- [IIASA-IAMC-ln-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-ext-1-1-1%22%7D)
-- [IIASA-IAMC-ln-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-ext-1-1-2%22%7D)
-- [IIASA-IAMC-l-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-1-1-1%22%7D)
-- [IIASA-IAMC-l-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-1-1-2%22%7D)
-- [IIASA-IAMC-l-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-ext-1-1-1%22%7D)
-- [IIASA-IAMC-l-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-ext-1-1-2%22%7D)
-- [IIASA-IAMC-ml-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-1-1-1%22%7D)
-- [IIASA-IAMC-ml-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-1-1-2%22%7D)
-- [IIASA-IAMC-ml-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-ext-1-1-1%22%7D)
-- [IIASA-IAMC-ml-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-ext-1-1-2%22%7D)
-- [IIASA-IAMC-m-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-1-1-1%22%7D)
-- [IIASA-IAMC-m-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-1-1-2%22%7D)
-- [IIASA-IAMC-m-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-ext-1-1-1%22%7D)
-- [IIASA-IAMC-m-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-ext-1-1-2%22%7D)
-- [IIASA-IAMC-hl-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-1-1-1%22%7D)
-- [IIASA-IAMC-hl-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-1-1-2%22%7D)
-- [IIASA-IAMC-hl-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-ext-1-1-1%22%7D)
-- [IIASA-IAMC-hl-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-ext-1-1-2%22%7D)
-- [IIASA-IAMC-h-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-1%22%7D)
-- [IIASA-IAMC-h-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-2%22%7D)
-- [IIASA-IAMC-h-ext-1-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-ext-1-1-1%22%7D)
-- [IIASA-IAMC-h-ext-1-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-ext-1-1-2%22%7D).
+- [IIASA-IAMC-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-1-1-1%22%7D)
+- [IIASA-IAMC-vl-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-1%22%7D)
+- [IIASA-IAMC-vl-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-1-1-2%22%7D)
+- [IIASA-IAMC-vl-ext-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-ext-1-1-1%22%7D)
+- [IIASA-IAMC-vl-ext-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-vl-ext-1-1-2%22%7D)
+- [IIASA-IAMC-ln-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-1-1-1%22%7D)
+- [IIASA-IAMC-ln-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-1-1-2%22%7D)
+- [IIASA-IAMC-ln-ext-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-ext-1-1-1%22%7D)
+- [IIASA-IAMC-ln-ext-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ln-ext-1-1-2%22%7D)
+- [IIASA-IAMC-l-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-1-1-1%22%7D)
+- [IIASA-IAMC-l-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-1-1-2%22%7D)
+- [IIASA-IAMC-l-ext-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-ext-1-1-1%22%7D)
+- [IIASA-IAMC-l-ext-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-l-ext-1-1-2%22%7D)
+- [IIASA-IAMC-ml-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-1-1-1%22%7D)
+- [IIASA-IAMC-ml-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-1-1-2%22%7D)
+- [IIASA-IAMC-ml-ext-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-ext-1-1-1%22%7D)
+- [IIASA-IAMC-ml-ext-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-ml-ext-1-1-2%22%7D)
+- [IIASA-IAMC-m-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-1-1-1%22%7D)
+- [IIASA-IAMC-m-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-1-1-2%22%7D)
+- [IIASA-IAMC-m-ext-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-ext-1-1-1%22%7D)
+- [IIASA-IAMC-m-ext-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-m-ext-1-1-2%22%7D)
+- [IIASA-IAMC-hl-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-1-1-1%22%7D)
+- [IIASA-IAMC-hl-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-1-1-2%22%7D)
+- [IIASA-IAMC-hl-ext-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-ext-1-1-1%22%7D)
+- [IIASA-IAMC-hl-ext-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-hl-ext-1-1-2%22%7D)
+- [IIASA-IAMC-h-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-1%22%7D)
+- [IIASA-IAMC-h-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-1-1-2%22%7D)
+- [IIASA-IAMC-h-ext-1-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-ext-1-1-1%22%7D)
+- [IIASA-IAMC-h-ext-1-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-h-ext-1-1-2%22%7D).
 
 
 The data has the DOIs: [10.5281/zenodo.17981824](https://doi.org/10.5281/zenodo.17981824), [10.5281/zenodo.17981825](https://doi.org/10.5281/zenodo.17981825).
@@ -160,8 +160,8 @@ so that the identification and resolution of this issue is publicly accessible.
 
 For the ScenarioMIP simulations in the testing phase of CMIP7, you will need data from the following source IDs:
 
-- [IIASA-IAMC-scendraft1-0-3-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%7D)
-- [IIASA-IAMC-scendraft2-0-3-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft2-0-3-0%22%7D).
+- [IIASA-IAMC-scendraft1-0-3-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft1-0-3-0%22%7D)
+- [IIASA-IAMC-scendraft2-0-3-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22IIASA-IAMC-scendraft2-0-3-0%22%7D).
 
 
 No DOIs are available for this data.

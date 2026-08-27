@@ -29,7 +29,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [UofMD-landState-3-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-1-2%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [UofMD-landState-3-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-1-2%22%7D)
 
 The data has the DOI: [10.5281/zenodo.19261724](https://doi.org/10.5281/zenodo.19261724).
 
@@ -43,7 +43,7 @@ so that the identification and resolution of this issue is publicly accessible.
 
 ##### Testing
 
-For the DECK simulations in the testing phase of CMIP7, use data with the source ID [UofMD-landState-3-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-0%22%7D)
+For the DECK simulations in the testing phase of CMIP7, use data with the source ID [UofMD-landState-3-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-3-0%22%7D)
 
 No DOIs are available for this data.
 
@@ -59,11 +59,11 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [UofMD-landState-vl-3-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-3-1-1%22%7D)
-- [UofMD-landState-vl-ext-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-ext-3-1%22%7D)
-- [UofMD-landState-m-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-m-3-1%22%7D)
-- [UofMD-landState-h-3-1-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-h-3-1-1%22%7D)
-- [UofMD-landState-h-ext-3-1](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-h-ext-3-1%22%7D).
+- [UofMD-landState-vl-3-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-3-1-1%22%7D)
+- [UofMD-landState-vl-ext-3-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-ext-3-1%22%7D)
+- [UofMD-landState-m-3-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-m-3-1%22%7D)
+- [UofMD-landState-h-3-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-h-3-1-1%22%7D)
+- [UofMD-landState-h-ext-3-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-h-ext-3-1%22%7D).
 
 
 The data has the DOIs: [10.5281/zenodo.19353397](https://doi.org/10.5281/zenodo.19353397), [10.5281/zenodo.21893767](https://doi.org/10.5281/zenodo.21893767), [110.5281/zenodo.22017128](https://doi.org/110.5281/zenodo.22017128), [10.5281/zenodo.20971086](https://doi.org/10.5281/zenodo.20971086), [10.5281/zenodo.19354835](https://doi.org/10.5281/zenodo.19354835).

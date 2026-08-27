@@ -54,8 +54,8 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 For the DECK simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [FZJ-CMIP-ozone-1-2](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-2%22%7D)
-- [FZJ-CMIP-ozone-2-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-2-0%22%7D).
+- [FZJ-CMIP-ozone-1-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-1-2%22%7D)
+- [FZJ-CMIP-ozone-2-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-2-0%22%7D).
 
 Retrieving and only using valid data will require some care.
 Please make sure you read the guidance given at the start of the Summary section
@@ -81,10 +81,10 @@ No data available for this phase yet.
 
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
-- [FZJ-CMIP-ozone-vl-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-vl-1-0%22%7D)
-- [FZJ-CMIP-ozone-m-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-m-1-0%22%7D)
-- [FZJ-CMIP-ozone-hl-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-hl-1-0%22%7D)
-- [FZJ-CMIP-ozone-h-1-0](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-h-1-0%22%7D).
+- [FZJ-CMIP-ozone-vl-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-vl-1-0%22%7D)
+- [FZJ-CMIP-ozone-m-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-m-1-0%22%7D)
+- [FZJ-CMIP-ozone-hl-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-hl-1-0%22%7D)
+- [FZJ-CMIP-ozone-h-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-h-1-0%22%7D).
 
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).
