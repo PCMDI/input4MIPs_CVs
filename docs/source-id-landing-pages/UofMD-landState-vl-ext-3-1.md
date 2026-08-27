@@ -1,6 +1,6 @@
 # UofMD-landState-vl-ext-3-1
 
-*ESGF link*: [https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-vl-ext-3-1%22%5D%7D](https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-vl-ext-3-1%22%5D%7D)
+*ESGF link*: [https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-vl-ext-3-1%22%5D%7D](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22UofMD-landState-vl-ext-3-1%22%5D%7D)
 
 *DOI(s)*: [110.5281/zenodo.22017128](https://doi.org/110.5281/zenodo.22017128)
 

@@ -77,7 +77,7 @@ def get_esgf_search_url(source_ids: list[str]) -> str:
     """
     source_id_search = "%22%2C%22".join(source_ids)
     return (
-        "https://esgf-node.ornl.gov/search?project=input4MIPs&versionType=all"
+        "https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all"
         f"&activeFacets=%7B%22source_id%22%3A%22{source_id_search}%22%7D"
     )
 
