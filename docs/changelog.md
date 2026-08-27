@@ -22,6 +22,18 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.56 (2026-08-27)
+
+
+### 📚 Improved Documentation
+
+- Finished updating metagrid related links to point at metagrid.esgf-west.org (not all cases were captured in [#468](https://github.com/PCMDI/input4MIPs_CVs/pull/468)) ([#477](https://github.com/PCMDI/input4MIPs_CVs/pull/477))
+
+### 🔧 Trivial/Internal Changes
+
+- [#473](https://github.com/PCMDI/input4MIPs_CVs/pull/473), [#474](https://github.com/PCMDI/input4MIPs_CVs/pull/474)
+
+
 ## input4MIPs CVs v6.7.55 (2026-08-25)
 
 
