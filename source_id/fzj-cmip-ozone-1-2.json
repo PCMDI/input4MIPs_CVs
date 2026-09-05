@@ -1,0 +1,5 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fzj-cmip-ozone-1-2",
+  "type": "source"
+}
