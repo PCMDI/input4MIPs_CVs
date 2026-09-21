@@ -103,7 +103,10 @@
     }
   ],
   "fundingReferences": [],
-  "identifier": {},
+  "identifier": {
+    "id": "10.5281/zenodo.19353707",
+    "identifierType": "DOI"
+  },
   "language": "en",
   "publication_year": 2025,
   "publisher": "Earth System Grid Federation",
