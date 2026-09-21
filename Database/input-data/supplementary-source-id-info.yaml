@@ -310,6 +310,8 @@ PIK-CMIP-1-0-0:
     PIK-CMIP-1-0-1 also includes a fix to a bug discovered in the 0.25 degree resolution files in PIK-CMIP-1-0-0
     thanks to @slm7826 and @vnaik60 (see <a href="https://github.com/PCMDI/input4MIPs_CVs/issues/362">#362</a>).
     The 0.5 degree data was not affected by this bug.
+PIK-CMIP-1-0-1:
+  doi: 10.5281/zenodo.19353707
 PIK-vl-1-0-0:
   doi: 10.5281/zenodo.19353707
 PIK-vl-ext-1-0-0:
