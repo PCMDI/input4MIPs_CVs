@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.57 (2026-09-21)
+
+
+### 📚 Improved Documentation
+
+- Updated docs and added DOI for PIK historical population data ([#479](https://github.com/PCMDI/input4MIPs_CVs/pull/479))
+
+
 ## input4MIPs CVs v6.7.56 (2026-08-27)
 
 
