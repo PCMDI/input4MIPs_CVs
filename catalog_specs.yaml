@@ -1,4 +1,6 @@
-version: v3.0.2
+# STAC CATALOG SPECIFICATIONS
+
+version: v3.0.1
 
 catalog_properties:
   name: stac
@@ -9,7 +11,7 @@ catalog_properties:
     - name: alternate-assets
       version: v1.2.0
   regex_id: '^input4MIPs(\\.[A-Za-z0-9-]+){8}\.v[0-9]{8}$'
-  regex_base_id: '^input4MIPs(\\.[A-Za-z0-9-]+){8}$'
+  regex_title: '^input4MIPs(\\.[A-Za-z0-9-]+){8}$'
 
 dataset_properties:
   - source_collection: activity_id
@@ -111,10 +113,6 @@ dataset_properties:
   - source_collection: variable_id
     source_collection_key: units
     catalog_field_name: variable_units
-    catalog_field_value_type: string
-    is_required: true
-
-  - source_collection: version
     catalog_field_value_type: string
     is_required: true
 
