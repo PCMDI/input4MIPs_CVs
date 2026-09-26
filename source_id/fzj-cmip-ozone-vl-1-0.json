@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "fzj-cmip-ozone-vl-1-0",
+  "type": "source",
+  "dataset_category": [
+    "ozone"
+  ]
+}
