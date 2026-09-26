@@ -1,0 +1,5 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "pcmdi-amip-1-1-10",
+  "type": "source"
+}
