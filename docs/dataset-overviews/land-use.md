@@ -19,6 +19,16 @@ the v3.1.1 historical land-use forcing
 or v3.1 scenario land-use forcing,
 you do not need to re-run with the newer datasets.
 
+Note also that there is an error in the H land-use dataset (and likely in the H-ext dataset too).
+The issue is with the LUH algorithm that spatially allocates national wood harvest demands to individual grid cells.
+In order to preserve spatial patterns across the harmonization year there are some constraints in the algorithm about how much forest loss can occur.
+For some countries which are small in area those constraints, coupled with very high increases in cropland area from the IAM scenario,
+result in wood harvest being placed onto non-forested grid-cells for a few years (less than 5 years at the beginning of the future scenario).
+The assesssment by the Forcings Task Team and CMIP Panel co-chairs is
+that this will have very little long-term impact on climate or carbon fluxes
+(but for a few years the national carbon fluxes associated with wood harvest are probably a bit misleading (too low)).
+As a result, the recommendation is to not re-run and no update to the existing forcing files will be provided.
+
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
