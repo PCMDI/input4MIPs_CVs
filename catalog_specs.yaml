@@ -1,6 +1,6 @@
 # STAC CATALOG SPECIFICATIONS
 
-version: v3.0.1
+version: v3.1.0
 
 catalog_properties:
   name: stac
