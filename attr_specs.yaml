@@ -1,66 +1,87 @@
+# NETCDF GLOBAL ATTRIBUTES SPECIFICATIONS
+
 - source_collection: conventions
-  field_name: Conventions
+  attr_field_name: Conventions
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: activity_id
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: contact
+  attr_field_value_type: string
+  attr_field_na_value: ""
   is_required: true
-  value_type: string
-  default_value: ""
+
 - source_collection: creation_date
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: dataset_category
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: frequency
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: grid_label
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: institution_id
-  specific_key: description
-  field_name: institution
+  source_collection_key: description
+  attr_field_name: institution
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: institution_id
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: license
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: mip_era
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: nominal_resolution
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: realm
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: region
+  attr_field_value_type: string
   is_required: false
-  value_type: string
+
 - source_collection: source_id
-  specific_key: description
-  field_name: source
+  source_collection_key: description
+  attr_field_name: source
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: source_id
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: target_mip
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: title
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: tracking_id
+  attr_field_value_type: string
   is_required: true
-  value_type: string
+
 - source_collection: variable_id
+  attr_field_value_type: string
   is_required: true
-  value_type: string
