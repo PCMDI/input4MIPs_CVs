@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.58 (2026-09-29)
+
+
+### 📚 Improved Documentation
+
+- Added a note about an error in the land-use forcing for the H scenario. This error is assessed to be small, hence no re-runs are being requested at this time and no updated dataset will be produced. ([#481](https://github.com/PCMDI/input4MIPs_CVs/pull/481))
+
+
 ## input4MIPs CVs v6.7.57 (2026-09-21)
 
 
