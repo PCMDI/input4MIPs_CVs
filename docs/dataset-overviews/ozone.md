@@ -38,9 +38,22 @@ If any modelling centres run historical simulations
 with both the `FZJ-CMIP-ozone-1-2` and `FZJ-CMIP-ozone-2-0` forcing,
 these simulations would be of interest to the Forcings Task Team.
 
+<!-- TODO: uncomment this when we have these updated files -->
+<!-- For the `zmta` files, v2.0 files have been released. -->
+<!-- The meaning is unchanged from the v1.2 files. -->
+<!-- However values which were previously set to NaN because they were below the Earth's surface -->
+<!-- have now been set to the surface values. -->
+<!-- Please be aware of this when processing the files. -->
+
 ### ScenarioMIP
 
-Ozone forcing for the `vl` and `h` ScenarioMIP (and associated) simulations is available.
+Ozone forcing for the ScenarioMIP (and associated) simulations is available.
+
+For the `zmta` files, v2.0 files have been released.
+The meaning is unchanged from the v1.0 files.
+However values which were previously set to NaN because they were below the Earth's surface
+have now been set to the surface values.
+Please be aware of this when processing the files.
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
