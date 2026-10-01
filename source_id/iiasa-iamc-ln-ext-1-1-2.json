@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "iiasa-iamc-ln-ext-1-1-2",
+  "type": "source",
+  "dataset_category": [
+    "emissions"
+  ]
+}
