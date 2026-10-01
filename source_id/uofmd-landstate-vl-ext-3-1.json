@@ -1,0 +1,8 @@
+{
+  "@context": "000_context.jsonld",
+  "id": "uofmd-landstate-vl-ext-3-1",
+  "type": "source",
+  "dataset_category": [
+    "landstate"
+  ]
+}
