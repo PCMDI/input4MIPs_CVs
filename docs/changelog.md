@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.60 (2026-10-12)
+
+
+### 🆕 Features
+
+- Added ozone and nitrogen deposition data for the remaining ScenarioMIP scenarios. See the source IDs: `FZJ-CMIP-ozone-vl-2-0`, `FZJ-CMIP-ozone-ln-1-0`, `FZJ-CMIP-ozone-ln-2-0`, `FZJ-CMIP-ozone-l-1-0`, `FZJ-CMIP-ozone-l-2-0`, `FZJ-CMIP-ozone-m-2-0`, `FZJ-CMIP-ozone-ml-1-0`, `FZJ-CMIP-ozone-ml-2-0`, `FZJ-CMIP-ozone-hl-2-0`, `FZJ-CMIP-ozone-h-1-0`, `FZJ-CMIP-ozone-h-2-`, `FZJ-CMIP-nitrogen-ln-1-0`, `FZJ-CMIP-nitrogen-l-1-0` and `FZJ-CMIP-nitrogen-ml-1-0`. The v2.0 ozone data is not a problematic update. v2.0 only exists for the `zmta` files. The meaning is unchanged from the v1.0 files. However values which were set to NaN in the v1.0 files because they were below the Earth's surface have been set to the surface values in v2.0. Please be aware of this when processing the files. ([#483](https://github.com/PCMDI/input4MIPs_CVs/pull/483))
+
+
 ## input4MIPs CVs v6.7.59 (2026-10-12)
 
 
