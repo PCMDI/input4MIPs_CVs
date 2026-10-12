@@ -38,9 +38,23 @@ If any modelling centres run historical simulations
 with both the `FZJ-CMIP-ozone-1-2` and `FZJ-CMIP-ozone-2-0` forcing,
 these simulations would be of interest to the Forcings Task Team.
 
+<!-- TODO: uncomment this when we have these updated files -->
+<!-- For the `zmta` files, v2.0 files have been released. -->
+<!-- The meaning is unchanged from the v1.2 files. -->
+<!-- However values which were previously set to NaN because they were below the Earth's surface -->
+<!-- have now been set to the surface values. -->
+<!-- Please be aware of this when processing the files. -->
+
 ### ScenarioMIP
 
-Ozone forcing for the `vl` and `h` ScenarioMIP (and associated) simulations is available.
+Ozone forcing for the ScenarioMIP (and associated) simulations is available.
+
+For the `zmta` files, v2.0 files have been released.
+The meaning is unchanged from the v1.0 files.
+However values which were set to NaN in the v1.0 files
+because they were below the Earth's surface
+have been set to the surface values in v2.0.
+Please be aware of this when processing the files.
 
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
@@ -82,9 +96,19 @@ No data available for this phase yet.
 For the ScenarioMIP simulations in the production phase of CMIP7, you will need data from the following source IDs:
 
 - [FZJ-CMIP-ozone-vl-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-vl-1-0%22%7D)
+- [FZJ-CMIP-ozone-vl-2-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-vl-2-0%22%7D)
+- [FZJ-CMIP-ozone-ln-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-ln-1-0%22%7D)
+- [FZJ-CMIP-ozone-ln-2-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-ln-2-0%22%7D)
+- [FZJ-CMIP-ozone-l-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-l-1-0%22%7D)
+- [FZJ-CMIP-ozone-l-2-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-l-2-0%22%7D)
 - [FZJ-CMIP-ozone-m-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-m-1-0%22%7D)
+- [FZJ-CMIP-ozone-m-2-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-m-2-0%22%7D)
+- [FZJ-CMIP-ozone-ml-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-ml-1-0%22%7D)
+- [FZJ-CMIP-ozone-ml-2-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-ml-2-0%22%7D)
 - [FZJ-CMIP-ozone-hl-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-hl-1-0%22%7D)
-- [FZJ-CMIP-ozone-h-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-h-1-0%22%7D).
+- [FZJ-CMIP-ozone-hl-2-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-hl-2-0%22%7D)
+- [FZJ-CMIP-ozone-h-1-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-h-1-0%22%7D)
+- [FZJ-CMIP-ozone-h-2-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22FZJ-CMIP-ozone-h-2-0%22%7D).
 
 
 The data has the DOI: [10.25981/ESGF.input4MIPs.CMIP7/2584173](https://doi.org/10.25981/ESGF.input4MIPs.CMIP7/2584173).
