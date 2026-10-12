@@ -19,6 +19,16 @@ the v3.1.1 historical land-use forcing
 or v3.1 scenario land-use forcing,
 you do not need to re-run with the newer datasets.
 
+Note also that there is an error in the H land-use dataset (and likely in the H-ext dataset too).
+The issue is with the LUH algorithm that spatially allocates national wood harvest demands to individual grid cells.
+In order to preserve spatial patterns across the harmonization year there are some constraints in the algorithm about how much forest loss can occur.
+For some countries which are small in area those constraints, coupled with very high increases in cropland area from the IAM scenario,
+result in wood harvest being placed onto non-forested grid-cells for a few years (less than 5 years at the beginning of the future scenario).
+The assesssment by the Forcings Task Team and CMIP Panel co-chairs is
+that this will have very little long-term impact on climate or carbon fluxes
+(but for a few years the national carbon fluxes associated with wood harvest are probably a bit misleading (too low)).
+As a result, the recommendation is to not re-run and no update to the existing forcing files will be provided.
+
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases
@@ -62,11 +72,13 @@ For the ScenarioMIP simulations in the production phase of CMIP7, you will need 
 - [UofMD-landState-vl-3-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-3-1-1%22%7D)
 - [UofMD-landState-vl-ext-3-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-vl-ext-3-1%22%7D)
 - [UofMD-landState-m-3-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-m-3-1%22%7D)
+- [UofMD-landState-m-ext-3-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-m-ext-3-1%22%7D)
+- [UofMD-landState-hl-3-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-hl-3-1%22%7D)
 - [UofMD-landState-h-3-1-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-h-3-1-1%22%7D)
 - [UofMD-landState-h-ext-3-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22UofMD-landState-h-ext-3-1%22%7D).
 
 
-The data has the DOIs: [10.5281/zenodo.19353397](https://doi.org/10.5281/zenodo.19353397), [10.5281/zenodo.21893767](https://doi.org/10.5281/zenodo.21893767), [110.5281/zenodo.22017128](https://doi.org/110.5281/zenodo.22017128), [10.5281/zenodo.20971086](https://doi.org/10.5281/zenodo.20971086), [10.5281/zenodo.19354835](https://doi.org/10.5281/zenodo.19354835).
+The data has the DOIs: [10.5281/zenodo.19353397](https://doi.org/10.5281/zenodo.19353397), [10.5281/zenodo.22966685](https://doi.org/10.5281/zenodo.22966685), [10.5281/zenodo.22962921](https://doi.org/10.5281/zenodo.22962921), [10.5281/zenodo.21893767](https://doi.org/10.5281/zenodo.21893767), [110.5281/zenodo.22017128](https://doi.org/110.5281/zenodo.22017128), [10.5281/zenodo.20971086](https://doi.org/10.5281/zenodo.20971086), [10.5281/zenodo.19354835](https://doi.org/10.5281/zenodo.19354835).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.

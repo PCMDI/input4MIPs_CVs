@@ -22,6 +22,26 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.59 (2026-10-12)
+
+
+### 🆕 Features
+
+- Added land-use data for the medium scenario extension under source ID `UofMD-landState-m-ext-3-1` and the high-low scenario under source ID `UofMD-landState-hl-3-1` ([#484](https://github.com/PCMDI/input4MIPs_CVs/pull/484))
+
+### 📚 Improved Documentation
+
+- Added a note clarifying that, while all the greenhouse gas concentration forcing datasets use a standard name of the form `mole_fraction_of_X_in_air`, rather than the more explicit `mole_fraction_of_X_in_dry_air`, all of these forcing datasets are mole fractions in dry air. ([#487](https://github.com/PCMDI/input4MIPs_CVs/pull/487))
+
+
+## input4MIPs CVs v6.7.58 (2026-09-29)
+
+
+### 📚 Improved Documentation
+
+- Added a note about an error in the land-use forcing for the H scenario. This error is assessed to be small, hence no re-runs are being requested at this time and no updated dataset will be produced. ([#481](https://github.com/PCMDI/input4MIPs_CVs/pull/481))
+
+
 ## input4MIPs CVs v6.7.57 (2026-09-21)
 
 
