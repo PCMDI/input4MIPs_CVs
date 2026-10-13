@@ -22,6 +22,14 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.61 (2026-10-13)
+
+
+### 🆕 Features
+
+- Added the PolMIP datasets into our database. We will not track the versions of these datasets in the docs. See the CMIP7 guidance pages (https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Experiment_set_up_and_Forcings/#polmip) for guidance about how to use these forcings in PolMIP experiments. ([#462](https://github.com/PCMDI/input4MIPs_CVs/pull/462))
+
+
 ## input4MIPs CVs v6.7.60 (2026-10-12)
 
 
