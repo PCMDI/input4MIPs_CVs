@@ -92,6 +92,9 @@ class ScenarioInfo:
     legacy: bool
     """Is this a legacy scenario name (from early ScenarioMIP drafts)?"""
 
+    polmip: bool = False
+    """Is this a PolMIP forcing file?"""
+
 
 def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
     """
@@ -215,6 +218,10 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         # Used for scenario indepdendent forcings i.e. volcanic and solar
         scenario_indepent_scenario_label,
     }
+    POLMIP_SCENARIOS_INTERNAL_HYPHEN = {
+        "vl-cf",
+        "vl-cf-ext",
+    }
     # Draft names before final decision
     KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho", "scendraft1", "scendraft2"}
 
@@ -236,8 +243,24 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
             # e.g. "PIK-vllo-0-1-0".
             toks = source_id.split(known_prefix)[1].split("-")
             scenario = toks[0]
+            scenario_internal_hyphen = "-".join(toks[:2])
+
             if toks[1] == "ext":
                 scenario = "-".join(toks[:2])
+                # Don't need to update:
+                # at this point scenario and scenario_internal_hyphen become the same thing
+                # scenario_internal_hyphen = "-".join(toks[:2])
+
+            if toks[2] == "ext":
+                # Urgh PolMIP
+                scenario = "-".join(toks[:3])
+                scenario_internal_hyphen = "-".join(toks[:3])
+
+            # Check first so we are greedy and don't confuse vl-cf for vl
+            if scenario_internal_hyphen in POLMIP_SCENARIOS_INTERNAL_HYPHEN:
+                return ScenarioInfo(
+                    name=scenario_internal_hyphen, legacy=False, polmip=True
+                )
 
             if scenario in KNOWN_SCENARIOS:
                 return ScenarioInfo(name=scenario, legacy=False)
@@ -371,11 +394,19 @@ def get_cmip7_phase_source_id_summary(
         # Note: the use of extract_scenario_from_source_id here
         # effectively checks parsing of all source IDs
         if cmip7_phase.startswith("scenariomip"):
-            source_ids_for_phase = tuple(
-                sid
-                for sid in db_source_id_stub_rows["source_id"].unique()
-                if extract_scenario_from_source_id(sid) is not None
-            )
+            source_ids_for_phase_l = []
+            for sid in db_source_id_stub_rows["source_id"].unique():
+                scenario_info = extract_scenario_from_source_id(sid)
+                if (
+                    scenario_info is None
+                    # Drop out PolMIP
+                    or scenario_info.polmip
+                ):
+                    continue
+
+                source_ids_for_phase_l.append(sid)
+
+            source_ids_for_phase = tuple(source_ids_for_phase_l)
 
         else:
             source_ids_for_phase = tuple(

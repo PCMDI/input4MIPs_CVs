@@ -14,13 +14,27 @@ For the latest information, please see the
 `extract_scenario_from_source_id` function
 in [docs/dataset-overviews/fill-out-auto-generated-sections.py](https://github.com/PCMDI/input4MIPs_CVs/blob/main/docs/dataset-overviews/fill-out-auto-generated-sections.py).
 
-We have include a copy of this function as at 2026-04-14 below
+We have include a copy of this function as at 2026-10-12 below
 so you can see the logic,
 but this extract is not automatically updated so it could be out of date
 by the time you are reading this.
 
 
 ```python
+@define
+class ScenarioInfo:
+    """Scenario information"""
+
+    name: str
+    """Scenario name"""
+
+    legacy: bool
+    """Is this a legacy scenario name (from early ScenarioMIP drafts)?"""
+
+    polmip: bool = False
+    """Is this a PolMIP forcing file?"""
+
+
 def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
     """
     Extract the scenario from a given source ID
@@ -143,11 +157,17 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         # Used for scenario indepdendent forcings i.e. volcanic and solar
         scenario_indepent_scenario_label,
     }
+    POLMIP_SCENARIOS_INTERNAL_HYPHEN = {
+        "vl-cf",
+        "vl-cf-ext",
+    }
     # Draft names before final decision
     KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho", "scendraft1", "scendraft2"}
 
     for known_prefix in (
         "CR-",
+        "FZJ-CMIP-nitrogen-",
+        "FZJ-CMIP-ozone-",
         "IIASA-IAMC-",
         "PIK-",
         "SOLARIS-HEPPA-",
@@ -162,8 +182,24 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
             # e.g. "PIK-vllo-0-1-0".
             toks = source_id.split(known_prefix)[1].split("-")
             scenario = toks[0]
+            scenario_internal_hyphen = "-".join(toks[:2])
+
             if toks[1] == "ext":
                 scenario = "-".join(toks[:2])
+                # Don't need to update:
+                # at this point scenario and scenario_internal_hyphen become the same thing
+                # scenario_internal_hyphen = "-".join(toks[:2])
+
+            if toks[2] == "ext":
+                # Urgh PolMIP
+                scenario = "-".join(toks[:3])
+                scenario_internal_hyphen = "-".join(toks[:3])
+
+            # Check first so we are greedy and don't confuse vl-cf for vl
+            if scenario_internal_hyphen in POLMIP_SCENARIOS_INTERNAL_HYPHEN:
+                return ScenarioInfo(
+                    name=scenario_internal_hyphen, legacy=False, polmip=True
+                )
 
             if scenario in KNOWN_SCENARIOS:
                 return ScenarioInfo(name=scenario, legacy=False)
