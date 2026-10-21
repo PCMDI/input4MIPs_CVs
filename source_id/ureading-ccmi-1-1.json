@@ -1,0 +1,42 @@
+{
+    "@context": "000_context.jsonld",
+    "id": "ureading-ccmi-1-1",
+    "type": "source",
+    "activity_id": "input4MIPs",
+    "authors": [
+        {
+            "affiliations": [
+                "Institute of Energy and Climate Research - Stratosphere (ICE-4), Forschungszentrum Juelich GmbH, Juelich, Germany",
+                "Department of Meteorology, University of Reading, Reading, United Kingdom"
+            ],
+            "email": "m.i.hegglin@fz-juelich.de",
+            "name": "Michaela Hegglin",
+            "orcid": "0000-0003-2820-9044"
+        },
+        {
+            "affiliations": [
+                "Atmospheric Chemistry Observations and Modeling Laboratory, National Center for Atmospheric Research, Boulder, CO, USA"
+            ],
+            "email": "dkin@ucar.edu",
+            "name": "Douglas Kinnison",
+            "orcid": "0000-0002-3418-0834"
+        },
+        {
+            "affiliations": [
+                "Environment and Climate Change Canada, Climate Research Division, Montreal, Canada"
+            ],
+            "email": "david.plummer@ec.gc.ca",
+            "name": "David Plummer",
+            "orcid": "0000-0001-8087-3976"
+        }
+    ],
+    "contact": "Michaela Hegglin (m.i.hegglin@fz-juelich.de); Douglas Kinnison (dkin@ucar.edu); David Plummer (david.plummer@ec.gc.ca)",
+    "dataset_category": [
+        "ozone"
+    ],
+    "further_info_url": "https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/ozone",
+    "institution_id": "UReading",
+    "license_id": "CC BY 4.0",
+    "mip_era": "CMIP6Plus",
+    "source_version": "1.1"
+}

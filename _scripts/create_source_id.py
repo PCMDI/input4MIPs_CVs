@@ -10,8 +10,8 @@ import os
 from pathlib import Path
 from typing import Any, Dict, List
 
-from scripts.create_context_file import create_context_file
-from scripts.fetch_cv_files import fetch_cv_file, get_cv_path
+from create_context_file import create_context_file
+from fetch_cv_files import fetch_cv_file, get_cv_path
 
 # Setup logging
 logging.basicConfig(
