@@ -20,6 +20,10 @@ However, the updates are very small so,
 if you have already run simulations using v1.0.0 datasets,
 you do not need to re-run with the newer datasets.
 
+Also note that all datasets use a standard name of the form `mole_fraction_of_X_in_air`
+rather than the more explicit `mole_fraction_of_X_in_dry_air`.
+For the avoidance of doubt: all our provided concentrations are mole fractions in dry air.
+
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases

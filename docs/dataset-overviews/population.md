@@ -27,7 +27,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-1%22%7D)
 
-No DOIs are available for this data.
+The data has the DOI: [10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -109,7 +109,7 @@ We provide annual data (1850-2300) on a regular 0.25 ('gn') and 0.5 degree ('gr'
 
 - Historical files cover 1850-2025.
 - Future scenario files cover 2022-2100, i.e. include additional historical years for convenience.
-- Extended future scenario files cover 2100-2200 and 2201-2300. 
+- Extended future scenario files cover 2101-2200 and 2201-2300. 
 
 In the current absence of SSP projections beyond 2300, we recommend keeping population constant after 2300.
 
@@ -149,7 +149,8 @@ as well as extended FuturePop projections until 2300 based on extended SSPs from
 
 (5) The population counts were converted to population density based on the size of grid-cells converted from their latitude.
 
-Full documentation of the data will be available soon.
+For details, see the documentation provided with the code and inputs on the [Zenodo repository](https://doi.org/10.5281/zenodo.17572467) 
+as well as our [preprint in the special issue of Geoscientific Model Development](https://doi.org/10.5194/egusphere-2026-5045).
 
 <!--- end of placeholder for piControl recommendation -->
 

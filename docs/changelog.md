@@ -22,6 +22,50 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.61 (2026-10-13)
+
+
+### 🆕 Features
+
+- Added the PolMIP datasets into our database. We will not track the versions of these datasets in the docs. See the CMIP7 guidance pages (https://wcrp-cmip.github.io/cmip7-guidance/docs/CMIP7/Experiment_set_up_and_Forcings/#polmip) for guidance about how to use these forcings in PolMIP experiments. ([#462](https://github.com/PCMDI/input4MIPs_CVs/pull/462))
+
+
+## input4MIPs CVs v6.7.60 (2026-10-12)
+
+
+### 🆕 Features
+
+- Added ozone and nitrogen deposition data for the remaining ScenarioMIP scenarios. See the source IDs: `FZJ-CMIP-ozone-vl-2-0`, `FZJ-CMIP-ozone-ln-1-0`, `FZJ-CMIP-ozone-ln-2-0`, `FZJ-CMIP-ozone-l-1-0`, `FZJ-CMIP-ozone-l-2-0`, `FZJ-CMIP-ozone-m-2-0`, `FZJ-CMIP-ozone-ml-1-0`, `FZJ-CMIP-ozone-ml-2-0`, `FZJ-CMIP-ozone-hl-2-0`, `FZJ-CMIP-ozone-h-1-0`, `FZJ-CMIP-ozone-h-2-`, `FZJ-CMIP-nitrogen-ln-1-0`, `FZJ-CMIP-nitrogen-l-1-0` and `FZJ-CMIP-nitrogen-ml-1-0`. The v2.0 ozone data is not a problematic update. v2.0 only exists for the `zmta` files. The meaning is unchanged from the v1.0 files. However values which were set to NaN in the v1.0 files because they were below the Earth's surface have been set to the surface values in v2.0. Please be aware of this when processing the files. ([#483](https://github.com/PCMDI/input4MIPs_CVs/pull/483))
+
+
+## input4MIPs CVs v6.7.59 (2026-10-12)
+
+
+### 🆕 Features
+
+- Added land-use data for the medium scenario extension under source ID `UofMD-landState-m-ext-3-1` and the high-low scenario under source ID `UofMD-landState-hl-3-1` ([#484](https://github.com/PCMDI/input4MIPs_CVs/pull/484))
+
+### 📚 Improved Documentation
+
+- Added a note clarifying that, while all the greenhouse gas concentration forcing datasets use a standard name of the form `mole_fraction_of_X_in_air`, rather than the more explicit `mole_fraction_of_X_in_dry_air`, all of these forcing datasets are mole fractions in dry air. ([#487](https://github.com/PCMDI/input4MIPs_CVs/pull/487))
+
+
+## input4MIPs CVs v6.7.58 (2026-09-29)
+
+
+### 📚 Improved Documentation
+
+- Added a note about an error in the land-use forcing for the H scenario. This error is assessed to be small, hence no re-runs are being requested at this time and no updated dataset will be produced. ([#481](https://github.com/PCMDI/input4MIPs_CVs/pull/481))
+
+
+## input4MIPs CVs v6.7.57 (2026-09-21)
+
+
+### 📚 Improved Documentation
+
+- Updated docs and added DOI for PIK historical population data ([#479](https://github.com/PCMDI/input4MIPs_CVs/pull/479))
+
+
 ## input4MIPs CVs v6.7.56 (2026-08-27)
 
 

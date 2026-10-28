@@ -2,7 +2,7 @@
 
 *ESGF link*: [https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PIK-CMIP-1-0-1%22%5D%7D](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&&activeFacets=%7B%22source_id%22%3A%5B%22PIK-CMIP-1-0-1%22%5D%7D)
 
-*DOI(s)*: Not provided
+*DOI(s)*: [10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707)
 
 ## Authors
 
