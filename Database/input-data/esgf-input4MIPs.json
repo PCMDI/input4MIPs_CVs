@@ -1907604,6 +1907604,416 @@
             "http://hdl.handle.net/hdl:21.14100/2afbdb0e-e09d-37d6-a2c4-968ec2d9242c|PID|pid"
         ]
     },
+    "input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-management.gn.v20261015":{
+        "Conventions":[
+            "CF-1.6"
+        ],
+        "_timestamp":"2026-10-22T20:59:59.935938Z",
+        "access":[
+            "HTTPServer",
+            "Globus"
+        ],
+        "activity_id":[
+            "input4MIPs"
+        ],
+        "cf_standard_name":[
+            "latitude",
+            "time",
+            "longitude"
+        ],
+        "contact":[
+            "lchini@umd.edu, gchurtt@umd.edu"
+        ],
+        "creation_date":"2026-10-15T02:37:11Z",
+        "data_node":"esgf-data.nersc.gov",
+        "dataset_category":[
+            "landState"
+        ],
+        "dataset_id_template_":[
+            "%(activity_id)s.%(mip_era)s.%(target_mip)s.%(institution_id)s.%(source_id)s.%(realm)s.%(frequency)s.%(variable_id)s.%(grid_label)s"
+        ],
+        "dataset_status":[
+            "latest"
+        ],
+        "datetime_end":"2500-01-01T00:00:00Z",
+        "datetime_start":"2100-01-01T00:00:00Z",
+        "deprecated":false,
+        "directory_format_template_":[
+            "%(root)s/%(activity_id)s/%(mip_era)s/%(target_mip)s/%(institution_id)s/%(source_id)s/%(realm)s/%(frequency)s/%(variable_id)s/%(grid_label)s/%(version)s"
+        ],
+        "east_degrees":179.875,
+        "frequency":[
+            "yr"
+        ],
+        "further_info_url":[
+            "http://luh.umd.edu"
+        ],
+        "globus_url":[
+            "https://app.globus.org/file_manager?origin_id=904ff241-867c-404e-b355-64b701ba6ac1&amp;origin_path=/user_pub_work/input4MIPs/CMIP7/ScenarioMIP/UofMD/UofMD-landState-hl-ext-3-1/land/yr/multiple-management/gn/v20261015"
+        ],
+        "grid_label":[
+            "gn"
+        ],
+        "id":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-management.gn.v20261015|esgf-data.nersc.gov",
+        "index_node":"us-index",
+        "instance_id":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-management.gn.v20261015",
+        "institution_id":[
+            "UofMD"
+        ],
+        "latest":true,
+        "master_id":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-management.gn",
+        "mip_era":[
+            "CMIP7"
+        ],
+        "nominal_resolution":[
+            "25 km"
+        ],
+        "north_degrees":89.875,
+        "number_of_files":1,
+        "pid":[
+            "hdl:21.14100/c9698fcf-71cb-3745-8c9f-33427f17450c"
+        ],
+        "product":[
+            "UofMD LUH3-HL-ext V1 dataset prepared for CMIP7"
+        ],
+        "project":[
+            "input4MIPs"
+        ],
+        "realm":[
+            "land"
+        ],
+        "replica":false,
+        "retracted":false,
+        "score":0.5,
+        "short_description":[
+            "UofMD LUH3-HL-ext V1 dataset prepared for CMIP7"
+        ],
+        "size":1970184749,
+        "source":[
+            "LUH3-HL-ext V1: Land-Use Harmonization Data Set for HL-ext Scenario in CMIP7"
+        ],
+        "source_id":[
+            "UofMD-landState-hl-ext-3-1"
+        ],
+        "source_version":[
+            "3.1"
+        ],
+        "south_degrees":-89.875,
+        "target_mip":[
+            "ScenarioMIP"
+        ],
+        "target_mip_list":[
+            "ScenarioMIP"
+        ],
+        "title":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-management.gn",
+        "type":"Dataset",
+        "variable":[
+            "Multiple"
+        ],
+        "variable_id":[
+            "Multiple"
+        ],
+        "variable_long_name":[
+            "time",
+            "longitude",
+            "latitude",
+            "fertilization rate for C3 annual crops",
+            "irrigated fraction of C3 annual crops",
+            "C3 annual crops fraction of crop type area grown as first generation biofuels",
+            "fertilization rate for C4 annual crops",
+            "irrigated fraction of C4 annual crops",
+            "C4 annual crops fraction of crop type area grown as first generation biofuels",
+            "fertilization rate for C3 perennial crops",
+            "irrigated fraction of C3 perennial crops",
+            "C3 perennial crops fraction of crop type area grown as first generation biofuels",
+            "fertilization rate for C4 perennial crops",
+            "irrigated fraction of C4 perennial crops",
+            "C4 perennial crops fraction of crop type area grown as first generation biofuels",
+            "fertilization rate for C3 nitrogen-fixing crops",
+            "irrigated fraction of C3 nitrogen-fixing crops",
+            "C3 nitrogen-fixing crops fraction of crop type area grown as first generation biofuels",
+            "fraction of C3 perennial crops biomass carbon harvested annually",
+            "fraction of C4 perennial crops biomass carbon harvested annually",
+            "c3per fraction of crop type area grown as second generation biofuels",
+            "c4per fraction of crop type area grown as second generation biofuels",
+            "c3ann fraction of crop type area grown as second generation biofuels",
+            "c4ann fraction of crop type area grown as second generation biofuels",
+            "c3nfx fraction of crop type area grown as second generation biofuels",
+            "flooded fraction of C3 annual crop area (e.g. for paddy rice",
+            "industrial roundwood fraction of wood harvest biomass carbon",
+            "fuelwood fraction of wood harvest biomass carbon",
+            "fraction of plantation harvest used for biofuels",
+            "fraction of plantation harvest used for wood products",
+            "commercial biofuels fraction of wood harvest biomass carbon",
+            "fraction of gridcell planted with added trees for afforestation",
+            "fraction of land-use type protected from land-use change",
+            "fraction of land-use type protected from land-use change",
+            "fraction of land-use type protected from land-use change",
+            "fraction of land-use type protected from land-use change",
+            "fraction of land-use type protected from land-use change"
+        ],
+        "variable_units":[
+            "kg ha-1 yr-1",
+            "degrees_east",
+            "degrees_north"
+        ],
+        "version":20261015,
+        "west_degrees":-179.875,
+        "xlink":[
+            "http://hdl.handle.net/hdl:21.14100/c9698fcf-71cb-3745-8c9f-33427f17450c|PID|pid"
+        ]
+    },
+    "input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-states.gn.v20261015":{
+        "Conventions":[
+            "CF-1.6"
+        ],
+        "_timestamp":"2026-10-22T21:00:12.020522Z",
+        "access":[
+            "HTTPServer",
+            "Globus"
+        ],
+        "activity_id":[
+            "input4MIPs"
+        ],
+        "cf_standard_name":[
+            "latitude",
+            "longitude",
+            "time"
+        ],
+        "contact":[
+            "lchini@umd.edu, gchurtt@umd.edu"
+        ],
+        "creation_date":"2026-10-15T02:26:54Z",
+        "data_node":"esgf-data.nersc.gov",
+        "dataset_category":[
+            "landState"
+        ],
+        "dataset_id_template_":[
+            "%(activity_id)s.%(mip_era)s.%(target_mip)s.%(institution_id)s.%(source_id)s.%(realm)s.%(frequency)s.%(variable_id)s.%(grid_label)s"
+        ],
+        "dataset_status":[
+            "latest"
+        ],
+        "datetime_end":"2500-01-01T00:00:00Z",
+        "datetime_start":"2100-01-01T00:00:00Z",
+        "deprecated":false,
+        "directory_format_template_":[
+            "%(root)s/%(activity_id)s/%(mip_era)s/%(target_mip)s/%(institution_id)s/%(source_id)s/%(realm)s/%(frequency)s/%(variable_id)s/%(grid_label)s/%(version)s"
+        ],
+        "east_degrees":179.875,
+        "frequency":[
+            "yr"
+        ],
+        "further_info_url":[
+            "http://luh.umd.edu"
+        ],
+        "globus_url":[
+            "https://app.globus.org/file_manager?origin_id=904ff241-867c-404e-b355-64b701ba6ac1&amp;origin_path=/user_pub_work/input4MIPs/CMIP7/ScenarioMIP/UofMD/UofMD-landState-hl-ext-3-1/land/yr/multiple-states/gn/v20261015"
+        ],
+        "grid_label":[
+            "gn"
+        ],
+        "id":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-states.gn.v20261015|esgf-data.nersc.gov",
+        "index_node":"us-index",
+        "instance_id":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-states.gn.v20261015",
+        "institution_id":[
+            "UofMD"
+        ],
+        "latest":true,
+        "master_id":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-states.gn",
+        "mip_era":[
+            "CMIP7"
+        ],
+        "nominal_resolution":[
+            "25 km"
+        ],
+        "north_degrees":89.875,
+        "number_of_files":1,
+        "pid":[
+            "hdl:21.14100/f8ca409c-595b-3446-aa63-3fd165da4e26"
+        ],
+        "product":[
+            "UofMD LUH3-HL-ext V1 dataset prepared for CMIP7"
+        ],
+        "project":[
+            "input4MIPs"
+        ],
+        "realm":[
+            "land"
+        ],
+        "replica":false,
+        "retracted":false,
+        "score":0.5,
+        "short_description":[
+            "UofMD LUH3-HL-ext V1 dataset prepared for CMIP7"
+        ],
+        "size":3029853815,
+        "source":[
+            "LUH3-HL-ext V1: Land-Use Harmonization Data Set for HL-ext Scenario in CMIP7"
+        ],
+        "source_id":[
+            "UofMD-landState-hl-ext-3-1"
+        ],
+        "source_version":[
+            "3.1"
+        ],
+        "south_degrees":-89.875,
+        "target_mip":[
+            "ScenarioMIP"
+        ],
+        "target_mip_list":[
+            "ScenarioMIP"
+        ],
+        "title":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-states.gn",
+        "type":"Dataset",
+        "variable":[
+            "Multiple"
+        ],
+        "variable_id":[
+            "Multiple"
+        ],
+        "variable_long_name":[
+            "time",
+            "longitude",
+            "latitude",
+            "primary vegetation on LUH2 potential forest land",
+            "primary vegetation on LUH2 potential non-forest land",
+            "secondary vegetation on LUH2 potential forest land",
+            "secondary vegetation on LUH2 potential non-forest land",
+            "plantation forestry",
+            "urban land",
+            "C3 annual crops",
+            "C4 annual crops",
+            "C3 perennial crops",
+            "C4 perennial crops",
+            "C3 nitrogen-fixing crops",
+            "managed pasture",
+            "rangeland",
+            "secondary mean biomass carbon density",
+            "secondary mean age"
+        ],
+        "variable_units":[
+            "degrees_north",
+            "kg m-2",
+            "years",
+            "degrees_east"
+        ],
+        "version":20261015,
+        "west_degrees":-179.875,
+        "xlink":[
+            "http://hdl.handle.net/hdl:21.14100/f8ca409c-595b-3446-aa63-3fd165da4e26|PID|pid"
+        ]
+    },
+    "input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-transitions.gn.v20261015":{
+        "Conventions":[
+            "CF-1.6"
+        ],
+        "_timestamp":"2026-10-22T21:00:22.259604Z",
+        "access":[
+            "HTTPServer",
+            "Globus"
+        ],
+        "activity_id":[
+            "input4MIPs"
+        ],
+        "contact":[
+            "lchini@umd.edu, gchurtt@umd.edu"
+        ],
+        "creation_date":"2026-10-15T02:33:42Z",
+        "data_node":"esgf-data.nersc.gov",
+        "dataset_category":[
+            "landState"
+        ],
+        "dataset_id_template_":[
+            "%(activity_id)s.%(mip_era)s.%(target_mip)s.%(institution_id)s.%(source_id)s.%(realm)s.%(frequency)s.%(variable_id)s.%(grid_label)s"
+        ],
+        "dataset_status":[
+            "latest"
+        ],
+        "datetime_end":"2499-01-01T00:00:00Z",
+        "datetime_start":"2100-01-01T00:00:00Z",
+        "deprecated":false,
+        "directory_format_template_":[
+            "%(root)s/%(activity_id)s/%(mip_era)s/%(target_mip)s/%(institution_id)s/%(source_id)s/%(realm)s/%(frequency)s/%(variable_id)s/%(grid_label)s/%(version)s"
+        ],
+        "east_degrees":179.875,
+        "frequency":[
+            "yr"
+        ],
+        "further_info_url":[
+            "http://luh.umd.edu"
+        ],
+        "globus_url":[
+            "https://app.globus.org/file_manager?origin_id=904ff241-867c-404e-b355-64b701ba6ac1&amp;origin_path=/user_pub_work/input4MIPs/CMIP7/ScenarioMIP/UofMD/UofMD-landState-hl-ext-3-1/land/yr/multiple-transitions/gn/v20261015"
+        ],
+        "grid_label":[
+            "gn"
+        ],
+        "id":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-transitions.gn.v20261015|esgf-data.nersc.gov",
+        "index_node":"us-index",
+        "instance_id":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-transitions.gn.v20261015",
+        "institution_id":[
+            "UofMD"
+        ],
+        "latest":true,
+        "master_id":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-transitions.gn",
+        "mip_era":[
+            "CMIP7"
+        ],
+        "nominal_resolution":[
+            "25 km"
+        ],
+        "north_degrees":89.875,
+        "number_of_files":1,
+        "pid":[
+            "hdl:21.14100/2b710b1e-b8fe-312b-b523-ee1beed209ed"
+        ],
+        "product":[
+            "UofMD LUH3-HL-ext V1 dataset prepared for CMIP7"
+        ],
+        "project":[
+            "input4MIPs"
+        ],
+        "realm":[
+            "land"
+        ],
+        "replica":false,
+        "retracted":false,
+        "score":0.5,
+        "short_description":[
+            "UofMD LUH3-HL-ext V1 dataset prepared for CMIP7"
+        ],
+        "size":6405823214,
+        "source":[
+            "LUH3-HL-ext V1: Land-Use Harmonization Data Set for HL-ext Scenario in CMIP7"
+        ],
+        "source_id":[
+            "UofMD-landState-hl-ext-3-1"
+        ],
+        "source_version":[
+            "3.1"
+        ],
+        "south_degrees":-89.875,
+        "target_mip":[
+            "ScenarioMIP"
+        ],
+        "target_mip_list":[
+            "ScenarioMIP"
+        ],
+        "title":"input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-hl-ext-3-1.land.yr.multiple-transitions.gn",
+        "type":"Dataset",
+        "variable":[
+            "Multiple"
+        ],
+        "variable_id":[
+            "multiple-transitions"
+        ],
+        "version":20261015,
+        "west_degrees":-179.875,
+        "xlink":[
+            "http://hdl.handle.net/hdl:21.14100/2b710b1e-b8fe-312b-b523-ee1beed209ed|PID|pid"
+        ]
+    },
     "input4MIPs.CMIP7.ScenarioMIP.UofMD.UofMD-landState-m-3-1.land.yr.multiple-management.gn.v20260630":{
         "Conventions":[
             "CF-1.6"
