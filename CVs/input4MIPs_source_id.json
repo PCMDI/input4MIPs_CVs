@@ -6876,6 +6876,130 @@
         "mip_era":"CMIP6Plus",
         "source_version":"1.0.2"
     },
+    "UCLA-1-1-0":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
+                ],
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
+            },
+            {
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
+                    "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
+                ],
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
+            }
+        ],
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.1.0"
+    },
+    "UCLA-1-1-0-constant":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
+                ],
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
+            },
+            {
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
+                    "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
+                ],
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
+            }
+        ],
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.1.0"
+    },
+    "UCLA-1-1-0-decreasing":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
+                ],
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
+            },
+            {
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
+                    "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
+                ],
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
+            }
+        ],
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.1.0"
+    },
+    "UCLA-1-1-0-increasing":{
+        "activity_id":"input4MIPs",
+        "authors":[
+            {
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA"
+                ],
+                "email":"jfkok@ucla.edu",
+                "name":"Jasper Kok",
+                "orcid":"0000-0003-0464-8325"
+            },
+            {
+                "affiliations":[
+                    "Department of Atmospheric and Oceanic Sciences, University of California \u2013 Los Angeles, Los Angeles, California, USA",
+                    "Atmospheric Chemistry Observations and Modeling Laboratory, NSF National Center for Atmospheric Research, Boulder, Colorado, USA"
+                ],
+                "email":"dleung@ucar.edu",
+                "name":"Danny Leung",
+                "orcid":"0000-0002-9879-9978"
+            }
+        ],
+        "contact":"jfkok@ucla.edu;dleung@ucar.edu",
+        "dataset_category":[
+            "emissions"
+        ],
+        "further_info_url":"http://www.tbd.invalid",
+        "institution_id":"UCLA",
+        "license_id":"CC BY 4.0",
+        "mip_era":"CMIP6Plus",
+        "source_version":"1.1.0"
+    },
     "UOEXETER-CMIP-0-1-0":{
         "activity_id":"input4MIPs",
         "authors":[
