@@ -22,6 +22,19 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.63 (2026-11-03)
+
+
+### 🆕 Features
+
+- - Added land-use data for the low to negative scenario under source ID `UofMD-landState-ln-3-1`
+  - Added ozone zmta data in 1.0 style for the LN, L and ML scenarios
+  - Added CFMIP4 forcings and under source IDs of the form `ImperialCollege-AMIP-HadISST1p1-1-0` and `ImperialCollege-piClim-deltaSST*`
+  - Added new version of dust forcings under source IDs of the form `UCLA-1-1-0*`
+
+  ([#478](https://github.com/PCMDI/input4MIPs_CVs/pull/478))
+
+
 ## input4MIPs CVs v6.7.62 (2026-10-28)
 
 
