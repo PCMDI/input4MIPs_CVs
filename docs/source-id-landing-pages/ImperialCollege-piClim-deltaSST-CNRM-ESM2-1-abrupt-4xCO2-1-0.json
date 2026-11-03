@@ -1,0 +1,92 @@
+{
+  "creators": [
+    {
+      "affiliation": "Department of Physics & Grantham Institute, Imperial College London, London, UK",
+      "creatorName": "Ceppi, Paulo",
+      "email": "p.ceppi@imperial.ac.uk",
+      "familyName": "Ceppi",
+      "givenName": "Paulo",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0002-3754-3506",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "National Centre for Atmospheric Science, University of Reading, Reading, UK",
+      "creatorName": "Gregory, Jonathan",
+      "email": "jonathan.gregory@ncas.ac.uk",
+      "familyName": "Gregory",
+      "givenName": "Jonathan",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0000-0003-1296-8644",
+        "schemeURI": "https://orcid.org/"
+      }
+    },
+    {
+      "affiliation": "Department of Physics, Imperial College London, London, UK",
+      "creatorName": "Dai, An-Zhuo",
+      "email": "anzhuo.dai16@imperial.ac.uk",
+      "familyName": "Dai",
+      "givenName": "An-Zhuo",
+      "nameIdenfitier": {
+        "nameIdenfitierScheme": "ORCID",
+        "pid": "0009-0007-6114-2642",
+        "schemeURI": "https://orcid.org/"
+      }
+    }
+  ],
+  "dates": [
+    {
+      "date": "2026-10-21",
+      "dateType": "Created"
+    }
+  ],
+  "descriptions": [
+    {
+      "descriptionType": "Abstract",
+      "text": "CMIP forcing dataset (input4MIPs).\nThis is all data published under the unique ID (known as a source ID) ImperialCollege-piClim-deltaSST-CNRM-ESM2-1-abrupt-4xCO2-1-0."
+    }
+  ],
+  "formats": [
+    {
+      "format": "application/x-netcdf"
+    }
+  ],
+  "fundingReferences": [],
+  "identifier": {
+    "id": "10.5281/zenodo.21164518",
+    "identifierType": "DOI"
+  },
+  "language": "en",
+  "publication_year": 2026,
+  "publisher": "Earth System Grid Federation",
+  "relatedIdentifiers": [],
+  "resourceType": {
+    "resourceType": "Digital",
+    "resourceTypeGeneral": "Dataset"
+  },
+  "rightsList": [
+    {
+      "rights": "Creative Commons Attribution 4.0 International License (CC BY 4.0)",
+      "rightsURI": "http://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "subjects": [
+    {
+      "subject": "input4MIPs.CMIP7.CFMIP.ImperialCollege.ImperialCollege-piClim-deltaSST-CNRM-ESM2-1-abrupt-4xCO2-1-0",
+      "subjectScheme": "DRS"
+    },
+    {
+      "subject": "forcing data"
+    },
+    {
+      "subject": "climate"
+    },
+    {
+      "subject": "CMIP7"
+    }
+  ],
+  "titles": "ImperialCollege-piClim-deltaSST-CNRM-ESM2-1-abrupt-4xCO2-1-0 data provided as part of input4MIPs"
+}

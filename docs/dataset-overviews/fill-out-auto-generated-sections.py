@@ -189,6 +189,19 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
         return None
 
+    KNOWN_OTHER_NON_SCENARIO_SOURCE_IDS = {
+        "ImperialCollege-AMIP-HadISST1p1-1-0",
+        "ImperialCollege-piClim-deltaSST-CESM2-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-CNRM-ESM2-1-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-CanESM5-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-GFDL-CM4-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-HadGEM3-GC31-LL-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-MIROC6-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-NorESM2-LM-abrupt-4xCO2-1-0",
+    }
+    if source_id in KNOWN_OTHER_NON_SCENARIO_SOURCE_IDS:
+        return None
+
     # IIASA releases areacella under a different source ID.
     # This applies to all scenarios.
     scenario_indepent_scenario_label = "ScenarioMIP"
@@ -302,6 +315,14 @@ def get_latest_source_ids(
 ) -> tuple[str, ...]:
     version_ids_l = []
     for source_id in source_ids:
+        # Urgh things are really starting to fall over
+        if any(
+            source_id.startswith(p)
+            for p in ("ImperialCollege-AMIP", "ImperialCollege-piClim")
+        ):
+            version_ids_l.append(Version("v0"))
+            continue
+
         for relevant_stub in source_id_stub:
             if source_id.startswith(relevant_stub):
                 break
