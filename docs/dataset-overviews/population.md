@@ -25,9 +25,9 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-1%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-2%22%7D)
 
-The data has the DOI: [10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
+The data has the DOI: [10.5281/zenodo.24039762](https://doi.org/10.5281/zenodo.19353707).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -62,8 +62,7 @@ For the ScenarioMIP simulations in the production phase of CMIP7, you will need 
 - [PIK-h-1-0-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-1-0-0%22%7D)
 - [PIK-h-ext-1-0-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-ext-1-0-0%22%7D).
 
-
-The data has the DOI: [10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
+The data has the DOI: [10.5281/zenodo.24039762](https://doi.org/10.5281/zenodo.19353707).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -152,11 +151,43 @@ as well as extended FuturePop projections until 2300 based on extended SSPs from
 For details, see the documentation provided with the code and inputs on the [Zenodo repository](https://doi.org/10.5281/zenodo.17572467) 
 as well as our [preprint in the special issue of Geoscientific Model Development](https://doi.org/10.5194/egusphere-2026-5045).
 
+### Future scenarios
+
+Future projections were created by assigning SSP scenarios to emission scenarios.
+The mapping of scenarios is as follows:
+
+●	h - High <- SSP3
+
+●	hl - High-to-Low <- SSP5
+
+●	m - Medium <- SSP2
+
+●	ml - Medium-to-Low <- SSP2
+
+●	l - Low  <- SSP2
+
+●	ln - Low-to-Negative  <- SSP2
+
+●	vl - Very Low  <- SSP1
+
+Consequently, the population data in m, ml, l and ln scenarios is exactly the same.
+
 <!--- end of placeholder for piControl recommendation -->
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
+
+### PIK-CMIP-1-0-1
+
+A bug was discovered in the dataset that affected gridded population numbers for 1850-1974.
+As the country totals are correct, and only distribution of population within country is affected
+(by a constant offset during that period), we assess that the effect of this bug on simulations is marginal. 
+The global statistical distribution of the relative error at grid cell level has a mean centered around zero with a standard deviation of 2%. 
+Results aggregated to at subnational regions will have error usually not exceeding 3% (both under- or overestimation).
+Only in the most extreme cases the error could reach about 15%.
+The error creates a discontinuity at grid cell level between 1974 and 1975 timesteps.
+Data from 1975 onwards, including all projections, were not affected by this bug and are correct.
 
 ### PIK-CMIP-1-0-0
 
