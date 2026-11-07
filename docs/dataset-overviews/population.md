@@ -25,9 +25,9 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-1](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-1%22%7D)
+For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-2%22%7D)
 
-The data has the DOI: [10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
+The data has the DOI: [10.5281/zenodo.24039762](https://doi.org/10.5281/zenodo.19353707).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -62,7 +62,7 @@ For the ScenarioMIP simulations in the production phase of CMIP7, you will need 
 - [PIK-h-1-0-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-1-0-0%22%7D)
 - [PIK-h-ext-1-0-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-ext-1-0-0%22%7D).
 
-The data has the DOI: [10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
+The data has the DOI: [10.5281/zenodo.24039762](https://doi.org/10.5281/zenodo.19353707).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
