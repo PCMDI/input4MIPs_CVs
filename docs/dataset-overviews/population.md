@@ -158,6 +158,17 @@ as well as our [preprint in the special issue of Geoscientific Model Development
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ## Revision history
 
+### PIK-CMIP-1-0-1
+
+A bug was discovered in the dataset that affected gridded population numbers for 1850-1974.
+As the country totals are correct, and only distribution of population within country is affected
+(by a constant offset during that period), we assess that the effect of this bug on simulations is marginal. 
+The global statistical distribution of the relative error at grid cell level has a mean centered around zero with a standard deviation of 2%. 
+Results aggregated to at subnational regions will have error usually not exceeding 3% (both under- or overestimation).
+Only in the most extreme cases the error could reach about 15%.
+The error creates a discontinuity at grid cell level between 1974 and 1975 timesteps.
+Data from 1975 onwards, including all projections, were not affected by this bug and are correct.
+
 ### PIK-CMIP-1-0-0
 
 These datasets used an old version of WorldPop/FuturePop data. PIK-CMIP-1-0-1 uses revised
