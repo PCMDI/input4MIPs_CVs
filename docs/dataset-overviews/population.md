@@ -62,7 +62,6 @@ For the ScenarioMIP simulations in the production phase of CMIP7, you will need 
 - [PIK-h-1-0-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-1-0-0%22%7D)
 - [PIK-h-ext-1-0-0](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-h-ext-1-0-0%22%7D).
 
-
 The data has the DOI: [10.5281/zenodo.19353707](https://doi.org/10.5281/zenodo.19353707).
 
 This data is for use in CMIP7 production simulations.
@@ -151,6 +150,27 @@ as well as extended FuturePop projections until 2300 based on extended SSPs from
 
 For details, see the documentation provided with the code and inputs on the [Zenodo repository](https://doi.org/10.5281/zenodo.17572467) 
 as well as our [preprint in the special issue of Geoscientific Model Development](https://doi.org/10.5194/egusphere-2026-5045).
+
+### Future scenarios
+
+Future projections were created by assigning SSP scenarios to emission scenarios.
+The mapping of scenarios is as follows:
+
+●	h - High <- SSP3
+
+●	hl - High-to-Low <- SSP5
+
+●	m - Medium <- SSP2
+
+●	ml - Medium-to-Low <- SSP2
+
+●	l - Low  <- SSP2
+
+●	ln - Low-to-Negative  <- SSP2
+
+●	vl - Very Low  <- SSP1
+
+Consequently, the population data in m, ml, l and ln scenarios is exactly the same.
 
 <!--- end of placeholder for piControl recommendation -->
 
