@@ -25,7 +25,8 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 ##### CMIP7
 
-For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-2%22%7D)
+For the DECK simulations performed after November 2026, use data with source ID [PIK-CMIP-1-0-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-2%22%7D). 
+This data source ID corrects a bug found in PIK-CMIP-1-0-1 described in `Revision history` below.
 
 The data has the DOI: [10.5281/zenodo.24039762](https://doi.org/10.5281/zenodo.19353707).
 
