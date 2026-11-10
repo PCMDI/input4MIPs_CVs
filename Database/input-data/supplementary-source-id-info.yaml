@@ -312,6 +312,15 @@ PIK-CMIP-1-0-0:
     The 0.5 degree data was not affected by this bug.
 PIK-CMIP-1-0-1:
   doi: 10.5281/zenodo.19353707
+  comment_post_publication: >-
+    A bug was discovered in the dataset that affected gridded population numbers for 1850-1974.
+    As the country totals are correct, and only distribution of population within a country is affected
+    (by a constant offset during that period), we assess that the effect of this bug on simulations is marginal.
+    The global statistical distribution of the relative error at grid cell level has a mean centered around zero with a standard deviation of 2%.
+    Results aggregated to at subnational regions will have error usually not exceeding 3% (both under- or overestimation).
+    Only in the most extreme cases the error could reach about 15%.
+    The error creates a discontinuity at grid cell level between 1974 and 1975 timesteps.
+    Data from 1975 onwards, including all projections, were not affected by this bug and are correct.
 PIK-vl-1-0-0:
   doi: 10.5281/zenodo.19353707
 PIK-vl-ext-1-0-0:
