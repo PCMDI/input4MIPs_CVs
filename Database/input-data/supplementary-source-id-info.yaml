@@ -321,6 +321,8 @@ PIK-CMIP-1-0-1:
     Only in the most extreme cases the error could reach about 15%.
     The error creates a discontinuity at grid cell level between 1974 and 1975 timesteps.
     Data from 1975 onwards, including all projections, were not affected by this bug and are correct.
+PIK-CMIP-1-0-2:
+  doi: 10.5281/zenodo.24039762
 PIK-vl-1-0-0:
   doi: 10.5281/zenodo.19353707
 PIK-vl-ext-1-0-0:

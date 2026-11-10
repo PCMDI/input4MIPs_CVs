@@ -38,7 +38,7 @@ The source ID that identifies the dataset to use in CMIP7 is given below.
 
 For the DECK simulations in the production phase of CMIP7, use data with the source ID [PIK-CMIP-1-0-2](https://metagrid.esgf-west.org/search?project=input4MIPs&versionType=all&activeFacets=%7B%22source_id%22%3A%22PIK-CMIP-1-0-2%22%7D)
 
-No DOIs are available for this data.
+The data has the DOI: [10.5281/zenodo.24039762](https://doi.org/10.5281/zenodo.24039762).
 
 This data is for use in CMIP7 production simulations.
 All data sets for use in CMIP7 production simulations are published with a `mip_era` metadata value of 'CMIP7'.
@@ -107,7 +107,6 @@ If you have any feedback, please add it to the [relevant GitHub discussion](http
 
 <!--- end-cmip7-phases-source-ids -->
 
-<!--- placeholder for piControl recommendation -->
 ## Navigating the data
 
 ### Recommendation for pre-industrial control
@@ -168,23 +167,15 @@ as well as our [preprint in the special issue of Geoscientific Model Development
 Future projections were created by assigning SSP scenarios to emission scenarios.
 The mapping of scenarios is as follows:
 
-●	h - High <- SSP3
-
-●	hl - High-to-Low <- SSP5
-
-●	m - Medium <- SSP2
-
-●	ml - Medium-to-Low <- SSP2
-
-●	l - Low  <- SSP2
-
-●	ln - Low-to-Negative  <- SSP2
-
-●	vl - Very Low  <- SSP1
+- h - High <- SSP3
+- hl - High-to-Low <- SSP5
+- m - Medium <- SSP2
+- ml - Medium-to-Low <- SSP2
+- l - Low  <- SSP2
+- ln - Low-to-Negative  <- SSP2
+- vl - Very Low  <- SSP1
 
 Consequently, the population data in m, ml, l and ln scenarios is exactly the same.
-
-<!--- end of placeholder for piControl recommendation -->
 
 <!--- begin-revision-history -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->

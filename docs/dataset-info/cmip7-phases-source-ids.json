@@ -147,7 +147,7 @@
     },
     "population": {
         "deck-testing": null,
-        "deck-cmip7": { "source_ids": [ "PIK-CMIP-1-0-2" ], "ok_if_not_latest": true },
+        "deck-cmip7": { "source_ids": [ "PIK-CMIP-1-0-2" ] },
         "scenariomip-testing": { 
             "source_ids": [ 
                 "PIK-vllo-0-2-0",
