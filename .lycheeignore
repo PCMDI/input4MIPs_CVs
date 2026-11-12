@@ -30,7 +30,7 @@ file://
 ^https://doi.org/110.5281/zenodo.20971086$
 # We don't care about this being live
 ^https://contrib.rocks/image?repo=PCMDI/input4MIPs_CVs$
-# Typos coming through from how WCRP sets its website up (which prevents even checking if the website is up with a bot)
+# WCRP site is behind a Cloudflare bot challenge (403 for all non-browser clients) so we can't check it with lychee
 ^https://wcrp-cmip.org/.*$
 # Don't need to check this
 ^https://ror.org/.*$
