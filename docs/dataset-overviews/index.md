@@ -5,7 +5,7 @@ These overviews do not replace or duplicate the papers and documentation provide
 Instead, they are intended to supplement these sources of information
 with information that is targeted at users of input4MIPs data
 (who can be very different from users who get this data via other means),
-in particular models participating in [CMIP](https://www.wcrp-climate.org/wgcm-cmip).
+in particular models participating in [CMIP](https://wcrp-cmip.org/).
 
 1. [Anthropogenic short-lived climate forcer (SLCF) and CO<sub>2</sub> emissions](anthropogenic-slcf-co2-emissions.md)
 1. [Open biomass burning emissions](open-biomass-burning-emissions.md)

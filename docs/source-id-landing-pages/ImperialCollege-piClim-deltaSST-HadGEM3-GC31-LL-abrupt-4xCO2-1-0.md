@@ -20,4 +20,4 @@
 
 - source_id: ImperialCollege-piClim-deltaSST-HadGEM3-GC31-LL-abrupt-4xCO2-1-0
 - contact: Paulo Ceppi (p.ceppi@imperial.ac.uk); Jonathan Gregory (jonathan.gregory@ncas.ac.uk); An-Zhuo Dai (anzhuo.dai16@imperial.ac.uk)
-- further_info_url: https://www.cfmip.org/experiments/cfmip4cmip7
+- further_info_url: https://www.cfmip.org/activities/cfmip4cmip7
