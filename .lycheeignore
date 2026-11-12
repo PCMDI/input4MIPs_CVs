@@ -18,9 +18,19 @@ file://
 ^https://doi.org/10.5281/zenodo.22017128$
 ^https://doi.org/10.5281/zenodo.21893767$
 ^https://doi.org/10.5281/zenodo.20971086$
+^https://doi.org/10.5281/zenodo.22962921$
+^https://doi.org/10.5281/zenodo.22966685$
+^https://doi.org/10.5281/zenodo.23382952$
+^https://doi.org/10.5281/zenodo.23816845$
+# Population zenodo archives which aren't up yet
+^https://doi.org/10.5281/zenodo.24039762$
 # Typos coming through from files
 ^https://doi.org/110.5281/zenodo.22017128$
 ^https://doi.org/110.5281/zenodo.21893767$
 ^https://doi.org/110.5281/zenodo.20971086$
 # We don't care about this being live
 ^https://contrib.rocks/image?repo=PCMDI/input4MIPs_CVs$
+# Typos coming through from how WCRP sets its website up (which prevents even checking if the website is up with a bot)
+^https://wcrp-cmip.org/.*$
+# Don't need to check this
+^https://ror.org/.*$
