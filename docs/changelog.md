@@ -22,6 +22,21 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.64 (2026-11-12)
+
+
+### 🎉 Improvements
+
+- As a result of an issue being found, an updated dataset, `PIK-CMIP-1-0-2`, has been provided.
+  This corrects a bug found in `PIK-CMIP-1-0-1` (described in the revision history of the populations page: [https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/population/#revision-history](https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews/population/#revision-history)).
+  The implication of this error on existing simulations (and their predicted climate forcing) is deemed to be small.
+  Therefore, existing model simulations based on `PIK-CMIP-1-0-1`
+  do not need to be rerun if such a rerun is not possible.
+  If any modelling centres run historical simulations
+  with both the `PIK-CMIP-1-0-1` and `PIK-CMIP-1-0-2` forcing,
+  these simulations would be of interest to the Forcings Task Team. ([#495](https://github.com/PCMDI/input4MIPs_CVs/pull/495))
+
+
 ## input4MIPs CVs v6.7.63 (2026-11-03)
 
 
