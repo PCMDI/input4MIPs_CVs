@@ -22,6 +22,22 @@ of rst and use slightly different categories.
 
 <!-- towncrier release notes start -->
 
+## input4MIPs CVs v6.7.65 (2026-11-13)
+
+
+### 🆕 Features
+
+- - Added a solar forcing extension file with monthly temporal resolution for users who wish to run past 2300 (for background and details, see [https://github.com/PCMDI/input4MIPs_CVs/discussions/475](https://github.com/PCMDI/input4MIPs_CVs/discussions/475))
+  - Added land-use data for the ML scenario under source ID `UofMD-landState-ml-3-1`
+  - Added emissions and GHG concentration data for the PolMIP SSP2-com-CMIP7 scenario under source IDs `IIASA-IAMC-SSP2-com-CMIP7-1-1-2`, `IIASA-IAMC-SSP2-com-CMIP7-ext-1-1-2`, `CR-SSP2-com-CMIP7-1-1-0` and `CR-SSP2-com-CMIP7-ext-1-1-0`
+
+  ([#492](https://github.com/PCMDI/input4MIPs_CVs/pull/492))
+
+### 🔧 Trivial/Internal Changes
+
+- [#496](https://github.com/PCMDI/input4MIPs_CVs/pull/496)
+
+
 ## input4MIPs CVs v6.7.64 (2026-11-12)
 
 
