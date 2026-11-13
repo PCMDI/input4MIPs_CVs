@@ -42,6 +42,8 @@ def get_source_id_result(
 
 def get_esgf_info(n_threads: int) -> dict[str, Any]:
     session = requests.Session()
+    # ORNL certificate has expired...
+    session.verify = False
     retries = requests.adapters.Retry(
         # Just in case flaky
         total=10,
