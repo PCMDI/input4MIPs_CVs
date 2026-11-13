@@ -158,6 +158,7 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "PCMDI-AMIP-OI2p1-1-0",
         "PIK-CMIP-1-0-0",
         "PIK-CMIP-1-0-1",
+        "PIK-CMIP-1-0-2",
         "SOLARIS-HEPPA-CMIP-4-1",
         "SOLARIS-HEPPA-CMIP-4-2",
         "SOLARIS-HEPPA-CMIP-4-3",
