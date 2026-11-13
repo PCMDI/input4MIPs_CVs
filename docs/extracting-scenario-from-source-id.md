@@ -97,6 +97,7 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "PCMDI-AMIP-OI2p1-1-0",
         "PIK-CMIP-1-0-0",
         "PIK-CMIP-1-0-1",
+        "PIK-CMIP-1-0-2",
         "SOLARIS-HEPPA-CMIP-4-1",
         "SOLARIS-HEPPA-CMIP-4-2",
         "SOLARIS-HEPPA-CMIP-4-3",
@@ -126,6 +127,19 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
         "UofMD-landState-3-1-2",
     }
     if source_id in KNOWN_HISTORICAL_SOURCE_IDS:
+        return None
+
+    KNOWN_OTHER_NON_SCENARIO_SOURCE_IDS = {
+        "ImperialCollege-AMIP-HadISST1p1-1-0",
+        "ImperialCollege-piClim-deltaSST-CESM2-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-CNRM-ESM2-1-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-CanESM5-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-GFDL-CM4-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-HadGEM3-GC31-LL-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-MIROC6-abrupt-4xCO2-1-0",
+        "ImperialCollege-piClim-deltaSST-NorESM2-LM-abrupt-4xCO2-1-0",
+    }
+    if source_id in KNOWN_OTHER_NON_SCENARIO_SOURCE_IDS:
         return None
 
     # IIASA releases areacella under a different source ID.
@@ -160,6 +174,9 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
     POLMIP_SCENARIOS_INTERNAL_HYPHEN = {
         "vl-cf",
         "vl-cf-ext",
+        # PolMIP
+        "SSP2-com-CMIP7",
+        "SSP2-com-CMIP7-ext",
     }
     # Draft names before final decision
     KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho", "scendraft1", "scendraft2"}
@@ -181,25 +198,16 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
             # the source ID is of the form "PIK-scenarioname-other-stuff"
             # e.g. "PIK-vllo-0-1-0".
             toks = source_id.split(known_prefix)[1].split("-")
+            # Check first so we are greedy and don't confuse vl-cf for vl
+            for n_join in [4, 3, 2]:
+                candidate = "-".join(toks[:n_join])
+                if candidate in POLMIP_SCENARIOS_INTERNAL_HYPHEN:
+                    return ScenarioInfo(name=candidate, legacy=False, polmip=True)
+
             scenario = toks[0]
-            scenario_internal_hyphen = "-".join(toks[:2])
 
             if toks[1] == "ext":
                 scenario = "-".join(toks[:2])
-                # Don't need to update:
-                # at this point scenario and scenario_internal_hyphen become the same thing
-                # scenario_internal_hyphen = "-".join(toks[:2])
-
-            if toks[2] == "ext":
-                # Urgh PolMIP
-                scenario = "-".join(toks[:3])
-                scenario_internal_hyphen = "-".join(toks[:3])
-
-            # Check first so we are greedy and don't confuse vl-cf for vl
-            if scenario_internal_hyphen in POLMIP_SCENARIOS_INTERNAL_HYPHEN:
-                return ScenarioInfo(
-                    name=scenario_internal_hyphen, legacy=False, polmip=True
-                )
 
             if scenario in KNOWN_SCENARIOS:
                 return ScenarioInfo(name=scenario, legacy=False)
