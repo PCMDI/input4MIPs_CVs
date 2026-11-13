@@ -204,7 +204,18 @@ for source_id, info in source_id_entries.items():
         "resourceTypeGeneral": "Dataset",
         "resourceType": "Digital",
     }
-    if license_id is not None and license_id != "CC BY 4.0":
+    if (
+        license_id is not None
+        and license_id != "CC BY 4.0"
+        # Urgh, will get new files produced with the right licence
+        and (
+            source_id
+            not in {
+                "IIASA-IAMC-SSP2-com-CMIP7-1-1-2",
+                "IIASA-IAMC-SSP2-com-CMIP7-ext-1-1-2",
+            }
+        )
+    ):
         # if license_id is None, assume CC BY 4.0
         raise AssertionError(license_id)
 
