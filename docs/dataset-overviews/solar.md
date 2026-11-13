@@ -16,6 +16,23 @@ please [raise an issue](https://github.com/PCMDI/input4MIPs_CVs/issues/new?templ
 Discussions on this and earlier versions can be found in
 [https://github.com/PCMDI/input4MIPs_CVs/discussions/19](https://github.com/PCMDI/input4MIPs_CVs/discussions/19).
 
+### ScenarioMIP
+
+<!--- TODO: put this in guidance pages too -->
+Note that the extension files only run to 2299-12-12.
+If you are running beyond the time period provided in the data,
+the right approach depends on the temporal frequency that you are using.
+
+If you are using the data with daily resolution,
+simply repeat the data, starting with 24 August 2038.
+In other words, for 2300-01-01, use data from 2038-08-24,
+for 2300-01-02, use data from 2038-08-25
+and so on.
+
+If you are using the data with monthly resolution,
+there is a dedicated data file which extends beyond 2500.
+Please use that.
+
 <!--- begin-cmip7-phases-source-ids -->
 <!--- Do not edit this section, it is automatically updated when the docs are built -->
 ### Source IDs for CMIP7 phases

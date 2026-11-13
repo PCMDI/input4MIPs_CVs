@@ -235,6 +235,9 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
     POLMIP_SCENARIOS_INTERNAL_HYPHEN = {
         "vl-cf",
         "vl-cf-ext",
+        # PolMIP
+        "SSP2-com-CMIP7",
+        "SSP2-com-CMIP7-ext",
     }
     # Draft names before final decision
     KNOWN_SCENARIOS_LEGACY = {"vllo", "vlho", "scendraft1", "scendraft2"}
@@ -256,25 +259,16 @@ def extract_scenario_from_source_id(source_id: str) -> ScenarioInfo | None:
             # the source ID is of the form "PIK-scenarioname-other-stuff"
             # e.g. "PIK-vllo-0-1-0".
             toks = source_id.split(known_prefix)[1].split("-")
+            # Check first so we are greedy and don't confuse vl-cf for vl
+            for n_join in [4, 3, 2]:
+                candidate = "-".join(toks[:n_join])
+                if candidate in POLMIP_SCENARIOS_INTERNAL_HYPHEN:
+                    return ScenarioInfo(name=candidate, legacy=False, polmip=True)
+
             scenario = toks[0]
-            scenario_internal_hyphen = "-".join(toks[:2])
 
             if toks[1] == "ext":
                 scenario = "-".join(toks[:2])
-                # Don't need to update:
-                # at this point scenario and scenario_internal_hyphen become the same thing
-                # scenario_internal_hyphen = "-".join(toks[:2])
-
-            if toks[2] == "ext":
-                # Urgh PolMIP
-                scenario = "-".join(toks[:3])
-                scenario_internal_hyphen = "-".join(toks[:3])
-
-            # Check first so we are greedy and don't confuse vl-cf for vl
-            if scenario_internal_hyphen in POLMIP_SCENARIOS_INTERNAL_HYPHEN:
-                return ScenarioInfo(
-                    name=scenario_internal_hyphen, legacy=False, polmip=True
-                )
 
             if scenario in KNOWN_SCENARIOS:
                 return ScenarioInfo(name=scenario, legacy=False)
