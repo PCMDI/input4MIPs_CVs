@@ -290,6 +290,18 @@ IIASA-IAMC-hl-ext-1-1-1:
     If you have started or completed simulations with aviation emissions from IIASA-IAMC-hl-ext-1-1-1,
     you do not need to restart or re-run them.
     However, if you have not yet started simulations, please use IIASA-IAMC-hl-ext-1-1-2.
+IIASA-IAMC-SSP2-com-CMIP7-1-1-2:
+  comment_post_publication: >-
+    The licence in these files was not CC BY 4.0
+    and further_info_url was also missing.
+    These issues have been updated in IIASA-IAMC-SSP2-com-CMIP7-1-1-3.
+    The data is unchanged.
+IIASA-IAMC-SSP2-com-CMIP7-ext-1-1-2:
+  comment_post_publication: >-
+    The licence in these files was not CC BY 4.0
+    and further_info_url was also missing.
+    These issues have been updated in IIASA-IAMC-SSP2-com-CMIP7-ext-1-1-3.
+    The data is unchanged.
 ImperialCollege-3-0:
   doi: 10.25981/ESGF.input4MIPs.CMIP7/2583902
 MRI-JRA55-do-1-6-0:
